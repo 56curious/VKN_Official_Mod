@@ -9,6 +9,8 @@ This github is more for the WIKI aspect/code inspection, rather than a place for
 ## Installation
 You can find the mod at: https://steamcommunity.com/sharedfiles/filedetails/?id=1565793841
 
+The extension mod (includes factions, units etc.) can be found at: https://steamcommunity.com/sharedfiles/filedetails/?id=1632188752
+
 
 ## Credits
 Before retexutres are made, we have contacted the authors and requested permission. If you as a mod creator have noted something that you did not consent to, please message myself or another contributor so we can remove it ASAP.
