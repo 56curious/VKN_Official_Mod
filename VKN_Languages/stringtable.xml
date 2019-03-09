@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Project name="Any Name">
+	<Package name="Mission One">
+		<Container name="Some Words">
+			<Key ID="STR_myKey">
+				<Original>Hey there</Original>
+			</Key>
+		</Container>
+	</Package>
+</Project>
