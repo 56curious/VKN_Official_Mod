@@ -28,7 +28,9 @@ class CfgPatches {
             "ALiVE_intro",
             "ALiVE_main",
             "ALiVE_ui",
-            "cba_settings"
+            "cba_settings",
+            "FIR_AirWeaponSystem_US",
+            "FIR_Baseplate"
         };
     };
 };
@@ -66,8 +68,53 @@ class RscDisplayStart: RscStandardDisplay
     };
 };
 
+// remove fir insignias
+class CfgUnitInsignia {
+    class Emblem_501 { scope = 1; };
+    class Emblem_502 { scope = 1; };
+    class Emblem_503 { scope = 1; };
+    class Emblem_504 { scope = 1; };
+    class Emblem_505 { scope = 1; };
+    class Emblem_506 { scope = 1; };
+    class Emblem_507 { scope = 1; };
+    class Emblem_508 { scope = 1; };
+    class Emblem_Alisa { scope = 1; };
+    class Decal_Armagirl_1 { scope = 1; };
+    class Decal_Armagirl_v_L { scope = 1; };
+    class Decal_Armagirl_v_R { scope = 1; };
+    class Decal_bunnygirl { scope = 1; };
+    class Decal_charlotte_2 { scope = 1; };
+    class Decal_iowa1 { scope = 1; };
+    class Decal_iowa2 { scope = 1; };
+    class Decal_IronMaiden { scope = 1; };
+    class Decal_katusha { scope = 1; };
+    class Decal_noseart1 { scope = 1; };
+    class Decal_noseart2 { scope = 1; };
+    class Decal_riseup { scope = 1; };
+    class Decal_Shirley { scope = 1; };
+    class Roundel_Shirley { scope = 1; };
+    class decal_warspite { scope = 1; };
+    class Emblem_Crow { scope = 1; };
+    class Emblem_Cyclops { scope = 1; };
+    class Emblem_Galm { scope = 1; };
+    class Emblem_Gargoyle { scope = 1; };
+    class Emblem_Gelb { scope = 1; };
+    class Emblem_Golem { scope = 1; };
+    class Emblem_Grun { scope = 1; };
+    class Emblem_Mage { scope = 1; };
+    class Emblem_Rot { scope = 1; };
+    class Emblem_Skeleton { scope = 1; };
+    class Emblem_Sol { scope = 1; };
+    class Emblem_Sol2 { scope = 1; };
+    class Emblem_Spare { scope = 1; };
+    class Emblem_Strider { scope = 1; };
+    class Emblem_Trigger { scope = 1; };
+    class Emblem_Trigger2 { scope = 1; };
+    class Emblem_6airdiv { scope = 1; };
+};
 
 
+/*
 
 class RscDisplayMain: RscStandardDisplay {
 
@@ -142,3 +189,4 @@ class RscDisplayMain: RscStandardDisplay {
             sizeEx = ((0.8) * ((((safezoneW / safezoneH) min 1.2)/ 1.2)/ 25)) * GUI_GRID_H;
         };
     };
+*/

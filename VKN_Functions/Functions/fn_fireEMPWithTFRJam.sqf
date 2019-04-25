@@ -96,10 +96,8 @@ while {alive _jammer} do
 
 		systemChat format ["Distance: %1, Percent: %2, Interference: %3, Send Interference: %4", _dist,  100 * _distPercent, _interference, _sendInterference];
 		systemChat format ["Active Jammer: %1, Jammers: %2",_jammer, _jammers];
-		//copyToClipboard (str(Format ["Distance: %1, Percent: %2, Interference: %3", _dist,  100 * _distPercent, _interference]));
 	};
-    // Sleep 5 seconds before running again
-    sleep 5.0;
+	sleep 5;
 
 	//Only run this if there are multiple jammers.
 	if (count _jammers > 1) then {

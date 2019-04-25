@@ -1,5 +1,6 @@
 class O_the_order_Rifleman_01 : O_Soldier_F_OCimport_02 {
-    author = "Curious";
+    editorPreview = VKN_Extensions_Characters\Editor Preview Images\O_the_order_Rifleman_01.paa;
+    author = "Lion";
     scope = 2;
     scopeCurator = 2;
     displayName = "Rifleman";
@@ -39,7 +40,8 @@ class O_the_order_Rifleman_01 : O_Soldier_F_OCimport_02 {
 };
 
 class O_the_order_Marksman_01 : O_the_order_Rifleman_01 {
-    author = "Curious";
+    editorPreview = VKN_Extensions_Characters\Editor Preview Images\O_the_order_Marksman_01.paa;
+    author = "Lion";
     scope = 2;
     scopeCurator = 2;
     displayName = "Marksman";
@@ -79,7 +81,8 @@ class O_the_order_Marksman_01 : O_the_order_Rifleman_01 {
 };
 
 class O_the_order_AR_01 : O_the_order_Rifleman_01 {
-    author = "Curious";
+    editorPreview = VKN_Extensions_Characters\Editor Preview Images\O_the_order_AR_01.paa;
+    author = "Lion";
     scope = 2;
     scopeCurator = 2;
     displayName = "AR";
@@ -119,7 +122,8 @@ class O_the_order_AR_01 : O_the_order_Rifleman_01 {
 };
 
 class O_the_order_Sniper_01 : O_the_order_Rifleman_01 {
-    author = "Curious";
+    editorPreview = VKN_Extensions_Characters\Editor Preview Images\O_the_order_Sniper_01.paa;
+    author = "Lion";
     scope = 2;
     scopeCurator = 2;
     displayName = "Sniper";
@@ -159,7 +163,8 @@ class O_the_order_Sniper_01 : O_the_order_Rifleman_01 {
 };
 
 class O_the_order_AA_01 : O_the_order_Rifleman_01 {
-    author = "Curious";
+    editorPreview = VKN_Extensions_Characters\Editor Preview Images\O_the_order_AA_01.paa;
+    author = "Lion";
     scope = 2;
     scopeCurator = 2;
     displayName = "AA";
@@ -199,7 +204,8 @@ class O_the_order_AA_01 : O_the_order_Rifleman_01 {
 };
 
 class O_the_order_AT_01 : O_the_order_AA_01 {
-    author = "Curious";
+    editorPreview = VKN_Extensions_Characters\Editor Preview Images\O_the_order_AT_01.paa;
+    author = "Lion";
     scope = 2;
     scopeCurator = 2;
     displayName = "AT";
@@ -239,7 +245,8 @@ class O_the_order_AT_01 : O_the_order_AA_01 {
 };
 
 class O_the_order_Personal_Guard_01 : O_the_order_Rifleman_01 {
-    author = "Curious";
+    editorPreview = VKN_Extensions_Characters\Editor Preview Images\O_the_order_Personal_Guard_01.paa;
+    author = "Lion";
     scope = 2;
     scopeCurator = 2;
     displayName = "Personal Guard";
@@ -279,7 +286,8 @@ class O_the_order_Personal_Guard_01 : O_the_order_Rifleman_01 {
 };
 
 class O_the_order_SMG_01 : O_the_order_Rifleman_01 {
-    author = "Curious";
+    editorPreview = VKN_Extensions_Characters\Editor Preview Images\O_the_order_SMG_01.paa;
+    author = "Lion";
     scope = 2;
     scopeCurator = 2;
     displayName = "SMG";
@@ -319,7 +327,8 @@ class O_the_order_SMG_01 : O_the_order_Rifleman_01 {
 };
 
 class O_the_order_Grenadier_01 : O_the_order_Rifleman_01 {
-    author = "Curious";
+    editorPreview = VKN_Extensions_Characters\Editor Preview Images\O_the_order_Grenadier_01.paa;
+    author = "Lion";
     scope = 2;
     scopeCurator = 2;
     displayName = "Grenadier";
@@ -359,7 +368,8 @@ class O_the_order_Grenadier_01 : O_the_order_Rifleman_01 {
 };
 
 class O_the_order_AK_01 : O_the_order_Rifleman_01 {
-    author = "Curious";
+    editorPreview = VKN_Extensions_Characters\Editor Preview Images\O_the_order_AK_01.paa;
+    author = "Lion";
     scope = 2;
     scopeCurator = 2;
     displayName = "AK";
@@ -399,7 +409,8 @@ class O_the_order_AK_01 : O_the_order_Rifleman_01 {
 };
 
 class O_the_order_Officer_01 : O_the_order_Rifleman_01 {
-    author = "Curious";
+    editorPreview = VKN_Extensions_Characters\Editor Preview Images\O_the_order_Officer_01.paa;
+    author = "Lion";
     scope = 2;
     scopeCurator = 2;
     displayName = "Officer";
@@ -439,7 +450,8 @@ class O_the_order_Officer_01 : O_the_order_Rifleman_01 {
 };
 
 class O_the_order_Radioman_01 : O_the_order_Rifleman_01 {
-    author = "Curious";
+    editorPreview = VKN_Extensions_Characters\Editor Preview Images\O_the_order_Radioman_01.paa;
+    author = "Lion";
     scope = 2;
     scopeCurator = 2;
     displayName = "Radioman";
@@ -479,7 +491,8 @@ class O_the_order_Radioman_01 : O_the_order_Rifleman_01 {
 };
 
 class O_the_order_Pilot_01 : O_the_order_SMG_01 {
-    author = "Curious";
+    editorPreview = VKN_Extensions_Characters\Editor Preview Images\O_the_order_Pilot_01.paa;
+    author = "Lion";
     scope = 2;
     scopeCurator = 2;
     displayName = "Pilot";
@@ -519,7 +532,8 @@ class O_the_order_Pilot_01 : O_the_order_SMG_01 {
 };
 
 class O_the_order_Crewman_01 : O_the_order_Pilot_01 {
-    author = "Curious";
+    editorPreview = VKN_Extensions_Characters\Editor Preview Images\O_the_order_Crewman_01.paa;
+    author = "Lion";
     scope = 2;
     scopeCurator = 2;
     displayName = "Crewman";
@@ -559,7 +573,8 @@ class O_the_order_Crewman_01 : O_the_order_Pilot_01 {
 };
 
 class O_the_order_Leader_01 : O_the_order_Officer_01 {
-    author = "Curious";
+    editorPreview = VKN_Extensions_Characters\Editor Preview Images\O_the_order_Leader_01.paa;
+    author = "Lion";
     scope = 2;
     scopeCurator = 2;
     displayName = "Leader";
@@ -597,7 +612,8 @@ class O_the_order_Leader_01 : O_the_order_Officer_01 {
 };
 
 class O_the_order_Humvee_01 : rhsusf_m1043_w_m2_OCimport_02 {
-    author = "Curious";
+    editorPreview = VKN_Extensions_Characters\Editor Preview Images\O_the_order_Humvee_01.paa;
+    author = "Lion";
     scope = 2;
     scopeCurator = 2;
     displayName = "Humvee";
@@ -630,7 +646,8 @@ class O_the_order_Humvee_01 : rhsusf_m1043_w_m2_OCimport_02 {
 };
 
 class O_the_order_M2A3_01 : RHS_M2A3_BUSKIII_wd_OCimport_02 {
-    author = "Curious";
+    editorPreview = VKN_Extensions_Characters\Editor Preview Images\O_the_order_M2A3_01.paa;
+    author = "Lion";
     scope = 2;
     scopeCurator = 2;
     displayName = "M2A3";
@@ -660,7 +677,8 @@ class O_the_order_M2A3_01 : RHS_M2A3_BUSKIII_wd_OCimport_02 {
 };
 
 class O_the_order_M1A1_01 : rhsusf_m1a1fep_d_OCimport_02 {
-    author = "Curious";
+    editorPreview = VKN_Extensions_Characters\Editor Preview Images\O_the_order_M1A1_01.paa;
+    author = "Lion";
     scope = 2;
     scopeCurator = 2;
     displayName = "M1A1";
@@ -690,7 +708,8 @@ class O_the_order_M1A1_01 : rhsusf_m1a1fep_d_OCimport_02 {
 };
 
 class O_the_order_Navy_01 : O_the_order_SMG_01 {
-    author = "Curious";
+    editorPreview = VKN_Extensions_Characters\Editor Preview Images\O_the_order_Navy_01.paa;
+    author = "Lion";
     scope = 2;
     scopeCurator = 2;
     displayName = "Navy";
@@ -730,7 +749,8 @@ class O_the_order_Navy_01 : O_the_order_SMG_01 {
 };
 
 class O_the_order_assualt_boat_01 : B_Boat_Transport_01_F_OCimport_02 {
-    author = "Curious";
+    editorPreview = VKN_Extensions_Characters\Editor Preview Images\O_the_order_assualt_boat_01.paa;
+    author = "Lion";
     scope = 2;
     scopeCurator = 2;
     displayName = "assualt_boat";
@@ -763,7 +783,8 @@ class O_the_order_assualt_boat_01 : B_Boat_Transport_01_F_OCimport_02 {
 };
 
 class O_the_order_MRAP_01 : rhsusf_M1220_M2_usarmy_wd_OCimport_02 {
-    author = "Curious";
+    editorPreview = VKN_Extensions_Characters\Editor Preview Images\O_the_order_MRAP_01.paa;
+    author = "Lion";
     scope = 2;
     scopeCurator = 2;
     displayName = "MRAP";
@@ -793,7 +814,8 @@ class O_the_order_MRAP_01 : rhsusf_M1220_M2_usarmy_wd_OCimport_02 {
 };
 
 class O_the_order_F22_01 : rhsusf_f22_OCimport_02 {
-    author = "Curious";
+    editorPreview = VKN_Extensions_Characters\Editor Preview Images\O_the_order_F22_01.paa;
+    author = "Lion";
     scope = 2;
     scopeCurator = 2;
     displayName = "F-22";
@@ -818,7 +840,8 @@ class O_the_order_F22_01 : rhsusf_f22_OCimport_02 {
 };
 
 class O_the_order_A10A_01 : RHS_A10_OCimport_02 {
-    author = "Curious";
+    editorPreview = VKN_Extensions_Characters\Editor Preview Images\O_the_order_A10A_01.paa;
+    author = "Lion";
     scope = 2;
     scopeCurator = 2;
     displayName = "A-10A";
@@ -842,7 +865,8 @@ class O_the_order_A10A_01 : RHS_A10_OCimport_02 {
 };
 
 class O_the_order_Bardelas_01 : B_APC_Tracked_01_AA_F_OCimport_02 {
-    author = "Curious";
+    editorPreview = VKN_Extensions_Characters\Editor Preview Images\O_the_order_Bardelas_01.paa;
+    author = "Lion";
     scope = 2;
     scopeCurator = 2;
     displayName = "Bardelas";
@@ -872,7 +896,8 @@ class O_the_order_Bardelas_01 : B_APC_Tracked_01_AA_F_OCimport_02 {
 };
 
 class O_the_order_CH_47F_01 : RHS_CH_47F_light_OCimport_02 {
-    author = "Curious";
+    editorPreview = VKN_Extensions_Characters\Editor Preview Images\O_the_order_CH_47F_01.paa;
+    author = "Lion";
     scope = 2;
     scopeCurator = 2;
     displayName = "CH-47F";
@@ -906,7 +931,8 @@ class O_the_order_CH_47F_01 : RHS_CH_47F_light_OCimport_02 {
 };
 
 class O_the_order_UH_60M_01 : RHS_UH60M_OCimport_02 {
-    author = "Curious";
+    editorPreview = VKN_Extensions_Characters\Editor Preview Images\O_the_order_UH_60M_01.paa;
+    author = "Lion";
     scope = 2;
     scopeCurator = 2;
     displayName = "UH-60M";
@@ -942,7 +968,8 @@ class O_the_order_UH_60M_01 : RHS_UH60M_OCimport_02 {
 };
 
 class O_the_order_AH_1Z_01 : RHS_AH1Z_wd_OCimport_02 {
-    author = "Curious";
+    editorPreview = VKN_Extensions_Characters\Editor Preview Images\O_the_order_AH_1Z_01.paa;
+    author = "Lion";
     scope = 2;
     scopeCurator = 2;
     displayName = "AH-1Z";
@@ -971,7 +998,8 @@ class O_the_order_AH_1Z_01 : RHS_AH1Z_wd_OCimport_02 {
 };
 
 class O_the_order_Sholef_01 : B_MBT_01_arty_F_OCimport_02 {
-    author = "Curious";
+    editorPreview = VKN_Extensions_Characters\Editor Preview Images\O_the_order_Sholef_01.paa;
+    author = "Lion";
     scope = 2;
     scopeCurator = 2;
     displayName = "Sholef";
@@ -1001,7 +1029,8 @@ class O_the_order_Sholef_01 : B_MBT_01_arty_F_OCimport_02 {
 };
 
 class O_the_order_HEMMT_01 : rhsusf_M977A4_BKIT_M2_usarmy_wd_OCimport_02 {
-    author = "Curious";
+    editorPreview = VKN_Extensions_Characters\Editor Preview Images\O_the_order_HEMMT_01.paa;
+    author = "Lion";
     scope = 2;
     scopeCurator = 2;
     displayName = "HEMMT";
@@ -1031,7 +1060,8 @@ class O_the_order_HEMMT_01 : rhsusf_M977A4_BKIT_M2_usarmy_wd_OCimport_02 {
 };
 
 class O_the_order_AMMO_01 : rhsusf_M977A4_AMMO_usarmy_wd_OCimport_02 {
-    author = "Curious";
+    editorPreview = VKN_Extensions_Characters\Editor Preview Images\O_the_order_AMMO_01.paa;
+    author = "Lion";
     scope = 2;
     scopeCurator = 2;
     displayName = "AMMO";
@@ -1055,7 +1085,8 @@ class O_the_order_AMMO_01 : rhsusf_M977A4_AMMO_usarmy_wd_OCimport_02 {
 };
 
 class O_the_order_Repair_01 : rhsusf_M977A4_REPAIR_usarmy_wd_OCimport_02 {
-    author = "Curious";
+    editorPreview = VKN_Extensions_Characters\Editor Preview Images\O_the_order_Repair_01.paa;
+    author = "Lion";
     scope = 2;
     scopeCurator = 2;
     displayName = "Repair";
@@ -1079,7 +1110,8 @@ class O_the_order_Repair_01 : rhsusf_M977A4_REPAIR_usarmy_wd_OCimport_02 {
 };
 
 class O_the_order_SOC_01 : rhsusf_mkvsoc_OCimport_02 {
-    author = "Curious";
+    editorPreview = VKN_Extensions_Characters\Editor Preview Images\O_the_order_SOC_01.paa;
+    author = "Lion";
     scope = 2;
     scopeCurator = 2;
     displayName = "SOC";
@@ -1113,7 +1145,8 @@ class O_the_order_SOC_01 : rhsusf_mkvsoc_OCimport_02 {
 };
 
 class O_the_order_C130J_01 : RHS_C130J_OCimport_02 {
-    author = "Curious";
+    editorPreview = VKN_Extensions_Characters\Editor Preview Images\O_the_order_C130J_01.paa;
+    author = "Lion";
     scope = 2;
     scopeCurator = 2;
     displayName = "C-130J";
@@ -1143,7 +1176,8 @@ class O_the_order_C130J_01 : RHS_C130J_OCimport_02 {
 };
 
 class O_the_order_Humvee_Unarmed_01 : rhsusf_m1025_w_OCimport_02 {
-    author = "Curious";
+    editorPreview = VKN_Extensions_Characters\Editor Preview Images\O_the_order_Humvee_Unarmed_01.paa;
+    author = "Lion";
     scope = 2;
     scopeCurator = 2;
     displayName = "Humvee Unarmed";
@@ -1175,7 +1209,8 @@ class O_the_order_Humvee_Unarmed_01 : rhsusf_m1025_w_OCimport_02 {
 };
 
 class O_the_order_Second_01 : O_the_order_Leader_01 {
-    author = "Curious";
+    editorPreview = VKN_Extensions_Characters\Editor Preview Images\O_the_order_Second_01.paa;
+    author = "Lion";
     scope = 2;
     scopeCurator = 2;
     displayName = "Second";
@@ -1211,3 +1246,300 @@ class O_the_order_Second_01 : O_the_order_Leader_01 {
     ALiVE_orbatCreator_owned = 1;
 
 };
+
+//////
+//////
+//////
+
+/*
+class Box_East_Ammo_F; // CUP_RUBasicAmmunitionBox
+class Box_NATO_Ammo_F; // CUP_USBasicAmmunitionBox
+class Box_East_Wps_F; // CUP_RUBasicWeaponsBox
+class Box_NATO_Wps_F; // CUP_USBasicWeaponsBox
+class Box_East_Support_F; // CUP_RUSpecialWeaponsBox
+class Box_NATO_Support_F; // CUP_USSpecialWeaponsBox
+class Box_East_WpsLaunch_F; // CUP_RULaunchersBox
+class Box_NATO_WpsLaunch_F; // CUP_USLaunchersBox
+class Box_East_Uniforms_F; // CUP_RUBasicWeaponsBox
+class Box_NATO_Uniforms_F; // CUP_USBasicWeaponsBox
+class O_SupplyCrate_F; // CUP_RUVehicleBox
+class B_SupplyCrate_F; // CUP_USVehicleBox
+
+class O_ODR_AmmoBox : Box_East_Ammo_F {
+    author = ALiVE ORBAT CREATOR;
+    displayName = The Order Ammo Box;
+    class TransportMagazines {
+        mag_xx(30Rnd_556x45_Stanag,50);
+        mag_xx(rhs_mag_an_m8hc,50);
+        mag_xx(SmokeShellBlue,50);
+        mag_xx(SmokeShellRed,50);
+        mag_xx(20Rnd_762x51_Mag,50);
+        mag_xx(ACE_20Rnd_762x51_Mag_Tracer,50);
+        mag_xx(rhsusf_200Rnd_556x45_box,50);
+        mag_xx(rhsusf_5Rnd_762x51_AICS_m118_special_Mag,50);
+        mag_xx(rhs_mag_30Rnd_556x45_M855A1_Stanag,50);
+        mag_xx(rhs_mag_30Rnd_556x45_M855A1_PMAG,50);
+        mag_xx(rhs_m136_mag,50);
+        mag_xx(rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red,50);
+        mag_xx(HandGrenade,50);
+        mag_xx(1Rnd_HE_Grenade_shell,50);
+        mag_xx(1Rnd_Smoke_Grenade_shell,50);
+        mag_xx(rhs_30Rnd_545x39_7N6M_AK,50);
+        mag_xx(rhs_30Rnd_545x39_7N22_AK,50);
+        mag_xx(30Rnd_9x21_Mag_SMG_02,50);
+        mag_xx(50Rnd_570x28_SMG_03,50);
+        mag_xx(16Rnd_9x21_red_Mag,50);
+    };
+    class TransportWeapons {
+    };
+    class TransportItems {
+    };
+};
+class O_ODR_WeaponsBox : Box_East_Wps_F {
+    author = ALiVE ORBAT CREATOR;
+    displayName = The Order Weapons Box;
+    class TransportMagazines {
+        mag_xx(SMA_20Rnd_762x51mm_M80A1_EPR,50);
+        mag_xx(20Rnd_762x51_Mag,50);
+        mag_xx(rhsusf_200Rnd_556x45_box,50);
+        mag_xx(rhsusf_5Rnd_762x51_AICS_m118_special_Mag,50);
+        mag_xx(rhs_mag_30Rnd_556x45_M855A1_Stanag,50);
+        mag_xx(1Rnd_HE_Grenade_shell,50);
+        mag_xx(rhs_30Rnd_545x39_7N6M_AK,50);
+        mag_xx(30Rnd_9x21_Mag_SMG_02,50);
+        mag_xx(50Rnd_570x28_SMG_03,50);
+        mag_xx(16Rnd_9x21_red_Mag,50);
+    };
+    class TransportWeapons {
+        weap_xx(SMA_Mk17_16_black,10);
+        weap_xx(hgun_P07_F,10);
+        weap_xx(srifle_DMR_06_olive_F,10);
+        weap_xx(rhs_weap_m249_pip_L,10);
+        weap_xx(rhs_weap_m40a5,10);
+        weap_xx(rhs_weap_hk416d10,10);
+        weap_xx(rhs_weap_m4a1_blockII,10);
+        weap_xx(rhs_weap_mk18,10);
+        weap_xx(SMA_MK16_EGLM_black,10);
+        weap_xx(rhs_weap_ak74n_npz,10);
+        weap_xx(SMG_02_F,10);
+        weap_xx(rhs_weap_hk416d145,10);
+        weap_xx(SMG_05_F,10);
+        weap_xx(SMG_03_TR_khaki,10);
+        weap_xx(SMA_L85RIS,10);
+    };
+    class TransportItems {
+        item_xx(rhsusf_acc_anpeq15_bk,10);
+        item_xx(rhsusf_acc_ACOG2_USMC,10);
+        item_xx(muzzle_snds_B_khk_F,10);
+        item_xx(optic_AMS_khk,10);
+        item_xx(bipod_01_F_blk,10);
+        item_xx(rhsusf_acc_anpeq16a,10);
+        item_xx(optic_AMS,10);
+        item_xx(rhsusf_acc_harris_swivel,10);
+        item_xx(rhsusf_acc_anpeq15,10);
+        item_xx(rhsusf_acc_grip3,10);
+        item_xx(rhsusf_acc_anpeq15_wmx,10);
+        item_xx(rhsusf_acc_nt4_black,10);
+        item_xx(optic_Hamr,10);
+        item_xx(rhsusf_acc_compm4,10);
+        item_xx(rhs_acc_dtk1983,10);
+        item_xx(rhs_acc_2dpZenit,10);
+        item_xx(muzzle_snds_L,10);
+        item_xx(rhsusf_acc_g33_T1,10);
+        item_xx(rhsusf_acc_grip1,10);
+        item_xx(rhsusf_acc_T1_high,10);
+        item_xx(muzzle_snds_570,10);
+        item_xx(ACE_acc_pointer_green,10);
+        item_xx(optic_ACO_grn,10);
+        item_xx(SMA_supp2b_556,10);
+        item_xx(SMA_ELCAN_SPECTER_ARDRDS,10);
+        item_xx(SMA_Gripod_01,10);
+    };
+};
+class O_ODR_LaunchersBox : Box_East_WpsLaunch_F {
+    author = ALiVE ORBAT CREATOR;
+    displayName = The Order Launchers Box;
+    class TransportMagazines {
+        mag_xx(rhs_fim92_mag,5);
+        mag_xx(rhs_m136_mag,5);
+    };
+    class TransportWeapons {
+        weap_xx(rhs_weap_fim92,5);
+        weap_xx(rhs_weap_M136,5);
+    };
+    class TransportItems {
+    };
+};
+class O_ODR_UniformBox : Box_East_Uniforms_F {
+    author = ALiVE ORBAT CREATOR;
+    displayName = The Order Uniform Box;
+    class TransportWeapons {
+    };
+    class TransportMagazines {
+    };
+    class TransportItems {
+        item_xx(VSM_MulticamTropic_od_shirt_Camo_SS,15);
+        item_xx(U_O_FullGhillie_ard,15);
+        item_xx(rhs_uniform_g3_blk,15);
+        item_xx(U_B_PilotCoveralls,15);
+        item_xx(VSM_MulticamTropic_Camo_SS,15);
+        item_xx(VSM_MulticamTropic_Crye_Tee_Camo,15);
+        item_xx(VSM_OGA_od_Camo,15);
+        item_xx(VSM_MulticamTropic_tan_pants_Camo_SS,15);
+    };
+};
+class O_ODR_SupportBox : Box_East_Support_F {
+    author = ALiVE ORBAT CREATOR;
+    displayName = The Order Support Box;
+    class TransportWeapons {
+    };
+    class TransportMagazines {
+    };
+    class TransportItems {
+        item_xx(Binocular,10);
+        item_xx(VSM_LBT1961_Black,10);
+        item_xx(H_HelmetSpecB_blk,10);
+        item_xx(rhsusf_shemagh2_gogg_grn,10);
+        item_xx(B_AssaultPack_blk,10);
+        item_xx(NVGoggles_OPFOR,10);
+        item_xx(ItemMap,10);
+        item_xx(ItemCompass,10);
+        item_xx(tf_microdagr,10);
+        item_xx(tf_anprc152_4,10);
+        item_xx(ItemGPS,10);
+        item_xx(H_Booniehat_khk_hs,10);
+        item_xx(rhsusf_shemagh2_grn,10);
+        item_xx(B_TacticalPack_blk,10);
+        item_xx(rhsusf_opscore_bk_pelt,10);
+        item_xx(G_Balaclava_TI_G_blk_F,10);
+        item_xx(LOP_V_CarrierLite_BLK,10);
+        item_xx(VSM_MBSS_BLK,10);
+        item_xx(rhs_beret_mp2,10);
+        item_xx(tf_rt1523g_big_bwmod,10);
+        item_xx(H_PilotHelmetFighter_B,10);
+        item_xx(rhsusf_eject_Parachute_backpack,10);
+        item_xx(VSM_LBT6094_breacher_OGA_OD,10);
+        item_xx(H_HelmetCrew_B,10);
+        item_xx(VSM_OGA_OD_Backpack_Compact,10);
+        item_xx(VSM_FAPC_Operator_OGA_OD,10);
+        item_xx(rhsusf_Bowman,10);
+        item_xx(VSM_Shemagh_Balaclava2_OD_Peltor_Goggles,10);
+        item_xx(rhsusf_bowman_cap,10);
+        item_xx(VSM_Shemagh_OD,10);
+    };
+};
+class O_ODR_SupplyBox : O_SupplyCrate_F {
+    author = ALiVE ORBAT CREATOR;
+    displayName = The Order Supply Box;
+    class TransportMagazines {
+        mag_xx(30Rnd_556x45_Stanag,50);
+        mag_xx(rhs_mag_an_m8hc,50);
+        mag_xx(SmokeShellBlue,50);
+        mag_xx(SmokeShellRed,50);
+        mag_xx(20Rnd_762x51_Mag,50);
+        mag_xx(ACE_20Rnd_762x51_Mag_Tracer,50);
+        mag_xx(rhsusf_200Rnd_556x45_box,50);
+        mag_xx(rhsusf_5Rnd_762x51_AICS_m118_special_Mag,50);
+        mag_xx(rhs_mag_30Rnd_556x45_M855A1_Stanag,50);
+        mag_xx(rhs_mag_30Rnd_556x45_M855A1_PMAG,50);
+        mag_xx(rhs_m136_mag,50);
+        mag_xx(rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red,50);
+        mag_xx(HandGrenade,50);
+        mag_xx(1Rnd_HE_Grenade_shell,50);
+        mag_xx(1Rnd_Smoke_Grenade_shell,50);
+        mag_xx(rhs_30Rnd_545x39_7N6M_AK,50);
+        mag_xx(rhs_30Rnd_545x39_7N22_AK,50);
+        mag_xx(30Rnd_9x21_Mag_SMG_02,50);
+        mag_xx(50Rnd_570x28_SMG_03,50);
+        mag_xx(16Rnd_9x21_red_Mag,50);
+    };
+    class TransportWeapons {
+        weap_xx(SMA_Mk17_16_black,10);
+        weap_xx(hgun_P07_F,10);
+        weap_xx(srifle_DMR_06_olive_F,10);
+        weap_xx(rhs_weap_m249_pip_L,10);
+        weap_xx(rhs_weap_m40a5,10);
+        weap_xx(rhs_weap_hk416d10,10);
+        weap_xx(rhs_weap_m4a1_blockII,10);
+        weap_xx(rhs_weap_mk18,10);
+        weap_xx(SMA_MK16_EGLM_black,10);
+        weap_xx(rhs_weap_ak74n_npz,10);
+        weap_xx(SMG_02_F,10);
+        weap_xx(rhs_weap_hk416d145,10);
+        weap_xx(SMG_05_F,10);
+        weap_xx(SMG_03_TR_khaki,10);
+        weap_xx(SMA_L85RIS,10);
+        weap_xx(rhs_weap_fim92,10);
+        weap_xx(rhs_weap_M136,10);
+    };
+    class TransportItems {
+        item_xx(rhsusf_acc_anpeq15_bk,10);
+        item_xx(rhsusf_acc_ACOG2_USMC,10);
+        item_xx(muzzle_snds_B_khk_F,10);
+        item_xx(optic_AMS_khk,10);
+        item_xx(bipod_01_F_blk,10);
+        item_xx(rhsusf_acc_anpeq16a,10);
+        item_xx(optic_AMS,10);
+        item_xx(rhsusf_acc_harris_swivel,10);
+        item_xx(rhsusf_acc_anpeq15,10);
+        item_xx(rhsusf_acc_grip3,10);
+        item_xx(rhsusf_acc_anpeq15_wmx,10);
+        item_xx(rhsusf_acc_nt4_black,10);
+        item_xx(optic_Hamr,10);
+        item_xx(rhsusf_acc_compm4,10);
+        item_xx(rhs_acc_dtk1983,10);
+        item_xx(rhs_acc_2dpZenit,10);
+        item_xx(muzzle_snds_L,10);
+        item_xx(rhsusf_acc_g33_T1,10);
+        item_xx(rhsusf_acc_grip1,10);
+        item_xx(rhsusf_acc_T1_high,10);
+        item_xx(muzzle_snds_570,10);
+        item_xx(ACE_acc_pointer_green,10);
+        item_xx(optic_ACO_grn,10);
+        item_xx(SMA_supp2b_556,10);
+        item_xx(SMA_ELCAN_SPECTER_ARDRDS,10);
+        item_xx(SMA_Gripod_01,10);
+        item_xx(Binocular,10);
+        item_xx(VSM_LBT1961_Black,10);
+        item_xx(H_HelmetSpecB_blk,10);
+        item_xx(rhsusf_shemagh2_gogg_grn,10);
+        item_xx(B_AssaultPack_blk,10);
+        item_xx(NVGoggles_OPFOR,10);
+        item_xx(ItemMap,10);
+        item_xx(ItemCompass,10);
+        item_xx(tf_microdagr,10);
+        item_xx(tf_anprc152_4,10);
+        item_xx(ItemGPS,10);
+        item_xx(H_Booniehat_khk_hs,10);
+        item_xx(rhsusf_shemagh2_grn,10);
+        item_xx(B_TacticalPack_blk,10);
+        item_xx(rhsusf_opscore_bk_pelt,10);
+        item_xx(G_Balaclava_TI_G_blk_F,10);
+        item_xx(LOP_V_CarrierLite_BLK,10);
+        item_xx(VSM_MBSS_BLK,10);
+        item_xx(rhs_beret_mp2,10);
+        item_xx(tf_rt1523g_big_bwmod,10);
+        item_xx(H_PilotHelmetFighter_B,10);
+        item_xx(rhsusf_eject_Parachute_backpack,10);
+        item_xx(VSM_LBT6094_breacher_OGA_OD,10);
+        item_xx(H_HelmetCrew_B,10);
+        item_xx(VSM_OGA_OD_Backpack_Compact,10);
+        item_xx(VSM_FAPC_Operator_OGA_OD,10);
+        item_xx(rhsusf_Bowman,10);
+        item_xx(VSM_Shemagh_Balaclava2_OD_Peltor_Goggles,10);
+        item_xx(rhsusf_bowman_cap,10);
+        item_xx(VSM_Shemagh_OD,10);
+        item_xx(VSM_MulticamTropic_od_shirt_Camo_SS,10);
+        item_xx(U_O_FullGhillie_ard,10);
+        item_xx(rhs_uniform_g3_blk,10);
+        item_xx(U_B_PilotCoveralls,10);
+        item_xx(VSM_MulticamTropic_Camo_SS,10);
+        item_xx(VSM_MulticamTropic_Crye_Tee_Camo,10);
+        item_xx(VSM_OGA_od_Camo,10);
+        item_xx(VSM_MulticamTropic_tan_pants_Camo_SS,10);
+    };
+};
+
+// Copy this part to ALiVE logistics static data
+[ALIVE_factionDefaultSupplies, "O_ODR", ["O_ODR_AmmoBox","O_ODR_WeaponsBox","O_ODR_LaunchersBox","O_ODR_UniformBox","O_ODR_SupportBox","O_ODR_SupplyBox"]] call ALIVE_fnc_hashSet;
+*/

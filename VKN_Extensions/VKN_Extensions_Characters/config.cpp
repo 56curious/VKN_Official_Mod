@@ -1,3 +1,4 @@
+#include "BIS_AddonInfo.hpp"
 class CfgPatches {
     class VKN_PMC_Characters {
         units[] = {
@@ -184,6 +185,17 @@ class CfgPatches {
             "B_VKN_AEGIR_ASSUALTBOAT_PMC_01",
             "B_VKN_AEGIR_BOARDING_PMC_01",
 
+            "B_Greek_Officer_Basic_Police_01",
+            "B_Greek_Officer_Armed_Police_01",
+            "B_Greek_Officer_Commander_Police_01",
+            "B_Greek_Riot_Officer_Light_Police_01",
+            "B_Greek_Riot_Officer_Police_01",
+            "B_Greek_Riot_Officer_Heavy_Police_01",
+            "B_Greek_Offroader_Police_01",
+            "B_Greek_Tahoe_SUV_Police_01",
+            "B_Greek_Van_Police_01",
+            "B_Greek_Hatchback_Police_01",
+
 
             "I_AP_Bonesetter_01",
             "I_AP_Warlord_01",
@@ -326,7 +338,48 @@ class CfgPatches {
             "O_Ryukyu_Dragons_Army_Tropical_R3_Scout_01",
             "O_Ryukyu_Dragons_Army_Tropical_Wildcat_CAS_01",
             "O_Ryukyu_Dragons_Army_Tropical_Pilot_02",
-            "O_Ryukyu_Dragons_Army_Tropical_F16_Fighting_Dragon_01"
+            "O_Ryukyu_Dragons_Army_Tropical_F16_Fighting_Dragon_01",
+
+            "O_INTArmy_Adrian_Kowalski_WDL_01",
+            "O_INTArmy_Stepan_Andrijovych_Klymenko_WDL_01",
+            "O_INTArmy_Harun_Al_Bashir_WDL_01",
+
+            "O_CHArmy_Commander_WDL_01",
+            "O_CHArmy_Rifleman_WDL_01",
+            "O_CHArmy_Advanced_Rifleman_WDL_01",
+            "O_CHArmy_Autorifleman_WDL_01",
+            "O_CHArmy_Marksman_WDL_01",
+            "O_CHArmy_Rifleman_Light_AT_WDL_01",
+            "O_CHArmy_Rifleman_Heavy_AT_WDL_01",
+            "O_CHArmy_Medic_WDL_01",
+
+            "O_CHRArmy_Officer_WDL_01",
+            "O_CHRArmy_Rifleman_WDL_01",
+            "O_CHRArmy_Autorifleman_WDL_01",
+            "O_CHRArmy_Marksman_WDL_01",
+
+            "O_CHArmy_Rifleman_01",
+            "O_CHArmy_Rifleman_Ex_DDR_01",
+            "O_CHArmy_Rifleman_Female_01",
+            "O_CHArmy_SubMachinegunner_01",
+            "O_CHArmy_Marksman_Hooded_01",
+            "O_CHArmy_Marksman_01",
+
+            "O_Abu_Gunner_Bakr_01",
+            "O_Abu_Gunner_Light_Bakr_01",
+            "O_Abu_Bomber_Bakr_01",
+            "O_Abu_Machine_Gunner_Light_Bakr_01",
+            "O_Abu_Marksman_Bakr_01",
+            "O_Abu_Bonesetter_Bakr_01",
+            "O_Abu_Undercover_Bakr_01",
+            "O_Abu_Undercover_Bakr_02",
+            "O_Abu_Undercover_Bakr_03",
+            "O_Abu_Undercover_Bakr_04",
+            "O_Abu_Offroader_Armed_Bakr_01",
+            "O_Abu_Van_Bakr_01",
+            "O_Abu_Machine_Gunner_Bakr_01",
+            "O_Abu_Gunner_Bakr_02",
+            "O_Abu_Gunner_Bakr_03"
 
         };
         weapons[] = {};
@@ -373,7 +426,6 @@ class CfgPatches {
             "A3_Air_F_EPC_Plane_CAS_01",
             "ace_aircraft",
             "A3_Air_F_Gamma_Plane_Fighter_03",
-            "FIR_F16_F",
             "A3_Air_F_Exp_VTOL_01",
             "A3_Air_F",
             "A3_Air_F_Heli_Light_01",
@@ -407,6 +459,12 @@ class cfgFactionClasses {
     #include "cfgFactionClasses\The_Cartel.hpp"
     #include "cfgFactionClasses\The_Order.hpp"
     #include "cfgFactionClasses\Ryukyu_Dragon_Army.hpp"
+    #include "cfgFactionClasses\CSLA.hpp"
+    #include "cfgFactionClasses\CSLAC.hpp"
+    #include "cfgFactionClasses\CSAA.hpp"
+    #include "cfgFactionClasses\CSM.hpp"
+    #include "cfgFactionClasses\Greek_Police.hpp"
+    #include "cfgFactionClasses\Abu_Bakr.hpp"
 
 };
 
@@ -417,12 +475,21 @@ class cfgFactionClasses {
 class cfgVehicles {
     #include "imports.hpp"
 
+    //Indep
     #include "cfgVehicles\Asian_Paramilitary.hpp"
+
+    //East
     #include "cfgVehicles\Mexican_Guard.hpp"
     #include "cfgVehicles\The_Cartel.hpp"
     #include "cfgVehicles\The_Order.hpp"
     #include "cfgVehicles\Ryukyu_Dragon_Army.hpp"
+    #include "cfgVehicles\CSLA.hpp"
+    #include "cfgVehicles\CSLAC.hpp"
+    #include "cfgVehicles\CSAA.hpp"
+    #include "cfgVehicles\CSM.hpp"
+    #include "cfgVehicles\Abu_Bakr.hpp"
 
+    //West
     #include "cfgVehicles\Viking_PMC_ODIN.hpp"
     #include "cfgVehicles\Viking_PMC_THOR.hpp"
     #include "cfgVehicles\Viking_PMC_VIS.hpp"
@@ -435,6 +502,7 @@ class cfgVehicles {
     #include "cfgVehicles\Viking_PMC_FENRIR.hpp"
     #include "cfgVehicles\Viking_PMC_AEGIR.hpp"
     #include "cfgVehicles\Viking_PMC_BALDER.hpp"
+    #include "cfgVehicles\Greek_Police.hpp"
 
 };
 
@@ -449,6 +517,11 @@ class cfgGroups {
         #include "cfgGroups\The_Cartel.hpp"
         #include "cfgGroups\The_Order.hpp"
         #include "cfgGroups\Ryukyu_Dragon_Army.hpp"
+        #include "cfgGroups\CSLA.hpp"
+        #include "cfgGroups\CSLAC.hpp"
+        #include "cfgGroups\CSAA.hpp"
+        #include "cfgGroups\CSM.hpp"
+        #include "cfgGroups\Abu_Bakr.hpp"
     };
 
     class West {

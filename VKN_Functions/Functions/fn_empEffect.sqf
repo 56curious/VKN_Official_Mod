@@ -17,13 +17,13 @@ _delay_check = 0.01;
 {
 	_x setDamage 0.9;
 	[_x] RemoteExec ["VKN_fnc_empSparky"];
-	sleep _delay_check
+	sleep _delay_check;
 } forEach list_light_emp;
 
 {
 	_x setDamage 1;
 	[_x] RemoteExec ["VKN_fnc_empSparky"];
-	sleep _delay_check
+	sleep _delay_check;
 } forEach static_turrets_emp;
 
 //{_x disableTIEquipment true; _x disableNVGEquipment true; [[_x],"AL_emp\sparky.sqf"] remoteExec ["execVM"];sleep _delay_check} forEach static_turrets_emp;
@@ -69,16 +69,16 @@ _delay_check = 0.01;
 	_x removeItem "Integrated_NVG_TI_1_F";
 	_x removePrimaryWeaponItem "acc_pointer_IR";
 	if (headgear _x in special_helmet_emp) then {
-		removeHeadgear _x
+		removeHeadgear _x;
 	};
 
 	if (secondaryWeapon _x in special_launchers_emp) then {
-		_x removeWeaponGlobal (secondaryWeapon _x)
+		_x removeWeaponGlobal (secondaryWeapon _x);
 	};
 
 	if (emp_dam>0) then {
-		_x setDamage ((getDammage _x) + emp_dam)
+		_x setDamage ((getDammage _x) + emp_dam);
 	};
 
-	sleep _delay_check
+	sleep _delay_check;
 } forEach list_man_emp;

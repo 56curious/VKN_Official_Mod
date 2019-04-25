@@ -227,9 +227,51 @@ _EnableRagdollAIVal = profileNamespace getVariable ["VKN_EnableRagdollAIVal_var"
   {
     params ["_value"];
     if (isClass(configFile >> "CfgPatches" >> "ace_main")) then {
-        _EnableRagdollAIVal = profileNamespace setVariable ["VKN_EnableRagdollAIVal_var", true];
+        _EnableRagdollAIVal = profileNamespace setVariable ["VKN_EnableRagdollAIVal_var", _value];
     } else {
         systemChat "ACE is not on your client, setting will not take effect.";
     };
+  }
+] call CBA_Settings_fnc_init;
+
+
+
+_MainMenuServerIPVal = profileNamespace getVariable ["VKN_MainMenuServerIPVal_var", "127.0.0.1"];
+_MainMenuServerPortVal = profileNamespace getVariable ["VKN_MainMenuServerPortVal_var", "2302"];
+_MainMenuServerPasswordVal = profileNamespace getVariable ["VKN_MainMenuServerPasswordVal_var", ""];
+[
+  "VKN_joinserver_ip",
+  "EDITBOX",
+  ["Main Main Server IP", "Set the IP for the server you'd like to instantly join to."],
+  "VKN Main Menu Server",
+  _MainMenuServerIPVal,
+  true,
+  {
+    params ["_value"];
+    _MainMenuServerIPVal = profileNamespace setVariable ["VKN_MainMenuServerIPVal_var", _value];
+  }
+] call CBA_Settings_fnc_init;
+[
+  "VKN_joinserver_port",
+  "EDITBOX",
+  ["Main Main Server Port", "Set the port for the server you'd like to instantly join to."],
+  "VKN Main Menu Server",
+  _MainMenuServerPortVal,
+  true,
+  {
+    params ["_value"];
+    _MainMenuServerPortVal = profileNamespace setVariable ["VKN_MainMenuServerPortVal_var", _value];
+  }
+] call CBA_Settings_fnc_init;
+[
+  "VKN_joinserver_password",
+  "EDITBOX",
+  ["Main Main Server Password", "Set the password for the server you'd like to instantly join to."],
+  "VKN Main Menu Server",
+  _MainMenuServerPasswordVal,
+  true,
+  {
+    params ["_value"];
+    _MainMenuServerPasswordVal = profileNamespace setVariable ["VKN_MainMenuServerPasswordVal_var", _value];
   }
 ] call CBA_Settings_fnc_init;

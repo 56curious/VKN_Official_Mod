@@ -1,5 +1,8 @@
-class B_VKN_VCG_SUNRAY_PMC_01 : B_VKN_THOR_Operator_PMC_01_OCimport_02 {
-    author = "Curious";
+//Import due class being defined before base import
+class B_VKN_THOR_Operator_PMC_01: B_VKN_ODIN_Operator_PMC_01 { scope = 0; };
+
+class B_VKN_VCG_SUNRAY_PMC_01 : B_VKN_THOR_Operator_PMC_01 {
+    author = "Lion";
     scope = 2;
     scopeCurator = 2;
     displayName = "Sunray";
@@ -39,7 +42,7 @@ class B_VKN_VCG_SUNRAY_PMC_01 : B_VKN_THOR_Operator_PMC_01_OCimport_02 {
 };
 
 class B_VKN_VCG_BASEPLATE_PMC_01 : B_VKN_VCG_SUNRAY_PMC_01 {
-    author = "Curious";
+    author = "Lion";
     scope = 2;
     scopeCurator = 2;
     displayName = "Baseplate";
@@ -79,7 +82,7 @@ class B_VKN_VCG_BASEPLATE_PMC_01 : B_VKN_VCG_SUNRAY_PMC_01 {
 };
 
 class B_VKN_VCG_WOLFSDEN_PMC_01 : B_VKN_VCG_SUNRAY_PMC_01 {
-    author = "Curious";
+    author = "Lion";
     scope = 2;
     scopeCurator = 2;
     displayName = "Wolfs Den";
@@ -119,7 +122,7 @@ class B_VKN_VCG_WOLFSDEN_PMC_01 : B_VKN_VCG_SUNRAY_PMC_01 {
 };
 
 class B_VKN_VCG_FIREFLY_PMC_01 : B_VKN_VCG_WOLFSDEN_PMC_01 {
-    author = "Curious";
+    author = "Lion";
     scope = 2;
     scopeCurator = 2;
     displayName = "Firefly";

@@ -1,4 +1,5 @@
 class I_AP_Bonesetter_01 : LOP_AFRCiv_Soldier_Medic_OCimport_02 {
+    editorPreview = VKN_Extensions_Characters\Editor Preview Images\I_AP_Bonesetter_01.paa;
     author = "Curious";
     scope = 2;
     scopeCurator = 2;
@@ -39,6 +40,7 @@ class I_AP_Bonesetter_01 : LOP_AFRCiv_Soldier_Medic_OCimport_02 {
 };
 
 class I_AP_Warlord_01 : LOP_AFRCiv_Soldier_SL_OCimport_02 {
+    editorPreview = VKN_Extensions_Characters\Editor Preview Images\I_AP_Warlord_01.paa;
     author = "Curious";
     scope = 2;
     scopeCurator = 2;
@@ -77,6 +79,7 @@ class I_AP_Warlord_01 : LOP_AFRCiv_Soldier_SL_OCimport_02 {
 };
 
 class I_AP_Bandit_PKM_01 : LOP_AFRCiv_Soldier_AR_OCimport_02 {
+    editorPreview = VKN_Extensions_Characters\Editor Preview Images\I_AP_Bandit_PKM_01.paa;
     author = "Curious";
     scope = 2;
     scopeCurator = 2;
@@ -117,6 +120,7 @@ class I_AP_Bandit_PKM_01 : LOP_AFRCiv_Soldier_AR_OCimport_02 {
 };
 
 class I_AP_Bandit_RPG_01 : LOP_AFRCiv_Soldier_AT_OCimport_02 {
+    editorPreview = VKN_Extensions_Characters\Editor Preview Images\I_AP_Bandit_RPG_01.paa;
     author = "Curious";
     scope = 2;
     scopeCurator = 2;
@@ -157,6 +161,7 @@ class I_AP_Bandit_RPG_01 : LOP_AFRCiv_Soldier_AT_OCimport_02 {
 };
 
 class I_AP_Bandit_SVD_01 : LOP_AFRCiv_Soldier_Marksman_OCimport_02 {
+    editorPreview = VKN_Extensions_Characters\Editor Preview Images\I_AP_Bandit_SVD_01.paa;
     author = "Curious";
     scope = 2;
     scopeCurator = 2;
@@ -197,6 +202,7 @@ class I_AP_Bandit_SVD_01 : LOP_AFRCiv_Soldier_Marksman_OCimport_02 {
 };
 
 class I_AP_Bomber_01 : LOP_AFRCiv_Soldier_IED_OCimport_02 {
+    editorPreview = VKN_Extensions_Characters\Editor Preview Images\I_AP_Bomber_01.paa;
     author = "Curious";
     scope = 2;
     scopeCurator = 2;
@@ -235,6 +241,7 @@ class I_AP_Bomber_01 : LOP_AFRCiv_Soldier_IED_OCimport_02 {
 };
 
 class I_AP_Bandit_01 : LOP_AFRCiv_Soldier_OCimport_02 {
+    editorPreview = VKN_Extensions_Characters\Editor Preview Images\I_AP_Bandit_01.paa;
     author = "Curious";
     scope = 2;
     scopeCurator = 2;
@@ -273,6 +280,7 @@ class I_AP_Bandit_01 : LOP_AFRCiv_Soldier_OCimport_02 {
 };
 
 class I_AP_Bandit_Driver_01 : LOP_AFRCiv_Driver_OCimport_02 {
+    editorPreview = VKN_Extensions_Characters\Editor Preview Images\I_AP_Bandit_Driver_01.paa;
     author = "Curious";
     scope = 2;
     scopeCurator = 2;
@@ -311,6 +319,7 @@ class I_AP_Bandit_Driver_01 : LOP_AFRCiv_Driver_OCimport_02 {
 };
 
 class I_AP_Bandit_AKM_GL_01 : LOP_AFRCiv_Soldier_GL_OCimport_02 {
+    editorPreview = VKN_Extensions_Characters\Editor Preview Images\I_AP_Bandit_AKM_GL_01.paa;
     author = "Curious";
     scope = 2;
     scopeCurator = 2;
@@ -349,6 +358,7 @@ class I_AP_Bandit_AKM_GL_01 : LOP_AFRCiv_Soldier_GL_OCimport_02 {
 };
 
 class I_AP_Warlord_02 : LOP_AFR_Infantry_SL_OCimport_02 {
+    editorPreview = VKN_Extensions_Characters\Editor Preview Images\I_AP_Warlord_02.paa;
     author = "Curious";
     scope = 2;
     scopeCurator = 2;
@@ -387,6 +397,7 @@ class I_AP_Warlord_02 : LOP_AFR_Infantry_SL_OCimport_02 {
 };
 
 class I_AP_Bonesetter_02 : LOP_AFR_Infantry_Corpsman_OCimport_02 {
+    editorPreview = VKN_Extensions_Characters\Editor Preview Images\I_AP_Bonesetter_02.paa;
     author = "Curious";
     scope = 2;
     scopeCurator = 2;
@@ -427,6 +438,7 @@ class I_AP_Bonesetter_02 : LOP_AFR_Infantry_Corpsman_OCimport_02 {
 };
 
 class I_AP_Bandit_PKM_02 : LOP_AFR_Infantry_AR_OCimport_02 {
+    editorPreview = VKN_Extensions_Characters\Editor Preview Images\I_AP_Bandit_PKM_02.paa;
     author = "Curious";
     scope = 2;
     scopeCurator = 2;
@@ -467,6 +479,7 @@ class I_AP_Bandit_PKM_02 : LOP_AFR_Infantry_AR_OCimport_02 {
 };
 
 class I_AP_Machine_Gunner_Assistant_01 : LOP_AFR_Infantry_AR_Asst_OCimport_02 {
+    editorPreview = VKN_Extensions_Characters\Editor Preview Images\I_AP_Machine_Gunner_Assistant_01.paa;
     author = "Curious";
     scope = 2;
     scopeCurator = 2;
@@ -507,6 +520,7 @@ class I_AP_Machine_Gunner_Assistant_01 : LOP_AFR_Infantry_AR_Asst_OCimport_02 {
 };
 
 class I_AP_Bandit_RPG_02 : LOP_AFR_Infantry_AT_OCimport_02 {
+    editorPreview = VKN_Extensions_Characters\Editor Preview Images\I_AP_Bandit_RPG_02.paa;
     author = "Curious";
     scope = 2;
     scopeCurator = 2;
@@ -547,6 +561,7 @@ class I_AP_Bandit_RPG_02 : LOP_AFR_Infantry_AT_OCimport_02 {
 };
 
 class I_AP_Bandit_SVD_02 : LOP_AFR_Infantry_Marksman_OCimport_02 {
+    editorPreview = VKN_Extensions_Characters\Editor Preview Images\I_AP_Bandit_SVD_02.paa;
     author = "Curious";
     scope = 2;
     scopeCurator = 2;
@@ -587,6 +602,7 @@ class I_AP_Bandit_SVD_02 : LOP_AFR_Infantry_Marksman_OCimport_02 {
 };
 
 class I_AP_Bomber_02 : LOP_AFR_Infantry_IED_OCimport_02 {
+    editorPreview = VKN_Extensions_Characters\Editor Preview Images\I_AP_Bomber_02.paa;
     author = "Curious";
     scope = 2;
     scopeCurator = 2;
@@ -625,6 +641,7 @@ class I_AP_Bomber_02 : LOP_AFR_Infantry_IED_OCimport_02 {
 };
 
 class I_AP_Bandit_AKM_01 : LOP_AFR_Infantry_Rifleman_OCimport_02 {
+    editorPreview = VKN_Extensions_Characters\Editor Preview Images\I_AP_Bandit_AKM_01.paa;
     author = "Curious";
     scope = 2;
     scopeCurator = 2;
@@ -663,6 +680,7 @@ class I_AP_Bandit_AKM_01 : LOP_AFR_Infantry_Rifleman_OCimport_02 {
 };
 
 class I_AP_Bandit_M16A4_01 : LOP_AFR_Infantry_Rifleman_2_OCimport_02 {
+    editorPreview = VKN_Extensions_Characters\Editor Preview Images\I_AP_Bandit_M16A4_01.paa;
     author = "Curious";
     scope = 2;
     scopeCurator = 2;
@@ -701,6 +719,7 @@ class I_AP_Bandit_M16A4_01 : LOP_AFR_Infantry_Rifleman_2_OCimport_02 {
 };
 
 class I_AP_Bandit_Lee_Enfield_01 : LOP_AFR_Infantry_Rifleman_3_OCimport_02 {
+    editorPreview = VKN_Extensions_Characters\Editor Preview Images\I_AP_Bandit_Lee_Enfield_01.paa;
     author = "Curious";
     scope = 2;
     scopeCurator = 2;
@@ -739,6 +758,7 @@ class I_AP_Bandit_Lee_Enfield_01 : LOP_AFR_Infantry_Rifleman_3_OCimport_02 {
 };
 
 class I_AP_Bandit_AKM_PM_63_01 : LOP_AFR_Infantry_Rifleman_4_OCimport_02 {
+    editorPreview = VKN_Extensions_Characters\Editor Preview Images\I_AP_Bandit_AKM_PM_63_01.paa;
     author = "Curious";
     scope = 2;
     scopeCurator = 2;
@@ -777,6 +797,7 @@ class I_AP_Bandit_AKM_PM_63_01 : LOP_AFR_Infantry_Rifleman_4_OCimport_02 {
 };
 
 class I_AP_Bandit_Driver_02 : LOP_AFR_Driver_OCimport_02 {
+    editorPreview = VKN_Extensions_Characters\Editor Preview Images\I_AP_Bandit_Driver_02.paa;
     author = "Curious";
     scope = 2;
     scopeCurator = 2;
@@ -815,6 +836,7 @@ class I_AP_Bandit_Driver_02 : LOP_AFR_Driver_OCimport_02 {
 };
 
 class I_AP_Bandit_AKM_GL_02 : LOP_AFR_Infantry_GL_OCimport_02 {
+    editorPreview = VKN_Extensions_Characters\Editor Preview Images\I_AP_Bandit_AKM_GL_02.paa;
     author = "Curious";
     scope = 2;
     scopeCurator = 2;
@@ -853,6 +875,7 @@ class I_AP_Bandit_AKM_GL_02 : LOP_AFR_Infantry_GL_OCimport_02 {
 };
 
 class I_AP_Bandit_Crewman_01 : LOP_AFR_Driver_OCimport_02 {
+    editorPreview = VKN_Extensions_Characters\Editor Preview Images\I_AP_Bandit_Crewman_01.paa;
     author = "Curious";
     scope = 2;
     scopeCurator = 2;
@@ -891,6 +914,7 @@ class I_AP_Bandit_Crewman_01 : LOP_AFR_Driver_OCimport_02 {
 };
 
 class I_AP_BTR_60PB_01 : LOP_AFR_BTR60_OCimport_02 {
+    editorPreview = VKN_Extensions_Characters\Editor Preview Images\I_AP_BTR_60PB_01.paa;
     author = "Curious";
     scope = 2;
     scopeCurator = 2;
@@ -930,6 +954,7 @@ class I_AP_BTR_60PB_01 : LOP_AFR_BTR60_OCimport_02 {
 };
 
 class I_AP_T72B_obr_1984g_01 : LOP_AFR_T72BA_OCimport_02 {
+    editorPreview = VKN_Extensions_Characters\Editor Preview Images\I_AP_T72B_obr_1984g_01.paa;
     author = "Curious";
     scope = 2;
     scopeCurator = 2;
@@ -959,6 +984,7 @@ class I_AP_T72B_obr_1984g_01 : LOP_AFR_T72BA_OCimport_02 {
 };
 
 class I_AP_T72B_obr_1985_01 : LOP_AFR_T72BB_OCimport_02 {
+    editorPreview = VKN_Extensions_Characters\Editor Preview Images\I_AP_T72B_obr_1985_01.paa;
     author = "Curious";
     scope = 2;
     scopeCurator = 2;
@@ -988,6 +1014,7 @@ class I_AP_T72B_obr_1985_01 : LOP_AFR_T72BB_OCimport_02 {
 };
 
 class I_AP_M113A3_M2_01 : LOP_AFR_M113_W_OCimport_02 {
+    editorPreview = VKN_Extensions_Characters\Editor Preview Images\I_AP_M113A3_M2_01.paa;
     author = "Curious";
     scope = 2;
     scopeCurator = 2;
@@ -1019,6 +1046,7 @@ class I_AP_M113A3_M2_01 : LOP_AFR_M113_W_OCimport_02 {
 };
 
 class I_AP_T34_85M_01 : LOP_AFR_T34_OCimport_02 {
+    editorPreview = VKN_Extensions_Characters\Editor Preview Images\I_AP_T34_85M_01.paa;
     author = "Curious";
     scope = 2;
     scopeCurator = 2;
@@ -1049,6 +1077,7 @@ class I_AP_T34_85M_01 : LOP_AFR_T34_OCimport_02 {
 };
 
 class I_AP_T55A_01 : LOP_AFR_T55_OCimport_02 {
+    editorPreview = VKN_Extensions_Characters\Editor Preview Images\I_AP_T55A_01.paa;
     author = "Curious";
     scope = 2;
     scopeCurator = 2;
@@ -1078,6 +1107,7 @@ class I_AP_T55A_01 : LOP_AFR_T55_OCimport_02 {
 };
 
 class I_AP_Truck_cargo_01 : LOP_AFR_Truck_OCimport_02 {
+    editorPreview = VKN_Extensions_Characters\Editor Preview Images\I_AP_Truck_cargo_01.paa;
     author = "Curious";
     scope = 2;
     scopeCurator = 2;
@@ -1116,6 +1146,7 @@ class I_AP_Truck_cargo_01 : LOP_AFR_Truck_OCimport_02 {
 };
 
 class I_AP_Offroad_01 : LOP_AFR_Offroad_OCimport_02 {
+    editorPreview = VKN_Extensions_Characters\Editor Preview Images\I_AP_Offroad_01.paa;
     author = "Curious";
     scope = 2;
     scopeCurator = 2;
@@ -1148,6 +1179,7 @@ class I_AP_Offroad_01 : LOP_AFR_Offroad_OCimport_02 {
 };
 
 class I_AP_Offroad_M2_01 : LOP_AFR_Offroad_M2_OCimport_02 {
+    editorPreview = VKN_Extensions_Characters\Editor Preview Images\I_AP_Offroad_M2_01.paa;
     author = "Curious";
     scope = 2;
     scopeCurator = 2;
@@ -1177,6 +1209,7 @@ class I_AP_Offroad_M2_01 : LOP_AFR_Offroad_M2_OCimport_02 {
 };
 
 class I_AP_Land_Rover_01 : LOP_AFR_Landrover_OCimport_02 {
+    editorPreview = VKN_Extensions_Characters\Editor Preview Images\I_AP_Land_Rover_01.paa;
     author = "Curious";
     scope = 2;
     scopeCurator = 2;
@@ -1201,6 +1234,7 @@ class I_AP_Land_Rover_01 : LOP_AFR_Landrover_OCimport_02 {
 };
 
 class I_AP_Land_rover_M2_01 : LOP_AFR_Landrover_M2_OCimport_02 {
+    editorPreview = VKN_Extensions_Characters\Editor Preview Images\I_AP_Land_rover_M2_01.paa;
     author = "Curious";
     scope = 2;
     scopeCurator = 2;
@@ -1230,6 +1264,7 @@ class I_AP_Land_rover_M2_01 : LOP_AFR_Landrover_M2_OCimport_02 {
 };
 
 class I_AP_Land_Rover_SPG_01 : LOP_AFR_Landrover_SPG9_OCimport_02 {
+    editorPreview = VKN_Extensions_Characters\Editor Preview Images\I_AP_Land_Rover_SPG_01.paa;
     author = "Curious";
     scope = 2;
     scopeCurator = 2;
@@ -1259,6 +1294,7 @@ class I_AP_Land_Rover_SPG_01 : LOP_AFR_Landrover_SPG9_OCimport_02 {
 };
 
 class I_AP_Nissan_PKM_01 : LOP_AFR_Nissan_PKM_OCimport_02 {
+    editorPreview = VKN_Extensions_Characters\Editor Preview Images\I_AP_Nissan_PKM_01.paa;
     author = "Curious";
     scope = 2;
     scopeCurator = 2;
@@ -1288,6 +1324,7 @@ class I_AP_Nissan_PKM_01 : LOP_AFR_Nissan_PKM_OCimport_02 {
 };
 
 class I_AP_Mi_8MT_Cargo_01 : LOP_UA_Mi8MT_Cargo_OCimport_02 {
+    editorPreview = VKN_Extensions_Characters\Editor Preview Images\I_AP_Mi_8MT_Cargo_01.paa;
     author = "Curious";
     scope = 2;
     scopeCurator = 2;
@@ -1320,6 +1357,7 @@ class I_AP_Mi_8MT_Cargo_01 : LOP_UA_Mi8MT_Cargo_OCimport_02 {
 };
 
 class I_AP_Mi_8MTV_3FAB_01 : LOP_UA_Mi8MTV3_FAB_OCimport_02 {
+    editorPreview = VKN_Extensions_Characters\Editor Preview Images\I_AP_Mi_8MTV_3FAB_01.paa;
     author = "Curious";
     scope = 2;
     scopeCurator = 2;
@@ -1352,6 +1390,7 @@ class I_AP_Mi_8MTV_3FAB_01 : LOP_UA_Mi8MTV3_FAB_OCimport_02 {
 };
 
 class I_AP_Mi_8MTV_3UPK_01 : LOP_UA_Mi8MTV3_UPK23_OCimport_02 {
+    editorPreview = VKN_Extensions_Characters\Editor Preview Images\I_AP_Mi_8MTV_3UPK_01.paa;
     author = "Curious";
     scope = 2;
     scopeCurator = 2;

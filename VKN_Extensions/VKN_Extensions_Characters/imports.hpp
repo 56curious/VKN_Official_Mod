@@ -966,8 +966,6 @@ class SoldierWB;
 class SoldierWB_OCimport_01 : SoldierWB { scope = 0; class EventHandlers; };
 class SoldierWB_OCimport_02 : SoldierWB_OCimport_01 { class EventHandlers; };
 
-class B_VKN_THOR_Operator_PMC_01_OCimport_02 : SoldierWB_OCimport_02 {};
-
 class UK3CB_BAF_RHIB_HMG;
 class UK3CB_BAF_RHIB_HMG_OCimport_01 : UK3CB_BAF_RHIB_HMG { scope = 0; class EventHandlers; class Turrets; };
 class UK3CB_BAF_RHIB_HMG_OCimport_02 : UK3CB_BAF_RHIB_HMG_OCimport_01 {
@@ -1337,5 +1335,99 @@ class RHS_CH_47F_10_OCimport_02 : RHS_CH_47F_10_OCimport_01 {
         class RightDoorGun;
         class CargoTurret_01;
         class CargoTurret_02;
+    };
+};
+
+
+//////
+//////  CSLA / CSLAC / CSAA
+//////
+
+class LOP_ChDKZ_Infantry_Commander;
+class LOP_ChDKZ_Infantry_Commander_OCimport_01 : LOP_ChDKZ_Infantry_Commander { scope = 0; class EventHandlers; };
+class LOP_ChDKZ_Infantry_Commander_OCimport_02 : LOP_ChDKZ_Infantry_Commander_OCimport_01 { class EventHandlers; };
+
+
+
+//////
+//////  Abu Bakr
+//////
+
+class LOP_ISTS_OPF_Infantry_Rifleman;
+class LOP_ISTS_OPF_Infantry_Rifleman_OCimport_01 : LOP_ISTS_OPF_Infantry_Rifleman { scope = 0; class EventHandlers; };
+class LOP_ISTS_OPF_Infantry_Rifleman_OCimport_02 : LOP_ISTS_OPF_Infantry_Rifleman_OCimport_01 { class EventHandlers; };
+
+class LOP_AM_OPF_Infantry_Engineer;
+class LOP_AM_OPF_Infantry_Engineer_OCimport_01 : LOP_AM_OPF_Infantry_Engineer { scope = 0; class EventHandlers; };
+class LOP_AM_OPF_Infantry_Engineer_OCimport_02 : LOP_AM_OPF_Infantry_Engineer_OCimport_01 { class EventHandlers; };
+
+class LOP_AM_OPF_Infantry_AR;
+class LOP_AM_OPF_Infantry_AR_OCimport_01 : LOP_AM_OPF_Infantry_AR { scope = 0; class EventHandlers; };
+class LOP_AM_OPF_Infantry_AR_OCimport_02 : LOP_AM_OPF_Infantry_AR_OCimport_01 { class EventHandlers; };
+
+class LOP_AM_OPF_Infantry_Marksman;
+class LOP_AM_OPF_Infantry_Marksman_OCimport_01 : LOP_AM_OPF_Infantry_Marksman { scope = 0; class EventHandlers; };
+class LOP_AM_OPF_Infantry_Marksman_OCimport_02 : LOP_AM_OPF_Infantry_Marksman_OCimport_01 { class EventHandlers; };
+
+class LOP_AM_OPF_Infantry_Corpsman;
+class LOP_AM_OPF_Infantry_Corpsman_OCimport_01 : LOP_AM_OPF_Infantry_Corpsman { scope = 0; class EventHandlers; };
+class LOP_AM_OPF_Infantry_Corpsman_OCimport_02 : LOP_AM_OPF_Infantry_Corpsman_OCimport_01 { class EventHandlers; };
+
+class I_C_Offroad_02_LMG_F;
+class I_C_Offroad_02_LMG_F_OCimport_01 : I_C_Offroad_02_LMG_F { scope = 0; class EventHandlers; class Turrets; };
+class I_C_Offroad_02_LMG_F_OCimport_02 : I_C_Offroad_02_LMG_F_OCimport_01 {
+    class EventHandlers;
+    class Turrets : Turrets {
+        class LMG_Turret;
+        class CargoTurret_01;
+    };
+};
+
+class I_G_Van_02_vehicle_F;
+class I_G_Van_02_vehicle_F_OCimport_01 : I_G_Van_02_vehicle_F { scope = 0; class EventHandlers; class Turrets; };
+class I_G_Van_02_vehicle_F_OCimport_02 : I_G_Van_02_vehicle_F_OCimport_01 {
+    class EventHandlers;
+    class Turrets : Turrets {
+        class CargoTurret_01;
+        class CargoTurret_02;
+        class CargoTurret_03;
+        class CargoTurret_04;
+    };
+};
+
+
+
+//////
+//////  Greek Police
+//////
+
+class B_GEN_Soldier_F;
+class B_GEN_Soldier_F_OCimport_01 : B_GEN_Soldier_F { scope = 0; class EventHandlers; };
+class B_GEN_Soldier_F_OCimport_02 : B_GEN_Soldier_F_OCimport_01 { class EventHandlers; };
+
+class B_GEN_Offroad_01_gen_F;
+class B_GEN_Offroad_01_gen_F_OCimport_01 : B_GEN_Offroad_01_gen_F { scope = 0; class EventHandlers; class Turrets; };
+class B_GEN_Offroad_01_gen_F_OCimport_02 : B_GEN_Offroad_01_gen_F_OCimport_01 {
+    class EventHandlers;
+    class Turrets : Turrets {
+        class CargoTurret_01;
+        class CargoTurret_02;
+        class CargoTurret_03;
+        class CargoTurret_04;
+    };
+};
+
+class B_VKN_tahoe_UNM_PMC_01;
+class B_VKN_tahoe_UNM_PMC_01_OCimport_01 : B_VKN_tahoe_UNM_PMC_01 { scope = 0; class EventHandlers; };
+class B_VKN_tahoe_UNM_PMC_01_OCimport_02 : B_VKN_tahoe_UNM_PMC_01_OCimport_01 { scope = 0; class EventHandlers; };
+
+class B_GEN_Van_02_transport_F;
+class B_GEN_Van_02_transport_F_OCimport_01 : B_GEN_Van_02_transport_F { scope = 0; class EventHandlers; class Turrets; };
+class B_GEN_Van_02_transport_F_OCimport_02 : B_GEN_Van_02_transport_F_OCimport_01 {
+    class EventHandlers;
+    class Turrets : Turrets {
+        class CargoTurret_01;
+        class CargoTurret_02;
+        class CargoTurret_03;
     };
 };

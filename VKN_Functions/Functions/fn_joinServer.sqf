@@ -9,15 +9,23 @@ params
     ["_TIMEOUT", 30]
 ];
 
-/*
-Check CBA Cache
-*/
-private _server = format ["%1:%2", _IP, _PORT];
-private _passwordCache = profileNamespace getVariable ["cba_ui_ServerPasswords", [[], []]];
-private _index = (_passwordCache select 0) find _server;
-private _password = (_passwordCache select 1) param [_index, ""];
+_MainMenuServerIPVal = profileNamespace getVariable ["VKN_MainMenuServerIPVal_var", "127.0.0.1"];
+_MainMenuServerPortVal = profileNamespace getVariable ["VKN_MainMenuServerPortVal_var", "2302"];
+_MainMenuServerPasswordVal = profileNamespace getVariable ["VKN_MainMenuServerPasswordVal_var", ""];
 
-_PASS = _password;
+if (isClass(configFile >> "CfgPatches" >> "cba_settings")) then {
+	/*
+	Check CBA Cache
+	*/
+	private _server = format ["%1:%2", _IP, _PORT];
+	private _passwordCache = profileNamespace getVariable ["cba_ui_ServerPasswords", [[], []]];
+	private _index = (_passwordCache select 0) find _server;
+	private _password = (_passwordCache select 1) param [_index, ""];
+
+	_PASS = _password;
+
+	if (_PASS == "") then { _PASS = _MainMenuServerPasswordVal; }; //If CBA returns false, fall back to settings.
+};
 
 ctrlactivate ((ctrlparent (_buttons # 0)) displayctrl 105);
 

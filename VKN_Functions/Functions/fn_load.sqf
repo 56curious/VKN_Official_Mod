@@ -66,11 +66,12 @@ with uiNamespace do
 			} else {
 
 				_pictureMap = format ["\VKN_Misc\Loading Screen\LoadingScreen%1.paa", selectRandom [1,2,3,4,5,6,7,8,9,10,11,12]];
-
+			};
 				/*
 				_worldName = getText (missionConfigFile >> "briefingname");
 				if (_worldName == "") then {_worldName = gettext (missionconfigfile >> "onLoadName");};
 				_loadingName = _worldName call (uinamespace getvariable "bis_fnc_localize");
+				*/
 
 				_loadingTextConfig = gettext (missionconfigfile >> "onLoadMission");
 				_loadingText = _loadingTextConfig;
@@ -78,8 +79,6 @@ with uiNamespace do
 				if (_loadingText == "") then {_loadingText = gettext (missionconfigfile >> "overviewText");};
 				//_loadingText = _loadingText call (uinamespace getvariable "bis_fnc_localize");
 				//[missionconfigfile,_ctrlMissionAuthor] call bis_fnc_overviewauthor;
-				*/
-			};
 		};
 
 		if (_pictureMap == "") then {_pictureMap = gettext (_cfgWorld >> "pictureMap"); diag_log format ["cur_PICTUREMAP = %1", str _pictureMap];};

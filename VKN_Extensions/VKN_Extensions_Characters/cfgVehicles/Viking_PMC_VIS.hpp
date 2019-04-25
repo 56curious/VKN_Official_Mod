@@ -1,5 +1,4 @@
-class B_VKN_VIS_AGENT1_PMC_01 : B_VKN_ODIN_OPERATOR_PMC_01 {
-    editorPreview = VKN_Extensions_Characters\Editor Preview Images\B_VKN_VIS_AGENT1_PMC_01.paa;
+class B_VKN_VIS_AGENT1_PMC_01 : B_VKN_ODIN_Operator_PMC_01 {
     author = "Lion";
     scope = 2;
     scopeCurator = 2;
@@ -9,20 +8,20 @@ class B_VKN_VIS_AGENT1_PMC_01 : B_VKN_ODIN_OPERATOR_PMC_01 {
 
     identityTypes[] = {"Head_NATO","LanguageENG_F","G_NATO_default"};
 
-    uniformClass = "U_OrestesBody";
+    uniformClass = "TRYK_U_B_PCUODHs";
 
-    linkedItems[] = {"V_Rangemaster_belt","H_Bandanna_surfer","ItemMap","O_UavTerminal","tf_anprc152_2","tf_microdagr"};
-    respawnlinkedItems[] = {"V_Rangemaster_belt","H_Bandanna_surfer","ItemMap","O_UavTerminal","tf_anprc152_2","tf_microdagr"};
+    linkedItems[] = {"V_Rangemaster_belt","ItemMap","O_UavTerminal","tf_anprc152_2","tf_microdagr"};
+    respawnlinkedItems[] = {"V_Rangemaster_belt","ItemMap","O_UavTerminal","tf_anprc152_2","tf_microdagr"};
 
     weapons[] = {"SMA_HK416CUSTOMCQBvfgB","rhsusf_weap_glock17g4","Laserdesignator_03"};
     respawnWeapons[] = {"SMA_HK416CUSTOMCQBvfgB","rhsusf_weap_glock17g4","Laserdesignator_03"};
 
-    magazines[] = {"rhs_mag_30Rnd_556x45_M855A1_Stanag","rhs_mag_30Rnd_556x45_M855A1_Stanag"};
-    respawnMagazines[] = {"rhs_mag_30Rnd_556x45_M855A1_Stanag","rhs_mag_30Rnd_556x45_M855A1_Stanag"};
+    magazines[] = {"rhs_mag_30Rnd_556x45_M855A1_Stanag","rhsusf_mag_17Rnd_9x19_JHP","Laserbatteries","rhs_mag_30Rnd_556x45_M855A1_Stanag","rhsusf_mag_17Rnd_9x19_JHP","Laserbatteries"};
+    respawnMagazines[] = {"rhs_mag_30Rnd_556x45_M855A1_Stanag","rhsusf_mag_17Rnd_9x19_JHP","Laserbatteries","rhs_mag_30Rnd_556x45_M855A1_Stanag","rhsusf_mag_17Rnd_9x19_JHP","Laserbatteries"};
 
     backpack = "B_LegStrapBag_black_F";
 
-    ALiVE_orbatCreator_loadout[] = {{"SMA_HK416CUSTOMCQBvfgB","","rhsusf_acc_anpeq15_bk_light","optic_Holosight_smg_blk_F",{"rhs_mag_30Rnd_556x45_M855A1_Stanag",30},{},"SMA_Gripod_01"},{},{"rhsusf_weap_glock17g4","","","",{},{},""},{"U_OrestesBody",{{"rhs_mag_30Rnd_556x45_M855A1_Stanag",2,30}}},{"V_Rangemaster_belt",{{"ACE_fieldDressing",5},{"ACE_EarPlugs",1},{"ACE_morphine",9},{"rhsusf_mag_17Rnd_9x19_JHP",1,17},{"rhs_mag_30Rnd_556x45_M855A1_Stanag",2,30}}},{"B_LegStrapBag_black_F",{{"ACE_fieldDressing",23},{"ACE_morphine",10},{"rhs_mag_30Rnd_556x45_M855A1_Stanag",5,30}}},"H_Bandanna_surfer","G_Aviator",{"Laserdesignator_03","","","",{},{},""},{"ItemMap","O_UavTerminal","tf_anprc152_2","","tf_microdagr",""}};
+    ALiVE_orbatCreator_loadout[] = {{"SMA_HK416CUSTOMCQBvfgB","","rhsusf_acc_anpeq15_bk_light","optic_Holosight_smg_blk_F",{"rhs_mag_30Rnd_556x45_M855A1_Stanag",30},{},"SMA_Gripod_01"},{},{"rhsusf_weap_glock17g4","","","",{"rhsusf_mag_17Rnd_9x19_JHP",17},{},""},{"TRYK_U_B_PCUODHs",{{"rhs_mag_30Rnd_556x45_M855A1_Stanag",2,30}}},{"V_Rangemaster_belt",{{"ACE_fieldDressing",5},{"ACE_EarPlugs",1},{"ACE_morphine",9},{"rhs_mag_30Rnd_556x45_M855A1_Stanag",2,30}}},{"B_LegStrapBag_black_F",{{"ACE_fieldDressing",23},{"ACE_morphine",10},{"rhs_mag_30Rnd_556x45_M855A1_Stanag",5,30}}},"","G_Aviator",{"Laserdesignator_03","","","",{"Laserbatteries",1},{},""},{"ItemMap","O_UavTerminal","tf_anprc152_2","","tf_microdagr",""}};
 
 
     class EventHandlers : EventHandlers {
@@ -41,7 +40,6 @@ class B_VKN_VIS_AGENT1_PMC_01 : B_VKN_ODIN_OPERATOR_PMC_01 {
 };
 
 class B_VKN_VIS_AGENT2_PMC_01 : B_VKN_VIS_AGENT1_PMC_01 {
-    editorPreview = VKN_Extensions_Characters\Editor Preview Images\B_VKN_VIS_AGENT2_PMC_01.paa;
     author = "Lion";
     scope = 2;
     scopeCurator = 2;
@@ -51,7 +49,7 @@ class B_VKN_VIS_AGENT2_PMC_01 : B_VKN_VIS_AGENT1_PMC_01 {
 
     identityTypes[] = {"Head_NATO","LanguageENG_F","G_NATO_default"};
 
-    uniformClass = "U_C_HunterBody_grn";
+    uniformClass = "TRYK_U_B_UCP_PCUs_R";
 
     linkedItems[] = {"V_Rangemaster_belt","H_Booniehat_khk","ItemMap","O_UavTerminal","tf_anprc152_2","tf_microdagr"};
     respawnlinkedItems[] = {"V_Rangemaster_belt","H_Booniehat_khk","ItemMap","O_UavTerminal","tf_anprc152_2","tf_microdagr"};
@@ -59,12 +57,12 @@ class B_VKN_VIS_AGENT2_PMC_01 : B_VKN_VIS_AGENT1_PMC_01 {
     weapons[] = {"SMA_HK416CUSTOMCQBvfgB","rhsusf_weap_glock17g4","Laserdesignator_03"};
     respawnWeapons[] = {"SMA_HK416CUSTOMCQBvfgB","rhsusf_weap_glock17g4","Laserdesignator_03"};
 
-    magazines[] = {"rhs_mag_30Rnd_556x45_M855A1_Stanag","rhs_mag_30Rnd_556x45_M855A1_Stanag"};
-    respawnMagazines[] = {"rhs_mag_30Rnd_556x45_M855A1_Stanag","rhs_mag_30Rnd_556x45_M855A1_Stanag"};
+    magazines[] = {"rhs_mag_30Rnd_556x45_M855A1_Stanag","rhsusf_mag_17Rnd_9x19_JHP","Laserbatteries","rhs_mag_30Rnd_556x45_M855A1_Stanag","rhsusf_mag_17Rnd_9x19_JHP","Laserbatteries"};
+    respawnMagazines[] = {"rhs_mag_30Rnd_556x45_M855A1_Stanag","rhsusf_mag_17Rnd_9x19_JHP","Laserbatteries","rhs_mag_30Rnd_556x45_M855A1_Stanag","rhsusf_mag_17Rnd_9x19_JHP","Laserbatteries"};
 
     backpack = "B_LegStrapBag_black_F";
 
-    ALiVE_orbatCreator_loadout[] = {{"SMA_HK416CUSTOMCQBvfgB","","rhsusf_acc_anpeq15_bk_light","optic_Holosight_smg_blk_F",{"rhs_mag_30Rnd_556x45_M855A1_Stanag",30},{},"SMA_Gripod_01"},{},{"rhsusf_weap_glock17g4","","","",{},{},""},{"U_C_HunterBody_grn",{{"rhs_mag_30Rnd_556x45_M855A1_Stanag",2,30},{"Laserbatteries",1,1}}},{"V_Rangemaster_belt",{{"ACE_fieldDressing",5},{"ACE_EarPlugs",1},{"ACE_morphine",9},{"rhsusf_mag_17Rnd_9x19_JHP",1,17},{"rhs_mag_30Rnd_556x45_M855A1_Stanag",2,30}}},{"B_LegStrapBag_black_F",{{"ACE_fieldDressing",23},{"ACE_morphine",10},{"rhs_mag_30Rnd_556x45_M855A1_Stanag",5,30}}},"H_Booniehat_khk","G_Aviator",{"Laserdesignator_03","","","",{},{},""},{"ItemMap","O_UavTerminal","tf_anprc152_2","","tf_microdagr",""}};
+    ALiVE_orbatCreator_loadout[] = {{"SMA_HK416CUSTOMCQBvfgB","","rhsusf_acc_anpeq15_bk_light","optic_Holosight_smg_blk_F",{"rhs_mag_30Rnd_556x45_M855A1_Stanag",30},{},"SMA_Gripod_01"},{},{"rhsusf_weap_glock17g4","","","",{"rhsusf_mag_17Rnd_9x19_JHP",17},{},""},{"TRYK_U_B_UCP_PCUs_R",{{"rhs_mag_30Rnd_556x45_M855A1_Stanag",2,30}}},{"V_Rangemaster_belt",{{"ACE_fieldDressing",5},{"ACE_EarPlugs",1},{"ACE_morphine",9},{"rhs_mag_30Rnd_556x45_M855A1_Stanag",2,30}}},{"B_LegStrapBag_black_F",{{"ACE_fieldDressing",23},{"ACE_morphine",10},{"rhs_mag_30Rnd_556x45_M855A1_Stanag",5,30}}},"H_Booniehat_khk","G_Aviator",{"Laserdesignator_03","","","",{"Laserbatteries",1},{},""},{"ItemMap","O_UavTerminal","tf_anprc152_2","","tf_microdagr",""}};
 
 
     class EventHandlers : EventHandlers {
@@ -83,7 +81,6 @@ class B_VKN_VIS_AGENT2_PMC_01 : B_VKN_VIS_AGENT1_PMC_01 {
 };
 
 class B_VKN_VIS_AGENT3_PMC_01 : B_VKN_VIS_AGENT2_PMC_01 {
-    editorPreview = VKN_Extensions_Characters\Editor Preview Images\B_VKN_VIS_AGENT3_PMC_01.paa;
     author = "Lion";
     scope = 2;
     scopeCurator = 2;
@@ -93,7 +90,7 @@ class B_VKN_VIS_AGENT3_PMC_01 : B_VKN_VIS_AGENT2_PMC_01 {
 
     identityTypes[] = {"Head_NATO","LanguageENG_F","G_NATO_default"};
 
-    uniformClass = "U_BG_Guerilla3_1";
+    uniformClass = "VKN_u_Foxcoat_green";
 
     linkedItems[] = {"V_Rangemaster_belt","ItemMap","O_UavTerminal","tf_anprc152_2","tf_microdagr"};
     respawnlinkedItems[] = {"V_Rangemaster_belt","ItemMap","O_UavTerminal","tf_anprc152_2","tf_microdagr"};
@@ -101,12 +98,12 @@ class B_VKN_VIS_AGENT3_PMC_01 : B_VKN_VIS_AGENT2_PMC_01 {
     weapons[] = {"SMA_HK416CUSTOMCQBvfgB","rhsusf_weap_glock17g4","Laserdesignator_03"};
     respawnWeapons[] = {"SMA_HK416CUSTOMCQBvfgB","rhsusf_weap_glock17g4","Laserdesignator_03"};
 
-    magazines[] = {"rhs_mag_30Rnd_556x45_M855A1_Stanag","rhs_mag_30Rnd_556x45_M855A1_Stanag"};
-    respawnMagazines[] = {"rhs_mag_30Rnd_556x45_M855A1_Stanag","rhs_mag_30Rnd_556x45_M855A1_Stanag"};
+    magazines[] = {"rhs_mag_30Rnd_556x45_M855A1_Stanag","rhsusf_mag_17Rnd_9x19_JHP","Laserbatteries","rhs_mag_30Rnd_556x45_M855A1_Stanag","rhsusf_mag_17Rnd_9x19_JHP","Laserbatteries"};
+    respawnMagazines[] = {"rhs_mag_30Rnd_556x45_M855A1_Stanag","rhsusf_mag_17Rnd_9x19_JHP","Laserbatteries","rhs_mag_30Rnd_556x45_M855A1_Stanag","rhsusf_mag_17Rnd_9x19_JHP","Laserbatteries"};
 
     backpack = "B_LegStrapBag_black_F";
 
-    ALiVE_orbatCreator_loadout[] = {{"SMA_HK416CUSTOMCQBvfgB","","rhsusf_acc_anpeq15_bk_light","optic_Holosight_smg_blk_F",{"rhs_mag_30Rnd_556x45_M855A1_Stanag",30},{},"SMA_Gripod_01"},{},{"rhsusf_weap_glock17g4","","","",{},{},""},{"U_BG_Guerilla3_1",{{"rhs_mag_30Rnd_556x45_M855A1_Stanag",2,30},{"Laserbatteries",1,1}}},{"V_Rangemaster_belt",{{"ACE_fieldDressing",5},{"ACE_EarPlugs",1},{"ACE_morphine",9},{"rhsusf_mag_17Rnd_9x19_JHP",1,17},{"rhs_mag_30Rnd_556x45_M855A1_Stanag",2,30}}},{"B_LegStrapBag_black_F",{{"ACE_fieldDressing",23},{"ACE_morphine",10},{"rhs_mag_30Rnd_556x45_M855A1_Stanag",5,30}}},"","G_Aviator",{"Laserdesignator_03","","","",{},{},""},{"ItemMap","O_UavTerminal","tf_anprc152_2","","tf_microdagr",""}};
+    ALiVE_orbatCreator_loadout[] = {{"SMA_HK416CUSTOMCQBvfgB","","rhsusf_acc_anpeq15_bk_light","optic_Holosight_smg_blk_F",{"rhs_mag_30Rnd_556x45_M855A1_Stanag",30},{},"SMA_Gripod_01"},{},{"rhsusf_weap_glock17g4","","","",{"rhsusf_mag_17Rnd_9x19_JHP",17},{},""},{"VKN_u_Foxcoat_green",{{"rhs_mag_30Rnd_556x45_M855A1_Stanag",2,30}}},{"V_Rangemaster_belt",{{"ACE_fieldDressing",5},{"ACE_EarPlugs",1},{"ACE_morphine",9},{"rhs_mag_30Rnd_556x45_M855A1_Stanag",2,30}}},{"B_LegStrapBag_black_F",{{"ACE_fieldDressing",23},{"ACE_morphine",10},{"rhs_mag_30Rnd_556x45_M855A1_Stanag",5,30}}},"","G_Aviator",{"Laserdesignator_03","","","",{"Laserbatteries",1},{},""},{"ItemMap","O_UavTerminal","tf_anprc152_2","","tf_microdagr",""}};
 
 
     class EventHandlers : EventHandlers {
@@ -125,7 +122,6 @@ class B_VKN_VIS_AGENT3_PMC_01 : B_VKN_VIS_AGENT2_PMC_01 {
 };
 
 class B_VKN_VIS_AGENT4_PMC_01 : B_VKN_VIS_AGENT3_PMC_01 {
-    editorPreview = VKN_Extensions_Characters\Editor Preview Images\B_VKN_VIS_AGENT4_PMC_01.paa;
     author = "Lion";
     scope = 2;
     scopeCurator = 2;
@@ -135,7 +131,7 @@ class B_VKN_VIS_AGENT4_PMC_01 : B_VKN_VIS_AGENT3_PMC_01 {
 
     identityTypes[] = {"Head_Euro","LanguageENG_F","G_NATO_default"};
 
-    uniformClass = "U_C_Poloshirt_salmon";
+    uniformClass = "TRYK_U_B_PCUGs_BLK_R";
 
     linkedItems[] = {"V_Rangemaster_belt","H_StrawHat_dark","ItemMap","O_UavTerminal","tf_anprc152_2","tf_microdagr"};
     respawnlinkedItems[] = {"V_Rangemaster_belt","H_StrawHat_dark","ItemMap","O_UavTerminal","tf_anprc152_2","tf_microdagr"};
@@ -143,12 +139,12 @@ class B_VKN_VIS_AGENT4_PMC_01 : B_VKN_VIS_AGENT3_PMC_01 {
     weapons[] = {"SMA_HK416CUSTOMCQBvfgB","rhsusf_weap_glock17g4","Laserdesignator_03"};
     respawnWeapons[] = {"SMA_HK416CUSTOMCQBvfgB","rhsusf_weap_glock17g4","Laserdesignator_03"};
 
-    magazines[] = {"rhs_mag_30Rnd_556x45_M855A1_Stanag","rhs_mag_30Rnd_556x45_M855A1_Stanag"};
-    respawnMagazines[] = {"rhs_mag_30Rnd_556x45_M855A1_Stanag","rhs_mag_30Rnd_556x45_M855A1_Stanag"};
+    magazines[] = {"rhs_mag_30Rnd_556x45_M855A1_Stanag","rhsusf_mag_17Rnd_9x19_JHP","Laserbatteries","rhs_mag_30Rnd_556x45_M855A1_Stanag","rhsusf_mag_17Rnd_9x19_JHP","Laserbatteries"};
+    respawnMagazines[] = {"rhs_mag_30Rnd_556x45_M855A1_Stanag","rhsusf_mag_17Rnd_9x19_JHP","Laserbatteries","rhs_mag_30Rnd_556x45_M855A1_Stanag","rhsusf_mag_17Rnd_9x19_JHP","Laserbatteries"};
 
     backpack = "B_LegStrapBag_black_F";
 
-    ALiVE_orbatCreator_loadout[] = {{"SMA_HK416CUSTOMCQBvfgB","","rhsusf_acc_anpeq15_bk_light","optic_Holosight_smg_blk_F",{"rhs_mag_30Rnd_556x45_M855A1_Stanag",30},{},"SMA_Gripod_01"},{},{"rhsusf_weap_glock17g4","","","",{},{},""},{"U_C_Poloshirt_salmon",{{"rhs_mag_30Rnd_556x45_M855A1_Stanag",2,30}}},{"V_Rangemaster_belt",{{"ACE_fieldDressing",5},{"ACE_EarPlugs",1},{"ACE_morphine",9},{"rhsusf_mag_17Rnd_9x19_JHP",1,17},{"rhs_mag_30Rnd_556x45_M855A1_Stanag",2,30}}},{"B_LegStrapBag_black_F",{{"ACE_fieldDressing",23},{"ACE_morphine",10},{"rhs_mag_30Rnd_556x45_M855A1_Stanag",5,30}}},"H_StrawHat_dark","G_Aviator",{"Laserdesignator_03","","","",{},{},""},{"ItemMap","O_UavTerminal","tf_anprc152_2","","tf_microdagr",""}};
+    ALiVE_orbatCreator_loadout[] = {{"SMA_HK416CUSTOMCQBvfgB","","rhsusf_acc_anpeq15_bk_light","optic_Holosight_smg_blk_F",{"rhs_mag_30Rnd_556x45_M855A1_Stanag",30},{},"SMA_Gripod_01"},{},{"rhsusf_weap_glock17g4","","","",{"rhsusf_mag_17Rnd_9x19_JHP",17},{},""},{"TRYK_U_B_PCUGs_BLK_R",{{"rhs_mag_30Rnd_556x45_M855A1_Stanag",2,30}}},{"V_Rangemaster_belt",{{"ACE_fieldDressing",5},{"ACE_EarPlugs",1},{"ACE_morphine",9},{"rhs_mag_30Rnd_556x45_M855A1_Stanag",2,30}}},{"B_LegStrapBag_black_F",{{"ACE_fieldDressing",23},{"ACE_morphine",10},{"rhs_mag_30Rnd_556x45_M855A1_Stanag",5,30}}},"H_StrawHat_dark","G_Aviator",{"Laserdesignator_03","","","",{"Laserbatteries",1},{},""},{"ItemMap","O_UavTerminal","tf_anprc152_2","","tf_microdagr",""}};
 
 
     class EventHandlers : EventHandlers {
@@ -167,7 +163,6 @@ class B_VKN_VIS_AGENT4_PMC_01 : B_VKN_VIS_AGENT3_PMC_01 {
 };
 
 class B_VKN_VIS_AGENT5_PMC_01 : B_VKN_VIS_AGENT4_PMC_01 {
-    editorPreview = VKN_Extensions_Characters\Editor Preview Images\B_VKN_VIS_AGENT5_PMC_01.paa;
     author = "Lion";
     scope = 2;
     scopeCurator = 2;
@@ -177,7 +172,7 @@ class B_VKN_VIS_AGENT5_PMC_01 : B_VKN_VIS_AGENT4_PMC_01 {
 
     identityTypes[] = {"Head_Euro","LanguageENG_F","G_NATO_default"};
 
-    uniformClass = "U_C_Mechanic_01_F";
+    uniformClass = "TRYK_U_B_PCUGs_gry_R";
 
     linkedItems[] = {"V_Rangemaster_belt","H_Cap_blk","ItemMap","O_UavTerminal","tf_anprc152_2","tf_microdagr"};
     respawnlinkedItems[] = {"V_Rangemaster_belt","H_Cap_blk","ItemMap","O_UavTerminal","tf_anprc152_2","tf_microdagr"};
@@ -185,30 +180,30 @@ class B_VKN_VIS_AGENT5_PMC_01 : B_VKN_VIS_AGENT4_PMC_01 {
     weapons[] = {"SMA_HK416CUSTOMCQBvfgB","rhsusf_weap_glock17g4","Laserdesignator_03"};
     respawnWeapons[] = {"SMA_HK416CUSTOMCQBvfgB","rhsusf_weap_glock17g4","Laserdesignator_03"};
 
-    magazines[] = {"rhs_mag_30Rnd_556x45_M855A1_Stanag","rhs_mag_30Rnd_556x45_M855A1_Stanag"};
-    respawnMagazines[] = {"rhs_mag_30Rnd_556x45_M855A1_Stanag","rhs_mag_30Rnd_556x45_M855A1_Stanag"};
+    magazines[] = {"rhs_mag_30Rnd_556x45_M855A1_Stanag","rhsusf_mag_17Rnd_9x19_JHP","Laserbatteries","rhs_mag_30Rnd_556x45_M855A1_Stanag","rhsusf_mag_17Rnd_9x19_JHP","Laserbatteries"};
+    respawnMagazines[] = {"rhs_mag_30Rnd_556x45_M855A1_Stanag","rhsusf_mag_17Rnd_9x19_JHP","Laserbatteries","rhs_mag_30Rnd_556x45_M855A1_Stanag","rhsusf_mag_17Rnd_9x19_JHP","Laserbatteries"};
 
     backpack = "B_LegStrapBag_black_F";
 
-    ALiVE_orbatCreator_loadout[] = {{"SMA_HK416CUSTOMCQBvfgB","","rhsusf_acc_anpeq15_bk_light","optic_Holosight_smg_blk_F",{"rhs_mag_30Rnd_556x45_M855A1_Stanag",30},{},"SMA_Gripod_01"},{},{"rhsusf_weap_glock17g4","","","",{},{},""},{"U_C_Mechanic_01_F",{{"rhs_mag_30Rnd_556x45_M855A1_Stanag",2,30},{"rhs_mag_30Rnd_556x45_Mk318_Stanag",1,30}}},{"V_Rangemaster_belt",{{"ACE_fieldDressing",5},{"ACE_EarPlugs",1},{"ACE_morphine",9},{"rhsusf_mag_17Rnd_9x19_JHP",1,17},{"rhs_mag_30Rnd_556x45_M855A1_Stanag",2,30}}},{"B_LegStrapBag_black_F",{{"ACE_fieldDressing",23},{"ACE_morphine",10},{"rhs_mag_30Rnd_556x45_M855A1_Stanag",5,30}}},"H_Cap_blk","G_Aviator",{"Laserdesignator_03","","","",{},{},""},{"ItemMap","O_UavTerminal","tf_anprc152_2","","tf_microdagr",""}};
+    ALiVE_orbatCreator_loadout[] = {{"SMA_HK416CUSTOMCQBvfgB","","rhsusf_acc_anpeq15_bk_light","optic_Holosight_smg_blk_F",{"rhs_mag_30Rnd_556x45_M855A1_Stanag",30},{},"SMA_Gripod_01"},{},{"rhsusf_weap_glock17g4","","","",{"rhsusf_mag_17Rnd_9x19_JHP",17},{},""},{"TRYK_U_B_PCUGs_gry_R",{{"rhs_mag_30Rnd_556x45_M855A1_Stanag",2,30},{"rhs_mag_30Rnd_556x45_Mk318_Stanag",1,30}}},{"V_Rangemaster_belt",{{"ACE_fieldDressing",5},{"ACE_EarPlugs",1},{"ACE_morphine",9},{"rhs_mag_30Rnd_556x45_M855A1_Stanag",2,30}}},{"B_LegStrapBag_black_F",{{"ACE_fieldDressing",23},{"ACE_morphine",10},{"rhs_mag_30Rnd_556x45_M855A1_Stanag",5,30}}},"H_Cap_blk","G_Aviator",{"Laserdesignator_03","","","",{"Laserbatteries",1},{},""},{"ItemMap","O_UavTerminal","tf_anprc152_2","","tf_microdagr",""}};
 
 
     class EventHandlers : EventHandlers {
         class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
 
         class ALiVE_orbatCreator {
-            init = "if (local (_this select 0)) then {_onSpawn = {_this = _this select 0;sleep 0.2; _backpack = gettext(configfile >> 'cfgvehicles' >> (typeof _this) >> 'backpack'); waituntil {sleep 0.2; backpack _this == _backpack};if !(_this getVariable ['ALiVE_OverrideLoadout',false]) then {_loadout = getArray(configFile >> 'CfgVehicles' >> (typeOf _this) >> 'ALiVE_orbatCreator_loadout'); _this setunitloadout _loadout;reload _this};};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+            init = "if (local (_this select 0)) then {_onSpawn = {_this = _this select 0;sleep 0.2; _backpack = gettext(configfile >> 'cfgvehicles' >> (typeof _this) >> 'backpack'); waituntil {sleep 0.2; backpack _this == _backpack};if !(_this getVariable ['ALiVE_OverrideLoadout',false]) then {_loadout = getArray(configFile >> 'CfgVehicles' >> (typeOf _this) >> 'ALiVE_orbatCreator_loadout'); _this setunitloadout _loadout;[_this, 'decal_sovietbear'] call BIS_fnc_setUnitInsignia;reload _this};};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
         };
 
     };
 
     // custom attributes (do not delete)
     ALiVE_orbatCreator_owned = 1;
+    ALiVE_orbatCreator_insignia = "decal_sovietbear";
 
 };
 
 class B_VKN_VIS_AGENT6_PMC_01 : B_VKN_VIS_AGENT5_PMC_01 {
-    editorPreview = VKN_Extensions_Characters\Editor Preview Images\B_VKN_VIS_AGENT6_PMC_01.paa;
     author = "Lion";
     scope = 2;
     scopeCurator = 2;
@@ -218,7 +213,7 @@ class B_VKN_VIS_AGENT6_PMC_01 : B_VKN_VIS_AGENT5_PMC_01 {
 
     identityTypes[] = {"Head_NATO","LanguageENG_F","G_NATO_default"};
 
-    uniformClass = "U_C_IDAP_Man_Jeans_F";
+    uniformClass = "TRYK_U_B_PCUODs";
 
     linkedItems[] = {"V_Rangemaster_belt","ItemMap","O_UavTerminal","tf_anprc152_2","tf_microdagr"};
     respawnlinkedItems[] = {"V_Rangemaster_belt","ItemMap","O_UavTerminal","tf_anprc152_2","tf_microdagr"};
@@ -231,25 +226,25 @@ class B_VKN_VIS_AGENT6_PMC_01 : B_VKN_VIS_AGENT5_PMC_01 {
 
     backpack = "B_LegStrapBag_black_F";
 
-    ALiVE_orbatCreator_loadout[] = {{"SMA_HK416CUSTOMCQBvfgB","","rhsusf_acc_anpeq15_bk_light","optic_Holosight_smg_blk_F",{"rhs_mag_30Rnd_556x45_M855A1_Stanag",30},{},"SMA_Gripod_01"},{},{"rhsusf_weap_glock17g4","","","",{"rhsusf_mag_17Rnd_9x19_JHP",17},{},""},{"U_C_IDAP_Man_Jeans_F",{{"rhs_mag_30Rnd_556x45_M855A1_Stanag",2,30},{"rhs_mag_30Rnd_556x45_Mk318_Stanag",1,30}}},{"V_Rangemaster_belt",{{"ACE_fieldDressing",5},{"ACE_EarPlugs",1},{"ACE_morphine",9},{"rhs_mag_30Rnd_556x45_M855A1_Stanag",2,30}}},{"B_LegStrapBag_black_F",{{"ACE_fieldDressing",23},{"ACE_morphine",10},{"rhs_mag_30Rnd_556x45_M855A1_Stanag",5,30}}},"","G_Combat",{"Laserdesignator_03","","","",{"Laserbatteries",1},{},""},{"ItemMap","O_UavTerminal","tf_anprc152_2","","tf_microdagr",""}};
+    ALiVE_orbatCreator_loadout[] = {{"SMA_HK416CUSTOMCQBvfgB","","rhsusf_acc_anpeq15_bk_light","optic_Holosight_smg_blk_F",{"rhs_mag_30Rnd_556x45_M855A1_Stanag",30},{},"SMA_Gripod_01"},{},{"rhsusf_weap_glock17g4","","","",{"rhsusf_mag_17Rnd_9x19_JHP",17},{},""},{"TRYK_U_B_PCUODs",{{"rhs_mag_30Rnd_556x45_M855A1_Stanag",2,30},{"rhs_mag_30Rnd_556x45_Mk318_Stanag",1,30}}},{"V_Rangemaster_belt",{{"ACE_fieldDressing",5},{"ACE_EarPlugs",1},{"ACE_morphine",9},{"rhs_mag_30Rnd_556x45_M855A1_Stanag",2,30}}},{"B_LegStrapBag_black_F",{{"ACE_fieldDressing",23},{"ACE_morphine",10},{"rhs_mag_30Rnd_556x45_M855A1_Stanag",5,30}}},"","G_Combat",{"Laserdesignator_03","","","",{"Laserbatteries",1},{},""},{"ItemMap","O_UavTerminal","tf_anprc152_2","","tf_microdagr",""}};
 
 
     class EventHandlers : EventHandlers {
         class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
 
         class ALiVE_orbatCreator {
-            init = "if (local (_this select 0)) then {_onSpawn = {_this = _this select 0;sleep 0.2; _backpack = gettext(configfile >> 'cfgvehicles' >> (typeof _this) >> 'backpack'); waituntil {sleep 0.2; backpack _this == _backpack};if !(_this getVariable ['ALiVE_OverrideLoadout',false]) then {_loadout = getArray(configFile >> 'CfgVehicles' >> (typeOf _this) >> 'ALiVE_orbatCreator_loadout'); _this setunitloadout _loadout;reload _this};};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+            init = "if (local (_this select 0)) then {_onSpawn = {_this = _this select 0;sleep 0.2; _backpack = gettext(configfile >> 'cfgvehicles' >> (typeof _this) >> 'backpack'); waituntil {sleep 0.2; backpack _this == _backpack};if !(_this getVariable ['ALiVE_OverrideLoadout',false]) then {_loadout = getArray(configFile >> 'CfgVehicles' >> (typeOf _this) >> 'ALiVE_orbatCreator_loadout'); _this setunitloadout _loadout;[_this, 'decal_sovietbear'] call BIS_fnc_setUnitInsignia;reload _this};};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
         };
 
     };
 
     // custom attributes (do not delete)
     ALiVE_orbatCreator_owned = 1;
+    ALiVE_orbatCreator_insignia = "decal_sovietbear";
 
 };
 
 class B_VKN_VIS_AGENT7_PMC_01 : B_VKN_VIS_AGENT6_PMC_01 {
-    editorPreview = VKN_Extensions_Characters\Editor Preview Images\B_VKN_VIS_AGENT7_PMC_01.paa;
     author = "Lion";
     scope = 2;
     scopeCurator = 2;
@@ -259,7 +254,7 @@ class B_VKN_VIS_AGENT7_PMC_01 : B_VKN_VIS_AGENT6_PMC_01 {
 
     identityTypes[] = {"Head_African","LanguageENG_F","G_NATO_default"};
 
-    uniformClass = "U_C_IDAP_Man_cargo_F";
+    uniformClass = "VKN_u_Foxcoat";
 
     linkedItems[] = {"V_Rangemaster_belt","H_Hat_brown","ItemMap","O_UavTerminal","tf_anprc152_2","tf_microdagr"};
     respawnlinkedItems[] = {"V_Rangemaster_belt","H_Hat_brown","ItemMap","O_UavTerminal","tf_anprc152_2","tf_microdagr"};
@@ -267,12 +262,12 @@ class B_VKN_VIS_AGENT7_PMC_01 : B_VKN_VIS_AGENT6_PMC_01 {
     weapons[] = {"SMA_HK416CUSTOMCQBvfgB","rhsusf_weap_glock17g4","Laserdesignator_03"};
     respawnWeapons[] = {"SMA_HK416CUSTOMCQBvfgB","rhsusf_weap_glock17g4","Laserdesignator_03"};
 
-    magazines[] = {"rhs_mag_30Rnd_556x45_M855A1_Stanag","rhs_mag_30Rnd_556x45_M855A1_Stanag"};
-    respawnMagazines[] = {"rhs_mag_30Rnd_556x45_M855A1_Stanag","rhs_mag_30Rnd_556x45_M855A1_Stanag"};
+    magazines[] = {"rhs_mag_30Rnd_556x45_M855A1_Stanag","rhsusf_mag_17Rnd_9x19_JHP","Laserbatteries","rhs_mag_30Rnd_556x45_M855A1_Stanag","rhsusf_mag_17Rnd_9x19_JHP","Laserbatteries"};
+    respawnMagazines[] = {"rhs_mag_30Rnd_556x45_M855A1_Stanag","rhsusf_mag_17Rnd_9x19_JHP","Laserbatteries","rhs_mag_30Rnd_556x45_M855A1_Stanag","rhsusf_mag_17Rnd_9x19_JHP","Laserbatteries"};
 
     backpack = "B_LegStrapBag_black_F";
 
-    ALiVE_orbatCreator_loadout[] = {{"SMA_HK416CUSTOMCQBvfgB","","rhsusf_acc_anpeq15_bk_light","optic_Holosight_smg_blk_F",{"rhs_mag_30Rnd_556x45_M855A1_Stanag",30},{},"SMA_Gripod_01"},{},{"rhsusf_weap_glock17g4","","","",{},{},""},{"U_C_IDAP_Man_cargo_F",{{"rhs_mag_30Rnd_556x45_M855A1_Stanag",2,30},{"rhs_mag_30Rnd_556x45_Mk318_Stanag",1,30}}},{"V_Rangemaster_belt",{{"ACE_fieldDressing",5},{"ACE_EarPlugs",1},{"ACE_morphine",9},{"rhsusf_mag_17Rnd_9x19_JHP",1,17},{"rhs_mag_30Rnd_556x45_M855A1_Stanag",2,30}}},{"B_LegStrapBag_black_F",{{"ACE_fieldDressing",23},{"ACE_morphine",10},{"rhs_mag_30Rnd_556x45_M855A1_Stanag",5,30}}},"H_Hat_brown","G_Aviator",{"Laserdesignator_03","","","",{},{},""},{"ItemMap","O_UavTerminal","tf_anprc152_2","","tf_microdagr",""}};
+    ALiVE_orbatCreator_loadout[] = {{"SMA_HK416CUSTOMCQBvfgB","","rhsusf_acc_anpeq15_bk_light","optic_Holosight_smg_blk_F",{"rhs_mag_30Rnd_556x45_M855A1_Stanag",30},{},"SMA_Gripod_01"},{},{"rhsusf_weap_glock17g4","","","",{"rhsusf_mag_17Rnd_9x19_JHP",17},{},""},{"VKN_u_Foxcoat",{{"rhs_mag_30Rnd_556x45_M855A1_Stanag",2,30},{"rhs_mag_30Rnd_556x45_Mk318_Stanag",1,30}}},{"V_Rangemaster_belt",{{"ACE_fieldDressing",5},{"ACE_EarPlugs",1},{"ACE_morphine",9},{"rhs_mag_30Rnd_556x45_M855A1_Stanag",2,30}}},{"B_LegStrapBag_black_F",{{"ACE_fieldDressing",23},{"ACE_morphine",10},{"rhs_mag_30Rnd_556x45_M855A1_Stanag",5,30}}},"H_Hat_brown","G_Aviator",{"Laserdesignator_03","","","",{"Laserbatteries",1},{},""},{"ItemMap","O_UavTerminal","tf_anprc152_2","","tf_microdagr",""}};
 
 
     class EventHandlers : EventHandlers {
@@ -291,7 +286,6 @@ class B_VKN_VIS_AGENT7_PMC_01 : B_VKN_VIS_AGENT6_PMC_01 {
 };
 
 class B_VKN_VIS_ECHO_PMC_01 : B_VKN_VIS_AGENT7_PMC_01 {
-    editorPreview = VKN_Extensions_Characters\Editor Preview Images\B_VKN_VIS_ECHO_PMC_01.paa;
     author = "Lion";
     scope = 2;
     scopeCurator = 2;
@@ -301,7 +295,7 @@ class B_VKN_VIS_ECHO_PMC_01 : B_VKN_VIS_AGENT7_PMC_01 {
 
     identityTypes[] = {"Orange_FIA","LanguageENG_F","G_NATO_default"};
 
-    uniformClass = "VKN_CombatUniform_Black_Vest";
+    uniformClass = "VKN_CombatUniform_Black";
 
     linkedItems[] = {"V_PlateCarrier1_blk","VSM_Black_OPS","ItemMap","O_UavTerminal","tf_anprc152_2","tf_microdagr","ACE_NVG_Gen1"};
     respawnlinkedItems[] = {"V_PlateCarrier1_blk","VSM_Black_OPS","ItemMap","O_UavTerminal","tf_anprc152_2","tf_microdagr","ACE_NVG_Gen1"};
@@ -309,30 +303,30 @@ class B_VKN_VIS_ECHO_PMC_01 : B_VKN_VIS_AGENT7_PMC_01 {
     weapons[] = {"rhs_weap_hk416d10_m320","hgun_ACPC2_F","Laserdesignator_03"};
     respawnWeapons[] = {"rhs_weap_hk416d10_m320","hgun_ACPC2_F","Laserdesignator_03"};
 
-    magazines[] = {"rhs_mag_30Rnd_556x45_M855A1_Stanag","9Rnd_45ACP_Mag","rhs_mag_30Rnd_556x45_M855A1_Stanag","9Rnd_45ACP_Mag"};
-    respawnMagazines[] = {"rhs_mag_30Rnd_556x45_M855A1_Stanag","9Rnd_45ACP_Mag","rhs_mag_30Rnd_556x45_M855A1_Stanag","9Rnd_45ACP_Mag"};
+    magazines[] = {"rhs_mag_30Rnd_556x45_M855A1_Stanag","rhs_mag_m4009","9Rnd_45ACP_Mag","Laserbatteries","rhs_mag_30Rnd_556x45_M855A1_Stanag","rhs_mag_m4009","9Rnd_45ACP_Mag","Laserbatteries"};
+    respawnMagazines[] = {"rhs_mag_30Rnd_556x45_M855A1_Stanag","rhs_mag_m4009","9Rnd_45ACP_Mag","Laserbatteries","rhs_mag_30Rnd_556x45_M855A1_Stanag","rhs_mag_m4009","9Rnd_45ACP_Mag","Laserbatteries"};
 
     backpack = "VKN_Kitbag_Black";
 
-    ALiVE_orbatCreator_loadout[] = {{"rhs_weap_hk416d10_m320","rhsusf_acc_nt4_black","rhsusf_acc_anpeq15_bk_h","SMA_ELCAN_SPECTER",{"rhs_mag_30Rnd_556x45_M855A1_Stanag",30},{},""},{},{"hgun_ACPC2_F","muzzle_snds_acp","","",{"9Rnd_45ACP_Mag",8},{},""},{"VKN_CombatUniform_Black_Vest",{{"rhs_mag_100Rnd_556x45_M855A1_cmag",1,100}}},{"V_PlateCarrier1_blk",{{"9Rnd_45ACP_Mag",3,8},{"rhs_mag_100Rnd_556x45_M855A1_cmag",3,100},{"Laserbatteries",1,1}}},{"VKN_Kitbag_Black",{{"ACE_fieldDressing",30},{"ACE_EarPlugs",1},{"ACE_EntrenchingTool",1},{"ACE_morphine",20},{"MineDetector",1},{"rhs_mag_100Rnd_556x45_M855A1_cmag",3,100},{"rhs_mag_m4009",2,1},{"1Rnd_HE_Grenade_shell",2,1},{"1Rnd_Smoke_Grenade_shell",6,1},{"rhs_mag_an_m8hc",2,1},{"Chemlight_green",5,1}}},"VSM_Black_OPS","VSM_Shemagh_Balaclava2_OD_Goggles",{"Laserdesignator_03","","","",{},{},""},{"ItemMap","O_UavTerminal","tf_anprc152_2","","tf_microdagr","ACE_NVG_Gen1"}};
+    ALiVE_orbatCreator_loadout[] = {{"rhs_weap_hk416d10_m320","rhsusf_acc_nt4_black","rhsusf_acc_anpeq15_bk_h","SMA_ELCAN_SPECTER",{"rhs_mag_30Rnd_556x45_M855A1_Stanag",30},{"rhs_mag_m4009",1},""},{},{"hgun_ACPC2_F","muzzle_snds_acp","","",{"9Rnd_45ACP_Mag",8},{},""},{"VKN_CombatUniform_Black",{}},{"V_PlateCarrier1_blk",{{"9Rnd_45ACP_Mag",3,8},{"rhs_mag_100Rnd_556x45_M855A1_cmag",3,100}}},{"VKN_Kitbag_Black",{{"ACE_fieldDressing",30},{"ACE_EarPlugs",1},{"ACE_EntrenchingTool",1},{"ACE_morphine",20},{"MineDetector",1},{"rhs_mag_100Rnd_556x45_M855A1_cmag",3,100},{"rhs_mag_m4009",1,1},{"1Rnd_HE_Grenade_shell",2,1},{"1Rnd_Smoke_Grenade_shell",6,1},{"rhs_mag_an_m8hc",2,1},{"Chemlight_green",5,1}}},"VSM_Black_OPS","VSM_Shemagh_Balaclava2_OD_Goggles",{"Laserdesignator_03","","","",{"Laserbatteries",1},{},""},{"ItemMap","O_UavTerminal","tf_anprc152_2","","tf_microdagr","ACE_NVG_Gen1"}};
 
 
     class EventHandlers : EventHandlers {
         class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
 
         class ALiVE_orbatCreator {
-            init = "if (local (_this select 0)) then {_onSpawn = {_this = _this select 0;sleep 0.2; _backpack = gettext(configfile >> 'cfgvehicles' >> (typeof _this) >> 'backpack'); waituntil {sleep 0.2; backpack _this == _backpack};if !(_this getVariable ['ALiVE_OverrideLoadout',false]) then {_loadout = getArray(configFile >> 'CfgVehicles' >> (typeOf _this) >> 'ALiVE_orbatCreator_loadout'); _this setunitloadout _loadout;reload _this};};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+            init = "if (local (_this select 0)) then {_onSpawn = {_this = _this select 0;sleep 0.2; _backpack = gettext(configfile >> 'cfgvehicles' >> (typeof _this) >> 'backpack'); waituntil {sleep 0.2; backpack _this == _backpack};if !(_this getVariable ['ALiVE_OverrideLoadout',false]) then {_loadout = getArray(configFile >> 'CfgVehicles' >> (typeOf _this) >> 'ALiVE_orbatCreator_loadout'); _this setunitloadout _loadout;[_this, 'decal_sovietbear'] call BIS_fnc_setUnitInsignia;reload _this};};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
         };
 
     };
 
     // custom attributes (do not delete)
     ALiVE_orbatCreator_owned = 1;
+    ALiVE_orbatCreator_insignia = "decal_sovietbear";
 
 };
 
 class B_VKN_VIS_Motorboat_PMC_01 : C_Boat_Civil_01_F_OCimport_02 {
-    editorPreview = VKN_Extensions_Characters\Editor Preview Images\B_VKN_VIS_Motorboat_PMC_01.paa;
     author = "Lion";
     scope = 2;
     scopeCurator = 2;
@@ -358,7 +352,6 @@ class B_VKN_VIS_Motorboat_PMC_01 : C_Boat_Civil_01_F_OCimport_02 {
 };
 
 class B_VKN_VIS_OFFROAD_PMC_01 : C_Offroad_01_F_OCimport_02 {
-    editorPreview = VKN_Extensions_Characters\Editor Preview Images\B_VKN_VIS_OFFROAD_PMC_01.paa;
     author = "Lion";
     scope = 2;
     scopeCurator = 2;
@@ -392,7 +385,6 @@ class B_VKN_VIS_OFFROAD_PMC_01 : C_Offroad_01_F_OCimport_02 {
 };
 
 class B_VKN_VIS_HATCHBACK_PMC_01 : C_Hatchback_01_F_OCimport_02 {
-    editorPreview = VKN_Extensions_Characters\Editor Preview Images\B_VKN_VIS_HATCHBACK_PMC_01.paa;
     author = "Lion";
     scope = 2;
     scopeCurator = 2;
@@ -418,7 +410,6 @@ class B_VKN_VIS_HATCHBACK_PMC_01 : C_Hatchback_01_F_OCimport_02 {
 };
 
 class B_VKN_VIS_MD500_PMC_01 : C_Heli_Light_01_civil_F_OCimport_02 {
-    editorPreview = VKN_Extensions_Characters\Editor Preview Images\B_VKN_VIS_MD500_PMC_01.paa;
     author = "Lion";
     scope = 2;
     scopeCurator = 2;
@@ -449,7 +440,6 @@ class B_VKN_VIS_MD500_PMC_01 : C_Heli_Light_01_civil_F_OCimport_02 {
 };
 
 class B_VKN_VIS_DRONE_PMC_01 : C_UAV_06_F_OCimport_02 {
-    editorPreview = VKN_Extensions_Characters\Editor Preview Images\B_VKN_VIS_DRONE_PMC_01.paa;
     author = "Lion";
     scope = 2;
     scopeCurator = 2;
@@ -475,7 +465,6 @@ class B_VKN_VIS_DRONE_PMC_01 : C_UAV_06_F_OCimport_02 {
 };
 
 class B_VKN_VIS_LANDROVER_PMC_01 : LOP_TAK_Civ_Landrover_OCimport_02 {
-    editorPreview = VKN_Extensions_Characters\Editor Preview Images\B_VKN_VIS_LANDROVER_PMC_01.paa;
     author = "Lion";
     scope = 2;
     scopeCurator = 2;
@@ -501,7 +490,6 @@ class B_VKN_VIS_LANDROVER_PMC_01 : LOP_TAK_Civ_Landrover_OCimport_02 {
 };
 
 class B_VKN_VIS_URAL_PMC_01 : RHS_Ural_Civ_03_OCimport_02 {
-    editorPreview = VKN_Extensions_Characters\Editor Preview Images\B_VKN_VIS_URAL_PMC_01.paa;
     author = "Lion";
     scope = 2;
     scopeCurator = 2;

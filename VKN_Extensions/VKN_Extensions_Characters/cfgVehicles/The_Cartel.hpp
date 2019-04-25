@@ -1,6 +1,5 @@
 
 class O_CartelCartel_Rifleman_Tropical_01 : I_C_Soldier_Para_1_F_OCimport_02 {
-    editorPreview = VKN_Extensions_Characters\Editor Preview Images\O_CartelCartel_Rifleman_Tropical_01.paa;
     author = "Curious";
     scope = 2;
     scopeCurator = 2;
@@ -39,7 +38,6 @@ class O_CartelCartel_Rifleman_Tropical_01 : I_C_Soldier_Para_1_F_OCimport_02 {
 };
 
 class O_CartelCartel_Sharpshooter_Tropical_01 : O_CartelCartel_Rifleman_Tropical_01 {
-    editorPreview = VKN_Extensions_Characters\Editor Preview Images\O_CartelCartel_Sharpshooter_Tropical_01.paa;
     author = "Curious";
     scope = 2;
     scopeCurator = 2;
@@ -78,7 +76,6 @@ class O_CartelCartel_Sharpshooter_Tropical_01 : O_CartelCartel_Rifleman_Tropical
 };
 
 class O_CartelCartel_Close_Combatant_Tropical_01 : O_CartelCartel_Rifleman_Tropical_01 {
-    editorPreview = VKN_Extensions_Characters\Editor Preview Images\O_CartelCartel_Close_Combatant_Tropical_01.paa;
     author = "Curious";
     scope = 2;
     scopeCurator = 2;
@@ -117,7 +114,6 @@ class O_CartelCartel_Close_Combatant_Tropical_01 : O_CartelCartel_Rifleman_Tropi
 };
 
 class O_CartelCartel_Machine_Gunner_Tropical_01 : O_CartelCartel_Rifleman_Tropical_01 {
-    editorPreview = VKN_Extensions_Characters\Editor Preview Images\O_CartelCartel_Machine_Gunner_Tropical_01.paa;
     author = "Curious";
     scope = 2;
     scopeCurator = 2;
@@ -158,7 +154,6 @@ class O_CartelCartel_Machine_Gunner_Tropical_01 : O_CartelCartel_Rifleman_Tropic
 };
 
 class O_CartelCartel_Rifleman_AT_Tropical_01 : O_CartelCartel_Rifleman_Tropical_01 {
-    editorPreview = VKN_Extensions_Characters\Editor Preview Images\O_CartelCartel_Rifleman_AT_Tropical_01.paa;
     author = "Curious";
     scope = 2;
     scopeCurator = 2;
@@ -197,7 +192,6 @@ class O_CartelCartel_Rifleman_AT_Tropical_01 : O_CartelCartel_Rifleman_Tropical_
 };
 
 class O_CartelCartel_Group_Leader_Tropical_01 : O_CartelCartel_Rifleman_Tropical_01 {
-    editorPreview = VKN_Extensions_Characters\Editor Preview Images\O_CartelCartel_Group_Leader_Tropical_01.paa;
     author = "Curious";
     scope = 2;
     scopeCurator = 2;
@@ -238,7 +232,6 @@ class O_CartelCartel_Group_Leader_Tropical_01 : O_CartelCartel_Rifleman_Tropical
 };
 
 class O_CartelCartel_Medic_Tropical_01 : O_CartelCartel_Rifleman_Tropical_01 {
-    editorPreview = VKN_Extensions_Characters\Editor Preview Images\O_CartelCartel_Medic_Tropical_01.paa;
     author = "Curious";
     scope = 2;
     scopeCurator = 2;
@@ -279,7 +272,6 @@ class O_CartelCartel_Medic_Tropical_01 : O_CartelCartel_Rifleman_Tropical_01 {
 };
 
 class O_CartelCartel_Anti_Air_Tropical_01 : O_CartelCartel_Rifleman_AT_Tropical_01 {
-    editorPreview = VKN_Extensions_Characters\Editor Preview Images\O_CartelCartel_Anti_Air_Tropical_01.paa;
     author = "Curious";
     scope = 2;
     scopeCurator = 2;
@@ -320,7 +312,6 @@ class O_CartelCartel_Anti_Air_Tropical_01 : O_CartelCartel_Rifleman_AT_Tropical_
 };
 
 class O_CartelCartel_Anti_Tank_Tropical_01 : O_CartelCartel_Anti_Air_Tropical_01 {
-    editorPreview = VKN_Extensions_Characters\Editor Preview Images\O_CartelCartel_Anti_Tank_Tropical_01.paa;
     author = "Curious";
     scope = 2;
     scopeCurator = 2;
@@ -361,7 +352,6 @@ class O_CartelCartel_Anti_Tank_Tropical_01 : O_CartelCartel_Anti_Air_Tropical_01
 };
 
 class O_CartelCartel_Rifleman_Light_Tropical_01 : O_CartelCartel_Rifleman_Tropical_01 {
-    editorPreview = VKN_Extensions_Characters\Editor Preview Images\O_CartelCartel_Rifleman_Light_Tropical_01.paa;
     author = "Curious";
     scope = 2;
     scopeCurator = 2;
@@ -400,7 +390,6 @@ class O_CartelCartel_Rifleman_Light_Tropical_01 : O_CartelCartel_Rifleman_Tropic
 };
 
 class O_CartelCartel_Autorifleman_Tropical_01 : O_CartelCartel_Machine_Gunner_Tropical_01 {
-    editorPreview = VKN_Extensions_Characters\Editor Preview Images\O_CartelCartel_Autorifleman_Tropical_01.paa;
     author = "Curious";
     scope = 2;
     scopeCurator = 2;
@@ -441,7 +430,6 @@ class O_CartelCartel_Autorifleman_Tropical_01 : O_CartelCartel_Machine_Gunner_Tr
 };
 
 class O_CartelCartel_Team_Leader_Tropical_01 : O_CartelCartel_Group_Leader_Tropical_01 {
-    editorPreview = VKN_Extensions_Characters\Editor Preview Images\O_CartelCartel_Team_Leader_Tropical_01.paa;
     author = "Curious";
     scope = 2;
     scopeCurator = 2;
@@ -482,7 +470,6 @@ class O_CartelCartel_Team_Leader_Tropical_01 : O_CartelCartel_Group_Leader_Tropi
 };
 
 class O_OCartelCartelTropical_Offroad_Technical_01 : I_G_Offroad_01_armed_F_OCimport_02 {
-    editorPreview = VKN_Extensions_Characters\Editor Preview Images\O_OCartelCartelTropical_Offroad_Technical_01.paa;
     author = "Curious";
     scope = 2;
     scopeCurator = 2;
@@ -501,7 +488,7 @@ class O_OCartelCartelTropical_Offroad_Technical_01 : I_G_Offroad_01_armed_F_OCim
         class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
 
         class ALiVE_orbatCreator {
-            init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0; _texture = selectRandom ['\VKN_Extensions_Characters\data\Retextures\O_Cartel_Offroad_01_lightgreen.paa','\VKN_Extensions_Characters\data\Retextures\O_Cartel_Offroad_01_multicam.paa', '\VKN_Extensions_Characters\data\Retextures\O_Cartel_Offroad_darkgreen_01.paa','\VKN_Extensions_Characters\data\Retextures\O_Cartel_Offroad_woodland_dark_01.paa'];_unit setObjectTextureGlobal [0, _texture];_unit setObjectTextureGlobal [1, _texture];};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+            init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0; _texture = selectRandom ['VKN_Extensions_Characters\data\Retextures\O_Cartel_Offroad_01_lightgreen.paa','VKN_Extensions_Characters\data\Retextures\O_Cartel_Offroad_01_multicam.paa', 'VKN_Extensions_Characters\data\Retextures\O_Cartel_Offroad_darkgreen_01.paa','VKN_Extensions_Characters\data\Retextures\O_Cartel_Offroad_woodland_dark_01.paa'];_unit setObjectTextureGlobal [0, _texture];_unit setObjectTextureGlobal [1, _texture];};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
         };
 
     };
@@ -513,7 +500,6 @@ class O_OCartelCartelTropical_Offroad_Technical_01 : I_G_Offroad_01_armed_F_OCim
 };
 
 class O_OCartelCartelTropical_Offroad_Anti_Tank_01 : I_G_Offroad_01_AT_F_OCimport_02 {
-    editorPreview = VKN_Extensions_Characters\Editor Preview Images\O_OCartelCartelTropical_Offroad_Anti_Tank_01.paa;
     author = "Curious";
     scope = 2;
     scopeCurator = 2;
@@ -532,7 +518,7 @@ class O_OCartelCartelTropical_Offroad_Anti_Tank_01 : I_G_Offroad_01_AT_F_OCimpor
         class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
 
         class ALiVE_orbatCreator {
-            init = "  if (local (_this select 0)) then { _onSpawn = {    sleep 0.3; _unit = _this select 0;_texture = selectRandom ['\VKN_Extensions_Characters\data\Retextures\O_Cartel_Offroad_01_lightgreen.paa', '\VKN_Extensions_Characters\data\Retextures\O_Cartel_Offroad_01_multicam.paa','\VKN_Extensions_Characters\data\Retextures\O_Cartel_Offroad_darkgreen_01.paa','\VKN_Extensions_Characters\data\Retextures\O_Cartel_Offroad_woodland_dark_01.paa'];_unit setObjectTextureGlobal [0, _texture];_unit setObjectTextureGlobal [1, _texture];};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+            init = "  if (local (_this select 0)) then { _onSpawn = {    sleep 0.3; _unit = _this select 0;_texture = selectRandom ['VKN_Extensions_Characters\data\Retextures\O_Cartel_Offroad_01_lightgreen.paa', 'VKN_Extensions_Characters\data\Retextures\O_Cartel_Offroad_01_multicam.paa','VKN_Extensions_Characters\data\Retextures\O_Cartel_Offroad_darkgreen_01.paa','VKN_Extensions_Characters\data\Retextures\O_Cartel_Offroad_woodland_dark_01.paa'];_unit setObjectTextureGlobal [0, _texture];_unit setObjectTextureGlobal [1, _texture];};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
         };
 
     };
@@ -543,7 +529,6 @@ class O_OCartelCartelTropical_Offroad_Anti_Tank_01 : I_G_Offroad_01_AT_F_OCimpor
 };
 
 class O_OCartelCartelTropical_Mounted_Turret_DShKM_01 : rhsgref_ins_DSHKM_OCimport_02 {
-    editorPreview = VKN_Extensions_Characters\Editor Preview Images\O_OCartelCartelTropical_Mounted_Turret_DShKM_01.paa;
     author = "Curious";
     scope = 2;
     scopeCurator = 2;
@@ -573,21 +558,20 @@ class O_OCartelCartelTropical_Mounted_Turret_DShKM_01 : rhsgref_ins_DSHKM_OCimpo
 };
 
 class O_rhsfactionvdv_Ural_Fuel_01 : RHS_Ural_Fuel_VDV_01_OCimport_02 {
-    editorPreview = VKN_Extensions_Characters\Editor Preview Images\O_rhsfactionvdv_Ural_Fuel_01.paa;
-    author = "Curious";
     scope = 2;
     scopeCurator = 2;
     displayName = "Ural (Fuel)";
     side = 0;
     faction = "O_CartelCartel_Tropical";
     crew = "O_CartelCartel_Rifleman_Tropical_01";
+    hiddenSelectionsTextures[] = {"VKN_Extensions_Characters\data\Retextures\O_Cartel_Ural_Kabina_darkgreen.paa" ,  "VKN_Extensions_Characters\data\Retextures\O_Cartel_Ural_Fuel_01_darkgreen.paa"};
 
 
     class EventHandlers : EventHandlers {
         class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
 
         class ALiVE_orbatCreator {
-            init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3;_unit = _this select 0;_unit setObjectTextureGlobal [0, '\VKN_Extensions_Characters\data\Retextures\O_Cartel_Ural_Kabina_darkgreen.paa'];  _unit setObjectTextureGlobal [10, '\VKN_Extensions_Characters\data\Retextures\O_Cartel_Ural_Fuel_01_darkgreen.paa']; }; _this spawn _onSpawn; (_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+            init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3;_unit = _this select 0; }; _this spawn _onSpawn; (_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
         };
 
     };
@@ -598,7 +582,6 @@ class O_rhsfactionvdv_Ural_Fuel_01 : RHS_Ural_Fuel_VDV_01_OCimport_02 {
 };
 
 class O_OCartelCartelTropical_Offroad_Transport_01 : O_G_Offroad_01_F_OCimport_02 {
-    editorPreview = VKN_Extensions_Characters\Editor Preview Images\O_OCartelCartelTropical_Offroad_Transport_01.paa;
     author = "Curious";
     scope = 2;
     scopeCurator = 2;
@@ -620,7 +603,7 @@ class O_OCartelCartelTropical_Offroad_Transport_01 : O_G_Offroad_01_F_OCimport_0
         class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
 
         class ALiVE_orbatCreator {
-            init = "  if (local (_this select 0)) then { _onSpawn = {   sleep 0.3;    _unit = _this select 0;   _texture = selectRandom [   '\VKN_Extensions_Characters\data\Retextures\O_Cartel_Offroad_01_lightgreen.paa',   '\VKN_Extensions_Characters\data\Retextures\O_Cartel_Offroad_01_multicam.paa', '\VKN_Extensions_Characters\data\Retextures\O_Cartel_Offroad_darkgreen_01.paa',     '\VKN_Extensions_Characters\data\Retextures\O_Cartel_Offroad_woodland_dark_01.paa'  ];  _unit setObjectTextureGlobal [0, _texture];     _unit setObjectTextureGlobal [1, _texture];   }; _this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+            init = "  if (local (_this select 0)) then { _onSpawn = {   sleep 0.3;    _unit = _this select 0;   _texture = selectRandom [   'VKN_Extensions_Characters\data\Retextures\O_Cartel_Offroad_01_lightgreen.paa',   'VKN_Extensions_Characters\data\Retextures\O_Cartel_Offroad_01_multicam.paa', 'VKN_Extensions_Characters\data\Retextures\O_Cartel_Offroad_darkgreen_01.paa',     'VKN_Extensions_Characters\data\Retextures\O_Cartel_Offroad_woodland_dark_01.paa'  ];  _unit setObjectTextureGlobal [0, _texture];     _unit setObjectTextureGlobal [1, _texture];   }; _this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
         };
     };
     // custom attributes (do not delete)
@@ -629,7 +612,6 @@ class O_OCartelCartelTropical_Offroad_Transport_01 : O_G_Offroad_01_F_OCimport_0
 };
 
 class O_OCartelCartelTropical_Offroad_Transport_02 : O_G_Offroad_01_F_OCimport_02 {
-    editorPreview = VKN_Extensions_Characters\Editor Preview Images\O_OCartelCartelTropical_Offroad_Transport_01.paa;
     author = "Curious";
     scope = 2;
     scopeCurator = 2;
@@ -650,7 +632,7 @@ class O_OCartelCartelTropical_Offroad_Transport_02 : O_G_Offroad_01_F_OCimport_0
         class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
 
         class ALiVE_orbatCreator {
-            init = "  if (local (_this select 0)) then {  _onSpawn = { sleep 0.3; _unit = _this select 0; _texture = selectRandom ['\VKN_Extensions_Characters\data\Retextures\O_Cartel_Offroad_01_lightgreen.paa','\VKN_Extensions_Characters\data\Retextures\O_Cartel_Offroad_01_multicam.paa','\VKN_Extensions_Characters\data\Retextures\O_Cartel_Offroad_darkgreen_01.paa', '\VKN_Extensions_Characters\data\Retextures\O_Cartel_Offroad_woodland_dark_01.paa'                  ];    _unit setObjectTextureGlobal [0, _texture];   _unit setObjectTextureGlobal [1, _texture];       };      _this spawn _onSpawn;   (_this select 0) addMPEventHandler ['MPRespawn', _onSpawn]; };";
+            init = "  if (local (_this select 0)) then {  _onSpawn = { sleep 0.3; _unit = _this select 0; _texture = selectRandom ['VKN_Extensions_Characters\data\Retextures\O_Cartel_Offroad_01_lightgreen.paa','VKN_Extensions_Characters\data\Retextures\O_Cartel_Offroad_01_multicam.paa','VKN_Extensions_Characters\data\Retextures\O_Cartel_Offroad_darkgreen_01.paa', 'VKN_Extensions_Characters\data\Retextures\O_Cartel_Offroad_woodland_dark_01.paa'                  ];    _unit setObjectTextureGlobal [0, _texture];   _unit setObjectTextureGlobal [1, _texture];       };      _this spawn _onSpawn;   (_this select 0) addMPEventHandler ['MPRespawn', _onSpawn]; };";
         };
     };
     // custom attributes (do not delete)
@@ -660,7 +642,6 @@ class O_OCartelCartelTropical_Offroad_Transport_02 : O_G_Offroad_01_F_OCimport_0
 
 
 class O_OCartelCartelTropical_Mortar_01 : O_G_Mortar_01_F_OCimport_02 {
-    editorPreview = VKN_Extensions_Characters\Editor Preview Images\O_OCartelCartelTropical_Mortar_01.paa;
     author = "Curious";
     scope = 2;
     scopeCurator = 2;
@@ -690,7 +671,6 @@ class O_OCartelCartelTropical_Mortar_01 : O_G_Mortar_01_F_OCimport_02 {
 };
 
 class O_OCartelCartelTropical_Ural_Transport_01 : RHS_Ural_Open_Civ_01_OCimport_02 {
-    editorPreview = VKN_Extensions_Characters\Editor Preview Images\O_OCartelCartelTropical_Ural_Transport_01.paa;
     author = "Curious";
     scope = 2;
     scopeCurator = 2;
@@ -698,6 +678,7 @@ class O_OCartelCartelTropical_Ural_Transport_01 : RHS_Ural_Open_Civ_01_OCimport_
     side = 0;
     faction = "O_CartelCartel_Tropical";
     crew = "O_CartelCartel_Rifleman_Tropical_01";
+    hiddenSelectionsTextures[] = {"VKN_Extensions_Characters\data\Retextures\O_Cartel_Ural_Kabina_darkgreen.paa" , "VKN_Extensions_Characters\data\Retextures\O_Cartel_Ural_Open_01_darkgreen.paa"};
 
     class Turrets : Turrets {
         class CargoTurret_01 : CargoTurret_01 { gunnerType = ""; };
@@ -710,7 +691,7 @@ class O_OCartelCartelTropical_Ural_Transport_01 : RHS_Ural_Open_Civ_01_OCimport_
         class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
 
         class ALiVE_orbatCreator {
-            init = "if (local (_this select 0)) then {   _onSpawn = {    sleep 0.3;   _unit = _this select 0;    _unit setObjectTextureGlobal [0, '\VKN_Extensions_Characters\data\Retextures\O_Cartel_Ural_Kabina_darkgreen.paa'];  _unit setObjectTextureGlobal [1, '\VKN_Extensions_Characters\data\Retextures\O_Cartel_Ural_Open_01_darkgreen.paa'];   };_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+            init = "if (local (_this select 0)) then {   _onSpawn = {    sleep 0.3;   _unit = _this select 0;    };_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
         };
 
     };
@@ -721,7 +702,6 @@ class O_OCartelCartelTropical_Ural_Transport_01 : RHS_Ural_Open_Civ_01_OCimport_
 };
 
 class O_OCartelCartelTropical_Transport_Helicopter_MI_01 : RHS_Mi8amt_civilian_OCimport_02 {
-    editorPreview = VKN_Extensions_Characters\Editor Preview Images\O_OCartelCartelTropical_Transport_Helicopter_MI_01.paa;
     author = "Curious";
     scope = 2;
     scopeCurator = 2;
@@ -729,7 +709,7 @@ class O_OCartelCartelTropical_Transport_Helicopter_MI_01 : RHS_Mi8amt_civilian_O
     side = 0;
     faction = "O_CartelCartel_Tropical";
     crew = "O_CartelCartel_Rifleman_Tropical_01";
-
+    hiddenSelectionsTextures[] = {"VKN_Extensions_Characters\data\Retextures\O_Cartel_MI8_Body_00_darkgreen.paa"};
     class Turrets : Turrets {
         class CopilotTurret : CopilotTurret { gunnerType = ""; };
         class CargoTurret_01 : CargoTurret_01 { gunnerType = ""; };
@@ -743,7 +723,7 @@ class O_OCartelCartelTropical_Transport_Helicopter_MI_01 : RHS_Mi8amt_civilian_O
         class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
 
         class ALiVE_orbatCreator {
-            init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0; _unit setObjectTextureGlobal [0,'\VKN_Extensions_Characters\data\Retextures\O_Cartel_MI8_Body_00_darkgreen.paa'];  };_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+            init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;  };_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
         };
 
     };
@@ -754,7 +734,6 @@ class O_OCartelCartelTropical_Transport_Helicopter_MI_01 : RHS_Mi8amt_civilian_O
 };
 
 class O_OCartelCartelTropical_Cessna_TTX_01 : C_Plane_Civil_01_F_OCimport_02 {
-    editorPreview = VKN_Extensions_Characters\Editor Preview Images\O_OCartelCartelTropical_Cessna_TTX_01.paa;
     author = "Curious";
     scope = 2;
     scopeCurator = 2;
@@ -762,6 +741,8 @@ class O_OCartelCartelTropical_Cessna_TTX_01 : C_Plane_Civil_01_F_OCimport_02 {
     side = 0;
     faction = "O_CartelCartel_Tropical";
     crew = "O_CartelCartel_Rifleman_Tropical_01";
+    hiddenSelectionsTextures[] = {"VKN_Extensions_Characters\data\Retextures\O_Cartel_Plane_00_lightgreen.paa","VKN_Extensions_Characters\data\Retextures\O_Cartel_Plane_01_lightgreen.paa"};
+
 
     class Turrets : Turrets {
         class MainTurret : MainTurret { gunnerType = ""; };
@@ -773,7 +754,7 @@ class O_OCartelCartelTropical_Cessna_TTX_01 : C_Plane_Civil_01_F_OCimport_02 {
         class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
 
         class ALiVE_orbatCreator {
-            init = "if (local (_this select 0)) then {    _onSpawn = {          sleep 0.3;       _unit = _this select 0;    _unit setObjectTextureGlobal [0, '\VKN_Extensions_Characters\data\Retextures\O_Cartel_Plane_00_lightgreen.paa'];  _unit setObjectTextureGlobal [1, '\VKN_Extensions_Characters\data\Retextures\O_Cartel_Plane_01_lightgreen.paa'];          };  _this spawn _onSpawn; (_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+            init = "if (local (_this select 0)) then {    _onSpawn = {          sleep 0.3;       _unit = _this select 0;    _unit setObjectTextureGlobal [0, 'VKN_Extensions_Characters\data\Retextures\O_Cartel_Plane_00_lightgreen.paa'];  _unit setObjectTextureGlobal [1, 'VKN_Extensions_Characters\data\Retextures\O_Cartel_Plane_01_lightgreen.paa'];          };  _this spawn _onSpawn; (_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
         };
 
     };
@@ -804,7 +785,6 @@ class O_OPFF_DeathGuard_AR_01_OCimport_01 : O_recon_M_F { scope = 0; class Event
 class O_OPFF_DeathGuard_AR_01_OCimport_02 : O_OPFF_DeathGuard_AR_01_OCimport_01 { class EventHandlers; };
 
 class O_Deathguard_DeathGuard_01 : O_OPFVF__01_OCimport_02 {
-    editorPreview = VKN_Extensions_Characters\Editor Preview Images\O_Deathguard_DeathGuard_01.paa;
     author = "Curious";
     scope = 2;
     scopeCurator = 2;
@@ -846,7 +826,6 @@ class O_Deathguard_DeathGuard_01 : O_OPFVF__01_OCimport_02 {
 };
 
 class O_AT_DeathGuard_01 : O_OPFF_Deathguard_AT_01_OCimport_02 {
-    editorPreview = VKN_Extensions_Characters\Editor Preview Images\O_AT_DeathGuard_01.paa;
     author = "Curious";
     scope = 2;
     scopeCurator = 2;
@@ -888,7 +867,6 @@ class O_AT_DeathGuard_01 : O_OPFF_Deathguard_AT_01_OCimport_02 {
 };
 
 class O_Marks_DeathGuard_01 : O_OPFF_DeathGuard_Marksman_01_OCimport_02 {
-    editorPreview = VKN_Extensions_Characters\Editor Preview Images\O_Marks_DeathGuard_01.paa;
     author = "Curious";
     scope = 2;
     scopeCurator = 2;
@@ -928,7 +906,6 @@ class O_Marks_DeathGuard_01 : O_OPFF_DeathGuard_Marksman_01_OCimport_02 {
 };
 
 class O_Light_DeathGuard_01 : O_OPFF_DeathGuard_Light_01_OCimport_02 {
-    editorPreview = VKN_Extensions_Characters\Editor Preview Images\O_Light_DeathGuard_01.paa;
     author = "Curious";
     scope = 2;
     scopeCurator = 2;
@@ -970,7 +947,6 @@ class O_Light_DeathGuard_01 : O_OPFF_DeathGuard_Light_01_OCimport_02 {
 };
 
 class O_Medi_DeathGuard_01 : O_OPFF_DeathGuard_Medic_01_OCimport_02 {
-    editorPreview = VKN_Extensions_Characters\Editor Preview Images\O_Medi_DeathGuard_01.paa;
     author = "Curious";
     scope = 2;
     scopeCurator = 2;
@@ -1012,7 +988,6 @@ class O_Medi_DeathGuard_01 : O_OPFF_DeathGuard_Medic_01_OCimport_02 {
 };
 
 class O_DeathGuardAR_01 : O_OPFF_DeathGuard_AR_01_OCimport_02 {
-    editorPreview = VKN_Extensions_Characters\Editor Preview Images\O_DeathGuardAR_01.paa;
     author = "Curious";
     scope = 2;
     scopeCurator = 2;

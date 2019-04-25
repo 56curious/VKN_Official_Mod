@@ -30,6 +30,8 @@ class CfgPatches {
     };
 };
 
+enableDebugConsole[] = {"76561197996326460", "76561198116251840"};
+
 //Orbats and mainMenu Credit
 class cfgOrbat {
     #include "VKN_Orbat.hpp"
@@ -349,10 +351,10 @@ class RscDisplayStart: RscStandardDisplay
         };
     };
 };
-/*
+
 class RscDisplayMain: RscStandardDisplay {
 
-    #include "\VKN_Misc\Main Menu\VKN_MainMenuDefines.hpp"
+    //#include "\VKN_Misc\Main Menu\VKN_MainMenuDefines.hpp"
 
     class Spotlight {
         class Viking_Welcome {
@@ -374,12 +376,12 @@ class RscDisplayMain: RscStandardDisplay {
             condition = "true";
         };
     };
-
+/*
     idd=0;
     scriptName="RscDisplayMain";
     scriptPath="GUI";
-    onLoad="[""onLoad"",_this,""RscDisplayMain"",'GUI'] call    (uinamespace getvariable 'BIS_fnc_initDisplay')";
-    onUnload="[""onUnload"",_this,""RscDisplayMain"",'GUI'] call    (uinamespace getvariable 'BIS_fnc_initDisplay')";
+    onLoad="_script = [""onLoad"",_this,""RscDisplayMain"",'GUI'] call (uinamespace getvariable 'BIS_fnc_initDisplay'); copyToClipboard str _script;";
+    onUnload="[""onUnload"",_this,""RscDisplayMain"",'GUI'] call (uinamespace getvariable 'BIS_fnc_initDisplay')";
     class ControlsBackground
     {
         class MouseArea: RscText
@@ -446,7 +448,7 @@ class RscDisplayMain: RscStandardDisplay {
         class Spotlight3: RscMainMenuSpotlight {x = 1.00028 * safezoneW + safezoneX; y = 0.148 * safezoneH + safezoneY; w = 0.166708 * safezoneW; h = 0.296296 * safezoneH;};
         class BackgroundBar: RscText {colorBackground[] = {0,0,0,0};};
         class BackgroundCenter: BackgroundBar {colorBackground[] = {0,0,0,0};};
-        class BackgroundBarLeft: RscPicture {text = "\a3\Ui_f\data\GUI\Rsc\RscDisplayMain\gradientMods_ca.paa"};
+        class BackgroundBarLeft: RscPicture {text = "\a3\Ui_f\data\GUI\Rsc\RscDisplayMain\gradientMods_ca.paa";};
         class BackgroundBarRight: BackgroundBarLeft {text = "";};
         class Logo: RscActivePicture {text = "\a3\Ui_f\data\Logos\arma3_shadow_ca.paa";};
         class BackgroundLeft: RscText {colorBackground[] = {0.1,0.1,0.1,0};};
@@ -505,8 +507,6 @@ class RscDisplayMain: RscStandardDisplay {
         class TitleSingleplayer: RscButtonMenu
         {
             idc = 1011;
-            size = "1.25 *  (pixelH * pixelGrid * 2)";
-            style = "0x02 + 0xC0";
 
             text = "Singleplayer"; //--- ToDo: Localize;
             x = 0.195705 * safezoneW + safezoneX;
@@ -599,6 +599,62 @@ class RscDisplayMain: RscStandardDisplay {
             h = 0.044 * safezoneH;
             colorText[] = {1,1,1,1};
             colorBackground[] = {0,0,0,0};
+        };
+        class TitleIconSingleplayer: RscButton
+        {
+            idc = 1111;
+            show = 0;
+            style = "0x30 + 0x800";
+            colorBackgroundActive[] = {1,1,1,1};
+            colorFocused[] = {1,1,1,1};
+            onMouseEnter = "(_this select 0) ctrlsettextcolor [0,0,0,1];";
+            onSetFocus = "(_this select 0) ctrlsettextcolor [0,0,0,1];";
+            onMouseExit = "(_this select 0) ctrlsettextcolor [1,1,1,1];";
+            onKillFocus = "(_this select 0) ctrlsettextcolor [1,1,1,1];";
+
+            text = "\a3\Ui_f\data\GUI\Rsc\RscDisplayMain\menu_singleplayer_ca.paa"; //--- ToDo: Localize;
+            x = 0.216335 * safezoneW + safezoneX;
+            y = 0.291 * safezoneH + safezoneY;
+            w = 0.0333416 * safezoneW;
+            h = 0.0296296 * safezoneH;
+            colorBackground[] = {0,0,0,0};
+            tooltip = "Singleplayer"; //--- ToDo: Localize;
+        };
+        class TitleIconMultiplayer: TitleIconSingleplayer
+        {
+            idc = 1112;
+
+            text = "\a3\Ui_f\data\GUI\Rsc\RscDisplayMain\menu_multiplayer_ca.paa"; //--- ToDo: Localize;
+            x = 0.216335 * safezoneW + safezoneX;
+            y = 0.379 * safezoneH + safezoneY;
+            w = 0.0333416 * safezoneW;
+            h = 0.0296296 * safezoneH;
+            colorBackground[] = {0,0,0,0};
+            tooltip = "Multiplayer"; //--- ToDo: Localize;
+        };
+        class TitleIconTutorials: TitleIconSingleplayer
+        {
+            idc = 1113;
+
+            text = "\a3\Ui_f\data\GUI\Rsc\RscDisplayMain\menu_tutorials_ca.paa"; //--- ToDo: Localize;
+            x = 0.20602 * safezoneW + safezoneX;
+            y = 0.467 * safezoneH + safezoneY;
+            w = 0.0333416 * safezoneW;
+            h = 0.0296296 * safezoneH;
+            colorBackground[] = {0,0,0,0};
+            tooltip = "Tutorials"; //--- ToDo: Localize;
+        };
+        class TitleIconOptions: TitleIconSingleplayer
+        {
+            idc = 1114;
+
+            text = "\a3\Ui_f\data\GUI\Rsc\RscDisplayMain\menu_options_ca.paa"; //--- ToDo: Localize;
+            x = 0.200863 * safezoneW + safezoneX;
+            y = 0.555 * safezoneH + safezoneY;
+            w = 0.0333416 * safezoneW;
+            h = 0.0296296 * safezoneH;
+            colorBackground[] = {0,0,0,0};
+            tooltip = "Options"; //--- ToDo: Localize;
         };
         class Exit: RscButtonMenu
         {
@@ -731,9 +787,9 @@ class RscDisplayMain: RscStandardDisplay {
             };
         };
     };
-
+*/
 };
-
+/*
 class RscDisplayMainMenuBackground {
     #include "\VKN_Misc\Main Menu\VKN_MainMenuDefines.hpp"
     scriptName="RscDisplayMainMenuBackground";

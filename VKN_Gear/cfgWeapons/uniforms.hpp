@@ -6,19 +6,30 @@
 		picture = "\VKN_Misc\VKN_Logo_Inverted.paa";
 		hiddenSelections[] = {"Camo","Insignia"};
 	};
-
 	class VKN_CombatUniform_RolledUP_base: Uniform_Base {
 		scope = 0;
-		model = "\A3\Characters_F\Common\Suitpacks\suitpack_universal_F.p3d";
 		picture = "\VKN_Misc\VKN_Logo_Inverted.paa";
 		hiddenSelections[] = {"Camo","Insignia"};
 	};
+
+	class VKN_StealthUniform_NonRolled_base: U_B_CTRG_Soldier_F {
+		scope = 0;
+		picture = "\VKN_Misc\VKN_Logo_Inverted.paa";
+		hiddenSelections[] = {"Camo","Insignia"};
+	};
+	class VKN_StealthUniform_RollpedUP_base: U_B_CTRG_Soldier_F {
+		scope = 0;
+		picture = "\VKN_Misc\VKN_Logo_Inverted.paa";
+		hiddenSelections[] = {"Camo","Insignia"};
+	};
+
 	class VKN_CombatUniform_Tactical_Sweater_base: Uniform_Base {
 		picture = "\VKN_Misc\VKN_Logo_Inverted.paa";
 		scope = 0;
 		model = "\A3\Characters_F\Common\Suitpacks\suitpack_universal_F.p3d";
 		hiddenSelections[] = {"camo1","camo2"};
 	};
+
 	class VKN_I_CombatUniform_Base: Uniform_Base {
 		picture = "\VKN_Misc\VKN_Logo_Inverted.paa";
 		scope = 0;
@@ -49,6 +60,32 @@
 		class ItemInfo: UniformItem	{
 			uniformModel="-";
 			uniformClass="VKN_Dummy_B_M90_NonRolled_1_1";
+			containerClass="Supply40";
+			mass=40;
+		};
+	};
+	class VKN_CombatUniform_M90_Alternative_Roll: VKN_CombatUniform_RolledUP_base {
+		scope = 2;
+		author="Shagger (Eric McHogan)";
+		displayName = "[VKN] Combat Uniform - Rolled (M90)";
+		descriptionShort = "Combat Uniform M90 Alternative (Sleeves)";
+		hiddenSelectionsTextures[]={"\VKN_Gear\data\Uniforms\VKN_m90_alternative.paa"};
+		class ItemInfo: UniformItem	{
+			uniformModel="-";
+			uniformClass="VKN_Dummy_B_M90_Alternative_RolledUP";
+			containerClass="Supply40";
+			mass=40;
+		};
+	};
+	class VKN_CombatUniform_M90_Alternative_Full: VKN_CombatUniform_RolledUP_base {
+		scope = 2;
+		author="Shagger (Eric McHogan)";
+		displayName = "[VKN] Combat Uniform - Full (M90)";
+		descriptionShort = "Combat Uniform M90 Alternative (Full)";
+		hiddenSelectionsTextures[]={"\VKN_Gear\data\Uniforms\VKN_m90_alternative.paa"};
+		class ItemInfo: UniformItem	{
+			uniformModel="-";
+			uniformClass="VKN_Dummy_B_M90_Alternative_NonRolled";
 			containerClass="Supply40";
 			mass=40;
 		};
@@ -107,9 +144,37 @@
 		};
 	};
 
+	class VKN_CombatUniform_Loki_Black_Roll: VKN_CombatUniform_RolledUP_base {
+		scope = 2;
+		author="Shagger (Eric McHogan)";
+		displayName = "[VKN] Combat Uniform - Rolled (LOKI Black)";
+		descriptionShort = "Combat Uniform LOKI Black (Sleeves)";
+		hiddenSelectionsTextures[]={"\VKN_Gear\data\Uniforms\VKN_black_loki.paa"};
+		class ItemInfo: UniformItem	{
+			uniformModel="-";
+			uniformClass="VKN_Dummy_B_Loki_Black_RolledUP";
+			containerClass="Supply40";
+			mass=40;
+		};
+	};
+	class VKN_CombatUniform_Loki_Black_Full: VKN_CombatUniform_RolledUP_base {
+		scope = 2;
+		author="Shagger (Eric McHogan)";
+		displayName = "[VKN] Combat Uniform - Full (LOKI Black)";
+		descriptionShort = "Combat Uniform LOKI Black (Full)";
+		hiddenSelectionsTextures[]={"\VKN_Gear\data\Uniforms\VKN_black_loki.paa"};
+		class ItemInfo: UniformItem	{
+			uniformModel="-";
+			uniformClass="VKN_Dummy_B_Loki_Black_NonRolled";
+			containerClass="Supply40";
+			mass=40;
+		};
+	};
+
 	class VKN_CombatUniform_ARO1_Black_Full: VKN_CombatUniform_RolledUP_base {
 		scope=2;
 		Author = "Teriyaki";
+		picture = "\TRYK_Unit\Data\tryk.paa";
 		displayName="[VKN] Combat Uniform - Full (AOR-1 + Black)";
 		model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
 		class ItemInfo: UniformItem {
@@ -122,6 +187,7 @@
 	class VKN_CombatUniform_ARO1_Black_Roll: VKN_CombatUniform_NonRolled_base {
 		scope=2;
 		Author = "Teriyaki";
+		picture = "\TRYK_Unit\Data\tryk.paa";
 		displayName="[VKN] Combat Uniform - Rolled (AOR-1 + Black)";
 		model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
 		class ItemInfo: UniformItem {
@@ -135,6 +201,7 @@
 	class VKN_CombatUniform_ARO1_Full: VKN_CombatUniform_RolledUP_base {
 		scope=2;
 		Author = "Teriyaki";
+		picture = "\TRYK_Unit\Data\tryk.paa";
 		displayName="[VKN] Combat Uniform - Full (AOR-1)";
 		model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
 		class ItemInfo: UniformItem {
@@ -147,6 +214,7 @@
 	class VKN_CombatUniform_ARO1_Rolled: VKN_CombatUniform_NonRolled_base {
 		scope=2;
 		Author = "Teriyaki";
+		picture = "\TRYK_Unit\Data\tryk.paa";
 		displayName="[VKN] Combat Uniform - Rolled (AOR-1)";
 		model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
 		class ItemInfo: UniformItem {
@@ -160,7 +228,8 @@
 	class VKN_CombatUniform_Black_Marpat_Rolled: VKN_CombatUniform_NonRolled_base {
 		scope=2;
 		Author = "Teriyaki";
-		displayName="[VKN] Combat Uniform - (Black Marpat)";
+		picture = "\TRYK_Unit\Data\tryk.paa";
+		displayName="[VKN] Combat Uniform - Black Marpat";
 		model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
 		class ItemInfo: UniformItem {
 			uniformModel="-";
@@ -173,7 +242,8 @@
 	class VKN_CombatUniform_3CD_Black_Rolled: VKN_CombatUniform_NonRolled_base {
 		scope=2;
 		Author = "Teriyaki";
-		displayName="[VKN] Combat Uniform - (3CD + Black)";
+		picture = "\TRYK_Unit\Data\tryk.paa";
+		displayName="[VKN] Combat Uniform - 3CD + Black";
 		model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
 		class ItemInfo: UniformItem {
 			uniformModel="-";
@@ -186,7 +256,8 @@
 	class VKN_CombatUniform_Black_OD_Rolled: VKN_CombatUniform_NonRolled_base {
 		scope=2;
 		Author = "Teriyaki";
-		displayName="[VKN] Combat Uniform - (OD + Black)";
+		picture = "\TRYK_Unit\Data\tryk.paa";
+		displayName="[VKN] Combat Uniform - OD + Black";
 		model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
 		class ItemInfo: UniformItem {
 			uniformModel="-";
@@ -199,7 +270,8 @@
 	class VKN_CombatUniform_Black_Tan_Rolled: VKN_CombatUniform_NonRolled_base {
 		scope=2;
 		Author = "Teriyaki";
-		displayName="[VKN] Combat Uniform - (Tan + Black)";
+		picture = "\TRYK_Unit\Data\tryk.paa";
+		displayName="[VKN] Combat Uniform - Tan + Black";
 		model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
 		class ItemInfo: UniformItem {
 			uniformModel="-";
@@ -211,7 +283,8 @@
 	class VKN_CombatUniform_Black_Tan_Full: VKN_CombatUniform_NonRolled_base {
 		scope=2;
 		Author = "Teriyaki";
-		displayName="[VKN] Combat Uniform - (Tan + Black)";
+		picture = "\TRYK_Unit\Data\tryk.paa";
+		displayName="[VKN] Combat Uniform - Tan + Black";
 		model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
 		class ItemInfo: UniformItem {
 			uniformModel="-";
@@ -224,7 +297,8 @@
 	class VKN_CombatUniform_UCP_Rolled: VKN_CombatUniform_RolledUP_base {
 		scope=2;
 		Author = "Teriyaki";
-		displayName="[VKN] Combat Uniform - (UCP)";
+		picture = "\TRYK_Unit\Data\tryk.paa";
+		displayName="[VKN] Combat Uniform - UCP";
 		model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
 		class ItemInfo: UniformItem {
 			uniformModel="-";
@@ -236,7 +310,8 @@
 	class VKN_CombatUniform_UCP_NonRolled: VKN_CombatUniform_NonRolled_base {
 		scope=2;
 		Author = "Teriyaki";
-		displayName="[VKN] Combat Uniform - (UCP)";
+		picture = "\TRYK_Unit\Data\tryk.paa";
+		displayName="[VKN] Combat Uniform - UCP";
 		model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
 		class ItemInfo: UniformItem {
 			uniformModel="-";
@@ -250,7 +325,8 @@
 	class VKN_CombatUniform_AOR2: VKN_CombatUniform_RolledUP_base {
 		scope=2;
 		Author = "Teriyaki";
-		displayName="[VKN] Combat Uniform (AOR-2)";
+		picture = "\TRYK_Unit\Data\tryk.paa";
+		displayName="[VKN] Combat Uniform AOR-2";
 		model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
 		class ItemInfo: UniformItem {
 			uniformModel="-";
@@ -275,7 +351,8 @@
 	class VKN_CombatUniform_AOR2_Black: VKN_CombatUniform_NonRolled_base {
 		scope=2;
 		Author = "Teriyaki";
-		displayName="[VKN] Combat Uniform - (AOR-2 + Black)";
+		picture = "\TRYK_Unit\Data\tryk.paa";
+		displayName="[VKN] Combat Uniform - AOR-2 + Black";
 		model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
 		class ItemInfo: UniformItem {
 			uniformModel="-";
@@ -287,7 +364,8 @@
 	class VKN_CombatUniform_OD_Black_1: VKN_CombatUniform_NonRolled_base {
 		scope=2;
 		Author = "Teriyaki";
-		displayName="[VKN] Combat Uniform - (OD + Black)";
+		picture = "\TRYK_Unit\Data\tryk.paa";
+		displayName="[VKN] Combat Uniform - OD + Black (1)";
 		model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
 		class ItemInfo: UniformItem {
 			uniformModel="-";
@@ -299,7 +377,8 @@
 	class VKN_CombatUniform_OD_Black_2: VKN_CombatUniform_NonRolled_base {
 		scope=2;
 		Author = "Teriyaki";
-		displayName="[VKN] Combat Uniform - (OD + Black)";
+		picture = "\TRYK_Unit\Data\tryk.paa";
+		displayName="[VKN] Combat Uniform - OD + Black (2)";
 		model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
 		class ItemInfo: UniformItem {
 			uniformModel="-";
@@ -311,7 +390,8 @@
 	class VKN_CombatUniform_UCP: VKN_CombatUniform_NonRolled_base {
 		scope=2;
 		Author = "Teriyaki";
-		displayName="[VKN] Combat Uniform - (UCP)";
+		picture = "\TRYK_Unit\Data\tryk.paa";
+		displayName="[VKN] Combat Uniform - UCP";
 		model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
 		class ItemInfo: UniformItem {
 			uniformModel="-";
@@ -323,7 +403,8 @@
 	class VKN_CombatUniform_Marpat_Black_Top: VKN_CombatUniform_RolledUP_base {
 		scope=2;
 		Author = "Teriyaki";
-		displayName="[VKN] Combat Uniform (Black + Marpat)";
+		picture = "\TRYK_Unit\Data\tryk.paa";
+		displayName="[VKN] Combat Uniform - Black + Marpat";
 		model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
 		class ItemInfo: UniformItem {
 			uniformModel="-";
@@ -332,40 +413,85 @@
 			mass=40;
 		};
 	};
-	class VKN_CombatUniform_PCU_Grey: VKN_CombatUniform_NonRolled_base {
-		scope=2;
-		Author = "Teriyaki";
-		displayName="[VKN] Protective Combat Uniform - (Grey)";
-		model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
-		class ItemInfo: UniformItem {
+
+	class VKN_CombatUniform_Stealth_Black_MTP_NonRolled: VKN_StealthUniform_NonRolled_base {
+		scope = 2;
+		Author = "Apple";
+		displayName="[VKN] FBA Stealth Uniform - Black MTP (Rolled)";
+		descriptionShort = "Combat Uniform Black MTP (Full)";
+		hiddenSelectionsTextures[]={"\VKN_Gear\data\Uniforms\VKN_Black_MTP.paa"};
+		class ItemInfo: UniformItem	{
 			uniformModel="-";
-			uniformClass="VKN_Dummy_B_PCU_Grey";
+			uniformClass="VKN_Dummy_B_Stealth_Black_MTP_NonRolled_13";
 			containerClass="Supply40";
 			mass=40;
 		};
 	};
-	class VKN_CombatUniform_PCU_OD: VKN_CombatUniform_NonRolled_base {
-		scope=2;
-		Author = "Teriyaki";
-		displayName="[VKN] Protective Combat Uniform - (OD)";
-		model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
-		class ItemInfo: UniformItem {
+
+	class VKN_CombatUniform_Stealth_Snow_Digi_NonRolled: VKN_StealthUniform_NonRolled_base {
+		scope = 2;
+		Author = "Apple";
+		displayName="[VKN] FWA Stealth Uniform - Snow (Digital)";
+		picture="\VKN_Misc\VKN_Logo_Inverted.paa";
+		descriptionShort = "Combat Uniform Snow Digi (Full)";
+		hiddenSelectionsTextures[]={"\VKN_Gear\data\Uniforms\VKN_SNOW_DIGI.paa"};
+		class ItemInfo: UniformItem	{
 			uniformModel="-";
-			uniformClass="VKN_Dummy_B_PCU_OD";
+			uniformClass="VKN_Stealth_U_SNOW_DIGI_NonRolled";
 			containerClass="Supply40";
 			mass=40;
 		};
 	};
-	class VKN_CombatUniform_PCU_Black: VKN_CombatUniform_NonRolled_base {
+
+//T shirts
+
+	class VKN_Black_Tshirt: Uniform_Base {
 		scope=2;
-		Author = "Teriyaki";
-		displayName="[VKN] Protective Combat Uniform - (Black)";
-		model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
-		class ItemInfo: UniformItem {
+		displayName="[VKN] FBA Combat Uniform - T-Shirt (Black)";
+		picture="\VKN_Misc\VKN_Logo_Inverted.paa";
+		author="Apple";
+		model="\A3\Characters_F\Common\Suitpacks\suitpack_civilian_F.p3d";
+		hiddenSelectionsTextures[]={"\VKN_Gear\data\Uniforms\VKN_Black_Tshirt_co.paa"};
+		class ItemInfo: UniformItem	{
 			uniformModel="-";
-			uniformClass="VKN_Dummy_B_PCU_Black";
+			uniformClass="VKN_Dummy_B_Tshirt_Black_1";
 			containerClass="Supply40";
 			mass=40;
+		};
+	};
+
+
+//Viper
+
+	class VKN_u_vikingviper: Uniform_Base {
+		scope = 2;
+		author = "Jonmo";
+		displayName = "[VKN] VIS Special Purpose Suit";
+		picture="\VKN_Misc\VKN_Logo_Inverted.paa";
+		model = "\A3\Characters_F\Common\Suitpacks\suitpack_universal_F.p3d";
+		hiddenSelectionsTextures[] = {"\VKN_Gear\data\Uniforms\VKN_viperSuit_neutral_co.paa"};
+		hiddenSelectionsMaterials[] = {"\VKN_Gear\data\Misc\vknviper.rvmat"};
+		class ItemInfo: UniformItem {
+			uniformModel = "-";
+			uniformClass = "VKN_form_vikingviper";
+			containerClass = "Supply90";
+			mass = 125;
+		};
+	};
+
+	class VKN_Vest_V_HarnessO_drk_F: Vest_NoCamo_Base {
+		author = "Jonmo";
+		scope = 2;
+		displayName = "[VKN] VIS LVB Harness (Dark)";
+		picture="\VKN_Misc\VKN_Logo_Inverted.paa";
+		model = "\A3\Characters_F\OPFOR\equip_o_vest01";
+		hiddenSelections[] = {"Camo1", "Camo2"};
+		hiddenSelectionsTextures[] = {"\VKN_Gear\data\Uniforms\clothing_drk_tna_CO.paa","\VKN_Gear\data\Uniforms\tech_drk_tna_CO.paa","\VKN_Gear\data\Uniforms\tech_drk_tna_CO.paa"};
+		class ItemInfo: VestItem {
+			uniformModel = "\A3\Characters_F\OPFOR\equip_o_vest01";
+			containerClass = "Supply160";
+			mass = 30;
+			hiddenSelections[] = {"Camo1","Camo2","Camo3"};
 		};
 	};
 
@@ -401,6 +527,20 @@ class VKN_CombatUniform_Legion_Forest_Black: VKN_I_CombatUniform_Base {
 		mass=40;
 	};
 };
+class VKN_CombatUniform_Legion_Forest_Olive: VKN_I_CombatUniform_Base {
+	scope = 2;
+	Author = "Max Kupoleni";
+	displayName = "[VKN] Combat Uniform - Legion Forest + Olive";
+	descriptionShort = "Viking Combat Uniform";
+	hiddenSelectionsTextures[]={"\VKN_Gear\data\Uniforms\VKN_LegionForest_Olive_ca.paa"};
+	class ItemInfo: UniformItem
+	{
+		uniformModel="-";
+		uniformClass="VKN_Dummy_B_Legion_Forest_Full_RolledUP_6";
+		containerClass="Supply40";
+		mass=40;
+	};
+};
 
 class VKN_CombatUniform_Tropical_Full: VKN_I_CombatUniform_Base {
 	scope = 2;
@@ -431,7 +571,6 @@ class VKN_CombatUniform_Winter_Polygon: VKN_I_CombatUniform_Base {
 		mass=40;
 	};
 };
-
 class VKN_CombatUniform_Loki_Full: VKN_I_CombatUniform_Base {
 	scope = 2;
 	Author = "Max Kupoleni";
@@ -446,13 +585,27 @@ class VKN_CombatUniform_Loki_Full: VKN_I_CombatUniform_Base {
 		mass=40;
 	};
 };
+class VKN_CombatUniform_Black_Loki: VKN_I_CombatUniform_Base {
+	scope = 2;
+	author="Shagger (Eric McHogan)";
+	displayName = "[VKN] Combat Uniform - Loki";
+	descriptionShort = "Viking Combat Uniform";
+	hiddenSelectionsTextures[]={"\VKN_Gear\data\Uniforms\VKN_sweater_blk_loki.paa"};
+	class ItemInfo: UniformItem
+	{
+		uniformModel="-";
+		uniformClass="VKN_Dummy_I_Black_Loki";
+		containerClass="Supply40";
+		mass=40;
+	};
+};
 
 class VKN_CombatUniform_3CD_Black: VKN_I_CombatUniform_Base {
 	scope = 2;
 	Author = "Max Kupoleni";
-	displayName = "[VKN] Combat Uniform - Loki";
+	displayName = "[VKN] Combat Uniform - 3CD Black";
 	descriptionShort = "Viking Combat Uniform";
-	hiddenSelectionsTextures[]={"\VKN_Gear\data\Uniforms\VKN_Loki_Combat_Uniform_01_ca.paa"};
+	hiddenSelectionsTextures[]={"\VKN_Gear\data\Uniforms\VKN_3CD_Black_ca.paa"};
 	class ItemInfo: UniformItem
 	{
 		uniformModel="-";
@@ -478,6 +631,7 @@ class VKN_u_Foxcoat: VKN_I_CombatUniform_Base {
 class VKN_u_Foxcoat_green: VKN_I_CombatUniform_Base	{
 	scope = 2;
 	author = "Jonmo";
+	picture="\VKN_Misc\VKN_Logo_Inverted.paa";
 	displayName = "[VKN] Foxcoat Forest";
 	model = "\A3\Characters_F\Common\Suitpacks\suitpack_universal_F.p3d";
 	class ItemInfo: UniformItem
@@ -488,6 +642,112 @@ class VKN_u_Foxcoat_green: VKN_I_CombatUniform_Base	{
 		mass = 20;
 	};
 };
+
+class VKN_CombatUniform_DPM_Black: VKN_I_CombatUniform_Base {
+	scope = 2;
+	Author = "Jonmo";
+	picture="\VKN_Misc\VKN_Logo_Inverted.paa";
+	displayName = "[VKN] Combat Uniform - Black + DPM";
+	descriptionShort = "Viking Combat Uniform";
+	hiddenSelectionsTextures[]={"\VKN_Gear\data\Uniforms\VKN_Black_DPM_ca.paa"};
+	class ItemInfo: UniformItem
+	{
+		uniformModel="-";
+		uniformClass="VKN_Dummy_I_Dummy_DPM_Black";
+		containerClass="Supply40";
+		mass=40;
+	};
+};
+
+class VKN_Police_Riot_Greek_1: VKN_I_CombatUniform_Base	{
+	scope = 2;
+	author = "Jonmo";
+	displayName = "[VKN] Greek Police Riot Uniform";
+	hiddenSelectionsTextures[]={"\VKN_Gear\data\Uniforms\vkn_police_riot_co.paa"};
+	class ItemInfo: UniformItem {
+		uniformModel = "-";
+		uniformClass = "VKN_Dummy_I_Police_Riot_1";
+		containerClass = "Supply90";
+		mass = 20;
+	};
+};
+
+class VKN_CombatUniform_lynx_pants_green_1: Uniform_Base {
+	scope = 2;
+	author = "Jonmo";
+	displayName = "[VKN] Lynx (Winter camo + Green pants)";
+	picture = "\VKN_Misc\VKN_Logo_Inverted.paa";
+	model = "\A3\Characters_F\Common\Suitpacks\suitpack_universal_F.p3d";
+	class ItemInfo: UniformItem
+	{
+		uniformModel = "-";
+		uniformClass = "VKN_Dummy_I_CombatUniform_lynx_pants_green_1";
+		containerClass = "Supply90";
+		mass = 20;
+	};
+};
+
+class VKN_CombatUniform_lynx_pants_white_1: Uniform_Base {
+	scope = 2;
+	author = "Jonmo";
+	displayName = "[VKN] Lynx (Winter camo + White pants)";
+	picture = "\VKN_Misc\VKN_Logo_Inverted.paa";
+	model = "\A3\Characters_F\Common\Suitpacks\suitpack_universal_F.p3d";
+	class ItemInfo: UniformItem
+	{
+		uniformModel = "-";
+		uniformClass = "VKN_Dummy_I_CombatUniform_lynx_pants_white_1";
+		containerClass = "Supply90";
+		mass = 20;
+	};
+};
+
+class VKN_CombatUniform_lynx_top_green_1: Uniform_Base {
+	scope = 2;
+	author = "Jonmo";
+	displayName = "[VKN] Lynx (Winter camo + White pants)";
+	picture = "\VKN_Misc\VKN_Logo_Inverted.paa";
+	model = "\A3\Characters_F\Common\Suitpacks\suitpack_universal_F.p3d";
+	class ItemInfo: UniformItem
+	{
+		uniformModel = "-";
+		uniformClass = "VKN_Dummy_I_CombatUniform_lynx_top_green_1";
+		containerClass = "Supply90";
+		mass = 20;
+	};
+};
+
+class VKN_CombatUniform_lynx_top_white_1: Uniform_Base {
+	scope = 2;
+	author = "Jonmo";
+	displayName = "[VKN] Lynx (Winter camo + White pants)";
+	picture = "\VKN_Misc\VKN_Logo_Inverted.paa";
+	model = "\A3\Characters_F\Common\Suitpacks\suitpack_universal_F.p3d";
+	class ItemInfo: UniformItem
+	{
+		uniformModel = "-";
+		uniformClass = "VKN_Dummy_I_CombatUniform_lynx_top_white_1";
+		containerClass = "Supply90";
+		mass = 20;
+	};
+};
+
+class VKN_CombatUniform_lynx_1: Uniform_Base {
+	scope = 2;
+	author = "Jonmo";
+	displayName = "[VKN] Lynx (Winter camo + White pants)";
+	picture = "\VKN_Misc\VKN_Logo_Inverted.paa";
+	model = "\A3\Characters_F\Common\Suitpacks\suitpack_universal_F.p3d";
+	class ItemInfo: UniformItem
+	{
+		uniformModel = "-";
+		uniformClass = "VKN_Dummy_I_CombatUniform_lynx_1";
+		containerClass = "Supply90";
+		mass = 20;
+	};
+};
+
+
 
 ////////////////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////////////
@@ -575,5 +835,216 @@ class VKN_CombatUniform_Tactical_Sweater_6: VKN_CombatUniform_Tactical_Sweater_b
 		uniformClass="VKN_Dummy_I_Sweater_6";
 		containerClass="Supply40";
 		mass=40;
+	};
+};
+
+
+
+
+///// civ
+
+class VKN_WShirt_u_Jeans_1: UniBase	{
+	author = "Jonmo";
+	scope = 2;
+	displayName = "[VKN] PMC White shirt & Jeans";
+	picture = "**********";
+	model = "\A3\Characters_F\Common\Suitpacks\suitpack_civilian_F.p3d";
+    hiddenSelections[] = {"camo"};
+	hiddenSelectionsTextures[] = {"\vkn_gear\data\uniforms\vkn_whiteshirt_jeans_co.paa","\vkn_gear\data\uniforms\vkn_jeans_blue_co.paa"};
+	class ItemInfo: UniformItem
+	{
+		uniformModel = "-";
+		uniformClass = "VKN_Dummy_C_Shirt_Jeans_1";
+		containerClass = "Supply30";
+		mass = 30;
+	};
+};
+
+//Deleted a config entry here - Was the same as the first entry ^
+
+class VKN_WShirt_u_khaki_Jeans_1: UniBase {
+	author = "Jonmo";
+	scope = 2;
+	displayName = "[VKN] PMC White shirt & Khaki pants";
+	picture = "**********";
+	model = "\A3\Characters_F\Common\Suitpacks\suitpack_civilian_F.p3d";
+    hiddenSelections[] = {"camo"};
+	hiddenSelectionsTextures[] = {"\vkn_gear\data\uniforms\vkn_whiteshirt_jeans_co.paa","\vkn_gear\data\uniforms\vkn_jeans_khaki_co.paa"};
+	class ItemInfo: UniformItem
+	{
+		uniformModel = "-";
+		uniformClass = "VKN_Dummy_C_Shirt_khaki_Jeans_1";
+		containerClass = "Supply30";
+		mass = 30;
+	};
+};
+/*
+class VKN_BShirt_u_Jeans_1: UniBase	{
+	author = "Jonmo";
+	scope = 2;
+	displayName = "[VKN] PMC Black shirt & Jeans";
+	picture = "**********";
+	model = "\A3\Characters_F\Common\Suitpacks\suitpack_civilian_F.p3d";
+    hiddenSelections[] = {"camo"};
+	hiddenSelectionsTextures[] = {"\vkn_gear\data\uniforms\vkn_blackshirt_jeans_co.paa","\vkn_gear\data\uniforms\vkn_jeans_blue_co.paa"};
+	class ItemInfo: UniformItem
+	{
+		uniformModel = "-";
+		uniformClass = "VKN_Dummy_C_Shirt_khaki_Jeans_1";
+		containerClass = "Supply30";
+		mass = 30;
+	};
+};
+*/
+class VKN_BShirt_u_khaki_Jeans_1: UniBase {
+	author = "Jonmo";
+	scope = 2;
+	displayName = "[VKN] PMC Black shirt & Khaki pants";
+	picture = "**********";
+	model = "\A3\Characters_F\Common\Suitpacks\suitpack_civilian_F.p3d";
+    hiddenSelections[] = {"camo"};
+	hiddenSelectionsTextures[] = {"\vkn_gear\data\uniforms\vkn_blackshirt_jeans_co.paa","\vkn_gear\data\uniforms\vkn_jeans_khaki_co.paa"};
+	class ItemInfo: UniformItem
+	{
+		uniformModel = "-";
+		uniformClass = "VKN_Dummy_C_Shirt_khaki_Jeans_2";
+		containerClass = "Supply30";
+		mass = 30;
+	};
+};
+
+class VKN_WShirt_u_black_Jeans_1: UniBase {
+	author = "Jonmo";
+	scope = 2;
+	displayName = "[VKN] PMC White shirt & Black jeans";
+	picture = "**********";
+	model = "\A3\Characters_F\Common\Suitpacks\suitpack_civilian_F.p3d";
+    hiddenSelections[] = {"camo"};
+	hiddenSelectionsTextures[] = {"\vkn_gear\data\uniforms\vkn_whiteshirt_jeans_co.paa","\vkn_gear\data\uniforms\vkn_jeans_black_co.paa"};
+	class ItemInfo: UniformItem
+	{
+		uniformModel = "-";
+		uniformClass = "VKN_Dummy_C_Shirt_black_Jeans_1";
+		containerClass = "Supply30";
+		mass = 30;
+	};
+};
+
+class VKN_BShirt_u_black_Jeans_1: UniBase {
+	author = "Jonmo";
+	scope = 2;
+	displayName = "[VKN] PMC Black shirt & Black jeans";
+	picture = "**********";
+	model = "\A3\Characters_F\Common\Suitpacks\suitpack_civilian_F.p3d";
+    hiddenSelections[] = {"camo"};
+	hiddenSelectionsTextures[] = {"\vkn_gear\data\uniforms\vkn_blackshirt_jeans_co.paa","\vkn_gear\data\uniforms\vkn_jeans_black_co.paa"};
+	class ItemInfo: UniformItem
+	{
+		uniformModel = "-";
+		uniformClass = "VKN_Dummy_C_Shirt_black_Jeans_1";
+		containerClass = "Supply30";
+		mass = 30;
+	};
+};
+
+class VKN_BLUShirt_u_black_Jeans_1: UniBase {
+	author = "Jonmo";
+	scope = 2;
+	displayName = "[VKN] PMC Blue shirt & Black jeans";
+	picture = "**********";
+	model = "\A3\Characters_F\Common\Suitpacks\suitpack_civilian_F.p3d";
+    hiddenSelections[] = {"camo"};
+	hiddenSelectionsTextures[] = {"\vkn_gear\data\uniforms\vkn_blueshirt_jeans_co.paa","\vkn_gear\data\uniforms\vkn_jeans_black_co.paa"};
+	class ItemInfo: UniformItem
+	{
+		uniformModel = "-";
+		uniformClass = "classVKN_Dummy_C_Shirt_black_Jeans_1";
+		containerClass = "Supply30";
+		mass = 30;
+	};
+};
+
+class VKN_BLUShirt_u_khaki_Jeans_1: UniBase	{
+	author = "Jonmo";
+	scope = 2;
+	displayName = "[VKN] PMC Blue shirt & Khaki jeans";
+	picture = "**********";
+	model = "\A3\Characters_F\Common\Suitpacks\suitpack_civilian_F.p3d";
+    hiddenSelections[] = {"camo"};
+	hiddenSelectionsTextures[] = {"\vkn_gear\data\uniforms\vkn_blueshirt_jeans_co.paa","\vkn_gear\data\uniforms\vkn_jeans_khaki_co.paa"};
+	class ItemInfo: UniformItem
+	{
+		uniformModel = "-";
+		uniformClass = "VKN_Dummy_C_Shirt_khaki_Jeans_1";
+		containerClass = "Supply30";
+		mass = 30;
+	};
+};
+
+class VKN_BLUShirt_u_Jeans_1: UniBase {
+	author = "Jonmo";
+	scope = 2;
+	displayName = "[VKN] PMC Blue shirt & Jeans";
+	picture = "**********";
+	model = "\A3\Characters_F\Common\Suitpacks\suitpack_civilian_F.p3d";
+    hiddenSelections[] = {"camo"};
+	hiddenSelectionsTextures[] = {"\vkn_gear\data\uniforms\vkn_blueshirt_jeans_co.paa","\vkn_gear\data\uniforms\vkn_jeans_blue_co.paa"};
+	class ItemInfo: UniformItem
+	{
+		uniformModel = "-";
+		uniformClass = "VKN_Dummy_C_Shirt_Jeans_1";
+		containerClass = "Supply30";
+		mass = 30;
+	};
+};
+
+class VKN_GreenShirt_u_black_Jeans_1: UniBase {
+	author = "Jonmo";
+	scope = 2;
+	displayName = "[VKN] PMC Green shirt & Black jeans";
+	picture = "**********";
+	model = "\A3\Characters_F\Common\Suitpacks\suitpack_civilian_F.p3d";
+    hiddenSelections[] = {"camo"};
+	hiddenSelectionsTextures[] = {"\vkn_gear\data\uniforms\vkn_greenshirt_jeans_co.paa","\vkn_gear\data\uniforms\vkn_jeans_black_co.paa"};
+	class ItemInfo: UniformItem
+	{
+		uniformModel = "-";
+		uniformClass = "VKN_Dummy_C_GreenShirt_black_Jeans_1";
+		containerClass = "Supply30";
+		mass = 30;
+	};
+};
+
+class VKN_GreenShirt_u_khaki_Jeans_1: UniBase {
+	author = "Jonmo";
+	scope = 2;
+	displayName = "[VKN] PMC Green shirt & Khaki jeans";
+	picture = "**********";
+	model = "\A3\Characters_F\Common\Suitpacks\suitpack_civilian_F.p3d";
+    hiddenSelections[] = {"camo"};
+	hiddenSelectionsTextures[] = {"\vkn_gear\data\uniforms\vkn_greenshirt_jeans_co.paa","\vkn_gear\data\uniforms\vkn_jeans_khaki_co.paa"};
+	class ItemInfo: UniformItem
+	{
+		uniformModel = "-";
+		uniformClass = "VKN_Dummy_C_GreenShirt_khaki_Jeans_1";
+		containerClass = "Supply30";
+		mass = 30;
+	};
+};
+
+class VKN_GreenShirt_u_Jeans_1: UniBase	{
+	author = "Jonmo";
+	scope = 2;
+	displayName = "[VKN] PMC Green shirt & Jeans";
+	picture = "**********";
+	model = "\A3\Characters_F\Common\Suitpacks\suitpack_civilian_F.p3d";
+    hiddenSelections[] = {"camo"};
+	hiddenSelectionsTextures[] = {"\vkn_gear\data\uniforms\vkn_greenshirt_jeans_co.paa","\vkn_gear\data\uniforms\vkn_jeans_blue_co.paa"};
+	class ItemInfo: UniformItem
+	{
+		uniformModel = "-";
+		uniformClass = "VKN_Dummy_C_GreenShirt_Jeans_1";
+		containerClass = "Supply30";
+		mass = 30;
 	};
 };

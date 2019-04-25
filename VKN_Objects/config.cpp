@@ -305,4 +305,8 @@ class CfgVehicles
 		displayName = "[VKN] Chevrolet Tahoe'08 Lumi Edition";
 		scope = 2;
 	};
+
+	class Car_F;
+	#include "\VKN_Objects\Vehicles\Red\redConfig.hpp"
+	#include "\VKN_Objects\Vehicles\removeClasses.hpp"
 };

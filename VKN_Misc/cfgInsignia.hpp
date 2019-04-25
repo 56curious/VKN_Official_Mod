@@ -6,9 +6,9 @@ class CfgUnitInsignia
 		author = "Viking PMC";
 		texture = "\VKN_Misc\ORBATLogo.paa";
 	};
-	class Agier
+	class Aegir
 	{
-		displayName = "[VKN] Agier";
+		displayName = "[VKN] Aegir";
 		author = "Viking PMC";
 		texture = "\VKN_Misc\markers\data\Agier.paa";
 	};
