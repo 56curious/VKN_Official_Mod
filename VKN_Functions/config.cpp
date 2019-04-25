@@ -37,6 +37,9 @@ class CfgFunctions {
 			class creditsVKN_movie{};
 			class creditsVKN_movieConfig{};
 
+      class haltAddAction{};
+      class haltRegisterCivillian{};
+
 			class strategicMapInit{};
 			class strategicMapPreInit{postInit = 1;};
 			class strategicMapOpen{};

@@ -1,5 +1,5 @@
 /*
-Script name:    fn_haultAddAction.sqf
+Script name:    fn_haltAddAction.sqf
 Created on:     21 February ‎2018
 Author:         Curious
 
@@ -9,7 +9,7 @@ License:		This file is under "Arma Public License No Derivatives (APL-ND)"
 
 Description:    add the action globally for players to interact with if the unit is in the array.
 
-Framework:      Unit Haulting
+Framework:      Unit halting
 
 Parameters:
 				0: OBJECT - The object (or unit) that will be assigned the action.
@@ -17,9 +17,9 @@ Parameters:
 
 params ["_unit"];
 
-_haultArray = missionNamespace getVariable ["VKN_fnc_haultRegisteredUnits_Var", ""];
+_haltArray = missionNamespace getVariable ["VKN_fnc_haltRegisteredUnits_Var", ""];
 
-if (_unit in _haultArray) then {
+if (_unit in _haltArray) then {
 
 	_unit addAction ["<t color='#e2f442'>Order Unit to Stop</t>", {
 		private params ["_target", "_caller", "_actionId", "_arguments"];
