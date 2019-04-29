@@ -564,7 +564,7 @@ class O_rhsfactionvdv_Ural_Fuel_01 : RHS_Ural_Fuel_VDV_01_OCimport_02 {
     side = 0;
     faction = "O_CartelCartel_Tropical";
     crew = "O_CartelCartel_Rifleman_Tropical_01";
-    hiddenSelectionsTextures[] = {"VKN_Extensions_Characters\data\Retextures\O_Cartel_Ural_Kabina_darkgreen.paa" ,  "VKN_Extensions_Characters\data\Retextures\O_Cartel_Ural_Fuel_01_darkgreen.paa"};
+    hiddenSelectionsTextures[] = {"VKN_Extensions_Characters\data\Retextures\O_Cartel_Ural_Kabina_darkgreen.paa" , "", "", "", "", "", "", "", "", "VKN_Extensions_Characters\data\Retextures\O_Cartel_Ural_Fuel_01_darkgreen.paa"};
 
 
     class EventHandlers : EventHandlers {
@@ -678,7 +678,7 @@ class O_OCartelCartelTropical_Ural_Transport_01 : RHS_Ural_Open_Civ_01_OCimport_
     side = 0;
     faction = "O_CartelCartel_Tropical";
     crew = "O_CartelCartel_Rifleman_Tropical_01";
-    hiddenSelectionsTextures[] = {"VKN_Extensions_Characters\data\Retextures\O_Cartel_Ural_Kabina_darkgreen.paa" , "VKN_Extensions_Characters\data\Retextures\O_Cartel_Ural_Open_01_darkgreen.paa"};
+    hiddenSelectionsTextures[] = {"VKN_Extensions_Characters\data\Retextures\O_Cartel_Ural_Kabina_darkgreen.paa", "VKN_Extensions_Characters\data\Retextures\O_Cartel_Ural_Open_01_darkgreen.paa"};
 
     class Turrets : Turrets {
         class CargoTurret_01 : CargoTurret_01 { gunnerType = ""; };
