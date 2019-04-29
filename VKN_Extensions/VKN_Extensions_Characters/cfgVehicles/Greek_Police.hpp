@@ -233,7 +233,8 @@ class B_Greek_Offroader_Police_01 : B_GEN_Offroad_01_gen_F_OCimport_02 {
     displayName = "Offroader";
     side = 1;
     faction = "B_Greek_Police";
-    crew = "B_GEN_Commander_F";
+    crew = "B_Greek_Officer_Basic_Police_01";
+    hiddenSelectionsTextures[] = {"\VKN_Extensions_Characters\data\retextures\Greek_Police_Offroader.paa"};
 
     class Turrets : Turrets {
         class CargoTurret_01 : CargoTurret_01 { gunnerType = ""; };
@@ -265,7 +266,9 @@ class B_Greek_Tahoe_SUV_Police_01 : B_VKN_tahoe_UNM_PMC_01_OCimport_02 {
     displayName = "Tahoe SUV";
     side = 1;
     faction = "B_Greek_Police";
-    crew = "B_CTRG_soldier_engineer_exp_F";
+    crew = "B_Greek_Officer_Basic_Police_01";
+    hiddenSelections[] = {"camo1"};
+    hiddenSelectionsTextures[] = {"\VKN_Extensions_Characters\data\retextures\Greek_Police_Tahoe.paa"};
 
 
     class EventHandlers : EventHandlers {
@@ -289,7 +292,8 @@ class B_Greek_Van_Police_01 : B_GEN_Van_02_transport_F_OCimport_02 {
     displayName = "Van";
     side = 1;
     faction = "B_Greek_Police";
-    crew = "B_GEN_Soldier_F";
+    crew = "B_Greek_Officer_Basic_Police_01";
+    hiddenSelectionsTextures[] = {"\VKN_Extensions_Characters\data\retextures\Greek_Police_Van.paa"};
 
     class Turrets : Turrets {
         class CargoTurret_01 : CargoTurret_01 { gunnerType = ""; };
@@ -297,30 +301,6 @@ class B_Greek_Van_Police_01 : B_GEN_Van_02_transport_F_OCimport_02 {
         class CargoTurret_03 : CargoTurret_03 { gunnerType = ""; };
     };
 
-
-
-    class EventHandlers : EventHandlers {
-        class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
-
-        class ALiVE_orbatCreator {
-            init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
-        };
-
-    };
-
-    // custom attributes (do not delete)
-    ALiVE_orbatCreator_owned = 1;
-
-};
-
-class B_Greek_Hatchback_Police_01 : C_Hatchback_01_F_OCimport_02 {
-    author = "Curious";
-    scope = 2;
-    scopeCurator = 2;
-    displayName = "Hatchback";
-    side = 1;
-    faction = "B_Greek_Police";
-    crew = "C_man_1";
 
 
     class EventHandlers : EventHandlers {
