@@ -329,28 +329,68 @@ class display3DEN {
 };
 
 
-class RscDisplayStart: RscStandardDisplay
-{
-    class controls
-    {
-        class LoadingStart: RscControlsGroup
-        {
-            class controls {
-                class Logo: RscPictureKeepAspect
-                {
-                    access = 1;
-                    text = "\VKN_Misc\VikingLogoLarge_ca.paa";
-                    onLoad = "";
-                    x = "0.252437 * safezoneW";
-                    y = "0.159 * safezoneH";
-                    h = "0.693 * safezoneH";
-                    w = "0.495124 * safezoneW";
+class RscStandardDisplay;
+class RscControlsGroup;
+class RscPictureKeepAspect;
+class RscText;
+#define COLOR_TRANSPARENT { 0, 0, 0, 0 }
+#define COLOR_WHITE { 1, 1, 1, 1 }
+#define BACKGROUND_IMAGE ["\VKN_Misc\Main Menu\Static Background Images\Background1.paa","\VKN_Misc\Main Menu\Static Background Images\Background2.paa","\VKN_Misc\Main Menu\Static Background Images\Background3.paa","\VKN_Misc\Main Menu\Static Background Images\Background4.paa","\VKN_Misc\Main Menu\Static Background Images\Background5.paa","\VKN_Misc\Main Menu\Static Background Images\Background6.paa","\VKN_Misc\Main Menu\Static Background Images\Background7.paa","\VKN_Misc\Main Menu\Static Background Images\Background8.paa"]
 
-                };
+class RscDisplayStart: RscStandardDisplay {
+    class controls {
+        class LoadingStart: RscControlsGroup {
+            class controls {
+              delete Logo;
+              delete Noise;
+              delete Black;
+              class RscPicture;
+              class RscText;
+
+              class Viking_Background: RscPicture
+              {
+              	idc = 1200;
+                //style = "0x30 + 0x800";
+              	text = "\VKN_Misc\Main Menu\Static Background Images\Background8.paa";
+              	x = 0 * safezoneW; y = 0 * safezoneH;
+              	w = 1 * safezoneW; h = 1 * safezoneH;
+                colorText[] = {-1,-1,-1,-1};
+                colorBackground[] = COLOR_TRANSPARENT;
+              };
+              class Viking_Logo: RscPictureKeepAspect {
+              	idc = 1200;
+                style = "0x30 + 0x800";
+              	text = "\VKN_Misc\VikingLogo2048.paa";
+              	x = 0.066875 * safezoneW; y = 0.236 * safezoneH;
+                w = 0.288750 * safezoneW; h = 0.528 * safezoneH;
+              };
+              /*class Viking_Text_Image: RscPictureKeepAspect {
+              	idc = 1201;
+                style = "0x30 + 0x800";
+              	text = "\VKN_Misc\Main Menu\VikingPMCText.paa";
+              	x = 0.360781 * safezoneW; y = 0.456 * safezoneH;
+              	w = 0.618750 * safezoneW; h = 0.077 * safezoneH;
+              };*/
+              class Viking_Text: RscText {
+              	idc = 1000;
+                style = "0x00 + 0x02";
+                colorBackground[] = COLOR_TRANSPARENT;
+                colorText[] = COLOR_WHITE;
+                font = "ExoMedium";
+              	text = "ARMA 3 | VIKING PMC EDITION"; //--- ToDo: Localize; //
+              	x = 0.371093 * safezoneW; y = 0.379 * safezoneH;
+              	w = 0.623906 * safezoneW; h = 0.22 * safezoneH;
+                sizeEx = 0.19;
+              };
             };
         };
     };
 };
+
+
+
+
+
 
 class RscDisplayMain: RscStandardDisplay {
 
