@@ -480,7 +480,7 @@ class cfgVehicles {
 
     //East
     #include "cfgVehicles\Mexican_Guard.hpp"
-    #include "cfgVehicles\The_Cartel.hpp"
+    #include "cfgVehicles\The_Cartel.hpp"     /// Error on Truck textures (check hiddenSelections[] data)
     #include "cfgVehicles\The_Order.hpp"
     #include "cfgVehicles\Ryukyu_Dragon_Army.hpp"
     #include "cfgVehicles\CSLA.hpp"
