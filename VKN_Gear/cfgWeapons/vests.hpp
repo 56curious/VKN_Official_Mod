@@ -137,7 +137,7 @@ class VKN_Carrier_Lite_Black_1: VKN_Carrier_Lite_Base {
 	scope=2;
 	displayName="[VKN] FBA Carrier Lite (Black)";
 	author="Apple";
-	hiddenSelectionsTextures[]={"\VKN_Gear\data\Vests\VKN_Black_Carrier.paa"};
+	hiddenSelectionsTextures[]={"\VKN_Gear\data\Vests\Vanilla\VKN_Black_Carrier.paa"};
 	descriptionShort="BLK Rig Lite";
 };
 
@@ -145,7 +145,7 @@ class VKN_Black_Carrier_RIG: VKN_Carrier_Rig_Base {
 	scope=2;
 	displayName="[VKN] FBA Carrier Rig (Black)";
 	author="Apple";
-	hiddenSelectionsTextures[]={"\VKN_Gear\data\Vests\VKN_Black_Carrier.paa"};
+	hiddenSelectionsTextures[]={"\VKN_Gear\data\Vests\Vanilla\VKN_Black_Carrier.paa"};
 	descriptionShort="BLK Rig";
 };
 
@@ -156,7 +156,7 @@ class VKN_Carrier_Lite_Loki_Black_1: VKN_Carrier_Rig_Base {
 	author="Shagger (Eric McHogan)";
 	model="\A3\Characters_F\BLUFOR\equip_b_vest02.p3d";
 	hiddenSelections[]={"camo"};
-	hiddenSelectionsTextures[]={"\VKN_Gear\data\Vests\Vest_loki_Black.paa"};
+	hiddenSelectionsTextures[]={"\VKN_Gear\data\Vests\Faction\Vest_loki_Black.paa"};
 	descriptionShort="BLK Rig Lite";
 	class ItemInfo: Carrier_Lite_ItemInfo_Base { uniformModel="\A3\Characters_F\BLUFOR\equip_b_vest02.p3d"; };
 };
@@ -168,7 +168,7 @@ class VKN_Black_Carrier_Loki_Black_RIG: VKN_Carrier_Rig_Base {
 	author="Shagger (Eric McHogan)";
 	model="\A3\Characters_F\BLUFOR\equip_b_vest01.p3d";
 	hiddenSelections[]={"camo"};
-	hiddenSelectionsTextures[]={"\VKN_Gear\data\Vests\Vest_loki_Black.paa"};
+	hiddenSelectionsTextures[]={"\VKN_Gear\data\Vests\Faction\Vest_loki_Black.paa"};
 	descriptionShort="BLK Rig";
 	class ItemInfo: Carrier_ItemInfo_Base { uniformModel="\A3\Characters_F\BLUFOR\equip_b_vest01.p3d"; };
 };
@@ -177,7 +177,7 @@ class VKN_Carrier_Spec_Police_Riot : VKN_Carrier_Spec_Rig_Base	{
 		scope = 2;
 		displayName = "[VKN] Police Riot Vest";
 		hiddenSelections[] = { "camo" };
-		hiddenSelectionsTextures[] = { "\VKN_Gear\data\vests\vkn_carrier_gl_rig_police_co.paa" };
+		hiddenSelectionsTextures[] = { "\VKN_Gear\data\vests\Faction\vkn_carrier_gl_rig_police_co.paa" };
 	};
 
 
