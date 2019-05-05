@@ -52,6 +52,7 @@ class cfgCredits {
                 "Eric Mchogan (Textures)",
                 "Max Kupleoni (Textures)",
                 "Poxxl (Textures)",
+                "Apple (Textures and Configs)",
                 "JeriCrunch (Textures and Materials)"
             }
         };
@@ -328,7 +329,7 @@ class display3DEN {
     };
 };
 
-
+/*
 class RscStandardDisplay;
 class RscControlsGroup;
 class RscPictureKeepAspect;
@@ -364,13 +365,13 @@ class RscDisplayStart: RscStandardDisplay {
               	x = 0.066875 * safezoneW; y = 0.236 * safezoneH;
                 w = 0.288750 * safezoneW; h = 0.528 * safezoneH;
               };
-              /*class Viking_Text_Image: RscPictureKeepAspect {
+              class Viking_Text_Image: RscPictureKeepAspect {
               	idc = 1201;
                 style = "0x30 + 0x800";
               	text = "\VKN_Misc\Main Menu\VikingPMCText.paa";
               	x = 0.360781 * safezoneW; y = 0.456 * safezoneH;
               	w = 0.618750 * safezoneW; h = 0.077 * safezoneH;
-              };*/
+              };
               class Viking_Text: RscText {
               	idc = 1000;
                 style = "0x00 + 0x02";
@@ -386,7 +387,7 @@ class RscDisplayStart: RscStandardDisplay {
         };
     };
 };
-
+*/
 
 
 
