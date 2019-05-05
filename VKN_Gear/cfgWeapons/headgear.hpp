@@ -30,8 +30,6 @@ class VKN_Shrek_Head_Pink: VKN_Shrek_Head_Base
 
 
 
-
-
 class VKN_Cap_Headphones_Base : ItemCore {
 	picture = "\VKN_Misc\VKN_Logo_Inverted.paa";
 	scope = 0;
@@ -58,12 +56,14 @@ class VKN_Cap_LegionForest : H_Cap_red {
 	author = "Max Kupoleni";
 	scope = 2;
 	displayName="[VKN] Cap - Legion Forest";
+	picture="\VKN_Misc\VKN_Logo_Inverted.paa";
 	hiddenSelectionsTextures[] = {"\VKN_Gear\data\Headgear\VKN_Cap_LegionForest_ca.paa"};
 };
 class VKN_Cap_Loki : H_Cap_red {
 	author = "Max Kupoleni";
 	scope = 2;
 	displayName="[VKN] Cap - Loki";
+	picture="\VKN_Misc\VKN_Logo_Inverted.paa";
 	hiddenSelectionsTextures[] = {"\VKN_Gear\data\Headgear\VKN_LOKI_cap.paa"};
 };
 class VKN_Beret_SouthAfrica: VKN_Beret_Base	{
@@ -132,6 +132,7 @@ class VKN_Helmet_M90D : H_HelmetIA {
 	author="Jonmo";
 	scope = 2;
 	displayName="[VKN] Combat Helmet M90 Desert";
+	picture="\VKN_Misc\VKN_Logo_Inverted.paa";
 	hiddenSelectionsTextures[] = {"\VKN_Gear\data\Headgear\VKN_Helmet_M90D_ca.paa"};
 };
 
@@ -167,4 +168,98 @@ class VKN_VIS_headgear: H_helmetO_ViperSP_hex_F {
 	model = "\A3\Characters_F_Exp\OPFOR\headgear_o_vipersp.p3d";
 	hiddenSelections[] = {"camo"};
 	hiddenSelectionsTextures[] = {"\VKN_Gear\data\Headgear\headgear_vipersp_tna_co.paa"};
+};
+
+
+class VKN_h_HelmetB_cazador: ItemCore	{
+	author = "Jonmo";
+	scope = 2;
+	weaponPoolAvailable = 1;
+	displayName = "[VKN] Combat Helmet (Cazador)";
+	picture="\VKN_Misc\VKN_Logo_Inverted.paa";
+	model = "\A3\Characters_F\BLUFOR\headgear_b_helmet_plain";
+	hiddenSelections[] = {"camo"};
+	hiddenSelectionsTextures[] = { "\VKN_Gear\data\headgear\equip1_cazador_co.paa" };
+	class ItemInfo: HeadgearItem {
+		mass = 40;
+		uniformModel = "\A3\Characters_F\BLUFOR\headgear_b_helmet_plain";
+		modelSides[] = {0,3};
+		hiddenSelections[] = {"camo"};
+		class HitpointsProtectionInfo {
+			class Head {
+				hitPointName = "HitHead";
+				armor = 6;
+				passThrough = 0.5;
+			};
+		};
+	};
+};
+class VKN_h_HelmetB_Light_cazador: ItemCore	{
+	author = "Jonmo";
+	scope = 2;
+	weaponPoolAvailable = 1;
+	displayName = "[VKN] Light Combat Helmet (Cazador)";
+	picture="\VKN_Misc\VKN_Logo_Inverted.paa";
+	model = "\A3\Characters_F\BLUFOR\headgear_b_helmet_light";
+	hiddenSelections[] = {"camo"};
+	hiddenSelectionsTextures[] = {"\VKN_Gear\data\headgear\equip1_cazador_co.paa", "\VKN_Gear\data\headgear\equip1_cazador_co.paa", "\VKN_Gear\data\headgear\equip1_cazador_co.paa"};
+	class ItemInfo: HeadgearItem {
+		mass = 40;
+		uniformModel = "\A3\Characters_F\BLUFOR\headgear_b_helmet_light";
+		modelSides[] = {0,3};
+		hiddenSelections[] = {"camo"};
+		class HitpointsProtectionInfo {
+			class Head {
+				hitPointName = "HitHead";
+				armor = 6;
+				passThrough = 0.5;
+			};
+		};
+	};
+};
+class VKN_h_HelmetB_Enhanced_cazador: ItemCore {
+	author = "Jonmo";
+	scope = 2;
+	weaponPoolAvailable = 1;
+	displayName = "[VKN] Enhanced Combat Helmet (Cazador)";
+	picture="\VKN_Misc\VKN_Logo_Inverted.paa";
+	model = "\A3\Characters_F\BLUFOR\headgear_b_helmet_ballistic";
+	hiddenSelections[] = {"camo"};
+	hiddenSelectionsTextures[] = {"\VKN_Gear\data\headgear\equip1_cazador_co.paa", "\VKN_Gear\data\headgear\equip1_cazador_co.paa", "\VKN_Gear\data\headgear\equip1_cazador_co.paa"};
+	class ItemInfo: HeadgearItem {
+		mass = 40;
+		uniformModel = "\A3\Characters_F\BLUFOR\headgear_b_helmet_ballistic";
+		modelSides[] = {0,3};
+		hiddenSelections[] = {"camo"};
+		class HitpointsProtectionInfo {
+			class Head {
+				hitPointName = "HitHead";
+				armor = 6;
+				passThrough = 0.5;
+			};
+		};
+	};
+};
+class VKN_h_HelmetB_Camo_cazador: ItemCore {
+	author = "Jonmo";
+	scope = 2;
+	weaponPoolAvailable = 1;
+	displayName = "[VKN] Combat Helmet Camo (Cazador)";
+	picture="\VKN_Misc\VKN_Logo_Inverted.paa";
+	model = "\A3\Characters_F\BLUFOR\headgear_b_helmet_camo";
+	hiddenSelections[] = {"camo", "camo2"};
+	hiddenSelectionsTextures[] = {"\VKN_Gear\data\headgear\equip1_cazador_co.paa", "\VKN_Gear\data\headgear\vkn_ghilliecaz_co.paa"};
+	class ItemInfo: HeadgearItem {
+		mass = 40;
+		uniformModel = "\A3\Characters_F\BLUFOR\headgear_b_helmet_camo";
+		modelSides[] = {0,3};
+		hiddenSelections[] = {"camo", "camo2"};
+		class HitpointsProtectionInfo {
+			class Head {
+				hitPointName = "HitHead";
+				armor = 6;
+				passThrough = 0.5;
+			};
+		};
+	};
 };
