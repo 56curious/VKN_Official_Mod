@@ -379,6 +379,14 @@ class VKN_Dummy_I_CombatUniform_lynx_1: VKN_I_Dummy_Combat_Base {
 	hiddenSelectionsTextures[] = {"\VKN_Gear\data\uniforms\lynx_uniform_co.paa"};
 };
 
+class VKN_form_CombatUniform_Cazador_1: VKN_I_Dummy_Combat_Base {
+	modelsides[] = {0,3};
+	scope = 1;
+	model = "\A3\Characters_F_Beta\INDEP\ia_soldier_01.p3d";
+	hiddenSelections[] = {"camo"};
+	hiddenSelectionsTextures[] = {"\VKN_Gear\data\uniforms\vkn_tropical_uniform_co.paa"};
+};
+
 ////////////////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////////////
 
