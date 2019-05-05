@@ -124,8 +124,8 @@ class B_Greek_Riot_Officer_Police_01 : B_Greek_Officer_Basic_Police_01 {
 
     uniformClass = "VKN_Police_Riot_Greek_1";
 
-    linkedItems[] = {"VKN_Carrier_Spec_Police_Riot","vkn_h_riot_helmet_bala","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
-    respawnlinkedItems[] = {"VKN_Carrier_Spec_Police_Riot","vkn_h_riot_helmet_bala","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
+    linkedItems[] = {"VKN_Carrier_Spec_Police_Riot","VKN_Riot_Helmet_Visor_Up_Balaklava","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
+    respawnlinkedItems[] = {"VKN_Carrier_Spec_Police_Riot","VKN_Riot_Helmet_Visor_Up_Balaklava","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
 
     weapons[] = {"SMA_AAC_MPW_12_Black","rhsusf_weap_glock17g4"};
     respawnWeapons[] = {"SMA_AAC_MPW_12_Black","rhsusf_weap_glock17g4"};
@@ -133,7 +133,7 @@ class B_Greek_Riot_Officer_Police_01 : B_Greek_Officer_Basic_Police_01 {
     magazines[] = {"SMA_30Rnd_762x35_BLK_EPR","rhsusf_mag_17Rnd_9x19_JHP","SMA_30Rnd_762x35_BLK_EPR","rhsusf_mag_17Rnd_9x19_JHP"};
     respawnMagazines[] = {"SMA_30Rnd_762x35_BLK_EPR","rhsusf_mag_17Rnd_9x19_JHP","SMA_30Rnd_762x35_BLK_EPR","rhsusf_mag_17Rnd_9x19_JHP"};
 
-    ALiVE_orbatCreator_loadout[] = {{"SMA_AAC_MPW_12_Black","SMA_AAC_762_sdn6","acc_flashlight","SMA_eotech552_kf",{"SMA_30Rnd_762x35_BLK_EPR",30},{},""},{},{"rhsusf_weap_glock17g4","","","",{"rhsusf_mag_17Rnd_9x19_JHP",17},{},""},{"VKN_Police_Riot_Greek_1",{{"ACE_fieldDressing",2},{"ACE_morphine",1},{"SMA_30Rnd_762x35_BLK_EPR",4,30},{"rhsusf_mag_17Rnd_9x19_JHP",3,17}}},{"VKN_Carrier_Spec_Police_Riot",{{"SMA_30Rnd_762x35_BLK_EPR",1,30}}},{},"vkn_h_riot_helmet_bala","",{},{"ItemMap","","ItemRadio","ItemCompass","ItemWatch",""}};
+    ALiVE_orbatCreator_loadout[] = {{"SMA_AAC_MPW_12_Black","SMA_AAC_762_sdn6","acc_flashlight","SMA_eotech552_kf",{"SMA_30Rnd_762x35_BLK_EPR",30},{},""},{},{"rhsusf_weap_glock17g4","","","",{"rhsusf_mag_17Rnd_9x19_JHP",17},{},""},{"VKN_Police_Riot_Greek_1",{{"ACE_fieldDressing",2},{"ACE_morphine",1},{"SMA_30Rnd_762x35_BLK_EPR",4,30},{"rhsusf_mag_17Rnd_9x19_JHP",3,17}}},{"VKN_Carrier_Spec_Police_Riot",{{"SMA_30Rnd_762x35_BLK_EPR",1,30}}},{},"VKN_Riot_Helmet_Visor_Up_Balaklava","",{},{"ItemMap","","ItemRadio","ItemCompass","ItemWatch",""}};
 
 
     class EventHandlers : EventHandlers {
@@ -162,8 +162,8 @@ class B_Greek_Riot_Officer_Heavy_Police_01 : B_GEN_Soldier_F_OCimport_02 {
 
     uniformClass = "VKN_Police_Riot_Greek_1";
 
-    linkedItems[] = {"VKN_Carrier_Spec_Police_Riot","vkn_h_riot_helmet_visor","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
-    respawnlinkedItems[] = {"VKN_Carrier_Spec_Police_Riot","vkn_h_riot_helmet_visor","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
+    linkedItems[] = {"VKN_Carrier_Spec_Police_Riot","VKN_Riot_Helmet_Visor_Down","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
+    respawnlinkedItems[] = {"VKN_Carrier_Spec_Police_Riot","VKN_Riot_Helmet_Visor_Down","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
 
     weapons[] = {"SMA_AAC_MPW_12_Black","rhsusf_weap_glock17g4"};
     respawnWeapons[] = {"SMA_AAC_MPW_12_Black","rhsusf_weap_glock17g4"};
@@ -171,7 +171,7 @@ class B_Greek_Riot_Officer_Heavy_Police_01 : B_GEN_Soldier_F_OCimport_02 {
     magazines[] = {"SMA_30Rnd_762x35_BLK_EPR","rhsusf_mag_17Rnd_9x19_JHP","SMA_30Rnd_762x35_BLK_EPR","rhsusf_mag_17Rnd_9x19_JHP"};
     respawnMagazines[] = {"SMA_30Rnd_762x35_BLK_EPR","rhsusf_mag_17Rnd_9x19_JHP","SMA_30Rnd_762x35_BLK_EPR","rhsusf_mag_17Rnd_9x19_JHP"};
 
-    ALiVE_orbatCreator_loadout[] = {{"SMA_AAC_MPW_12_Black","SMA_AAC_762_sdn6","acc_flashlight","SMA_eotech552_kf",{"SMA_30Rnd_762x35_BLK_EPR",30},{},""},{},{"rhsusf_weap_glock17g4","","","",{"rhsusf_mag_17Rnd_9x19_JHP",17},{},""},{"VKN_Police_Riot_Greek_1",{{"ACE_fieldDressing",2},{"ACE_morphine",1},{"SMA_30Rnd_762x35_BLK_EPR",4,30},{"rhsusf_mag_17Rnd_9x19_JHP",3,17}}},{"VKN_Carrier_Spec_Police_Riot",{{"SMA_30Rnd_762x35_BLK_EPR",1,30}}},{},"vkn_h_riot_helmet_visor","VSM_Balaclava2_black_Peltor",{},{"ItemMap","","ItemRadio","ItemCompass","ItemWatch",""}};
+    ALiVE_orbatCreator_loadout[] = {{"SMA_AAC_MPW_12_Black","SMA_AAC_762_sdn6","acc_flashlight","SMA_eotech552_kf",{"SMA_30Rnd_762x35_BLK_EPR",30},{},""},{},{"rhsusf_weap_glock17g4","","","",{"rhsusf_mag_17Rnd_9x19_JHP",17},{},""},{"VKN_Police_Riot_Greek_1",{{"ACE_fieldDressing",2},{"ACE_morphine",1},{"SMA_30Rnd_762x35_BLK_EPR",4,30},{"rhsusf_mag_17Rnd_9x19_JHP",3,17}}},{"VKN_Carrier_Spec_Police_Riot",{{"SMA_30Rnd_762x35_BLK_EPR",1,30}}},{},"VKN_Riot_Helmet_Visor_Down","VSM_Balaclava2_black_Peltor",{},{"ItemMap","","ItemRadio","ItemCompass","ItemWatch",""}};
 
 
     class EventHandlers : EventHandlers {
@@ -200,8 +200,8 @@ class B_Greek_Riot_Officer_Light_Police_01 : B_Greek_Officer_Basic_Police_01 {
 
     uniformClass = "VKN_Police_Riot_Greek_1";
 
-    linkedItems[] = {"VKN_Carrier_Spec_Police_Riot","vkn_h_riot_helmet","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
-    respawnlinkedItems[] = {"VKN_Carrier_Spec_Police_Riot","vkn_h_riot_helmet","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
+    linkedItems[] = {"VKN_Carrier_Spec_Police_Riot","VKN_Riot_Helmet_Visor_Up","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
+    respawnlinkedItems[] = {"VKN_Carrier_Spec_Police_Riot","VKN_Riot_Helmet_Visor_Up","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
 
     weapons[] = {"SMA_AAC_MPW_12_Black","rhsusf_weap_glock17g4"};
     respawnWeapons[] = {"SMA_AAC_MPW_12_Black","rhsusf_weap_glock17g4"};
@@ -209,7 +209,7 @@ class B_Greek_Riot_Officer_Light_Police_01 : B_Greek_Officer_Basic_Police_01 {
     magazines[] = {"SMA_30Rnd_762x35_BLK_EPR","rhsusf_mag_17Rnd_9x19_JHP","SMA_30Rnd_762x35_BLK_EPR","rhsusf_mag_17Rnd_9x19_JHP"};
     respawnMagazines[] = {"SMA_30Rnd_762x35_BLK_EPR","rhsusf_mag_17Rnd_9x19_JHP","SMA_30Rnd_762x35_BLK_EPR","rhsusf_mag_17Rnd_9x19_JHP"};
 
-    ALiVE_orbatCreator_loadout[] = {{"SMA_AAC_MPW_12_Black","SMA_AAC_762_sdn6","acc_flashlight","SMA_eotech552_kf",{"SMA_30Rnd_762x35_BLK_EPR",30},{},""},{},{"rhsusf_weap_glock17g4","","","",{"rhsusf_mag_17Rnd_9x19_JHP",17},{},""},{"VKN_Police_Riot_Greek_1",{{"ACE_fieldDressing",2},{"ACE_morphine",1},{"SMA_30Rnd_762x35_BLK_EPR",4,30},{"rhsusf_mag_17Rnd_9x19_JHP",3,17}}},{"VKN_Carrier_Spec_Police_Riot",{{"SMA_30Rnd_762x35_BLK_EPR",1,30}}},{},"vkn_h_riot_helmet","",{},{"ItemMap","","ItemRadio","ItemCompass","ItemWatch",""}};
+    ALiVE_orbatCreator_loadout[] = {{"SMA_AAC_MPW_12_Black","SMA_AAC_762_sdn6","acc_flashlight","SMA_eotech552_kf",{"SMA_30Rnd_762x35_BLK_EPR",30},{},""},{},{"rhsusf_weap_glock17g4","","","",{"rhsusf_mag_17Rnd_9x19_JHP",17},{},""},{"VKN_Police_Riot_Greek_1",{{"ACE_fieldDressing",2},{"ACE_morphine",1},{"SMA_30Rnd_762x35_BLK_EPR",4,30},{"rhsusf_mag_17Rnd_9x19_JHP",3,17}}},{"VKN_Carrier_Spec_Police_Riot",{{"SMA_30Rnd_762x35_BLK_EPR",1,30}}},{},"VKN_Riot_Helmet_Visor_Up","",{},{"ItemMap","","ItemRadio","ItemCompass","ItemWatch",""}};
 
 
     class EventHandlers : EventHandlers {
