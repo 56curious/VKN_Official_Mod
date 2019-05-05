@@ -659,6 +659,20 @@ class VKN_CombatUniform_DPM_Black: VKN_I_CombatUniform_Base {
 	};
 };
 
+class VKN_CombatUniform_Cazadores_1: Uniform_Base	{
+	scope = 2;
+	author = "Jonmo";
+	displayName = "[VKN] Cazador Tropical Uniform";
+	picture="\VKN_Misc\VKN_Logo_Inverted.paa";
+	model = "\A3\Characters_F\Common\Suitpacks\suitpack_universal_F.p3d";
+	class ItemInfo: UniformItem {
+		uniformModel = "-";
+		uniformClass = "VKN_form_CombatUniform_cazador_1";
+		containerClass = "Supply90";
+		mass = 20;
+	};
+};
+
 class VKN_Police_Riot_Greek_1: VKN_I_CombatUniform_Base	{
 	scope = 2;
 	author = "Jonmo";
@@ -843,208 +857,5 @@ class VKN_CombatUniform_Tactical_Sweater_6: VKN_CombatUniform_Tactical_Sweater_b
 
 ///// civ
 
-class VKN_WShirt_u_Jeans_1: UniBase	{
-	author = "Jonmo";
-	scope = 2;
-	displayName = "[VKN] PMC White shirt & Jeans";
-	picture = "**********";
-	model = "\A3\Characters_F\Common\Suitpacks\suitpack_civilian_F.p3d";
-    hiddenSelections[] = {"camo"};
-	hiddenSelectionsTextures[] = {"\vkn_gear\data\uniforms\vkn_whiteshirt_jeans_co.paa","\vkn_gear\data\uniforms\vkn_jeans_blue_co.paa"};
-	class ItemInfo: UniformItem
-	{
-		uniformModel = "-";
-		uniformClass = "VKN_Dummy_C_Shirt_Jeans_1";
-		containerClass = "Supply30";
-		mass = 30;
-	};
-};
 
-//Deleted a config entry here - Was the same as the first entry ^
-
-class VKN_WShirt_u_khaki_Jeans_1: UniBase {
-	author = "Jonmo";
-	scope = 2;
-	displayName = "[VKN] PMC White shirt & Khaki pants";
-	picture = "**********";
-	model = "\A3\Characters_F\Common\Suitpacks\suitpack_civilian_F.p3d";
-    hiddenSelections[] = {"camo"};
-	hiddenSelectionsTextures[] = {"\vkn_gear\data\uniforms\vkn_whiteshirt_jeans_co.paa","\vkn_gear\data\uniforms\vkn_jeans_khaki_co.paa"};
-	class ItemInfo: UniformItem
-	{
-		uniformModel = "-";
-		uniformClass = "VKN_Dummy_C_Shirt_khaki_Jeans_1";
-		containerClass = "Supply30";
-		mass = 30;
-	};
-};
-/*
-class VKN_BShirt_u_Jeans_1: UniBase	{
-	author = "Jonmo";
-	scope = 2;
-	displayName = "[VKN] PMC Black shirt & Jeans";
-	picture = "**********";
-	model = "\A3\Characters_F\Common\Suitpacks\suitpack_civilian_F.p3d";
-    hiddenSelections[] = {"camo"};
-	hiddenSelectionsTextures[] = {"\vkn_gear\data\uniforms\vkn_blackshirt_jeans_co.paa","\vkn_gear\data\uniforms\vkn_jeans_blue_co.paa"};
-	class ItemInfo: UniformItem
-	{
-		uniformModel = "-";
-		uniformClass = "VKN_Dummy_C_Shirt_khaki_Jeans_1";
-		containerClass = "Supply30";
-		mass = 30;
-	};
-};
-*/
-class VKN_BShirt_u_khaki_Jeans_1: UniBase {
-	author = "Jonmo";
-	scope = 2;
-	displayName = "[VKN] PMC Black shirt & Khaki pants";
-	picture = "**********";
-	model = "\A3\Characters_F\Common\Suitpacks\suitpack_civilian_F.p3d";
-    hiddenSelections[] = {"camo"};
-	hiddenSelectionsTextures[] = {"\vkn_gear\data\uniforms\vkn_blackshirt_jeans_co.paa","\vkn_gear\data\uniforms\vkn_jeans_khaki_co.paa"};
-	class ItemInfo: UniformItem
-	{
-		uniformModel = "-";
-		uniformClass = "VKN_Dummy_C_Shirt_khaki_Jeans_2";
-		containerClass = "Supply30";
-		mass = 30;
-	};
-};
-
-class VKN_WShirt_u_black_Jeans_1: UniBase {
-	author = "Jonmo";
-	scope = 2;
-	displayName = "[VKN] PMC White shirt & Black jeans";
-	picture = "**********";
-	model = "\A3\Characters_F\Common\Suitpacks\suitpack_civilian_F.p3d";
-    hiddenSelections[] = {"camo"};
-	hiddenSelectionsTextures[] = {"\vkn_gear\data\uniforms\vkn_whiteshirt_jeans_co.paa","\vkn_gear\data\uniforms\vkn_jeans_black_co.paa"};
-	class ItemInfo: UniformItem
-	{
-		uniformModel = "-";
-		uniformClass = "VKN_Dummy_C_Shirt_black_Jeans_1";
-		containerClass = "Supply30";
-		mass = 30;
-	};
-};
-
-class VKN_BShirt_u_black_Jeans_1: UniBase {
-	author = "Jonmo";
-	scope = 2;
-	displayName = "[VKN] PMC Black shirt & Black jeans";
-	picture = "**********";
-	model = "\A3\Characters_F\Common\Suitpacks\suitpack_civilian_F.p3d";
-    hiddenSelections[] = {"camo"};
-	hiddenSelectionsTextures[] = {"\vkn_gear\data\uniforms\vkn_blackshirt_jeans_co.paa","\vkn_gear\data\uniforms\vkn_jeans_black_co.paa"};
-	class ItemInfo: UniformItem
-	{
-		uniformModel = "-";
-		uniformClass = "VKN_Dummy_C_Shirt_black_Jeans_1";
-		containerClass = "Supply30";
-		mass = 30;
-	};
-};
-
-class VKN_BLUShirt_u_black_Jeans_1: UniBase {
-	author = "Jonmo";
-	scope = 2;
-	displayName = "[VKN] PMC Blue shirt & Black jeans";
-	picture = "**********";
-	model = "\A3\Characters_F\Common\Suitpacks\suitpack_civilian_F.p3d";
-    hiddenSelections[] = {"camo"};
-	hiddenSelectionsTextures[] = {"\vkn_gear\data\uniforms\vkn_blueshirt_jeans_co.paa","\vkn_gear\data\uniforms\vkn_jeans_black_co.paa"};
-	class ItemInfo: UniformItem
-	{
-		uniformModel = "-";
-		uniformClass = "classVKN_Dummy_C_Shirt_black_Jeans_1";
-		containerClass = "Supply30";
-		mass = 30;
-	};
-};
-
-class VKN_BLUShirt_u_khaki_Jeans_1: UniBase	{
-	author = "Jonmo";
-	scope = 2;
-	displayName = "[VKN] PMC Blue shirt & Khaki jeans";
-	picture = "**********";
-	model = "\A3\Characters_F\Common\Suitpacks\suitpack_civilian_F.p3d";
-    hiddenSelections[] = {"camo"};
-	hiddenSelectionsTextures[] = {"\vkn_gear\data\uniforms\vkn_blueshirt_jeans_co.paa","\vkn_gear\data\uniforms\vkn_jeans_khaki_co.paa"};
-	class ItemInfo: UniformItem
-	{
-		uniformModel = "-";
-		uniformClass = "VKN_Dummy_C_Shirt_khaki_Jeans_1";
-		containerClass = "Supply30";
-		mass = 30;
-	};
-};
-
-class VKN_BLUShirt_u_Jeans_1: UniBase {
-	author = "Jonmo";
-	scope = 2;
-	displayName = "[VKN] PMC Blue shirt & Jeans";
-	picture = "**********";
-	model = "\A3\Characters_F\Common\Suitpacks\suitpack_civilian_F.p3d";
-    hiddenSelections[] = {"camo"};
-	hiddenSelectionsTextures[] = {"\vkn_gear\data\uniforms\vkn_blueshirt_jeans_co.paa","\vkn_gear\data\uniforms\vkn_jeans_blue_co.paa"};
-	class ItemInfo: UniformItem
-	{
-		uniformModel = "-";
-		uniformClass = "VKN_Dummy_C_Shirt_Jeans_1";
-		containerClass = "Supply30";
-		mass = 30;
-	};
-};
-
-class VKN_GreenShirt_u_black_Jeans_1: UniBase {
-	author = "Jonmo";
-	scope = 2;
-	displayName = "[VKN] PMC Green shirt & Black jeans";
-	picture = "**********";
-	model = "\A3\Characters_F\Common\Suitpacks\suitpack_civilian_F.p3d";
-    hiddenSelections[] = {"camo"};
-	hiddenSelectionsTextures[] = {"\vkn_gear\data\uniforms\vkn_greenshirt_jeans_co.paa","\vkn_gear\data\uniforms\vkn_jeans_black_co.paa"};
-	class ItemInfo: UniformItem
-	{
-		uniformModel = "-";
-		uniformClass = "VKN_Dummy_C_GreenShirt_black_Jeans_1";
-		containerClass = "Supply30";
-		mass = 30;
-	};
-};
-
-class VKN_GreenShirt_u_khaki_Jeans_1: UniBase {
-	author = "Jonmo";
-	scope = 2;
-	displayName = "[VKN] PMC Green shirt & Khaki jeans";
-	picture = "**********";
-	model = "\A3\Characters_F\Common\Suitpacks\suitpack_civilian_F.p3d";
-    hiddenSelections[] = {"camo"};
-	hiddenSelectionsTextures[] = {"\vkn_gear\data\uniforms\vkn_greenshirt_jeans_co.paa","\vkn_gear\data\uniforms\vkn_jeans_khaki_co.paa"};
-	class ItemInfo: UniformItem
-	{
-		uniformModel = "-";
-		uniformClass = "VKN_Dummy_C_GreenShirt_khaki_Jeans_1";
-		containerClass = "Supply30";
-		mass = 30;
-	};
-};
-
-class VKN_GreenShirt_u_Jeans_1: UniBase	{
-	author = "Jonmo";
-	scope = 2;
-	displayName = "[VKN] PMC Green shirt & Jeans";
-	picture = "**********";
-	model = "\A3\Characters_F\Common\Suitpacks\suitpack_civilian_F.p3d";
-    hiddenSelections[] = {"camo"};
-	hiddenSelectionsTextures[] = {"\vkn_gear\data\uniforms\vkn_greenshirt_jeans_co.paa","\vkn_gear\data\uniforms\vkn_jeans_blue_co.paa"};
-	class ItemInfo: UniformItem
-	{
-		uniformModel = "-";
-		uniformClass = "VKN_Dummy_C_GreenShirt_Jeans_1";
-		containerClass = "Supply30";
-		mass = 30;
-	};
 };
