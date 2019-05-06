@@ -35,8 +35,7 @@ collect3DENHistory {
 		["General", "LoadScreen", "\VKN_Misc\VikingLogoLarge_ca.paa"],
 		["General", "OverviewPicture", "\VKN_Misc\VikingLogoLarge_ca.paa"],
 		["General", "SaveBinarized", false],
-		["General", "IntelBriefingName", "Viking PMC Zeus OP"],
-		["General", "EnableDebugConsole", 1]
+		["General", "IntelBriefingName", "Viking PMC Zeus OP"]
 	];
 
 	sleep 0.5;
