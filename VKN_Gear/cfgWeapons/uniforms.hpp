@@ -479,22 +479,6 @@
 		};
 	};
 
-	class VKN_Vest_V_HarnessO_drk_F: Vest_NoCamo_Base {
-		author = "Jonmo";
-		scope = 2;
-		displayName = "[VKN] VIS LVB Harness (Dark)";
-		picture="\VKN_Misc\VKN_Logo_Inverted.paa";
-		model = "\A3\Characters_F\OPFOR\equip_o_vest01";
-		hiddenSelections[] = {"Camo1", "Camo2"};
-		hiddenSelectionsTextures[] = {"\VKN_Gear\data\Uniforms\clothing_drk_tna_CO.paa","\VKN_Gear\data\Uniforms\tech_drk_tna_CO.paa","\VKN_Gear\data\Uniforms\tech_drk_tna_CO.paa"};
-		class ItemInfo: VestItem {
-			uniformModel = "\A3\Characters_F\OPFOR\equip_o_vest01";
-			containerClass = "Supply160";
-			mass = 30;
-			hiddenSelections[] = {"Camo1","Camo2","Camo3"};
-		};
-	};
-
 
 ////////////////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////////////
@@ -761,6 +745,23 @@ class VKN_CombatUniform_lynx_1: Uniform_Base {
 	};
 };
 
+class VKN_CombatUniform_Shirt_DDPM: Uniform_Base {
+	author = "Jonmo";
+	scope = 2;
+	displayName = "[VKN] DDPM Uniform (Shirt)";
+	picture = "\VKN_Misc\VKN_Logo_Inverted.paa";
+	model = "\A3\Characters_F\Common\Suitpacks\suitpack_civilian_F.p3d";
+	descriptionShort = "PMC Shirt with DDPM Pants";
+	hiddenSelections[] = {"camo1","camo2","insignia"};
+	hiddenSelectionsTextures[] = {"\A3\Characters_F_EPB\Guerrilla\Data\ig_guerrilla5_1_co.paa","\VKN_Gear\data\uniforms\vkn_ddpm_shirt_co.paa"};
+	class ItemInfo: UniformItem {
+		uniformModel = "-";
+		uniformClass = "VKN_Dummy_I_Shirt_DDPM_1";
+		containerClass = "Supply40";
+		mass = 40;
+	};
+};
+
 
 
 ////////////////////////////////////////////////////////////////////////////////////////////
@@ -852,10 +853,223 @@ class VKN_CombatUniform_Tactical_Sweater_6: VKN_CombatUniform_Tactical_Sweater_b
 	};
 };
 
-
-
+class VKN_CombatUniform_Sweater_DDPM_1: VKN_CombatUniform_Tactical_Sweater_base {
+	scope = 2;
+	author = "Jonmo";
+	displayName = "[VKN] DDPM Uniform (Sweater)";
+	picture = "\VKN_Misc\VKN_Logo_Inverted.paa";
+	descriptionShort = "Viking Tactical Sweater, DDPM";
+	hiddenSelectionsTextures[]={"\VKN_Gear\data\Uniforms\VKN_ddpm_sweater_co.paa"};
+	class ItemInfo: UniformItem {
+		uniformModel="-";
+		uniformClass="VKN_Dummy_I_Sweater_DDPM_1";
+		containerClass="Supply40";
+		mass=40;
+	};
+};
 
 ///// civ
 
+class VKN_Shirt_White_Jeans: Uniform_Base	{
+	author = "Jonmo";
+	scope = 2;
+	displayName = "[VKN] PMC White shirt & Jeans";
+	picture="\VKN_Misc\VKN_Logo_Inverted.paa";
+	model = "\A3\Characters_F\Common\Suitpacks\suitpack_civilian_F.p3d";
+      hiddenSelections[] = {"camo"};
+	hiddenSelectionsTextures[] = {"\vkn_gear\data\uniforms\vkn_whiteshirt_jeans_co.paa","\vkn_gear\data\uniforms\vkn_jeans_blue_co.paa"};
+	class ItemInfo: UniformItem
+	{
+		uniformModel = "-";
+		uniformClass = "VKN_Dummy_C_Shirt_White_Jeans";
+		containerClass = "Supply30";
+		mass = 30;
+	};
+};
 
+class VKN_Shirt_White_Pants_Khaki: Uniform_Base {
+	author = "Jonmo";
+	scope = 2;
+	displayName = "[VKN] PMC White shirt & Khaki pants";
+	picture="\VKN_Misc\VKN_Logo_Inverted.paa";
+	model = "\A3\Characters_F\Common\Suitpacks\suitpack_civilian_F.p3d";
+      hiddenSelections[] = {"camo"};
+	hiddenSelectionsTextures[] = {"\vkn_gear\data\uniforms\vkn_whiteshirt_jeans_co.paa","\vkn_gear\data\uniforms\vkn_jeans_khaki_co.paa"};
+	class ItemInfo: UniformItem
+	{
+		uniformModel = "-";
+		uniformClass = "VKN_Dummy_C_Shirt_White_Pants_Khaki";
+		containerClass = "Supply30";
+		mass = 30;
+	};
+};
+
+class VKN_Shirt_Black_Jeans: Uniform_Base {
+	author = "Jonmo";
+	scope = 2;
+	displayName = "[VKN] PMC Black shirt & Jeans";
+	picture="\VKN_Misc\VKN_Logo_Inverted.paa";
+	model = "\A3\Characters_F\Common\Suitpacks\suitpack_civilian_F.p3d";
+      hiddenSelections[] = {"camo"};
+	hiddenSelectionsTextures[] = {"\vkn_gear\data\uniforms\vkn_blackshirt_jeans_co.paa","\vkn_gear\data\uniforms\vkn_jeans_blue_co.paa"};
+	class ItemInfo: UniformItem
+	{
+		uniformModel = "-";
+		uniformClass = "VKN_Dummy_C_Shirt_Black_Jeans_1";
+		containerClass = "Supply30";
+		mass = 30;
+	};
+};
+
+class VKN_Shirt_Black_Pants_Khaki: Uniform_Base {
+	author = "Jonmo";
+	scope = 2;
+	displayName = "[VKN] PMC Black shirt & Khaki pants";
+	picture="\VKN_Misc\VKN_Logo_Inverted.paa";
+	model = "\A3\Characters_F\Common\Suitpacks\suitpack_civilian_F.p3d";
+      hiddenSelections[] = {"camo"};
+	hiddenSelectionsTextures[] = {"\vkn_gear\data\uniforms\vkn_blackshirt_jeans_co.paa","\vkn_gear\data\uniforms\vkn_jeans_khaki_co.paa"};
+	class ItemInfo: UniformItem
+	{
+		uniformModel = "-";
+		uniformClass = "VKN_Dummy_C_Shirt_Black_Pants_Khaki";
+		containerClass = "Supply30";
+		mass = 30;
+	};
+};
+
+class VKN_Shirt_White_Jeans_Black: Uniform_Base {
+	author = "Jonmo";
+	scope = 2;
+	displayName = "[VKN] PMC White shirt & Black jeans";
+	picture="\VKN_Misc\VKN_Logo_Inverted.paa";
+	model = "\A3\Characters_F\Common\Suitpacks\suitpack_civilian_F.p3d";
+      hiddenSelections[] = {"camo"};
+	hiddenSelectionsTextures[] = {"\vkn_gear\data\uniforms\vkn_whiteshirt_jeans_co.paa","\vkn_gear\data\uniforms\vkn_jeans_black_co.paa"};
+	class ItemInfo: UniformItem
+	{
+		uniformModel = "-";
+		uniformClass = "VKN_Dummy_C_Shirt_White_Jeans_Black";
+		containerClass = "Supply30";
+		mass = 30;
+	};
+};
+
+class VKN_Shirt_Black_Jeans_Black: Uniform_Base {
+	author = "Jonmo";
+	scope = 2;
+	displayName = "[VKN] PMC Black shirt & Black jeans";
+	picture="\VKN_Misc\VKN_Logo_Inverted.paa";
+	model = "\A3\Characters_F\Common\Suitpacks\suitpack_civilian_F.p3d";
+      hiddenSelections[] = {"camo"};
+	hiddenSelectionsTextures[] = {"\vkn_gear\data\uniforms\vkn_blackshirt_jeans_co.paa","\vkn_gear\data\uniforms\vkn_jeans_black_co.paa"};
+	class ItemInfo: UniformItem
+	{
+		uniformModel = "-";
+		uniformClass = "VKN_Dummy_C_Shirt_Black_Pants_Black";
+		containerClass = "Supply30";
+		mass = 30;
+	};
+};
+
+class VKN_Shirt_Blue_Jeans_Black: Uniform_Base {
+	author = "Jonmo";
+	scope = 2;
+	displayName = "[VKN] PMC Blue shirt & Black jeans";
+	picture="\VKN_Misc\VKN_Logo_Inverted.paa";
+	model = "\A3\Characters_F\Common\Suitpacks\suitpack_civilian_F.p3d";
+      hiddenSelections[] = {"camo"};
+	hiddenSelectionsTextures[] = {"\vkn_gear\data\uniforms\vkn_blueshirt_jeans_co.paa","\vkn_gear\data\uniforms\vkn_jeans_black_co.paa"};
+	class ItemInfo: UniformItem
+	{
+		uniformModel = "-";
+		uniformClass = "VKN_Dummy_C_Shirt_Blue_Pants_Black";
+		containerClass = "Supply30";
+		mass = 30;
+	};
+};
+
+class VKN_Shirt_Blue_Jeans_Khaki: Uniform_Base {
+	author = "Jonmo";
+	scope = 2;
+	displayName = "[VKN] PMC Blue shirt & Khaki jeans";
+	picture="\VKN_Misc\VKN_Logo_Inverted.paa";
+	model = "\A3\Characters_F\Common\Suitpacks\suitpack_civilian_F.p3d";
+      hiddenSelections[] = {"camo"};
+	hiddenSelectionsTextures[] = {"\vkn_gear\data\uniforms\vkn_blueshirt_jeans_co.paa","\vkn_gear\data\uniforms\vkn_jeans_khaki_co.paa"};
+	class ItemInfo: UniformItem
+	{
+		uniformModel = "-";
+		uniformClass = "VKN_Dummy_C_Shirt_Blue_Pants_Khaki";
+		containerClass = "Supply30";
+		mass = 30;
+	};
+};
+
+class VKN_Shirt_Blue_Jeans: Uniform_Base {
+	author = "Jonmo";
+	scope = 2;
+	displayName = "[VKN] PMC Blue shirt & Jeans";
+	picture="\VKN_Misc\VKN_Logo_Inverted.paa";
+	model = "\A3\Characters_F\Common\Suitpacks\suitpack_civilian_F.p3d";
+      hiddenSelections[] = {"camo"};
+	hiddenSelectionsTextures[] = {"\vkn_gear\data\uniforms\vkn_blueshirt_jeans_co.paa","\vkn_gear\data\uniforms\vkn_jeans_blue_co.paa"};
+	class ItemInfo: UniformItem
+	{
+		uniformModel = "-";
+		uniformClass = "VKN_Dummy_C_Shirt_Blue_Jeans";
+		containerClass = "Supply30";
+		mass = 30;
+	};
+};
+
+class VKN_Shirt_Green_Jeans_Black: Uniform_Base {
+	author = "Jonmo";
+	scope = 2;
+	displayName = "[VKN] PMC Green shirt & Black jeans";
+	picture="\VKN_Misc\VKN_Logo_Inverted.paa";
+	model = "\A3\Characters_F\Common\Suitpacks\suitpack_civilian_F.p3d";
+      hiddenSelections[] = {"camo"};
+	hiddenSelectionsTextures[] = {"\vkn_gear\data\uniforms\vkn_greenshirt_jeans_co.paa","\vkn_gear\data\uniforms\vkn_jeans_black_co.paa"};
+	class ItemInfo: UniformItem
+	{
+		uniformModel = "-";
+		uniformClass = "VKN_Dummy_C_Shirt_Green_Pants_Black";
+		containerClass = "Supply30";
+		mass = 30;
+	};
+};
+
+class VKN_Shirt_Green_Jeans_Khaki: Uniform_Base {
+	author = "Jonmo";
+	scope = 2;
+	displayName = "[VKN] PMC Green shirt & Khaki jeans";
+	picture="\VKN_Misc\VKN_Logo_Inverted.paa";
+	model = "\A3\Characters_F\Common\Suitpacks\suitpack_civilian_F.p3d";
+      hiddenSelections[] = {"camo"};
+	hiddenSelectionsTextures[] = {"\vkn_gear\data\uniforms\vkn_greenshirt_jeans_co.paa","\vkn_gear\data\uniforms\vkn_jeans_khaki_co.paa"};
+	class ItemInfo: UniformItem
+	{
+		uniformModel = "-";
+		uniformClass = "VKN_Dummy_C_Shirt_Green_Jeans_Khaki";
+		containerClass = "Supply30";
+		mass = 30;
+	};
+};
+
+class VKN_Shirt_Green_Jeans: Uniform_Base {
+	author = "Jonmo";
+	scope = 2;
+	displayName = "[VKN] PMC Green shirt & Jeans";
+	picture="\VKN_Misc\VKN_Logo_Inverted.paa";
+	model = "\A3\Characters_F\Common\Suitpacks\suitpack_civilian_F.p3d";
+      hiddenSelections[] = {"camo"};
+	hiddenSelectionsTextures[] = {"\vkn_gear\data\uniforms\vkn_greenshirt_jeans_co.paa","\vkn_gear\data\uniforms\vkn_jeans_blue_co.paa"};
+	class ItemInfo: UniformItem
+	{
+		uniformModel = "-";
+		uniformClass = "VKN_Dummy_C_Shirt_Green_Jeans_Khaki";
+		containerClass = "Supply30";
+		mass = 30;
+	};
 };
