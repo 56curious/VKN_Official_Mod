@@ -249,7 +249,7 @@ class cfgWeapons {
     displayName = "[VKN] Cazador Paraclete RAV (Operator)";
     weaponPoolAvailable=1;
     picture="\VKN_Misc\VKN_Logo_Inverted.paa";
-		hiddenSelectionsTextures[] = {"VKN_Gear\data\vests\VSM_Cazador_Chestrig.paa","VKN_Gear\data\vests\VKN_BattleBelt_Cazador.paa","VKN_Gear\data\Vests\Cazador\VKN_dropholster.paa","VKN_Gear\data\Vests\Cazador\VKN_serpa.paa","VKN_Gear\data\Vests\Cazador\VKN_Cazador_gear_co.paa","VKN_Gear\data\Vests\Cazador\VKN_radio_pouch_Green.paa","VKN_Gear\data\Vests\Cazador\VKN_rav_Cazador.paa","VKN_Gear\data\Vests\Cazador\VKN_pouches_Cazador.paa"};
+		hiddenSelectionsTextures[] = {"VKN_Gear\data\vests\Cazador\VSM_Cazador_Chestrig.paa","VKN_Gear\data\vests\Cazador\VKN_BattleBelt_Cazador.paa","VKN_Gear\data\Vests\Cazador\VKN_dropholster.paa","VKN_Gear\data\Vests\Cazador\VKN_serpa.paa","VKN_Gear\data\Vests\Cazador\VKN_Cazador_gear_co.paa","VKN_Gear\data\Vests\Cazador\VKN_radio_pouch_Green.paa","VKN_Gear\data\Vests\Cazador\VKN_rav_Cazador.paa","VKN_Gear\data\Vests\Cazador\VKN_pouches_Cazador.paa"};
 	};
 	class VKN_RAV_Gunner_Cazador: VKN_RAV_Gunner_Base {
     scope = 2;

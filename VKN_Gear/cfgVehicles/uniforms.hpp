@@ -18,6 +18,11 @@
 		hiddenSelections[] = {"Camo","insignia"};
 	};
 
+	class VKN_Dummy_Button_Up_Base: B_G_Soldier_F {
+		scope = 2;
+		hiddenSelections[] = {"camo1","camo2","insignia"};
+	};
+
 //// Blufor Combat Uniforms
 
 // Non Rolled
@@ -387,6 +392,15 @@ class VKN_form_CombatUniform_Cazador_1: VKN_I_Dummy_Combat_Base {
 	hiddenSelectionsTextures[] = {"\VKN_Gear\data\uniforms\vkn_tropical_uniform_co.paa"};
 };
 
+class VKN_Dummy_I_Sweater_DDPM_1: VKN_Dummy_I_Sweater_Base {
+	author = "Jonmo";
+	modelsides[] = {0,3};
+	scope = 1;
+	model = "\A3\Characters_F_Beta\INDEP\ia_soldier_01.p3d";
+	hiddenSelections[] = {"camo"};
+	hiddenSelectionsTextures[] = {"\VKN_Gear\data\uniforms\vkn_ddpm_sweater_co.paa"};
+};
+
 ////////////////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -450,12 +464,19 @@ class VKN_Dummy_I_3CD_Black_2: VKN_I_Dummy_Combat_Base {
 	hiddenSelectionsTextures[]={"\VKN_Gear\data\Uniforms\VKN_3CD_Black_R_ca.paa"};
 };
 
-
+class VKN_Dummy_I_Shirt_DDPM_1: VKN_Dummy_Button_Up_Base {
+	Author = "Jonmo";
+	modelsides[] = {0,3};
+	scope = 1;
+	model = "\A3\Characters_F_EPB\Guerrilla\ig_guerrilla5_1.p3d";
+	hiddenSelections[] = {"camo1","camo2","insignia"};
+	hiddenSelectionsTextures[] = {"\A3\Characters_F_EPB\Guerrilla\Data\ig_guerrilla5_1_co.paa","\VKN_Gear\data\uniforms\vkn_ddpm_shirt_co.paa"};
+};
 
 
 ///// civ
 
-class VKN_Dummy_C_Shirt_Jeans_1: C_Story_Mechanic_01_F	{
+class VKN_Dummy_C_Shirt_White_Jeans: C_Story_Mechanic_01_F {
 	author = "Jonmo";
 	scope = 2;
 	scopeCurator = 2;
@@ -465,7 +486,7 @@ class VKN_Dummy_C_Shirt_Jeans_1: C_Story_Mechanic_01_F	{
 	hiddenSelectionsTextures[] = {"\vkn_gear\data\uniforms\vkn_whiteshirt_jeans_co.paa","\vkn_gear\data\uniforms\vkn_jeans_blue_co.paa"};
 };
 
-class VKN_Dummy_C_Shirt_khaki_Jeans_1: C_Story_Mechanic_01_F {
+class VKN_Dummy_C_Shirt_White_Pants_Khaki: C_Story_Mechanic_01_F {
 	author = "Jonmo";
 	scope = 2;
 	scopeCurator = 2;
@@ -475,7 +496,27 @@ class VKN_Dummy_C_Shirt_khaki_Jeans_1: C_Story_Mechanic_01_F {
 	hiddenSelectionsTextures[] = {"\vkn_gear\data\uniforms\vkn_whiteshirt_jeans_co.paa","\vkn_gear\data\uniforms\vkn_jeans_khaki_co.paa"};
 };
 
-class VKN_Dummy_C_Shirt_black_Jeans_2: C_Story_Mechanic_01_F {
+class VKN_Dummy_C_Shirt_Black_Jeans_1: C_Story_Mechanic_01_F {
+	author = "Jonmo";
+	scope = 2;
+	scopeCurator = 2;
+	displayName = "[VKN] PMC Black shirt & Jeans";
+	model = "a3\Characters_F_Orange\Uniforms\C_Mechanic_01_F.p3d";
+	hiddenSelections[] = {"camo1","camo2"};
+	hiddenSelectionsTextures[] = {"\vkn_gear\data\uniforms\vkn_whiteshirt_jeans_co.paa","\vkn_gear\data\uniforms\vkn_jeans_blue_co.paa"};
+};
+
+class VKN_Dummy_C_Shirt_Black_Pants_Khaki: C_Story_Mechanic_01_F {
+	author = "Jonmo";
+	scope = 2;
+	scopeCurator = 2;
+	displayName = "[VKN] PMC Black shirt & Khaki pants";
+	model = "a3\Characters_F_Orange\Uniforms\C_Mechanic_01_F.p3d";
+	hiddenSelections[] = {"camo1","camo2"};
+	hiddenSelectionsTextures[] = {"\vkn_gear\data\uniforms\vkn_blackshirt_jeans_co.paa","\vkn_gear\data\uniforms\vkn_jeans_khaki_co.paa"};
+};
+
+class VKN_Dummy_C_Shirt_White_Jeans_Black: C_Story_Mechanic_01_F {
 	author = "Jonmo";
 	scope = 2;
 	scopeCurator = 2;
@@ -485,16 +526,7 @@ class VKN_Dummy_C_Shirt_black_Jeans_2: C_Story_Mechanic_01_F {
 	hiddenSelectionsTextures[] = {"\vkn_gear\data\uniforms\vkn_whiteshirt_jeans_co.paa","\vkn_gear\data\uniforms\vkn_jeans_black_co.paa"};
 };
 
-class VKN_Dummy_C_Shirt_khaki_Jeans_3: C_Story_Mechanic_01_F {
-	author = "Jonmo";
-	scope = 2;
-	scopeCurator = 2;
-	displayName = "[VKN] PMC Black shirt & Khaki pants";
-	model = "a3\Characters_F_Orange\Uniforms\C_Mechanic_01_F.p3d";
-	hiddenSelections[] = {"camo1","camo2"};
-	hiddenSelectionsTextures[] = {"\vkn_gear\data\uniforms\vkn_blackshirt_jeans_co.paa","\vkn_gear\data\uniforms\vkn_jeans_khaki_co.paa"};
-};
-class VKN_Dummy_C_Shirt_black_Jeans_4: C_Story_Mechanic_01_F {
+class VKN_Dummy_C_Shirt_Black_Pants_Black: C_Story_Mechanic_01_F {
 	author = "Jonmo";
 	scope = 2;
 	scopeCurator = 2;
@@ -504,7 +536,7 @@ class VKN_Dummy_C_Shirt_black_Jeans_4: C_Story_Mechanic_01_F {
 	hiddenSelectionsTextures[] = {"\vkn_gear\data\uniforms\vkn_blackshirt_jeans_co.paa","\vkn_gear\data\uniforms\vkn_jeans_black_co.paa"};
 };
 
-class VKN_Dummy_C_Shirt_black_Jeans_3: C_Story_Mechanic_01_F	{
+class VKN_Dummy_C_Shirt_Blue_Pants_Black: C_Story_Mechanic_01_F {
 	author = "Jonmo";
 	scope = 2;
 	scopeCurator = 2;
@@ -513,8 +545,8 @@ class VKN_Dummy_C_Shirt_black_Jeans_3: C_Story_Mechanic_01_F	{
 	hiddenSelections[] = {"camo1","camo2"};
 	hiddenSelectionsTextures[] = {"\vkn_gear\data\uniforms\vkn_blueshirt_jeans_co.paa","\vkn_gear\data\uniforms\vkn_jeans_black_co.paa"};
 };
-/*
-class VKN_Dummy_C_Shirt_khaki_Jeans_3: C_Story_Mechanic_01_F	{
+
+class VKN_Dummy_C_Shirt_Blue_Pants_Khaki: C_Story_Mechanic_01_F {
 	author = "Jonmo";
 	scope = 2;
 	scopeCurator = 2;
@@ -524,7 +556,7 @@ class VKN_Dummy_C_Shirt_khaki_Jeans_3: C_Story_Mechanic_01_F	{
 	hiddenSelectionsTextures[] = {"\vkn_gear\data\uniforms\vkn_blueshirt_jeans_co.paa","\vkn_gear\data\uniforms\vkn_jeans_khaki_co.paa"};
 };
 
-class VKN_Dummy_C_Shirt_Jeans_1: C_Story_Mechanic_01_F {
+class VKN_Dummy_C_Shirt_Blue_Jeans: C_Story_Mechanic_01_F {
 	author = "Jonmo";
 	scope = 2;
 	scopeCurator = 2;
@@ -533,8 +565,8 @@ class VKN_Dummy_C_Shirt_Jeans_1: C_Story_Mechanic_01_F {
 	hiddenSelections[] = {"camo1","camo2"};
 	hiddenSelectionsTextures[] = {"\vkn_gear\data\uniforms\vkn_blueshirt_jeans_co.paa","\vkn_gear\data\uniforms\vkn_jeans_blue_co.paa"};
 };
-*/
-class VKN_Dummy_C_GreenShirt_black_Jeans_1: C_Story_Mechanic_01_F {
+
+class VKN_Dummy_C_Shirt_Green_Pants_Black: C_Story_Mechanic_01_F {
 	author = "Jonmo";
 	scope = 2;
 	scopeCurator = 2;
@@ -544,7 +576,7 @@ class VKN_Dummy_C_GreenShirt_black_Jeans_1: C_Story_Mechanic_01_F {
 	hiddenSelectionsTextures[] = {"\vkn_gear\data\uniforms\vkn_greenshirt_jeans_co.paa","\vkn_gear\data\uniforms\vkn_jeans_black_co.paa"};
 };
 
-class VKN_Dummy_C_GreenShirt_khaki_Jeans_1: C_Story_Mechanic_01_F {
+class VKN_Dummy_C_Shirt_Green_Jeans_Khaki: C_Story_Mechanic_01_F {
 	author = "Jonmo";
 	scope = 2;
 	scopeCurator = 2;
@@ -554,7 +586,7 @@ class VKN_Dummy_C_GreenShirt_khaki_Jeans_1: C_Story_Mechanic_01_F {
 	hiddenSelectionsTextures[] = {"\vkn_gear\data\uniforms\vkn_greenshirt_jeans_co.paa","\vkn_gear\data\uniforms\vkn_jeans_khaki_co.paa"};
 };
 
-class VKN_Dummy_C_GreenShirt_Jeans_1: C_Story_Mechanic_01_F	{
+class VKN_Dummy_C_Shirt_Green_Jeans: C_Story_Mechanic_01_F {
 	author = "Jonmo";
 	scope = 2;
 	scopeCurator = 2;

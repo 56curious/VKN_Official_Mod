@@ -30,6 +30,12 @@ class CfgEditorSubcategories
 	delete SUV;
 };
 
+class cfgWeapons {
+   class arifle_MXC_F;
+   class VKN_G36 : arifle_MXC_F {
+     model = "\VKN_Objects\Weapons\G36-Accurate_Version3_Test.p3d";
+   };
+};
 
 class CfgVehicles
 {
@@ -306,7 +312,7 @@ class CfgVehicles
 		scope = 2;
 	};
 
-	class Car_F;
-	#include "\VKN_Objects\Vehicles\Red\redConfig.hpp"
-	#include "\VKN_Objects\Vehicles\removeClasses.hpp"
+	//class Car_F;
+	//#include "\VKN_Objects\Vehicles\Red\redConfig.hpp"
+	//#include "\VKN_Objects\Vehicles\removeClasses.hpp"
 };
