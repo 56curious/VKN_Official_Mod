@@ -40,7 +40,8 @@ class cfgVehicles {
  	class O_V_Soldier_Viper_F;
 	class O_Soldier_F;
 	class C_Story_Mechanic_01_F;
-  
+  class B_G_Soldier_F;
+
 	class ReammoBox_F;
 	class ReammoBox;
 	class NATO_Box_Base;
@@ -62,29 +63,31 @@ class cfgVehicles {
 
 class cfgWeapons {
 
-	class Uniform_Base;
-	class UniBase;
-	class UniformItem;
-	class InventoryItem_Base_F;
-	class VestItem;
-	class HeadGearItem;
-	class ItemCore;
-	class ItemInfo;
-	class H_HelmetIA;
-	class H_HelmetB;
+  class Uniform_Base;
+  class UniBase;
+  class UniformItem;
+  class InventoryItem_Base_F;
+  class HeadGearItem;
+  class H_HelmetIA;
+  class H_HelmetB;
   class H_Cap_red;
   class H_Beret_02;
   class H_helmetO_ViperSP_hex_F;
   class U_B_CTRG_Soldier_F;
-
+  class VestItem;
+  class ItemCore;
+  class ItemInfo;
   class Vest_NoCamo_Base;
   class Vest_Camo_Base : ItemCore {
-	class ItemInfo;
-	};
+  	class ItemInfo;
+  };
+  class NVGoggles;
 
-    #include "\VKN_Gear\cfgWeapons\headgear.hpp"
-    #include "\VKN_Gear\cfgWeapons\uniforms.hpp"
-    #include "\VKN_Gear\cfgWeapons\vests.hpp"
+
+  #include "\VKN_Gear\cfgWeapons\headgear.hpp"
+  #include "\VKN_Gear\cfgWeapons\uniforms.hpp"
+  #include "\VKN_Gear\cfgWeapons\vests.hpp"
+  #include "\VKN_Gear\cfgWeapons\Helmets_NV_Slot.hpp"
 };
 
 
