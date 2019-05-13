@@ -40,6 +40,15 @@ class cfgWeapons {
 class CfgVehicles
 {
 
+  class Land_WoodenCrate_01_F;
+
+  class VKN_wooden_crate : Land_WoodenCrate_01_F {
+    hiddenSelections[]={"camo"};
+    model = "\VKN_Objects\Crates\Wooden_Box.p3d";
+    editorPreview = "\VKN_Misc\VKN_Logo_inverted.paa";
+		hiddenSelectionsTextures[]={"\VKN_Objects\Crates\crate-texture.paa"};
+  };
+
 	//Helicopter import
 	class AS_365_base;
 	class AS_365: AS_365_base {
