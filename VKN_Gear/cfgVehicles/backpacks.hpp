@@ -1,6 +1,7 @@
 class VKN_Kitbag_Base: B_Kitbag_rgr {
 	picture = "\VKN_Misc\VKN_Logo_Inverted.paa";
 	scope = 0;
+	model="A3\weapons_f\ammoboxes\bags\Backpack_fast.p3d";
 };
 
 class VKN_Kitbag_Black: VKN_Kitbag_Base {
@@ -12,23 +13,27 @@ class VKN_Kitbag_Black: VKN_Kitbag_Base {
 
 class VKN_Kitbag_Black_Medical: VKN_Kitbag_Base {
 	author = "Curious";
+	scope = 2;
 	displayName="[VKN] Backpack - Black + Medical";
 	hiddenSelectionsTextures[]={"\VKN_Gear\data\Backpacks\VKN_backpack_blk_medical_co.paa"};
 };
 
 class VKN_Kitbag_OD_Medical: VKN_Kitbag_Base {
 	author = "Apple";
+	scope = 2;
 	displayName="[VKN] Backpack - OD + Medical";
 	hiddenSelectionsTextures[]={"\VKN_Gear\data\Backpacks\VKN_backpack_od_medical_co.paa"};
 };
 class VKN_Kitbag_OCP_Medical: VKN_Kitbag_Base {
 	author = "Apple";
+	scope = 2;
 	displayName="[VKN] Backpack - OCP + Medical";
 	hiddenSelectionsTextures[]={"\VKN_Gear\data\Backpacks\VKN_backpack_ocp_medical_co.paa"};
 };
 class VKN_Black_Kitbag: VKN_Kitbag_Base {
 	displayName="[VKN] FBA Kitbag - Black";
 	author="Apple";
+	scope = 2;
 	model="A3\weapons_f\ammoboxes\bags\Backpack_fast.p3d";
 	hiddenSelectionsTextures[]={"\VKN_Gear\data\Backpacks\VKN_Bag_Kitbag.paa"};
 };
