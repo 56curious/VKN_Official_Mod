@@ -26,6 +26,25 @@
 //// Blufor Combat Uniforms
 
 // Non Rolled
+	class VKN_Dummy_B_MTP_Woodland_Full_NonRolled: VKN_Dummy_B_NonRolled_Base {
+		scope = 1;
+		hiddenSelectionsTextures[]={"\VKN_Gear\data\Uniforms\VKN_overall_tflod_tflod.paa"};
+		uniformClass = "VKN_MTP_Woodland_Full_NonRolled";
+	};
+	class VKN_Dummy_B_MTP_Woodland_Brown_Pants_NonRolled: VKN_Dummy_B_NonRolled_Base {
+		scope = 1;
+		hiddenSelectionsTextures[]={"\VKN_Gear\data\Uniforms\VKN_overall_tflod_od.paa"};
+		uniformClass = "VKN_MTP_Woodland_Full_NonRolled";
+	};
+	class VKN_Dummy_B_MTP_Tan_Full_NonRolled: VKN_Dummy_B_NonRolled_Base {
+		scope = 1;
+		hiddenSelectionsTextures[]={"\VKN_Gear\data\Uniforms\VKN_overall_tfltan_tfltan.paa"};
+	};
+	class VKN_Dummy_B_MTP_Tan_Brown_Pants_NonRolled: VKN_Dummy_B_NonRolled_Base {
+		scope = 1;
+		hiddenSelectionsTextures[]={"\VKN_Gear\data\Uniforms\VKN_overall_tfltan_tan.paa"};
+	};
+
 	class VKN_Dummy_B_M90_NonRolled_1_1: VKN_Dummy_B_NonRolled_Base {
 		scope = 1;
 		hiddenSelectionsTextures[]={"\VKN_Gear\data\Uniforms\VKN_M90_co.paa"};
@@ -166,6 +185,22 @@
 
 
 //Rolled
+	class VKN_Dummy_B_MTP_Woodland_Full_RolledUP: VKN_Dummy_B_RolledUP_Base {
+		scope = 1;
+		hiddenSelectionsTextures[]={"\VKN_Gear\data\Uniforms\VKN_overall_tflod_tflod.paa"};
+	};
+	class VKN_Dummy_B_MTP_Woodland_Brown_Pants_RolledUP: VKN_Dummy_B_RolledUP_Base {
+		scope = 1;
+		hiddenSelectionsTextures[]={"\VKN_Gear\data\Uniforms\VKN_overall_tflod_od.paa"};
+	};
+	class VKN_Dummy_B_MTP_Tan_Full_RolledUP: VKN_Dummy_B_RolledUP_Base {
+		scope = 1;
+		hiddenSelectionsTextures[]={"\VKN_Gear\data\Uniforms\VKN_overall_tfltan_tfltan.paa"};
+	};
+	class VKN_Dummy_B_MTP_Tan_Brown_Pants_RolledUP: VKN_Dummy_B_RolledUP_Base {
+		scope = 1;
+		hiddenSelectionsTextures[]={"\VKN_Gear\data\Uniforms\VKN_overall_tfltan_tan.paa"};
+	};
 
 	class VKN_Dummy_B_M90_RolledUP_1_1: VKN_Dummy_B_RolledUP_Base {
 		scope = 1;

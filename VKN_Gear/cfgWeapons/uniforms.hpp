@@ -38,6 +38,117 @@
 	};
 
 //Rolled/NonRolled
+class VKN_MTP_Woodland_Full_Rolled: VKN_CombatUniform_RolledUP_base {
+	scope = 2;
+	Author = "Eric McHogan";
+	displayName = "[VKN] Combat Uniform - Rolled (MTP Woodland Full)";
+	descriptionShort = "Combat Uniform MTP Woodland Full (Sleeves)";
+	hiddenSelectionsTextures[]={"\VKN_Gear\data\Uniforms\VKN_overall_tflod_tflod.paa"};
+	class ItemInfo: UniformItem	{
+		uniformModel="-";
+		uniformClass="VKN_Dummy_B_MTP_Woodland_Full_RolledUP";
+		containerClass="Supply40";
+		mass=40;
+	};
+};
+class VKN_MTP_Woodland_Full_NonRolled: VKN_CombatUniform_NonRolled_base {
+	scope = 2;
+	Author = "Eric McHogan";
+	displayName = "[VKN] Combat Uniform - Rolled (MTP Woodland Full)";
+	descriptionShort = "Combat Uniform MTP Woodland Full (Full)";
+	hiddenSelectionsTextures[]={"\VKN_Gear\data\Uniforms\VKN_overall_tflod_tflod.paa"};
+	class ItemInfo: UniformItem	{
+		uniformModel="-";
+		uniformClass="VKN_Dummy_B_MTP_Woodland_Full_NonRolled";
+		containerClass="Supply40";
+		mass=40;
+	};
+};
+
+class VKN_MTP_Woodland_Brown_Pants_Rolled: VKN_CombatUniform_RolledUP_base {
+	scope = 2;
+	Author = "Eric McHogan";
+	displayName = "[VKN] Combat Uniform - Rolled (MTP Woodland Brown Pants)";
+	descriptionShort = "Combat Uniform MTP Woodland Brown Pants (Sleeves)";
+	hiddenSelectionsTextures[]={"\VKN_Gear\data\Uniforms\VKN_overall_tflod_od.paa"};
+	class ItemInfo: UniformItem	{
+		uniformModel="-";
+		uniformClass="VKN_Dummy_B_MTP_Woodland_Brown_Pants_RolledUP";
+		containerClass="Supply40";
+		mass=40;
+	};
+};
+class VKN_MTP_Woodland_Brown_Pants_NonRolled: VKN_CombatUniform_NonRolled_base {
+	scope = 2;
+	Author = "Eric McHogan";
+	displayName = "[VKN] Combat Uniform - Rolled (MTP Woodland Full)";
+	descriptionShort = "Combat Uniform MTP Woodland Full (Full)";
+	hiddenSelectionsTextures[]={"\VKN_Gear\data\Uniforms\VKN_overall_tflod_od.paa"};
+	class ItemInfo: UniformItem	{
+		uniformModel="-";
+		uniformClass="VKN_Dummy_B_MTP_Woodland_Brown_Pants_NonRolled";
+		containerClass="Supply40";
+		mass=40;
+	};
+};
+
+class VKN_MTP_Tan_Full_Rolled: VKN_CombatUniform_RolledUP_base {
+	scope = 2;
+	Author = "Eric McHogan";
+	displayName = "[VKN] Combat Uniform - Rolled (MTP Tan Full)";
+	descriptionShort = "Combat Uniform MTP Tan Full (Sleeves)";
+	hiddenSelectionsTextures[]={"\VKN_Gear\data\Uniforms\VKN_overall_tfltan_tfltan.paa"};
+	class ItemInfo: UniformItem	{
+		uniformModel="-";
+		uniformClass="VKN_Dummy_B_MTP_Tan_Full_RolledUP";
+		containerClass="Supply40";
+		mass=40;
+	};
+};
+class VKN_MTP_Tan_Full_NonRolled: VKN_CombatUniform_NonRolled_base {
+	scope = 2;
+	Author = "Eric McHogan";
+	displayName = "[VKN] Combat Uniform - Rolled (MTP Tan Full)";
+	descriptionShort = "Combat Uniform MTP Tan Full (Full)";
+	hiddenSelectionsTextures[]={"\VKN_Gear\data\Uniforms\VKN_overall_tfltan_tfltan.paa"};
+	class ItemInfo: UniformItem	{
+		uniformModel="-";
+		uniformClass="VKN_Dummy_B_MTP_Tan_Full_NonRolled";
+		containerClass="Supply40";
+		mass=40;
+	};
+};
+
+class VKN_MTP_Tan_Khaki_Rolled: VKN_CombatUniform_RolledUP_base {
+	scope = 2;
+	Author = "Jonmo";
+	displayName = "[VKN] Combat Uniform - Rolled (MTP Tan Khaki Pants)";
+	descriptionShort = "Combat Uniform MTP Tan Khaki Pants (Sleeves)";
+	hiddenSelectionsTextures[]={"\VKN_Gear\data\Uniforms\VKN_overall_tfltan_tan.paa"};
+	class ItemInfo: UniformItem	{
+		uniformModel="-";
+		uniformClass="VKN_Dummy_B_MTP_Tan_Brown_Pants_RolledUP";
+		containerClass="Supply40";
+		mass=40;
+	};
+};
+class VKN_MTP_Tan_Khaki_NonRolled: VKN_CombatUniform_NonRolled_base {
+	scope = 2;
+	Author = "Jonmo";
+	displayName = "[VKN] Combat Uniform - Rolled (MTP Tan Khaki)";
+	descriptionShort = "Combat Uniform MTP Tan Full (Khaki)";
+	hiddenSelectionsTextures[]={"\VKN_Gear\data\Uniforms\VKN_overall_tfltan_tan.paa"};
+	class ItemInfo: UniformItem	{
+		uniformModel="-";
+		uniformClass="VKN_Dummy_B_MTP_Tan_Brown_Pants_NonRolled";
+		containerClass="Supply40";
+		mass=40;
+	};
+};
+
+
+
+
 	class VKN_CombatUniform_M90_Roll: VKN_CombatUniform_RolledUP_base {
 		scope = 2;
 		Author = "Jonmo";
