@@ -234,7 +234,33 @@ class B_Greek_Offroader_Police_01 : B_GEN_Offroad_01_gen_F_OCimport_02 {
     side = 1;
     faction = "B_Greek_Police";
     crew = "B_Greek_Officer_Basic_Police_01";
-    hiddenSelectionsTextures[] = {"\VKN_Extensions_Characters\data\retextures\Greek_Police_Offroader.paa"};
+
+    editorCategory = "B_Greek_Police";
+    editorSubcategory = "EdSubcat_Cars";
+
+    class textureSources
+		{
+      class Police
+			{
+				// Display name of the texture
+				displayName = "Police Texture";
+				// Author of the texture
+				author = "Curious";
+				// Paths to the texture files, in the same order as the hidden selections
+				textures[] = {"\VKN_Extensions_Characters\data\retextures\Greek_Police_Offroader.paa"};
+				// This source should be available for the following factions
+				factions[] =
+				{
+					"BLU_F", "BLU_G_F", // Side Blufor
+					"OPF_F", "OPF_G_F", // Side Opfor
+					"IND_F", "IND_G_F", // Side independent
+					"CIV_F" // side civilian
+				};
+			};
+    };
+
+    hiddenSelections[] = {"camo", "camo2"};
+    hiddenSelectionsTextures[] = {"\VKN_Extensions_Characters\data\retextures\Greek_Police_Offroader.paa", "\VKN_Extensions_Characters\data\retextures\Greek_Police_Offroader.paa"};
 
     class Turrets : Turrets {
         class CargoTurret_01 : CargoTurret_01 { gunnerType = ""; };
@@ -249,7 +275,7 @@ class B_Greek_Offroader_Police_01 : B_GEN_Offroad_01_gen_F_OCimport_02 {
         class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
 
         class ALiVE_orbatCreator {
-            init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+            init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0; _unit setObjectTextureGlobal [0, '\VKN_Extensions_Characters\data\retextures\Greek_Police_Offroader.paa'];};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
         };
 
     };
@@ -267,9 +293,12 @@ class B_Greek_Tahoe_SUV_Police_01 : B_VKN_tahoe_UNM_PMC_01_OCimport_02 {
     side = 1;
     faction = "B_Greek_Police";
     crew = "B_Greek_Officer_Basic_Police_01";
-    hiddenSelections[] = {"camo1"};
-    hiddenSelectionsTextures[] = {"\VKN_Extensions_Characters\data\retextures\Greek_Police_Tahoe.paa"};
 
+    editorCategory = "B_Greek_Police";
+    editorSubcategory = "EdSubcat_Cars";
+
+    hiddenSelections[] = {"camo1","camo2","camo3","camo4","camo5","camo6","camo7","camo8","camo9","camo10","camo11","camo12","camo13","camo14","camo15","camo16","camo17","camo18","camo19","camo20","license1","license2","license3","license4","license5","license6","license7"};
+    hiddenSelectionsTextures[] = {"\VKN_Extensions_Characters\data\retextures\Greek_Police_Tahoe.paa","\tahoe_08\data\GMT_rad_co.paa","\tahoe_08\data\glass_black.paa","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","",""};
 
     class EventHandlers : EventHandlers {
         class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
@@ -293,7 +322,31 @@ class B_Greek_Van_Police_01 : B_GEN_Van_02_transport_F_OCimport_02 {
     side = 1;
     faction = "B_Greek_Police";
     crew = "B_Greek_Officer_Basic_Police_01";
-    hiddenSelectionsTextures[] = {"\VKN_Extensions_Characters\data\retextures\Greek_Police_Van.paa"};
+    editorCategory = "B_Greek_Police";
+    editorSubcategory = "EdSubcat_Cars";
+
+    class textureSources
+		{
+      class Police
+			{
+				// Display name of the texture
+				displayName = "Police Texture";
+				// Author of the texture
+				author = "Curious";
+				// Paths to the texture files, in the same order as the hidden selections
+				textures[] = {"\VKN_Extensions_Characters\data\retextures\Greek_Police_Van.paa"};
+				// This source should be available for the following factions
+				factions[] =
+				{
+					"BLU_F", "BLU_G_F", // Side Blufor
+					"OPF_F", "OPF_G_F", // Side Opfor
+					"IND_F", "IND_G_F", // Side independent
+					"CIV_F" // side civilian
+				};
+			};
+    };
+    hiddenSelections[] = {"camo1","camo2","camo3","emergency_lights"};
+    hiddenSelectionsTextures[] = {"\VKN_Extensions_Characters\data\retextures\Greek_Police_Van.paa","\a3\soft_f_orange\van_02\data\van_wheel_co.paa","\a3\soft_f_orange\van_02\data\van_glass_gen_CA.paa","\a3\soft_f_orange\van_02\data\van_body_gen_CO.paa"};
 
     class Turrets : Turrets {
         class CargoTurret_01 : CargoTurret_01 { gunnerType = ""; };
@@ -307,7 +360,7 @@ class B_Greek_Van_Police_01 : B_GEN_Van_02_transport_F_OCimport_02 {
         class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
 
         class ALiVE_orbatCreator {
-            init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+            init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0; _unit setObjectTextureGlobal [0, '\VKN_Extensions_Characters\data\retextures\Greek_Police_Van.paa'];};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
         };
 
     };
