@@ -16,11 +16,18 @@ Parameters:
 */
 
 collect3DENHistory {
+	_squad = 0;
 	_position = screenToWorld [0.5,0.5];
-	if (isClass (configFile >> "CfgPatches" >> "VKN_PMC_Custom_Units")) then {
-		_Squad = configfile >> "CfgGroups" >> "West" >> "B_VKN_ODIN_PMC" >> "Infantry" >> "B_VKN_ODIN_infantry_squad_pmc";
+	if (isClass (configFile >> "CfgPatches" >> "VKN_PMC_Characters")) then {
+		_squad = configfile >> "CfgGroups" >> "West" >> "B_VKN_ODIN_PMC" >> "Infantry" >> "B_VKN_ODIN_infantry_squad_pmc";
 	} else {
-		_Squad = configfile >> "CfgGroups" >> "West" >> "BLU_F" >> "Infantry" >> "BUS_InfSquad";
+		_squad = configfile >> "CfgGroups" >> "West" >> "BLU_F" >> "Infantry" >> "BUS_InfSquad";
+	};
+
+	if (isclass (configfile >> "CfgPatches" >> "3denEnhanced")) then {
+		set3DENMissionAttributes[["Multiplayer", "Enh_DynamicGroups", true]];
+	} else {
+		systemChat "3DEN Enhanced not found but is recommended to be used at all times, missing attributes...";
 	};
 
 	set3DENMissionAttributes [
@@ -62,8 +69,6 @@ collect3DENHistory {
 	_ZeusEntityAdmin = create3DENEntity ["Logic", "VirtualCurator_F", _position];
 	_ZeusEntities = [_ZeusEntity1, _ZeusEntity2, _ZeusEntity3, _ZeusEntityAdmin];
 
-	add3DENConnection ["sync", _ZeusEntities, _ZeusAttributeCuratorAddEditableObjects];
-	add3DENConnection ["sync", _ZeusEntities, _ZeusAttributeCuratorAddEditingAreaPlayers];
 	set3DENAttributes [[_ZeusEntities,"ControlMP",true]];
 
 	sleep 0.5;
@@ -74,7 +79,9 @@ collect3DENHistory {
 	   	add3DENConnection ["sync", _group, _ZeusAttributeCuratorAddEditingAreaPlayers];
 		{
 			set3DENAttributes [[_x,"ControlMP",true]];
+			sleep 0.01;
 		} forEach _group;
+		sleep 0.01;
 	};
 };
 
