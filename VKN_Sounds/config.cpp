@@ -8,22 +8,18 @@ class CfgPatches {
 
         units[] = {};
 
-        requiredAddons[] =
-        {
-            "A3_UI_F",
-            "A3_UI_F_Curator",
-            "A3_Functions_F",
-            "A3_Functions_F_Curator",
-            "A3_Functions_F_Mark",
-            "A3_Modules_F",
-            "A3_Modules_F_Curator"
-        };
+        requiredAddons[] = {};
     };
 };
 
 
 class CfgSounds
 {
+    class Digging_Rubble {
+      name = "Digging_Rubble";
+      sound[] = {"\VKN_Sounds\Digging_Rubble.ogg", 1, 1.0};
+      titles[] = {0, ""};
+    };
     class murmur
     {
         name = "murmur";
