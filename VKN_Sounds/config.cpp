@@ -20,6 +20,41 @@ class CfgSounds
       sound[] = {"\VKN_Sounds\Digging_Rubble.ogg", 1, 1.0};
       titles[] = {0, ""};
     };
+    class MovingMetal1 {
+      name = "MovingMetal1";
+      sound[] = {"\VKN_Sounds\MovingMetal1.ogg", 1, 1.0};
+      titles[] = {0, ""};
+    };
+    class MovingMetal2 {
+      name = "MovingMetal2";
+      sound[] = {"\VKN_Sounds\MovingMetal2.ogg", 1, 1.0};
+      titles[] = {0, ""};
+    };
+    class MovingMetal3 {
+      name = "MovingMetal3";
+      sound[] = {"\VKN_Sounds\MovingMetal3.ogg", 1, 1.0};
+      titles[] = {0, ""};
+    };
+    class Radio_Broadcast {
+      name = "Radio_Broadcast";
+      sound[] = {"\VKN_Sounds\Radio_Broadcast.ogg", 1, 1.0};
+      titles[] = {0, ""};
+    };
+    class Transmission_In {
+      name = "Transmission_In";
+      sound[] = {"\VKN_Sounds\Transmission_In.ogg", 1, 1.0};
+      titles[] = {0, ""};
+    };
+    class Transmission_Out {
+      name = "Transmission_Out";
+      sound[] = {"\VKN_Sounds\Transmission_Out.ogg", 1, 1.0};
+      titles[] = {0, ""};
+    };
+    class Water_Fountain {
+      name = "Water_Fountain";
+      sound[] = {"\VKN_Sounds\Water_Fountain.ogg", 1, 1.0};
+      titles[] = {0, ""};
+    };
     class murmur
     {
         name = "murmur";
