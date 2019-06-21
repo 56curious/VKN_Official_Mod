@@ -34,6 +34,10 @@ class CfgFunctions {
 			file = "\VKN_functions\functions";
 			class icons{postInit = 1;};
 
+      class missionTemplateTool{};
+
+      class respawnPositionSafeZone{postInit = 1;};
+
 			class creditsVKN_movie{};
 			class creditsVKN_movieConfig{};
 
