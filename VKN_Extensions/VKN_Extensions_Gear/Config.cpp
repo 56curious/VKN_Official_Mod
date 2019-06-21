@@ -28,6 +28,23 @@ class cfgVehicles {
 	class tf_rt1523g;
 	class tf_rt1523g_big;
 	class rhs_msv_rifleman_m88_patchless;
+  class rhs_medic_bag;
+
+  class VKN_RHS_Duffle_Olive: rhs_medic_bag {
+    author = "Curious";
+    displayName = "RHS Duffle Bag (Olive)";
+    picture="\VKN_Misc\VKN_Logo_Inverted.paa";
+    descriptionShort = "RHS Duffle Bag (Olive)";
+    hiddenSelectionsTextures[] = {"VKN_Gear\data\Backpacks\VKN_RHS_Bag_Olive.paa"};
+  };
+
+  class VKN_RHS_Duffle_Black: rhs_medic_bag {
+    author = "Curious";
+    displayName = "RHS Duffle Bag (Black)";
+    picture="\VKN_Misc\VKN_Logo_Inverted.paa";
+    descriptionShort = "RHS Duffle Bag (Black)";
+    hiddenSelectionsTextures[] = {"VKN_Gear\data\Backpacks\VKN_RHS_Bag_Black.paa"};
+  };
 
 	class VKN_rt1523g_OD: tf_rt1523g {
 	    author = "Jonmo";
