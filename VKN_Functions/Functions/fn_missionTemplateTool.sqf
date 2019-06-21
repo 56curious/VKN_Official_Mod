@@ -26,8 +26,9 @@ collect3DENHistory {
 
 	if (isclass (configfile >> "CfgPatches" >> "3denEnhanced")) then {
 		set3DENMissionAttributes[["Multiplayer", "Enh_DynamicGroups", true]];
+		set3DENMissionAttributes[["Multiplayer", "Enh_SaveLoadout", true]];
 	} else {
-		systemChat "3DEN Enhanced not found but is recommended to be used at all times, missing attributes...";
+		systemChat "3DEN Enhanced not found but is recommended to be used at all times, missing these attributes...";
 	};
 
 	set3DENMissionAttributes [
@@ -47,7 +48,12 @@ collect3DENHistory {
 
 	sleep 0.5;
 
+	_billboard = create3DENEntity ["Object", "Land_Billboard_F", _position];
+	_billboard set3DENAttribute ["ObjectTextureCustom0", "VKN_Extensions_Misc\vkn_poster.paa"];
+
 	_RespawnPos = create3DENEntity ["Logic", "ModuleRespawnPosition_F", _position];
+  _RespawnPos set3DENAttribute ["name", "defaultRespawnPosition"];
+  _RespawnPos setVariable ["Side","1"];
 
 	_ZeusAttributeCuratorAddEditableObjects = create3DENEntity ["Logic", "ModuleCuratorAddEditableObjects", _position];
 	_ZeusAttributeCuratorAddEditingAreaPlayers = create3DENEntity ["Logic", "ModuleCuratorAddEditingAreaPlayers_F", _position];
@@ -63,13 +69,14 @@ collect3DENHistory {
 
 	sleep 0.5;
 
-	_ZeusEntity1 = create3DENEntity ["Logic", "VirtualCurator_F", _position];
-	_ZeusEntity2 = create3DENEntity ["Logic", "VirtualCurator_F", _position];
-	_ZeusEntity3 = create3DENEntity ["Logic", "VirtualCurator_F", _position];
-	_ZeusEntityAdmin = create3DENEntity ["Logic", "VirtualCurator_F", _position];
-	_ZeusEntities = [_ZeusEntity1, _ZeusEntity2, _ZeusEntity3, _ZeusEntityAdmin];
+	ZeusEntity1 = create3DENEntity ["Logic", "VirtualCurator_F", _position];
+	ZeusEntity2 = create3DENEntity ["Logic", "VirtualCurator_F", _position];
+	ZeusEntity3 = create3DENEntity ["Logic", "VirtualCurator_F", _position];
+	ZeusEntityAdmin = create3DENEntity ["Logic", "VirtualCurator_F", _position];
+	_ZeusEntities = [ZeusEntity1, ZeusEntity2, ZeusEntity3, ZeusEntityAdmin];
 
 	set3DENAttributes [[_ZeusEntities,"ControlMP",true]];
+	set3DENAttributes [[_ZeusModules, "ModuleCurator_F_Owner", _ZeusEntities]];
 
 	sleep 0.5;
 
