@@ -36,7 +36,7 @@ class CfgFunctions {
 
       class missionTemplateTool{};
 
-      class respawnPositionSafeZone{postInit = 1;};
+      class respawnPositionSafeZone{};
 
 			class creditsVKN_movie{};
 			class creditsVKN_movieConfig{};
