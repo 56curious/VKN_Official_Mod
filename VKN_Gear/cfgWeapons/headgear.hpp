@@ -59,13 +59,7 @@ class VKN_Cap_LegionForest : H_Cap_red {
 	picture="\VKN_Misc\VKN_Logo_Inverted.paa";
 	hiddenSelectionsTextures[] = {"\VKN_Gear\data\Headgear\VKN_Cap_LegionForest_ca.paa"};
 };
-class VKN_Cap_Loki : H_Cap_red {
-	author = "Max Kupoleni";
-	scope = 2;
-	displayName="[VKN] Cap - Loki";
-	picture="\VKN_Misc\VKN_Logo_Inverted.paa";
-	hiddenSelectionsTextures[] = {"\VKN_Gear\data\Headgear\VKN_LOKI_cap.paa"};
-};
+
 class VKN_Beret_SouthAfrica: VKN_Beret_Base	{
 	author = "Max Kupoleni";
 	scope = 2;
@@ -79,7 +73,12 @@ class VKN_Beret_RoyalMarines: VKN_Beret_Base {
 	hiddenSelectionsTextures[] = {"\VKN_Gear\data\Headgear\VKN_Beret_Royal_Marines.paa"};
 };
 
-
+class VKN_Cap_Loki : VKN_Cap_Headphones_Base {
+	scope = 2;
+	author="Shagger";
+	displayName = "[VKN] Cap (Loki)";
+	hiddenSelectionsTextures[] = {"\VKN_Gear\data\Headgear\vkncap_Loki_headphones_ca.paa"};
+};
 class VKN_Cap_Black : VKN_Cap_Headphones_Base {
 	scope = 2;
 	author="Jonmo";
