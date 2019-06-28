@@ -247,6 +247,12 @@ class cfgWeapons {
 		displayName="[VKN] FBA DT FAPC (Black)";
 		hiddenSelectionsTextures[]={"\VKN_Gear\data\vests\Full Black\VKN_battlebelt_BLK.paa","\VKN_Gear\data\vests\Full Black\VKN_boxmag_blk.paa","\VKN_Gear\data\vests\Full Black\VKN_dropholster_BLK.paa","\VKN_Gear\data\vests\Full Black\VKN_serpa_blk.paa","\VKN_Gear\data\vests\Full Black\VKN_blk_gear_co.paa","\VKN_Gear\data\vests\Full Black\VKN_radio_pouch_BLK.paa","\VKN_Gear\data\vests\Full Black\VKN_fapc_BLK.paa","\VKN_Gear\data\vests\Full Black\VKN_buttpouch_BLK.paa"};
 	};
+	class VKN_FAPC_Gunner_Loki: VKN_FAPC_Gunner_Base {
+		scope=2;
+		author="Shagger";
+		displayName="[VKN] FBA DT FAPC (Loki)";
+		hiddenSelectionsTextures[]={"\VKN_Gear\data\vests\Loki\VKN_battlebelt_Loki.paa","\VKN_Gear\data\vests\Loki\VKN_boxmag_Loki.paa","\VKN_Gear\data\vests\Loki\VKN_dropholster_Loki.paa","\VKN_Gear\data\vests\Loki\VKN_serpa_Loki.paa","\VKN_Gear\data\vests\Loki\VKN_Loki_gear_co.paa","\VKN_Gear\data\vests\Full Black\VKN_radio_pouch_BLK.paa","\VKN_Gear\data\vests\Loki\VKN_fapc_Loki.paa","\VKN_Gear\data\vests\Loki\VKN_buttpouch_Loki.paa"};
+	};
 	class VKN_FAPC_Gunner_OGA_OD_Medical: VKN_FAPC_Gunner_Base
 	{
 		scope=2;
