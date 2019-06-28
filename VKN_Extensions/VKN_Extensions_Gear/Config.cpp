@@ -241,6 +241,12 @@ class cfgWeapons {
 		displayName="[VKN] FBA - LBT Armatus (Black)";
 		hiddenSelectionsTextures[]={"VKN_Gear\data\vests\Full Black\VKN_battlebelt_BLK.paa","VKN_Gear\data\vests\Full Black\VKN_dropholster_BLK.paa","VKN_Gear\data\vests\Full Black\VKN_serpa_blk.paa","VKN_Gear\data\vests\Full Black\VKN_blk_gear_co.paa","VKN_Gear\data\vests\Full Black\VKN_radio_pouch_BLK.paa","VKN_Gear\data\vests\Full Black\VKN_blk_plate.paa","VKN_Gear\data\vests\Full Black\VKN_pouches_blk.paa"};
 	};
+	class VKN_CarrierRig_Breacher_Loki: VKN_CarrierRig_Breacher_Base {
+		scope=2;
+		author="Shagger";
+		displayName="[VKN] FBA - LBT Armatus (Loki)";
+		hiddenSelectionsTextures[]={"VKN_Gear\data\vests\Loki\VKN_battlebelt_Loki.paa","VKN_Gear\data\vests\Loki\VKN_dropholster_Loki.paa","VKN_Gear\data\vests\Loki\VKN_serpa_Loki.paa","VKN_Gear\data\vests\Loki\VKN_blk_gear_co.paa","VKN_Gear\data\vests\Full Black\VKN_radio_pouch_BLK.paa","VKN_Gear\data\vests\Loki\VKN_Loki_plate.paa","VKN_Gear\data\vests\Loki\VKN_pouches_Loki.paa"};
+	};
 	class VKN_FAPC_Gunner_Black: VKN_FAPC_Gunner_Base {
 		scope=2;
 		author="Apple";
