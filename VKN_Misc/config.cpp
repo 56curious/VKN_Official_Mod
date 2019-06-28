@@ -49,7 +49,7 @@ class cfgCredits {
             {
                 "Curious - Project Leader (Functions, Configs, Model Maker)",
                 "Jonmo (Texture and Configs)",
-                "Eric Mchogan (Textures)",
+                "Eric Mchogan (Textures and Configs)",
                 "Max Kupleoni (Textures)",
                 "Poxxl (Textures)",
                 "Apple (Textures and Configs)",
@@ -61,9 +61,8 @@ class cfgCredits {
                 "Head's of Departments"
             },
             {
-                "Bane - Founder / Personnel (Recruitment)",
-                "Raptor - Head of Personnel (Training)",
-                "Lion / DocRoe - Head of Operations",
+                "Bane - Founder / Head of Personnel (Recruitment)",
+                "Skywalker / Lion - Head of Operations (Training)",
                 "Havok - Head of Tech",
                 "Burkal - Head of Media"
             }
@@ -73,20 +72,11 @@ class cfgCredits {
                 "Personnel"
             },
             {
-                "Raptor",
                 "Luke",
-                "DocRoe",
-                "LiftsHeavyThings",
-                "LanceVance",
-                "Paul",
-                "HitAndStand",
-                "Theodore",
-                "Hessel",
-                "The_Apothecary",
-                "Minipac",
                 "Bane",
                 "ragingpiano",
-                "Gotty"
+                "Shagger",
+                "Maxy"
             }
         };
         item4[] = {
@@ -94,23 +84,23 @@ class cfgCredits {
                 "Operations"
             },
             {
-                "Raptor",
                 "Jonmo",
                 "Curious",
                 "DocRoe",
                 "J. Bryan",
                 "LiftsHeavyThings",
                 "Skywalker",
-                "Alliaz",
-                "Paul",
-                "Lux",
                 "Theodore",
-                "Max Kupleoni",
-                "VoxilFreak",
-                "QuietRevenge",
                 "The_Apothecary",
-                "Eric McHogan",
-                "Lion"
+                "Shagger",
+                "Lion",
+                "Wolfy",
+                "Happy",
+                "Tom",
+                "Ryan",
+                "Garnet",
+                "Supr3mo",
+                "Sir Robert Pierre"
             }
         };
         item5[] = {
@@ -133,12 +123,12 @@ class cfgCredits {
             {
                 "DJ_ToyBoy",
                 "Curious",
-                "JK",
                 "Havok",
                 "Alliaz",
                 "TheGeneral",
                 "Winters",
-                "Knullepul"
+                "KP",
+                "Apple"
             }
         };
     };
