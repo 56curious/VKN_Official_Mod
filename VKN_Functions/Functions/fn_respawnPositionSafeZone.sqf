@@ -1,8 +1,10 @@
 //EH code
 _VKN_safezone_code = {
-  player addAction ["", {if ((player distance _this) <= 100) then { player removeAction _this select 2; };}, "", 0, false, true, "DefaultAction", "isNil 'allowFire'"]; // Error player distance #_this undefined
+  params ["_respawnPos"];
+  systemChat str _respawnPos;
+  player addAction ["", { params ["_target", "_caller", "_actionId", "_arguments"]; if ((player distance getPos _respawnPos) <= 100) then { player removeAction _actionId; };}, "", 0, false, true, "DefaultAction", "isNil 'allowFire'"]; // Error player distance #_this undefined
     player addeventhandler ["Fired", {
-      if ((player distance _this) <= 100) then {
+      if ((player distance getPos _respawnPos) <= 100) then {
         params ["_shooter","_weapon","_muzzle","_mode","_ammo","_magazine","_projectile","_gunner"];
         deletevehicle _projectile;
 
@@ -55,8 +57,6 @@ _VKN_safezone_code = {
       };
       sleep 0.01;
     } forEach [west, east, independent, civilian];
-
-    { systemChat str _x } forEach [_respawnWest, _respawnEast, _respawnInde, _respawnCivi];
 
     switch (playerSide) do {
         case (west): {
