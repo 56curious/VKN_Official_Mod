@@ -1,9 +1,9 @@
 while {true} do {
   _VKN_respawnPositions = west call BIS_fnc_getRespawnPositions;
   {
-      VKN_disableFireAction = player addAction ["", {if ((player distance _x) <= 100) then { player removeAction _this select 2; };}, "", 0, false, true, "DefaultAction", "isNil 'allowFire'"];
-      VKN_safezone_EH = player addeventhandler ["Fired", {
-        if ((player distance _x) <= 100)  then {
+    if ((player distance _x) < 100)  then {
+      VKN_disableFireAction = player addAction ["", {}, "", 0, false, true, "DefaultAction", "isNil 'allowFire'"];
+      VKN_safezone_EH = player addeventhandler ["Fired",{
           params ["_shooter","_weapon","_muzzle","_mode","_ammo","_magazine","_projectile","_gunner"];
           deletevehicle _projectile;
 
@@ -24,8 +24,12 @@ while {true} do {
         		_code = { sleep 6; [objNull, _player] call ace_medical_fnc_treatmentAdvanced_fullHealLocal; };
             _code remoteExec ["spawn"];
       	};
-      };
       }];
-  } forEach _VKN_respawnPositions; // error on _x not being defined.
+
+    } else {
+      player removeEventHandler ["Fired", VKN_safezone_EH];
+      player removeAction VKN_disableFireAction;
+    };
+  } forEach _VKN_respawnPositions;
   sleep 5;
 };
