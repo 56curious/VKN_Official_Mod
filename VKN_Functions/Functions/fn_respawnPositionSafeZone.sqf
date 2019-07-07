@@ -1,32 +1,33 @@
 //EH code
 _VKN_safezone_code = {
   params ["_respawnPos"];
-  systemChat str _respawnPos;
-  player addAction ["", { params ["_target", "_caller", "_actionId", "_arguments"]; if ((player distance getPos _respawnPos) <= 100) then { player removeAction _actionId; };}, "", 0, false, true, "DefaultAction", "isNil 'allowFire'"]; // Error player distance #_this undefined
-    player addeventhandler ["Fired", {
-      if ((player distance getPos _respawnPos) <= 100) then {
-        params ["_shooter","_weapon","_muzzle","_mode","_ammo","_magazine","_projectile","_gunner"];
-        deletevehicle _projectile;
+  _distance = player distance getPos _respawnPos;
+  respawnPosition = _respawnPos;
+  player addAction ["", { params ["_target", "_caller", "_actionId", "_arguments"]; hint "Safezone is active!"; if ((player distance getPos _arguments) >= 100) then { player removeAction _actionId; };}, _respawnPos, 0, false, true, "DefaultAction", "isNil 'allowFire'"];
+  player addeventhandler ["Fired", {
+    if ((player distance getPos respawnPosition) <= 100) then {
+      params ["_shooter","_weapon","_muzzle","_mode","_ammo","_magazine","_projectile","_gunner"];
+      deletevehicle _projectile;
 
-        if ((toUpper _weapon isEqualTo "PUT" OR toUpper _weapon isEqualTo "THROW")) then {
+      if ((toUpper _weapon isEqualTo "PUT" OR toUpper _weapon isEqualTo "THROW")) then {
 
-            _dispName = getText (configfile >> "CfgMagazines" >> _magazine >> "displayName");
-            deletevehicle _projectile;
-            _shooter addMagazine _magazine;
-            hint format ["WARNING! This is a safe zone. You cannot use %1 here!", str _dispName];
-            [] spawn {
-              player playMove "AmovPercMstpSnonWnonDnon_exercisePushup";
-              _redArrow = "Sign_Arrow_F" createVehicle [0,0,0];
-              _redArrow attachTo [player, [0, 0, 2.4]];
-              sleep 18.5;
-              deleteVehicle _redArrow;
-              player switchMove "";
-          };
-          _code = { sleep 6; [objNull, player] call ace_medical_fnc_treatmentAdvanced_fullHealLocal; };
-          _code remoteExec ["spawn"];
-      };
+          _dispName = getText (configfile >> "CfgMagazines" >> _magazine >> "displayName");
+          deletevehicle _projectile;
+          _shooter addMagazine _magazine;
+          hint format ["WARNING! This is a safe zone. You cannot use %1 here!", str _dispName];
+          [] spawn {
+            player playMove "AmovPercMstpSnonWnonDnon_exercisePushup";
+            _redArrow = "Sign_Arrow_F" createVehicle [0,0,0];
+            _redArrow attachTo [player, [0, 0, 2.4]];
+            sleep 18.5;
+            deleteVehicle _redArrow;
+            player switchMove "";
+        };
+        _code = { sleep 6; [objNull, player] call ace_medical_fnc_treatmentAdvanced_fullHealLocal; };
+        _code remoteExec ["spawn"];
     };
-    }];
+  };
+  }];
 };
 
 // While loop
