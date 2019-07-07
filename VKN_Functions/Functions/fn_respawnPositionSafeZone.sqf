@@ -65,6 +65,21 @@ _VKN_safezone_code = {
               [_x] spawn _VKN_safezone_code;
             } forEach _respawnWest;
         };
+        case (east): {
+            {
+              [_x] spawn _VKN_safezone_code;
+            } forEach _respawnEast;
+        };
+        case (independent): {
+          {
+            [_x] spawn _VKN_safezone_code;
+          } forEach _respawnInde;
+        };
+        case (civilian): {
+          {
+            [_x] spawn _VKN_safezone_code;
+          } forEach _respawnCivi;
+        };
     };
     sleep 5;
   };
