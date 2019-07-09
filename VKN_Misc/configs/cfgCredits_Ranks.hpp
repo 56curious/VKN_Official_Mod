@@ -123,7 +123,7 @@ item5[] = {
         "Skywalker",
         "PoxxI",
         "The General",
-        "V3XEN"
+        "V3XEN",
         "Shagger"
     }
 };
