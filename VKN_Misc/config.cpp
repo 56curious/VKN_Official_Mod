@@ -86,21 +86,15 @@ class cfgCredits {
             {
                 "Jonmo",
                 "Curious",
-                "DocRoe",
                 "J. Bryan",
                 "LiftsHeavyThings",
                 "Skywalker",
-                "Theodore",
                 "The_Apothecary",
                 "Shagger",
-                "Lion",
-                "Wolfy",
                 "Happy",
                 "Tom",
-                "Ryan",
                 "Garnet",
                 "Supr3mo",
-                "Sir Robert Pierre"
             }
         };
         item5[] = {
@@ -110,7 +104,6 @@ class cfgCredits {
             {
                 "Curious",
                 "Burkal",
-                "Sir Robert Piérre",
                 "aryay",
                 "PoxxI",
                 "Max Kupleoni"
