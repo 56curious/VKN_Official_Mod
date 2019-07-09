@@ -5,7 +5,7 @@ item1[] = {
     {
         "Curious - Project Leader (Functions, Configs, Model Maker)",
         "Jonmo (Texture and Configs)",
-        "Eric Mchogan (Textures and Configs)",
+        "Shagger (Textures and Configs)",
         "Max Kupleoni (Textures)",
         "Poxxl (Textures)",
         "Apple (Textures and Configs)",
@@ -17,10 +17,9 @@ item2[] = {
         "Head's of Departments"
     },
     {
-        "Bane - Founder / Head of Personnel (Recruitment)",
-        "Skywalker / Lion - Head of Operations (Training)",
-        "Havok - Head of Tech",
-        "Burkal - Head of Media"
+        "Shagger - Head of Personnel (Recruitment)",
+        "Skywalker - Head of Operations (Training)",
+        "Havok - Head of Tech"
     }
 };
 item3[] = {
@@ -28,10 +27,11 @@ item3[] = {
         "Personnel"
     },
     {
-        "Luke",
-        "Bane",
-        "ragingpiano",
         "Shagger",
+        "Bane",
+        "Luke",
+        "KayPee",
+        "ragingpiano",
         "Maxy"
     }
 };
@@ -42,37 +42,20 @@ item4[] = {
     {
         "Jonmo",
         "Curious",
-        "DocRoe",
         "J. Bryan",
         "LiftsHeavyThings",
         "Skywalker",
-        "Theodore",
         "The_Apothecary",
         "Shagger",
-        "Lion",
-        "Wolfy",
         "Happy",
         "Tom",
         "Ryan",
         "Garnet",
-        "Supr3mo",
-        "Sir Robert Pierre"
+        "Supr3mo"
+
     }
 };
 item5[] = {
-    {
-        "Media"
-    },
-    {
-        "Curious",
-        "Burkal",
-        "Sir Robert Piérre",
-        "aryay",
-        "PoxxI",
-        "Max Kupleoni"
-    }
-};
-item6[] = {
     {
         "Tech"
     },
