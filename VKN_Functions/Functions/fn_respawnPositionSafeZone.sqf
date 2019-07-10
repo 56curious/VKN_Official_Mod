@@ -1,3 +1,17 @@
+/*
+Script name:  fn_respawnPositionSafeZone.sqf
+Created on:   21 ‎June ‎2019
+Author:       Curious
+
+Description:  Add a safezone to all respawn positions.
+
+License:      This file is under "Arma Public License No Derivatives (APL-ND)"
+              More information can be found at:
+              https://www.bohemia.net/community/licenses/arma-public-license-nd
+
+Example:      N/A
+*/
+
 //EH code
 _VKN_safezone_code = {
   params ["_respawnPos"];

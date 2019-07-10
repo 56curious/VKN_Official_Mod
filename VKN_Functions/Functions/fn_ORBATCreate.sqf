@@ -1,3 +1,17 @@
+/*
+Script name:  fn_ORBATCreate.sqf
+Created on:   02 ‎March ‎2019
+Author:       Curious
+
+Description:  Create an ORBAT.
+
+License:      This file is under "Arma Public License No Derivatives (APL-ND)"
+              More information can be found at:
+              https://www.bohemia.net/community/licenses/arma-public-license-nd
+
+Example:      N/A
+*/
+
 _code = {
     private _fnc_scriptNameParent = if (isNil '_fnc_scriptName') then {'BIS_fnc_credits'} else {_fnc_scriptName};
     private _fnc_scriptName = 'BIS_fnc_credits';
