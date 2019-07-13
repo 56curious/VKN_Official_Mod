@@ -1184,3 +1184,168 @@ class VKN_Shirt_Green_Jeans: Uniform_Base {
 		mass = 30;
 	};
 };
+
+
+
+class VKN_CombatUniform_Shirt_BlueHawaii_AOR1_1: Uniform_Base //Blue Hawaii
+{
+	author = "Jonmo";
+	scope = 2;
+	displayName = "[VKN] PMC Hawaii Shirt (Blue/AOR1)";
+	picture = "\VKN_Misc\VKN_Logo_Inverted.paa";
+	model = "\A3\Characters_F\Common\Suitpacks\suitpack_civilian_F.p3d";
+	descriptionShort = "PMC Hawaii Shirt with AOR1 Pants";
+	hiddenSelections[] = {"camo1","camo2","insignia"};
+	hiddenSelectionsTextures[] = {"\vkn_gear\data\uniforms\vkn_bluehawaii_shirt_co.paa","\VSM_AOR1\data\VSM_ARD_AOR1_1.paa"};
+	class ItemInfo: UniformItem
+	{
+		uniformModel = "-";
+		uniformClass = "VKN_Dummy_Shirt_BlueHawaii_AOR1_1";
+		containerClass = "Supply40";
+		mass = 40;
+	};
+};
+class VKN_CombatUniform_Shirt_BlueHawaii_aplblack_1: Uniform_Base
+{
+	author = "Jonmo, Apple";
+	scope = 2;
+	displayName = "[VKN] PMC Hawaii Shirt (Blue/Apple-Black)";
+	picture = "\VKN_Misc\VKN_Logo_Inverted.paa";
+	model = "\A3\Characters_F\Common\Suitpacks\suitpack_civilian_F.p3d";
+	descriptionShort = "PMC Hawaii Shirt with Apple-black Pants";
+	hiddenSelections[] = {"camo1","camo2","insignia"};
+	hiddenSelectionsTextures[] = {"\vkn_gear\data\uniforms\vkn_bluehawaii_shirt_co.paa","\VKN_Gear\data\Uniforms\VKN_Black_MTP.paa"};
+	class ItemInfo: UniformItem
+	{
+		uniformModel = "-";
+		uniformClass = "VKN_Dummy_Shirt_BlueHawaii_aplblack_1";
+		containerClass = "Supply40";
+		mass = 40;
+	};
+};
+	class VKN_CombatUniform_Shirt_BlueHawaii_multicam_1: Uniform_Base
+{
+	author = "Jonmo";
+	scope = 2;
+	displayName = "[VKN] PMC Hawaii Shirt (Blue/Multicam)";
+	picture = "\VKN_Misc\VKN_Logo_Inverted.paa";
+	model = "\A3\Characters_F\Common\Suitpacks\suitpack_civilian_F.p3d";
+	descriptionShort = "PMC Hawaii Shirt with Multicam Pants";
+	hiddenSelections[] = {"camo1","camo2","insignia"};
+	hiddenSelectionsTextures[] = {"\vkn_gear\data\uniforms\vkn_bluehawaii_shirt_co.paa","\VSM_Multicam\Data\VSM_ARD_multicam_1.paa"};
+	class ItemInfo: UniformItem
+	{
+		uniformModel = "-";
+		uniformClass = "VKN_Dummy_Shirt_BlueHawaii_multicam_1";
+		containerClass = "Supply40";
+		mass = 40;
+	};
+};
+class VKN_CombatUniform_Shirt_RedHawaii_AOR1_1: Uniform_Base //Red Hawaii
+{
+	author = "Jonmo";
+	scope = 2;
+	displayName = "[VKN] PMC Hawaii Shirt (Red/AOR1)";
+	picture = "\VKN_Misc\VKN_Logo_Inverted.paa";
+	model = "\A3\Characters_F\Common\Suitpacks\suitpack_civilian_F.p3d";
+	descriptionShort = "PMC Hawaii Shirt with AOR1 Pants";
+	hiddenSelections[] = {"camo1","camo2","insignia"};
+	hiddenSelectionsTextures[] = {"\vkn_gear\data\uniforms\vkn_redhawaii_shirt_co.paa","\VSM_AOR1\data\VSM_ARD_AOR1_1.paa"};
+	class ItemInfo: UniformItem
+	{
+		uniformModel = "-";
+		uniformClass = "VKN_Dummy_Shirt_RedHawaii_AOR1_1";
+		containerClass = "Supply40";
+		mass = 40;
+	};
+};
+class VKN_CombatUniform_Shirt_redHawaii_aplblack_1: Uniform_Base
+{
+	author = "Jonmo";
+	scope = 2;
+	displayName = "[VKN] PMC Hawaii Shirt (Red/Apple-Black)";
+	picture = "\VKN_Misc\VKN_Logo_Inverted.paa";
+	model = "\A3\Characters_F\Common\Suitpacks\suitpack_civilian_F.p3d";
+	descriptionShort = "PMC Hawaii Shirt with Apple-Black Pants";
+	hiddenSelections[] = {"camo1","camo2","insignia"};
+	hiddenSelectionsTextures[] = {"\vkn_gear\data\uniforms\vkn_Redhawaii_shirt_co.paa","\VKN_Gear\data\Uniforms\VKN_Black_MTP.paa"};
+	class ItemInfo: UniformItem
+	{
+		uniformModel = "-";
+		uniformClass = "VKN_Dummy_Shirt_RedHawaii_aplblack_1";
+		containerClass = "Supply40";
+		mass = 40;
+	};
+};
+	class VKN_CombatUniform_Shirt_RedHawaii_multicam_1: Uniform_Base
+{
+	author = "Jonmo";
+	scope = 2;
+	displayName = "[VKN] PMC Hawaii Shirt (Red/Multicam)";
+	picture = "\VKN_Misc\VKN_Logo_Inverted.paa";
+	model = "\A3\Characters_F\Common\Suitpacks\suitpack_civilian_F.p3d";
+	descriptionShort = "PMC Hawaii Shirt with Multicam Pants";
+	hiddenSelections[] = {"camo1","camo2","insignia"};
+	hiddenSelectionsTextures[] = {"\vkn_gear\data\uniforms\vkn_Redhawaii_shirt_co.paa","\VSM_Multicam\Data\VSM_ARD_multicam_1.paa"};
+	class ItemInfo: UniformItem
+	{
+		uniformModel = "-";
+		uniformClass = "VKN_Dummy_Shirt_RedHawaii_multicam_1";
+		containerClass = "Supply40";
+		mass = 40;
+	};
+};
+class VKN_CombatUniform_Shirt_BrightHawaii_AOR1_1: Uniform_Base //Bright Hawaii
+{
+	author = "Jonmo";
+	scope = 2;
+	displayName = "[VKN] PMC Hawaii Shirt (Bright/AOR1)";
+	picture = "\VKN_Misc\VKN_Logo_Inverted.paa";
+	model = "\A3\Characters_F\Common\Suitpacks\suitpack_civilian_F.p3d";
+	descriptionShort = "PMC Hawaii Shirt with AOR1 Pants";
+	hiddenSelections[] = {"camo1","camo2","insignia"};
+	hiddenSelectionsTextures[] = {"\vkn_gear\data\uniforms\vkn_Brighthawaii_shirt_co.paa","\VSM_AOR1\data\VSM_ARD_AOR1_1.paa"};
+	class ItemInfo: UniformItem
+	{
+		uniformModel = "-";
+		uniformClass = "VKN_Dummy_Shirt_BrightHawaii_AOR1_1";
+		containerClass = "Supply40";
+		mass = 40;
+	};
+};
+class VKN_CombatUniform_Shirt_BrightHawaii_aplblack_1: Uniform_Base
+{
+	author = "Jonmo";
+	scope = 2;
+	displayName = "[VKN] PMC Hawaii Shirt (Bright/Apple-Black)";
+	picture = "\VKN_Misc\VKN_Logo_Inverted.paa";
+	model = "\A3\Characters_F\Common\Suitpacks\suitpack_civilian_F.p3d";
+	descriptionShort = "PMC Hawaii Shirt with Apple-Black Pants";
+	hiddenSelections[] = {"camo1","camo2","insignia"};
+	hiddenSelectionsTextures[] = {"\vkn_gear\data\uniforms\vkn_Brighthawaii_shirt_co.paa","\VKN_Gear\data\Uniforms\VKN_Black_MTP.paa"};
+	class ItemInfo: UniformItem
+	{
+		uniformModel = "-";
+		uniformClass = "VKN_Dummy_Shirt_BrightHawaii_aplblack_1";
+		containerClass = "Supply40";
+		mass = 40;
+	};
+};
+	class VKN_CombatUniform_Shirt_BrightHawaii_multicam_1: Uniform_Base
+{
+	author = "Jonmo";
+	scope = 2;
+	displayName = "[VKN] PMC Hawaii Shirt (Bright/Multicam)";
+	picture = "\VKN_Misc\VKN_Logo_Inverted.paa";
+	model = "\A3\Characters_F\Common\Suitpacks\suitpack_civilian_F.p3d";
+	descriptionShort = "PMC Hawaii Shirt with Multicam Pants";
+	hiddenSelections[] = {"camo1","camo2","insignia"};
+	hiddenSelectionsTextures[] = {"\vkn_gear\data\uniforms\vkn_Brighthawaii_shirt_co.paa","\VSM_Multicam\Data\VSM_ARD_multicam_1.paa"};
+	class ItemInfo: UniformItem
+	{
+		uniformModel = "-";
+		uniformClass = "VKN_Dummy_Shirt_BrightHawaii_multicam_1";
+		containerClass = "Supply40";
+		mass = 40;
+	};
+};
