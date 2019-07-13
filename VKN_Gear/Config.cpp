@@ -56,6 +56,12 @@ class cfgVehicles {
 
 	class O_T_VTOL_02_infantry_dynamicLoadout_F;
 	class O_T_VTOL_02_vehicle_dynamicLoadout_F;
+  class LandVehicle;
+	class Tank;
+	class Tank_F;
+	class APC_Tracked_03_base_F;
+	class I_APC_tracked_03_base_F;
+	class I_APC_tracked_03_cannon_F;
 
 	#include "\VKN_Gear\cfgVehicles\Vehicles.hpp"
 };
