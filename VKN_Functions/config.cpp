@@ -38,6 +38,8 @@ class CfgFunctions {
 
       class respawnPositionSafeZone{};
 
+      class displayPlayerInfoAbove{};
+
 			class creditsVKN_movie{};
 			class creditsVKN_movieConfig{};
 
