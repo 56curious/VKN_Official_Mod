@@ -116,8 +116,26 @@ class cfgWeapons {
 	class rhs_altyn;
 	class rhs_altyn_visordown;
 	class rhs_uniform_m88_patchless;
+  class rhs_booniehat2_marpatd;
 
-	//Base classes
+  //Base classes
+  class VKN_BoonieHat_Base: rhs_booniehat2_marpatd {
+    author = "Jonmo";
+		picture = "\VKN_Misc\VKN_Logo_Inverted.paa";
+		scope = 0;
+		weaponPoolAvailable = 1;
+		model = "\rhsusf\addons\rhsusf_infantry2\gear\head\hats\boonie";
+		hiddenSelections[] = {"camo"};
+		class ItemInfo: HeadGearItem
+		{
+			mass = 10;
+			allowedSlots[] = {801,901,701,605};
+			uniformModel = "\rhsusf\addons\rhsusf_infantry2\gear\head\hats\boonie";
+			modelSides[] = {6};
+			hiddenSelections[] = {"camo"};
+		};
+  };
+
 	class VKN_OPS_Helmet_2_Base: VSM_Black_OPS_2 {
 		scope = 1;
 		picture="\VKN_Misc\VKN_Logo_Inverted.paa";
@@ -189,6 +207,33 @@ class cfgWeapons {
 	};
 
 	//Configs
+
+  class vkn_booniehat2_OGA: VKN_BoonieHat_Base {
+    displayName = "[VKN] Booniehat (OGA)";
+    scope = 2;
+    hiddenSelectionsTextures[] = {"VKN_Gear\data\Headgear\vkn_boonie_oga_co.paa"};
+  };
+  class vkn_booniehat2_OGA_OD: VKN_BoonieHat_Base {
+    scope = 2;
+    displayName = "[VKN] Booniehat (OGA OD)";
+    hiddenSelectionsTextures[] = {"VKN_Gear\data\Headgear\vkn_boonie_oga_od_co.paa"};
+  };
+  class vkn_booniehat2_multicam: VKN_BoonieHat_Base {
+    scope = 2;
+    displayName = "[VKN] Booniehat (Multicam)";
+    hiddenSelectionsTextures[] = {"VKN_Gear\data\Headgear\vkn_boonie_multicam_co.paa"};
+  };
+  class vkn_booniehat2_multicamtropic: VKN_BoonieHat_Base {
+    scope = 2;
+    displayName = "[VKN] Booniehat (Multicam Tropic)";
+    hiddenSelectionsTextures[] = {"VKN_Gear\data\Headgear\vkn_boonie_multicamtropic_co.paa"};
+  };
+  class vkn_booniehat2_alpine: VKN_BoonieHat_Base {
+    scope = 2;
+    displayName = "[VKN] Booniehat (Alpine)";
+    hiddenSelectionsTextures[] = {"VKN_Gear\data\Headgear\vkn_boonie_alpine_co.paa"};
+  };
+
 
 	class VKN_B_OPS2_Black_Medical : VKN_OPS_Helmet_2_Base {
 		scope = 2;
