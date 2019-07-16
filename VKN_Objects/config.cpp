@@ -24,21 +24,72 @@ class CfgEditorCategories {
 	delete ION_Choppers;
 	delete ION;
 };
-class CfgEditorSubcategories
-{
+class CfgEditorSubcategories {
 	delete Heli;
 	delete SUV;
 };
 
 class cfgWeapons {
-   class arifle_MXC_F;
-   class VKN_G36 : arifle_MXC_F {
-     model = "\VKN_Objects\Weapons\G36-Accurate_Version3_Test.p3d";
-   };
+  class SportCarHorn;
+  class VKN_ss2000_wail: SportCarHorn {
+    displayname = "SS2000 Wail";
+    scope = 2;
+    reloadTime = 4;
+    drySound[] = {"\VKN_Objects\Vehicles\tahoe_08\data\sounds\wail_short.wss",1,1};
+  };
+  class VKN_ss2000_airhorn: SportCarHorn {
+    displayname = "SS2000 Airhorn";
+    scope = 2;
+    reloadTime = 4;
+    drySound[] = {"\VKN_Objects\Vehicles\tahoe_08\data\sounds\airhorn_short.wss",1,1};
+  };
+  class VKN_pa300_wail: SportCarHorn  {
+    displayname = "PA300 Wail";
+    scope = 2;
+    reloadTime = 4;
+    drySound[] = {"\VKN_Objects\Vehicles\tahoe_08\data\sounds\wail_short.wss",1,1};
+  };
+  class VKN_pa300_airhorn: SportCarHorn {
+    displayname = "PA300 Airhorn";
+    scope = 2;
+    reloadTime = 4;
+    drySound[] = {"\VKN_Objects\Vehicles\tahoe_08\data\sounds\airhorn_short.wss",1,1};
+  };
+
+  class arifle_MXC_F;
+  class VKN_G36 : arifle_MXC_F {
+   model = "\VKN_Objects\Weapons\G36-Accurate_Version3_Test.p3d";
+  };
 };
 
-class CfgVehicles
-{
+class CfgSounds {
+  class VKN_ss2000_wail {
+    name = "VKN_ss2000_wail";
+    sound[] = {"\VKN_Objects\Vehicles\tahoe_08\data\sounds\wail.wss",1,1};
+    titles[] = {};
+    scope = 2;
+  };
+  class VKN_ss2000_yelp {
+    name = "VKN_ss2000_yelp";
+    sound[] = {"\VKN_Objects\Vehicles\tahoe_08\data\sounds\yelp.wss",1,1};
+    titles[] = {};
+    scope = 2;
+  };
+  class VKN_pa300_wail {
+    name = "VKN_pa300_wail";
+    sound[] = {"\VKN_Objects\Vehicles\tahoe_08\data\sounds\wail.wss",1,1};
+    titles[] = {};
+    scope = 2;
+  };
+  class VKN_pa300_hilo {
+    name = "VKN_pa300_hilo";
+    sound[] = {"\VKN_Objects\Vehicles\tahoe_08\data\sounds\hilo.wss",1,1};
+    titles[] = {};
+    scope = 2;
+  };
+};
+
+class CfgVehicles {
 
   class Land_WoodenCrate_01_F;
 
@@ -213,8 +264,8 @@ class CfgVehicles
 	class tahoe_08: tahoe_08_base { scope = 0; };
 	class tahoe_ltz_08: tahoe_08_base { scope = 0; };
 	class suburban: tahoe_08_base { scope = 0; };
-	class tahoe_UNM: tahoe_08_base { scope = 0; };
 	class tahoe_LUMI: tahoe_08_base { scope = 0; };
+  class tahoe_UNM: tahoe_08_base { scope = 0; };
 
 	class B_VKN_AS_365_PMC_01 : AS_365 {
 		hiddenSelectionsTextures[] = {"AS_365\data\skins\AS365_BlackAlt.paa", "AS_365\data\glass.paa"};
@@ -307,6 +358,35 @@ class CfgVehicles
 		editorSubCategory = "EdSubcat_Cars";
 		displayName = "[VKN] Chevrolet Tahoe Security";
 		scope = 2;
+    class UserActions {
+      class stopSiren {
+        displayName = "<t color='#ff0000'>Stop Siren (untested)</t>";
+        position = "drivewheel";
+        radius = 10;
+        condition = "driver this == player && (this animationPhase 'ani_siren' != 1)";
+        statement = "this setVariable ['VKN_Siren', False];";
+        onlyForplayer = 1;
+        showWindow = 0;
+
+      };
+      class code3 {
+        displayName = "<t color='#ff0000'>Code Three</t>";
+        position = "drivewheel";
+        radius = 10;
+        condition = "driver this == player && (this animationPhase 'ani_siren' != 1)";
+        statement = "this execVM '\VKN_Objects\Vehicles\tahoe_08\sirens.sqf';";
+        onlyForplayer = 1;
+        showWindow = 0;
+      };
+      class code2 {
+        condition = "driver this == player";
+        displayName = "<t color='#317aff'>Code 2</t>";
+        onlyForplayer = 0;
+        position = "drivewheel";
+        radius = 1000;
+        statement = "this execVM '\tahoe_08\scripts\code2.sqf';";
+      };
+    };
 	};
 	class B_VKN_tahoe_LUMI_PMC_01: tahoe_LUMI {
 		crew = "B_CTRG_soldier_engineer_exp_F";
