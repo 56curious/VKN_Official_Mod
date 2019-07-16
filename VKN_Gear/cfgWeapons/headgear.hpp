@@ -52,8 +52,8 @@ class VKN_Beret_Base: H_Beret_02 {
 };
 
 
-class VKN_Cap_LegionForest : H_Cap_red {
-	author = "Max Kupoleni";
+class VKN_Cap_LegionForest : VKN_Cap_Headphones_Base {
+	author = "Jonmo";
 	scope = 2;
 	displayName="[VKN] Cap - Legion Forest";
 	picture="\VKN_Misc\VKN_Logo_Inverted.paa";
