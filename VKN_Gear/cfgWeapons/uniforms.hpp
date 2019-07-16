@@ -596,7 +596,7 @@ class VKN_MTP_Tan_Khaki_NonRolled: VKN_CombatUniform_NonRolled_base {
 
 class VKN_CombatUniform_Legion_Forest_Full: VKN_I_CombatUniform_Base {
 	scope = 2;
-	Author = "Max Kupoleni";
+	Author = "Jonmo";
 	displayName = "[VKN] Combat Uniform - Legion Forest";
 	descriptionShort = "Viking Combat Uniform";
 	hiddenSelectionsTextures[]={"\VKN_Gear\data\Uniforms\VKN_LegionForestFull_ca.paa"};
@@ -610,7 +610,7 @@ class VKN_CombatUniform_Legion_Forest_Full: VKN_I_CombatUniform_Base {
 };
 class VKN_CombatUniform_Legion_Forest_Black: VKN_I_CombatUniform_Base {
 	scope = 2;
-	Author = "Max Kupoleni";
+	Author = "Jonmo";
 	displayName = "[VKN] Combat Uniform - Legion Forest + Black";
 	descriptionShort = "Viking Combat Uniform";
 	hiddenSelectionsTextures[]={"\VKN_Gear\data\Uniforms\VKN_LegionForest_Black_ca.paa"};
@@ -624,7 +624,7 @@ class VKN_CombatUniform_Legion_Forest_Black: VKN_I_CombatUniform_Base {
 };
 class VKN_CombatUniform_Legion_Forest_Olive: VKN_I_CombatUniform_Base {
 	scope = 2;
-	Author = "Max Kupoleni";
+	Author = "Jonmo";
 	displayName = "[VKN] Combat Uniform - Legion Forest + Olive";
 	descriptionShort = "Viking Combat Uniform";
 	hiddenSelectionsTextures[]={"\VKN_Gear\data\Uniforms\VKN_LegionForest_Olive_ca.paa"};
