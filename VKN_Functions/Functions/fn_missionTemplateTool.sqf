@@ -46,8 +46,6 @@ collect3DENHistory {
 		["General", "IntelBriefingName", "Viking PMC Zeus OP"]
 	];
 
-	sleep 0.5;
-
 	_billboard = create3DENEntity ["Object", "Land_Billboard_F", _position];
 	_billboard set3DENAttribute ["ObjectTextureCustom0", "VKN_Extensions_Misc\vkn_poster.paa"];
 
@@ -67,8 +65,6 @@ collect3DENHistory {
 	add3DENConnection ["sync", _ZeusModules, _ZeusAttributeCuratorAddEditableObjects];
 	add3DENConnection ["sync", _ZeusModules, _ZeusAttributeCuratorAddEditingAreaPlayers];
 
-	sleep 0.5;
-
 	ZeusEntity1 = create3DENEntity ["Logic", "VirtualCurator_F", _position];
 	ZeusEntity2 = create3DENEntity ["Logic", "VirtualCurator_F", _position];
 	ZeusEntity3 = create3DENEntity ["Logic", "VirtualCurator_F", _position];
@@ -78,17 +74,18 @@ collect3DENHistory {
 	set3DENAttributes [[_ZeusEntities,"ControlMP",true]];
 	set3DENAttributes [[_ZeusModules, "ModuleCurator_F_Owner", _ZeusEntities]];
 
-	sleep 0.5;
-
-	for "_i" from 1 to 6 step 1 do {
-		_group = create3DENComposition [_squad, _position];
-	   	add3DENConnection ["sync", _group, _ZeusAttributeCuratorAddEditableObjects];
-	   	add3DENConnection ["sync", _group, _ZeusAttributeCuratorAddEditingAreaPlayers];
-		{
-			set3DENAttributes [[_x,"ControlMP",true]];
+	[_squad, _position, _ZeusAttributeCuratorAddEditableObjects, _ZeusAttributeCuratorAddEditingAreaPlayers] spawn {
+		params ["_squad", "_position", "_ZeusAttributeCuratorAddEditableObjects", "_ZeusAttributeCuratorAddEditingAreaPlayers"];
+		for "_i" from 1 to 6 step 1 do {
+			_group = create3DENComposition [_squad, _position];
+		   	add3DENConnection ["sync", _group, _ZeusAttributeCuratorAddEditableObjects];
+		   	add3DENConnection ["sync", _group, _ZeusAttributeCuratorAddEditingAreaPlayers];
+			{
+				set3DENAttributes [[_x,"ControlMP",true]];
+				sleep 0.01;
+			} forEach _group;
 			sleep 0.01;
-		} forEach _group;
-		sleep 0.01;
+		};
 	};
 };
 
