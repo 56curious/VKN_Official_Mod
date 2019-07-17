@@ -56,14 +56,25 @@ class CfgEditorSubcategories {
 };
 
 class CfgMovesBasic;
+<<<<<<< HEAD
 class CfgMovesMaleSdr: CfgMovesBasic {
 	class States {
 		class LadderCivilStatic;
 		class LadderCivilUpLoop: LadderCivilStatic {
+=======
+class CfgMovesMaleSdr: CfgMovesBasic
+{
+	class States
+	{
+		class LadderCivilStatic;
+		class LadderCivilUpLoop: LadderCivilStatic
+		{
+>>>>>>> de90838137885d02440f8def347e105d9dcb4323
 			speed="1.05/(2/3)";
 		};
 	};
 };
+<<<<<<< HEAD
 class CfgAnimation {
 	ladderSpeed="0.5*2";
 };
@@ -78,6 +89,12 @@ class cfgDiscordRichPresence {
   defaultSmallImageKey = "arma3";
   defaultSmallImageText = "";
 };
+=======
+class CfgAnimation
+{
+	ladderSpeed="0.5*2";
+};
+>>>>>>> de90838137885d02440f8def347e105d9dcb4323
 
 #include "fonts\cfgFontFamilies.hpp"
 #include "markers\cfgMarkers.hpp"
