@@ -79,7 +79,6 @@ class cfgDiscordRichPresence {
   defaultSmallImageText = "";
 };
 
-
 #include "fonts\cfgFontFamilies.hpp"
 #include "markers\cfgMarkers.hpp"
 #include "compositions\cfgGroups.hpp"
