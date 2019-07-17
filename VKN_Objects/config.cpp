@@ -357,34 +357,36 @@ class CfgVehicles {
 		editorCategory = "VKN_Units";
 		editorSubCategory = "EdSubcat_Cars";
 		displayName = "[VKN] Chevrolet Tahoe Security";
+    emergencyLightbarType = 1;
 		scope = 2;
     class UserActions {
       class stopSiren {
-        displayName = "<t color='#ff0000'>Stop Siren (untested)</t>";
+        displayName = "<t color='#0000ff'>Code 1</t>";
         position = "drivewheel";
         radius = 10;
         condition = "driver this == player && (this animationPhase 'ani_siren' != 1)";
         statement = "this setVariable ['VKN_Siren', False];";
-        onlyForplayer = 1;
+        onlyForplayer = 0;
         showWindow = 0;
-
       };
+      class LightMode1
+			{
+				displayName = "<t color='#ff0000'>Code Two</t>";
+				position = "drivewheel";
+				radius = 10;
+				condition = "driver this == player && (this animationPhase 'ani_lightbar' != 1)";
+				statement = "this animate ['ani_siren', 0], this execVM '\VKN_Objects\Vehicles\tahoe_08\lightbar.sqf';";
+				onlyForplayer = 0;
+				showWindow = 0;
+			};
       class code3 {
         displayName = "<t color='#ff0000'>Code Three</t>";
         position = "drivewheel";
         radius = 10;
         condition = "driver this == player && (this animationPhase 'ani_siren' != 1)";
-        statement = "this execVM '\VKN_Objects\Vehicles\tahoe_08\sirens.sqf';";
-        onlyForplayer = 1;
-        showWindow = 0;
-      };
-      class code2 {
-        condition = "driver this == player";
-        displayName = "<t color='#317aff'>Code 2</t>";
+        statement = "this execVM '\VKN_Objects\Vehicles\tahoe_08\sirens.sqf', this execVM '\VKN_Objects\Vehicles\tahoe_08\lightbar.sqf';;";
         onlyForplayer = 0;
-        position = "drivewheel";
-        radius = 1000;
-        statement = "this execVM '\tahoe_08\scripts\code2.sqf';";
+        showWindow = 0;
       };
     };
 	};
