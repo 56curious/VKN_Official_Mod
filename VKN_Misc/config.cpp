@@ -56,45 +56,17 @@ class CfgEditorSubcategories {
 };
 
 class CfgMovesBasic;
-<<<<<<< HEAD
 class CfgMovesMaleSdr: CfgMovesBasic {
 	class States {
 		class LadderCivilStatic;
 		class LadderCivilUpLoop: LadderCivilStatic {
-=======
-class CfgMovesMaleSdr: CfgMovesBasic
-{
-	class States
-	{
-		class LadderCivilStatic;
-		class LadderCivilUpLoop: LadderCivilStatic
-		{
->>>>>>> de90838137885d02440f8def347e105d9dcb4323
 			speed="1.05/(2/3)";
 		};
 	};
 };
-<<<<<<< HEAD
 class CfgAnimation {
 	ladderSpeed="0.5*2";
 };
-
-// Default Discord Rich Presence for Connors's workshop mod.
-class cfgDiscordRichPresence {
-  applicationID = "565082898638569472";
-  defaultDetails = "Viking PMC";
-  defaultState = "In the Menus...";
-  defaultLargeImageKey = "vkn_logo";
-  defaultLargeImageText = "Viking PMC";
-  defaultSmallImageKey = "arma3";
-  defaultSmallImageText = "";
-};
-=======
-class CfgAnimation
-{
-	ladderSpeed="0.5*2";
-};
->>>>>>> de90838137885d02440f8def347e105d9dcb4323
 
 #include "fonts\cfgFontFamilies.hpp"
 #include "markers\cfgMarkers.hpp"
