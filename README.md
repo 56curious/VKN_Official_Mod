@@ -15,39 +15,8 @@ The extension mod (includes factions, units etc.) can be found at: https://steam
 ## Credits
 Before retexutres are made, we have contacted the authors and requested permission. If you as a mod creator have noted something that you did not consent to, please message myself or another contributor so we can remove it ASAP.
 
-
-## Features
-**Currently Implemented:**
-- Strategic Map Framework
-- EMP Framework
-- Map Icon Framework
-
-- Custom Loading Screens - Ability to plug your own in as well
-- Option to enable/disable some features via a settings menu
-- Custom images for each Viking squad/element
-- Custom ORBAT
-- Customized main menu with automatic connecting to our private server (configurable for other groups).
-
-- Custom Retextures (too many to list, please see workshop images for a quick overview)
-
-- Female Playable Characters (Heads and custom uniform model)
-
-- Custom Fonts (Roboto and Exo)
-- Custom Music
-- Custom Sounds
-
-- Custom Objects
-  - AS 365 Dauphin (Unarmed)
-  - AS 565 Panther (Armed)
-  - Reinforced Chevrolet Tahoes
-  - Custom misc objects.
-
-- Custom Factions
-  - Asian Paramilitary
-  - Mexican National Guard
-  - Ryuku Dragon Army (Campaign Specific)
-  - The Cartel (Campaign specific)
-  - The Order (Campaign specific)
-  - Viking PMC (Aegir, Balder, Fenrir, Heimdal, Loki, Odin, SIF, Thor, TYR, Valkyrie, VCG, VIS)
-
-
+VSM All In One Collection - Allowed retexture rights for their custom gear.
+EC 365/565 and Tahoe 08 created by Danz and Skan.
+Femal3 Mod - High quality female player models and faces for our use.
+Some gear has been used in complience with the licencing information found on the Multi-Play Uniforms workshop page as of 17/02/2019.
+ALIAScartoons for his amazing EMP and Monsoon scripts that we have turned into functions.
