@@ -256,14 +256,11 @@ class display3DEN {
     };
 };
 
-/*
-class RscStandardDisplay;
-class RscControlsGroup;
-class RscPictureKeepAspect;
-class RscText;
+///*
 #define COLOR_TRANSPARENT { 0, 0, 0, 0 }
 #define COLOR_WHITE { 1, 1, 1, 1 }
 #define BACKGROUND_IMAGE ["\VKN_Misc\Main Menu\Static Background Images\Background1.paa","\VKN_Misc\Main Menu\Static Background Images\Background2.paa","\VKN_Misc\Main Menu\Static Background Images\Background3.paa","\VKN_Misc\Main Menu\Static Background Images\Background4.paa","\VKN_Misc\Main Menu\Static Background Images\Background5.paa","\VKN_Misc\Main Menu\Static Background Images\Background6.paa","\VKN_Misc\Main Menu\Static Background Images\Background7.paa","\VKN_Misc\Main Menu\Static Background Images\Background8.paa"]
+class rscText;
 
 class RscDisplayStart: RscStandardDisplay {
     class controls {
@@ -314,7 +311,7 @@ class RscDisplayStart: RscStandardDisplay {
         };
     };
 };
-*/
+//*/
 
 
 
@@ -344,7 +341,7 @@ class RscDisplayMain: RscStandardDisplay {
             condition = "true";
         };
     };
-/*
+///*
     idd=0;
     scriptName="RscDisplayMain";
     scriptPath="GUI";
@@ -409,6 +406,13 @@ class RscDisplayMain: RscStandardDisplay {
         delete TrafficLight;
         delete Version;
 
+        class RscMainMenuSpotlight;
+        class RscActivePicture;
+        class RscButton;
+        class RscActivePictureKeepAspect;
+        class RscButtonMenu;
+        class RscControlsGroupNoScrollbars;
+        class RscControlsGroupNoHScrollbars;
         class BackgroundSpotlight: RscPicture {colorText[] = {0,0,0,0};};
         class BackgroundSpotlightLeft: BackgroundSpotlight {colorText[] = {0,0,0,0};};
         class BackgroundSpotlightRight: BackgroundSpotlightLeft {colorText[] = {0,0,0,0};};
@@ -450,15 +454,17 @@ class RscDisplayMain: RscStandardDisplay {
         class SpotlightPrev: RscActivePictureKeepAspect
         {
             idc = 1060;
-            color[] = {1,1,1,0.25};
-            fade = 1;
+            //color[] = {1,1,1,0.25};
+            //fade = 1;
+
+            show = 0;
 
             text = "\a3\Ui_f\data\GUI\Rsc\RscDisplayMain\spotlightPrev_ca.paa"; //--- ToDo: Localize;
             x = 0.54126 * safezoneW + safezoneX;
             y = 0.676 * safezoneH + safezoneY;
             w = 0.166708 * safezoneW;
             h = 0.037037 * safezoneH;
-            colorActive[] = {1,1,1,1};
+            //colorActive[] = {1,1,1,1};
         };
         class SpotlightNext: SpotlightPrev
         {
@@ -755,9 +761,9 @@ class RscDisplayMain: RscStandardDisplay {
             };
         };
     };
-*/
+//*/
 };
-/*
+///*
 class RscDisplayMainMenuBackground {
     #include "\VKN_Misc\Main Menu\VKN_MainMenuDefines.hpp"
     scriptName="RscDisplayMainMenuBackground";
@@ -796,4 +802,4 @@ class RscDisplayMainMenuBackground {
         };
     };
 };
-*/
+//*/
