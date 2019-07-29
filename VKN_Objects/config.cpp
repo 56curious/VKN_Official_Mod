@@ -7,8 +7,23 @@ class CfgPatches {
 		versionAr[] = {0,1,0};
 
 		units[] = {
-			"B_VKN_AS_365_PMC_01",
-			"B_VKN_AS_565_PMC_01"
+      "B_VKN_AS_365_PMC_01",
+      "B_VKN_AS_365_PMC_02",
+
+      "B_VKN_AS_565_PMC_01",
+      "B_VKN_AS_565_PMC_02",
+
+      "B_VKN_EC135_Unarmed_Black_1",
+      "B_VKN_EC135_Unarmed_Black_2",
+      "B_VKN_EC135_Armed_Black_1",
+      "B_VKN_EC135_Medical_Basic_1",
+      "B_VKN_EC135_Medical_Alternative_1",
+
+      "B_VKN_tahoe_08_PMC_01",
+      "B_VKN_tahoe_ltz_08_PMC_01",
+      "B_VKN_suburban_PMC_01",
+      "B_VKN_tahoe_UNM_PMC_01",
+      "B_VKN_tahoe_LUMI_PMC_01"
 		};
 
 		requiredAddons[] = {
@@ -117,23 +132,101 @@ class CfgVehicles {
   */
 
 
-  //PBO Import Privatization
+  //Import Privatization
   class Car_F;
-  class Helicopter_Base_F;
+  class AS_365_base;
+  class tahoe_08_base;
+
+  class Helicopter_Base_H;
+  class ECXlu_base_F: Helicopter_Base_H {
+
+        class textureSources {
+          class Viking_Black {
+            displayName = "Viking Black";
+            author = "Eric McHogan";
+            textures[] = {
+              "\VKN_Objects\Vehicles\EC135\VKN_EC135_Body_1_Black.paa",
+              "\VKN_Objects\Vehicles\EC135\VKN_EC135_Body_2_Black.paa",
+              "\VKN_Objects\Vehicles\EC135\VKN_EC135_Body_3_Black.paa",
+              "\VKN_Objects\Vehicles\EC135\VKN_EC135_Body_4_Black.paa",
+              "\VKN_Objects\Vehicles\EC135\VKN_EC135_Int_1_Black.paa",
+              ""
+            };
+            factions[] = {
+              "BLU_F", "BLU_G_F",
+              "OPF_F", "OPF_G_F",
+              "IND_F", "IND_G_F",
+              "CIV_F"
+            };
+          };
+          class Viking_Loki: Viking_Black {
+            displayName = "Viking Loki";
+            textures[] = {
+              "\VKN_Objects\Vehicles\EC135\VKN_EC135_Body_1_Loki.paa",
+              "\VKN_Objects\Vehicles\EC135\VKN_EC135_Body_2_Loki.paa",
+              "\VKN_Objects\Vehicles\EC135\VKN_EC135_Body_3_Loki.paa",
+              "\VKN_Objects\Vehicles\EC135\VKN_EC135_Body_4_Loki.paa",
+              "\VKN_Objects\Vehicles\EC135\VKN_EC135_Int_1_Loki.paa",
+              ""
+            };
+          };
+          class Viking_OD: Viking_Black {
+            displayName = "Viking OD";
+            textures[] = {
+              "\VKN_Objects\Vehicles\EC135\VKN_EC135_Body_1_OD.paa",
+              "\VKN_Objects\Vehicles\EC135\VKN_EC135_Body_2_OD.paa",
+              "\VKN_Objects\Vehicles\EC135\VKN_EC135_Body_3_OD.paa",
+              "\VKN_Objects\Vehicles\EC135\VKN_EC135_Body_4_OD.paa",
+              "\VKN_Objects\Vehicles\EC135\VKN_EC135_Int_1_OD.paa",
+              ""
+            };
+          };
+          class Viking_Sand: Viking_Black {
+            displayName = "Viking Sand";
+            textures[] = {
+              "\VKN_Objects\Vehicles\EC135\VKN_EC135_Body_1_Sand.paa",
+              "\VKN_Objects\Vehicles\EC135\VKN_EC135_Body_2_Sand.paa",
+              "\VKN_Objects\Vehicles\EC135\VKN_EC135_Body_3_Sand.paa",
+              "\VKN_Objects\Vehicles\EC135\VKN_EC135_Body_4_Sand.paa",
+              "\VKN_Objects\Vehicles\EC135\VKN_EC135_Int_1_Sand.paa",
+              ""
+            };
+          };
+        };
+
+        ace_fastroping_enabled = 2;
+        ace_fastroping_friesType = "ACE_friesAnchorBar";
+        ace_fastroping_friesAttachmentPoint[] = {0, 1.7, 0.4};
+
+        ace_fastroping_onCut = "ace_fastroping_fnc_onCutCommon";
+        ace_fastroping_onPrepare = "ace_fastroping_fnc_onPrepareCommon";
+
+        ace_fastroping_ropeOrigins[] = {"ropeOriginLeft","ropeOriginRight"};
+        class Attributes {
+          class ace_fastroping_equipFRIES {
+              property = "ace_fastroping_equipFRIES";
+              control = "Checkbox";
+              displayName = "$STR_ace_fastroping_Eden_equipFRIES";
+              tooltip = "$STR_ace_fastroping_Eden_equipFRIES_Tooltip";
+              expression = "if (_value) then {[_this] call ace_fastroping_fnc_equipFRIES}";
+              typeName = "BOOL";
+              condition = "objectVehicle";
+              defaultValue = "(false)";
+          };
+        };
+    };
+
+
   //#include "\VKN_Objects\Vehicles\Red\redConfig.hpp"
   #include "\VKN_Objects\Vehicles\removeClasses.hpp"
 
 
 	//Helicopter Configs
-  class AS_365_base;
-
   #include "\VKN_Objects\Configs\EC135.hpp"
   #include "\VKN_Objects\Configs\AS_365_565.hpp"
 
 
-
   //SUV Configs
-  class tahoe_08_base;
   class tahoe_08: tahoe_08_base { scope = 0; };
   class tahoe_ltz_08: tahoe_08_base { scope = 0; };
   class suburban: tahoe_08_base { scope = 0; };
