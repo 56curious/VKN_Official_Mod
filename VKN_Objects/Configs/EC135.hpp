@@ -38,7 +38,7 @@ class VKN_EC135_Medical_Basic_1: EC135Rlu {
   crew = "B_Helipilot_F";
   side = 1;
   displayName = "Eurocopter 135 - Medical";
-  hiddenSelectionsTextures[] = {"\VKN_Objects\Vehicles\EC135\VKN_EC135_Body_1_Black.paa","\VKN_Objects\Vehicles\EC135\VKN_EC135_Body_2_Black.paa","\VKN_Objects\Vehicles\EC135\VKN_EC135_Body_3_Black.paa","\VKN_Objects\Vehicles\EC135\VKN_EC135_Body_4_Black.paa","\VKN_Objects\Vehicles\EC135\VKN_EC135_Int_1_Black.paa",""};
+  hiddenSelectionsTextures[] = {"\VKN_Objects\Vehicles\EC135\VKN_EC135_Body_1_Black_Medical.paa","\VKN_Objects\Vehicles\EC135\VKN_EC135_Body_2_Black_Medical.paa","\VKN_Objects\Vehicles\EC135\VKN_EC135_Body_3_Black.paa","\VKN_Objects\Vehicles\EC135\VKN_EC135_Body_4_Black.paa","\VKN_Objects\Vehicles\EC135\VKN_EC135_Int_1_Black.paa",""};
   picture = "\VKN_Misc\VKN_Logo_inverted.paa";
   editorPreview = "\VKN_Misc\VKN_Logo_inverted.paa";
   scope = 2;
@@ -50,7 +50,7 @@ class VKN_EC135_Medical_Alternative_1: EC135SAlu {
   crew = "B_Helipilot_F";
   side = 1;
   displayName = "Eurocopter 135 - Medical Alternative";
-  hiddenSelectionsTextures[] = {"\VKN_Objects\Vehicles\EC135\VKN_EC135_Body_1_Black.paa","\VKN_Objects\Vehicles\EC135\VKN_EC135_Body_2_Black.paa","\VKN_Objects\Vehicles\EC135\VKN_EC135_Body_3_Black.paa","\VKN_Objects\Vehicles\EC135\VKN_EC135_Body_4_Black.paa","\VKN_Objects\Vehicles\EC135\VKN_EC135_Int_1_Black.paa",""};
+  hiddenSelectionsTextures[] = {"\VKN_Objects\Vehicles\EC135\VKN_EC135_Body_1_Black_Medical.paa","\VKN_Objects\Vehicles\EC135\VKN_EC135_Body_2_Black_Medical.paa","\VKN_Objects\Vehicles\EC135\VKN_EC135_Body_3_Black.paa","\VKN_Objects\Vehicles\EC135\VKN_EC135_Body_4_Black.paa","\VKN_Objects\Vehicles\EC135\VKN_EC135_Int_1_Black.paa",""};
   picture = "\VKN_Misc\VKN_Logo_inverted.paa";
   editorPreview = "\VKN_Misc\VKN_Logo_inverted.paa";
   scope = 2;
