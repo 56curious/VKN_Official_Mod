@@ -78,3 +78,25 @@ class CfgFunctions {
 		};
 	};
 };
+
+/*
+class CfgVehicles {
+    class Man;
+    class CAManBase: Man {
+        class ACE_SelfActions {
+            class VikingActions {
+                displayName = "Viking Actions";
+                icon = "\VKN_Misc\VikingLogo128.paa";
+
+                class flipVehicle {
+                  displayName = "Flip Vehicle";
+                  condition = "vehicle player == player";
+                  exceptions[] = {};
+                  statement = "call VKN_fnc_flipVehicle;";
+                  icon = "\VKN_Misc\Misc\flip.paa";
+                };
+            };
+        };
+    };
+};
+*/
