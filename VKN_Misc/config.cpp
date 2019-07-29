@@ -10,6 +10,8 @@ class CfgPatches {
 
         requiredAddons[] =
         {
+            "A3_Editor_F",
+            "A3_Data_F",
             "A3_UI_F",
             "A3_UI_F_Curator",
             "A3_Functions_F",
@@ -256,7 +258,7 @@ class display3DEN {
     };
 };
 
-///*
+/*
 #define COLOR_TRANSPARENT { 0, 0, 0, 0 }
 #define COLOR_WHITE { 1, 1, 1, 1 }
 #define BACKGROUND_IMAGE ["\VKN_Misc\Main Menu\Static Background Images\Background1.paa","\VKN_Misc\Main Menu\Static Background Images\Background2.paa","\VKN_Misc\Main Menu\Static Background Images\Background3.paa","\VKN_Misc\Main Menu\Static Background Images\Background4.paa","\VKN_Misc\Main Menu\Static Background Images\Background5.paa","\VKN_Misc\Main Menu\Static Background Images\Background6.paa","\VKN_Misc\Main Menu\Static Background Images\Background7.paa","\VKN_Misc\Main Menu\Static Background Images\Background8.paa"]
@@ -311,7 +313,7 @@ class RscDisplayStart: RscStandardDisplay {
         };
     };
 };
-//*/
+*/
 
 
 
@@ -341,11 +343,11 @@ class RscDisplayMain: RscStandardDisplay {
             condition = "true";
         };
     };
-///*
+/*
     idd=0;
     scriptName="RscDisplayMain";
     scriptPath="GUI";
-    onLoad="_script = [""onLoad"",_this,""RscDisplayMain"",'GUI'] call (uinamespace getvariable 'BIS_fnc_initDisplay'); copyToClipboard str _script;";
+    onLoad="_script = [""onLoad"",_this,""RscDisplayMain"",'GUI'] call (uinamespace getvariable 'BIS_fnc_initDisplay'); diag_log 'VKN_MainMenu_start'; diag_log str _script; diag_log 'VKN_MainMenu_end';";
     onUnload="[""onUnload"",_this,""RscDisplayMain"",'GUI'] call (uinamespace getvariable 'BIS_fnc_initDisplay')";
     class ControlsBackground
     {
@@ -761,9 +763,9 @@ class RscDisplayMain: RscStandardDisplay {
             };
         };
     };
-//*/
+*/
 };
-///*
+/*
 class RscDisplayMainMenuBackground {
     #include "\VKN_Misc\Main Menu\VKN_MainMenuDefines.hpp"
     scriptName="RscDisplayMainMenuBackground";
@@ -802,4 +804,4 @@ class RscDisplayMainMenuBackground {
         };
     };
 };
-//*/
+*/
