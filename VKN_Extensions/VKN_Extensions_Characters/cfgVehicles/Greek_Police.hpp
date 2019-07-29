@@ -238,10 +238,8 @@ class B_Greek_Offroader_Police_01 : B_GEN_Offroad_01_gen_F_OCimport_02 {
     editorCategory = "B_Greek_Police";
     editorSubcategory = "EdSubcat_Cars";
 
-    class textureSources
-		{
-      class Police
-			{
+    class textureSources {
+      class Police {
 				// Display name of the texture
 				displayName = "Police Texture";
 				// Author of the texture
@@ -249,8 +247,7 @@ class B_Greek_Offroader_Police_01 : B_GEN_Offroad_01_gen_F_OCimport_02 {
 				// Paths to the texture files, in the same order as the hidden selections
 				textures[] = {"\VKN_Extensions_Characters\data\retextures\Greek_Police_Offroader.paa"};
 				// This source should be available for the following factions
-				factions[] =
-				{
+				factions[] = {
 					"BLU_F", "BLU_G_F", // Side Blufor
 					"OPF_F", "OPF_G_F", // Side Opfor
 					"IND_F", "IND_G_F", // Side independent
