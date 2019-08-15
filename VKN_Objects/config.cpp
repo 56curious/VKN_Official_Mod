@@ -149,7 +149,7 @@ class CfgVehicles {
               "\VKN_Objects\Vehicles\EC135\VKN_EC135_Body_2_Black.paa",
               "\VKN_Objects\Vehicles\EC135\VKN_EC135_Body_3_Black.paa",
               "\VKN_Objects\Vehicles\EC135\VKN_EC135_Body_4_Black.paa",
-              "\VKN_Objects\Vehicles\EC135\VKN_EC135_Int_1_Black.paa",
+              "\VKN_Objects\Vehicles\EC135\VKN_EC135_Int_1.paa",
               ""
             };
             factions[] = {
@@ -166,7 +166,7 @@ class CfgVehicles {
               "\VKN_Objects\Vehicles\EC135\VKN_EC135_Body_2_Loki.paa",
               "\VKN_Objects\Vehicles\EC135\VKN_EC135_Body_3_Loki.paa",
               "\VKN_Objects\Vehicles\EC135\VKN_EC135_Body_4_Loki.paa",
-              "\VKN_Objects\Vehicles\EC135\VKN_EC135_Int_1_Loki.paa",
+              "\VKN_Objects\Vehicles\EC135\VKN_EC135_Int_1.paa",
               ""
             };
           };
@@ -177,7 +177,7 @@ class CfgVehicles {
               "\VKN_Objects\Vehicles\EC135\VKN_EC135_Body_2_OD.paa",
               "\VKN_Objects\Vehicles\EC135\VKN_EC135_Body_3_OD.paa",
               "\VKN_Objects\Vehicles\EC135\VKN_EC135_Body_4_OD.paa",
-              "\VKN_Objects\Vehicles\EC135\VKN_EC135_Int_1_OD.paa",
+              "\VKN_Objects\Vehicles\EC135\VKN_EC135_Int_1.paa",
               ""
             };
           };
@@ -188,7 +188,7 @@ class CfgVehicles {
               "\VKN_Objects\Vehicles\EC135\VKN_EC135_Body_2_Sand.paa",
               "\VKN_Objects\Vehicles\EC135\VKN_EC135_Body_3_Sand.paa",
               "\VKN_Objects\Vehicles\EC135\VKN_EC135_Body_4_Sand.paa",
-              "\VKN_Objects\Vehicles\EC135\VKN_EC135_Int_1_Sand.paa",
+              "\VKN_Objects\Vehicles\EC135\VKN_EC135_Int_1.paa",
               ""
             };
           };
