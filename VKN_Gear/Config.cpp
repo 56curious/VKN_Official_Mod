@@ -6,7 +6,12 @@ class CfgPatches {
 		versionStr = "1.0.0";
 		versionAr[] = {0,1,0};
 
-		units[] = {};
+		units[] = {
+      "Y32E_Cihuai_Infantry",
+      "Y32E_Cihuai_Vehicle",
+      "vkn_ifv_warrior_woodland",
+      "vkn_ifv_warrior_desert"
+    };
 
 		requiredAddons[] =
 		{

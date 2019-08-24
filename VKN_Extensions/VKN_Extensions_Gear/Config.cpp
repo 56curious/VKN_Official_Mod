@@ -234,21 +234,6 @@ class cfgWeapons {
     hiddenSelectionsTextures[] = {"VKN_Gear\data\Headgear\vkn_boonie_alpine_co.paa"};
   };
 
-
-	class VKN_B_OPS2_Black_Medical : VKN_OPS_Helmet_2_Base {
-		scope = 2;
-		author="Curious";
-		displayName="[VKN] Opscore 2 Black + Medical";
-    hiddenSelections[]= {"_helmBase","_helmGear","_nvgWeight","_Peltor"};
-		hiddenSelectionsTextures[] = {"VKN_Gear\data\Headgear\VKN_Ops_black_Medical.paa","vsm_helmets\textures\helmet_1_co.paa","vsm_helmets\textures\vsm_ech_2_projecthonor.paa","vsm_helmets\textures\rr_ops\tex\headset_co.paa"};
-	};
-	class VKN_B_OPS2_LOKI_Black_Urban_Medical : VKN_OPS_Helmet_2_Base {
-		scope = 2;
-		author="Maxy";
-		displayName="[VKN] Opscore 2 Loki - (Black + Medical)";
-    hiddenSelections[]= {"_helmBase","_helmGear","_nvgWeight","_Peltor"};
-		hiddenSelectionsTextures[] = {"VKN_Gear\data\Headgear\VKN_Ops_black_Medical.paa","vsm_helmets\textures\helmet_1_co.paa","vsm_helmets\textures\vsm_ech_2_projecthonor.paa","vsm_helmets\textures\rr_ops\tex\headset_co.paa"};
-	};
 	class VKN_B_OPS_Black : VKN_OPS_Helmet_2_Base {
 		scope = 2;
 		author="Apple";
@@ -290,7 +275,7 @@ class cfgWeapons {
 		scope=2;
 		author="Shagger";
 		displayName="[VKN] FBA - LBT Armatus (Loki)";
-		hiddenSelectionsTextures[]={"VKN_Gear\data\vests\Loki\VKN_battlebelt_Loki.paa","VKN_Gear\data\vests\Loki\VKN_dropholster_Loki.paa","VKN_Gear\data\vests\Loki\VKN_serpa_Loki.paa","VKN_Gear\data\vests\Loki\VKN_blk_gear_co.paa","VKN_Gear\data\vests\Full Black\VKN_radio_pouch_BLK.paa","VKN_Gear\data\vests\Loki\VKN_Loki_plate.paa","VKN_Gear\data\vests\Loki\VKN_pouches_Loki.paa"};
+		hiddenSelectionsTextures[]={"VKN_Gear\data\vests\Loki\VKN_battlebelt_Loki.paa","VKN_Gear\data\vests\Loki\VKN_dropholster_Loki.paa","VKN_Gear\data\vests\Loki\VKN_serpa_Loki.paa","VKN_Gear\data\vests\Full Black\VKN_blk_gear_co.paa","VKN_Gear\data\vests\Full Black\VKN_radio_pouch_BLK.paa","VKN_Gear\data\vests\Loki\VKN_Loki_plate.paa","VKN_Gear\data\vests\Loki\VKN_pouches_Loki.paa"};
 	};
 	class VKN_FAPC_Gunner_Black: VKN_FAPC_Gunner_Base {
 		scope=2;

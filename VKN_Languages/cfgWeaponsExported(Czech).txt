@@ -46,7 +46,7 @@
 11:29:00 "[VKN] Combat Uniform - Loki" => "[VKN] Bojová Uniforma - Loki"
 11:39:38 "[VKN] Protective Combat Uniform - (Grey + UCP)" => "[VKN] Ochranná Bojová Uniforma - Šedivá + UCP"
 11:39:38 "[VKN] Protective Combat Uniform - (Grey)" => "[VKN] Ochranná Bojová Uniforma - Šedivá"
-11:39:38 "[VKN] Protective Combat Uniform - (Grey + DPM)" => "[VKN] Ochranná Bojová Uniforma - Šedivá + DPM" 
+11:39:38 "[VKN] Protective Combat Uniform - (Grey + DPM)" => "[VKN] Ochranná Bojová Uniforma - Šedivá + DPM"
 11:39:38 "[VKN] Protective Combat Uniform - (Black)" => "[VKN] Ochranná Bojová Uniforma - Černá"
 11:39:38 "[VKN] Protective Combat Uniform - (Grey + UCP Rolled)" => "[VKN] Ochranná Bojová Uniforma - Šedivá + UCP Srolovalné Rukávy"
 11:39:38 "[VKN] Protective Combat Uniform - (Grey Rolled)" => "[VKN] Ochranná Bojová Uniforma - Šedivá Srolovalné Rukávy"

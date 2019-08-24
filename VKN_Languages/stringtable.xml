@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="Viking Translations">
+  <Package name="VKN_Functions">
+    <Container name="DiscordRP">
+      <Key ID="STR_VKN_DRP_Alive">
+        <Original>Alive</Original>
+        <English>Alive</English>
+        <Czech>Naživu</Czech>
+        <French>Vivant</French>
+        <Spanish>Vivo</Spanish>
+        <Italian>Vivo</Italian>
+        <Polish>Żywy</Polish>
+        <Portuguese>Vivo</Portuguese>
+        <Russian>В живых</Russian>
+        <German>Am Leben</German>
+      </Key>
+    </Container>
+  </Package>
+</Project>
