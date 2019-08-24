@@ -375,7 +375,7 @@ class CfgVehicles {
 				position = "drivewheel";
 				radius = 10;
 				condition = "driver this == player && (this animationPhase 'ani_lightbar' != 1)";
-				statement = "this animate ['ani_siren', 0], this execVM '\VKN_Objects\Vehicles\tahoe_08\lightbar.sqf';";
+				statement = "this setVariable ['VKN_Siren', False], this execVM '\VKN_Objects\Vehicles\tahoe_08\lightbar.sqf';";
 				onlyForplayer = 0;
 				showWindow = 0;
 			};
@@ -384,7 +384,7 @@ class CfgVehicles {
         position = "drivewheel";
         radius = 10;
         condition = "driver this == player && (this animationPhase 'ani_siren' != 1)";
-        statement = "this execVM '\VKN_Objects\Vehicles\tahoe_08\sirens.sqf', this execVM '\VKN_Objects\Vehicles\tahoe_08\lightbar.sqf';;";
+        statement = "this execVM '\VKN_Objects\Vehicles\tahoe_08\sirens.sqf', this execVM '\VKN_Objects\Vehicles\tahoe_08\lightbar.sqf';";
         onlyForplayer = 0;
         showWindow = 0;
       };
