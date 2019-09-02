@@ -62,6 +62,7 @@ class vkn_ifv_warrior_woodland : I_APC_tracked_03_cannon_F
 		};
 	};
 };
+
 class vkn_ifv_warrior_desert : I_APC_tracked_03_cannon_F
 {
 	author = "Jonmo";
@@ -84,4 +85,82 @@ class vkn_ifv_warrior_desert : I_APC_tracked_03_cannon_F
 			factions[] = {};
 		};
 	};
+};
+
+class vkn_mbt_03_w: I_MBT_03_cannon_F
+{
+	author = "Jonmo";
+	scope = 2;
+	_generalMacro = "I_MBT_03_cannon_F";
+	displayName = "Leopard 2A4 (Woodland)";
+	side = 1;
+	crew = "B_crew_F";
+	faction = "BLU_F";
+	editorCategory = "VKN_Units";
+	vehicleClass = "Armored";
+	hiddenSelections[] = {"Camo1", "Camo2", "Camo3", "CamoNet"};
+	hiddenSelectionsTextures[] = {"VKN_Gear\data\Vehicles\vkn_MBT_03_ext01_co.paa", "VKN_Gear\data\Vehicles\vkn_MBT_03_ext02_co.paa", "VKN_Gear\data\Vehicles\vkn_MBT_03_RCWS_co.paa", "A3\Armor_F\Data\camonet_NATO_Green_CO"};   
+	textureList[] = {"vkn_mbt_03_tex_w",1};
+	class TextureSources
+	{
+		class vkn_mbt_03_tex_w
+		{
+			author = "Jonmo";
+			displayname = "Nato (Woodland)";
+			textures[] = {"VKN_Gear\data\Vehicles\vkn_MBT_03_ext01_co.paa", "VKN_Gear\data\Vehicles\vkn_MBT_03_ext02_co.paa", "VKN_Gear\data\Vehicles\vkn_MBT_03_RCWS_co.paa", "A3\Armor_F\Data\camonet_NATO_Green_CO"};
+			factions[] = {};
+		};
+	};
+};
+
+class vkn_mbt_03_d: I_MBT_03_cannon_F
+{
+	author = "Jonmo";
+	scope = 2;
+	_generalMacro = "I_MBT_03_cannon_F";
+	displayName = "Leopard 2A4 (Desert)";
+	side = 1;
+	crew = "B_crew_F";
+	faction = "BLU_F";
+	editorCategory = "VKN_Units";
+	vehicleClass = "Armored";
+	hiddenSelections[] = {"Camo1", "Camo2", "Camo3", "CamoNet"};
+	hiddenSelectionsTextures[] = {"VKN_Gear\data\Vehicles\vkn_MBT_03_d_ext01_co.paa", "VKN_Gear\data\Vehicles\vkn_MBT_03_d_ext02_co.paa", "VKN_Gear\data\Vehicles\vkn_MBT_03_d_RCWS_co.paa", "A3\Armor_F\Data\camonet_NATO_Desert_CO"};
+	textureList[] = {"vkn_mbt_03_tex_d",1};
+	class TextureSources
+	{
+		class vkn_mbt_03_tex_d
+		{
+			author = "Jonmo";
+			displayname = "Nato (Desert)";
+			textures[] = {"VKN_Gear\data\Vehicles\vkn_MBT_03_d_ext01_co.paa", "VKN_Gear\data\Vehicles\vkn_MBT_03_d_ext02_co.paa", "VKN_Gear\data\Vehicles\vkn_MBT_03_d_RCWS_co.paa", "A3\Armor_F\Data\camonet_NATO_Desert_CO"};
+			factions[] = {};
+		};
+    };
+};
+
+	class vkn_mbt_03_wi: I_MBT_03_cannon_F
+{
+	author = "Jonmo";
+	scope = 2;
+	_generalMacro = "I_MBT_03_cannon_F";
+	displayName = "Leopard 2A4 (Winter)";
+	side = 1;
+	crew = "B_crew_F";
+	faction = "BLU_F";
+	editorCategory = "VKN_Units";
+	vehicleClass = "Armored";
+	hiddenSelections[] = {"Camo1", "Camo2", "Camo3", "CamoNet"};
+	hiddenSelectionsTextures[] = {"VKN_Gear\data\Vehicles\vkn_MBT_03_w_ext01_co.paa", "VKN_Gear\data\Vehicles\vkn_MBT_03_w_ext02_co.paa", "VKN_Gear\data\Vehicles\vkn_MBT_03_w_RCWS_co.paa", "VKN_Gear\data\Vehicles\camonet_Winter_CO.paa"};       
+	textureList[] = {"vkn_mbt_03_tex_wi",1};
+	class TextureSources
+	{
+		class vkn_mbt_03_tex_wi
+		{
+			author = "Jonmo";
+			displayname = "Nato (Winter)";
+			textures[] = {"VKN_Gear\data\Vehicles\vkn_MBT_03_w_ext01_co.paa", "VKN_Gear\data\Vehicles\vkn_MBT_03_w_ext02_co.paa", "VKN_Gear\data\Vehicles\vkn_MBT_03_w_RCWS_co.paa", "VKN_Gear\data\Vehicles\camonet_Winter_CO.paa"};
+			factions[] = {};
+		};
+    };
 };

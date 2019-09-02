@@ -11,6 +11,9 @@ class CfgPatches {
       "Y32E_Cihuai_Vehicle",
       "vkn_ifv_warrior_woodland",
       "vkn_ifv_warrior_desert"
+      "vkn_mbt_03_w"
+      "vkn_mbt_03_d"
+      "vkn_mbt_03_wi"
     };
 
 		requiredAddons[] =
@@ -67,6 +70,9 @@ class cfgVehicles {
 	class APC_Tracked_03_base_F;
 	class I_APC_tracked_03_base_F;
 	class I_APC_tracked_03_cannon_F;
+	class MBT_03_base_F;
+	class I_MBT_03_base_F;
+	class I_MBT_03_cannon_F;
 
 	#include "\VKN_Gear\cfgVehicles\Vehicles.hpp"
 };
