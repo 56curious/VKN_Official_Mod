@@ -14,8 +14,8 @@ Example:      N/A
 
 _cfgCredits = configfile >> "CfgCredits" >> "VKNCreditsRanks";
 _layers = ["credits1" call bis_fnc_rscLayer,"credits2" call bis_fnc_rscLayer];
-_delay = 5.5; //--- Delay between each set of names
-_duration = _delay * 1.5; //--- Duration for which a set of names is displayed
+_delay = 5.5;
+_duration = _delay * 1.5;
 
 _credits = [
  ["item1", 7],
@@ -48,7 +48,21 @@ onEachFrame
        } foreach _names;
        _text = format ["<t size='0.8'>%1</t>",_text];
 
-       drawIcon3D ["", [0, 0.27, 0.8, 1], [visiblePosition _curUnit select 0, visiblePosition _curUnit select 1,(visiblePosition _curUnit select 2)+3], 0.2, 0.2, 45, _text, 1, 0.03, "ExoMedium"];
+       drawIcon3D ["",
+         [0, 0.27, 0.8, 1],
+         [
+           visiblePosition _curUnit select 0,
+           visiblePosition _curUnit select 1,
+           (visiblePosition _curUnit select 2) + 3
+         ],
+         0.2,
+         0.2,
+        45,
+         _text,
+         1,
+         0.03,
+         "ExoMedium"
+       ];
      } forEach _credits;
    };
  } foreach allunits;
