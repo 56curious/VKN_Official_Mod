@@ -11,7 +11,7 @@ License:      This file is under "Arma Public License No Derivatives (APL-ND)"
 
 Example:      N/A
 */
-
+[] spawn {
 _cfgCredits = configfile >> "CfgCredits" >> "VKNCreditsRanks";
 _layers = ["credits1" call bis_fnc_rscLayer,"credits2" call bis_fnc_rscLayer];
 _delay = 5.5;
@@ -65,5 +65,7 @@ onEachFrame
        ];
      } forEach _credits;
    };
+   sleep 0.01;
  } foreach allunits;
 };﻿
+};
