@@ -10,9 +10,9 @@ class CfgPatches {
       "Y32E_Cihuai_Infantry",
       "Y32E_Cihuai_Vehicle",
       "vkn_ifv_warrior_woodland",
-      "vkn_ifv_warrior_desert"
-      "vkn_mbt_03_w"
-      "vkn_mbt_03_d"
+      "vkn_ifv_warrior_desert",
+      "vkn_mbt_03_w",
+      "vkn_mbt_03_d",
       "vkn_mbt_03_wi"
     };
 
