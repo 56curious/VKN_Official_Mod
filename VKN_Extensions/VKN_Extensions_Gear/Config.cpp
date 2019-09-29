@@ -1,21 +1,21 @@
 class CfgPatches {
     class VKN_Extensions_Gear {
-        name = VKN_Gear_Extensions;
-        author = "Curious";
-		version = 1.0.0;
-		versionStr = "1.0.0";
-		versionAr[] = {0,1,0};
+      name = VKN_Gear_Extensions;
+      author = "Curious";
+      version = 1.0.0;
+      versionStr = "1.0.0";
+      versionAr[] = {0,1,0};
 
-		units[] = {};
+      units[] = {};
 
-		requiredAddons[] =
-		{
-			"A3_Characters_F",
-			"VSM_HELMETS",
-			"task_force_radio_items",
-			"VKN_Gear"
-		};
-	};
+      requiredAddons[] =
+      {
+      	"A3_Characters_F",
+      	"VSM_HELMETS",
+      	"task_force_radio_items",
+      	"VKN_Gear"
+      };
+    };
 };
 
 class UniformSlotInfo
