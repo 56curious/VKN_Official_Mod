@@ -106,16 +106,16 @@ class CfgVehicles {
         class ACE_SelfActions {
             class VKN_Panic_Start {
                 displayName = "Press Panic Alarm";
-                condition = "_player in (crew vehicle _player) && {speed  vehicle _player < 20}";
+                condition = "_player in (vehicle _player) && {speed vehicle _player < 20}";
                 exceptions[] = {};
                 statement = "_player call VKN_fnc_Panic_Start; VKN_Panic_State = true;";
                 icon = "";
             };
             class VKN_Panic_Cancel { //TO-DO Add this into the start function to remove this from always being present.
                 displayName = "Press Panic Alarm";
-                condition = "_player in (crew vehicle _player) && {speed  vehicle _player < 20}";
+                condition = "_player in (vehicle _player) && {speed vehicle _player < 20}";
                 exceptions[] = {};
-                statement = "if (VKN_Panic_State) then {_player call VKN_fnc_Panic_Cancel;} else {hintSilent 'No alarms active.'};";
+                statement = "if (VKN_Panic_State) then {_player call VKN_fnc_Panic_Cancel; VKN_Panic_State = false;} else {hintSilent 'No alarms active.'};";
                 icon = "";
             };
         };
