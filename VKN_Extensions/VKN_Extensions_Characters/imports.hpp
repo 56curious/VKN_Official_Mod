@@ -962,8 +962,8 @@ class rhsusf_m113_usarmy_supply_OCimport_02 : rhsusf_m113_usarmy_supply_OCimport
     };
 };
 
-class SoldierWB;
-class SoldierWB_OCimport_01 : SoldierWB { scope = 0; class EventHandlers; };
+class B_W_Soldier_F; //Adapted because SoldierWB is causing conflics with ACE interaction
+class SoldierWB_OCimport_01 : B_W_Soldier_F { scope = 0; class EventHandlers; };
 class SoldierWB_OCimport_02 : SoldierWB_OCimport_01 { class EventHandlers; };
 
 class UK3CB_BAF_RHIB_HMG;
