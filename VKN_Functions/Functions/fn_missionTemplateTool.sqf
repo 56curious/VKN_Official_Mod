@@ -15,12 +15,14 @@ Parameters:
 				N/A
 */
 
+createDialog "VKN_Template_Tool_Info";
+
 collect3DENHistory {
 	//define
 	_squad = 0;
 	_position = screenToWorld [0.5,0.5];
 	if (isClass (configFile >> "CfgPatches" >> "VKN_PMC_Characters")) then {
-		_squad = configfile >> "CfgGroups" >> "West" >> "B_VKN_ODIN_PMC" >> "Infantry" >> "B_VKN_ODIN_infantry_squad_pmc";
+		_squad = configfile >> "CfgGroups" >> "West" >> "B_VKN_ODIN_PMC" >> "Infantry" >> "B_VKN_ODIN_infantry_squad_pmc"; //Units inherit off one origin, possibly causing the problem
 	} else {
 		_squad = configfile >> "CfgGroups" >> "West" >> "BLU_F" >> "Infantry" >> "BUS_InfSquad";
 	};
