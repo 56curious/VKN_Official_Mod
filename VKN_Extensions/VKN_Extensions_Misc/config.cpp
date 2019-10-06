@@ -61,12 +61,11 @@ class RscDisplayStart: RscStandardDisplay {
 
               class Viking_Background: RscPicture
               {
-              	idc = 1200;
-                //style = "0x30 + 0x800";
-              	text = "\VKN_Misc\Main Menu\Static Background Images\Background8.paa";
-              	x = 0 * safezoneW; y = 0 * safezoneH;
-              	w = 1 * safezoneW; h = 1 * safezoneH;
-                colorText[] = {-1,-1,-1,-1};
+              	idc = 1211;
+                style = "0x30";
+              	text = __EVAL(selectRandom BACKGROUND_IMAGE);
+                x = 0 * safezoneW; y = 0 * safezoneH;
+                w = 1 * safezoneW; h = 1 * safezoneH;
                 colorBackground[] = COLOR_TRANSPARENT;
               };
               class Viking_Logo: RscPictureKeepAspect {
@@ -92,7 +91,7 @@ class RscDisplayStart: RscStandardDisplay {
               	text = "ARMA 3 | VIKING PMC EDITION"; //--- ToDo: Localize; //
               	x = 0.371093 * safezoneW; y = 0.379 * safezoneH;
               	w = 0.623906 * safezoneW; h = 0.22 * safezoneH;
-                sizeEx = 0.185;
+                sizeEx = safeZoneH * 0.1;
               };
             };
         };
