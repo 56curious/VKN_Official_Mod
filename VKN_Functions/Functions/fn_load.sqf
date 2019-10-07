@@ -64,9 +64,15 @@ with uiNamespace do
 			if (_cur_custom isEqualTo true) then {_pictureMap = gettext (missionconfigfile >> "loadScreen");
 
 			} else {
-				_num = (selectRandom [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]) - (random [1,10.5,20]);
-				if (_num < 1) then { _num = _num + (random [1,5.5,10]) };
-				_pictureMap = format ["\VKN_Misc\Loading Screen\LoadingScreen%1.paa", _num];
+
+				_randomNumber = { (random [1,10.5,20] - random [1,10.5,20]) + 5 - 2 };
+	      _num = call _randomNumber;
+	      while {(_num <= 1) or (_num >=20)} do {
+	          _num = call _randomNumber;
+	      };
+				round _num;
+
+				_pictureMap = format ["\VKN_Misc\Loading Screen\LoadingScreen%1.paa",  _num];
 			};
 				/*
 				_worldName = getText (missionConfigFile >> "briefingname");
