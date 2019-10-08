@@ -70,9 +70,10 @@ with uiNamespace do
 	      while {(_num <= 1) or (_num >=20)} do {
 	          _num = call _randomNumber;
 	      };
+
 				round _num;
 
-				_pictureMap = format ["\VKN_Misc\Loading Screen\LoadingScreen%1.paa",  _num];
+				_pictureMap = format ["\VKN_Misc\Loading Screen\LoadingScreen%1.paa", floor _num];
 			};
 				/*
 				_worldName = getText (missionConfigFile >> "briefingname");
