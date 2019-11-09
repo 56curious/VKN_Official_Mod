@@ -98,6 +98,7 @@ class RscDisplayStart: RscStandardDisplay {
     };
 };
 
+/*
 //Custom ACE interactions
 class CfgVehicles {
     class Man;
@@ -120,6 +121,8 @@ class CfgVehicles {
         };
     };
 };
+*/
+
 
 // remove fir insignias
 class CfgUnitInsignia {
