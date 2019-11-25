@@ -1,3 +1,3 @@
 layout: page
-title: "PAGE TITLE"
-permalink: http://www.docs.vknofficalmod.io/
+title: "Viking Offical Docs"
+permalink: 56curious.github.io
