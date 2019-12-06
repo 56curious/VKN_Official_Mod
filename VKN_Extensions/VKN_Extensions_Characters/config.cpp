@@ -438,6 +438,8 @@ class CfgPatches {
             "A3_Air_F_Orange_UAV_06",
             "A3_Sounds_F_Orange",
             "ace_logistics_uavbattery",
+            "ace_interaction",
+            "ace_interact_menu"
         };
         author = "Curious";
         authors[] = {"Curious"};
