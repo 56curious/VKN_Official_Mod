@@ -26,7 +26,7 @@ class O_Ryukyu_Dragons_Army_Tropical_Rifleman_01 : O_T_Soldier_F_OCimport_02 {
 
 
     class EventHandlers : EventHandlers {
-        class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
 
         class ALiVE_orbatCreator {
             init = "if (local (_this select 0)) then {_onSpawn = {_this = _this select 0;sleep 0.2; _backpack = gettext(configfile >> 'cfgvehicles' >> (typeof _this) >> 'backpack'); waituntil {sleep 0.2; backpack _this == _backpack};if !(_this getVariable ['ALiVE_OverrideLoadout',false]) then {_loadout = getArray(configFile >> 'CfgVehicles' >> (typeOf _this) >> 'ALiVE_orbatCreator_loadout'); _this setunitloadout _loadout;[_this, 'AAF_1stRegiment'] call BIS_fnc_setUnitInsignia;reload _this};};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
@@ -66,7 +66,7 @@ class O_Ryukyu_Dragons_Army_Tropical_Rifleman_AT_01 : O_T_Soldier_LAT_F_OCimport
 
 
     class EventHandlers : EventHandlers {
-        class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
 
         class ALiVE_orbatCreator {
             init = "if (local (_this select 0)) then {_onSpawn = {_this = _this select 0;sleep 0.2; _backpack = gettext(configfile >> 'cfgvehicles' >> (typeof _this) >> 'backpack'); waituntil {sleep 0.2; backpack _this == _backpack};if !(_this getVariable ['ALiVE_OverrideLoadout',false]) then {_loadout = getArray(configFile >> 'CfgVehicles' >> (typeOf _this) >> 'ALiVE_orbatCreator_loadout'); _this setunitloadout _loadout;[_this, 'AAF_1stRegiment'] call BIS_fnc_setUnitInsignia;reload _this};};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
@@ -108,7 +108,7 @@ class O_Ryukyu_Dragons_Army_Tropical_Auto_Rifleman_01 : O_T_Soldier_AR_F_OCimpor
 
 
     class EventHandlers : EventHandlers {
-        class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
 
         class ALiVE_orbatCreator {
             init = "if (local (_this select 0)) then {_onSpawn = {_this = _this select 0;sleep 0.2; _backpack = gettext(configfile >> 'cfgvehicles' >> (typeof _this) >> 'backpack'); waituntil {sleep 0.2; backpack _this == _backpack};if !(_this getVariable ['ALiVE_OverrideLoadout',false]) then {_loadout = getArray(configFile >> 'CfgVehicles' >> (typeOf _this) >> 'ALiVE_orbatCreator_loadout'); _this setunitloadout _loadout;[_this, 'AAF_1stRegiment'] call BIS_fnc_setUnitInsignia;reload _this};};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
@@ -150,7 +150,7 @@ class O_Ryukyu_Dragons_Army_Tropical_Asst_Autorifleman_01 : O_Ryukyu_Dragons_Arm
 
 
     class EventHandlers : EventHandlers {
-        class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
 
         class ALiVE_orbatCreator {
             init = "if (local (_this select 0)) then {_onSpawn = {_this = _this select 0;sleep 0.2; _backpack = gettext(configfile >> 'cfgvehicles' >> (typeof _this) >> 'backpack'); waituntil {sleep 0.2; backpack _this == _backpack};if !(_this getVariable ['ALiVE_OverrideLoadout',false]) then {_loadout = getArray(configFile >> 'CfgVehicles' >> (typeOf _this) >> 'ALiVE_orbatCreator_loadout'); _this setunitloadout _loadout;[_this, 'AAF_1stRegiment'] call BIS_fnc_setUnitInsignia;reload _this};};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
@@ -192,7 +192,7 @@ class O_Ryukyu_Dragons_Army_Tropical_Anti_Tank_01 : O_Ryukyu_Dragons_Army_Tropic
 
 
     class EventHandlers : EventHandlers {
-        class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
 
         class ALiVE_orbatCreator {
             init = "if (local (_this select 0)) then {_onSpawn = {_this = _this select 0;sleep 0.2; _backpack = gettext(configfile >> 'cfgvehicles' >> (typeof _this) >> 'backpack'); waituntil {sleep 0.2; backpack _this == _backpack};if !(_this getVariable ['ALiVE_OverrideLoadout',false]) then {_loadout = getArray(configFile >> 'CfgVehicles' >> (typeOf _this) >> 'ALiVE_orbatCreator_loadout'); _this setunitloadout _loadout;[_this, 'AAF_1stRegiment'] call BIS_fnc_setUnitInsignia;reload _this};};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
@@ -234,7 +234,7 @@ class O_Ryukyu_Dragons_Army_Tropical_Anti_Air_01 : O_Ryukyu_Dragons_Army_Tropica
 
 
     class EventHandlers : EventHandlers {
-        class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
 
         class ALiVE_orbatCreator {
             init = "if (local (_this select 0)) then {_onSpawn = {_this = _this select 0;sleep 0.2; _backpack = gettext(configfile >> 'cfgvehicles' >> (typeof _this) >> 'backpack'); waituntil {sleep 0.2; backpack _this == _backpack};if !(_this getVariable ['ALiVE_OverrideLoadout',false]) then {_loadout = getArray(configFile >> 'CfgVehicles' >> (typeOf _this) >> 'ALiVE_orbatCreator_loadout'); _this setunitloadout _loadout;[_this, 'AAF_1stRegiment'] call BIS_fnc_setUnitInsignia;reload _this};};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
@@ -276,7 +276,7 @@ class O_Ryukyu_Dragons_Army_Tropical_Fire_Team_Leader_01 : O_Ryukyu_Dragons_Army
 
 
     class EventHandlers : EventHandlers {
-        class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
 
         class ALiVE_orbatCreator {
             init = "if (local (_this select 0)) then {_onSpawn = {_this = _this select 0;sleep 0.2; _backpack = gettext(configfile >> 'cfgvehicles' >> (typeof _this) >> 'backpack'); waituntil {sleep 0.2; backpack _this == _backpack};if !(_this getVariable ['ALiVE_OverrideLoadout',false]) then {_loadout = getArray(configFile >> 'CfgVehicles' >> (typeOf _this) >> 'ALiVE_orbatCreator_loadout'); _this setunitloadout _loadout;[_this, 'AAF_1stRegiment'] call BIS_fnc_setUnitInsignia;reload _this};};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
@@ -318,7 +318,7 @@ class O_Ryukyu_Dragons_Army_Tropical_Squad_Leader_01 : O_Ryukyu_Dragons_Army_Tro
 
 
     class EventHandlers : EventHandlers {
-        class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
 
         class ALiVE_orbatCreator {
             init = "if (local (_this select 0)) then {_onSpawn = {_this = _this select 0;sleep 0.2; _backpack = gettext(configfile >> 'cfgvehicles' >> (typeof _this) >> 'backpack'); waituntil {sleep 0.2; backpack _this == _backpack};if !(_this getVariable ['ALiVE_OverrideLoadout',false]) then {_loadout = getArray(configFile >> 'CfgVehicles' >> (typeOf _this) >> 'ALiVE_orbatCreator_loadout'); _this setunitloadout _loadout;[_this, 'AAF_1stRegiment'] call BIS_fnc_setUnitInsignia;reload _this};};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
@@ -360,7 +360,7 @@ class O_Ryukyu_Dragons_Army_Tropical_Marksman_01 : O_Ryukyu_Dragons_Army_Tropica
 
 
     class EventHandlers : EventHandlers {
-        class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
 
         class ALiVE_orbatCreator {
             init = "if (local (_this select 0)) then {_onSpawn = {_this = _this select 0;sleep 0.2; _backpack = gettext(configfile >> 'cfgvehicles' >> (typeof _this) >> 'backpack'); waituntil {sleep 0.2; backpack _this == _backpack};if !(_this getVariable ['ALiVE_OverrideLoadout',false]) then {_loadout = getArray(configFile >> 'CfgVehicles' >> (typeOf _this) >> 'ALiVE_orbatCreator_loadout'); _this setunitloadout _loadout;[_this, 'AAF_1stRegiment'] call BIS_fnc_setUnitInsignia;reload _this};};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
@@ -400,7 +400,7 @@ class O_Ryukyu_Dragons_Army_Tropical_Sniper_01 : O_Ryukyu_Dragons_Army_Tropical_
 
 
     class EventHandlers : EventHandlers {
-        class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
 
         class ALiVE_orbatCreator {
             init = "if (local (_this select 0)) then {_onSpawn = {_this = _this select 0;sleep 0.2; _backpack = gettext(configfile >> 'cfgvehicles' >> (typeof _this) >> 'backpack'); waituntil {sleep 0.2; backpack _this == _backpack};if !(_this getVariable ['ALiVE_OverrideLoadout',false]) then {_loadout = getArray(configFile >> 'CfgVehicles' >> (typeOf _this) >> 'ALiVE_orbatCreator_loadout'); _this setunitloadout _loadout;[_this, 'AAF_1stRegiment'] call BIS_fnc_setUnitInsignia;reload _this};};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
@@ -440,7 +440,7 @@ class O_Ryukyu_Dragons_Army_Tropical_Spotter_01 : O_Ryukyu_Dragons_Army_Tropical
 
 
     class EventHandlers : EventHandlers {
-        class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
 
         class ALiVE_orbatCreator {
             init = "if (local (_this select 0)) then {_onSpawn = {_this = _this select 0;sleep 0.2; _backpack = gettext(configfile >> 'cfgvehicles' >> (typeof _this) >> 'backpack'); waituntil {sleep 0.2; backpack _this == _backpack};if !(_this getVariable ['ALiVE_OverrideLoadout',false]) then {_loadout = getArray(configFile >> 'CfgVehicles' >> (typeOf _this) >> 'ALiVE_orbatCreator_loadout'); _this setunitloadout _loadout;[_this, 'AAF_1stRegiment'] call BIS_fnc_setUnitInsignia;reload _this};};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
@@ -482,7 +482,7 @@ class O_Ryukyu_Dragons_Army_Tropical_Platoon_Commander_01 : O_Ryukyu_Dragons_Arm
 
 
     class EventHandlers : EventHandlers {
-        class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
 
         class ALiVE_orbatCreator {
             init = "if (local (_this select 0)) then {_onSpawn = {_this = _this select 0;sleep 0.2; _backpack = gettext(configfile >> 'cfgvehicles' >> (typeof _this) >> 'backpack'); waituntil {sleep 0.2; backpack _this == _backpack};if !(_this getVariable ['ALiVE_OverrideLoadout',false]) then {_loadout = getArray(configFile >> 'CfgVehicles' >> (typeOf _this) >> 'ALiVE_orbatCreator_loadout'); _this setunitloadout _loadout;[_this, 'AAF_1stRegiment'] call BIS_fnc_setUnitInsignia;reload _this};};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
@@ -522,7 +522,7 @@ class O_Ryukyu_Dragons_Army_Tropical_King_Hirohito_01 : O_Ryukyu_Dragons_Army_Tr
 
 
     class EventHandlers : EventHandlers {
-        class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
 
         class ALiVE_orbatCreator {
             init = "if (local (_this select 0)) then {_onSpawn = {_this = _this select 0;sleep 0.2; _backpack = gettext(configfile >> 'cfgvehicles' >> (typeof _this) >> 'backpack'); waituntil {sleep 0.2; backpack _this == _backpack};if !(_this getVariable ['ALiVE_OverrideLoadout',false]) then {_loadout = getArray(configFile >> 'CfgVehicles' >> (typeOf _this) >> 'ALiVE_orbatCreator_loadout'); _this setunitloadout _loadout;[_this, 'AAF_1stRegiment'] call BIS_fnc_setUnitInsignia;reload _this};};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
@@ -562,7 +562,7 @@ class O_Ryukyu_Dragons_Army_Tropical_Crewman_01 : O_Ryukyu_Dragons_Army_Tropical
 
 
     class EventHandlers : EventHandlers {
-        class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
 
         class ALiVE_orbatCreator {
             init = "if (local (_this select 0)) then {_onSpawn = {_this = _this select 0;sleep 0.2; _backpack = gettext(configfile >> 'cfgvehicles' >> (typeof _this) >> 'backpack'); waituntil {sleep 0.2; backpack _this == _backpack};if !(_this getVariable ['ALiVE_OverrideLoadout',false]) then {_loadout = getArray(configFile >> 'CfgVehicles' >> (typeOf _this) >> 'ALiVE_orbatCreator_loadout'); _this setunitloadout _loadout;[_this, 'AAF_1stRegiment'] call BIS_fnc_setUnitInsignia;reload _this};};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
@@ -604,7 +604,7 @@ class O_Ryukyu_Dragons_Army_Tropical_Grenadier_01 : O_Ryukyu_Dragons_Army_Tropic
 
 
     class EventHandlers : EventHandlers {
-        class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
 
         class ALiVE_orbatCreator {
             init = "if (local (_this select 0)) then {_onSpawn = {_this = _this select 0;sleep 0.2; _backpack = gettext(configfile >> 'cfgvehicles' >> (typeof _this) >> 'backpack'); waituntil {sleep 0.2; backpack _this == _backpack};if !(_this getVariable ['ALiVE_OverrideLoadout',false]) then {_loadout = getArray(configFile >> 'CfgVehicles' >> (typeOf _this) >> 'ALiVE_orbatCreator_loadout'); _this setunitloadout _loadout;[_this, 'AAF_1stRegiment'] call BIS_fnc_setUnitInsignia;reload _this};};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
@@ -644,7 +644,7 @@ class O_Ryukyu_Dragons_Army_Tropical_Pilot_01 : O_T_Helipilot_F_OCimport_02 {
 
 
     class EventHandlers : EventHandlers {
-        class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
 
         class ALiVE_orbatCreator {
             init = "if (local (_this select 0)) then {_onSpawn = {_this = _this select 0;sleep 0.2; _backpack = gettext(configfile >> 'cfgvehicles' >> (typeof _this) >> 'backpack'); waituntil {sleep 0.2; backpack _this == _backpack};if !(_this getVariable ['ALiVE_OverrideLoadout',false]) then {_loadout = getArray(configFile >> 'CfgVehicles' >> (typeOf _this) >> 'ALiVE_orbatCreator_loadout'); _this setunitloadout _loadout;[_this, 'AAF_1stRegiment'] call BIS_fnc_setUnitInsignia;reload _this};};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
@@ -684,7 +684,7 @@ class O_Ryukyu_Dragons_Army_Tropical_Helicopter_Crew_01 : O_Ryukyu_Dragons_Army_
 
 
     class EventHandlers : EventHandlers {
-        class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
 
         class ALiVE_orbatCreator {
             init = "if (local (_this select 0)) then {_onSpawn = {_this = _this select 0;sleep 0.2; _backpack = gettext(configfile >> 'cfgvehicles' >> (typeof _this) >> 'backpack'); waituntil {sleep 0.2; backpack _this == _backpack};if !(_this getVariable ['ALiVE_OverrideLoadout',false]) then {_loadout = getArray(configFile >> 'CfgVehicles' >> (typeOf _this) >> 'ALiVE_orbatCreator_loadout'); _this setunitloadout _loadout;[_this, 'AAF_1stRegiment'] call BIS_fnc_setUnitInsignia;reload _this};};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
@@ -726,7 +726,7 @@ class O_Ryukyu_Dragons_Army_Tropical_Combat_Life_Saver_01 : O_Ryukyu_Dragons_Arm
 
 
     class EventHandlers : EventHandlers {
-        class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
 
         class ALiVE_orbatCreator {
             init = "if (local (_this select 0)) then {_onSpawn = {_this = _this select 0;sleep 0.2; _backpack = gettext(configfile >> 'cfgvehicles' >> (typeof _this) >> 'backpack'); waituntil {sleep 0.2; backpack _this == _backpack};if !(_this getVariable ['ALiVE_OverrideLoadout',false]) then {_loadout = getArray(configFile >> 'CfgVehicles' >> (typeOf _this) >> 'ALiVE_orbatCreator_loadout'); _this setunitloadout _loadout;[_this, 'AAF_1stRegiment'] call BIS_fnc_setUnitInsignia;reload _this};};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
@@ -768,7 +768,7 @@ class O_Ryukyu_Dragons_Army_Tropical_Engineer_01 : O_Ryukyu_Dragons_Army_Tropica
 
 
     class EventHandlers : EventHandlers {
-        class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
 
         class ALiVE_orbatCreator {
             init = "if (local (_this select 0)) then {_onSpawn = {_this = _this select 0;sleep 0.2; _backpack = gettext(configfile >> 'cfgvehicles' >> (typeof _this) >> 'backpack'); waituntil {sleep 0.2; backpack _this == _backpack};if !(_this getVariable ['ALiVE_OverrideLoadout',false]) then {_loadout = getArray(configFile >> 'CfgVehicles' >> (typeOf _this) >> 'ALiVE_orbatCreator_loadout'); _this setunitloadout _loadout;[_this, 'AAF_1stRegiment'] call BIS_fnc_setUnitInsignia;reload _this};};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
@@ -799,7 +799,7 @@ class O_Ryukyu_Dragons_Army_Tropical_T6A3_01 : B_MBT_01_cannon_F_OCimport_02 {
 
 
     class EventHandlers : EventHandlers {
-        class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
 
         class ALiVE_orbatCreator {
             init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;_unit setObjectTextureGlobal [0,'A3\Armor_F_Exp\MBT_01\data\MBT_01_body_olive_CO.paa'];_unit setObjectTextureGlobal [1,'A3\Armor_F_Exp\MBT_01\data\MBT_01_tow_olive_CO.paa'];_unit setObjectTextureGlobal [2,'A3\Armor_F\Data\camonet_NATO_Green_CO.paa'];};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
@@ -835,7 +835,7 @@ class O_Ryukyu_Dragons_Army_Tropical_R3_Scout_01 : B_T_LSV_01_unarmed_F_OCimport
 
 
     class EventHandlers : EventHandlers {
-        class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
 
         class ALiVE_orbatCreator {
             init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;_unit setObjectTextureGlobal [0,'\A3\Soft_F_Exp\LSV_01\Data\NATO_LSV_01_olive_CO.paa'];_unit setObjectTextureGlobal [1,'\A3\Soft_F_Exp\LSV_01\Data\NATO_LSV_02_olive_CO.paa'];_unit setObjectTextureGlobal [2,'\A3\Soft_F_Exp\LSV_01\Data\NATO_LSV_03_olive_CO.paa'];_unit setObjectTextureGlobal [3,'\A3\Soft_F_Exp\LSV_01\Data\NATO_LSV_Adds_olive_CO.paa'];_unit setObjectTextureGlobal [4,'\A3\Weapons_F_Beta\Launchers\Titan\data\launcher_INDP_co.paa'];_unit setObjectTextureGlobal [5,'\A3\Weapons_F_Beta\Launchers\Titan\data\tubem_INDP_co.paa'];};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
@@ -868,7 +868,7 @@ class O_Ryukyu_Dragons_Army_Tropical_Wildcat_CAS_01 : UK3CB_BAF_Wildcat_AH1_CAS_
 
 
     class EventHandlers : EventHandlers {
-        class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
 
         class ALiVE_orbatCreator {
             init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;_unit setObjectTextureGlobal [0,'\uk3cb_baf_vehicles\addons\UK3CB_BAF_Vehicles_Wildcat\data\wildcat_base_baf_grey_army_co.paa'];};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
@@ -910,7 +910,7 @@ class O_Ryukyu_Dragons_Army_Tropical_Pilot_02 : B_Pilot_F_OCimport_02 {
 
 
     class EventHandlers : EventHandlers {
-        class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
 
         class ALiVE_orbatCreator {
             init = "if (local (_this select 0)) then {_onSpawn = {_this = _this select 0;sleep 0.2; _backpack = gettext(configfile >> 'cfgvehicles' >> (typeof _this) >> 'backpack'); waituntil {sleep 0.2; backpack _this == _backpack};if !(_this getVariable ['ALiVE_OverrideLoadout',false]) then {_loadout = getArray(configFile >> 'CfgVehicles' >> (typeOf _this) >> 'ALiVE_orbatCreator_loadout'); _this setunitloadout _loadout;reload _this};};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
@@ -935,7 +935,7 @@ class O_Ryukyu_Dragons_Army_Tropical_F16_Fighting_Dragon_01 : FIR_F16C_AV_OCimpo
 
 
     class EventHandlers : EventHandlers {
-        class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
 
         class ALiVE_orbatCreator {
             init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;_unit setObjectTextureGlobal [0,'\a3\Air_F_Gamma\Plane_Fighter_03\Data\Plane_Fighter_03_body_1_greyhex_CO.paa'];_unit setObjectTextureGlobal [1,'\a3\Air_F_Gamma\Plane_Fighter_03\Data\Plane_Fighter_03_body_2_greyhex_CO.paa'];};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
@@ -966,7 +966,7 @@ class O_Ryukyu_Dragons_Army_Tropical_Apache_01 : RHS_AH64D_OCimport_02 {
 
 
     class EventHandlers : EventHandlers {
-        class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
 
         class ALiVE_orbatCreator {
             init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;_unit setObjectTextureGlobal [0,'\rhsusf\addons\rhsusf_a2port_air\ah64\data\ah64d_body_co.paa'];_unit setObjectTextureGlobal [1,'\rhsusf\addons\rhsusf_a2port_air\ah64\data\ah64d_details_co.paa'];_unit setObjectTextureGlobal [2,'\rhsusf\addons\rhsusf_a2port_air\ah64\data\ah64d_alfa_ca.paa'];};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
@@ -997,7 +997,7 @@ class O_Ryukyu_Dragons_Army_Tropical_M2A3_01 : RHS_M2A3_wd_OCimport_02 {
 
 
     class EventHandlers : EventHandlers {
-        class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
 
         class ALiVE_orbatCreator {
             init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
@@ -1029,7 +1029,7 @@ class O_Ryukyu_Dragons_Army_Tropical_M113A3_M2 : rhsusf_m113_usarmy_OCimport_02 
 
 
     class EventHandlers : EventHandlers {
-        class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
 
         class ALiVE_orbatCreator {
             init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
@@ -1061,7 +1061,7 @@ class O_Ryukyu_Dragons_Army_Tropical_M113A3_M240 : rhsusf_m113_usarmy_M240_OCimp
 
 
     class EventHandlers : EventHandlers {
-        class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
 
         class ALiVE_orbatCreator {
             init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
@@ -1093,7 +1093,7 @@ class O_Ryukyu_Dragons_Army_Tropical_Humvee_Unarmed : rhsusf_m1043_w_OCimport_02
 
 
     class EventHandlers : EventHandlers {
-        class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
 
         class ALiVE_orbatCreator {
             init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
@@ -1126,7 +1126,7 @@ class O_Ryukyu_Dragons_Army_Tropical_Humvee_M2 : rhsusf_m1043_w_m2_OCimport_02 {
 
 
     class EventHandlers : EventHandlers {
-        class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
 
         class ALiVE_orbatCreator {
             init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
@@ -1159,7 +1159,7 @@ class O_Ryukyu_Dragons_Army_Tropical_Humvee_TOW : rhsusf_m1045_w_OCimport_02 {
 
 
     class EventHandlers : EventHandlers {
-        class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
 
         class ALiVE_orbatCreator {
             init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
@@ -1184,7 +1184,7 @@ class O_Ryukyu_Dragons_Army_Tropical_Truck_Cargo : rhsusf_M977A4_usarmy_wd_OCimp
 
 
     class EventHandlers : EventHandlers {
-        class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
 
         class ALiVE_orbatCreator {
             init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
@@ -1209,7 +1209,7 @@ class O_Ryukyu_Dragons_Army_Tropical_M977A4_Ammo : rhsusf_M977A4_AMMO_usarmy_wd_
 
 
     class EventHandlers : EventHandlers {
-        class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
 
         class ALiVE_orbatCreator {
             init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
@@ -1234,7 +1234,7 @@ class O_Ryukyu_Dragons_Army_Tropical_M977A4_Repair : rhsusf_M977A4_REPAIR_usarmy
 
 
     class EventHandlers : EventHandlers {
-        class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
 
         class ALiVE_orbatCreator {
             init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
@@ -1259,7 +1259,7 @@ class O_Ryukyu_Dragons_Army_Tropical_M977A4_Fuel : rhsusf_M978A4_usarmy_wd_OCimp
 
 
     class EventHandlers : EventHandlers {
-        class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
 
         class ALiVE_orbatCreator {
             init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";

@@ -23,7 +23,7 @@ class O_Abu_Gunner_Bakr_01 : LOP_ISTS_OPF_Infantry_Rifleman_OCimport_02 {
 
 
     class EventHandlers : EventHandlers {
-        class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
 
         class ALiVE_orbatCreator {
             init = "if (local (_this select 0)) then {_onSpawn = {_this = _this select 0;sleep 0.2; _backpack = gettext(configfile >> 'cfgvehicles' >> (typeof _this) >> 'backpack'); waituntil {sleep 0.2; backpack _this == _backpack};if !(_this getVariable ['ALiVE_OverrideLoadout',false]) then {_loadout = getArray(configFile >> 'CfgVehicles' >> (typeOf _this) >> 'ALiVE_orbatCreator_loadout'); _this setunitloadout _loadout;reload _this};};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
@@ -61,7 +61,7 @@ class O_Abu_Gunner_Light_Bakr_01 : O_Abu_Gunner_Bakr_01 {
 
 
     class EventHandlers : EventHandlers {
-        class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
 
         class ALiVE_orbatCreator {
             init = "if (local (_this select 0)) then {_onSpawn = {_this = _this select 0;sleep 0.2; _backpack = gettext(configfile >> 'cfgvehicles' >> (typeof _this) >> 'backpack'); waituntil {sleep 0.2; backpack _this == _backpack};if !(_this getVariable ['ALiVE_OverrideLoadout',false]) then {_loadout = getArray(configFile >> 'CfgVehicles' >> (typeOf _this) >> 'ALiVE_orbatCreator_loadout'); _this setunitloadout _loadout;reload _this};};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
@@ -101,7 +101,7 @@ class O_Abu_Bomber_Bakr_01 : LOP_AM_OPF_Infantry_Engineer_OCimport_02 {
 
 
     class EventHandlers : EventHandlers {
-        class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
 
         class ALiVE_orbatCreator {
             init = "if (local (_this select 0)) then {_onSpawn = {_this = _this select 0;sleep 0.2; _backpack = gettext(configfile >> 'cfgvehicles' >> (typeof _this) >> 'backpack'); waituntil {sleep 0.2; backpack _this == _backpack};if !(_this getVariable ['ALiVE_OverrideLoadout',false]) then {_loadout = getArray(configFile >> 'CfgVehicles' >> (typeOf _this) >> 'ALiVE_orbatCreator_loadout'); _this setunitloadout _loadout;reload _this};};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
@@ -141,7 +141,7 @@ class O_Abu_Machine_Gunner_Light_Bakr_01 : LOP_AM_OPF_Infantry_AR_OCimport_02 {
 
 
     class EventHandlers : EventHandlers {
-        class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
 
         class ALiVE_orbatCreator {
             init = "if (local (_this select 0)) then {_onSpawn = {_this = _this select 0;sleep 0.2; _backpack = gettext(configfile >> 'cfgvehicles' >> (typeof _this) >> 'backpack'); waituntil {sleep 0.2; backpack _this == _backpack};if !(_this getVariable ['ALiVE_OverrideLoadout',false]) then {_loadout = getArray(configFile >> 'CfgVehicles' >> (typeOf _this) >> 'ALiVE_orbatCreator_loadout'); _this setunitloadout _loadout;reload _this};};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
@@ -179,7 +179,7 @@ class O_Abu_Marksman_Bakr_01 : LOP_AM_OPF_Infantry_Marksman_OCimport_02 {
 
 
     class EventHandlers : EventHandlers {
-        class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
 
         class ALiVE_orbatCreator {
             init = "if (local (_this select 0)) then {_onSpawn = {_this = _this select 0;sleep 0.2; _backpack = gettext(configfile >> 'cfgvehicles' >> (typeof _this) >> 'backpack'); waituntil {sleep 0.2; backpack _this == _backpack};if !(_this getVariable ['ALiVE_OverrideLoadout',false]) then {_loadout = getArray(configFile >> 'CfgVehicles' >> (typeOf _this) >> 'ALiVE_orbatCreator_loadout'); _this setunitloadout _loadout;reload _this};};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
@@ -219,7 +219,7 @@ class O_Abu_Bonesetter_Bakr_01 : LOP_AM_OPF_Infantry_Corpsman_OCimport_02 {
 
 
     class EventHandlers : EventHandlers {
-        class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
 
         class ALiVE_orbatCreator {
             init = "if (local (_this select 0)) then {_onSpawn = {_this = _this select 0;sleep 0.2; _backpack = gettext(configfile >> 'cfgvehicles' >> (typeof _this) >> 'backpack'); waituntil {sleep 0.2; backpack _this == _backpack};if !(_this getVariable ['ALiVE_OverrideLoadout',false]) then {_loadout = getArray(configFile >> 'CfgVehicles' >> (typeOf _this) >> 'ALiVE_orbatCreator_loadout'); _this setunitloadout _loadout;reload _this};};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
@@ -257,7 +257,7 @@ class O_Abu_Undercover_Bakr_01 : O_Abu_Gunner_Light_Bakr_01 {
 
 
     class EventHandlers : EventHandlers {
-        class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
 
         class ALiVE_orbatCreator {
             init = "if (local (_this select 0)) then {_onSpawn = {_this = _this select 0;sleep 0.2; _backpack = gettext(configfile >> 'cfgvehicles' >> (typeof _this) >> 'backpack'); waituntil {sleep 0.2; backpack _this == _backpack};if !(_this getVariable ['ALiVE_OverrideLoadout',false]) then {_loadout = getArray(configFile >> 'CfgVehicles' >> (typeOf _this) >> 'ALiVE_orbatCreator_loadout'); _this setunitloadout _loadout;reload _this};};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
@@ -295,7 +295,7 @@ class O_Abu_Undercover_Bakr_02 : O_Abu_Undercover_Bakr_01 {
 
 
     class EventHandlers : EventHandlers {
-        class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
 
         class ALiVE_orbatCreator {
             init = "if (local (_this select 0)) then {_onSpawn = {_this = _this select 0;sleep 0.2; _backpack = gettext(configfile >> 'cfgvehicles' >> (typeof _this) >> 'backpack'); waituntil {sleep 0.2; backpack _this == _backpack};if !(_this getVariable ['ALiVE_OverrideLoadout',false]) then {_loadout = getArray(configFile >> 'CfgVehicles' >> (typeOf _this) >> 'ALiVE_orbatCreator_loadout'); _this setunitloadout _loadout;reload _this};};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
@@ -333,7 +333,7 @@ class O_Abu_Undercover_Bakr_03 : O_Abu_Undercover_Bakr_01 {
 
 
     class EventHandlers : EventHandlers {
-        class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
 
         class ALiVE_orbatCreator {
             init = "if (local (_this select 0)) then {_onSpawn = {_this = _this select 0;sleep 0.2; _backpack = gettext(configfile >> 'cfgvehicles' >> (typeof _this) >> 'backpack'); waituntil {sleep 0.2; backpack _this == _backpack};if !(_this getVariable ['ALiVE_OverrideLoadout',false]) then {_loadout = getArray(configFile >> 'CfgVehicles' >> (typeOf _this) >> 'ALiVE_orbatCreator_loadout'); _this setunitloadout _loadout;reload _this};};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
@@ -371,7 +371,7 @@ class O_Abu_Undercover_Bakr_04 : O_Abu_Undercover_Bakr_01 {
 
 
     class EventHandlers : EventHandlers {
-        class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
 
         class ALiVE_orbatCreator {
             init = "if (local (_this select 0)) then {_onSpawn = {_this = _this select 0;sleep 0.2; _backpack = gettext(configfile >> 'cfgvehicles' >> (typeof _this) >> 'backpack'); waituntil {sleep 0.2; backpack _this == _backpack};if !(_this getVariable ['ALiVE_OverrideLoadout',false]) then {_loadout = getArray(configFile >> 'CfgVehicles' >> (typeOf _this) >> 'ALiVE_orbatCreator_loadout'); _this setunitloadout _loadout;reload _this};};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
@@ -401,7 +401,7 @@ class O_Abu_Offroader_Armed_Bakr_01 : I_C_Offroad_02_LMG_F_OCimport_02 {
 
 
     class EventHandlers : EventHandlers {
-        class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
 
         class ALiVE_orbatCreator {
             init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;_unit setObjectTextureGlobal [0,'\A3\Soft_F_Exp\Offroad_02\Data\offroad_02_ext_olive_co.paa'];_unit setObjectTextureGlobal [1,'\A3\Soft_F_Exp\Offroad_02\Data\offroad_02_ext_olive_co.paa'];_unit setObjectTextureGlobal [2,'\A3\Soft_F_Exp\Offroad_02\Data\offroad_02_int_olive_co.paa'];_unit setObjectTextureGlobal [3,'\A3\Soft_F_Exp\Offroad_02\Data\offroad_02_int_olive_co.paa'];};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
@@ -434,7 +434,7 @@ class O_Abu_Van_Bakr_01 : I_G_Van_02_vehicle_F_OCimport_02 {
 
 
     class EventHandlers : EventHandlers {
-        class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
 
         class ALiVE_orbatCreator {
             init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;_unit setObjectTextureGlobal [0,'\a3\Soft_F_Orange\Van_02\Data\van_body_Blue_CO.paa'];_unit setObjectTextureGlobal [1,'\a3\soft_f_orange\van_02\data\van_wheel_co.paa'];_unit setObjectTextureGlobal [2,'\a3\soft_f_orange\van_02\data\van_glass_utility_CA.paa'];_unit setObjectTextureGlobal [3,'\a3\Soft_F_Orange\Van_02\Data\van_body_Blue_CO.paa'];};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
@@ -475,7 +475,7 @@ class O_Abu_Machine_Gunner_Bakr_01 : O_Abu_Machine_Gunner_Light_Bakr_01 {
 
 
     class EventHandlers : EventHandlers {
-        class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
 
         class ALiVE_orbatCreator {
             init = "if (local (_this select 0)) then {_onSpawn = {_this = _this select 0;sleep 0.2; _backpack = gettext(configfile >> 'cfgvehicles' >> (typeof _this) >> 'backpack'); waituntil {sleep 0.2; backpack _this == _backpack};if !(_this getVariable ['ALiVE_OverrideLoadout',false]) then {_loadout = getArray(configFile >> 'CfgVehicles' >> (typeOf _this) >> 'ALiVE_orbatCreator_loadout'); _this setunitloadout _loadout;reload _this};};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
@@ -513,7 +513,7 @@ class O_Abu_Gunner_Bakr_02 : O_Abu_Gunner_Bakr_01 {
 
 
     class EventHandlers : EventHandlers {
-        class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
 
         class ALiVE_orbatCreator {
             init = "if (local (_this select 0)) then {_onSpawn = {_this = _this select 0;sleep 0.2; _backpack = gettext(configfile >> 'cfgvehicles' >> (typeof _this) >> 'backpack'); waituntil {sleep 0.2; backpack _this == _backpack};if !(_this getVariable ['ALiVE_OverrideLoadout',false]) then {_loadout = getArray(configFile >> 'CfgVehicles' >> (typeOf _this) >> 'ALiVE_orbatCreator_loadout'); _this setunitloadout _loadout;reload _this};};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
@@ -551,7 +551,7 @@ class O_Abu_Gunner_Bakr_03 : O_Abu_Gunner_Bakr_01 {
 
 
     class EventHandlers : EventHandlers {
-        class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
 
         class ALiVE_orbatCreator {
             init = "if (local (_this select 0)) then {_onSpawn = {_this = _this select 0;sleep 0.2; _backpack = gettext(configfile >> 'cfgvehicles' >> (typeof _this) >> 'backpack'); waituntil {sleep 0.2; backpack _this == _backpack};if !(_this getVariable ['ALiVE_OverrideLoadout',false]) then {_loadout = getArray(configFile >> 'CfgVehicles' >> (typeOf _this) >> 'ALiVE_orbatCreator_loadout'); _this setunitloadout _loadout;reload _this};};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
