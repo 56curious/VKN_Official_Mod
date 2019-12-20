@@ -34,6 +34,18 @@ class CfgPatches {
 
 enableDebugConsole[] = {"76561197996326460", "76561198116251840"};
 
+class CfgMPGameTypes {
+    class COOP;
+    class VKN_OP {
+        id = 433;
+        name = "VKN Operation";
+        picture = "\VKN_Misc\VikingLogo128.paa";
+        shortcut = "VKN OP";
+        description = "Custom Viking PMC Operation - Customized gametype cfg.";
+    };
+};
+
+
 //Orbats and mainMenu Credit
 class cfgOrbat {
     #include "configs\VKN_Orbat.hpp"
