@@ -43,7 +43,7 @@ class VKN_Template_Tool_Info {
     class RscStructuredText_1100: RscStructuredText
     {
     	idc = 1100;
-    	text = "<br />This tool is currently broken, please DO NOT USE the units. <br />Due to the way that arma 3 works, I currently cannot do this next part for you :/ <br />You'll instead need to follow these steps.<br /><br />Firstly, ensure you have saved the mission and named it.<br />Second, goto Scenario >> Open Scenario Folder<br />Create a new text document and name it description.ext<br />Make sure you have set the file format!!!<br />Click the 'Copy File Contents' button below. <br /> <br />All done, Zeus will work with virtual entities."; //--- ToDo: Localize;
+    	text = "Due to the way that arma 3 works, I currently cannot do this next part for you :/ <br />You'll instead need to follow these steps.<br /><br />Firstly, ensure you have saved the mission and named it.<br />Second, goto Scenario >> Open Scenario Folder<br />Create a new text document and name it description.ext<br />Make sure you have set the file format!!!<br />Click the 'Copy File Contents' button below. <br /> <br />All done, Zeus will work with virtual entities."; //--- ToDo: Localize;
     	x = 0.362187 * safezoneW + safezoneX;
     	y = 0.276 * safezoneH + safezoneY;
     	w = 0.275625 * safezoneW;

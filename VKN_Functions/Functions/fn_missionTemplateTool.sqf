@@ -20,7 +20,7 @@ createDialog "VKN_Template_Tool_Info";
 collect3DENHistory {
 	//define
 	_squad = 0;
-	_position = screenToWorld [0.5,0.5];
+	_position = screenToWorld [0.5, 0.5];
 	if (isClass (configFile >> "CfgPatches" >> "VKN_PMC_Characters")) then {
 		_squad = configfile >> "CfgGroups" >> "West" >> "B_VKN_ODIN_PMC" >> "Infantry" >> "B_VKN_ODIN_infantry_squad_pmc"; //Units inherit off one origin, possibly causing the problem
 	} else {
@@ -32,7 +32,7 @@ collect3DENHistory {
 		set3DENMissionAttributes[["Multiplayer", "Enh_DynamicGroups", true]];
 		set3DENMissionAttributes[["Multiplayer", "Enh_SaveLoadout", true]];
 	} else {
-		systemChat "3DEN Enhanced not found but is recommended to be used at all times, missing these attributes...";
+		systemChat "3DEN Enhanced not found but is recommended to be used at all times, missing these attributes however...";
 	};
 
 	//Set all of the mission settings to their defaults
@@ -62,7 +62,6 @@ collect3DENHistory {
 
 	//create the Zeus sub-settings
 	_ZeusAttributeCuratorAddEditableObjects = create3DENEntity ["Logic", "ModuleCuratorAddEditableObjects", _position];
-	_ZeusAttributeCuratorAddEditingAreaPlayers = create3DENEntity ["Logic", "ModuleCuratorAddEditingAreaPlayers_F", _position];
 
 	//setup Zeus modules
 	_ZeusModule1 = create3DENEntity ["Logic", "ModuleCurator_F", _position];
@@ -76,25 +75,38 @@ collect3DENHistory {
 	add3DENConnection ["sync", _ZeusModules, _ZeusAttributeCuratorAddEditingAreaPlayers];
 
 	//Setup the Zeus entities
-	ZeusEntity1 = create3DENEntity ["Logic", "VirtualCurator_F", _position];
-	ZeusEntity2 = create3DENEntity ["Logic", "VirtualCurator_F", _position];
-	ZeusEntity3 = create3DENEntity ["Logic", "VirtualCurator_F", _position];
-	ZeusEntityAdmin = create3DENEntity ["Logic", "VirtualCurator_F", _position];
-	_ZeusEntities = [ZeusEntity1, ZeusEntity2, ZeusEntity3, ZeusEntityAdmin];
+	_ZeusEntity1 = create3DENEntity ["Logic", "VirtualCurator_F", _position];
+	_ZeusEntity1 set3DENAttribute ["name", "ZeusEntity1"];
+
+	_ZeusEntity2 = create3DENEntity ["Logic", "VirtualCurator_F", _position];
+	_ZeusEntity2 set3DENAttribute ["name", "ZeusEntity2"];
+
+	_ZeusEntity3 = create3DENEntity ["Logic", "VirtualCurator_F", _position];
+	_ZeusEntity3 set3DENAttribute ["name", "ZeusEntity3"];
+
+	_ZeusEntityAdmin = create3DENEntity ["Logic", "VirtualCurator_F", _position];
+	_ZeusEntityAdmin set3DENAttribute ["name", "ZeusEntityAdmin"];
+
+	_ZeusEntities = [_ZeusEntity1, _ZeusEntity2, _ZeusEntity3, _ZeusEntityAdmin];
+	_ZeusEntitiesNames = ["ZeusEntity1", "ZeusEntity2", "ZeusEntity3", "ZeusEntityAdmin"];
 
 	//setup in-module settings
-	{ set3DENAttributes [[_x, "ControlMP", true]]; } forEach _ZeusEntities;
+	{ _x set3DENAttribute ["ControlMP", true]; } forEach _ZeusEntities;
 	for "_i" from 1 to 4 step 1 do {
-		set3DENAttributes [[_ZeusModules select _i - 1, "ModuleCurator_F_Owner", _ZeusEntities select _i - 1]];
+		_Module = _ZeusModules select _i - 1;
+		_Entity = _ZeusEntitiesNames select _i - 1;
+		_Module set3DENAttribute ["Owner", _Entity];
+		_Module set3DENAttribute ["Addons", "All"];
+		_Module set3DENAttribute ["Forced", "1"];
+
 	};
 
 	//setup squads and sync them to Zeus
-	[_squad, _position, _ZeusAttributeCuratorAddEditableObjects, _ZeusAttributeCuratorAddEditingAreaPlayers] spawn {
+	[_squad, _position, _ZeusAttributeCuratorAddEditableObjects] spawn {
 		params ["_squad", "_position", "_ZeusAttributeCuratorAddEditableObjects", "_ZeusAttributeCuratorAddEditingAreaPlayers"];
 		for "_i" from 1 to 6 step 1 do {
-			_group = create3DENComposition [_squad, _position];
-		   	add3DENConnection ["sync", _group, _ZeusAttributeCuratorAddEditableObjects];
-		   	add3DENConnection ["sync", _group, _ZeusAttributeCuratorAddEditingAreaPlayers];
+			_group = create3DENComposition [_this select 0, _this select 1];
+		   	add3DENConnection ["sync", _group, _this select 2];
 			{
 				set3DENAttributes [[_x,"ControlMP",true]];
 				sleep 0.01;
