@@ -39,7 +39,7 @@ collect3DENHistory {
 	set3DENMissionAttributes [
 		["Multiplayer", "respawn", 3],
 		["Multiplayer", "respawnDelay", 5],
-		["Multiplayer", "GameType", "COOP"], //TO-DO: Create config for Viking Operations string
+		["Multiplayer", "GameType", "VKN_OP"],
 		["Multiplayer", "DisabledAI", true],
 		["Multiplayer", "JoinUnassigned", false],
 		["Multiplayer", "RespawnDialog", true],
@@ -93,8 +93,12 @@ collect3DENHistory {
 	//setup in-module settings
 	{ _x set3DENAttribute ["ControlMP", true]; } forEach _ZeusEntities;
 	for "_i" from 1 to 4 step 1 do {
+		diag_log "Starting in-module settings";
+		diag_log str _i;
 		_Module = _ZeusModules select _i - 1;
+		diag_log str _Module;
 		_Entity = _ZeusEntitiesNames select _i - 1;
+		diag_log str _Entity;
 		_Module set3DENAttribute ["Owner", _Entity];
 		_Module set3DENAttribute ["Addons", "All"];
 		_Module set3DENAttribute ["Forced", "1"];
@@ -103,12 +107,11 @@ collect3DENHistory {
 
 	//setup squads and sync them to Zeus
 	[_squad, _position, _ZeusAttributeCuratorAddEditableObjects] spawn {
-		params ["_squad", "_position", "_ZeusAttributeCuratorAddEditableObjects", "_ZeusAttributeCuratorAddEditingAreaPlayers"];
 		for "_i" from 1 to 6 step 1 do {
 			_group = create3DENComposition [_this select 0, _this select 1];
-		   	add3DENConnection ["sync", _group, _this select 2];
+		   	{ add3DENConnection ["sync", _x, _this select 2]; } forEach _group;
 			{
-				set3DENAttributes [[_x,"ControlMP",true]];
+				set3DENAttributes [[_x, "ControlMP", true]];
 				sleep 0.01;
 			} forEach _group;
 			sleep 0.01;
