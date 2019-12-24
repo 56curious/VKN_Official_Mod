@@ -92,17 +92,13 @@ collect3DENHistory {
 
 	//setup in-module settings
 	{ _x set3DENAttribute ["ControlMP", true]; } forEach _ZeusEntities;
-	for "_i" from 1 to 4 step 1 do {
-		diag_log "Starting in-module settings";
-		diag_log str _i;
-		_Module = _ZeusModules select _i - 1;
-		diag_log str _Module;
-		_Entity = _ZeusEntitiesNames select _i - 1;
-		diag_log str _Entity;
-		_Module set3DENAttribute ["Owner", _Entity];
-		_Module set3DENAttribute ["Addons", "All"];
-		_Module set3DENAttribute ["Forced", "1"];
-
+	for "_i" from 0 to 3 step 1 do {
+		_Module = _ZeusModules select _i;
+		_Entity = _ZeusEntitiesNames select _i;
+		_Module set3DENAttribute[ "ModuleCurator_F_Owner", _Entity ];
+		_Module set3DENAttribute[ "ModuleCurator_F_Name", "Zeus" ];
+		_Module set3DENAttribute[ "ModuleCurator_F_Addons", "3" ];
+		_Module set3DENAttribute[ "ModuleCurator_F_Forced", "1" ];
 	};
 
 	//setup squads and sync them to Zeus
