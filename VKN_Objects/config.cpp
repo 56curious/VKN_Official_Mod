@@ -159,10 +159,39 @@ class CfgVehicles {
               "CIV_F"
             };
           };
+          class Viking_Black_Plain {
+            displayName = "Viking Black (No Logo)";
+            author = "Eric McHogan";
+            textures[] = {
+              "\VKN_Objects\Vehicles\EC135\VKN_EC135_Body_1_Black_Plain.paa",
+              "\VKN_Objects\Vehicles\EC135\VKN_EC135_Body_2_Black.paa",
+              "\VKN_Objects\Vehicles\EC135\VKN_EC135_Body_3_Black_Plain.paa",
+              "\VKN_Objects\Vehicles\EC135\VKN_EC135_Body_4_Black.paa",
+              "\VKN_Objects\Vehicles\EC135\VKN_EC135_Int_1.paa",
+              ""
+            };
+            factions[] = {
+              "BLU_F", "BLU_G_F",
+              "OPF_F", "OPF_G_F",
+              "IND_F", "IND_G_F",
+              "CIV_F"
+            };
+          };
           class Viking_Loki: Viking_Black {
             displayName = "Viking Loki";
             textures[] = {
               "\VKN_Objects\Vehicles\EC135\VKN_EC135_Body_1_Loki.paa",
+              "\VKN_Objects\Vehicles\EC135\VKN_EC135_Body_2_Loki.paa",
+              "\VKN_Objects\Vehicles\EC135\VKN_EC135_Body_3_Loki.paa",
+              "\VKN_Objects\Vehicles\EC135\VKN_EC135_Body_4_Loki.paa",
+              "\VKN_Objects\Vehicles\EC135\VKN_EC135_Int_1.paa",
+              ""
+            };
+          };
+          class Viking_Lok_Plain: Viking_Black {
+            displayName = "Viking Loki (No Logo)";
+            textures[] = {
+              "\VKN_Objects\Vehicles\EC135\VKN_EC135_Body_1_Loki_Plain.paa",
               "\VKN_Objects\Vehicles\EC135\VKN_EC135_Body_2_Loki.paa",
               "\VKN_Objects\Vehicles\EC135\VKN_EC135_Body_3_Loki.paa",
               "\VKN_Objects\Vehicles\EC135\VKN_EC135_Body_4_Loki.paa",
@@ -181,10 +210,32 @@ class CfgVehicles {
               ""
             };
           };
+          class Viking_OD_Plain: Viking_Black {
+            displayName = "Viking OD (No Logo)";
+            textures[] = {
+              "\VKN_Objects\Vehicles\EC135\VKN_EC135_Body_1_OD_Plain.paa",
+              "\VKN_Objects\Vehicles\EC135\VKN_EC135_Body_2_OD.paa",
+              "\VKN_Objects\Vehicles\EC135\VKN_EC135_Body_3_OD.paa",
+              "\VKN_Objects\Vehicles\EC135\VKN_EC135_Body_4_OD.paa",
+              "\VKN_Objects\Vehicles\EC135\VKN_EC135_Int_1.paa",
+              ""
+            };
+          };
           class Viking_Sand: Viking_Black {
             displayName = "Viking Sand";
             textures[] = {
               "\VKN_Objects\Vehicles\EC135\VKN_EC135_Body_1_Sand.paa",
+              "\VKN_Objects\Vehicles\EC135\VKN_EC135_Body_2_Sand.paa",
+              "\VKN_Objects\Vehicles\EC135\VKN_EC135_Body_3_Sand.paa",
+              "\VKN_Objects\Vehicles\EC135\VKN_EC135_Body_4_Sand.paa",
+              "\VKN_Objects\Vehicles\EC135\VKN_EC135_Int_1.paa",
+              ""
+            };
+          };
+          class Viking_Sand_Plain: Viking_Black {
+            displayName = "Viking Sand (No Logo)";
+            textures[] = {
+              "\VKN_Objects\Vehicles\EC135\VKN_EC135_Body_1_Sand_Plain.paa",
               "\VKN_Objects\Vehicles\EC135\VKN_EC135_Body_2_Sand.paa",
               "\VKN_Objects\Vehicles\EC135\VKN_EC135_Body_3_Sand.paa",
               "\VKN_Objects\Vehicles\EC135\VKN_EC135_Body_4_Sand.paa",
