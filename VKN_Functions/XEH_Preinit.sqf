@@ -198,43 +198,6 @@ _Show3DGroupIcons_Val = profileNamespace getVariable ["VKN_Show3DGroupIcons_Var"
 ] call CBA_Settings_fnc_init;
 
 
-_EnableRagdollVal = profileNamespace getVariable ["VKN_EnableRagdollVal_var", true];
-_EnableRagdollAIVal = profileNamespace getVariable ["VKN_EnableRagdollAIVal_var", true];
-[
-  "VKN_ragdoll_ragdolling",
-  "CHECKBOX",
-  ["Enable ragdolling", "Enables ragdolling for players upon going unconscious. (ACE)"],
-  "VKN Ragdoll",
-  _EnableRagdollVal,
-  true,
-  {
-    params ["_value"];
-    if (isClass(configFile >> "CfgPatches" >> "ace_main")) then {
-        profileNamespace setVariable ["VKN_EnableRagdollVal_var", _value];
-        [] call VKN_fnc_initRagdoll;
-    } else {
-        systemChat "ACE is not on your client, setting will not take effect.";
-    };
-  }
-] call CBA_Settings_fnc_init;
-[
-  "VKN_ragdoll_ai",
-  "CHECKBOX",
-  ["Enable for AI", "Enables ragdolling for AI as well. (ACE)"],
-  "VKN Ragdoll",
-  _EnableRagdollAIVal,
-  true,
-  {
-    params ["_value"];
-    if (isClass(configFile >> "CfgPatches" >> "ace_main")) then {
-        _EnableRagdollAIVal = profileNamespace setVariable ["VKN_EnableRagdollAIVal_var", _value];
-    } else {
-        systemChat "ACE is not on your client, setting will not take effect.";
-    };
-  }
-] call CBA_Settings_fnc_init;
-
-
 
 _MainMenuServerIPVal = profileNamespace getVariable ["VKN_MainMenuServerIPVal_var", "127.0.0.1"];
 _MainMenuServerPortVal = profileNamespace getVariable ["VKN_MainMenuServerPortVal_var", "2302"];
