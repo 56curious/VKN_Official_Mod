@@ -440,8 +440,7 @@ class CfgPatches {
             "ace_logistics_uavbattery",
             "ace_interaction",
             "ace_interact_menu",
-            "ace_main",
-            "ace_medical_menu"
+            "ace_main"
         };
         author = "Curious";
         authors[] = {"Curious"};

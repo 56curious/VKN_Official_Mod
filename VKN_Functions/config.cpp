@@ -69,9 +69,6 @@ class CfgFunctions {
 			class monsoon_start{};
 			class monsoon_thunder_storm{};
 
-			class Ragdoll_init{postInit = 1;};
-			class Ragdoll_animChangedEH{};
-
 			class cameraSetup{};
 
 			class redirectClientToServer{};
