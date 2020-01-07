@@ -32,7 +32,7 @@ class CfgPatches {
     };
 };
 
-enableDebugConsole[] = {"76561197996326460", "76561198116251840"};
+enableDebugConsole[] = {"76561197996326460", "76561198116251840", "76561198138461195", "76561198044162606", "76561198036865266"};
 
 class CfgMPGameTypes {
     class COOP;
