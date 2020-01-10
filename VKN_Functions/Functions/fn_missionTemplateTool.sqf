@@ -97,8 +97,8 @@ collect3DENHistory {
 		_Entity = _ZeusEntitiesNames select _i;
 		_Module set3DENAttribute[ "ModuleCurator_F_Owner", _Entity ];
 		_Module set3DENAttribute[ "ModuleCurator_F_Name", "Zeus" ];
-		_Module set3DENAttribute[ "ModuleCurator_F_Addons", "3" ];
-		_Module set3DENAttribute[ "ModuleCurator_F_Forced", "1" ];
+		_Module set3DENAttribute[ "ModuleCurator_F_Addons", 3 ];
+		_Module set3DENAttribute[ "ModuleCurator_F_Forced", 1 ];
 	};
 
 	//setup squads and sync them to Zeus
