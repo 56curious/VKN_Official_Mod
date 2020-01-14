@@ -326,6 +326,7 @@ class RscDisplayStart: RscStandardDisplay {
 };
 
 #include "\VKN_Misc\configs\VKN_Template_Tool_Info.hpp"
+#include "\VKN_Misc\configs\VKN_Template_Tool_Basic_Settings.hpp"
 
 
 
