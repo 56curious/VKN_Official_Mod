@@ -34,6 +34,8 @@ class CfgFunctions {
 			file = "\VKN_functions\functions";
 			class icons{postInit = 1;};
 
+      class selectRandomIndex{};
+
       class missionTemplateTool{};
 
       class respawnPositionSafeZone{};
