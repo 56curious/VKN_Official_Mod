@@ -48,6 +48,7 @@
 	class VKN_Dummy_B_M90_NonRolled_1_1: VKN_Dummy_B_NonRolled_Base {
 		scope = 1;
 		hiddenSelectionsTextures[]={"\VKN_Gear\data\Uniforms\VKN_M90_co.paa"};
+		hiddenSelectionsMaterials[] = {"\VKN_Gear\data\misc\VKN_M9X.rvmat"};
 		uniformClass = "VKN_CombatUniform_M90_Full";
 	};
 	class VKN_Dummy_B_M90_Alternative_NonRolled: VKN_Dummy_B_NonRolled_Base {
@@ -58,11 +59,13 @@
 	class VKN_Dummy_B_M90D_NonRolled_1_2: VKN_Dummy_B_NonRolled_Base {
 		scope = 1;
 		hiddenSelectionsTextures[]={"\VKN_Gear\data\Uniforms\VKN_M90D_ca.paa"};
+		hiddenSelectionsMaterials[] = {"\VKN_Gear\data\misc\VKN_M9X.rvmat"};
 		uniformClass = "VKN_CombatUniform_M90D_Full";
 	};
 	class VKN_Dummy_B_M98_NonRolled_2_1: VKN_Dummy_B_NonRolled_Base {
 		scope = 1;
 		hiddenSelectionsTextures[]={"\VKN_Gear\data\Uniforms\VKN_M98_co.paa"};
+		hiddenSelectionsMaterials[] = {"\VKN_Gear\data\misc\VKN_M9X.rvmat"};
 		uniformClass = "VKN_CombatUniform_M98_Full";
 	};
 
@@ -205,6 +208,7 @@
 	class VKN_Dummy_B_M90_RolledUP_1_1: VKN_Dummy_B_RolledUP_Base {
 		scope = 1;
 		hiddenSelectionsTextures[]={"\VKN_Gear\data\Uniforms\VKN_M90_co.paa"};
+		hiddenSelectionsMaterials[] = {"\VKN_Gear\data\misc\VKN_M9X.rvmat"};
 		uniformClass = "VKN_CombatUniform_M90_Roll";
 	};
 	class VKN_Dummy_B_M90_Alternative_RolledUP: VKN_Dummy_B_RolledUP_Base {
@@ -215,11 +219,13 @@
 	class VKN_Dummy_B_M90D_RolledUP_1_2: VKN_Dummy_B_RolledUP_Base {
 		scope = 1;
 		hiddenSelectionsTextures[]={"\VKN_Gear\data\Uniforms\VKN_M90D_ca.paa"};
+		hiddenSelectionsMaterials[] = {"\VKN_Gear\data\misc\VKN_M9X.rvmat"};
 		uniformClass = "VKN_CombatUniform_M90D_Roll";
 	};
 	class VKN_Dummy_B_M98_RolledUP_2_1: VKN_Dummy_B_RolledUP_Base {
 		scope = 1;
 		hiddenSelectionsTextures[]={"\VKN_Gear\data\Uniforms\VKN_M98_co.paa"};
+		hiddenSelectionsMaterials[] = {"\VKN_Gear\data\misc\VKN_M9X.rvmat"};
 		uniformClass = "VKN_CombatUniform_M98_Roll";
 	};
 	class VKN_Dummy_B_Loki_Black_RolledUP: VKN_Dummy_B_RolledUP_Base {

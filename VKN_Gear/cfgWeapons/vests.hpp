@@ -244,6 +244,39 @@ class VKN_Vest_V_HarnessO_drk_F: Vest_NoCamo_Base {
 	};
 };
 
+/// M98/M90 Vests
+
+	class VKN_Carrier_M98_Rig: VKN_Carrier_Rig_Base {
+	scope=2;
+	displayName="[VKN] Carrier Rig (M98)";
+	author="Jonmo";
+	hiddenSelectionsTextures[]={"\VKN_Gear\data\Vests\Vanilla\Vest_M98.paa"};
+	descriptionShort="Norwegian M98 Rig";
+};
+
+class VKN_Carrier_Lite_M98: VKN_Carrier_Lite_Base {
+	scope=2;
+	displayName="[VKN] Carrier Lite (M98)";
+	author="Jonmo";
+	hiddenSelectionsTextures[]={"\VKN_Gear\data\Vests\Vanilla\Vest_M98.paa"};
+	descriptionShort="Norwegian M98 Rig";
+};
+
+class VKN_Carrier_M90_Rig: VKN_Carrier_Rig_Base {
+	scope=2;
+	displayName="[VKN] Carrier Rig (M90)";
+	author="Jonmo";
+	hiddenSelectionsTextures[]={"\VKN_Gear\data\Vests\Vanilla\Vest_M90.paa"};
+	descriptionShort="Swedish M90 Rig";
+};
+
+class VKN_Carrier_Lite_M90: VKN_Carrier_Lite_Base {
+	scope=2;
+	displayName="[VKN] Carrier Lite (M90)";
+	author="Jonmo";
+	hiddenSelectionsTextures[]={"\VKN_Gear\data\Vests\Vanilla\Vest_M90.paa"};
+	descriptionShort="Swedish M90 Rig";
+};
 
 
 /// PVP Vests

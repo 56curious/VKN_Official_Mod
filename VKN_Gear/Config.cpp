@@ -96,7 +96,7 @@ class cfgWeapons {
   class ItemInfo;
   class Vest_NoCamo_Base;
   class Vest_Camo_Base : ItemCore {
-  	class ItemInfo;
+	class ItemInfo;
   };
   class NVGoggles;
 

@@ -60,6 +60,20 @@ class cfgVehicles {
 	    descriptionShort = "RT-1523G BIG (OGA) long range radio 20km";
 	    hiddenSelectionsTextures[] = {"VKN_Gear\data\Backpacks\VKN_nicecomm2_OGA_ca.paa"};
 	};
+	class VKN_rt1523g_Big_M98: tf_rt1523g_big {
+	    author = "Jonmo";
+	    displayName = "[VKN] RT-1523G Big (M98)";
+	    picture="\VKN_Misc\VKN_Logo_Inverted.paa";
+	    descriptionShort = "RT-1523G BIG (M98) long range radio 20km";
+	    hiddenSelectionsTextures[] = {"VKN_Gear\data\Backpacks\VKN_nicecomm2_M98_ca.paa"};
+	};
+	class VKN_rt1523g_M98: tf_rt1523g {
+	    author = "Jonmo";
+	    displayName = "[VKN] RT-1523G (M98)";
+	    picture="\VKN_Misc\VKN_Logo_Inverted.paa";
+	    descriptionShort = "RT-1523G (M98) long range radio 20km";
+	    hiddenSelectionsTextures[] = {"VKN_Gear\data\Backpacks\VKN_PRC117G_M98_ca.paa"};
+	};
 	class VKN_v_blackops_rt_1523g: tf_rt1523g {
         author = "Jonmo";
         scope = 2;
@@ -117,6 +131,7 @@ class cfgWeapons {
 	class rhs_altyn_visordown;
 	class rhs_uniform_m88_patchless;
   class rhs_booniehat2_marpatd;
+  class rhsusf_opscore_cover;
 
   //Base classes
   class VKN_BoonieHat_Base: rhs_booniehat2_marpatd {
@@ -460,6 +475,18 @@ class cfgWeapons {
 			};
 		};
 	};
+	class VKN_Helmet_M98: rhsusf_opscore_cover
+    {
+        scope = 2;
+        displayName = "[VKN] FAST Ballistic M98";
+        hiddenSelectionsTextures[] = {"\VKN_Gear\data\headgear\maritime_m98.paa","","","","\VKN_Gear\data\headgear\m98_cover.paa",""};
+    };
+    class VKN_Helmet_M98_HS: rhsusf_opscore_cover
+    {
+        scope = 2;
+        displayName = "[VKN] FAST Ballistic M98 (Headset)";
+        hiddenSelectionsTextures[] = {"\VKN_Gear\data\headgear\maritime_m98.paa","\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\data\comtac_fg_co.paa","","","\VKN_Gear\data\headgear\m98_cover.paa",""};
+    };
 };
 
 

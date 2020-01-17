@@ -146,6 +146,7 @@ class VKN_ECH_MED: H_HelmetB {
 		uniformModel="A3\Characters_F\BLUFOR\headgear_b_helmet_light";
 	};
 };
+
 class VKN_ECH_SNOW_MED: H_HelmetB {
 	displayName="[VKN] FWA ECH Lite SNOW (MEDICAL)";
 	author="Apple";

@@ -52,6 +52,22 @@ class VKN_Black_Assault: B_AssaultPack_Base {
 	hiddenSelectionsTextures[]={"\VKN_Gear\data\Backpacks\VKN_Bag_Assault.paa"};
 };
 
+class VKN_M98_Assault: B_AssaultPack_Base {
+	scope=2;
+	displayName="[VKN] Assault Pack (M98)";
+	author="Jonmo";
+	model="A3\weapons_f\ammoboxes\bags\Backpack_Compact.p3d";
+	hiddenSelectionsTextures[]={"\VKN_Gear\data\Backpacks\VKN_backpack_compact_M98_co.paa"};
+};
+
+class VKN_M90_Assault: B_AssaultPack_Base {
+	scope=2;
+	displayName="[VKN] Assault Pack (M90)";
+	author="Jonmo";
+	model="A3\weapons_f\ammoboxes\bags\Backpack_Compact.p3d";
+	hiddenSelectionsTextures[]={"\VKN_Gear\data\Backpacks\VKN_backpack_compact_M90_co.paa"};
+};
+
 class TRYK_B_Medbag_OD: Bag_Base {
 	scope = 2;
 	author = "Teriyaki";
