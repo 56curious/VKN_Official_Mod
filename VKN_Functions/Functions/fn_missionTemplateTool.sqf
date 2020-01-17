@@ -14,17 +14,91 @@ Framework:      Mission Template
 Parameters:
 				N/A
 */
+//Setup settings and define variables
+createDialog "VKN_Template_Tool_Basic_Settings";
+//define
+_squad = 0;
+_position = screenToWorld [0.5, 0.5];
+_3denCam = get3DENCamera;
+VKN_Template_Tool_Basic_Settings_open = true;
+VKN_Template_Tool_Basic_Settings_Complete = false;
 
-createDialog "VKN_Template_Tool_Info";
+_sides = [West, East, Independent, Civilian];
+{ lbAdd [2100, str _x]; } forEach _sides;
+lbSetCurSel [2100, 0];
+
+
+lbadd [2101, "no override"];
+lbSetCurSel [2101, 0];
+
+
+
+
+
+
+
+
+
+//////////// left off from here
+_curSelFac = [(_sides select (_sides find lbCurSel 2100))] call BIS_fnc_getFactions;
+{ lbadd [2101 str _x]; } forEach _curSelFac;
+
+_groups = [];
+_configgroups = "true" configClasses (configfile >> "CfgGroups" >> _side >> (lbCurSel 2101) >> "Infantry");
+{
+  _groups pushBackUnique ([_x, "", true] call BIS_fnc_configPath); // not adding element
+} forEach _configgroups;
+
+{	lbadd [2102, _x]	} forEach _groups;
+
+////////// to here ^^^^^^^
+
+// need to get the selected faction and then list all groups. if the slection changed clear and re-add. might be best to clear every loop.
+
+
+
+
+
+
+
+
+
+
+
+
+_Specoptions = ["All Enabled", "All Disabled", "Freecam Disabled", "3pp Disabled", "Freecam only", "1pp Disabled"];
+{ lbAdd [2102, _x] } forEach _Specoptions;
+lbSetCurSel [2102, 2];
+
+buttonSetAction [1600, "VKN_Template_Tool_Basic_Settings_Complete = true;"];
+waitUntil {VKN_Template_Tool_Basic_Settings_Complete == true};
+
+_side = _sides select (_sides find lbCurSel 2100);
+_factions_option = lbCurSel 2101;
+_squads_option = lbCurSel 2102;
+_spectate_option = 2103;
+_saveLoadouts = cbChecked ((findDisplay 348567) displayCtrl 2800);
+_dynamicGroups = cbChecked ((findDisplay 348567) displayCtrl 2801);
+
+closeDialog 0;
+
+//Start tool
+startLoadingScreen ["Loading mission template tool... Please wait."];
 
 collect3DENHistory {
-	//define
-	_squad = 0;
-	_position = screenToWorld [0.5, 0.5];
-	if (isClass (configFile >> "CfgPatches" >> "VKN_PMC_Characters")) then {
-		_squad = configfile >> "CfgGroups" >> "West" >> "B_VKN_ODIN_PMC" >> "Infantry" >> "B_VKN_ODIN_infantry_squad_pmc"; //Units inherit off one origin, possibly causing the problem
-	} else {
-		_squad = configfile >> "CfgGroups" >> "West" >> "BLU_F" >> "Infantry" >> "BUS_InfSquad";
+	if (_faction_option == "no override") then {
+		if (isClass (configFile >> "CfgPatches" >> "VKN_PMC_Characters")) then {
+			_squad = configfile >> "CfgGroups" >> "West" >> "B_VKN_ODIN_PMC" >> "Infantry" >> "B_VKN_ODIN_infantry_squad_pmc"; //Units inherit off one origin, possibly causing the problem
+		} else {
+			_squad = configfile >> "CfgGroups" >> "West" >> "BLU_F" >> "Infantry" >> "BUS_InfSquad";
+		};
+	else {
+		_squad = configfile >> "CfgGroups" >> str _side >> _faction_option >> "Infantry", _squads_option;
+
+
+
+
+		{ [_x, "", true] call BIS_fnc_configPath) } forEach ("true" configClasses (configfile >> "CfgGroups" >> _side) //returns path for config search
 	};
 
 	//Check for 3DEN Enhanced, then setup those features
@@ -38,7 +112,7 @@ collect3DENHistory {
 	//Set all of the mission settings to their defaults
 	set3DENMissionAttributes [
 		["Multiplayer", "respawn", 3],
-		["Multiplayer", "respawnDelay", 5],
+		["Multiplayer", "respawnDelay", 180],
 		["Multiplayer", "GameType", "VKN_OP"],
 		["Multiplayer", "DisabledAI", true],
 		["Multiplayer", "JoinUnassigned", false],
@@ -58,7 +132,10 @@ collect3DENHistory {
 	//Setup the respawn positions/settings
 	_RespawnPos = create3DENEntity ["Logic", "ModuleRespawnPosition_F", _position];
   _RespawnPos set3DENAttribute ["name", "defaultRespawnPosition"];
-  _RespawnPos setVariable ["Side","1"];
+  _RespawnPos set3DENAttribute ["ModuleRespawnPosition_F_Side", 1];
+	_RespawnPos set3DENAttribute ["ModuleRespawnPosition_F_ShowNotification", 0];
+	_RespawnPos set3DENAttribute ["ModuleRespawnPosition_F_Name", "Respawn Point"];
+	_RespawnPos set3DENAttribute ["ModuleRespawnPosition_F_Marker", 2];
 
 	//create the Zeus sub-settings
 	_ZeusAttributeCuratorAddEditableObjects = create3DENEntity ["Logic", "ModuleCuratorAddEditableObjects", _position];
@@ -68,7 +145,7 @@ collect3DENHistory {
 	_ZeusModule2 = create3DENEntity ["Logic", "ModuleCurator_F", _position];
 	_ZeusModule3 = create3DENEntity ["Logic", "ModuleCurator_F", _position];
 	_ZeusModuleAdmin = create3DENEntity ["Logic", "ModuleCurator_F", _position];
-	_ZeusModules = [_ZeusModule1, _ZeusModule2, _ZeusModule3, _ZeusModuleAdmin];
+	_ZeusModules = [_ZeusModule1, _ZeusModule2, _ZeusModule3];
 
 	//sync
 	add3DENConnection ["sync", _ZeusModules, _ZeusAttributeCuratorAddEditableObjects];
@@ -77,29 +154,39 @@ collect3DENHistory {
 	//Setup the Zeus entities
 	_ZeusEntity1 = create3DENEntity ["Logic", "VirtualCurator_F", _position];
 	_ZeusEntity1 set3DENAttribute ["name", "ZeusEntity1"];
+	_ZeusEntity1 set3DENAttribute ["description", "Game Curator"];
 
 	_ZeusEntity2 = create3DENEntity ["Logic", "VirtualCurator_F", _position];
 	_ZeusEntity2 set3DENAttribute ["name", "ZeusEntity2"];
+	_ZeusEntity2 set3DENAttribute ["description", "Game Curator"];
 
 	_ZeusEntity3 = create3DENEntity ["Logic", "VirtualCurator_F", _position];
 	_ZeusEntity3 set3DENAttribute ["name", "ZeusEntity3"];
+	_ZeusEntity3 set3DENAttribute ["description", "Game Curator"];
 
-	_ZeusEntityAdmin = create3DENEntity ["Logic", "VirtualCurator_F", _position];
-	_ZeusEntityAdmin set3DENAttribute ["name", "ZeusEntityAdmin"];
+	_ZeusEntities = [_ZeusEntity1, _ZeusEntity2, _ZeusEntity3];
+	_ZeusEntitiesNames = ["ZeusEntity1", "ZeusEntity2", "ZeusEntity3"];
 
-	_ZeusEntities = [_ZeusEntity1, _ZeusEntity2, _ZeusEntity3, _ZeusEntityAdmin];
-	_ZeusEntitiesNames = ["ZeusEntity1", "ZeusEntity2", "ZeusEntity3", "ZeusEntityAdmin"];
+	progressLoadingScreen 0.5;
 
 	//setup in-module settings
 	{ _x set3DENAttribute ["ControlMP", true]; } forEach _ZeusEntities;
-	for "_i" from 0 to 3 step 1 do {
+	for "_i" from 0 to 2 step 1 do {
 		_Module = _ZeusModules select _i;
 		_Entity = _ZeusEntitiesNames select _i;
-		_Module set3DENAttribute[ "ModuleCurator_F_Owner", _Entity ];
-		_Module set3DENAttribute[ "ModuleCurator_F_Name", "Zeus" ];
-		_Module set3DENAttribute[ "ModuleCurator_F_Addons", "3" ];
-		_Module set3DENAttribute[ "ModuleCurator_F_Forced", "1" ];
+		_Module set3DENAttribute [ "name", format["Zeus_Module%1", _i]];
+		_Module set3DENAttribute [ "ModuleCurator_F_Owner", _Entity ];
+		_Module set3DENAttribute [ "ModuleCurator_F_Name", "Zeus" ];
+		_Module set3DENAttribute [ "ModuleCurator_F_Addons", 3 ];
+		_Module set3DENAttribute [ "ModuleCurator_F_Forced", 1 ];
 	};
+
+	_ZeusModuleAdmin set3DENAttribute [ "name", "Zeus_adminLogged" ];
+	_ZeusModuleAdmin set3DENAttribute [ "ModuleCurator_F_Owner", "#adminLogged" ];
+	_ZeusModuleAdmin set3DENAttribute [ "ModuleCurator_F_Name", "Zeus_Admin" ];
+	_ZeusModuleAdmin set3DENAttribute [ "ModuleCurator_F_Addons", 3 ];
+	_ZeusModuleAdmin set3DENAttribute [ "ModuleCurator_F_Forced", 1 ];
+
 
 	//setup squads and sync them to Zeus
 	[_squad, _position, _ZeusAttributeCuratorAddEditableObjects] spawn {
@@ -107,7 +194,7 @@ collect3DENHistory {
 			_group = create3DENComposition [_this select 0, _this select 1];
 		   	{ add3DENConnection ["sync", _x, _this select 2]; } forEach _group;
 			{
-				set3DENAttributes [[_x, "ControlMP", true]];
+				set3DENAttributes [[_x, "ControlMP", true], [_x, "side", _side]];
 				sleep 0.01;
 			} forEach _group;
 			sleep 0.01;
@@ -116,4 +203,6 @@ collect3DENHistory {
 };
 
 //Notification
+endLoadingScreen;
+createDialog "VKN_Template_Tool_Info";
 ["Viking PMC Mission Template Created."] call BIS_fnc_3DENNotification;
