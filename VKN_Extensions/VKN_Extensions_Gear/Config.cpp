@@ -248,22 +248,47 @@ class cfgWeapons {
     displayName = "[VKN] Booniehat (Alpine)";
     hiddenSelectionsTextures[] = {"VKN_Gear\data\Headgear\vkn_boonie_alpine_co.paa"};
   };
+   class vkn_booniehat2_Loki: VKN_BoonieHat_Base {
+    author = "shagger";
+    scope = 2;
+    displayName = "[VKN] Booniehat (Loki)";
+    hiddenSelectionsTextures[] = {"VKN_Gear\data\Headgear\vkn_boonie_Loki.paa"};
+  };
 
 	class VKN_B_OPS_Black : VKN_OPS_Helmet_2_Base {
 		scope = 2;
 		author="Apple";
-		displayName="[VKN] FBA OpsCore (Black)";
+		displayName="[VKN] FBA OpsCore + Peltor(Black)";
 		picture="\VKN_Misc\VKN_Logo_Inverted.paa";
 		hiddenSelections[]= {"_helmBase","_helmGear","_nvgWeight","_Peltor"};
 		hiddenSelectionsTextures[]={"VKN_Gear\data\Headgear\VKN_ops_black.paa","VKN_Gear\data\Headgear\VKN_helmet_pouch.paa","VKN_Gear\data\Headgear\VKN_secco2.paa","VKN_Gear\data\Headgear\VKN_headset_co.paa"};
 	};
-  class VKN_B_OPS_LOKI_Alt: VKN_OPS_Helmet_2_Base {
+    class VKN_B_OPS_Black_alt : VKN_OPS_Helmet_2_Base {
     scope = 2;
-		author="Curious";
-		displayName="[VKN] Opscore 2 Loki - (Black + Medical)";
-    hiddenSelections[]= {"_helmBase","_helmGear","_nvgWeight","_Peltor"};
-		hiddenSelectionsTextures[] = {"VKN_Gear\data\Headgear\VKN_Ops_Loki_Alt.paa","vsm_helmets\textures\helmet_1_co.paa","vsm_helmets\textures\vsm_ech_2_projecthonor.paa","vsm_helmets\textures\rr_ops\tex\headset_co.paa"};
+    author="Apple";
+    displayName="[VKN] FBA OpsCore (Black)";
+    picture="\VKN_Misc\VKN_Logo_Inverted.paa";
+    hiddenSelections[]= {"_helmBase","_helmGear","_nvgWeight"};
+    hiddenSelectionsTextures[]={"VKN_Gear\data\Headgear\VKN_ops_black.paa","VKN_Gear\data\Headgear\VKN_helmet_pouch.paa","VKN_Gear\data\Headgear\VKN_secco2.paa"};
   };
+  class VKN_B_OPS_Loki : VKN_OPS_Helmet_2_Base {
+    scope = 2;
+    author="Shagger";
+    displayName="[VKN] FBA OpsCore + Peltor(Loki)";
+    picture="\VKN_Misc\VKN_Logo_Inverted.paa";
+    hiddenSelections[]= {"_helmBase","_helmGear","_nvgWeight","_Peltor"};
+    hiddenSelectionsTextures[]={"VKN_Gear\data\Headgear\VKN_ops_Loki.paa","VKN_Gear\data\Headgear\VKN_helmet_pouch.paa","VKN_Gear\data\Headgear\VKN_secco2.paa","VKN_Gear\data\Headgear\VKN_headset_co.paa"};
+  };
+  class VKN_B_OPS_Loki_alt : VKN_OPS_Helmet_2_Base {
+    scope = 2;
+    author="Shagger";
+    displayName="[VKN] FBA OpsCore (Loki)";
+    picture="\VKN_Misc\VKN_Logo_Inverted.paa";
+    hiddenSelections[]= {"_helmBase","_helmGear","_nvgWeight"};
+    hiddenSelectionsTextures[]={"VKN_Gear\data\Headgear\VKN_ops_Loki.paa","VKN_Gear\data\Headgear\VKN_helmet_pouch.paa","VKN_Gear\data\Headgear\VKN_secco2.paa"};
+  };
+
+
 	class VKN_SNOW_OPS: VKN_OPS_Helmet_2_Base {
 		scope=2;
 		weaponPoolAvailable=1;
