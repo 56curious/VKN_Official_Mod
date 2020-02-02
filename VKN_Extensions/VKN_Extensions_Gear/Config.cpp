@@ -528,3 +528,4 @@ class CfgGlasses {
 		hiddenSelectionsTextures[]={"\VKN_Gear\data\Facewear\VKN_shemagh_blk.paa","rhsusf\addons\rhsusf_infantry2\gear\head\goggles\data\dark_ca.paa","rhsusf\addons\rhsusf_infantry2\gear\head\goggles\data\oakleysblk_co.paa"};
 	};
 };
+
