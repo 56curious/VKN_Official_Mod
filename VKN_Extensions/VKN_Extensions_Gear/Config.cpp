@@ -286,23 +286,11 @@ class cfgWeapons {
 		displayName="[VKN] FBA - LBT Armatus (Black)";
 		hiddenSelectionsTextures[]={"VKN_Gear\data\vests\Full Black\VKN_battlebelt_BLK.paa","VKN_Gear\data\vests\Full Black\VKN_dropholster_BLK.paa","VKN_Gear\data\vests\Full Black\VKN_serpa_blk.paa","VKN_Gear\data\vests\Full Black\VKN_blk_gear_co.paa","VKN_Gear\data\vests\Full Black\VKN_radio_pouch_BLK.paa","VKN_Gear\data\vests\Full Black\VKN_blk_plate.paa","VKN_Gear\data\vests\Full Black\VKN_pouches_blk.paa"};
 	};
-	class VKN_CarrierRig_Breacher_Loki: VKN_CarrierRig_Breacher_Base {
-		scope=2;
-		author="Shagger";
-		displayName="[VKN] FBA - LBT Armatus (Loki)";
-		hiddenSelectionsTextures[]={"VKN_Gear\data\vests\Loki\VKN_battlebelt_Loki.paa","VKN_Gear\data\vests\Loki\VKN_dropholster_Loki.paa","VKN_Gear\data\vests\Loki\VKN_serpa_Loki.paa","VKN_Gear\data\vests\Full Black\VKN_blk_gear_co.paa","VKN_Gear\data\vests\Full Black\VKN_radio_pouch_BLK.paa","VKN_Gear\data\vests\Loki\VKN_Loki_plate.paa","VKN_Gear\data\vests\Loki\VKN_pouches_Loki.paa"};
-	};
 	class VKN_FAPC_Gunner_Black: VKN_FAPC_Gunner_Base {
 		scope=2;
 		author="Apple";
 		displayName="[VKN] FBA DT FAPC (Black)";
 		hiddenSelectionsTextures[]={"\VKN_Gear\data\vests\Full Black\VKN_battlebelt_BLK.paa","\VKN_Gear\data\vests\Full Black\VKN_boxmag_blk.paa","\VKN_Gear\data\vests\Full Black\VKN_dropholster_BLK.paa","\VKN_Gear\data\vests\Full Black\VKN_serpa_blk.paa","\VKN_Gear\data\vests\Full Black\VKN_blk_gear_co.paa","\VKN_Gear\data\vests\Full Black\VKN_radio_pouch_BLK.paa","\VKN_Gear\data\vests\Full Black\VKN_fapc_BLK.paa","\VKN_Gear\data\vests\Full Black\VKN_buttpouch_BLK.paa"};
-	};
-	class VKN_FAPC_Gunner_Loki: VKN_FAPC_Gunner_Base {
-		scope=2;
-		author="Shagger";
-		displayName="[VKN] FBA DT FAPC (Loki)";
-		hiddenSelectionsTextures[]={"\VKN_Gear\data\vests\Loki\VKN_battlebelt_Loki.paa","\VKN_Gear\data\vests\Loki\VKN_boxmag_Loki.paa","\VKN_Gear\data\vests\Loki\VKN_dropholster_Loki.paa","\VKN_Gear\data\vests\Loki\VKN_serpa_Loki.paa","\VKN_Gear\data\vests\Loki\VKN_Loki_gear_co.paa","\VKN_Gear\data\vests\Full Black\VKN_radio_pouch_BLK.paa","\VKN_Gear\data\vests\Loki\VKN_fapc_Loki.paa","\VKN_Gear\data\vests\Loki\VKN_buttpouch_Loki.paa"};
 	};
 	class VKN_FAPC_Gunner_OGA_OD_Medical: VKN_FAPC_Gunner_Base
 	{
@@ -325,6 +313,8 @@ class cfgWeapons {
 		author="Apple";
 		hiddenSelectionsTextures[]={"\VKN_Gear\data\vests\Full Black\VKN_battlebelt_blk.paa","\VKN_Gear\data\vests\Full Black\VKN_boxmag_blk.paa","\VKN_Gear\data\vests\Full Black\VKN_dropholster_blk.paa","\VKN_Gear\data\vests\Full Black\VKN_serpa_blk.paa","\VKN_Gear\data\vests\Full Black\VKN_blk_gear_co.paa","\VKN_Gear\data\vests\Full Black\VKN_radio_pouch_blk.paa","\VKN_Gear\data\vests\Medical\VKN_FAPC_blk_Medical.paa","\VKN_Gear\data\vests\Medical\VKN_buttpouch_blk_MED.paa"};
 	};
+
+// VSM CAZADOR VESTS
 
   class VKN_RAV_Operator_Cazador: VKN_RAV_Operator_Base {
     scope = 2;
@@ -390,6 +380,75 @@ class cfgWeapons {
     picture="\VKN_Misc\VKN_Logo_Inverted.paa";
 		hiddenSelectionsTextures[] = {"VKN_Gear\data\Vests\Cazador\VKN_Cazador_Chestrig.paa","VKN_Gear\data\Vests\Cazador\VKN_BattleBelt_Cazador.paa","VKN_Gear\data\Vests\Cazador\VKN_boxmag_Cazador.paa","VKN_Gear\data\Vests\Cazador\VKN_serpa.paa","VKN_Gear\data\Vests\Cazador\VKN_Cazador_gear_co.paa","VKN_Gear\data\Vests\Cazador\VKN_radio_pouch_Green.paa","VKN_Gear\data\Vests\Cazador\VKN_lbt6094_Cazador.paa"};
   };
+
+  // VSM LOKI VESTS
+
+    class VKN_RAV_Operator_Loki: VKN_RAV_Operator_Base {
+    scope = 2;
+    author = "Jonmo";
+    displayName = "[VKN] Loki Paraclete RAV (Operator)";
+    weaponPoolAvailable=1;
+    picture="\VKN_Misc\VKN_Logo_Inverted.paa";
+    hiddenSelectionsTextures[] = {"VKN_Gear\data\vests\Loki\VKN_Loki_Chestrig.paa","VKN_Gear\data\vests\Loki\VKN_BattleBelt_Loki.paa","VKN_Gear\data\Vests\Loki\VKN_DropHolster_Loki.paa","VKN_Gear\data\Vests\Loki\VKN_serpa.paa","VKN_Gear\data\Vests\Loki\VKN_Loki_gear_co.paa","VKN_Gear\data\Vests\Loki\VKN_radio_pouch_Loki.paa","VKN_Gear\data\Vests\Loki\VKN_rav_Loki.paa","VKN_Gear\data\Vests\Loki\VKN_pouches_Loki.paa"};
+  };
+  class VKN_RAV_Gunner_Loki: VKN_RAV_Gunner_Base {
+    scope = 2;
+    author = "Jonmo";
+    displayName = "[VKN] Loki Paraclete RAV (Gunner)";
+    weaponPoolAvailable=1;
+    picture="\VKN_Misc\VKN_Logo_Inverted.paa";
+    hiddenSelectionsTextures[] = {"VKN_Gear\data\Vests\Loki\VKN_Loki_Chestrig.paa","VKN_Gear\data\Vests\Loki\VKN_BattleBelt_Loki.paa","VKN_Gear\data\Vests\Loki\VKN_boxmag_Loki.paa","VKN_Gear\data\Vests\Loki\VKN_DropHolster_Loki.paa","VKN_Gear\data\Vests\Loki\VKN_serpa.paa","VKN_Gear\data\Vests\Loki\VKN_Loki_gear_co.paa","VKN_Gear\data\Vests\Loki\VKN_radio_pouch_Loki.paa","VKN_Gear\data\Vests\Loki\VKN_rav_Loki.paa","VKN_Gear\data\Vests\Loki\VKN_pouches_Loki.paa"};
+  };
+  class VKN_RAV_Breacher_Loki: VKN_RAV_Breacher_Base {
+    scope = 2;
+    author = "Jonmo";
+    displayName = "[VKN] Loki Paraclete RAV (Breacher)";
+    weaponPoolAvailable=1;
+    picture="\VKN_Misc\VKN_Logo_Inverted.paa";
+    hiddenSelectionsTextures[]= {"VKN_Gear\data\Vests\Loki\VKN_Loki_Chestrig.paa","VKN_Gear\data\Vests\Loki\VKN_BattleBelt_Loki.paa","VKN_Gear\data\Vests\Loki\VKN_DropHolster_Loki.paa","VKN_Gear\data\Vests\Loki\VKN_serpa.paa","VKN_Gear\data\Vests\Loki\VKN_Loki_gear_co.paa","VKN_Gear\data\Vests\Loki\VKN_radio_pouch_Loki.paa","VKN_Gear\data\Vests\Loki\VKN_rav_Loki.paa","VKN_Gear\data\Vests\Loki\VKN_pouches_Loki.paa","VKN_Gear\data\Vests\Loki\VKN_buttpouch_Loki.paa"};
+  };
+  class VKN_CarrierRig_Operator_Loki: VKN_CarrierRig_Operator_Base {
+    scope = 2;
+    author = "Jonmo";
+    displayName = "[VKN] Loki LBT Armatus (Operator)";
+    weaponPoolAvailable=1;
+    picture="\VKN_Misc\VKN_Logo_Inverted.paa";
+    hiddenSelectionsTextures[] = {"VKN_Gear\data\Vests\Loki\VKN_Loki_Chestrig.paa","VKN_Gear\data\Vests\Loki\VKN_BattleBelt_Loki.paa","VKN_Gear\data\Vests\Loki\VKN_serpa.paa","VKN_Gear\data\Vests\Loki\VKN_Loki_gear_co.paa","VKN_Gear\data\Vests\Loki\VKN_radio_pouch_Loki.paa","VKN_Gear\data\Vests\Loki\VKN_Loki_plate.paa","VKN_Gear\data\Vests\Loki\VKN_buttpouch_Loki.paa"};
+  };
+  class VKN_CarrierRig_Breacher_Loki: VKN_CarrierRig_Breacher_Base {
+    scope = 2;
+    author = "Jonmo";
+    displayName = "[VKN] Loki LBT Armatus (Breacher)";
+    weaponPoolAvailable=1;
+    picture="\VKN_Misc\VKN_Logo_Inverted.paa";
+    hiddenSelectionsTextures[] = {"VKN_Gear\data\Vests\Loki\VKN_BattleBelt_Loki.paa","VKN_Gear\data\Vests\Loki\VKN_dropholster_Loki.paa","VKN_Gear\data\Vests\Loki\VKN_serpa.paa","VKN_Gear\data\Vests\Loki\VKN_Loki_gear_co.paa","VKN_Gear\data\Vests\Loki\VKN_radio_pouch_Loki.paa","VKN_Gear\data\Vests\Loki\VKN_Loki_plate.paa","VKN_Gear\data\Vests\Loki\VKN_pouches_Loki.paa"};
+  };
+  class VKN_CarrierRig_Gunner_Loki: VKN_CarrierRig_Gunner_Base {
+    scope = 2;
+    author = "Jonmo";
+    displayName = "[VKN] Loki LBT Armatus (Gunner)";
+    weaponPoolAvailable=1;
+    picture="\VKN_Misc\VKN_Logo_Inverted.paa";
+    hiddenSelectionsTextures[] = {"VKN_Gear\data\Vests\Loki\VKN_Loki_Chestrig.paa","VKN_Gear\data\Vests\Loki\VKN_BattleBelt_Loki.paa","VKN_Gear\data\Vests\Loki\VKN_boxmag_Loki.paa","VKN_Gear\data\Vests\Loki\VKN_serpa.paa","VKN_Gear\data\Vests\Loki\VKN_Loki_gear_co.paa","VKN_Gear\data\Vests\Loki\VKN_radio_pouch_Loki.paa","VKN_Gear\data\Vests\Loki\VKN_Loki_plate.paa"};
+  };
+  class VKN_LBT6094_Operator_Loki: VKN_LBT6094_Operator_Base {
+    scope = 2;
+    author = "Jonmo";
+    displayName = "[VKN] Loki LBT6094 (Operator)";
+    weaponPoolAvailable=1;
+    picture="\VKN_Misc\VKN_Logo_Inverted.paa";
+    hiddenSelectionsTextures[] = {"VKN_Gear\data\Vests\Loki\VKN_Loki_Chestrig.paa","VKN_Gear\data\Vests\Loki\VKN_BattleBelt_Loki.paa","VKN_Gear\data\Vests\Loki\VKN_DropHolster_Loki.paa","VKN_Gear\data\Vests\Loki\VKN_serpa.paa","VKN_Gear\data\Vests\Loki\VKN_Loki_gear_co.paa","VKN_Gear\data\Vests\Loki\VKN_radio_pouch_Loki.paa","VKN_Gear\data\Vests\Loki\VKN_lbt6094_Loki.paa","VKN_Gear\data\Vests\Loki\VKN_pouches_Loki.paa","VKN_Gear\data\Vests\Loki\VKN_buttpouch_Loki.paa"};
+  };
+  class VKN_LBT6094_Gunner_Loki: VKN_LBT6094_Gunner_Base {
+    scope = 2;
+    author = "Jonmo";
+    displayName = "[VKN] Loki LBT6094 (Gunner)";
+    weaponPoolAvailable=1;
+    picture="\VKN_Misc\VKN_Logo_Inverted.paa";
+    hiddenSelectionsTextures[] = {"VKN_Gear\data\Vests\Loki\VKN_Loki_Chestrig.paa","VKN_Gear\data\Vests\Loki\VKN_BattleBelt_Loki.paa","VKN_Gear\data\Vests\Loki\VKN_boxmag_Loki.paa","VKN_Gear\data\Vests\Loki\VKN_serpa.paa","VKN_Gear\data\Vests\Loki\VKN_Loki_gear_co.paa","VKN_Gear\data\Vests\Loki\VKN_radio_pouch_Loki.paa","VKN_Gear\data\Vests\Loki\VKN_lbt6094_Loki.paa"};
+  };
+
+
 
 
 	class VKN_Police_Coveralls: rhs_uniform_m88_patchless {
