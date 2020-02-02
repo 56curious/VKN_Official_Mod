@@ -570,7 +570,62 @@ class VKN_MTP_Tan_Khaki_NonRolled: VKN_CombatUniform_NonRolled_base {
 			mass=40;
 		};
 	};
-
+	
+	class VKN_CombatUniform_Tshirt_Green: VKN_CombatUniform_NonRolled_base {
+		scope=2;
+		Author = "Jonmo";
+		picture = "****";
+		displayName="[VKN] Combat Uniform - T-Shirt (Green)";
+		model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+		class ItemInfo: UniformItem {
+			uniformModel="-";
+			uniformClass="VKN_Dummy_B_Tshirt_Green";
+			containerClass="Supply40";
+			mass=40;
+		};
+	};
+	
+	class VKN_CombatUniform_Tshirt_Tan: VKN_CombatUniform_NonRolled_base {
+		scope=2;
+		Author = "Jonmo";
+		picture = "****";
+		displayName="[VKN] Combat Uniform - T-Shirt (Tan)";
+		model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+		class ItemInfo: UniformItem {
+			uniformModel="-";
+			uniformClass="VKN_Dummy_B_Tshirt_Tan";
+			containerClass="Supply40";
+			mass=40;
+		};
+	};
+	
+	class VKN_CombatUniform_TshirtB_Green: VKN_CombatUniform_NonRolled_base {
+		scope=2;
+		Author = "Jonmo";
+		picture = "****";
+		displayName="[VKN] Combat Uniform - T-Shirt Black (Green)";
+		model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+		class ItemInfo: UniformItem {
+			uniformModel="-";
+			uniformClass="VKN_Dummy_B_TshirtB_Green";
+			containerClass="Supply40";
+			mass=40;
+		};
+	};
+	
+	class VKN_CombatUniform_TshirtB_Tan: VKN_CombatUniform_NonRolled_base {
+		scope=2;
+		Author = "Jonmo";
+		picture = "****";
+		displayName="[VKN] Combat Uniform - T-Shirt Black (Tan)";
+		model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+		class ItemInfo: UniformItem {
+			uniformModel="-";
+			uniformClass="VKN_Dummy_B_TshirtB_Tan";
+			containerClass="Supply40";
+			mass=40;
+		};
+	};
 
 //Viper
 
@@ -590,6 +645,66 @@ class VKN_MTP_Tan_Khaki_NonRolled: VKN_CombatUniform_NonRolled_base {
 		};
 	};
 
+//Fleece
+	class VKN_CombatUniform_Fleece_Full_NonRolled: VKN_CombatUniform_NonRolled_base {
+		scope = 2;
+		Author = "Jonmo";
+		displayName = "[VKN] Fleece Jacket (Blue/Forest)";
+		descriptionShort = "Tactical Fleece";
+		hiddenSelectionsMaterials[] = {"\VKN_Gear\data\Misc\vkn_fleece.rvmat"};
+		hiddenSelectionsTextures[]={"\VKN_Gear\data\Uniforms\vkn_fleece_co.paa"};
+		class ItemInfo: UniformItem	{
+		uniformModel="-";
+		uniformClass="VKN_Dummy_Fleece_Full_NonRolled";
+		containerClass="Supply40";
+		mass=40;
+	};
+};
+
+	class VKN_CombatUniform_Fleece_Green_Full_NonRolled: VKN_CombatUniform_NonRolled_base {
+		scope = 2;
+		Author = "Jonmo";
+		displayName = "[VKN] Fleece Jacket (Green/Khaki)";
+		descriptionShort = "Tactical Fleece";
+		hiddenSelectionsMaterials[] = {"\VKN_Gear\data\Misc\vkn_fleece.rvmat"};
+		hiddenSelectionsTextures[]={"\VKN_Gear\data\Uniforms\vkn_fleece_Green_co.paa"};
+		class ItemInfo: UniformItem	{
+		uniformModel="-";
+		uniformClass="VKN_Dummy_Fleece_Green_Full_NonRolled";
+		containerClass="Supply40";
+		mass=40;
+	};
+};
+
+	class VKN_CombatUniform_Fleece_Tan_Full_NonRolled: VKN_CombatUniform_NonRolled_base {
+		scope = 2;
+		Author = "Jonmo";
+		displayName = "[VKN] Fleece Jacket (Tan/Khaki)";
+		descriptionShort = "Tactical Fleece";
+		hiddenSelectionsMaterials[] = {"\VKN_Gear\data\Misc\vkn_fleece.rvmat"};
+		hiddenSelectionsTextures[]={"\VKN_Gear\data\Uniforms\vkn_fleece_Tan_co.paa"};
+		class ItemInfo: UniformItem	{
+		uniformModel="-";
+		uniformClass="VKN_Dummy_Fleece_Tan_Full_NonRolled";
+		containerClass="Supply40";
+		mass=40;
+	};
+};
+
+	class VKN_CombatUniform_Fleece_Dark_Full_NonRolled: VKN_CombatUniform_NonRolled_base {
+		scope = 2;
+		Author = "Jonmo";
+		displayName = "[VKN] Fleece Jacket (Dark/Khaki)";
+		descriptionShort = "Tactical Fleece";
+		hiddenSelectionsMaterials[] = {"\VKN_Gear\data\Misc\vkn_fleece.rvmat"};
+		hiddenSelectionsTextures[]={"\VKN_Gear\data\Uniforms\vkn_fleece_Dark_co.paa"};
+		class ItemInfo: UniformItem	{
+		uniformModel="-";
+		uniformClass="VKN_Dummy_Fleece_Dark_Full_NonRolled";
+		containerClass="Supply40";
+		mass=40;
+	};
+};
 
 ////////////////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////////////

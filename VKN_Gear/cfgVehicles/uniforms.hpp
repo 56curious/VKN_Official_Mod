@@ -303,8 +303,31 @@
 		scope = 1;
 		hiddenSelectionsTextures[]={"\VKN_Gear\data\Uniforms\VKN_Black_Tshirt_co.paa","\VKN_Gear\data\Uniforms\VKN_Black_Tshirt_co_2.paa"};
 	};
-
-
+	class VKN_Dummy_B_Tshirt_Green: VKN_Dummy_B_NonRolled_Base {
+		scope=1;
+		model="\A3\characters_F\BLUFOR\b_soldier_02.p3d";
+		hiddenSelections[]= {"camo","camo2","insignia"};
+		hiddenSelectionsTextures[]={"\VKN_Gear\data\Uniforms\vkn_fleece_co.paa","\VKN_Gear\data\Uniforms\vkn_basicbody_grey_co.paa"};
+	};
+    class VKN_Dummy_B_Tshirt_Tan: VKN_Dummy_B_NonRolled_Base {
+		scope=1;
+		model="\A3\characters_F\BLUFOR\b_soldier_02.p3d";
+		hiddenSelections[]= {"camo","camo2","insignia"};
+		hiddenSelectionsTextures[]={"\VKN_Gear\data\Uniforms\vkn_fleece_Tan_co.paa","\VKN_Gear\data\Uniforms\vkn_basicbody_grey_co.paa"};
+	};
+	class VKN_Dummy_B_TshirtB_Green: VKN_Dummy_B_NonRolled_Base {
+		scope=1;
+		model="\A3\characters_F\BLUFOR\b_soldier_02.p3d";
+		hiddenSelections[]= {"camo","camo2","insignia"};
+		hiddenSelectionsTextures[]={"\VKN_Gear\data\Uniforms\vkn_fleece_co.paa","\a3\characters_f\Common\Data\basicbody_black_co.paa"};
+	};
+	class VKN_Dummy_B_TshirtB_Tan: VKN_Dummy_B_NonRolled_Base {
+		scope=1;
+		model="\A3\characters_F\BLUFOR\b_soldier_02.p3d";
+		hiddenSelections[]= {"camo","camo2","insignia"};
+		hiddenSelectionsTextures[]={"\VKN_Gear\data\Uniforms\vkn_fleece_Tan_co.paa","\a3\characters_f\Common\Data\basicbody_black_co.paa"};
+    };
+//
 //Viper
 
 class VKN_form_vikingviper: O_V_Soldier_Viper_F
@@ -325,6 +348,43 @@ class VKN_form_HarnessO_drk: O_Soldier_F
 	hiddenSelectionsTextures[] = {"\VKN_Gear\data\Uniforms\clothing_drk_tna_CO.paa","\VKN_Gear\data\Uniforms\tech_drk_tna_CO.paa","\VKN_Gear\data\Uniforms\tech_drk_tna_CO.paa"};
 };
 
+//Fleece
+
+class VKN_Dummy_Fleece_Full_NonRolled: VKN_Dummy_B_NonRolled_Base 
+{
+	scope=1;
+	model="\A3\characters_F\BLUFOR\b_soldier_01.p3d";
+	hiddenSelections[]={"camo","insignia"};
+	hiddenSelectionsTextures[]={"\VKN_Gear\data\Uniforms\vkn_fleece_co.paa"};
+	hiddenSelectionsMaterials[]={"\VKN_Gear\data\Misc\vkn_fleece.rvmat"};
+};
+
+class VKN_Dummy_Fleece_Green_Full_NonRolled: VKN_Dummy_B_NonRolled_Base 
+{
+	scope=1;
+	model="\A3\characters_F\BLUFOR\b_soldier_01.p3d";
+	hiddenSelections[]={"camo","insignia"};
+	hiddenSelectionsTextures[]={"\VKN_Gear\data\Uniforms\vkn_fleece_green_co.paa"};
+	hiddenSelectionsMaterials[]={"\VKN_Gear\data\Misc\vkn_fleece.rvmat"};
+};
+
+class VKN_Dummy_Fleece_Tan_Full_NonRolled: VKN_Dummy_B_NonRolled_Base 
+{
+	scope=1;
+	model="\A3\characters_F\BLUFOR\b_soldier_01.p3d";
+	hiddenSelections[]={"camo","insignia"};
+	hiddenSelectionsTextures[]={"\VKN_Gear\data\Uniforms\vkn_fleece_Tan_co.paa"};
+	hiddenSelectionsMaterials[]={"\VKN_Gear\data\Misc\vkn_fleece.rvmat"};
+};
+
+class VKN_Dummy_Fleece_Dark_Full_NonRolled: VKN_Dummy_B_NonRolled_Base 
+{
+	scope=1;
+	model="\A3\characters_F\BLUFOR\b_soldier_01.p3d";
+	hiddenSelections[]={"camo","insignia"};
+	hiddenSelectionsTextures[]={"\VKN_Gear\data\Uniforms\vkn_fleece_Dark_co.paa"};
+	hiddenSelectionsMaterials[]={"\VKN_Gear\data\Misc\vkn_fleece.rvmat"};
+};
 
 ////////////////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////////////

@@ -385,7 +385,7 @@ class cfgWeapons {
 
     class VKN_RAV_Operator_Loki: VKN_RAV_Operator_Base {
     scope = 2;
-    author = "Jonmo";
+    author = "Shagger";
     displayName = "[VKN] Loki Paraclete RAV (Operator)";
     weaponPoolAvailable=1;
     picture="\VKN_Misc\VKN_Logo_Inverted.paa";
@@ -393,7 +393,7 @@ class cfgWeapons {
   };
   class VKN_RAV_Gunner_Loki: VKN_RAV_Gunner_Base {
     scope = 2;
-    author = "Jonmo";
+    author = "Shagger";
     displayName = "[VKN] Loki Paraclete RAV (Gunner)";
     weaponPoolAvailable=1;
     picture="\VKN_Misc\VKN_Logo_Inverted.paa";
@@ -401,7 +401,7 @@ class cfgWeapons {
   };
   class VKN_RAV_Breacher_Loki: VKN_RAV_Breacher_Base {
     scope = 2;
-    author = "Jonmo";
+    author = "Shagger";
     displayName = "[VKN] Loki Paraclete RAV (Breacher)";
     weaponPoolAvailable=1;
     picture="\VKN_Misc\VKN_Logo_Inverted.paa";
@@ -409,7 +409,7 @@ class cfgWeapons {
   };
   class VKN_CarrierRig_Operator_Loki: VKN_CarrierRig_Operator_Base {
     scope = 2;
-    author = "Jonmo";
+    author = "Shagger";
     displayName = "[VKN] Loki LBT Armatus (Operator)";
     weaponPoolAvailable=1;
     picture="\VKN_Misc\VKN_Logo_Inverted.paa";
@@ -417,7 +417,7 @@ class cfgWeapons {
   };
   class VKN_CarrierRig_Breacher_Loki: VKN_CarrierRig_Breacher_Base {
     scope = 2;
-    author = "Jonmo";
+    author = "Shagger";
     displayName = "[VKN] Loki LBT Armatus (Breacher)";
     weaponPoolAvailable=1;
     picture="\VKN_Misc\VKN_Logo_Inverted.paa";
@@ -425,7 +425,7 @@ class cfgWeapons {
   };
   class VKN_CarrierRig_Gunner_Loki: VKN_CarrierRig_Gunner_Base {
     scope = 2;
-    author = "Jonmo";
+    author = "Shagger";
     displayName = "[VKN] Loki LBT Armatus (Gunner)";
     weaponPoolAvailable=1;
     picture="\VKN_Misc\VKN_Logo_Inverted.paa";
@@ -433,7 +433,7 @@ class cfgWeapons {
   };
   class VKN_LBT6094_Operator_Loki: VKN_LBT6094_Operator_Base {
     scope = 2;
-    author = "Jonmo";
+    author = "Shagger";
     displayName = "[VKN] Loki LBT6094 (Operator)";
     weaponPoolAvailable=1;
     picture="\VKN_Misc\VKN_Logo_Inverted.paa";
@@ -441,7 +441,7 @@ class cfgWeapons {
   };
   class VKN_LBT6094_Gunner_Loki: VKN_LBT6094_Gunner_Base {
     scope = 2;
-    author = "Jonmo";
+    author = "Shagger";
     displayName = "[VKN] Loki LBT6094 (Gunner)";
     weaponPoolAvailable=1;
     picture="\VKN_Misc\VKN_Logo_Inverted.paa";
