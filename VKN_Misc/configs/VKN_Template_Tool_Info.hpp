@@ -61,7 +61,7 @@ class VKN_Template_Tool_Info {
     	y = 0.668 * safezoneH + safezoneY;
     	w = 0.091875 * safezoneW;
     	h = 0.056 * safezoneH;
-      action = "copyToClipboard ""respawnTemplatesVirtual[] = {};""";
+      action = "copyToClipboard ""respawnOnStart = 0; respawnTemplatesVirtual[] = {};""";
     };
     class RscButton_1602: RscButton
     {

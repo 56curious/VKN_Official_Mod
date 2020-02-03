@@ -130,7 +130,7 @@ class VKN_Template_Tool_Basic_Settings {
     	y = 0.555074 * safezoneH + safezoneY;
     	w = 0.0984375 * safezoneW;
     	h = 0.028 * safezoneH;
-    	tooltip = "Check to enable dynamic groups."; //--- ToDo: Localize;
+    	tooltip = "Check to enable dynamic groups. (Requires 3DEN Enhanced.)"; //--- ToDo: Localize;
     };
     class Dynamic_Groups_Check: RscCheckBox
     {
@@ -150,7 +150,7 @@ class VKN_Template_Tool_Basic_Settings {
     	y = 0.609222 * safezoneH + safezoneY;
     	w = 0.0984375 * safezoneW;
     	h = 0.028 * safezoneH;
-    	tooltip = "Check to enable loadout saving."; //--- ToDo: Localize;
+    	tooltip = "Check to enable loadout saving. (Requires 3DEN Enhanced.)"; //--- ToDo: Localize;
     };
     class Save_Loadouts_Check: RscCheckBox
     {
@@ -165,7 +165,7 @@ class VKN_Template_Tool_Basic_Settings {
     {
     	idc = 1100;
 
-    	text = "If CBA is loaded, general mission settings can be set for all missions. 3DEN also suggested!"; //--- ToDo: Localize;
+    	text = "If CBA is loaded, general mission settings can be set for all missions. 3DEN En also suggested!"; //--- ToDo: Localize;
     	x = 0.381875 * safezoneW + safezoneX;
     	y = 0.71 * safezoneH + safezoneY;
     	w = 0.249375 * safezoneW;
