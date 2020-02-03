@@ -263,7 +263,7 @@ class display3DEN {
                 class Mission_Template_Tool {
                     text = "Mission Template Tool";
                     Picture = "\VKN_Misc\VikingLogo128.paa";
-                    action = "[] call VKN_fnc_missionTemplateTool;";
+                    action = "[] spawn VKN_fnc_missionTemplateTool;";
                 };
             };
         };
