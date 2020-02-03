@@ -282,10 +282,26 @@ class cfgWeapons {
   class VKN_B_OPS_Loki_alt : VKN_OPS_Helmet_2_Base {
     scope = 2;
     author="Shagger";
-    displayName="[VKN] FBA OpsCore (Loki)";
+    displayName="[VKN] FBA OpsCore (Diagonal)";
     picture="\VKN_Misc\VKN_Logo_Inverted.paa";
     hiddenSelections[]= {"_helmBase","_helmGear","_nvgWeight"};
     hiddenSelectionsTextures[]={"VKN_Gear\data\Headgear\VKN_ops_Loki.paa","VKN_Gear\data\Headgear\VKN_helmet_pouch.paa","VKN_Gear\data\Headgear\VKN_secco2.paa"};
+  };
+  class VKN_B_OPS_Diag : VKN_OPS_Helmet_2_Base {
+    scope = 2;
+    author="Shagger";
+    displayName="[VKN] FBA OpsCore + Peltor(Loki)";
+    picture="\VKN_Misc\VKN_Logo_Inverted.paa";
+    hiddenSelections[]= {"_helmBase","_helmGear","_nvgWeight","_Peltor"};
+    hiddenSelectionsTextures[]={"VKN_Gear\data\Headgear\VKN_ops_diag.paa","VKN_Gear\data\Headgear\VKN_helmet_pouch.paa","VKN_Gear\data\Headgear\VKN_secco2.paa","VKN_Gear\data\Headgear\VKN_headset_co.paa"};
+  };
+  class VKN_B_OPS_Diag_alt : VKN_OPS_Helmet_2_Base {
+    scope = 2;
+    author="Shagger";
+    displayName="[VKN] FBA OpsCore (Diagonal)";
+    picture="\VKN_Misc\VKN_Logo_Inverted.paa";
+    hiddenSelections[]= {"_helmBase","_helmGear","_nvgWeight"};
+    hiddenSelectionsTextures[]={"VKN_Gear\data\Headgear\VKN_ops_diag.paa","VKN_Gear\data\Headgear\VKN_helmet_pouch.paa","VKN_Gear\data\Headgear\VKN_secco2.paa"};
   };
 
 

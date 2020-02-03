@@ -970,6 +970,20 @@ class VKN_CombatUniform_lynx_1: Uniform_Base {
 		mass = 20;
 	};
 };
+class VKN_CombatUniform_diamond_1: Uniform_Base {
+	scope = 2;
+	author = "Shagger";
+	displayName = "[VKN] Lynx (Diamond camo + Grey pants)";
+	picture = "\VKN_Misc\VKN_Logo_Inverted.paa";
+	model = "\A3\Characters_F\Common\Suitpacks\suitpack_universal_F.p3d";
+	class ItemInfo: UniformItem
+	{
+		uniformModel = "-";
+		uniformClass = "VKN_Dummy_I_CombatUniform_diamond_1";
+		containerClass = "Supply90";
+		mass = 20;
+	};
+}
 
 class VKN_CombatUniform_Shirt_DDPM: Uniform_Base {
 	author = "Jonmo";
