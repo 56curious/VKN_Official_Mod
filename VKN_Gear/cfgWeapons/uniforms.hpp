@@ -570,11 +570,11 @@ class VKN_MTP_Tan_Khaki_NonRolled: VKN_CombatUniform_NonRolled_base {
 			mass=40;
 		};
 	};
-	
+
 	class VKN_CombatUniform_Tshirt_Green: VKN_CombatUniform_NonRolled_base {
 		scope=2;
 		Author = "Jonmo";
-		picture = "****";
+		picture = "\VKN_Misc\VKN_Logo_Inverted.paa";
 		displayName="[VKN] Combat Uniform - T-Shirt (Green)";
 		model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
 		class ItemInfo: UniformItem {
@@ -584,11 +584,11 @@ class VKN_MTP_Tan_Khaki_NonRolled: VKN_CombatUniform_NonRolled_base {
 			mass=40;
 		};
 	};
-	
+
 	class VKN_CombatUniform_Tshirt_Tan: VKN_CombatUniform_NonRolled_base {
 		scope=2;
 		Author = "Jonmo";
-		picture = "****";
+		picture = "\VKN_Misc\VKN_Logo_Inverted.paa";
 		displayName="[VKN] Combat Uniform - T-Shirt (Tan)";
 		model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
 		class ItemInfo: UniformItem {
@@ -598,11 +598,11 @@ class VKN_MTP_Tan_Khaki_NonRolled: VKN_CombatUniform_NonRolled_base {
 			mass=40;
 		};
 	};
-	
+
 	class VKN_CombatUniform_TshirtB_Green: VKN_CombatUniform_NonRolled_base {
 		scope=2;
 		Author = "Jonmo";
-		picture = "****";
+		picture = "\VKN_Misc\VKN_Logo_Inverted.paa";
 		displayName="[VKN] Combat Uniform - T-Shirt Black (Green)";
 		model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
 		class ItemInfo: UniformItem {
@@ -612,11 +612,11 @@ class VKN_MTP_Tan_Khaki_NonRolled: VKN_CombatUniform_NonRolled_base {
 			mass=40;
 		};
 	};
-	
+
 	class VKN_CombatUniform_TshirtB_Tan: VKN_CombatUniform_NonRolled_base {
 		scope=2;
 		Author = "Jonmo";
-		picture = "****";
+		picture = "\VKN_Misc\VKN_Logo_Inverted.paa";
 		displayName="[VKN] Combat Uniform - T-Shirt Black (Tan)";
 		model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
 		class ItemInfo: UniformItem {
