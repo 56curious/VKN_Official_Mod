@@ -120,7 +120,7 @@ collect3DENHistory {
 	set3DENMissionAttributes [
 		["Multiplayer", "respawn", 3],
 		["Multiplayer", "respawnDelay", 180],
-    ["Multiplayer", "respawnTemplates", ["Counter", "Spectator", "MenuInventory", "MenuPosition"]],
+    ["Multiplayer", "respawnTemplates", ["Counter", "Spectator", "MenuPosition"]],
     ["Multiplayer", "MaxPlayers", 60],
     ["Multiplayer", "IntelOverviewText", "Viking PMC Operation"],
 		["Multiplayer", "GameType", "VKN_OP"],
@@ -195,7 +195,6 @@ collect3DENHistory {
 	_ZeusModuleAdmin set3DENAttribute [ "ModuleCurator_F_Owner", "#adminLogged" ];
 	_ZeusModuleAdmin set3DENAttribute [ "ModuleCurator_F_Name", "Zeus_Admin" ];
 	_ZeusModuleAdmin set3DENAttribute [ "ModuleCurator_F_Addons", 3 ];
-	_ZeusModuleAdmin set3DENAttribute [ "ModuleCurator_F_Forced", 1 ];
 
 
 	//setup squads and sync them to Zeus
