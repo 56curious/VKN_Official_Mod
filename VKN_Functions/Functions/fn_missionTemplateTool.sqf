@@ -110,8 +110,8 @@ collect3DENHistory {
 
 	//Check for 3DEN Enhanced, then setup those features
 	if (isclass (configfile >> "CfgPatches" >> "3denEnhanced")) then {
+    set3DENMissionAttributes[["Multiplayer", "Enh_SaveLoadout", _saveLoadouts]];
 		set3DENMissionAttributes[["Multiplayer", "Enh_DynamicGroups", _dynamicGroups]];
-		set3DENMissionAttributes[["Multiplayer", "Enh_SaveLoadout", _saveLoadouts]];
 	} else {
 		systemChat "3DEN Enhanced not found but is recommended to be used at all times, missing these attributes however...";
 	};
@@ -157,9 +157,9 @@ collect3DENHistory {
 	_ZeusModuleAdmin = create3DENEntity ["Logic", "ModuleCurator_F", _position];
 	_ZeusModules = [_ZeusModule1, _ZeusModule2, _ZeusModule3];
 
-	//sync
+	//sync - merge later
 	add3DENConnection ["sync", _ZeusModules, _ZeusAttributeCuratorAddEditableObjects];
-	add3DENConnection ["sync", _ZeusModules, _ZeusAttributeCuratorAddEditingAreaPlayers];
+  add3DENConnection ["sync", [_ZeusModuleAdmin], _ZeusAttributeCuratorAddEditableObjects];
 
 	//Setup the Zeus entities
 	_ZeusEntity1 = create3DENEntity ["Logic", "VirtualCurator_F", _position];
