@@ -228,34 +228,6 @@ class VKN_MTP_Tan_Khaki_NonRolled: VKN_CombatUniform_NonRolled_base {
 			mass=40;
 		};
 	};
-
-	class VKN_CombatUniform_Loki_Black_Roll: VKN_CombatUniform_RolledUP_base {
-		scope = 2;
-		author="Shagger (Eric McHogan)";
-		displayName = "[VKN] Combat Uniform - Rolled (LOKI Black)";
-		descriptionShort = "Combat Uniform LOKI Black (Sleeves)";
-		hiddenSelectionsTextures[]={"\VKN_Gear\data\Uniforms\VKN_black_loki.paa"};
-		class ItemInfo: UniformItem	{
-			uniformModel="-";
-			uniformClass="VKN_Dummy_B_Loki_Black_RolledUP";
-			containerClass="Supply40";
-			mass=40;
-		};
-	};
-	class VKN_CombatUniform_Loki_Black_Full: VKN_CombatUniform_RolledUP_base {
-		scope = 2;
-		author="Shagger (Eric McHogan)";
-		displayName = "[VKN] Combat Uniform - Full (LOKI Black)";
-		descriptionShort = "Combat Uniform LOKI Black (Full)";
-		hiddenSelectionsTextures[]={"\VKN_Gear\data\Uniforms\VKN_black_loki.paa"};
-		class ItemInfo: UniformItem	{
-			uniformModel="-";
-			uniformClass="VKN_Dummy_B_Loki_Black_NonRolled";
-			containerClass="Supply40";
-			mass=40;
-		};
-	};
-
 	class VKN_CombatUniform_ARO1_Black_Full: VKN_CombatUniform_RolledUP_base {
 		scope=2;
 		Author = "Teriyaki";
@@ -741,6 +713,7 @@ class VKN_CombatUniform_Winter_Polygon: VKN_I_CombatUniform_Base {
 		mass=40;
 	};
 };
+<<<<<<< HEAD
 class VKN_CombatUniform_Black_Loki: VKN_I_CombatUniform_Base {
 	scope = 2;
 	author="Shagger (Eric McHogan)";
@@ -756,6 +729,8 @@ class VKN_CombatUniform_Black_Loki: VKN_I_CombatUniform_Base {
 	};
 };
 
+=======
+>>>>>>> Test
 class VKN_CombatUniform_3CD_Black: VKN_I_CombatUniform_Base {
 	scope = 2;
 	Author = "Max Kupoleni";
@@ -929,7 +904,21 @@ class VKN_CombatUniform_diamond_1: Uniform_Base {
 		containerClass = "Supply90";
 		mass = 20;
 	};
-}
+};
+class VKN_CombatUniform_Loki_1: Uniform_Base {
+  scope = 2;
+  author = "Shagger";
+  displayName = "[VKN] Overall (Loki - New)";
+  picture = "\VKN_Misc\VKN_Logo_Inverted.paa";
+  model = "\A3\Characters_F\Common\Suitpacks\suitpack_universal_F.p3d";
+  class ItemInfo: UniformItem
+  {
+    uniformModel = "-";
+    uniformClass = "VKN_Dummy_I_CombatUniform_loki_1";
+    containerClass = "Supply90";
+    mass = 20;
+  };
+};
 
 class VKN_CombatUniform_Shirt_DDPM: Uniform_Base {
 	author = "Jonmo";
@@ -1038,6 +1027,21 @@ class VKN_CombatUniform_Tactical_Sweater_6: VKN_CombatUniform_Tactical_Sweater_b
 		mass=40;
 	};
 };
+class VKN_CombatUniform_Tactical_Sweater_7: VKN_CombatUniform_Tactical_Sweater_base {
+  scope = 2;
+  Author = "Shagger";
+  displayName = "[VKN] Tactical Sweater - Loki";
+  descriptionShort = "Viking Tactical Sweater Loki";
+  hiddenSelectionsTextures[]={"\VKN_Gear\data\Uniforms\VKN_sweater_blk_loki.paa"};
+  class ItemInfo: UniformItem
+  {
+    uniformModel="-";
+    uniformClass="VKN_Dummy_I_Sweater_7";
+    containerClass="Supply40";
+    mass=40;
+  };
+};
+
 
 class VKN_CombatUniform_Sweater_DDPM_1: VKN_CombatUniform_Tactical_Sweater_base {
 	scope = 2;
