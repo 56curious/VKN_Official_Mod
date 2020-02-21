@@ -175,32 +175,6 @@ class VKN_MTP_Tan_Khaki_NonRolled: VKN_CombatUniform_NonRolled_base {
 			mass=40;
 		};
 	};
-	class VKN_CombatUniform_M90_Alternative_Roll: VKN_CombatUniform_RolledUP_base {
-		scope = 2;
-		author="Shagger (Eric McHogan)";
-		displayName = "[VKN] Combat Uniform - Rolled (M90)";
-		descriptionShort = "Combat Uniform M90 Alternative (Sleeves)";
-		hiddenSelectionsTextures[]={"\VKN_Gear\data\Uniforms\VKN_m90_alternative.paa"};
-		class ItemInfo: UniformItem	{
-			uniformModel="-";
-			uniformClass="VKN_Dummy_B_M90_Alternative_RolledUP";
-			containerClass="Supply40";
-			mass=40;
-		};
-	};
-	class VKN_CombatUniform_M90_Alternative_Full: VKN_CombatUniform_RolledUP_base {
-		scope = 2;
-		author="Shagger (Eric McHogan)";
-		displayName = "[VKN] Combat Uniform - Full (M90)";
-		descriptionShort = "Combat Uniform M90 Alternative (Full)";
-		hiddenSelectionsTextures[]={"\VKN_Gear\data\Uniforms\VKN_m90_alternative.paa"};
-		class ItemInfo: UniformItem	{
-			uniformModel="-";
-			uniformClass="VKN_Dummy_B_M90_Alternative_NonRolled";
-			containerClass="Supply40";
-			mass=40;
-		};
-	};
 	class VKN_CombatUniform_M90D_Roll: VKN_CombatUniform_RolledUP_base {
 		scope = 2;
 		Author = "Jonmo";
@@ -752,20 +726,6 @@ class VKN_CombatUniform_Legion_Forest_Olive: VKN_I_CombatUniform_Base {
 	};
 };
 
-class VKN_CombatUniform_Tropical_Full: VKN_I_CombatUniform_Base {
-	scope = 2;
-	Author = "Max Kupoleni";
-	displayName = "[VKN] Combat Uniform - Tropical";
-	descriptionShort = "Viking Combat Uniform";
-	hiddenSelectionsTextures[]={"\VKN_Gear\data\Uniforms\VKN_Tropical_Full_ca.paa"};
-	class ItemInfo: UniformItem
-	{
-		uniformModel="-";
-		uniformClass="VKN_Dummy_B_Tropical_Full_RolledUP_6";
-		containerClass="Supply40";
-		mass=40;
-	};
-};
 
 class VKN_CombatUniform_Winter_Polygon: VKN_I_CombatUniform_Base {
 	scope = 2;
@@ -777,20 +737,6 @@ class VKN_CombatUniform_Winter_Polygon: VKN_I_CombatUniform_Base {
 	{
 		uniformModel="-";
 		uniformClass="VKN_Dummy_B_Winter_Polygon_RolledUP_7";
-		containerClass="Supply40";
-		mass=40;
-	};
-};
-class VKN_CombatUniform_Loki_Full: VKN_I_CombatUniform_Base {
-	scope = 2;
-	Author = "Max Kupoleni";
-	displayName = "[VKN] Combat Uniform - Loki";
-	descriptionShort = "Viking Combat Uniform";
-	hiddenSelectionsTextures[]={"\VKN_Gear\data\Uniforms\VKN_Loki_Combat_Uniform_01_ca.paa"};
-	class ItemInfo: UniformItem
-	{
-		uniformModel="-";
-		uniformClass="VKN_Dummy_B_Loki_Full_RolledUP_8";
 		containerClass="Supply40";
 		mass=40;
 	};

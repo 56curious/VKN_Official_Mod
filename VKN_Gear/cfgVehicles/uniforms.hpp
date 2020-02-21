@@ -51,11 +51,6 @@
 		hiddenSelectionsMaterials[] = {"\VKN_Gear\data\misc\VKN_M9X.rvmat"};
 		uniformClass = "VKN_CombatUniform_M90_Full";
 	};
-	class VKN_Dummy_B_M90_Alternative_NonRolled: VKN_Dummy_B_NonRolled_Base {
-		scope = 1;
-		hiddenSelectionsTextures[]={"\VKN_Gear\data\Uniforms\VKN_m90_alternative.paa"};
-		uniformClass = "VKN_CombatUniform_M90_Alternative_Full";
-	};
 	class VKN_Dummy_B_M90D_NonRolled_1_2: VKN_Dummy_B_NonRolled_Base {
 		scope = 1;
 		hiddenSelectionsTextures[]={"\VKN_Gear\data\Uniforms\VKN_M90D_ca.paa"};
@@ -211,11 +206,6 @@
 		hiddenSelectionsMaterials[] = {"\VKN_Gear\data\misc\VKN_M9X.rvmat"};
 		uniformClass = "VKN_CombatUniform_M90_Roll";
 	};
-	class VKN_Dummy_B_M90_Alternative_RolledUP: VKN_Dummy_B_RolledUP_Base {
-		scope = 1;
-		hiddenSelectionsTextures[]={"\VKN_Gear\data\Uniforms\VKN_m90_alternative.paa"};
-		uniformClass = "VKN_CombatUniform_M90_Alternative_Roll";
-	};
 	class VKN_Dummy_B_M90D_RolledUP_1_2: VKN_Dummy_B_RolledUP_Base {
 		scope = 1;
 		hiddenSelectionsTextures[]={"\VKN_Gear\data\Uniforms\VKN_M90D_ca.paa"};
@@ -350,7 +340,7 @@ class VKN_form_HarnessO_drk: O_Soldier_F
 
 //Fleece
 
-class VKN_Dummy_Fleece_Full_NonRolled: VKN_Dummy_B_NonRolled_Base 
+class VKN_Dummy_Fleece_Full_NonRolled: VKN_Dummy_B_NonRolled_Base
 {
 	scope=1;
 	model="\A3\characters_F\BLUFOR\b_soldier_01.p3d";
@@ -359,7 +349,7 @@ class VKN_Dummy_Fleece_Full_NonRolled: VKN_Dummy_B_NonRolled_Base
 	hiddenSelectionsMaterials[]={"\VKN_Gear\data\Misc\vkn_fleece.rvmat"};
 };
 
-class VKN_Dummy_Fleece_Green_Full_NonRolled: VKN_Dummy_B_NonRolled_Base 
+class VKN_Dummy_Fleece_Green_Full_NonRolled: VKN_Dummy_B_NonRolled_Base
 {
 	scope=1;
 	model="\A3\characters_F\BLUFOR\b_soldier_01.p3d";
@@ -368,7 +358,7 @@ class VKN_Dummy_Fleece_Green_Full_NonRolled: VKN_Dummy_B_NonRolled_Base
 	hiddenSelectionsMaterials[]={"\VKN_Gear\data\Misc\vkn_fleece.rvmat"};
 };
 
-class VKN_Dummy_Fleece_Tan_Full_NonRolled: VKN_Dummy_B_NonRolled_Base 
+class VKN_Dummy_Fleece_Tan_Full_NonRolled: VKN_Dummy_B_NonRolled_Base
 {
 	scope=1;
 	model="\A3\characters_F\BLUFOR\b_soldier_01.p3d";
@@ -377,7 +367,7 @@ class VKN_Dummy_Fleece_Tan_Full_NonRolled: VKN_Dummy_B_NonRolled_Base
 	hiddenSelectionsMaterials[]={"\VKN_Gear\data\Misc\vkn_fleece.rvmat"};
 };
 
-class VKN_Dummy_Fleece_Dark_Full_NonRolled: VKN_Dummy_B_NonRolled_Base 
+class VKN_Dummy_Fleece_Dark_Full_NonRolled: VKN_Dummy_B_NonRolled_Base
 {
 	scope=1;
 	model="\A3\characters_F\BLUFOR\b_soldier_01.p3d";
@@ -409,20 +399,10 @@ class VKN_Dummy_B_Legion_Forest_Full_RolledUP_6: VKN_I_Dummy_Combat_Base {
 	uniformClass = "VKN_CombatUniform_Legion_Forest_Olive";
 };
 
-class VKN_Dummy_B_Tropical_Full_RolledUP_6: VKN_I_Dummy_Combat_Base {
-	scope = 1;
-	hiddenSelectionsTextures[]={"\VKN_Gear\data\Uniforms\VKN_Tropical_Full_ca.paa"};
-	uniformClass = "VKN_CombatUniform_Tropical_Full";
-};
 class VKN_Dummy_B_Winter_Polygon_RolledUP_7: VKN_I_Dummy_Combat_Base {
 	scope = 1;
 	hiddenSelectionsTextures[]={"\VKN_Gear\data\Uniforms\VKN_Winter_Poly_Black_ca.paa"};
 	uniformClass = "VKN_CombatUniform_Winter_Polygon";
-};
-class VKN_Dummy_B_Loki_Full_RolledUP_8: VKN_I_Dummy_Combat_Base {
-	scope = 1;
-	hiddenSelectionsTextures[]={"\VKN_Gear\data\Uniforms\VKN_Loki_Combat_Uniform_01_ca.paa"};
-	uniformClass = "VKN_CombatUniform_Loki_Full";
 };
 
 class VKN_Dummy_I_Black_Loki: VKN_I_Dummy_Combat_Base {
