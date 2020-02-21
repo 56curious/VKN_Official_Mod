@@ -491,6 +491,13 @@ class VKN_Dummy_I_CombatUniform_diamond_1: VKN_I_Dummy_Combat_Base {
 	hiddenSelections[] = {"camo"};
 	hiddenSelectionsTextures[] = {"\VKN_Gear\data\uniforms\VKN_overall_test.paa"};
 };
+class VKN_Dummy_I_CombatUniform_loki_1: VKN_I_Dummy_Combat_Base {
+  modelsides[] = {0,3};
+  scope = 1;
+  model = "\A3\Characters_F_Beta\INDEP\ia_soldier_01.p3d";
+  hiddenSelections[] = {"camo"};
+  hiddenSelectionsTextures[] = {"\VKN_Gear\data\uniforms\VKN_overall_loki_loki.paa"};
+};
 class VKN_form_CombatUniform_Cazador_1: VKN_I_Dummy_Combat_Base {
 	modelsides[] = {0,3};
 	scope = 1;
@@ -560,6 +567,11 @@ class VKN_Dummy_I_Sweater_6: VKN_Dummy_I_Sweater_Base {
 	scope = 1;
 	hiddenSelectionsTextures[]={"\VKN_Gear\data\Uniforms\VKN_Sweater_Tactical_tan_ca.paa"};
 	uniformClass = "VKN_CombatUniform_Tactical_Sweater_6";
+};
+class VKN_Dummy_I_Sweater_7: VKN_Dummy_I_Sweater_Base {
+  scope = 1;
+  hiddenSelectionsTextures[]={"\VKN_Gear\data\Uniforms\VKN_sweater_blk_loki.paa"};
+  uniformClass = "VKN_CombatUniform_Tactical_Sweater_7";
 };
 
 class VKN_Dummy_I_3CD_Black_1: VKN_I_Dummy_Combat_Base {
