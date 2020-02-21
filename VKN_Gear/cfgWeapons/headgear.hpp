@@ -96,12 +96,6 @@ class VKN_Beret_SouthAfrica: VKN_Beret_Base	{
 	displayName = "[VKN] Beret - South Africa";
 	hiddenSelectionsTextures[] = {"\VKN_Gear\data\Headgear\VKN_Beret_SouthAfrica_ca.paa"};
 };
-class VKN_Beret_RoyalMarines: VKN_Beret_Base {
-	author = "Max Kupoleni";
-	scope = 2;
-	displayName = "[VKN] Beret - Royal Marines";
-	hiddenSelectionsTextures[] = {"\VKN_Gear\data\Headgear\VKN_Beret_Royal_Marines.paa"};
-};
 class VKN_Cap_Black : VKN_Cap_Headphones_Base {
 	scope = 2;
 	author="Jonmo";
