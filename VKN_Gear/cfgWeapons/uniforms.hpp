@@ -713,7 +713,10 @@ class VKN_CombatUniform_Winter_Polygon: VKN_I_CombatUniform_Base {
 		mass=40;
 	};
 };
-<<<<<<< HEAD
+
+
+
+/////// HEAD
 class VKN_CombatUniform_Black_Loki: VKN_I_CombatUniform_Base {
 	scope = 2;
 	author="Shagger (Eric McHogan)";
@@ -729,8 +732,7 @@ class VKN_CombatUniform_Black_Loki: VKN_I_CombatUniform_Base {
 	};
 };
 
-=======
->>>>>>> Test
+/////// Test
 class VKN_CombatUniform_3CD_Black: VKN_I_CombatUniform_Base {
 	scope = 2;
 	Author = "Max Kupoleni";
