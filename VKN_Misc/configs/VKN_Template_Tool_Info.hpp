@@ -6,7 +6,7 @@ class VKN_Template_Tool_Info {
   idd = -1;
 
   class controls {
-
+    
     class BackgroundDark: IGUIBack
     {
     	idc = 2200;
@@ -37,19 +37,28 @@ class VKN_Template_Tool_Info {
     	w = 0.361028 * safezoneW;
     	h = 0.044 * safezoneH;
     };
+    class Frame: RscFrame
+    {
+    	idc = 1800;
+    	x = 0.283383 * safezoneW + safezoneX;
+    	y = 0.324 * safezoneH + safezoneY;
+    	w = 0.27335 * safezoneW;
+    	h = 0.385 * safezoneH;
+    };
     class Explain: RscStructuredText
     {
     	idc = 1100;
 
-    	text = "Due to the way that arma 3 works, I currently cannot do this next part for you :/ I am working on an extension that does it all, but until then you will need to do it.<br />You'll instead need to follow these steps. You can leave this box open and still use the rest of the editor's menus.<br /><br />Firstly, ensure you have saved the mission and named it.<br />Second, goto Scenario >> Open Scenario Folder<br />Create a new text document and name it description.ext<br />Click the 'Copy File Contents' button below.<br /><br />Do the same for the rest of the files on the right hand side of this menu.<br />Make sure you have set the file format for each file!!!<br /> <br />All done, Zeus will work with virtual entities. The spectator settings will work, loadouts will save and dynamic groups will be setup!"; //--- ToDo: Localize;
-    	x = 0.278226 * safezoneW + safezoneX;
-    	y = 0.291 * safezoneH + safezoneY;
-    	w = 0.278507 * safezoneW;
-    	h = 0.451 * safezoneH;
+    	text = "Due to the way that arma 3 works, I currently cannot do this next part for you :/ I am working on an extension that does it all, but until then you will need to do it.<br />You'll need to follow these steps carefully to ensure the mission will work properly. You can leave this box open and still use the rest of the editor's menus.<br /><br />Firstly, ensure you have saved the mission and named it.<br />Second, goto Scenario >> Open Scenario Folder<br />Create a new text document and name it description.ext<br />Click the 'Copy File Contents' button below.<br /><br />Do the same for the rest of the files on the right hand side of this menu.<br />Make sure you have set the file format for each file!!!<br /> <br />All done, Zeus will work with virtual entities. The spectator settings will work, loadouts will save and dynamic groups will be setup!"; //--- ToDo: Localize;
+    	x = 0.283383 * safezoneW + safezoneX;
+    	y = 0.324 * safezoneH + safezoneY;
+    	w = 0.27335 * safezoneW;
+    	h = 0.385 * safezoneH;
     };
     class DescTitle: RscText
     {
     	idc = 1001;
+
     	text = "description.ext"; //--- ToDo: Localize;
     	x = 0.572206 * safezoneW + safezoneX;
     	y = 0.302 * safezoneH + safezoneY;
@@ -83,6 +92,7 @@ class VKN_Template_Tool_Info {
     class localText: RscText
     {
     	idc = 1002;
+
     	text = "initPlayerLocal.sqf"; //--- ToDo: Localize;
     	x = 0.572206 * safezoneW + safezoneX;
     	y = 0.401 * safezoneH + safezoneY;
@@ -104,7 +114,7 @@ class VKN_Template_Tool_Info {
     class LocalFileCont: RscButton
     {
     	idc = 1601;
-    	action = "copyToClipboard ""[""Initialize"", [true]] remoteExec [""BIS_fnc_dynamicGroups"", 2];      [""InitializePlayer"", [player, true]] remoteExec [""BIS_fnc_dynamicGroups"", 0, true];""";
+    	action = "copyToClipboard ""[""Initialize"", [true]] remoteExec [""BIS_fnc_dynamicGroups"", 2];			[""InitializePlayer"", [player, true]] remoteExec [""BIS_fnc_dynamicGroups"", 0, true];""";
 
     	text = "Copy File Contents"; //--- ToDo: Localize;
     	x = 0.654726 * safezoneW + safezoneX;
@@ -116,6 +126,7 @@ class VKN_Template_Tool_Info {
     class respawnText: RscText
     {
     	idc = 1003;
+
     	text = "onPlayerRespawn.sqf"; //--- ToDo: Localize;
     	x = 0.572206 * safezoneW + safezoneX;
     	y = 0.5 * safezoneH + safezoneY;
@@ -137,7 +148,7 @@ class VKN_Template_Tool_Info {
     class respawnFileContents: RscButton
     {
     	idc = 1601;
-    	action = "copyToClipboard ""[player, [missionNamespace, ""inventory_var""]] call BIS_fnc_loadInventory;      [""Terminate"", [ player]] call BIS_fnc_EGSpectator;""";
+    	action = "copyToClipboard ""[player, [missionNamespace, ""inventory_var""]] call BIS_fnc_loadInventory;			[""Terminate"", [ player]] call BIS_fnc_EGSpectator;""";
 
     	text = "Copy File Contents"; //--- ToDo: Localize;
     	x = 0.654726 * safezoneW + safezoneX;
@@ -149,6 +160,7 @@ class VKN_Template_Tool_Info {
     class KilledText: RscText
     {
     	idc = 1004;
+
     	text = "onPlayerKilled.sqf"; //--- ToDo: Localize;
     	x = 0.572206 * safezoneW + safezoneX;
     	y = 0.599 * safezoneH + safezoneY;
@@ -170,10 +182,10 @@ class VKN_Template_Tool_Info {
     class killedFileContents: RscButton
     {
     	idc = 1601;
-    	action = "copyToClipboard ""[player, [missionNamespace, ""inventory_var""]] call BIS_fnc_saveInventory;      [""Initialize"", [ player, [], false, false, true]] call BIS_fnc_EGSpectator;""";
+    	action = "copyToClipboard ""[player, [missionNamespace, ""inventory_var""]] call BIS_fnc_saveInventory;			[""Initialize"", [ player, [], false, false, true]] call BIS_fnc_EGSpectator;""";
 
     	text = "Copy File Contents"; //--- ToDo: Localize;
-    	x = 0.649569 * safezoneW + safezoneX;
+    	x = 0.654726 * safezoneW + safezoneX;
     	y = 0.632 * safezoneH + safezoneY;
     	w = 0.0722056 * safezoneW;
     	h = 0.033 * safezoneH;
@@ -191,6 +203,9 @@ class VKN_Template_Tool_Info {
     	h = 0.033 * safezoneH;
     	colorActive[] = {0.298,0.949,0.251,0.75};
     };
+
+
+
   };
 
 };
