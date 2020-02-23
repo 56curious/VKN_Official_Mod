@@ -104,6 +104,7 @@ class RscControlsGroup;
 class RscPicture;
 class RscPictureKeepAspect;
 class RscVignette;
+class rscFrame;
 
 //Full screen loading
 //display change
