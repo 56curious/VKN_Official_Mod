@@ -18,11 +18,18 @@ Parameters:
 createDialog "VKN_Template_Tool_Basic_Settings";
 
 _squad = 0;
-_position = screenToWorld [0.5, 0.5];
 _3denCam = get3DENCamera;
+
+//Get a reasonible position for template to be created (avoids it spawning in a weird position)
+_y = 0; _p = -45; _r = 0;
+_3denCam setVectorDirAndUp [  [ sin _y * cos _p,cos _y * cos _p,sin _p], [  [ sin _r,-sin _p,cos _r * cos _p], -_y] call BIS_fnc_rotateVector2D];
+
+_position = screenToWorld [0.5, 0.5];
 VKN_Template_Tool_Basic_Settings_open = true;
 VKN_Template_Tool_Basic_Settings_Complete = false;
 
+
+//Set cam to look in the air
 _y = 0; _p = 45; _r = 0;
 _3denCam setVectorDirAndUp [
  [ sin _y * cos _p,cos _y * cos _p,sin _p],
