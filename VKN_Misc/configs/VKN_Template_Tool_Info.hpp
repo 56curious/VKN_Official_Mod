@@ -6,7 +6,7 @@ class VKN_Template_Tool_Info {
   idd = -1;
 
   class controls {
-    
+
     class BackgroundDark: IGUIBack
     {
     	idc = 2200;
@@ -114,7 +114,7 @@ class VKN_Template_Tool_Info {
     class LocalFileCont: RscButton
     {
     	idc = 1601;
-    	action = "copyToClipboard ""[""Initialize"", [true]] remoteExec [""BIS_fnc_dynamicGroups"", 2];			[""InitializePlayer"", [player, true]] remoteExec [""BIS_fnc_dynamicGroups"", 0, true];""";
+    	action = "copyToClipboard ""['Initialize', [true]] remoteExec ['BIS_fnc_dynamicGroups', 2];			['InitializePlayer', [player, true]] remoteExec ['BIS_fnc_dynamicGroups', 0, true];""";
 
     	text = "Copy File Contents"; //--- ToDo: Localize;
     	x = 0.654726 * safezoneW + safezoneX;
@@ -148,7 +148,7 @@ class VKN_Template_Tool_Info {
     class respawnFileContents: RscButton
     {
     	idc = 1601;
-    	action = "copyToClipboard ""[player, [missionNamespace, ""inventory_var""]] call BIS_fnc_loadInventory;			[""Terminate"", [ player]] call BIS_fnc_EGSpectator;""";
+    	action = "copyToClipboard ""[player, [missionNamespace, 'inventory_var']] call BIS_fnc_loadInventory;			['Terminate', [ player]] call BIS_fnc_EGSpectator;""";
 
     	text = "Copy File Contents"; //--- ToDo: Localize;
     	x = 0.654726 * safezoneW + safezoneX;
@@ -182,7 +182,7 @@ class VKN_Template_Tool_Info {
     class killedFileContents: RscButton
     {
     	idc = 1601;
-    	action = "copyToClipboard ""[player, [missionNamespace, ""inventory_var""]] call BIS_fnc_saveInventory;			[""Initialize"", [ player, [], false, false, true]] call BIS_fnc_EGSpectator;""";
+    	action = "copyToClipboard ""[player, [missionNamespace, 'inventory_var']] call BIS_fnc_saveInventory;			['Initialize', [ player, [], false, false, true]] call BIS_fnc_EGSpectator;""";
 
     	text = "Copy File Contents"; //--- ToDo: Localize;
     	x = 0.654726 * safezoneW + safezoneX;
