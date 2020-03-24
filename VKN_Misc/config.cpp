@@ -350,7 +350,7 @@ class RscDisplayMain: RscStandardDisplay {
             textIsQuote = 0;
             picture = "\VKN_Misc\VikingLogo512.paa";
             video = "";
-            action = "0 = [_this, '78.31.67.210', '2302', ''] execVM '\VKN_Functions\Functions\fn_joinServer.sqf';";
+            action = "0 = [_this, 'arma.vikingpmc.com', '2302', ''] execVM '\VKN_Functions\Functions\fn_joinServer.sqf';";
             actionText = "Direct Connect to Server";
             condition = "true";
         };
