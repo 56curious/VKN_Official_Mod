@@ -786,8 +786,19 @@ class rhsusf_army_ucp_helicrew_OCimport_01 : rhsusf_army_ucp_helicrew { scope = 
 class rhsusf_army_ucp_helicrew_OCimport_02 : rhsusf_army_ucp_helicrew_OCimport_01 { class EventHandlers; };
 
 
+//Sonora Cartel
 
+class rhsgref_nat_commander;
+class rhsgref_nat_commander_OCimport_01 : rhsgref_nat_commander { scope = 0; class EventHandlers; };
+class rhsgref_nat_commander_OCimport_02 : rhsgref_nat_commander_OCimport_01 { class EventHandlers; };
 
+class rhsgref_nat_pmil_saboteur;
+class rhsgref_nat_pmil_saboteur_OCimport_01 : rhsgref_nat_pmil_saboteur { scope = 0; class EventHandlers; };
+class rhsgref_nat_pmil_saboteur_OCimport_02 : rhsgref_nat_pmil_saboteur_OCimport_01 { class EventHandlers; };
+
+class LOP_IRAN_Infantry_SF_Rifleman;
+class LOP_IRAN_Infantry_SF_Rifleman_OCimport_01 : LOP_IRAN_Infantry_SF_Rifleman { scope = 0; class EventHandlers; };
+class LOP_IRAN_Infantry_SF_Rifleman_OCimport_02 : LOP_IRAN_Infantry_SF_Rifleman_OCimport_01 { class EventHandlers; };
 
 
 

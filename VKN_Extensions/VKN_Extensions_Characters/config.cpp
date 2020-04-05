@@ -379,8 +379,27 @@ class CfgPatches {
             "O_Abu_Van_Bakr_01",
             "O_Abu_Machine_Gunner_Bakr_01",
             "O_Abu_Gunner_Bakr_02",
-            "O_Abu_Gunner_Bakr_03"
-
+            "O_Abu_Gunner_Bakr_03",
+            
+            //Sonora Cartel
+            
+            "I_SC_Sicario_01",
+            "I_SC_Sicario_02",
+            "I_SC_Sicario_03",
+            "I_SC_Sicario_04",
+            "I_SC_Sicario_AT_01",
+            "I_SC_Sicario_AR_01",
+            "I_SC_Sicario_Grenadier_01",
+            "I_SC_Soldado_01",
+            "I_SC_Grenadisto_01",
+            "I_SC_Lider_01",
+            "I_SC_Medico_01",
+            "I_SC_Death_Guard_01",
+            "I_SC_Death_Guard_Grenadier_01",
+            "I_SC_Death_Guard_Leader_01",
+            "I_SC_Soldado_RPG_01",
+            "I_SC_Soldado_AR_01",
+            "I_SC_Death_Guard_AT_01"
         };
         weapons[] = {};
         requiredVersion = 1.50;
@@ -440,7 +459,11 @@ class CfgPatches {
             "ace_logistics_uavbattery",
             "ace_interaction",
             "ace_interact_menu",
-            "ace_main"
+            "ace_main",
+            //Sonora Cartel
+            "rhsgref_c_troops",
+            "rhs_cti_insurgents",
+            "rhssaf_c_troops"
         };
         author = "Curious";
         authors[] = {"Curious"};
@@ -462,6 +485,7 @@ class cfgFactionClasses {
     #include "cfgFactionClasses\The_Cartel.hpp"
     #include "cfgFactionClasses\The_Order.hpp"
     #include "cfgFactionClasses\Ryukyu_Dragon_Army.hpp"
+    #include "cfgFactionClasses\Sonora_Cartel.hpp"
     #include "cfgFactionClasses\CSLA.hpp"
     #include "cfgFactionClasses\CSLAC.hpp"
     #include "cfgFactionClasses\CSAA.hpp"
@@ -480,6 +504,7 @@ class cfgVehicles {
 
     //Indep
     #include "cfgVehicles\Asian_Paramilitary.hpp"
+    #include "cfgVehicles\Sonora_Cartel.hpp"
 
     //East
     #include "cfgVehicles\Mexican_Guard.hpp"
@@ -513,6 +538,7 @@ class cfgGroups {
 
     class Indep {
         #include "cfgGroups\Asian_Paramilitary.hpp"
+        #include "cfgGroups\Sonora_Cartel.hpp"
     };
 
     class East {
