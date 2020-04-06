@@ -37,10 +37,10 @@ _3denCam setVectorDirAndUp [
 ];
 
 
-/*
+
 _sides = [West, East, Independent, Civilian];
 _sidesstr = ["WEST", "EAST", "INDEPENDENT", "CIVILIAN"];
-{ lbAdd [2100, str _x]; } forEach _sides;
+{ lbAdd [2100, str _x]; systemChat str _x; } forEach _sides;
 lbSetCurSel [2100, 0];
 
 
@@ -48,7 +48,9 @@ lbadd [2101, "no override"];
 lbSetCurSel [2101, 0];
 
 _fnc_factionChanged = {
-  _curselected = lbText [2100, lbCurSel 2100];
+  _indx = lbCurSel 2100;
+  _curselected = lbText [2100, _indx];
+  systemChat _curselected;
   _selectindex = _sidesstr find _curselected;
   _curSelFac = [(_sides select 0)] call BIS_fnc_getFactions;
   { lbadd [2101, str _x]; } forEach _curSelFac;
@@ -62,8 +64,8 @@ _fnc_factionChanged = {
   {	lbadd [2102, _x]	} forEach _groups;
 };
 
-(findDisplay 348567) displayCtrl 2102) ctrlSetEventHandler ["LBSelChanged","['ListChange',_this] call _fnc_factionChanged"];
-*/
+((findDisplay 348567) displayCtrl 2102) ctrlSetEventHandler ["LBSelChanged","['ListChange', _this] call _fnc_factionChanged"];
+
 lbadd [2100, "Currently unavailable"];
 lbSetCurSel [2100, 0];
 lbadd [2101, "Currently unavailable"];
@@ -93,7 +95,7 @@ closeDialog 0;
 startLoadingScreen ["Loading mission template tool... Please wait."];
 
 collect3DENHistory {
-  /*
+
 	if (_faction_option == "no override") then {
 		if (isClass (configFile >> "CfgPatches" >> "VKN_PMC_Characters")) then {
 			_squad = configfile >> "CfgGroups" >> "West" >> "B_VKN_ODIN_PMC" >> "Infantry" >> "B_VKN_ODIN_infantry_squad_pmc"; //Units inherit off one origin, possibly causing the problem
@@ -105,7 +107,7 @@ collect3DENHistory {
 
   		{ [_x, "", true] call BIS_fnc_configPath) } forEach ("true" configClasses (configfile >> "CfgGroups" >> _side) //returns path for config search
   	};
-    */
+
   if (isClass (configFile >> "CfgPatches" >> "VKN_PMC_Characters")) then {
 		_squad = configfile >> "CfgGroups" >> "West" >> "B_VKN_ODIN_PMC" >> "Infantry" >> "B_VKN_ODIN_infantry_squad_pmc"; //Units inherit off one origin, possibly causing the problem
 	} else {
