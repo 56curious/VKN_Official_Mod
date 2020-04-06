@@ -380,9 +380,7 @@ class CfgPatches {
             "O_Abu_Machine_Gunner_Bakr_01",
             "O_Abu_Gunner_Bakr_02",
             "O_Abu_Gunner_Bakr_03",
-            
-            //Sonora Cartel
-            
+
             "I_SC_Sicario_01",
             "I_SC_Sicario_02",
             "I_SC_Sicario_03",
@@ -460,7 +458,6 @@ class CfgPatches {
             "ace_interaction",
             "ace_interact_menu",
             "ace_main",
-            //Sonora Cartel
             "rhsgref_c_troops",
             "rhs_cti_insurgents",
             "rhssaf_c_troops"
