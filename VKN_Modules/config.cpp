@@ -40,12 +40,29 @@ class RscStructuredText;
 class CfgVehicles {
 	class Logic;
 	class Module_F: Logic {
+
+    class AttributesBase {
+      class Default;
+      class Edit;
+      class Combo;
+      class Checkbox;
+      class CheckboxNumber;
+      class ModuleDescription;
+    };
+
 		class ModuleDescription {
 			class AnyPlayer;
 			class AnyBrain;
 			class EmptyDetector;
 		};
 	};
+
+  #include "\VKN_Modules\Descriptions\Curator.hpp"
+  #include "\VKN_Modules\Descriptions\Intel.hpp"
+
+
+
+
 	class VKN_Modules_Base: Module_F {
 		mapSize=1;
 		author="Curious";
