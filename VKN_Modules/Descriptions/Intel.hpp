@@ -51,7 +51,7 @@ class ModuleCreateDiaryRecord_F: Module_F {
 
 
 
-
+/*
 Require desc - default modules
 |-
 |Hide Terrain Objects
@@ -83,3 +83,4 @@ Require desc - default modules
 |Vanguard: Starting Area
 |Vanguard: Score Persistence
 |Vanguard: Objective Area
+*/
