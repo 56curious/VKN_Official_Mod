@@ -47,8 +47,8 @@ class CfgPatches
 		requiredaddons[] = {"A3_Weapons_F","A3_Data_F"};
 		requiredversion = 1.0;
 		units[] = {};
-		weapons[] = {"VKN_AK5C"};
-		magazines[] = {};
+		weapons[] = {"VKN_AK5C", "VKN_VSS"};
+		magazines[] = {"VKN_10Rnd_762x54mm_Mag",	"VKN_20Rnd_9x39mm_Mag"};
 	};
 };
 class Mode_SemiAuto;
@@ -72,9 +72,8 @@ class CfgWeapons
 		class GunParticles;
 		class AnimationSources;
 	};
-
-//AKM - Source: https://www.cgtrader.com/3d-models/military/gun/akm-model-and-textures-d57f1daa31fedfe78f111ace718dd32b
 /*
+//AKM - Source: https://www.cgtrader.com/3d-models/military/gun/akm-model-and-textures-d57f1daa31fedfe78f111ace718dd32b
 	class VKN_AKM: FA_Base_Rifle_VKN
 	{
 	    scope = 2;
@@ -434,7 +433,7 @@ class CfgWeapons
 			};
 		};
     };
-
+*/
 //VSS - Source: https://sketchfab.com/3d-models/vss-vintorez-18e1f60286d346728f650984f4ae70aa
 	class VKN_VSS : FA_Base_Rifle_VKN {
 		scope = 2;
@@ -448,7 +447,7 @@ class CfgWeapons
 		changeFiremodeSound[] = {"A3\Sounds_F\arsenal\weapons\SMG\Vermin\firemode_Vermin",0.6,1,5};
 		drySound[] = {"A3\Sounds_F\arsenal\weapons\SMG\Vermin\Dry_Vermin",0.6,1,10};
 		hiddenSelections[] = {"camo1"};
-		hiddenSelectionsTextures[] = {"FA_Weapons_VKN\data\vss\textures\camo1_co.paa"};
+		hiddenSelectionsTextures[] = {"FA_Weapons_VKN\data\vss\textures\camo1_LIGHT_TEST_co.paa"};
 		handAnim[] = {"OFP2_ManSkeleton", "\A3\Weapons_F_beta\Smgs\SMG_02\data\Anim\SMG_02.rtm"};
 		reloadAction="GestureReloadSMG_02";
 		reloadMagazineSound[] = {"A3\Sounds_F\arsenal\weapons\SMG\Sting\reload_sting",1,1,10};
@@ -522,7 +521,8 @@ class CfgWeapons
 			};
 		};
 	};
-*/
+
+
 //AK5C - Source: https://www.cgtrader.com/3d-models/military/gun/ak5c-rifle
 	class VKN_AK5C : FA_Base_Rifle_VKN {
 		scope = 2;
@@ -539,7 +539,7 @@ class CfgWeapons
 		changeFiremodeSound[]={"A3\Sounds_F_Exp\arsenal\weapons\Rifles\SPAR01\SPAR01_firemode",0.6,1,5};
 		picture = "\FA_Weapons_VKN\data\icons\icon_ak5c_ca.paa";
 		inertia = 0.45;
-		recoil = "recoil_aks";
+		recoil = "recoil_aks"
 		modes[]= {"FullAuto", "Single"};
 		hiddenSelections[] = {"camo1"};
 		hiddenSelectionsTextures[] = {"FA_Weapons_VKN\data\ak5c\textures\ak5c_co.paa"};
@@ -613,7 +613,7 @@ class CfgWeapons
 		inertia = 0.35;
 	};
 };
-/*
+
 class CfgAmmo
 {
 	class B_9x21_Ball;
@@ -650,4 +650,3 @@ class CfgMagazines {
 		mass = 10;
 	};
 };
-*/

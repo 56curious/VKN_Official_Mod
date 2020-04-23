@@ -286,3 +286,30 @@ class CfgVehicles {
 
   #include "\VKN_Objects\Configs\Tahoes.hpp"
 };
+
+
+
+
+
+
+
+
+
+
+class CfgMagazines {
+	class 20Rnd_762x51_Mag;
+	class 30Rnd_9x21_Mag;
+
+	class VKN_30Rnd_9x39mm_Mag : 30Rnd_9x21_Mag {
+		scope = 2;
+		author = "--";
+    model = "\VKN_Objects\Weapons\VSS Mag\VSS Mag.p3d";
+
+		displayName = "30Rnd 9x39mm";
+		picture = "\FA_Weapons_VKN\data\icons\icon_vss_mag_ca.paa";
+		count = 30;
+		ammo = "FA_VKN_9x39mm_Ball";
+		descriptionshort = "Caliber: 9x39mm<br />Rounds: 30<br />Used in: VSS";
+		mass = 10;
+	};
+};
