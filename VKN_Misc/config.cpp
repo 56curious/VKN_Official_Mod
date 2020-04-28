@@ -345,12 +345,12 @@ class RscDisplayMain: RscStandardDisplay {
             actionText = "Developed By Viking PMC";
             condition = "true";
         };
-        class Viking_Server_Join {
-            text = "VKN Private Operations Server #1";
+        class Server_Join {
+            text = "Quick Join Server #1";
             textIsQuote = 0;
             picture = "\VKN_Misc\VikingLogo512.paa";
             video = "";
-            action = "0 = [_this, 'arma.vikingpmc.com', '2302', ''] execVM '\VKN_Functions\Functions\fn_joinServer.sqf';";
+            action = "0 = [_this, '', '', ''] execVM '\VKN_Functions\Functions\fn_joinServer.sqf';";
             actionText = "Direct Connect to Server";
             condition = "true";
         };
