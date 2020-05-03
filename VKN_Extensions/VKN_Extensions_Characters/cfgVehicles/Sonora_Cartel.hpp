@@ -84,18 +84,18 @@ class I_SC_Sicario_03 : I_SC_Sicario_02 {
 
     identityTypes[] = {"Head_Euro","LanguageCZ","rhs_scarf","G_CIVIL_male"};
 
-    uniformClass = "VKN_Shirt_Blue_Jeans_Black";
+    uniformClass = "VKN_Shirt_Green_Jeans";
 
-    linkedItems[] = {"V_TacVest_blk","H_Cap_blk","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
-    respawnlinkedItems[] = {"V_TacVest_blk","H_Cap_blk","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
+    linkedItems[] = {"V_TacChestrig_cbr_F","H_Cap_blk","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
+    respawnlinkedItems[] = {"V_TacChestrig_cbr_F","H_Cap_blk","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
 
-    weapons[] = {"rhs_weap_m70b3n","Binocular"};
-    respawnWeapons[] = {"rhs_weap_m70b3n","Binocular"};
+    weapons[] = {"rhs_weap_m4a1_carryhandle","Binocular"};
+    respawnWeapons[] = {"rhs_weap_m4a1_carryhandle","Binocular"};
 
-    magazines[] = {"rhssaf_30Rnd_762x39mm_M67","rhssaf_30Rnd_762x39mm_M67"};
-    respawnMagazines[] = {"rhssaf_30Rnd_762x39mm_M67","rhssaf_30Rnd_762x39mm_M67"};
+    magazines[] = {"rhs_mag_30Rnd_556x45_M855A1_Stanag","rhs_mag_30Rnd_556x45_M855A1_Stanag"};
+    respawnMagazines[] = {"rhs_mag_30Rnd_556x45_M855A1_Stanag","rhs_mag_30Rnd_556x45_M855A1_Stanag"};
 
-    ALiVE_orbatCreator_loadout[] = {{"rhs_weap_m70b3n","","","",{"rhssaf_30Rnd_762x39mm_M67",30},{},""},{},{},{"VKN_Shirt_Blue_Jeans_Black",{{"FirstAidKit",1},{"rhssaf_30Rnd_762x39mm_M67",1,30}}},{"V_TacVest_blk",{{"rhs_mag_rdg2_black",2,1},{"rhs_mag_f1",1,1},{"rhssaf_30Rnd_762x39mm_M67",4,30}}},{},"H_Cap_blk","G_Bandanna_oli",{"Binocular","","","",{},{},""},{"ItemMap","","ItemRadio","ItemCompass","ItemWatch",""}};
+    ALiVE_orbatCreator_loadout[] = {{"rhs_weap_m4a1_carryhandle","","","",{"rhs_mag_30Rnd_556x45_M855A1_Stanag",30},{},""},{},{},{"VKN_Shirt_Green_Jeans",{{"FirstAidKit",1},{"rhs_mag_30Rnd_556x45_M855A1_Stanag",2,30}}},{"V_TacChestrig_cbr_F",{{"rhs_mag_rdg2_black",2,1},{"rhs_mag_f1",1,1},{"rhs_mag_30Rnd_556x45_M855A1_Stanag",4,30}}},{},"H_Cap_blk","G_Bandanna_oli",{"Binocular","","","",{},{},""},{"ItemMap","","ItemRadio","ItemCompass","ItemWatch",""}};
 
 
     class EventHandlers : EventHandlers {
@@ -109,6 +109,7 @@ class I_SC_Sicario_03 : I_SC_Sicario_02 {
 
     // custom attributes (do not delete)
     ALiVE_orbatCreator_owned = 1;
+
 
 };
 

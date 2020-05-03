@@ -459,8 +459,7 @@ class CfgPatches {
             "ace_interact_menu",
             "ace_main",
             "rhsgref_c_troops",
-            "rhs_cti_insurgents",
-            "rhssaf_c_troops"
+            "rhs_cti_insurgents"
         };
         author = "Curious";
         authors[] = {"Curious"};
