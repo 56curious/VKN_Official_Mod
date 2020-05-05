@@ -37,9 +37,9 @@ _3denCam setVectorDirAndUp [
 ];
 
 
-
+//Init tool and menus
 _sides = [West, East, Independent, Civilian];
-_sidesstr = ["WEST", "EAST", "INDEPENDENT", "CIVILIAN"];
+//Add sides to listbox
 { lbAdd [2100, str _x]; systemChat str _x; } forEach _sides;
 lbSetCurSel [2100, 0];
 
@@ -47,14 +47,36 @@ lbSetCurSel [2100, 0];
 lbadd [2101, "no override"];
 lbSetCurSel [2101, 0];
 
+//fnc to check side and then filter faction
 _fnc_factionChanged = {
-  _indx = lbCurSel 2100;
-  _curselected = lbText [2100, _indx];
-  systemChat _curselected;
-  _selectindex = _sidesstr find _curselected;
-  _curSelFac = [(_sides select 0)] call BIS_fnc_getFactions;
-  { lbadd [2101, str _x]; } forEach _curSelFac;
+  _index = lbCurSel 2100;
+  _curselected = lbText [2100, _index];
+  //get all factions in a side.
+  switch (toUpper _curselected) do {
+      case ("WEST"): {
+          _factionList = 1 call VKN_fnc_sideGetFaction;
+      };
+      case ("EAST"): {
+          _factionList = 0 call VKN_fnc_sideGetFaction;
+      };
+      case ("INDEPENDENT"): {
+          _factionList = 2 call VKN_fnc_sideGetFaction;
+      };
+      case ("CIVILIAN"): {
+          _factionList = 3 call VKN_fnc_sideGetFaction;
+      };
+      default {
+          systemChat "error with case, defaulting to west.";
+          _factionList = 1 call VKN_fnc_sideGetFaction;
+      };
+  };
 
+
+  //get the selected faction
+  { lbadd [2101, str _x]; } forEach _factionList;
+  _curSelFac = lbCurSel 2101;
+
+  //apply group
   _groups = [];
   _configgroups = "true" configClasses (configfile >> "CfgGroups" >> str _curSelFac >> lbText [2101, lbCurSel 2101] >> "Infantry");
   {
@@ -64,23 +86,17 @@ _fnc_factionChanged = {
   {	lbadd [2102, _x]	} forEach _groups;
 };
 
+//apply EH to button to reset on faction change
 ((findDisplay 348567) displayCtrl 2102) ctrlSetEventHandler ["LBSelChanged","['ListChange', _this] call _fnc_factionChanged"];
 
-lbadd [2100, "Currently unavailable"];
-lbSetCurSel [2100, 0];
-lbadd [2101, "Currently unavailable"];
-lbSetCurSel [2101, 0];
-lbadd [2102, "Currently unavailable"];
-lbSetCurSel [2102, 0];
-
-
-
+//Apply spectator settings
 _Specoptions = ["All Enabled", "All Disabled", "Freecam Disabled", "3pp Disabled", "Freecam only", "1pp Disabled"];
 { lbAdd [2103, _x] } forEach _Specoptions;
 lbSetCurSel [2103, 2];
 
+
 buttonSetAction [1600, "VKN_Template_Tool_Basic_Settings_Complete = true;"];
-waitUntil {VKN_Template_Tool_Basic_Settings_Complete isEqualTo true};
+waitUntil {VKN_Template_Tool_Basic_Settings_Complete == true};
 
 //_side = _sides select (_sides find lbCurSel 2100);
 _factions_option = lbCurSel 2101;
