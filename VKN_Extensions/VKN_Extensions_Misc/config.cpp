@@ -25,9 +25,6 @@ class CfgPatches {
             "A3_Map_Altis_Scenes",
             "A3_Map_VR_Scenes",
             "A3_Map_Malden_Scenes_F",
-            "ALiVE_intro",
-            "ALiVE_main",
-            "ALiVE_ui",
             "cba_settings",
             "FIR_AirWeaponSystem_US",
             "FIR_Baseplate"
