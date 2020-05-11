@@ -77,9 +77,13 @@ _fnc_sideChanged = {
   systemChat str lbText [2101, lbCurSel 2101];
 
   //get the selected faction
-  { lbadd [2101, str _x]; } forEach _factionList;
+  { lbadd [2101, _x]; } forEach _factionList;
 
-  waitUntil {str (lbText [2101, lbCurSel 2101]) != "";}; //Left off here: Wait until doesn't seem to wait. Perhaps assign a variable and update on the lb changing? Above seems to work, below untested
+  if ((lbText [2101, lbCurSel 2101]) in _factionList) then {
+    systemChat "something in the combobox from faction list";
+  };
+
+  waitUntil {(lbText [2101, lbCurSel 2101]) in _factionList}; //Left off here: Wait until doesn't seem to wait. Perhaps assign a variable and update on the lb changing? Above seems to work, below untested
 
   systemChat "waitUntil finished";
 
@@ -97,7 +101,7 @@ _fnc_sideChanged = {
 call _fnc_sideChanged;
 
 //apply EH to button to reset on faction change
-((findDisplay 348567) displayCtrl 2100) ctrlSetEventHandler ["LBSelChanged","call _fnc_sideChanged"];
+((findDisplay 348567) displayCtrl 2100) ctrlSetEventHandler ["LBSelChanged","call _fnc_sideChanged; "];
 
 //Apply spectator settings
 _Specoptions = ["All Enabled", "All Disabled", "Freecam Disabled", "3pp Disabled", "Freecam only", "1pp Disabled"];
