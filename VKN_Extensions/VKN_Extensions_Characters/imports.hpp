@@ -1436,3 +1436,66 @@ class B_GEN_Van_02_transport_F_OCimport_02 : B_GEN_Van_02_transport_F_OCimport_0
         class CargoTurret_03;
     };
 };
+
+
+
+///////
+/////// North Veitnam Army
+///////
+class O_T_Soldier_AT_F;
+class O_T_Soldier_AT_F_OCimport_01 : O_T_Soldier_AT_F { scope = 0; class EventHandlers; };
+class O_T_Soldier_AT_F_OCimport_02 : O_T_Soldier_AT_F_OCimport_01 { class EventHandlers; };
+
+class O_T_Officer_F;
+class O_T_Officer_F_OCimport_01 : O_T_Officer_F { scope = 0; class EventHandlers; };
+class O_T_Officer_F_OCimport_02 : O_T_Officer_F_OCimport_01 { class EventHandlers; };
+
+class O_T_Soldier_M_F;
+class O_T_Soldier_M_F_OCimport_01 : O_T_Soldier_M_F { scope = 0; class EventHandlers; };
+class O_T_Soldier_M_F_OCimport_02 : O_T_Soldier_M_F_OCimport_01 { class EventHandlers; };
+
+class O_T_Crew_F;
+class O_T_Crew_F_OCimport_01 : O_T_Crew_F { scope = 0; class EventHandlers; };
+class O_T_Crew_F_OCimport_02 : O_T_Crew_F_OCimport_01 { class EventHandlers; };
+
+
+
+
+
+
+
+///////
+/////// bbarmy
+///////
+
+class rhsgref_hidf_squadleader;
+class rhsgref_hidf_squadleader_OCimport_01 : rhsgref_hidf_squadleader { scope = 0; class EventHandlers; };
+class rhsgref_hidf_squadleader_OCimport_02 : rhsgref_hidf_squadleader_OCimport_01 { class EventHandlers; };
+
+class rhsgref_hidf_rifleman;
+class rhsgref_hidf_rifleman_OCimport_01 : rhsgref_hidf_rifleman { scope = 0; class EventHandlers; };
+class rhsgref_hidf_rifleman_OCimport_02 : rhsgref_hidf_rifleman_OCimport_01 { class EventHandlers; };
+
+class rhsgref_hidf_autorifleman;
+class rhsgref_hidf_autorifleman_OCimport_01 : rhsgref_hidf_autorifleman { scope = 0; class EventHandlers; };
+class rhsgref_hidf_autorifleman_OCimport_02 : rhsgref_hidf_autorifleman_OCimport_01 { class EventHandlers; };
+
+class rhsgref_cdf_b_reg_grenadier_rpg;
+class rhsgref_cdf_b_reg_grenadier_rpg_OCimport_01 : rhsgref_cdf_b_reg_grenadier_rpg { scope = 0; class EventHandlers; };
+class rhsgref_cdf_b_reg_grenadier_rpg_OCimport_02 : rhsgref_cdf_b_reg_grenadier_rpg_OCimport_01 { class EventHandlers; };
+
+class rhsgref_hidf_medic;
+class rhsgref_hidf_medic_OCimport_01 : rhsgref_hidf_medic { scope = 0; class EventHandlers; };
+class rhsgref_hidf_medic_OCimport_02 : rhsgref_hidf_medic_OCimport_01 { class EventHandlers; };
+
+class rhsgref_hidf_marksman;
+class rhsgref_hidf_marksman_OCimport_01 : rhsgref_hidf_marksman { scope = 0; class EventHandlers; };
+class rhsgref_hidf_marksman_OCimport_02 : rhsgref_hidf_marksman_OCimport_01 { class EventHandlers; };
+
+class rhsgref_hidf_machinegunner;
+class rhsgref_hidf_machinegunner_OCimport_01 : rhsgref_hidf_machinegunner { scope = 0; class EventHandlers; };
+class rhsgref_hidf_machinegunner_OCimport_02 : rhsgref_hidf_machinegunner_OCimport_01 { class EventHandlers; };
+
+class rhsgref_hidf_crewman;
+class rhsgref_hidf_crewman_OCimport_01 : rhsgref_hidf_crewman { scope = 0; class EventHandlers; };
+class rhsgref_hidf_crewman_OCimport_02 : rhsgref_hidf_crewman_OCimport_01 { class EventHandlers; };

@@ -397,7 +397,23 @@ class CfgPatches {
             "I_SC_Death_Guard_Leader_01",
             "I_SC_Soldado_RPG_01",
             "I_SC_Soldado_AR_01",
-            "I_SC_Death_Guard_AT_01"
+            "I_SC_Death_Guard_AT_01",
+
+            "O_North_VietnamArmy_Rifleman_01",
+            "O_North_VietnamArmy_Automatic_Rifleman_01",
+            "O_North_VietnamArmy_AT_Specialist_01",
+            "O_North_VietnamArmy_Officer_01",
+            "O_North_VietnamArmy_Marksman_01",
+            "O_North_VietnamArmy_Crewman_01",
+
+            "B_BArmy_Squad_leader_01",
+            "B_BArmy_Rifleman_01",
+            "B_BArmy_Auto_Rifleman_01",
+            "B_BArmy_AT_Specialist_01",
+            "B_BArmy_Combat_Life_Saver_01",
+            "B_BArmy_Marksman_01",
+            "B_BArmy_Heavy_Gunner_01",
+            "B_BArmy_Crewman_01"
         };
         weapons[] = {};
         requiredVersion = 1.50;
@@ -459,7 +475,20 @@ class CfgPatches {
             "ace_interact_menu",
             "ace_main",
             "rhsgref_c_troops",
-            "rhs_cti_insurgents"
+            "rhs_cti_insurgents",
+            "A3_Characters_F_Exp",
+            "asr_ai3_skills",
+            "asr_ai3_danger",
+            "hlcweapons_AUG",
+            "ace_gforces",
+            "ace_goggles",
+            "ace_movement",
+            "ace_medical_feedback",
+            "A3_Data_F",
+            "A3_Data_F_Curator",
+            "A3_Air_F_Heli",
+            "CUP_Worlds_DustEffects",
+            "ace_thermals"
         };
         author = "Curious";
         authors[] = {"Curious"};
@@ -488,6 +517,8 @@ class cfgFactionClasses {
     #include "cfgFactionClasses\CSM.hpp"
     #include "cfgFactionClasses\Greek_Police.hpp"
     #include "cfgFactionClasses\Abu_Bakr.hpp"
+    #include "cfgFactionClasses\NorthVietnamArmy.hpp"
+    #include "cfgFactionClasses\bbarmy.hpp"
 
 };
 
@@ -512,6 +543,7 @@ class cfgVehicles {
     #include "cfgVehicles\CSAA.hpp"
     #include "cfgVehicles\CSM.hpp"
     #include "cfgVehicles\Abu_Bakr.hpp"
+    #include "cfgVehicles\NorthVietnamArmy.hpp"
 
     //West
     #include "cfgVehicles\Viking_PMC_ODIN.hpp"
@@ -527,6 +559,7 @@ class cfgVehicles {
     #include "cfgVehicles\Viking_PMC_AEGIR.hpp"
     #include "cfgVehicles\Viking_PMC_BALDER.hpp"
     #include "cfgVehicles\Greek_Police.hpp"
+    #include "cfgVehicles\bbarmy.hpp"
 
 };
 
@@ -547,6 +580,7 @@ class cfgGroups {
         #include "cfgGroups\CSAA.hpp"
         #include "cfgGroups\CSM.hpp"
         #include "cfgGroups\Abu_Bakr.hpp"
+        #include "cfgGroups\NorthVietnamArmy.hpp"
     };
 
     class West {
@@ -561,5 +595,6 @@ class cfgGroups {
         #include "cfgGroups\Viking_PMC_FENRIR.hpp"
         #include "cfgGroups\Viking_PMC_AEGIR.hpp"
         #include "cfgGroups\Viking_PMC_BALDER.hpp"
+        #include "cfgGroups\bbarmy.hpp"
     };
 };

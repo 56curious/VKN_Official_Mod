@@ -1,5 +1,5 @@
 class O_CHArmy_WDL {
-    name = "C.S.L.A";
+    name = "VKN - C.S.L.A";
 
     class Infantry {
         name = "Infantry";
