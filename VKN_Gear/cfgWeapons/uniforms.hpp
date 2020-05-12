@@ -1,5 +1,5 @@
 
-//Base classes
+// Base classes //
 	class VKN_CombatUniform_NonRolled_base: Uniform_Base {
 		scope = 0;
 		model = "\A3\Characters_F\Common\Suitpacks\suitpack_universal_F.p3d";
@@ -37,7 +37,53 @@
 		hiddenSelections[] = {"camo1","camo2"};
 	};
 
-//Rolled/NonRolled
+	class VKN_Functionary_Base: Uniform_Base {
+		picture = "\VKN_Misc\VKN_Logo_Inverted.paa";
+		scope = 0;
+		model = "\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+		hiddenSelections[] = {"camo"};
+	};
+// Suits //
+
+class VKN_Functionary_1: VKN_Functionary_Base {
+	scope = 2;
+	Author = "Shagger";
+	displayName = "[VKN] Functionary Suit (Dark Grey + Red Tie)";
+	hiddenSelectionsTextures[]={"\VKN_Gear\data\Uniforms\functionary1_co.paa"};
+	class ItemInfo: UniformItem	{
+		uniformModel="-";
+		uniformClass="VKN_Dummy_Functionary_1";
+		containerClass="Supply40";
+		mass=40;
+	};
+};
+class VKN_Functionary_2: VKN_Functionary_Base {
+	scope = 2;
+	Author = "Shagger";
+	displayName = "[VKN] Functionary Suit (Dark Red + Black Tie)";
+	hiddenSelectionsTextures[]={"\VKN_Gear\data\Uniforms\functionary2_co.paa"};
+	class ItemInfo: UniformItem	{
+		uniformModel="-";
+		uniformClass="VKN_Dummy_Functionary_2";
+		containerClass="Supply40";
+		mass=40;
+	};
+};
+class VKN_Functionary_3: VKN_Functionary_Base {
+	scope = 2;
+	Author = "Shagger";
+	displayName = "[VKN] Functionary Suit (Dark Blue + Blue Tie)";
+	hiddenSelectionsTextures[]={"\VKN_Gear\data\Uniforms\functionary3_co.paa"};
+	class ItemInfo: UniformItem	{
+		uniformModel="-";
+		uniformClass="VKN_Dummy_Functionary_3";
+		containerClass="Supply40";
+		mass=40;
+	};
+};
+
+// Rolled/NonRolled //
+
 class VKN_MTP_Woodland_Full_Rolled: VKN_CombatUniform_RolledUP_base {
 	scope = 2;
 	Author = "Eric McHogan";
