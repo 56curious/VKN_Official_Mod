@@ -39,7 +39,7 @@ class cfgVehicles {
 	class B_Kitbag_rgr;
 	class B_Soldier_F;
 	class B_GEN_Soldier_F;
-  class B_Soldier_base_F;
+  	class B_Soldier_base_F;
 	class B_Carryall_Base;
 	class B_AssaultPack_Base;
 	class B_Soldier_lite_F;
@@ -48,7 +48,7 @@ class cfgVehicles {
  	class O_V_Soldier_Viper_F;
 	class O_Soldier_F;
 	class C_Story_Mechanic_01_F;
-  class B_G_Soldier_F;
+  	class B_G_Soldier_F;
 
 	class ReammoBox_F;
 	class ReammoBox;
