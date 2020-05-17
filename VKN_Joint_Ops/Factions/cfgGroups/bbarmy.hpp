@@ -1,5 +1,5 @@
 class B_BArmy {
-    name = "3CD Atlantic";
+    name = "VKN - 3CD Atlantic";
 
     class Infantry {
         name = "Infantry";
@@ -426,5 +426,5 @@ class B_BArmy {
                 vehicle = "B_BArmy_Crewman_01";
             };
         };
-
+    };
 };

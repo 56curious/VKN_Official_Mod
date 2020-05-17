@@ -62,15 +62,16 @@ class cfgFactionClasses {
 };
 
 class CfgVehicles {
-  #include "\VKN_Joint_Ops\Factions\cfgVehicles\imports.hpp"
+  #include "\VKN_Joint_Ops\Factions\imports.hpp"
 
+  #include "\VKN_Joint_Ops\Factions\cfgVehicles\bbarmy.hpp"
 
 };
 
 class cfgGroups {
 
   class West {
-    ##include "\VKN_Joint_Ops\Factions\cfgGroups\bbarmy.hpp"
+    #include "\VKN_Joint_Ops\Factions\cfgGroups\bbarmy.hpp"
   };
 
 
