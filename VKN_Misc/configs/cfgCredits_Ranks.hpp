@@ -3,7 +3,7 @@ item1[] = {
         "Viking"
     },
     {
-      "DJ_ToyBoy"
+      "DJ_ToyBoy",
       "Raptor",
       "Owndragoon",
       "Jonmo",
