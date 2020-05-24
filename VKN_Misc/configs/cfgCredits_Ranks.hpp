@@ -144,7 +144,6 @@ item6[] = {
     },
     {
         "Bane"
-
     }
 };
 item7[] = {
@@ -158,6 +157,31 @@ item7[] = {
       "TheGeneral",
       "PoxxI",
       "V3XEN"
+
+    }
+};
+item8[] = {
+    {
+        "Recruit"
+    },
+    {
+      "Goblin",
+      "Zaj",
+      "Terra",
+      "icedemon716",
+      "PainlessViking",
+      "OneAsterisk",
+      "IAmTheGaz",
+      "Falcon"
+
+    }
+};
+item9[] = {
+    {
+        "Trial"
+    },
+    {
+      "TheSuccDweller"
 
     }
 };
