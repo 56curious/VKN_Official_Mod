@@ -3,13 +3,14 @@ item1[] = {
         "Viking"
     },
     {
-      "DJ_ToyBoy",
+      "DJ_ToyBoy"
+      "Raptor",
+      "Owndragoon",
       "Jonmo",
       "Luke",
-      "Ray",
       "Curious",
       "Happy",
-      "J. Bryan",
+      "J.Bryan",
       "LiftsHeavyThings",
       "Swuppah",
       "Arquilius",
@@ -17,22 +18,24 @@ item1[] = {
       "LanceVance",
       "Tom07904",
       "DoTheHump",
+      "Johnny",
       "Havok",
       "Skywalker",
+      "Beachman92",
       "Lukas Alexander",
-      "Project Purple",
       "Michal",
-      "PainlessViking",
       "Alliaz",
       "pantheruler",
       "Paul",
       "DeputyDawg",
+      "Sir.Franky",
       "Supr3mo",
       "Loco",
-      "jC",
+      "TheSnipe",
+      "WELSHIE",
       "Burkal",
       "Arcstone",
-      "Sley",
+      "󠇰󠇰Falk",
       "HitAndStand",
       "Ciaran",
       "Sgt.Parker",
@@ -40,25 +43,25 @@ item1[] = {
       "Garnet",
       "TheGeneral",
       "aryay",
+      "Kissingya",
+      "shadowbolt bloodmane",
       "DreadRaven",
       "PoxxI",
       "Max Kupleoni",
-      "VoxilFreak",
+      "Voxil",
       "V3XEN",
       "The_Apothecary",
       "Neomech",
-      "Black",
       "DerGamer",
       "Shagger",
-      "Minipac",
+      "Kirk",
       "Moose",
       "Bane",
       "Winters",
       "KayPee",
-      "mukkel312",
-      "Niche_Gribbo",
+      "Spade",
       "ragingpiano",
-      "Fury"
+      "BrikCZ"
     }
 };
 item2[] = {
@@ -66,18 +69,18 @@ item2[] = {
         "Berserker"
     },
     {
-        "Ray",
-        "Apple",
-        "Lukas Alexander",
-        "Michal",
-        "pantheruler",
-        "Supr3mo",
-        "Loco",
-        "Arcstone",
-        "Maxy",
-        "Neomech",
-        "Minipac",
-        "KeyPee"
+      "Owndragoon",
+      "J.Bryan",
+      "Johnny",
+      "Lukas Alexander",
+      "pantheruler",
+      "Loco",
+      "TheSnipe",
+      "Arcstone",
+      "Ciaran",
+      "Garnet",
+      "Neomech",
+      "DerGamer"
     }
 };
 item3[] = {
@@ -85,19 +88,23 @@ item3[] = {
         "Valkyrie"
     },
     {
-        "Curious",
-        "Happy",
-        "LiftsHeavyThings",
-        "Arquilius",
-        "LanceVance",
-        "DoTheHump",
-        "DeputyDawg",
-        "HitAndStand",
-        "Ciaran",
-        "Sgt.Parker",
-        "VoxilFreak",
-        "Winters",
-        "ragingpiano"
+      "Curious",
+      "Happy",
+      "LiftsHeavyThings",
+      "Arquilius",
+      "Apple",
+      "LanceVance",
+      "Tom07904",
+      "DoTheHump",
+      "Michal",
+      "DeputyDawg",
+      "Supr3mo",
+      "HitAndStand",
+      "Sgt.Parker",
+      "DreadRaven",
+      "Max Kupleoni",
+      "Voxil",
+      "Winters"
     }
 };
 item4[] = {
@@ -105,11 +112,13 @@ item4[] = {
         "Aesir"
     },
     {
-        "DJ_ToyBoy",
-        "Jonmo",
-        "Luke",
-        "aryay",
-        "The_Apothecary"
+      "DJ_ToyBoy",
+      "Raptor",
+      "Jonmo",
+      "Luke",
+      "aryay",
+      "The_Apothecary",
+      "KayPee"
     }
 };
 item5[] = {
@@ -117,22 +126,38 @@ item5[] = {
         "Hersir"
     },
     {
-        "Havok",
-        "Alliaz",
-        "Burkal",
-        "Skywalker",
-        "PoxxI",
-        "The General",
-        "V3XEN",
-        "Shagger"
+      "Havok",
+      "Skywalker",
+      "Alliaz",
+      "Paul",
+      "Burkal",
+      "TheGeneral",
+      "PoxxI",
+      "V3XEN",
+      "Shagger",
+      "ragingpiano"
     }
 };
 item6[] = {
     {
-        "Jarl"
+        "Jarl (Founder)"
     },
     {
         "Bane"
+
+    }
+};
+item7[] = {
+    {
+        "Old Guard"
+    },
+    {
+      "Raptor",
+      "Paul",
+      "DeputyDawg",
+      "TheGeneral",
+      "PoxxI",
+      "V3XEN"
 
     }
 };
