@@ -21,8 +21,7 @@ class CfgPatches {
 		};
 
 		requiredAddons[] = {
-			"AS_365",
-      "Luke_Base"
+			"AS_365"
 		};
 	};
 };
