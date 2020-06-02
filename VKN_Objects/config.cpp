@@ -13,12 +13,6 @@ class CfgPatches {
       "B_VKN_AS_565_PMC_01",
       "B_VKN_AS_565_PMC_02",
 
-      "B_VKN_EC135_Unarmed_Black_1",
-      "B_VKN_EC135_Unarmed_Black_2",
-      "B_VKN_EC135_Armed_Black_1",
-      "B_VKN_EC135_Medical_Basic_1",
-      "B_VKN_EC135_Medical_Alternative_1",
-
       "B_VKN_tahoe_08_PMC_01",
       "B_VKN_tahoe_ltz_08_PMC_01",
       "B_VKN_suburban_PMC_01",
@@ -37,8 +31,6 @@ class CfgEditorCategories {
 	class VKN_Units {
 		displayName = "Viking Units";
 	};
-	delete ION_Choppers;
-	delete ION;
 };
 
 class CfgEditorSubcategories {
