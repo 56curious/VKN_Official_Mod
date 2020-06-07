@@ -74,34 +74,26 @@ _fnc_sideChanged = {
       };
   };
 
-  systemChat str lbText [2101, lbCurSel 2101];
-
   //get the selected faction
   { lbadd [2101, _x]; } forEach _factionList;
 
-  if ((lbText [2101, lbCurSel 2101]) in _factionList) then {
-    systemChat "something in the combobox from faction list";
-  };
+  lbSetCurSel [2101, 0];
 
-  waitUntil {(lbText [2101, lbCurSel 2101]) in _factionList}; //Left off here: Wait until doesn't seem to wait. Perhaps assign a variable and update on the lb changing? Above seems to work, below untested
-
-  systemChat "waitUntil finished";
+  waitUntil {(lbText [2101, lbCurSel 2101]) in _factionList};
 
   _curSelFac = lbText [2101, lbCurSel 2101];
   //apply group
-  //_groups = [];
-  //_configgroups = "true" configClasses (configfile >> "CfgGroups" >> _side >> _curSelFac >> "Infantry");
-  //systemChat str _configgroups;
-  //{
-    //_groups pushBackUnique ([_x, "", true] call BIS_fnc_configPath);
-  //} forEach _configgroups;
-  //{	lbadd [2102, _x]	} forEach _groups;
+  ("true" configClasses (configfile >> "CfgGroups" >> _side >> _curSelFac >> "Infantry")) apply {
+     lbadd [2102, getText( _x >> "name")];
+  };
 };
-
 call _fnc_sideChanged;
 
 //apply EH to button to reset on faction change
 ((findDisplay 348567) displayCtrl 2100) ctrlSetEventHandler ["LBSelChanged","call _fnc_sideChanged; "];
+((findDisplay 348567) displayCtrl 2101) ctrlSetEventHandler ["LBSelChanged","call _fnc_sideChanged; "];
+((findDisplay 348567) displayCtrl 2102) ctrlSetEventHandler ["LBSelChanged","call _fnc_sideChanged; "];
+
 
 //Apply spectator settings
 _Specoptions = ["All Enabled", "All Disabled", "Freecam Disabled", "3pp Disabled", "Freecam only", "1pp Disabled"];
@@ -110,9 +102,8 @@ lbSetCurSel [2103, 2];
 
 
 buttonSetAction [1600, "VKN_Template_Tool_Basic_Settings_Complete = true;"];
-waitUntil {VKN_Template_Tool_Basic_Settings_Complete == true};
+waitUntil {VKN_Template_Tool_Basic_Settings_Complete isEqualTo true};
 
-_side = _sides select (_sides find lbCurSel 2100);
 _factions_option = lbCurSel 2101;
 _squads_option = lbCurSel 2102;
 _spectate_option = 2103;
