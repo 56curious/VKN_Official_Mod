@@ -575,6 +575,7 @@ class cfgWeapons {
 			};
 		};
 	};
+	
 	class VKN_Helmet_M98: rhsusf_opscore_cover
     {
         scope = 2;
@@ -587,8 +588,56 @@ class cfgWeapons {
         displayName = "[VKN] FAST Ballistic M98 (Headset)";
         hiddenSelectionsTextures[] = {"\VKN_Gear\data\headgear\maritime_m98.paa","\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\data\comtac_fg_co.paa","","","\VKN_Gear\data\headgear\m98_cover.paa",""};
     };
+class VKN_Helmet_ranger: rhsusf_opscore_cover
+    {
+        scope = 2;
+        displayName = "[VKN] FAST Ballistic Ranger";
+        hiddenSelectionsTextures[] = {"\VKN_Gear\data\headgear\maritime_ranger.paa","","","","\VKN_Gear\data\headgear\ranger_cover.paa",""};
+    };
+    class VKN_Helmet_ranger_HS: rhsusf_opscore_cover
+    {
+        scope = 2;
+        displayName = "[VKN] FAST Ballistic Ranger (Headset)";
+        hiddenSelectionsTextures[] = {"\VKN_Gear\data\headgear\maritime_ranger.paa","\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\data\comtac_fg_co.paa","","","\VKN_Gear\data\headgear\ranger_cover.paa",""};
+    };
+    
+class VKN_Helmet_od: rhsusf_opscore_cover
+    {
+        scope = 2;
+        displayName = "[VKN] FAST Ballistic OD";
+        hiddenSelectionsTextures[] = {"\VKN_Gear\data\headgear\maritime_OD.paa","","","","\VKN_Gear\data\headgear\OD_cover.paa",""};
+    };
+    class VKN_Helmet_od_HS: rhsusf_opscore_cover
+    {
+        scope = 2;
+        displayName = "[VKN] FAST Ballistic OD (Headset)";
+        hiddenSelectionsTextures[] = {"\VKN_Gear\data\headgear\maritime_OD.paa","\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\data\comtac_fg_co.paa","","","\VKN_Gear\data\headgear\OD_cover.paa",""};
+    };
+class VKN_Helmet_oga: rhsusf_opscore_cover
+    {
+        scope = 2;
+        displayName = "[VKN] FAST Ballistic OGA";
+        hiddenSelectionsTextures[] = {"\VKN_Gear\data\headgear\maritime_OGA.paa","","","","\VKN_Gear\data\headgear\OGA_cover.paa",""};
+    };
+    class VKN_Helmet_oga_HS: rhsusf_opscore_cover
+    {
+        scope = 2;
+        displayName = "[VKN] FAST Ballistic OGA (Headset)";
+        hiddenSelectionsTextures[] = {"\VKN_Gear\data\headgear\maritime_OGA.paa","\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\data\comtac_co.paa","","","\VKN_Gear\data\headgear\OGA_cover.paa",""};
+    };
+class VKN_Helmet_multicam: rhsusf_opscore_cover
+    {
+        scope = 2;
+        displayName = "[VKN] FAST Ballistic Multicam";
+        hiddenSelectionsTextures[] = {"\VKN_Gear\data\headgear\maritime_OGA.paa","","","","\VKN_Gear\data\headgear\Multicam_cover.paa",""};
+    };
+    class VKN_Helmet_multicam_HS: rhsusf_opscore_cover
+    {
+        scope = 2;
+        displayName = "[VKN] FAST Ballistic Multicam (Headset)";
+        hiddenSelectionsTextures[] = {"\VKN_Gear\data\headgear\maritime_OGA.paa","\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\data\comtac_co.paa","","","\VKN_Gear\data\headgear\Multicam_cover.paa",""};
+    };
 };
-
 
 class CfgGlasses {
 	class G_Combat;

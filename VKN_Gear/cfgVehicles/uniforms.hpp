@@ -303,6 +303,12 @@
 		scope=1;
 		model="\A3\characters_F\BLUFOR\b_soldier_02.p3d";
 		hiddenSelections[]= {"camo","camo2","insignia"};
+		hiddenSelectionsTextures[]={"\VKN_Gear\data\Uniforms\vkn_fleece_Green_co.paa","\VKN_Gear\data\Uniforms\vkn_basicbody_grey_co.paa"};
+	};
+	class VKN_Dummy_B_Tshirt_Multi: VKN_Dummy_B_NonRolled_Base {
+		scope=1;
+		model="\A3\characters_F\BLUFOR\b_soldier_02.p3d";
+		hiddenSelections[]= {"camo","camo2","insignia"};
 		hiddenSelectionsTextures[]={"\VKN_Gear\data\Uniforms\vkn_fleece_Tan_co.paa","\VKN_Gear\data\Uniforms\vkn_basicbody_grey_co.paa"};
 	};
 	class VKN_Dummy_B_TshirtB_Green: VKN_Dummy_B_NonRolled_Base {
@@ -315,8 +321,15 @@
 		scope=1;
 		model="\A3\characters_F\BLUFOR\b_soldier_02.p3d";
 		hiddenSelections[]= {"camo","camo2","insignia"};
+		hiddenSelectionsTextures[]={"\VKN_Gear\data\Uniforms\vkn_fleece_Green_co.paa","\a3\characters_f\Common\Data\basicbody_black_co.paa"};
+    };
+    class VKN_Dummy_B_TshirtB_Multi: VKN_Dummy_B_NonRolled_Base {
+		scope=1;
+		model="\A3\characters_F\BLUFOR\b_soldier_02.p3d";
+		hiddenSelections[]= {"camo","camo2","insignia"};
 		hiddenSelectionsTextures[]={"\VKN_Gear\data\Uniforms\vkn_fleece_Tan_co.paa","\a3\characters_f\Common\Data\basicbody_black_co.paa"};
     };
+    
 //
 //Viper
 
@@ -572,6 +585,47 @@ class VKN_Dummy_I_Shirt_DDPM_1: VKN_Dummy_Button_Up_Base {
 	hiddenSelectionsTextures[] = {"\A3\Characters_F_EPB\Guerrilla\Data\ig_guerrilla5_1_co.paa","\VKN_Gear\data\uniforms\vkn_ddpm_shirt_co.paa"};
 };
 
+///// Gorka
+
+class VKN_Dummy_mntsuit_Brown_Khaki: O_R_Gorka_base_F {
+	author = "Jonmo";
+	hiddenSelectionsTextures[] = {"\vkn_gear\data\uniforms\vkn_mntsuit_BrownKhaki_co.paa"};
+};
+
+class VKN_Dummy_mntsuit_Brown_Jeans: O_R_Gorka_base_F {
+	author = "Jonmo";
+	hiddenSelectionsTextures[] = {"\vkn_gear\data\uniforms\vkn_mntsuit_BrownJeans_co.paa"};
+};
+
+class VKN_Dummy_mntsuit_Green_Jeans: O_R_Gorka_base_F {
+	author = "Jonmo";
+	hiddenSelectionsTextures[] = {"\vkn_gear\data\uniforms\vkn_mntsuit_GreenJeans_co.paa"};
+};
+
+class VKN_Dummy_mntsuit_Green_Khaki: O_R_Gorka_base_F {
+	author = "Jonmo";
+	hiddenSelectionsTextures[] = {"\vkn_gear\data\uniforms\vkn_mntsuit_GreenKhaki_co.paa"};
+};
+
+class VKN_Dummy_mntsuit_Green_Multicam: O_R_Gorka_base_F {
+	author = "Jonmo";
+	hiddenSelectionsTextures[] = {"\vkn_gear\data\uniforms\vkn_mntsuit_GreenMulticam_co.paa"};
+};
+
+class VKN_Dummy_mntsuit_Blue_Jeans: O_R_Gorka_base_F {
+	author = "Jonmo";
+	hiddenSelectionsTextures[] = {"\vkn_gear\data\uniforms\vkn_mntsuit_BlueJeans_co.paa"};
+};
+
+class VKN_Dummy_mntsuit_Blue_Khaki: O_R_Gorka_base_F {
+	author = "Jonmo";
+	hiddenSelectionsTextures[] = {"\vkn_gear\data\uniforms\vkn_mntsuit_BlueKhaki_co.paa"};
+};
+
+class VKN_Dummy_mntsuit_Blue_Multicam: O_R_Gorka_base_F {
+	author = "Jonmo";
+	hiddenSelectionsTextures[] = {"\vkn_gear\data\uniforms\vkn_mntsuit_BlueMulticam_co.paa"};
+};
 
 ///// civ
 
@@ -703,7 +757,7 @@ class VKN_Dummy_Shirt_BlueHawaii_AOR1_1: VKN_Dummy_Button_Up_Base // Blue Hawaii
 	scope = 1;
 	model = "\A3\Characters_F_EPB\Guerrilla\ig_guerrilla5_1.p3d";
 	hiddenSelections[] = {"camo1","camo2","insignia"};
-	hiddenSelectionsTextures[] = {"\vkn_gear\data\uniforms\vkn_bluehawaii_shirt_co.paa","\VSM_AOR1\data\VSM_ARD_AOR1_1.paa"};
+	hiddenSelectionsTextures[] = {"\vkn_gear\data\uniforms\vkn_bluehawaii_shirt_co.paa","\VKN_Gear\data\Uniforms\vkn_fleece_Dark_co.paa"};
 };
 class VKN_Dummy_Shirt_BlueHawaii_aplblack_1: VKN_Dummy_Button_Up_Base
 {
@@ -730,7 +784,7 @@ class VKN_Dummy_Shirt_BlueHawaii_Multicam_1: VKN_Dummy_Button_Up_Base
 	scope = 1;
 	model = "\A3\Characters_F_EPB\Guerrilla\ig_guerrilla5_1.p3d";
 	hiddenSelections[] = {"camo1","camo2","insignia"};
-	hiddenSelectionsTextures[] = {"\vkn_gear\data\uniforms\vkn_redhawaii_shirt_co.paa","\VSM_AOR1\data\VSM_ARD_AOR1_1.paa"};
+	hiddenSelectionsTextures[] = {"\vkn_gear\data\uniforms\vkn_redhawaii_shirt_co.paa","\VKN_Gear\data\Uniforms\vkn_fleece_Dark_co.paa"};
 };
 class VKN_Dummy_Shirt_RedHawaii_aplblack_1: VKN_Dummy_Button_Up_Base
 {
@@ -757,7 +811,7 @@ class VKN_Dummy_Shirt_RedHawaii_Multicam_1: VKN_Dummy_Button_Up_Base
 	scope = 1;
 	model = "\A3\Characters_F_EPB\Guerrilla\ig_guerrilla5_1.p3d";
 	hiddenSelections[] = {"camo1","camo2","insignia"};
-	hiddenSelectionsTextures[] = {"\vkn_gear\data\uniforms\vkn_Brighthawaii_shirt_co.paa","\VSM_AOR1\data\VSM_ARD_AOR1_1.paa"};
+	hiddenSelectionsTextures[] = {"\vkn_gear\data\uniforms\vkn_Brighthawaii_shirt_co.paa","\VKN_Gear\data\Uniforms\vkn_fleece_Dark_co.paa"};
 };
 class VKN_Dummy_Shirt_BrightHawaii_aplblack_1: VKN_Dummy_Button_Up_Base
 {

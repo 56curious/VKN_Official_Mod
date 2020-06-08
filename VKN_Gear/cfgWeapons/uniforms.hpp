@@ -499,6 +499,103 @@ class VKN_MTP_Tan_Khaki_NonRolled: VKN_CombatUniform_NonRolled_base {
 			mass=40;
 		};
 	};
+	
+//Mountain Suit
+	class VKN_I_mntsuit_Brown_Khaki: U_O_R_Gorka_01_F {
+		author="Jonmo";
+		displayName="[VKN] Mountain Suit (Brown/Khaki)";
+		model = "\a3\Characters_F_Enoch\Uniforms\Gorka_01_F.p3d";
+		hiddenSelectionsTextures[]={"\VKN_Gear\data\Uniforms\vkn_mntsuit_BrownKhaki_co.paa"};
+		class ItemInfo: UniformItem	{
+			uniformClass="VKN_Dummy_mntsuit_Brown_Khaki";
+			containerClass="Supply40";
+			mass=40;
+		};
+	};
+	
+	class VKN_I_mntsuit_Brown_Jeans: U_O_R_Gorka_01_F {
+		author="Jonmo";
+		displayName="[VKN] Mountain Suit (Brown/Jeans)";
+		model = "\a3\Characters_F_Enoch\Uniforms\Gorka_01_F.p3d";
+		hiddenSelectionsTextures[]={"\VKN_Gear\data\Uniforms\vkn_mntsuit_BrownJeans_co.paa"};
+		class ItemInfo: UniformItem	{
+			uniformClass="VKN_Dummy_mntsuit_Brown_Jeans";
+			containerClass="Supply40";
+			mass=40;
+		};
+	};
+	
+	class VKN_I_mntsuit_Green_Jeans: U_O_R_Gorka_01_F {
+		author="Jonmo";
+		displayName="[VKN] Mountain Suit (Green/Jeans)";
+		model = "\a3\Characters_F_Enoch\Uniforms\Gorka_01_F.p3d";
+		hiddenSelectionsTextures[]={"\VKN_Gear\data\Uniforms\vkn_mntsuit_GreenJeans_co.paa"};
+		class ItemInfo: UniformItem	{
+			uniformClass="VKN_Dummy_mntsuit_Green_Jeans";
+			containerClass="Supply40";
+			mass=40;
+		};
+	};
+	
+	class VKN_I_mntsuit_Green_Khaki: U_O_R_Gorka_01_F {
+		author="Jonmo";
+		displayName="[VKN] Mountain Suit (Green/Khaki)";
+		model = "\a3\Characters_F_Enoch\Uniforms\Gorka_01_F.p3d";
+		hiddenSelectionsTextures[]={"\VKN_Gear\data\Uniforms\vkn_mntsuit_GreenKhaki_co.paa"};
+		class ItemInfo: UniformItem	{
+			uniformClass="VKN_Dummy_mntsuit_Green_Khaki";
+			containerClass="Supply40";
+			mass=40;
+		};
+	};
+	
+	class VKN_I_mntsuit_Green_Multicam: U_O_R_Gorka_01_F {
+		author="Jonmo";
+		displayName="[VKN] Mountain Suit (Green/Multicam)";
+		model = "\a3\Characters_F_Enoch\Uniforms\Gorka_01_F.p3d";
+		hiddenSelectionsTextures[]={"\VKN_Gear\data\Uniforms\vkn_mntsuit_GreenMulticam_co.paa"};
+		class ItemInfo: UniformItem	{
+			uniformClass="VKN_Dummy_mntsuit_Green_Multicam";
+			containerClass="Supply40";
+			mass=40;
+		};
+	};
+	
+	class VKN_I_mntsuit_Blue_Jeans: U_O_R_Gorka_01_F {
+		author="Jonmo";
+		displayName="[VKN] Mountain Suit (Dark/Jeans)";
+		model = "\a3\Characters_F_Enoch\Uniforms\Gorka_01_F.p3d";
+		hiddenSelectionsTextures[]={"\VKN_Gear\data\Uniforms\vkn_mntsuit_BlueJeans_co.paa"};
+		class ItemInfo: UniformItem	{
+			uniformClass="VKN_Dummy_mntsuit_Blue_Jeans";
+			containerClass="Supply40";
+			mass=40;
+		};
+	};
+
+    class VKN_I_mntsuit_Blue_Khaki: U_O_R_Gorka_01_F {
+		author="Jonmo";
+		displayName="[VKN] Mountain Suit (Dark/Khaki)";
+		model = "\a3\Characters_F_Enoch\Uniforms\Gorka_01_F.p3d";
+		hiddenSelectionsTextures[]={"\VKN_Gear\data\Uniforms\vkn_mntsuit_BlueKhaki_co.paa"};
+		class ItemInfo: UniformItem	{
+			uniformClass="VKN_Dummy_mntsuit_Blue_Khaki";
+			containerClass="Supply40";
+			mass=40;
+		};
+	};
+	
+	class VKN_I_mntsuit_Blue_Multicam: U_O_R_Gorka_01_F {
+		author="Jonmo";
+		displayName="[VKN] Mountain Suit (Dark/Multicam)";
+		model = "\a3\Characters_F_Enoch\Uniforms\Gorka_01_F.p3d";
+		hiddenSelectionsTextures[]={"\VKN_Gear\data\Uniforms\vkn_mntsuit_BlueMulticam_co.paa"};
+		class ItemInfo: UniformItem	{
+			uniformClass="VKN_Dummy_mntsuit_Blue_Multicam";
+			containerClass="Supply40";
+			mass=40;
+		};
+	};
 
 //T shirts
 
@@ -544,6 +641,20 @@ class VKN_MTP_Tan_Khaki_NonRolled: VKN_CombatUniform_NonRolled_base {
 			mass=40;
 		};
 	};
+	
+	class VKN_CombatUniform_Tshirt_Multi: VKN_CombatUniform_NonRolled_base {
+		scope=2;
+		Author = "Jonmo";
+		picture = "\VKN_Misc\VKN_Logo_Inverted.paa";
+		displayName="[VKN] Combat Uniform - T-Shirt (Multicam)";
+		model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+		class ItemInfo: UniformItem {
+			uniformModel="-";
+			uniformClass="VKN_Dummy_B_Tshirt_Multi";
+			containerClass="Supply40";
+			mass=40;
+		};
+	};
 
 	class VKN_CombatUniform_TshirtB_Green: VKN_CombatUniform_NonRolled_base {
 		scope=2;
@@ -568,6 +679,20 @@ class VKN_MTP_Tan_Khaki_NonRolled: VKN_CombatUniform_NonRolled_base {
 		class ItemInfo: UniformItem {
 			uniformModel="-";
 			uniformClass="VKN_Dummy_B_TshirtB_Tan";
+			containerClass="Supply40";
+			mass=40;
+		};
+	};
+	
+	class VKN_CombatUniform_TshirtB_Multi: VKN_CombatUniform_NonRolled_base {
+		scope=2;
+		Author = "Jonmo";
+		picture = "\VKN_Misc\VKN_Logo_Inverted.paa";
+		displayName="[VKN] Combat Uniform - T-Shirt Black (Multicam)";
+		model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+		class ItemInfo: UniformItem {
+			uniformModel="-";
+			uniformClass="VKN_Dummy_B_TshirtB_Multi";
 			containerClass="Supply40";
 			mass=40;
 		};
@@ -625,7 +750,7 @@ class VKN_MTP_Tan_Khaki_NonRolled: VKN_CombatUniform_NonRolled_base {
 	class VKN_CombatUniform_Fleece_Tan_Full_NonRolled: VKN_CombatUniform_NonRolled_base {
 		scope = 2;
 		Author = "Jonmo";
-		displayName = "[VKN] Fleece Jacket (Tan/Khaki)";
+		displayName = "[VKN] Fleece Jacket (Blue/Multicam)";
 		descriptionShort = "Tactical Fleece";
 		hiddenSelectionsMaterials[] = {"\VKN_Gear\data\Misc\vkn_fleece.rvmat"};
 		hiddenSelectionsTextures[]={"\VKN_Gear\data\Uniforms\vkn_fleece_Tan_co.paa"};
@@ -1272,12 +1397,12 @@ class VKN_CombatUniform_Shirt_BlueHawaii_AOR1_1: Uniform_Base //Blue Hawaii
 {
 	author = "Jonmo";
 	scope = 2;
-	displayName = "[VKN] PMC Hawaii Shirt (Blue/AOR1)";
+	displayName = "[VKN] PMC Hawaii Shirt (Blue/Tan)";
 	picture = "\VKN_Misc\VKN_Logo_Inverted.paa";
 	model = "\A3\Characters_F\Common\Suitpacks\suitpack_civilian_F.p3d";
 	descriptionShort = "PMC Hawaii Shirt with AOR1 Pants";
 	hiddenSelections[] = {"camo1","camo2","insignia"};
-	hiddenSelectionsTextures[] = {"\vkn_gear\data\uniforms\vkn_bluehawaii_shirt_co.paa","\VSM_AOR1\data\VSM_ARD_AOR1_1.paa"};
+	hiddenSelectionsTextures[] = {"\vkn_gear\data\uniforms\vkn_bluehawaii_shirt_co.paa","\VKN_Gear\data\Uniforms\vkn_fleece_Dark_co.paa"};
 	class ItemInfo: UniformItem
 	{
 		uniformModel = "-";
@@ -1326,12 +1451,12 @@ class VKN_CombatUniform_Shirt_RedHawaii_AOR1_1: Uniform_Base //Red Hawaii
 {
 	author = "Jonmo";
 	scope = 2;
-	displayName = "[VKN] PMC Hawaii Shirt (Red/AOR1)";
+	displayName = "[VKN] PMC Hawaii Shirt (Red/Tan)";
 	picture = "\VKN_Misc\VKN_Logo_Inverted.paa";
 	model = "\A3\Characters_F\Common\Suitpacks\suitpack_civilian_F.p3d";
 	descriptionShort = "PMC Hawaii Shirt with AOR1 Pants";
 	hiddenSelections[] = {"camo1","camo2","insignia"};
-	hiddenSelectionsTextures[] = {"\vkn_gear\data\uniforms\vkn_redhawaii_shirt_co.paa","\VSM_AOR1\data\VSM_ARD_AOR1_1.paa"};
+	hiddenSelectionsTextures[] = {"\vkn_gear\data\uniforms\vkn_redhawaii_shirt_co.paa","\VKN_Gear\data\Uniforms\vkn_fleece_Dark_co.paa"};
 	class ItemInfo: UniformItem
 	{
 		uniformModel = "-";
@@ -1380,12 +1505,12 @@ class VKN_CombatUniform_Shirt_BrightHawaii_AOR1_1: Uniform_Base //Bright Hawaii
 {
 	author = "Jonmo";
 	scope = 2;
-	displayName = "[VKN] PMC Hawaii Shirt (Bright/AOR1)";
+	displayName = "[VKN] PMC Hawaii Shirt (Bright/Tan)";
 	picture = "\VKN_Misc\VKN_Logo_Inverted.paa";
 	model = "\A3\Characters_F\Common\Suitpacks\suitpack_civilian_F.p3d";
 	descriptionShort = "PMC Hawaii Shirt with AOR1 Pants";
 	hiddenSelections[] = {"camo1","camo2","insignia"};
-	hiddenSelectionsTextures[] = {"\vkn_gear\data\uniforms\vkn_Brighthawaii_shirt_co.paa","\VSM_AOR1\data\VSM_ARD_AOR1_1.paa"};
+	hiddenSelectionsTextures[] = {"\vkn_gear\data\uniforms\vkn_Brighthawaii_shirt_co.paa","\VKN_Gear\data\Uniforms\vkn_fleece_Dark_co.paa"};
 	class ItemInfo: UniformItem
 	{
 		uniformModel = "-";

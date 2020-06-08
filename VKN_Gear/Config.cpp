@@ -49,6 +49,7 @@ class cfgVehicles {
 	class O_Soldier_F;
 	class C_Story_Mechanic_01_F;
   class B_G_Soldier_F;
+    class O_R_Gorka_base_F;
 
 	class ReammoBox_F;
 	class ReammoBox;
@@ -91,6 +92,7 @@ class cfgWeapons {
   class H_Beret_02;
   class H_helmetO_ViperSP_hex_F;
   class U_B_CTRG_Soldier_F;
+  class U_O_R_Gorka_01_F;
   class VestItem;
   class ItemCore;
   class ItemInfo;
