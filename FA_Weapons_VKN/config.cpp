@@ -47,10 +47,70 @@ class CfgPatches
 		requiredaddons[] = {"A3_Weapons_F","A3_Data_F"};
 		requiredversion = 1.0;
 		units[] = {};
-		weapons[] = {"VKN_AK5C", "VKN_VSS"};
+		weapons[] = {"VKN_AK5C", "VKN_VSS", "VKN_MP5"};
 		magazines[] = {"VKN_10Rnd_762x54mm_Mag",	"VKN_20Rnd_9x39mm_Mag"};
 	};
 };
+
+
+class cfgSoundShaders {
+
+	class mx_Closure_SoundShader;
+	class mx_closeShot_SoundShader;
+	class mx_midShot_SoundShader;
+	class mx_distShot_SoundShader;
+
+	class AK5C_Closure_SoundShader: mx_Closure_SoundShader {
+		samples[] = {
+			{"\FA_Weapons_VKN\data\ak5c\sounds\AK5C_fire",1},
+			{"\FA_Weapons_VKN\data\ak5c\sounds\AK5C_fire",1},
+			{"\FA_Weapons_VKN\data\ak5c\sounds\AK5C_fire",1}
+		};
+	};
+	class AK5C_closeShot_SoundShader: mx_closeShot_SoundShader {
+		samples[] = {
+			{"\FA_Weapons_VKN\data\ak5c\sounds\AK5C_fire",1},
+			{"\FA_Weapons_VKN\data\ak5c\sounds\AK5C_fire",1},
+			{"\FA_Weapons_VKN\data\ak5c\sounds\AK5C_fire",1}
+		};
+	};
+	class AK5C_midShot_SoundShader: mx_midShot_SoundShader {
+		samples[] = {
+			{"\FA_Weapons_VKN\data\ak5c\sounds\AK5C_fire",1},
+			{"\FA_Weapons_VKN\data\ak5c\sounds\AK5C_fire",1},
+			{"\FA_Weapons_VKN\data\ak5c\sounds\AK5C_fire",1}
+		};
+	};
+	class AK5C_distShot_SoundShader: mx_distShot_SoundShader {
+		samples[] = {
+			{"\FA_Weapons_VKN\data\ak5c\sounds\AK5C_fire",1},
+			{"\FA_Weapons_VKN\data\ak5c\sounds\AK5C_fire",1},
+			{"\FA_Weapons_VKN\data\ak5c\sounds\AK5C_fire",1}
+		};
+	};
+};
+
+class cfgSoundSets {
+	class AK5C_Shot_SoundSet {
+		soundShaders[] = {AK5C_Closure_SoundShader, AK5C_closeShot_SoundShader, AK5C_midShot_SoundShader, AK5C_distShot_SoundShader};
+	};
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 class Mode_SemiAuto;
 class Mode_FullAuto;
 class Mode_Burst;
@@ -72,6 +132,7 @@ class CfgWeapons
 		class GunParticles;
 		class AnimationSources;
 	};
+
 /*
 //AKM - Source: https://www.cgtrader.com/3d-models/military/gun/akm-model-and-textures-d57f1daa31fedfe78f111ace718dd32b
 	class VKN_AKM: FA_Base_Rifle_VKN
@@ -132,19 +193,16 @@ class CfgWeapons
 			class MuzzleSlot : SlotInfo
 			{
 				linkProxy = "\A3\data_f\proxies\weapon_slots\MUZZLE";
-				compatibleItems[] = {"muzzle_snds_B","muzzle_snds_B_khk_F","muzzle_snds_B_snd_F","muzzle_snds_B_arid_F","muzzle_snds_B_lush_F"};
 				iconScale = 0.1;
 			};
 			class CowsSlot : SlotInfo
 			{
 				linkProxy = "\A3\data_f\proxies\weapon_slots\TOP";
-				compatibleItems[] = {"optic_Aco","optic_Aco_smg","optic_ACO_grn_smg","optic_ACO_grn","optic_Holosight_arid_F","optic_Holosight_lush_F","optic_Holosight","optic_Holosight_smg","optic_Holosight_khk_F","optic_Holosight_smg_khk_F","optic_Holosight_smg_blk_F","optic_Holosight_blk_F","optic_MRCO","optic_Hamr","optic_Hamr_khk_F","optic_Arco","optic_Arco_blk_F","optic_Arco_lush_F","optic_Arco_arid_F","optic_Arco_ghex_F","optic_Arco_AK_blk_F","optic_Arco_AK_arid_F","optic_Arco_AK_lush_F","optic_ERCO_blk_F","optic_ERCO_snd_F","optic_ERCO_khk_F","optic_DMS","optic_DMS_ghex_F","optic_DMS_weathered_F","optic_DMS_weathered_Kir_F","optic_AMS","optic_AMS_snd","optic_AMS_khk","optic_KHS_blk","optic_KHS_hex","optic_KHS_tan","optic_KHS_old","optic_SOS","optic_SOS_khk_F","optic_LRPS","optic_LRPS_tna_F","optic_LRPS_ghex_F","optic_Nightstalker","optic_NVS","optic_tws","optic_tws_mg"};
 				iconScale = 0.1;
 			};
 			class PointerSlot : SlotInfo
 			{
-			    linkProxy = "\A3\data_f\proxies\weapon_slots\SIDE";
-				compatibleItems[] = {"acc_flashlight"};
+			  linkProxy = "\A3\data_f\proxies\weapon_slots\SIDE";
 				iconScale = 0.1;
 			};
 		};
@@ -208,24 +266,22 @@ class CfgWeapons
 
 			class MuzzleSlot : SlotInfo {
 				linkProxy = "\A3\data_f\proxies\weapon_slots\MUZZLE";
-				compatibleItems[] = {"muzzle_snds_m_khk_F","muzzle_snds_m_snd_F","muzzle_snds_M"};
 				iconScale = 0.1;
 			};
 
 			class CowsSlot : SlotInfo {
 				linkProxy = "\A3\data_f\proxies\weapon_slots\TOP";
-				compatibleItems[] = {"optic_Aco","optic_Aco_smg","optic_ACO_grn_smg","optic_ACO_grn","optic_Holosight_arid_F","optic_Holosight_lush_F","optic_Holosight","optic_Holosight_smg","optic_Holosight_khk_F","optic_Holosight_smg_khk_F","optic_Holosight_smg_blk_F","optic_Holosight_blk_F","optic_MRCO","optic_Hamr","optic_Hamr_khk_F","optic_Arco","optic_Arco_blk_F","optic_Arco_lush_F","optic_Arco_arid_F","optic_Arco_ghex_F","optic_Arco_AK_blk_F","optic_Arco_AK_arid_F","optic_Arco_AK_lush_F","optic_ERCO_blk_F","optic_ERCO_snd_F","optic_ERCO_khk_F","optic_DMS","optic_DMS_ghex_F","optic_DMS_weathered_F","optic_DMS_weathered_Kir_F","optic_AMS","optic_AMS_snd","optic_AMS_khk","optic_KHS_blk","optic_KHS_hex","optic_KHS_tan","optic_KHS_old","optic_SOS","optic_SOS_khk_F","optic_LRPS","optic_LRPS_tna_F","optic_LRPS_ghex_F","optic_Nightstalker","optic_NVS","optic_tws","optic_tws_mg"};
 				iconScale = 0.1;
 			};
 
 			class PointerSlot : SlotInfo {
 				linkProxy = "\A3\data_f\proxies\weapon_slots\SIDE";
 				displayName = "$STR_A3_PointerSlot0";
-				compatibleItems[] = {"acc_flashlight","acc_pointer_IR"};
 				iconScale = 0.1;
 			};
 		};
 	};
+*/
 
 //MP5 - Source: https://sketchfab.com/3d-models/mp5-submachinegun-2a9ce66fe96643fc8f20927401e5054c
 	class VKN_MP5 : FA_Base_Rifle_VKN {
@@ -342,24 +398,22 @@ class CfgWeapons
 			class MuzzleSlot : SlotInfo
 			{
 				linkProxy = "\A3\data_f\proxies\weapon_slots\MUZZLE";
-				compatibleItems[] = {"muzzle_snds_l"};
 				iconScale = 0.1;
 			};
 			class CowsSlot : CowsSlot
 			{
 				linkProxy = "\A3\data_f\proxies\weapon_slots\TOP";
-				compatibleItems[] = {"optic_Yorris","optic_Aco","optic_Aco_smg","optic_ACO_grn_smg","optic_ACO_grn","optic_Holosight_arid_F","optic_Holosight_lush_F","optic_Holosight","optic_Holosight_smg","optic_Holosight_khk_F","optic_Holosight_smg_khk_F","optic_Holosight_smg_blk_F","optic_Holosight_blk_F","optic_MRCO","optic_Hamr","optic_Hamr_khk_F","optic_Arco","optic_Arco_blk_F","optic_Arco_lush_F","optic_Arco_arid_F","optic_Arco_ghex_F","optic_Arco_AK_blk_F","optic_Arco_AK_arid_F","optic_Arco_AK_lush_F","optic_ERCO_blk_F","optic_ERCO_snd_F","optic_ERCO_khk_F","optic_KHS_blk","optic_KHS_hex","optic_KHS_tan","optic_KHS_old","optic_SOS","optic_SOS_khk_F","optic_Nightstalker","optic_NVS","optic_tws","optic_tws_mg"};
 				iconScale = 0.1;
 			};
 			class PointerSlot : PointerSlot
 			{
 				linkProxy = "\A3\data_f\proxies\weapon_slots\SIDE";
-				compatibleItems[] = {"acc_flashlight","acc_pointer_IR"};
 				iconScale = 0.1;
 			};
 		};
 	};
 
+/*
 //SVD - Source: https://sketchfab.com/3d-models/svd-dragunov-updated-d4a9412275aa4974b146ad8ce9dc5fc2
 	class VKN_SVD: FA_Base_Rifle_VKN
 	{
@@ -416,19 +470,16 @@ class CfgWeapons
 			class MuzzleSlot : SlotInfo
 			{
 				linkProxy = "\A3\data_f\proxies\weapon_slots\MUZZLE";
-				compatibleItems[] = {"muzzle_snds_B","muzzle_snds_B_khk_F","muzzle_snds_B_snd_F","muzzle_snds_B_arid_F","muzzle_snds_B_lush_F"};
 				iconScale = 0.1;
 			};
 			class CowsSlot : SlotInfo
 			{
 				linkProxy = "\A3\data_f\proxies\weapon_slots\TOP";
-				compatibleItems[] = {"optic_Aco","optic_Aco_smg","optic_ACO_grn_smg","optic_ACO_grn","optic_Holosight_arid_F","optic_Holosight_lush_F","optic_Holosight","optic_Holosight_smg","optic_Holosight_khk_F","optic_Holosight_smg_khk_F","optic_Holosight_smg_blk_F","optic_Holosight_blk_F","optic_MRCO","optic_Hamr","optic_Hamr_khk_F","optic_Arco","optic_Arco_blk_F","optic_Arco_lush_F","optic_Arco_arid_F","optic_Arco_ghex_F","optic_Arco_AK_blk_F","optic_Arco_AK_arid_F","optic_Arco_AK_lush_F","optic_ERCO_blk_F","optic_ERCO_snd_F","optic_ERCO_khk_F","optic_DMS","optic_DMS_ghex_F","optic_DMS_weathered_F","optic_DMS_weathered_Kir_F","optic_KHS_blk","optic_KHS_hex","optic_KHS_tan","optic_KHS_old","optic_SOS","optic_SOS_khk_F","optic_Nightstalker","optic_NVS","optic_tws","optic_tws_mg"};
 				iconScale = 0.1;
 			};
 			class UnderBarrelSlot : SlotInfo
 			{
 				linkProxy = "\A3\data_f_mark\proxies\weapon_slots\UNDERBARREL";
-				compatibleItems[] = {"bipod_02_F_lush","bipod_02_F_arid","bipod_01_F_khk","bipod_01_F_blk","bipod_02_F_blk","bipod_03_F_blk","bipod_01_F_snd","bipod_03_F_oli","bipod_01_F_mtp","bipod_02_F_hex","bipod_02_F_tan"};
 				iconScale = 0.1;
 			};
 		};
@@ -510,13 +561,11 @@ class CfgWeapons
 			class CowsSlot : SlotInfo
 			{
 				linkProxy = "\A3\data_f\proxies\weapon_slots\TOP";
-				compatibleItems[] = {"optic_Aco","optic_Aco_smg","optic_ACO_grn_smg","optic_ACO_grn","optic_Holosight_arid_F","optic_Holosight_lush_F","optic_Holosight","optic_Holosight_smg","optic_Holosight_khk_F","optic_Holosight_smg_khk_F","optic_Holosight_smg_blk_F","optic_Holosight_blk_F","optic_MRCO","optic_Hamr","optic_Hamr_khk_F","optic_Arco","optic_Arco_blk_F","optic_Arco_lush_F","optic_Arco_arid_F","optic_Arco_ghex_F","optic_Arco_AK_blk_F","optic_Arco_AK_arid_F","optic_Arco_AK_lush_F","optic_ERCO_blk_F","optic_ERCO_snd_F","optic_ERCO_khk_F","optic_DMS","optic_DMS_ghex_F","optic_DMS_weathered_F","optic_DMS_weathered_Kir_F","optic_AMS","optic_AMS_snd","optic_AMS_khk","optic_KHS_blk","optic_KHS_hex","optic_KHS_tan","optic_KHS_old","optic_SOS","optic_SOS_khk_F","optic_LRPS","optic_LRPS_tna_F","optic_LRPS_ghex_F","optic_Nightstalker","optic_NVS","optic_tws","optic_tws_mg"};
 				iconScale = 0.1;
 			};
 			class PointerSlot : PointerSlot
 			{
 				linkProxy = "\A3\data_f\proxies\weapon_slots\SIDE";
-				compatibleItems[] = {"acc_flashlight","acc_pointer_IR"};
 				iconScale = 0.1;
 			};
 		};
@@ -549,11 +598,11 @@ class CfgWeapons
 			class BaseSoundModeType;
 			class StandardSound: BaseSoundModeType
 			{
-				soundSetShot[]={"Mk20_Shot_SoundSet","Mk20_Tail_SoundSet"};
+				soundSetShot[]={"Mk20_Shot_SoundSet", "Mk20_Tail_SoundSet"};
 			};
 			class SilencedSound: BaseSoundModeType
 			{
-				SoundSetShot[]={"Mk20_silencerShot_SoundSet","Mk20_silencerTail_SoundSet"};
+				SoundSetShot[]={"Mk20_silencerShot_SoundSet", "Mk20_silencerTail_SoundSet"};
 			};
 			dispersion=0.00132;
 			reloadTime=0.0735;
@@ -563,11 +612,11 @@ class CfgWeapons
 			class BaseSoundModeType;
 			class StandardSound: BaseSoundModeType
 			{
-				soundSetShot[]={"Mk20_Shot_SoundSet","Mk20_Tail_SoundSet"};
+				soundSetShot[]={"Mk20_Shot_SoundSet", "Mk20_Tail_SoundSet"};
 			};
 			class SilencedSound: BaseSoundModeType
 			{
-				SoundSetShot[]={"Mk20_silencerShot_SoundSet","Mk20_silencerTail_SoundSet"};
+				SoundSetShot[]={"Mk20_silencerShot_SoundSet", "Mk20_silencerTail_SoundSet"};
 			};
 			dispersion=0.00132;
 			reloadTime=0.0735;
@@ -580,13 +629,11 @@ class CfgWeapons
 
 			class MuzzleSlot : SlotInfo {
 				linkProxy = "\A3\data_f\proxies\weapon_slots\MUZZLE";
-				compatibleItems[] = {"muzzle_snds_m_khk_F","muzzle_snds_m_snd_F","muzzle_snds_M"};
 				iconScale = 0.1;
 			};
 
 			class CowsSlot : SlotInfo {
 				linkProxy = "\A3\data_f\proxies\weapon_slots\TOP";
-				compatibleItems[] = {"optic_Aco","optic_Aco_smg","optic_ACO_grn_smg","optic_ACO_grn","optic_Holosight_arid_F","optic_Holosight_lush_F","optic_Holosight","optic_Holosight_smg","optic_Holosight_khk_F","optic_Holosight_smg_khk_F","optic_Holosight_smg_blk_F","optic_Holosight_blk_F","optic_MRCO","optic_Hamr","optic_Hamr_khk_F","optic_Arco","optic_Arco_blk_F","optic_Arco_lush_F","optic_Arco_arid_F","optic_Arco_ghex_F","optic_Arco_AK_blk_F","optic_Arco_AK_arid_F","optic_Arco_AK_lush_F","optic_ERCO_blk_F","optic_ERCO_snd_F","optic_ERCO_khk_F","optic_DMS","optic_DMS_ghex_F","optic_DMS_weathered_F","optic_DMS_weathered_Kir_F","optic_AMS","optic_AMS_snd","optic_AMS_khk","optic_KHS_blk","optic_KHS_hex","optic_KHS_tan","optic_KHS_old","optic_SOS","optic_SOS_khk_F","optic_LRPS","optic_LRPS_tna_F","optic_LRPS_ghex_F","optic_Nightstalker","optic_NVS","optic_tws","optic_tws_mg"};
 				iconScale = 0.1;
 			};
 
@@ -599,7 +646,6 @@ class CfgWeapons
 
 			class UnderBarrelSlot : SlotInfo {
 				linkProxy = "\A3\data_f_mark\proxies\weapon_slots\UNDERBARREL";
-				compatibleItems[] = {"bipod_02_F_lush","bipod_02_F_arid","bipod_01_F_khk","bipod_01_F_blk","bipod_02_F_blk","bipod_03_F_blk","bipod_01_F_snd","bipod_03_F_oli","bipod_01_F_mtp","bipod_02_F_hex","bipod_02_F_tan"};
 				iconScale = 0.1;
 			};
 		};

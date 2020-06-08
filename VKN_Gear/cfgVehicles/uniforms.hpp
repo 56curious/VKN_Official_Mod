@@ -17,13 +17,42 @@
 		scope = 0;
 		hiddenSelections[] = {"Camo","insignia"};
 	};
-
 	class VKN_Dummy_Button_Up_Base: B_G_Soldier_F {
 		scope = 2;
 		hiddenSelections[] = {"camo1","camo2","insignia"};
 	};
 
-//// Blufor Combat Uniforms
+// Suits //
+	
+	class VKN_Dummy_Functionary_Base: B_Soldier_base_F {
+	scope = 0;
+	model = "\VKN_Gear\data\Models\functionary.p3d";
+	hiddenSelectionsMaterials[] = {"\VKN_Gear\data\Uniforms\functionary.rvmat"}; 
+	hiddenSelections[] = {"camo"};
+	
+	class Wounds {
+		tex[] = {"\VKN_Gear\data\Uniforms\w1_functionary_mc.paa","\VKN_Gear\data\Uniforms\w2_functionary_mc.paa"};
+	};
+};
+
+	class VKN_Dummy_Functionary_1: VKN_Dummy_Functionary_Base {
+		scope = 1;
+		hiddenSelectionsTextures[] = {"\VKN_Gear\data\Uniforms\functionary1_co.paa"};
+		uniformClass = "VKN_Functionary_1";
+	};
+	class VKN_Dummy_Functionary_2: VKN_Dummy_Functionary_Base {
+		scope = 1;
+		hiddenSelectionsTextures[] = {"\VKN_Gear\data\Uniforms\functionary2_co.paa"};
+		uniformClass = "VKN_Functionary_2";
+	};
+	class VKN_Dummy_Functionary_3: VKN_Dummy_Functionary_Base {
+		scope = 1;
+		hiddenSelectionsTextures[] = {"\VKN_Gear\data\Uniforms\functionary3_co.paa"};
+		uniformClass = "VKN_Functionary_3";
+	};
+
+//// Blufor Combat Uniforms ////
+
 
 // Non Rolled
 	class VKN_Dummy_B_MTP_Woodland_Full_NonRolled: VKN_Dummy_B_NonRolled_Base {

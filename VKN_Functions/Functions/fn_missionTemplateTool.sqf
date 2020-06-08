@@ -37,52 +37,73 @@ _3denCam setVectorDirAndUp [
 ];
 
 
-
-_sides = [West, East, Independent, Civilian];
-_sidesstr = ["WEST", "EAST", "INDEPENDENT", "CIVILIAN"];
-{ lbAdd [2100, str _x]; systemChat str _x; } forEach _sides;
+//Init tool and menus
+_sides = [West, East, Independent];
+//Add sides to listbox
+{ lbAdd [2100, str _x];} forEach _sides;
 lbSetCurSel [2100, 0];
 
 
-lbadd [2101, "no override"];
-lbSetCurSel [2101, 0];
+//fnc to check side and then filter faction
+_fnc_sideChanged = {
+  _factionList = ["empty list"];
+  _index = lbCurSel 2100;
+  _side = toUpper (lbText [2100, _index]);
+  systemChat "side grabbed";
+  //get all factions in a side.
+  switch (_side) do {
+      case ("WEST"): {
+        _side = "West";
+        _factionList = 1 call VKN_fnc_sideGetFaction;
+        systemChat "w";
+      };
+      case ("EAST"): {
+        _side = "East";
+        _factionList = 0 call VKN_fnc_sideGetFaction;
+        systemChat "e";
+      };
+      case ("GUER"): {
+        _side = "Indep";
+        _factionList = 2 call VKN_fnc_sideGetFaction;
+        systemChat "i";
+      };
+      default {
+          systemChat "error with case, defaulting to west.";
+          _factionList = 1 call VKN_fnc_sideGetFaction;
+          systemChat "d";
+      };
+  };
 
-_fnc_factionChanged = {
-  _indx = lbCurSel 2100;
-  _curselected = lbText [2100, _indx];
-  systemChat _curselected;
-  _selectindex = _sidesstr find _curselected;
-  _curSelFac = [(_sides select 0)] call BIS_fnc_getFactions;
-  { lbadd [2101, str _x]; } forEach _curSelFac;
+  //get the selected faction
+  { lbadd [2101, _x]; } forEach _factionList;
 
-  _groups = [];
-  _configgroups = "true" configClasses (configfile >> "CfgGroups" >> str _curSelFac >> lbText [2101, lbCurSel 2101] >> "Infantry");
-  {
-    _groups pushBackUnique ([_x, "", true] call BIS_fnc_configPath);
-  } forEach _configgroups;
+  lbSetCurSel [2101, 0];
 
-  {	lbadd [2102, _x]	} forEach _groups;
+  waitUntil {(lbText [2101, lbCurSel 2101]) in _factionList};
+
+  _curSelFac = lbText [2101, lbCurSel 2101];
+  //apply group
+  ("true" configClasses (configfile >> "CfgGroups" >> _side >> _curSelFac >> "Infantry")) apply {
+     lbadd [2102, getText( _x >> "name")];
+  };
 };
+call _fnc_sideChanged;
 
-((findDisplay 348567) displayCtrl 2102) ctrlSetEventHandler ["LBSelChanged","['ListChange', _this] call _fnc_factionChanged"];
-
-lbadd [2100, "Currently unavailable"];
-lbSetCurSel [2100, 0];
-lbadd [2101, "Currently unavailable"];
-lbSetCurSel [2101, 0];
-lbadd [2102, "Currently unavailable"];
-lbSetCurSel [2102, 0];
+//apply EH to button to reset on faction change
+((findDisplay 348567) displayCtrl 2100) ctrlSetEventHandler ["LBSelChanged","call _fnc_sideChanged; "];
+((findDisplay 348567) displayCtrl 2101) ctrlSetEventHandler ["LBSelChanged","call _fnc_sideChanged; "];
+((findDisplay 348567) displayCtrl 2102) ctrlSetEventHandler ["LBSelChanged","call _fnc_sideChanged; "];
 
 
-
+//Apply spectator settings
 _Specoptions = ["All Enabled", "All Disabled", "Freecam Disabled", "3pp Disabled", "Freecam only", "1pp Disabled"];
 { lbAdd [2103, _x] } forEach _Specoptions;
 lbSetCurSel [2103, 2];
 
+
 buttonSetAction [1600, "VKN_Template_Tool_Basic_Settings_Complete = true;"];
 waitUntil {VKN_Template_Tool_Basic_Settings_Complete isEqualTo true};
 
-//_side = _sides select (_sides find lbCurSel 2100);
 _factions_option = lbCurSel 2101;
 _squads_option = lbCurSel 2102;
 _spectate_option = 2103;

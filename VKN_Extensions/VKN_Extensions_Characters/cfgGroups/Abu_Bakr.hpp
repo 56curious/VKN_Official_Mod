@@ -1,5 +1,5 @@
 class O_Abu_Bakr {
-    name = "Abu Bakr";
+    name = "VKN - Abu Bakr";
 
     class Infantry {
         name = "Infantry";

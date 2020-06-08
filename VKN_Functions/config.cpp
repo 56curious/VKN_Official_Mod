@@ -38,6 +38,8 @@ class CfgFunctions {
 
       class missionTemplateTool{};
 
+      class sideGetFaction{};
+
       class respawnPositionSafeZone{};
 
       //class displayPlayerInfoAbove{};
