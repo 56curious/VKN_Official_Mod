@@ -87,12 +87,12 @@ _fnc_sideChanged = {
      lbadd [2102, getText( _x >> "name")];
   };
 };
+
 call _fnc_sideChanged;
 
 //apply EH to button to reset on faction change
-((findDisplay 348567) displayCtrl 2100) ctrlSetEventHandler ["LBSelChanged","call _fnc_sideChanged; "];
-((findDisplay 348567) displayCtrl 2101) ctrlSetEventHandler ["LBSelChanged","call _fnc_sideChanged; "];
-((findDisplay 348567) displayCtrl 2102) ctrlSetEventHandler ["LBSelChanged","call _fnc_sideChanged; "];
+((findDisplay 348567) displayCtrl 2100) ctrlSetEventHandler ["LBSelChanged","lbClear 2101; lbClear 2102; call _fnc_sideChanged; "];
+((findDisplay 348567) displayCtrl 2101) ctrlSetEventHandler ["LBSelChanged","lbClear 2102; call _fnc_sideChanged; "];
 
 
 //Apply spectator settings
