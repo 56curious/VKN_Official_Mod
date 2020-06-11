@@ -27,6 +27,7 @@ _3denCam setVectorDirAndUp [  [ sin _y * cos _p,cos _y * cos _p,sin _p], [  [ si
 _position = screenToWorld [0.5, 0.5];
 VKN_Template_Tool_Basic_Settings_open = true;
 VKN_Template_Tool_Basic_Settings_Complete = false;
+VKN_Template_Tool_selectionChange = true;
 
 
 //Set cam to look in the air
@@ -45,11 +46,12 @@ lbSetCurSel [2100, 0];
 
 
 //fnc to check side and then filter faction
-_fnc_sideChanged = {
+VKN_fnc_sideChanged = {
+  waitUntil {VKN_Template_Tool_selectionChange};
   _factionList = ["empty list"];
   _index = lbCurSel 2100;
   _side = toUpper (lbText [2100, _index]);
-  systemChat "side grabbed";
+  systemChat _side;
   //get all factions in a side.
   switch (_side) do {
       case ("WEST"): {
@@ -79,20 +81,21 @@ _fnc_sideChanged = {
 
   lbSetCurSel [2101, 0];
 
-  waitUntil {(lbText [2101, lbCurSel 2101]) in _factionList};
-
   _curSelFac = lbText [2101, lbCurSel 2101];
   //apply group
   ("true" configClasses (configfile >> "CfgGroups" >> _side >> _curSelFac >> "Infantry")) apply {
      lbadd [2102, getText( _x >> "name")];
   };
+
+VKN_Template_Tool_selectionChange = false;
+
 };
 
-call _fnc_sideChanged;
+[] spawn VKN_fnc_sideChanged;
 
 //apply EH to button to reset on faction change
-((findDisplay 348567) displayCtrl 2100) ctrlSetEventHandler ["LBSelChanged","lbClear 2101; lbClear 2102; call _fnc_sideChanged; "];
-((findDisplay 348567) displayCtrl 2101) ctrlSetEventHandler ["LBSelChanged","lbClear 2102; call _fnc_sideChanged; "];
+((findDisplay 348567) displayCtrl 2100) ctrlSetEventHandler ["LBSelChanged","VKN_Template_Tool_selectionChange = true; lbClear 2101; lbClear 2102; [] spawn VKN_fnc_sideChanged;"]; //Side LB
+((findDisplay 348567) displayCtrl 2101) ctrlSetEventHandler ["LBSelChanged","VKN_Template_Tool_selectionChange = true; lbClear 2102; [] spawn VKN_fnc_sideChanged;"]; //Faction LB
 
 
 //Apply spectator settings
@@ -103,7 +106,7 @@ lbSetCurSel [2103, 2];
 
 buttonSetAction [1600, "VKN_Template_Tool_Basic_Settings_Complete = true;"];
 waitUntil {VKN_Template_Tool_Basic_Settings_Complete isEqualTo true};
-
+_side_Option = lbCurSel 2100;
 _factions_option = lbCurSel 2101;
 _squads_option = lbCurSel 2102;
 _spectate_option = 2103;
@@ -117,16 +120,16 @@ startLoadingScreen ["Loading mission template tool... Please wait."];
 
 collect3DENHistory {
 
-	if (_faction_option == "no override") then {
+	if (_factions_option == "no override") then {
 		if (isClass (configFile >> "CfgPatches" >> "VKN_PMC_Characters")) then {
 			_squad = configfile >> "CfgGroups" >> "West" >> "B_VKN_ODIN_PMC" >> "Infantry" >> "B_VKN_ODIN_infantry_squad_pmc"; //Units inherit off one origin, possibly causing the problem
 		} else {
 			_squad = configfile >> "CfgGroups" >> "West" >> "BLU_F" >> "Infantry" >> "BUS_InfSquad";
 		};
 	else {
-		_squad = configfile >> "CfgGroups" >> str _side >> _faction_option >> "Infantry", _squads_option;
+		_squad = configfile >> "CfgGroups" >> _side_Option >> _factions_option >> "Infantry", _squads_option;
 
-  		{ [_x, "", true] call BIS_fnc_configPath) } forEach ("true" configClasses (configfile >> "CfgGroups" >> _side) //returns path for config search
+  		{ [_x, "", true] call BIS_fnc_configPath) } forEach ("true" configClasses (configfile >> "CfgGroups" >> _side_Option) //returns path for config search
   	};
 
   if (isClass (configFile >> "CfgPatches" >> "VKN_PMC_Characters")) then {
