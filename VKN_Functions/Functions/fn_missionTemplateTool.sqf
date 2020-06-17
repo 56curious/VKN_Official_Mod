@@ -21,8 +21,11 @@ _squad = 0;
 _3denCam = get3DENCamera;
 
 //Get a reasonible position for template to be created (avoids it spawning in a weird position)
+[_3denCam, 5] call bis_fnc_setHeight;
+
 _y = 0; _p = -45; _r = 0;
 _3denCam setVectorDirAndUp [  [ sin _y * cos _p,cos _y * cos _p,sin _p], [  [ sin _r,-sin _p,cos _r * cos _p], -_y] call BIS_fnc_rotateVector2D];
+sleep 0.1;
 
 _position = screenToWorld [0.5, 0.5];
 VKN_Template_Tool_Basic_Settings_open = true;
@@ -42,52 +45,47 @@ _3denCam setVectorDirAndUp [
 _sides = [West, East, Independent];
 //Add sides to listbox
 { lbAdd [2100, str _x];} forEach _sides;
-lbSetCurSel [2100, 0];
 
+waitUntil { lbText [2100, lbCurSel 2100] != "" };
 
 //fnc to check side and then filter faction
 VKN_fnc_sideChanged = {
   waitUntil {VKN_Template_Tool_selectionChange};
-  _factionList = ["empty list"];
+
+  _factionList = [];
   _index = lbCurSel 2100;
   _side = toUpper (lbText [2100, _index]);
-  systemChat _side;
   //get all factions in a side.
   switch (_side) do {
       case ("WEST"): {
         _side = "West";
         _factionList = 1 call VKN_fnc_sideGetFaction;
-        systemChat "w";
       };
       case ("EAST"): {
         _side = "East";
         _factionList = 0 call VKN_fnc_sideGetFaction;
-        systemChat "e";
       };
       case ("GUER"): {
         _side = "Indep";
         _factionList = 2 call VKN_fnc_sideGetFaction;
-        systemChat "i";
       };
-      default {
-          systemChat "error with case, defaulting to west.";
-          _factionList = 1 call VKN_fnc_sideGetFaction;
-          systemChat "d";
-      };
+      default {};
   };
 
   //get the selected faction
   { lbadd [2101, _x]; } forEach _factionList;
 
-  lbSetCurSel [2101, 0];
+  waitUntil { lbText [2101, lbCurSel 2101] != "" };
 
   _curSelFac = lbText [2101, lbCurSel 2101];
   //apply group
-  ("true" configClasses (configfile >> "CfgGroups" >> _side >> _curSelFac >> "Infantry")) apply {
-     lbadd [2102, getText( _x >> "name")];
-  };
+  _squadArray = "true" configClasses (configfile >> "CfgGroups" >> _side >> _curSelFac >> "Infantry");
+  {
+    lbadd [2102, getText( _x >> "name")];
+    lbSetData [2102, _forEachIndex, str _x];
+  } forEach _squadArray;
 
-VKN_Template_Tool_selectionChange = false;
+  VKN_Template_Tool_selectionChange = false;
 
 };
 
@@ -97,7 +95,6 @@ VKN_Template_Tool_selectionChange = false;
 ((findDisplay 348567) displayCtrl 2100) ctrlSetEventHandler ["LBSelChanged","VKN_Template_Tool_selectionChange = true; lbClear 2101; lbClear 2102; [] spawn VKN_fnc_sideChanged;"]; //Side LB
 ((findDisplay 348567) displayCtrl 2101) ctrlSetEventHandler ["LBSelChanged","VKN_Template_Tool_selectionChange = true; lbClear 2102; [] spawn VKN_fnc_sideChanged;"]; //Faction LB
 
-
 //Apply spectator settings
 _Specoptions = ["All Enabled", "All Disabled", "Freecam Disabled", "3pp Disabled", "Freecam only", "1pp Disabled"];
 { lbAdd [2103, _x] } forEach _Specoptions;
@@ -106,12 +103,33 @@ lbSetCurSel [2103, 2];
 
 buttonSetAction [1600, "VKN_Template_Tool_Basic_Settings_Complete = true;"];
 waitUntil {VKN_Template_Tool_Basic_Settings_Complete isEqualTo true};
-_side_Option = lbCurSel 2100;
-_factions_option = lbCurSel 2101;
-_squads_option = lbCurSel 2102;
-_spectate_option = 2103;
+
+//If a listbox is missed, default to first of each type.
+if (lbText [2100, lbCurSel 2100] == "") then {
+  lbSetCurSel [2100, 0];
+  systemChat "Side option was missed, taking default instead.";
+};
+
+//If faction is missed, get first squad from config.
+if (lbText [2101, lbCurSel 2101] == "") then {
+  lbSetCurSel [2101, 0];
+  systemChat "Faction option was missed, taking default instead.";
+  lbSetCurSel [2102, 0];
+};
+
+if (lbText [2102, lbCurSel 2102] == "") then {
+  lbSetCurSel [2102, 0];
+  systemChat "Squad option was missed, taking default instead.";
+};
+
+_side_Option = lbText [2100, lbCurSel 2100];
+_factions_option = lbText [2101, lbCurSel 2101];
+_squads_option = ([lbData [2102, lbCurSel 2102]] call BIS_fnc_configPath) select 5; //Only option extracted not as a string
+_spectate_option = lbText [2103, lbCurSel 2103];
 _saveLoadouts = cbChecked ((findDisplay 348567) displayCtrl 2800);
 _dynamicGroups = cbChecked ((findDisplay 348567) displayCtrl 2801);
+
+systemChat format [" settings: %1, %2, %3, %4, %5, %6", _side_Option, _factions_option, _squads_option, _spectate_option, _saveLoadouts, _dynamicGroups ];
 
 closeDialog 0;
 
@@ -120,33 +138,14 @@ startLoadingScreen ["Loading mission template tool... Please wait."];
 
 collect3DENHistory {
 
-	if (_factions_option == "no override") then {
-		if (isClass (configFile >> "CfgPatches" >> "VKN_PMC_Characters")) then {
-			_squad = configfile >> "CfgGroups" >> "West" >> "B_VKN_ODIN_PMC" >> "Infantry" >> "B_VKN_ODIN_infantry_squad_pmc"; //Units inherit off one origin, possibly causing the problem
-		} else {
-			_squad = configfile >> "CfgGroups" >> "West" >> "BLU_F" >> "Infantry" >> "BUS_InfSquad";
-		};
-	else {
-		_squad = configfile >> "CfgGroups" >> _side_Option >> _factions_option >> "Infantry", _squads_option;
-
-  		{ [_x, "", true] call BIS_fnc_configPath) } forEach ("true" configClasses (configfile >> "CfgGroups" >> _side_Option) //returns path for config search
-  	};
-
-  if (isClass (configFile >> "CfgPatches" >> "VKN_PMC_Characters")) then {
-		_squad = configfile >> "CfgGroups" >> "West" >> "B_VKN_ODIN_PMC" >> "Infantry" >> "B_VKN_ODIN_infantry_squad_pmc"; //Units inherit off one origin, possibly causing the problem
-	} else {
-		_squad = configfile >> "CfgGroups" >> "West" >> "BLU_F" >> "Infantry" >> "BUS_InfSquad";
-	};
-
-
-
+  _squad = configfile >> "CfgGroups" >> _side_Option >> _factions_option >> "Infantry" >> _squads_option;
 
 	//Check for 3DEN Enhanced, then setup those features
 	if (isclass (configfile >> "CfgPatches" >> "3denEnhanced")) then {
     set3DENMissionAttributes[["Multiplayer", "Enh_SaveLoadout", _saveLoadouts]];
 		set3DENMissionAttributes[["Multiplayer", "Enh_DynamicGroups", _dynamicGroups]];
 	} else {
-		systemChat "3DEN Enhanced not found but is recommended to be used at all times, missing these attributes however...";
+		systemChat "3DEN Enhanced not found but is recommended to be used at all times, missing dyanmic groups and loadout saving attributes, restart with mod and restart tool to fix.";
 	};
 
 	//Set all of the mission settings to their defaults
