@@ -12,7 +12,7 @@ class CfgUnitInsignia {
 	class Balder {
 		displayName = "[VKN] Balder";
 		author = "Viking PMC";
-		texture = "\VKN_Misc\markers\data\Balder.paa";
+		texture = "";
 	};
 	class Fenrir {
 		displayName = "[VKN] Fenrir";
@@ -22,17 +22,17 @@ class CfgUnitInsignia {
 	class Loki {
 		displayName = "[VKN] Loki";
 		author = "Viking PMC";
-		texture = "\VKN_Misc\markers\data\Loki.paa";
+		texture = "";
 	};
 	class Odin {
 		displayName = "[VKN] Odin";
 		author = "Viking PMC";
-		texture = "\VKN_Misc\markers\data\Odin.paa";
+		texture = "";
 	};
 	class Thor {
 		displayName = "[VKN] Thor";
 		author = "Viking PMC";
-		texture = "\VKN_Misc\markers\data\Thor.paa";
+		texture = "";
 	};
 	class Valkyrie {
 		displayName = "[VKN] Valkyrie";
@@ -42,6 +42,6 @@ class CfgUnitInsignia {
 	class VIS {
 		displayName = "[VKN] VIS";
 		author = "Viking PMC";
-		texture = "\VKN_Misc\markers\data\VIS.paa";
+		texture = "";
 	};
 };
