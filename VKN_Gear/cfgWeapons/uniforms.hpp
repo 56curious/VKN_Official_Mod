@@ -44,7 +44,7 @@
 		hiddenSelections[] = {"camo"};
 	};
 // Suits //
-
+/*
 class VKN_Functionary_1: VKN_Functionary_Base {
 	scope = 2;
 	Author = "Shagger";
@@ -81,6 +81,7 @@ class VKN_Functionary_3: VKN_Functionary_Base {
 		mass=40;
 	};
 };
+*/
 
 // Rolled/NonRolled //
 
@@ -545,7 +546,7 @@ class VKN_MTP_Tan_Khaki_NonRolled: VKN_CombatUniform_NonRolled_base {
 			mass=40;
 		};
 	};
-	
+
 //Mountain Suit
 	class VKN_I_mntsuit_Brown_Khaki: U_O_R_Gorka_01_F {
 		author="Jonmo";
@@ -558,7 +559,7 @@ class VKN_MTP_Tan_Khaki_NonRolled: VKN_CombatUniform_NonRolled_base {
 			mass=40;
 		};
 	};
-	
+
 	class VKN_I_mntsuit_Brown_Jeans: U_O_R_Gorka_01_F {
 		author="Jonmo";
 		displayName="[VKN] Mountain Suit (Brown/Jeans)";
@@ -570,7 +571,7 @@ class VKN_MTP_Tan_Khaki_NonRolled: VKN_CombatUniform_NonRolled_base {
 			mass=40;
 		};
 	};
-	
+
 	class VKN_I_mntsuit_Green_Jeans: U_O_R_Gorka_01_F {
 		author="Jonmo";
 		displayName="[VKN] Mountain Suit (Green/Jeans)";
@@ -582,7 +583,7 @@ class VKN_MTP_Tan_Khaki_NonRolled: VKN_CombatUniform_NonRolled_base {
 			mass=40;
 		};
 	};
-	
+
 	class VKN_I_mntsuit_Green_Khaki: U_O_R_Gorka_01_F {
 		author="Jonmo";
 		displayName="[VKN] Mountain Suit (Green/Khaki)";
@@ -594,7 +595,7 @@ class VKN_MTP_Tan_Khaki_NonRolled: VKN_CombatUniform_NonRolled_base {
 			mass=40;
 		};
 	};
-	
+
 	class VKN_I_mntsuit_Green_Multicam: U_O_R_Gorka_01_F {
 		author="Jonmo";
 		displayName="[VKN] Mountain Suit (Green/Multicam)";
@@ -606,7 +607,7 @@ class VKN_MTP_Tan_Khaki_NonRolled: VKN_CombatUniform_NonRolled_base {
 			mass=40;
 		};
 	};
-	
+
 	class VKN_I_mntsuit_Blue_Jeans: U_O_R_Gorka_01_F {
 		author="Jonmo";
 		displayName="[VKN] Mountain Suit (Dark/Jeans)";
@@ -630,7 +631,7 @@ class VKN_MTP_Tan_Khaki_NonRolled: VKN_CombatUniform_NonRolled_base {
 			mass=40;
 		};
 	};
-	
+
 	class VKN_I_mntsuit_Blue_Multicam: U_O_R_Gorka_01_F {
 		author="Jonmo";
 		displayName="[VKN] Mountain Suit (Dark/Multicam)";
@@ -687,7 +688,7 @@ class VKN_MTP_Tan_Khaki_NonRolled: VKN_CombatUniform_NonRolled_base {
 			mass=40;
 		};
 	};
-	
+
 	class VKN_CombatUniform_Tshirt_Multi: VKN_CombatUniform_NonRolled_base {
 		scope=2;
 		Author = "Jonmo";
@@ -729,7 +730,7 @@ class VKN_MTP_Tan_Khaki_NonRolled: VKN_CombatUniform_NonRolled_base {
 			mass=40;
 		};
 	};
-	
+
 	class VKN_CombatUniform_TshirtB_Multi: VKN_CombatUniform_NonRolled_base {
 		scope=2;
 		Author = "Jonmo";
