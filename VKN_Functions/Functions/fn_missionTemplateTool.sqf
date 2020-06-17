@@ -129,8 +129,6 @@ _spectate_option = lbText [2103, lbCurSel 2103];
 _saveLoadouts = cbChecked ((findDisplay 348567) displayCtrl 2800);
 _dynamicGroups = cbChecked ((findDisplay 348567) displayCtrl 2801);
 
-systemChat format [" settings: %1, %2, %3, %4, %5, %6", _side_Option, _factions_option, _squads_option, _spectate_option, _saveLoadouts, _dynamicGroups ];
-
 closeDialog 0;
 
 //Start tool
