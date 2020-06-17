@@ -3,13 +3,16 @@ Script name:  fn_sideGetFaction.sqf
 Created on:   05 May ‎2020
 Author:       Curious
 
-Description:  Get all factions with a given side ID.
+Description:  Get all factions in config format with a given side ID.
 
 License:      This file is under "Arma Public License No Derivatives (APL-ND)"
               More information can be found at:
               https://www.bohemia.net/community/licenses/arma-public-license-nd
 
-Example:      N/A
+              Parameters:
+                              0: side - side in integer format.
+
+Example:      1 call VKN_fnc_sideGetFaction;
 */
 
 _selectedSide = param [0, [1], [0, 1, 2, 3]];
