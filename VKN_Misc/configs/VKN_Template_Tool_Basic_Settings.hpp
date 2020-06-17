@@ -157,7 +157,7 @@ class VKN_Template_Tool_Basic_Settings {
     	idc = 2801;
 
     	x = 0.521772 * safezoneW + safezoneX;
-    	y = 0.605296 * safezoneH + safezoneY;
+    	y = 0.609222 * safezoneH + safezoneY;
     	w = 0.0204167 * safezoneW;
     	h = 0.0338889 * safezoneH;
     };
