@@ -89,6 +89,8 @@ class cfgWeapons {
   class H_HelmetB;
   class H_Cap_red;
   class H_Beret_02;
+  class H_Booniehat_mcamo;
+  class H_Booniehat_khk;
   class H_helmetO_ViperSP_hex_F;
   class U_B_CTRG_Soldier_F;
   class U_O_R_Gorka_01_F;
