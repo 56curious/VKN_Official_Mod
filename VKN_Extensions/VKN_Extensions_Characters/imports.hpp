@@ -1499,3 +1499,113 @@ class rhsgref_hidf_machinegunner_OCimport_02 : rhsgref_hidf_machinegunner_OCimpo
 class rhsgref_hidf_crewman;
 class rhsgref_hidf_crewman_OCimport_01 : rhsgref_hidf_crewman { scope = 0; class EventHandlers; };
 class rhsgref_hidf_crewman_OCimport_02 : rhsgref_hidf_crewman_OCimport_01 { class EventHandlers; };
+
+
+
+
+
+
+
+///////
+/////// Modern China
+///////
+
+class O_T_Soldier_SL_F;
+class O_T_Soldier_SL_F_OCimport_01 : O_T_Soldier_SL_F { scope = 0; class EventHandlers; };
+class O_T_Soldier_SL_F_OCimport_02 : O_T_Soldier_SL_F_OCimport_01 { class EventHandlers; };
+
+class O_T_Medic_F;
+class O_T_Medic_F_OCimport_01 : O_T_Medic_F { scope = 0; class EventHandlers; };
+class O_T_Medic_F_OCimport_02 : O_T_Medic_F_OCimport_01 { class EventHandlers; };
+
+class B_Heli_Attack_01_dynamicLoadout_F;
+class B_Heli_Attack_01_dynamicLoadout_F_OCimport_01 : B_Heli_Attack_01_dynamicLoadout_F { scope = 0; class EventHandlers; class Turrets; };
+class B_Heli_Attack_01_dynamicLoadout_F_OCimport_02 : B_Heli_Attack_01_dynamicLoadout_F_OCimport_01 {
+    class EventHandlers;
+    class Turrets : Turrets {
+        class MainTurret;
+    };
+};
+
+class O_T_LSV_02_armed_F;
+class O_T_LSV_02_armed_F_OCimport_01 : O_T_LSV_02_armed_F { scope = 0; class EventHandlers; class Turrets; };
+class O_T_LSV_02_armed_F_OCimport_02 : O_T_LSV_02_armed_F_OCimport_01 {
+    class EventHandlers;
+    class Turrets : Turrets {
+        class MainTurret;
+        class CargoTurret_01;
+        class CargoTurret_02;
+        class CargoTurret_03;
+        class CargoTurret_04;
+        class CargoTurret_05;
+    };
+};
+
+class O_T_LSV_02_unarmed_F;
+class O_T_LSV_02_unarmed_F_OCimport_01 : O_T_LSV_02_unarmed_F { scope = 0; class EventHandlers; class Turrets; };
+class O_T_LSV_02_unarmed_F_OCimport_02 : O_T_LSV_02_unarmed_F_OCimport_01 {
+    class EventHandlers;
+    class Turrets : Turrets {
+        class CargoTurret_01;
+        class CargoTurret_02;
+        class CargoTurret_03;
+        class CargoTurret_04;
+        class CargoTurret_05;
+        class CargoTurret_06;
+    };
+};
+
+class B_AFV_Wheeled_01_cannon_F;
+class B_AFV_Wheeled_01_cannon_F_OCimport_01 : B_AFV_Wheeled_01_cannon_F { scope = 0; class EventHandlers; class Turrets; };
+class B_AFV_Wheeled_01_cannon_F_OCimport_02 : B_AFV_Wheeled_01_cannon_F_OCimport_01 {
+    class EventHandlers;
+    class Turrets : Turrets {
+        class MainTurret;
+    };
+};
+
+class I_APC_Wheeled_03_cannon_F;
+class I_APC_Wheeled_03_cannon_F_OCimport_01 : I_APC_Wheeled_03_cannon_F { scope = 0; class EventHandlers; class Turrets; };
+class I_APC_Wheeled_03_cannon_F_OCimport_02 : I_APC_Wheeled_03_cannon_F_OCimport_01 {
+    class EventHandlers;
+    class Turrets : Turrets {
+        class MainTurret;
+    };
+};
+
+class I_Heli_light_03_unarmed_F;
+class I_Heli_light_03_unarmed_F_OCimport_01 : I_Heli_light_03_unarmed_F { scope = 0; class EventHandlers; class Turrets; };
+class I_Heli_light_03_unarmed_F_OCimport_02 : I_Heli_light_03_unarmed_F_OCimport_01 {
+    class EventHandlers;
+    class Turrets : Turrets {
+        class MainTurret;
+    };
+};
+
+class rhssaf_army_o_nsv_tripod;
+class rhssaf_army_o_nsv_tripod_OCimport_01 : rhssaf_army_o_nsv_tripod { scope = 0; class EventHandlers; class Turrets; };
+class rhssaf_army_o_nsv_tripod_OCimport_02 : rhssaf_army_o_nsv_tripod_OCimport_01 {
+    class EventHandlers;
+    class Turrets : Turrets {
+        class MainTurret;
+    };
+};
+
+class LOP_ISTS_Kord_High;
+class LOP_ISTS_Kord_High_OCimport_01 : LOP_ISTS_Kord_High { scope = 0; class EventHandlers; class Turrets; };
+class LOP_ISTS_Kord_High_OCimport_02 : LOP_ISTS_Kord_High_OCimport_01 {
+    class EventHandlers;
+    class Turrets : Turrets {
+        class MainTurret;
+    };
+};
+
+class I_MRAP_03_hmg_F;
+class I_MRAP_03_hmg_F_OCimport_01 : I_MRAP_03_hmg_F { scope = 0; class EventHandlers; class Turrets; };
+class I_MRAP_03_hmg_F_OCimport_02 : I_MRAP_03_hmg_F_OCimport_01 {
+    class EventHandlers;
+    class Turrets : Turrets {
+        class MainTurret;
+        class CommanderTurret;
+    };
+};
