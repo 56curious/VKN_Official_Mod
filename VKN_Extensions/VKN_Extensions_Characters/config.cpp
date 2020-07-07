@@ -521,7 +521,7 @@ class cfgFactionClasses {
     #include "cfgFactionClasses\bbarmy.hpp"
     #include "cfgFactionClasses\Legion.hpp"
     #include "cfgFactionClasses\Taiga.hpp"
-    #include "cfgFactionClasses\Modern_China"
+    #include "cfgFactionClasses\Modern_China.hpp"
 
 };
 
