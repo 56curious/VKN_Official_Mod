@@ -519,6 +519,9 @@ class cfgFactionClasses {
     #include "cfgFactionClasses\Abu_Bakr.hpp"
     #include "cfgFactionClasses\NorthVietnamArmy.hpp"
     #include "cfgFactionClasses\bbarmy.hpp"
+    #include "cfgFactionClasses\Legion.hpp"
+    #include "cfgFactionClasses\Taiga.hpp"
+    #include "cfgFactionClasses\Modern_China"
 
 };
 
@@ -532,6 +535,8 @@ class cfgVehicles {
     //Indep
     #include "cfgVehicles\Asian_Paramilitary.hpp"
     #include "cfgVehicles\Sonora_Cartel.hpp"
+    #include "cfgVehicles\Modern_China.hpp"
+    #include "cfgVehicles\Legion.hpp"
 
     //East
     #include "cfgVehicles\Mexican_Guard.hpp"
@@ -560,6 +565,7 @@ class cfgVehicles {
     #include "cfgVehicles\Viking_PMC_BALDER.hpp"
     #include "cfgVehicles\Greek_Police.hpp"
     #include "cfgVehicles\bbarmy.hpp"
+    #include "cfgVehicles\Taiga.hpp"
 
 };
 
@@ -568,6 +574,8 @@ class cfgGroups {
     class Indep {
         #include "cfgGroups\Asian_Paramilitary.hpp"
         #include "cfgGroups\Sonora_Cartel.hpp"
+        #include "cfgGroups\Modern_China.hpp"
+        #include "cfgGroups\Legion.hpp"
     };
 
     class East {
@@ -596,5 +604,6 @@ class cfgGroups {
         #include "cfgGroups\Viking_PMC_AEGIR.hpp"
         #include "cfgGroups\Viking_PMC_BALDER.hpp"
         #include "cfgGroups\bbarmy.hpp"
+        #include "cfgGroups\Taiga.hpp"
     };
 };
