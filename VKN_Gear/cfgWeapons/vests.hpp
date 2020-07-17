@@ -140,55 +140,6 @@ class VKN_Carrier_Lite_Black_1: VKN_Carrier_Lite_Base {
 	hiddenSelectionsTextures[]={"\VKN_Gear\data\Vests\Vanilla\VKN_Black_Carrier.paa"};
 	descriptionShort="BLK Rig Lite";
 };
-
-class VKN_Carrier_Lite_MTP_Woodland: VKN_Carrier_Lite_Base {
-	scope=2;
-	displayName="[VKN] Carrier Lite (MTP Woodland)";
-	author="Eric Mchogan";
-	hiddenSelectionsTextures[]={"\VKN_Gear\data\Vests\Vanilla\Vest_tflod.paa"};
-	descriptionShort="MTP Wdlnd Rig Lite";
-};
-
-class VKN_Carrier_MTP_Woodland: VKN_Carrier_Rig_Base {
-	scope=2;
-	displayName="[VKN] Carrier Rig (MTP Woodland)";
-	author="Eric Mchogan";
-	hiddenSelectionsTextures[]={"\VKN_Gear\data\Vests\Vanilla\Vest_tflod.paa"};
-	descriptionShort="MTP Wdlnd Rig";
-};
-
-class VKN_Carrier_Lite_MTP_Tan: VKN_Carrier_Lite_Base {
-	scope=2;
-	displayName="[VKN] Carrier Lite (MTP Tan)";
-	author="Eric Mchogan";
-	hiddenSelectionsTextures[]={"\VKN_Gear\data\Vests\Vanilla\Vest_tfltan.paa"};
-	descriptionShort="MTP Tan Rig Lite";
-};
-
-class VKN_Carrier_MTP_Tan: VKN_Carrier_Rig_Base {
-	scope=2;
-	displayName="[VKN] Carrier Rig (MTP Tan)";
-	author="Eric Mchogan";
-	hiddenSelectionsTextures[]={"\VKN_Gear\data\Vests\Vanilla\Vest_tfltan.paa"};
-	descriptionShort="MTP Tan Rig";
-};
-
-class VKN_Carrier_Lite_MTP_Crye: VKN_Carrier_Lite_Base {
-	scope=2;
-	displayName="[VKN] Carrier Lite (MTP Crye)";
-	author="Eric Mchogan";
-	hiddenSelectionsTextures[]={"\VKN_Gear\data\Vests\Vanilla\Vest_crye.paa"};
-	descriptionShort="MTP Crye Rig Lite";
-};
-
-class VKN_Carrier_MTP_Crye: VKN_Carrier_Rig_Base {
-	scope=2;
-	displayName="[VKN] Carrier Rig (MTP Crye)";
-	author="Eric Mchogan";
-	hiddenSelectionsTextures[]={"\VKN_Gear\data\Vests\Vanilla\Vest_crye.paa"};
-	descriptionShort="MTP Crye Rig";
-};
-
 class VKN_Black_Carrier_RIG: VKN_Carrier_Rig_Base {
 	scope=2;
 	displayName="[VKN] FBA Carrier Rig (Black)";
