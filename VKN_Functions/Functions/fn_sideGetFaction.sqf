@@ -9,8 +9,10 @@ License:      This file is under "Arma Public License No Derivatives (APL-ND)"
               More information can be found at:
               https://www.bohemia.net/community/licenses/arma-public-license-nd
 
-              Parameters:
-                              0: side - side in integer format.
+Framework:    Mission Template
+
+Parameters:
+              0: side - side in integer format.
 
 Example:      1 call VKN_fnc_sideGetFaction;
 */

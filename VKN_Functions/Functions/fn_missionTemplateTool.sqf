@@ -3,16 +3,16 @@ Script name:    fn_missionTemplateTool.sqf
 Created on:     11 ‎December ‎2018
 Author:         Curious
 
-License:		This file is under "Arma Public License No Derivatives (APL-ND)"
-				More information can be found at:
-				https://www.bohemia.net/community/licenses/arma-public-license-nd
+License:		    This file is under "Arma Public License No Derivatives (APL-ND)"
+				        More information can be found at:
+				        https://www.bohemia.net/community/licenses/arma-public-license-nd
 
 Description:    setup mission with predefined settings.
 
 Framework:      Mission Template
 
 Parameters:
-				N/A
+				        N/A
 */
 //Setup settings and define variables
 createDialog "VKN_Template_Tool_Basic_Settings";
