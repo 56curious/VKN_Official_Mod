@@ -172,7 +172,7 @@ collect3DENHistory {
 	//Setup the respawn positions/settings
 	_RespawnPos = create3DENEntity ["Logic", "ModuleRespawnPosition_F", _position];
   _RespawnPos set3DENAttribute ["name", "defaultRespawnPosition"];
-  _RespawnPos set3DENAttribute ["ModuleRespawnPosition_F_Side", 1];
+  _RespawnPos set3DENAttribute ["ModuleRespawnPosition_F_Side", [_side_Option, "side", "number"] call VKN_fnc_formatChange]; // works but opfor is 0 and so is leading side, needs adjustment variable above.
 	_RespawnPos set3DENAttribute ["ModuleRespawnPosition_F_ShowNotification", 0];
 	_RespawnPos set3DENAttribute ["ModuleRespawnPosition_F_Name", "Respawn Point"];
 	_RespawnPos set3DENAttribute ["ModuleRespawnPosition_F_Marker", 2];
@@ -214,7 +214,7 @@ collect3DENHistory {
 	for "_i" from 0 to 2 step 1 do {
 		_Module = _ZeusModules select _i;
 		_Entity = _ZeusEntitiesNames select _i;
-		_Module set3DENAttribute [ "name", format["Zeus_Module%1", _i]];
+		_Module set3DENAttribute [ "name", format ["Zeus_Module%1", _i]];
 		_Module set3DENAttribute [ "ModuleCurator_F_Owner", _Entity ];
 		_Module set3DENAttribute [ "ModuleCurator_F_Name", "Zeus" ];
 		_Module set3DENAttribute [ "ModuleCurator_F_Addons", 3 ];
