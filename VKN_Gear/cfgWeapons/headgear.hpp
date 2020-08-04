@@ -279,6 +279,36 @@ class VKN_h_HelmetB_Camo_cazador: ItemCore {
     hiddenSelections[] = {"camo1","camo2"};
     hiddenSelectionsTextures[] = {"\VKN_Gear\data\Headgear\capb_black_co.paa","\VKN_Gear\data\Headgear\VKN_cap_sand_scand.paa"};
   };
+   // Caps in black (Russian Logo)
+  class VKN_cap_front_black_4: VKN_cap_front_base{
+    author="Shagger";
+    scope = 2;
+    displayName = "[VKN] Front Facing Cap Black (Russia Logo)";
+    hiddenSelections[] = {"camo1","camo2"};
+    hiddenSelectionsTextures[] = {"\VKN_Gear\data\Headgear\capb_black_co.paa","\VKN_Gear\data\Headgear\VKN_cap_blk_rus.paa"};
+  };
+  class VKN_cap_back_black_4: VKN_cap_back_base {
+    author="Shagger";
+    scope = 2;
+    displayName = "[VKN] Backward Facing Cap Black (Russia Logo)";
+    hiddenSelections[] = {"camo1","camo2"};
+    hiddenSelectionsTextures[] = {"\VKN_Gear\data\Headgear\capb_black_co.paa","\VKN_Gear\data\Headgear\VKN_cap_blk_rus.paa"};
+  };
+  // Caps in black (Russian Logo)
+    class VKN_cap_front_black_5: VKN_cap_front_base{
+    author="Shagger";
+    scope = 2;
+    displayName = "[VKN] Front Facing Cap Black (USA Logo)";
+    hiddenSelections[] = {"camo1","camo2"};
+    hiddenSelectionsTextures[] = {"\VKN_Gear\data\Headgear\capb_black_co.paa","\VKN_Gear\data\Headgear\VKN_cap_blk_usa.paa"};
+  };
+  class VKN_cap_back_black_5: VKN_cap_back_base {
+    author="Shagger";
+    scope = 2;
+    displayName = "[VKN] Backward Facing Cap Black (USA Logo)";
+    hiddenSelections[] = {"camo1","camo2"};
+    hiddenSelectionsTextures[] = {"\VKN_Gear\data\Headgear\capb_black_co.paa","\VKN_Gear\data\Headgear\VKN_cap_blk_usa.paa"};
+  };
 // caps in OD (vkn Logo)
   class VKN_cap_front_od: VKN_cap_front_base{
     author="Shagger";
@@ -338,4 +368,19 @@ class VKN_h_HelmetB_Camo_cazador: ItemCore {
     displayName = "[VKN] Backward Facing Cap Sand (Scand Logo)";
     hiddenSelections[] = {"camo1","camo2"};
     hiddenSelectionsTextures[] = {"\VKN_Gear\data\Headgear\capb_sand_co.paa","\VKN_Gear\data\Headgear\VKN_cap_sand_scand.paa"};
+  };
+    // caps in Sand (USA Logo)
+  class VKN_cap_front_sand_4: VKN_cap_front_base{
+    author="Shagger";
+    scope = 2;
+    displayName = "[VKN] Front Facing Cap Sand (USA Logo)";
+    hiddenSelections[] = {"camo1","camo2","camo3"};
+    hiddenSelectionsTextures[] = {"\VKN_Gear\data\Headgear\capb_sand_co.paa","\VKN_Gear\data\Headgear\VKN_cap_blk_usa.paa","VKN_Gear\data\Headgear\VKN_cap_blk_rus.paa"};
+  };
+  class VKN_cap_back_sand_4: VKN_cap_back_base {
+    author="Shagger";
+    scope = 2;
+    displayName = "[VKN] Backward Facing Cap Sand (USA Logo)";
+    hiddenSelections[] = {"camo1","camo2","camo3"};
+    hiddenSelectionsTextures[] = {"\VKN_Gear\data\Headgear\capb_sand_co.paa","\VKN_Gear\data\Headgear\VKN_cap_blk_usa.paa","VKN_Gear\data\Headgear\VKN_cap_blk_rus.paa"};
   };
