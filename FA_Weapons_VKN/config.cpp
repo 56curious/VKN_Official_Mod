@@ -124,8 +124,17 @@ class GunParticles;
 class CfgWeapons
 {
 	class Rifle_Base_F;
+	class Pistol_Base_F;
 
 	class FA_Base_Rifle_VKN : Rifle_Base_F {
+		class WeaponSlotsInfo {
+			class SlotInfo;
+		};
+		class GunParticles;
+		class AnimationSources;
+	};
+
+	class FA_Base_Pistol_VKN : Pistol_Base_F {
 		class WeaponSlotsInfo {
 			class SlotInfo;
 		};
@@ -658,21 +667,424 @@ class CfgWeapons
 		model = "\FA_Weapons_VKN\data\ak5c\ak5c_collapsed.p3d";
 		inertia = 0.35;
 	};
+
+//Remington 870 - Source: https://www.cgtrader.com/3d-models/military/gun/rm-870-shotgun
+	class VKN_Remington870: FA_Base_Rifle_VKN
+	{
+	    scope = 2;
+		author = "Luca, Author: michaelkarel29";
+		maxZeroing = 100;
+		picture = "\FA_Weapons_VKN\data\icons\icon_rm870_ca.paa";
+		displayName = "Remington 870";
+		descriptionShort = "Remington 870 - Shotgun <br/>Caliber: 12 Gauge";
+		magazines[] = {"VKN_8Rnd_12Gauge_Pellets","VKN_8Rnd_12Gauge_Slugs","2Rnd_12Gauge_Pellets", "2Rnd_12Gauge_Slug"};
+		model = "FA_Weapons_VKN\data\remington870\Remington870.p3d";
+		hiddenSelections[] = {"camo1"};
+		hiddenSelectionsTextures[] = {"FA_Weapons_VKN\data\remington870\textures\RM870_co.paa"};
+		drySound[] = {"A3\sounds_f\weapons\other\dry1", 0.6, 1, 10};
+		reloadMagazineSound[] = {"FA_Weapons_VKN\data\sounds\RM870_Reload.wav", 0.8, 1, 20};
+		reloadAction = "GestureReloadM4SSAS";
+		handAnim[] = {"OFP2_ManSkeleton", "\FA_Weapons_VKN\data\anims\RM870.rtm"};
+		inertia = 0.4;
+		recoil = "recoil_huntershotgun_01";
+		modes[] = {"Single"};
+
+		class Single : Mode_SemiAuto {
+			sounds[]=
+			{
+				"StandardSound",
+				"SilencedSound"
+			};
+ 			class BaseSoundModeType;
+			class StandardSound: BaseSoundModeType
+			{
+				soundSetShot[]=
+				{
+					"HunterShotgun_01_Shot_SoundSet",
+					"HunterShotgun_01_Tail_SoundSet"
+				};
+			};
+			class SilencedSound: BaseSoundModeType
+			{
+				SoundSetShot[]=
+				{
+					"HunterShotgun_01_Shot_SoundSet",
+					"HunterShotgun_01_Tail_SoundSet"
+				};
+			};
+			dispersion = 0.0037;
+			reloadTime = 0.5;
+		};
+
+		class WeaponSlotsInfo : WeaponSlotsInfo {
+			mass = 110;
+			allowedSlots[] = {901};
+
+			class CowsSlot : SlotInfo {
+				linkProxy = "\A3\data_f\proxies\weapon_slots\TOP";
+				compatibleItems[] = {"optic_Yorris","optic_Holosight_arid_F","optic_Holosight_lush_F","optic_Holosight","optic_Holosight_smg","optic_Holosight_khk_F","optic_Holosight_smg_khk_F","optic_Holosight_smg_blk_F","optic_Holosight_blk_F"};
+				iconScale = 0.1;
+			};
+		};
+
+		class EventHandlers {
+            fired = "_this call CBA_fnc_weaponEvents";
+        };
+        class CBA_weaponEvents {
+            handAction = "";
+            sound = "VKN_RM870_Pumping";
+            soundLocation = "RightHandMiddle1";
+            delay = 0;
+            onEmpty = 0;
+            hasOptic = 0;
+            soundEmpty = "";
+            soundLocationEmpty = "";
+        };
+    };
+
+//SIG P250 - Source: https://www.cgtrader.com/3d-models/military/gun/sig-sauer-p250
+	class VKN_SigP250: FA_Base_Pistol_VKN
+	{
+	    scope = 2;
+		author = "Luca, Author: hanyrick";
+		picture = "\FA_Weapons_VKN\data\icons\icon_sigp250_ca.paa";
+		displayName = "Sig Sauer P250";
+		descriptionShort = "Sig Sauer P250 - Handgun <br/>Caliber: 9x21mm";
+		magazines[] = {"16Rnd_9x21_Mag","16Rnd_9x21_yellow_Mag","16Rnd_9x21_green_Mag","16Rnd_9x21_red_Mag","30Rnd_9x21_Green_Mag","30Rnd_9x21_Yellow_Mag","30Rnd_9x21_Red_Mag","30Rnd_9x21_Mag"};
+		model = "FA_Weapons_VKN\data\sigp250\SigP250.p3d";
+		hiddenSelections[] = {"camo1"};
+		hiddenSelectionsTextures[] = {"FA_Weapons_VKN\data\sigp250\textures\SigP250_co.paa"};
+		changeFiremodeSound[] = {};
+		reloadMagazineSound[]={"A3\Sounds_F\arsenal\weapons\Pistols\P07\reload_P07",1,1,10};
+		drySound[] = {"A3\Sounds_F\arsenal\weapons\Pistols\P07\dry_P07", 0.5, 1, 20};
+		inertia = 0.1;
+		recoil = "recoil_pistol_p07";
+		modes[] = {"Single"};
+		class Single : Mode_SemiAuto
+		{
+			sounds[] =
+			{
+				StandardSound,
+				SilencedSound
+			};
+ 			class BaseSoundModeType;
+ 			class StandardSound: BaseSoundModeType
+			{
+				soundSetShot[]=
+				{
+					"P07_Shot_SoundSet",
+					"P07_Tail_SoundSet",
+					"P07_InteriorTail_SoundSet"
+				};
+			};
+			class SilencedSound: BaseSoundModeType
+			{
+				SoundSetShot[]=
+				{
+					"P07_silencerShot_SoundSet",
+					"P07_silencerTail_SoundSet",
+					"P07_silencerInteriorTail_SoundSet"
+				};
+			};
+			reloadTime = 0.08;
+			dispersion = 0.003;
+		};
+
+		class WeaponSlotsInfo : WeaponSlotsInfo
+		{
+			mass = 30;
+			allowedSlots[] = {701,801,901};
+			class MuzzleSlot : SlotInfo
+			{
+				linkProxy = "\A3\data_f\proxies\weapon_slots\MUZZLE";
+				compatibleItems[] = {"muzzle_snds_L"};
+				iconScale = 0.1;
+			};
+			class CowsSlot : SlotInfo
+			{
+				linkProxy = "\A3\data_f\proxies\weapon_slots\TOP";
+				compatibleItems[] = {"optic_MRD","optic_MRD_black"};
+				iconScale = 0.1;
+			};
+			class PointerSlot : SlotInfo
+			{
+			    linkProxy = "\A3\data_f\proxies\weapon_slots\SIDE";
+				compatibleItems[] = {"acc_flashlight_pistol"};
+				iconScale = 0.1;
+			};
+		};
+    };
+
+//SIG P226 - Source: https://sketchfab.com/3d-models/sig-sauer-p226-53072553551e403a921448ee5581990e
+	class VKN_SigP226: FA_Base_Pistol_VKN
+	{
+	    scope = 2;
+		author = "Luca, Author: Yksnawel";
+		picture = "\FA_Weapons_VKN\data\icons\icon_sigp226_ca.paa";
+		displayName = "Sig Sauer P226";
+		descriptionShort = "Sig Sauer P226 - Handgun <br/>Caliber: 9x21mm";
+		magazines[] = {"16Rnd_9x21_Mag","16Rnd_9x21_yellow_Mag","16Rnd_9x21_green_Mag","16Rnd_9x21_red_Mag","30Rnd_9x21_Green_Mag","30Rnd_9x21_Yellow_Mag","30Rnd_9x21_Red_Mag","30Rnd_9x21_Mag"};
+		model = "FA_Weapons_VKN\data\sigp226\SigP226.p3d";
+		hiddenSelections[] = {"camo1","camo2","camo3","camo4","camo5"};
+		hiddenSelectionsTextures[] = {"FA_Weapons_VKN\data\sigp226\textures\barrel\barrel_co.paa", "FA_Weapons_VKN\data\sigp226\textures\body\body_co.paa", "FA_Weapons_VKN\data\sigp226\textures\grip\grip_co.paa", "FA_Weapons_VKN\data\sigp226\textures\magazine\magazine_co.paa", "FA_Weapons_VKN\data\sigp226\textures\slide\slide_co.paa"};
+		changeFiremodeSound[] = {};
+		reloadMagazineSound[]={"A3\Sounds_F\arsenal\weapons\Pistols\P07\reload_P07",1,1,10};
+		drySound[] = {"A3\Sounds_F\arsenal\weapons\Pistols\P07\dry_P07", 0.5, 1, 20};
+		inertia = 0.1;
+		recoil = "recoil_pistol_rook40";
+		modes[] = {"Single"};
+		class Single : Mode_SemiAuto
+		{
+			sounds[] =
+			{
+				StandardSound,
+				SilencedSound
+			};
+ 			class BaseSoundModeType;
+ 			class StandardSound: BaseSoundModeType
+			{
+				soundSetShot[]=
+				{
+					"Rook40_Shot_SoundSet",
+					"Rook40_Tail_SoundSet",
+					"Rook40_InteriorTail_SoundSet"
+				};
+			};
+			class SilencedSound: BaseSoundModeType
+			{
+				SoundSetShot[]=
+				{
+					"Rook40_silencerShot_SoundSet",
+					"Rook40_silencerTail_SoundSet",
+					"Rook40_silencerInteriorTail_SoundSet"
+				};
+			};
+			reloadTime = 0.082;
+			dispersion = 0.00285;
+		};
+
+		class WeaponSlotsInfo : WeaponSlotsInfo
+		{
+			mass = 30;
+			allowedSlots[] = {701,801,901};
+			class MuzzleSlot : SlotInfo
+			{
+				linkProxy = "\A3\data_f\proxies\weapon_slots\MUZZLE";
+				compatibleItems[] = {"muzzle_snds_L"};
+				iconScale = 0.1;
+			};
+			class CowsSlot : SlotInfo
+			{
+				linkProxy = "\A3\data_f\proxies\weapon_slots\TOP";
+				compatibleItems[] = {"optic_MRD","optic_MRD_black"};
+				iconScale = 0.1;
+			};
+			class PointerSlot : SlotInfo
+			{
+			    linkProxy = "\A3\data_f\proxies\weapon_slots\SIDE";
+				compatibleItems[] = {"acc_flashlight_pistol"};
+				iconScale = 0.1;
+			};
+		};
+    };
+
+//Desert Eagle - Source: https://www.cgtrader.com/3d-models/military/gun/desert-eagle-pbr
+	class VKN_DesertEagle: FA_Base_Pistol_VKN
+	{
+	    scope = 2;
+		author = "Luca";
+		picture = "\FA_Weapons_VKN\data\icons\icon_deagle_ca.paa";
+		displayName = "Desert Eagle";
+		descriptionShort = "Desert Eagle - Handgun <br/>Caliber: .50 Action Express";
+		magazines[] = {"VKN_7Rnd_50AE_Mag"};
+		model = "FA_Weapons_VKN\data\deserteagle\DEagle.p3d";
+		hiddenSelections[] = {"camo1","camo2"};
+		hiddenSelectionsTextures[] = {"FA_Weapons_VKN\data\deserteagle\textures\DEagle_co.paa", "FA_Weapons_VKN\data\deserteagle\textures\bullet\bullet_co.paa"};
+		changeFiremodeSound[] = {};
+		reloadMagazineSound[]={"A3\Sounds_F\arsenal\weapons\Pistols\4-Five\reload_4_five",1.5,1,15};
+		drySound[] = {"A3\Sounds_F\arsenal\weapons\Pistols\4-Five\dry_4_Five", 0.8, 1, 20};
+		inertia = 0.13;
+		recoil = "recoil_ARX_secondary";
+		modes[] = {"Single"};
+		class Single : Mode_SemiAuto
+		{
+			sounds[] =
+			{
+				StandardSound,
+				SilencedSound
+			};
+ 			class BaseSoundModeType;
+ 			class StandardSound: BaseSoundModeType
+			{
+				soundSetShot[]=
+				{
+					"50cal_Type115_Shot_SoundSet",
+					"50cal_Type115_Tail_SoundSet",
+					"50cal_Type115_interiorTail_SoundSet"
+				};
+			};
+			class SilencedSound: BaseSoundModeType
+			{
+				soundSetShot[]=
+				{
+					"50cal_Type115_Shot_SoundSet",
+					"50cal_Type115_Tail_SoundSet",
+					"50cal_Type115_interiorTail_SoundSet"
+				};
+			};
+			reloadTime = 0.135;
+			dispersion = 0.00453;
+		};
+
+		class WeaponSlotsInfo : WeaponSlotsInfo
+		{
+			mass = 48;
+			allowedSlots[] = {701,801,901};
+			class CowsSlot : SlotInfo
+			{
+				linkProxy = "\A3\data_f\proxies\weapon_slots\TOP";
+				compatibleItems[] = {"optic_MRD","optic_MRD_black"};
+				iconScale = 0.1;
+			};
+			class PointerSlot : SlotInfo
+			{
+			    linkProxy = "\A3\data_f\proxies\weapon_slots\SIDE";
+				compatibleItems[] = {"acc_flashlight_pistol"};
+				iconScale = 0.1;
+			};
+		};
+    };
+
+//AS Val - Source: https://www.cgtrader.com/3d-models/military/gun/as-val-game-ready
+	class VKN_ASVAL : FA_Base_Rifle_VKN {
+		scope = 2;
+		author = "Luca, Author: simon1-mercuzot";
+		maxZeroing = 300;
+		displayName = "AS Val";
+		descriptionshort = "AS Val - Assault Rifle <br/>Caliber: 9x39mm";
+		model = "\FA_Weapons_VKN\data\asval\as_val.p3d";
+		magazines[] = {"VKN_30Rnd_9x39mm_Mag","VKN_20Rnd_9x39mm_Mag"};
+		picture = "\FA_Weapons_VKN\data\icons\icon_asval_ca.paa";
+		changeFiremodeSound[] = {"A3\Sounds_F\arsenal\weapons\SMG\Vermin\firemode_Vermin",0.6,1,5};
+		drySound[] = {"A3\Sounds_F\arsenal\weapons\SMG\Vermin\Dry_Vermin",0.6,1,10};
+		hiddenSelections[] = {"camo1"};
+		hiddenSelectionsTextures[] = {"FA_Weapons_VKN\data\asval\textures\body_co.paa"};
+		handAnim[] = {"OFP2_ManSkeleton", "\A3\Weapons_F_beta\Smgs\SMG_02\data\Anim\SMG_02.rtm"};
+		reloadAction="GestureReloadSMG_02";
+		reloadMagazineSound[] = {"A3\Sounds_F\arsenal\weapons\SMG\Sting\reload_sting",1,1,10};
+		inertia = 0.3;
+		recoil = "recoil_smg_01";
+		modes[] = {"Single", "FullAuto"};
+		magazineReloadSwitchPhase = 0.15;
+
+		class Single: Mode_SemiAuto
+		{
+			class BaseSoundModeType;
+			class StandardSound: BaseSoundModeType
+			{
+				SoundSetShot[]=
+				{
+					"SMGVermin_silencerShot_SoundSet",
+					"SMGVermin_silencerTail_SoundSet",
+					"SMGVermin_silencerInteriorTail_SoundSet"
+				};
+			};
+			class SilencedSound: BaseSoundModeType
+			{
+				SoundSetShot[]=
+				{
+					"SMGVermin_silencerShot_SoundSet",
+					"SMGVermin_silencerTail_SoundSet",
+					"SMGVermin_silencerInteriorTail_SoundSet"
+				};
+			};
+			reloadTime=0.08;
+			dispersion = 0.000551;
+		};
+		class FullAuto: Mode_FullAuto
+		{
+			class BaseSoundModeType;
+			class StandardSound: BaseSoundModeType
+			{
+				SoundSetShot[]=
+				{
+					"SMGVermin_silencerShot_SoundSet",
+					"SMGVermin_silencerTail_SoundSet",
+					"SMGVermin_silencerInteriorTail_SoundSet"
+				};
+			};
+			class SilencedSound: BaseSoundModeType
+			{
+				SoundSetShot[]=
+				{
+					"SMGVermin_silencerShot_SoundSet",
+					"SMGVermin_silencerTail_SoundSet",
+					"SMGVermin_silencerInteriorTail_SoundSet"
+				};
+			};
+			reloadTime = 0.08;
+			dispersion = 0.000551;
+		};
+		class WeaponSlotsInfo
+		{
+		    mass = 65;
+			allowedSlots[] = {901,701};
+			class CowsSlot : SlotInfo
+			{
+				linkProxy = "\A3\data_f\proxies\weapon_slots\TOP";
+				compatibleItems[] = {"optic_Aco","optic_Aco_smg","optic_ACO_grn_smg","optic_ACO_grn","optic_Holosight_arid_F","optic_Holosight_lush_F","optic_Holosight","optic_Holosight_smg","optic_Holosight_khk_F","optic_Holosight_smg_khk_F","optic_Holosight_smg_blk_F","optic_Holosight_blk_F","optic_MRCO","optic_Hamr","optic_Hamr_khk_F","optic_Arco","optic_Arco_blk_F","optic_Arco_lush_F","optic_Arco_arid_F","optic_Arco_ghex_F","optic_Arco_AK_blk_F","optic_Arco_AK_arid_F","optic_Arco_AK_lush_F","optic_ERCO_blk_F","optic_ERCO_snd_F","optic_ERCO_khk_F","optic_DMS","optic_DMS_ghex_F","optic_DMS_weathered_F","optic_DMS_weathered_Kir_F","optic_AMS","optic_AMS_snd","optic_AMS_khk","optic_KHS_blk","optic_KHS_hex","optic_KHS_tan","optic_KHS_old","optic_SOS","optic_SOS_khk_F","optic_LRPS","optic_LRPS_tna_F","optic_LRPS_ghex_F","optic_Nightstalker","optic_NVS","optic_tws","optic_tws_mg"};
+				iconScale = 0.1;
+			};
+			class PointerSlot : PointerSlot
+			{
+				linkProxy = "\A3\data_f\proxies\weapon_slots\SIDE";
+				compatibleItems[] = {"acc_flashlight","acc_pointer_IR"};
+				iconScale = 0.1;
+			};
+		};
+	};
+
+	class VKN_ASVAL_Custom : VKN_ASVAL {
+		author = "Luca, Author: simon1-mercuzot";
+		displayName = "AS Val (Custom)";
+		model = "\FA_Weapons_VKN\data\asval\as_val_custom.p3d";
+		hiddenSelections[] = {"camo1","camo2"};
+		hiddenSelectionsTextures[] = {"FA_Weapons_VKN\data\asval\textures\body_co.paa","FA_Weapons_VKN\data\asval\textures\stock\stock_co.paa"};
+	};
 };
 
-class CfgAmmo
-{
+class CfgAmmo {
 	class B_9x21_Ball;
+	class B_12Gauge_Slug_NoCartridge;
+	class B_12Gauge_Pellets_Submunition;
+	class B_50BW_Ball_F;
 
 	class FA_VKN_9x39mm_Ball : B_9x21_Ball {
 		hit = 6;
 		caliber = 1.35;
+	};
+
+	class VKN_12Gauge_Slug : B_12Gauge_Slug_NoCartridge {
+		cartridge = "FxCartridge_slug";
+	};
+
+	class VKN_12Gauge_Pellets : B_12Gauge_Pellets_Submunition {
+		cartridge = "FxCartridge_slug";
+	};
+
+	class VKN_50AE_Ball : B_50BW_Ball_F {
+		hit = 13.2;
+		caliber = 2.2;
+		cartridge = "FxCartridge_762x39";
 	};
 };
 
 class CfgMagazines {
 	class 20Rnd_762x51_Mag;
 	class 30Rnd_9x21_Mag;
+	class 2Rnd_12Gauge_Slug;
+	class 2Rnd_12Gauge_Pellets;
+	class 9Rnd_45ACP_Mag;
 
 	class VKN_10Rnd_762x54mm_Mag : 20Rnd_762x51_Mag {
 		scope = 2;
@@ -692,7 +1104,59 @@ class CfgMagazines {
 		picture = "\FA_Weapons_VKN\data\icons\icon_vss_mag_ca.paa";
 		count = 20;
 		ammo = "FA_VKN_9x39mm_Ball";
-		descriptionshort = "Caliber: 9x39mm<br />Rounds: 20<br />Used in: VSS";
+		reloadAction="GestureReloadSMG_02";
+		descriptionshort = "Caliber: 9x39mm<br />Rounds: 20<br />Used in: VSS, AS Val";
+		model = "\FA_Weapons_VKN\data\magazines\20Rnd_939Mag.p3d";
+		modelSpecial = "\FA_Weapons_VKN\data\magazines\20Rnd_939Mag.p3d";
+		modelSpecialIsProxy = 1;
 		mass = 10;
+	};
+
+	class VKN_8Rnd_12Gauge_Slugs : 2Rnd_12Gauge_Slug {
+		scope = 2;
+		author = "Luca";
+		displayName = "8Rnd 12 Gauge Slugs";
+		picture = "\FA_Weapons_VKN\data\icons\mag_slugs_ca.paa";
+		count = 8;
+		//ammo = "B_12Gauge_Slug"; = Overpowered, use at own risk
+		ammo = "VKN_12Gauge_Slug";
+		descriptionShort = "Caliber: 12 Gauge<br />Rounds: 8<br />Used in: Remington 870";
+		mass = 8;
+	};
+
+	class VKN_8Rnd_12Gauge_Pellets : 2Rnd_12Gauge_Pellets {
+		scope = 2;
+		author = "Luca";
+		picture = "\FA_Weapons_VKN\data\icons\mag_pellets_ca.paa";
+		displayName = "8Rnd 12 Gauge Pellets";
+		count = 8;
+		//ammo = "B_12Gauge_Pellets"; = Overpowered, use at own risk
+		ammo = "VKN_12Gauge_Pellets";
+		descriptionShort = "Caliber: 12 Gauge<br />Rounds: 8<br />Used in: Remington 870";
+		mass = 8;
+	};
+
+	class VKN_7Rnd_50AE_Mag : 9Rnd_45ACP_Mag {
+		scope = 2;
+		author = "Luca";
+		displayName = "7Rnd .50AE";
+		picture = "\FA_Weapons_VKN\data\icons\icon_deagle_mag_ca.paa";
+		count = 7;
+		ammo = "VKN_50AE_Ball";
+		descriptionshort = "Caliber: .50 Action Express<br />Rounds: 7<br />Used in: Desert Eagle";
+		mass = 12;
+	};
+
+	class VKN_30Rnd_9x39mm_Mag : VKN_20Rnd_9x39mm_Mag {
+		scope = 2;
+		author = "Luca";
+		displayName = "30Rnd 9x39mm";
+		picture = "\FA_Weapons_VKN\data\icons\icon_asval_mag_ca.paa";
+		count = 30;
+		descriptionshort = "Caliber: 9x39mm<br />Rounds: 30<br />Used in: AS Val, VSS";
+		model = "\FA_Weapons_VKN\data\magazines\30Rnd_939Mag.p3d";
+		modelSpecial = "\FA_Weapons_VKN\data\magazines\30Rnd_939Mag.p3d";
+		modelSpecialIsProxy = 1;
+		mass = 14;
 	};
 };
