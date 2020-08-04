@@ -36,6 +36,8 @@ class CfgFunctions {
 
       class selectRandomIndex{};
 
+      class formatChange{};
+
       class missionTemplateTool{};
 
       class sideGetFaction{};
