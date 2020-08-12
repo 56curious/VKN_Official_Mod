@@ -172,10 +172,23 @@ collect3DENHistory {
 	//Setup the respawn positions/settings
 	_RespawnPos = create3DENEntity ["Logic", "ModuleRespawnPosition_F", _position];
   _RespawnPos set3DENAttribute ["name", "defaultRespawnPosition"];
-  _RespawnPos set3DENAttribute ["ModuleRespawnPosition_F_Side", [_side_Option, "side", "number"] call VKN_fnc_formatChange]; // works but opfor is 0 and so is leading side, needs adjustment variable above.
-	_RespawnPos set3DENAttribute ["ModuleRespawnPosition_F_ShowNotification", 0];
-	_RespawnPos set3DENAttribute ["ModuleRespawnPosition_F_Name", "Respawn Point"];
-	_RespawnPos set3DENAttribute ["ModuleRespawnPosition_F_Marker", 2];
+  _RespawnPos set3DENAttribute ["ModuleRespawnPosition_F_ShowNotification", 0];
+  _RespawnPos set3DENAttribute ["ModuleRespawnPosition_F_Name", "Respawn Point"];
+  _RespawnPos set3DENAttribute ["ModuleRespawnPosition_F_Marker", 2];
+  switch (toUpper _side_Option) do {
+    case ("EAST"): {
+        _RespawnPos set3DENAttribute ["ModuleRespawnPosition_F_Side", 0];
+    };
+    case ("WEST"): {
+        _RespawnPos set3DENAttribute ["ModuleRespawnPosition_F_Side", 1];
+    };
+    case ("GUER"): {
+        _RespawnPos set3DENAttribute ["ModuleRespawnPosition_F_Side", 2];
+    };
+    case ("CIV"): {
+        _RespawnPos set3DENAttribute ["ModuleRespawnPosition_F_Side", 3];
+    };
+  };
 
 	//create the Zeus sub-settings
 	_ZeusAttributeCuratorAddEditableObjects = create3DENEntity ["Logic", "ModuleCuratorAddEditableObjects", _position];
