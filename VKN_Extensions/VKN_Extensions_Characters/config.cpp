@@ -570,12 +570,9 @@ class cfgVehicles {
 };
 
 class cfgGroups {
-
     class Indep {
-        #include "cfgGroups\Asian_Paramilitary.hpp"
-        #include "cfgGroups\Sonora_Cartel.hpp"
-        #include "cfgGroups\Modern_China.hpp"
-        #include "cfgGroups\Legion.hpp"
+      #include "cfgGroups\Asian_Paramilitary.hpp"
+      #include "cfgGroups\Sonora_Cartel.hpp"
     };
 
     class East {
@@ -588,8 +585,10 @@ class cfgGroups {
         #include "cfgGroups\CSAA.hpp"
         #include "cfgGroups\CSM.hpp"
         #include "cfgGroups\Abu_Bakr.hpp"
+        #include "cfgGroups\Modern_China.hpp"
         #include "cfgGroups\NorthVietnamArmy.hpp"
     };
+    
 
     class West {
         #include "cfgGroups\Viking_PMC_ODIN.hpp"
@@ -605,5 +604,6 @@ class cfgGroups {
         #include "cfgGroups\Viking_PMC_BALDER.hpp"
         #include "cfgGroups\bbarmy.hpp"
         #include "cfgGroups\Taiga.hpp"
+        #include "cfgGroups\Legion.hpp"
     };
 };

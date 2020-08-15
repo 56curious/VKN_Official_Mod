@@ -20,7 +20,7 @@ createDialog "VKN_Template_Tool_Basic_Settings";
 _squad = 0;
 _3denCam = get3DENCamera;
 
-//Get a reasonible position for template to be created (avoids it spawning in a weird position)
+//Get a reasonable position for template to be created (avoids it spawning in a weird position)
 [_3denCam, 5] call bis_fnc_setHeight;
 
 _y = 0; _p = -45; _r = 0;
@@ -143,16 +143,16 @@ collect3DENHistory {
     set3DENMissionAttributes[["Multiplayer", "Enh_SaveLoadout", _saveLoadouts]];
 		set3DENMissionAttributes[["Multiplayer", "Enh_DynamicGroups", _dynamicGroups]];
 	} else {
-		systemChat "3DEN Enhanced not found but is recommended to be used at all times, missing dyanmic groups and loadout saving attributes, restart with mod and restart tool to fix.";
+		systemChat "3DEN Enhanced not found but is recommended to be used at all times, missing dynamic groups and loadout saving attributes, restart with mod and restart tool to fix.";
 	};
 
 	//Set all of the mission settings to their defaults
 	set3DENMissionAttributes [
 		["Multiplayer", "respawn", 3],
 		["Multiplayer", "respawnDelay", 180],
-    ["Multiplayer", "respawnTemplates", ["Counter", "Spectator", "MenuPosition"]],
-    ["Multiplayer", "MaxPlayers", 60],
-    ["Multiplayer", "IntelOverviewText", "Viking PMC Operation"],
+    	["Multiplayer", "respawnTemplates", ["Counter", "Spectator", "MenuPosition"]],
+    	["Multiplayer", "MaxPlayers", 60],
+    	["Multiplayer", "IntelOverviewText", "Viking PMC Operation"],
 		["Multiplayer", "GameType", "VKN_OP"],
 		["Multiplayer", "DisabledAI", true],
 		["Multiplayer", "JoinUnassigned", false],

@@ -3,7 +3,7 @@ class B_Gen_Squad_Leader_01 : B_Soldier_SL_F_OCimport_02 {
     scope = 2;
     scopeCurator = 2;
     displayName = "Squad Leader";
-    side = 2;
+    side = 1;
     faction = "I_Gen";
 
     identityTypes[] = {"Head_NATO","LanguageENG_F","G_NATO_default"};
@@ -43,7 +43,7 @@ class I_Gen_Rifleman_01 : B_Soldier_F_OCimport_02 {
     scope = 2;
     scopeCurator = 2;
     displayName = "Rifleman";
-    side = 2;
+    side = 1;
     faction = "I_Gen";
 
     identityTypes[] = {"Head_NATO","LanguageENG_F","G_NATO_default"};
@@ -81,7 +81,7 @@ class I_Gen_Rifleman_AT_01 : B_soldier_LAT_F_OCimport_02 {
     scope = 2;
     scopeCurator = 2;
     displayName = "Rifleman (AT)";
-    side = 2;
+    side = 1;
     faction = "I_Gen";
 
     identityTypes[] = {"Head_NATO","LanguageENG_F","G_NATO_default"};
@@ -121,7 +121,7 @@ class I_Gen_Heavy_Gunner_01 : B_HeavyGunner_F_OCimport_02 {
     scope = 2;
     scopeCurator = 2;
     displayName = "Heavy Gunner";
-    side = 2;
+    side = 1;
     faction = "I_Gen";
 
     identityTypes[] = {"Head_NATO","LanguageENG_F","G_NATO_default"};
@@ -161,7 +161,7 @@ class I_Gen_Autorifleman_01 : B_soldier_AR_F_OCimport_02 {
     scope = 2;
     scopeCurator = 2;
     displayName = "Autorifleman";
-    side = 2;
+    side = 1;
     faction = "I_Gen";
 
     identityTypes[] = {"Head_NATO","LanguageENG_F","G_NATO_default"};
@@ -201,7 +201,7 @@ class I_Gen_Crewman_01 : B_crew_F_OCimport_02 {
     scope = 2;
     scopeCurator = 2;
     displayName = "Crewman";
-    side = 2;
+    side = 1;
     faction = "I_Gen";
 
     identityTypes[] = {"Head_NATO","LanguageENG_F","G_NATO_default"};
@@ -239,7 +239,7 @@ class I_Gen_Combat_Life_Saver_01 : B_medic_F_OCimport_02 {
     scope = 2;
     scopeCurator = 2;
     displayName = "Combat Life Saver";
-    side = 2;
+    side = 1;
     faction = "I_Gen";
 
     identityTypes[] = {"Head_NATO","LanguageENG_F","G_NATO_default"};
@@ -279,7 +279,7 @@ class I_Gen_Marksman_01 : B_soldier_M_F_OCimport_02 {
     scope = 2;
     scopeCurator = 2;
     displayName = "Marksman";
-    side = 2;
+    side = 1;
     faction = "I_Gen";
 
     identityTypes[] = {"Head_NATO","LanguageENG_F","G_NATO_default"};
@@ -317,7 +317,7 @@ class I_Gen_Badger_IFV_01 : B_APC_Wheeled_01_cannon_F_OCimport_02 {
     scope = 2;
     scopeCurator = 2;
     displayName = "Badger IFV";
-    side = 2;
+    side = 1;
     faction = "I_Gen";
     crew = "I_Gen_Crewman_01";
 
@@ -347,7 +347,7 @@ class I_Gen_Polaris_Unarmed_01 : B_LSV_01_unarmed_F_OCimport_02 {
     scope = 2;
     scopeCurator = 2;
     displayName = "Polaris Unarmed";
-    side = 2;
+    side = 1;
     faction = "I_Gen";
     crew = "I_Gen_Rifleman_01";
 
@@ -382,7 +382,7 @@ class I_Gen_M1240_M240_01 : rhsusf_m1240a1_m240_usarmy_wd_OCimport_02 {
     scope = 2;
     scopeCurator = 2;
     displayName = "M1240 (M240)";
-    side = 2;
+    side = 1;
     faction = "I_Gen";
     crew = "I_Gen_Rifleman_01";
 
@@ -413,7 +413,7 @@ class I_Gen_M2HB_M3_AA_01 : RHS_M2StaticMG_WD_OCimport_02 {
     scope = 2;
     scopeCurator = 2;
     displayName = "M2HB (M3 AA)";
-    side = 2;
+    side = 1;
     faction = "I_Gen";
     crew = "rhsusf_army_ucp_rifleman";
 
@@ -442,7 +442,7 @@ class I_Gen_M2HB_M3_01 : LOP_IRAN_Static_M2_MiniTripod_OCimport_02 {
     scope = 2;
     scopeCurator = 2;
     displayName = "M2HB (M3)";
-    side = 2;
+    side = 1;
     faction = "I_Gen";
     crew = "LOP_IRAN_Infantry_Rifleman";
 
@@ -471,7 +471,7 @@ class I_Gen_M1A1_Abrams_01 : rhsusf_m1a1aimwd_usarmy_OCimport_02 {
     scope = 2;
     scopeCurator = 2;
     displayName = "M1A1 Abrams";
-    side = 2;
+    side = 1;
     faction = "I_Gen";
     crew = "I_Gen_Crewman_01";
 
