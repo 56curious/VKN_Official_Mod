@@ -253,13 +253,22 @@ class RscDisplayLoadCustom: RscDisplayLoadMission
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
+//3den Editor edits
+class cfg3DEN {
+  class EventHandlers {
+    class VKN {
+      OnTerrainNew = "call VKN_EH_fnc_eh_onMissionLoad";
+    };
+  };
+};
+
 class ctrlMenuStrip;
 class display3DEN {
     class Controls {
         class MenuStrip: ctrlMenuStrip {
             class Items {
                 class Tools {
-                    items[] += {"Separator", "Mission_Template_Tool", "Separator"};
+                    items[] += {"Mission_Template_Tool", "Separator"};
                 };
                 class Mission_Template_Tool {
                     text = "Mission Template Tool";
@@ -328,6 +337,7 @@ class RscDisplayStart: RscStandardDisplay {
 
 #include "\VKN_Misc\configs\VKN_Template_Tool_Info.hpp"
 #include "\VKN_Misc\configs\VKN_Template_Tool_Basic_Settings.hpp"
+#include "\VKN_Misc\configs\VKN_Template_Tool_Notification.hpp"
 
 
 

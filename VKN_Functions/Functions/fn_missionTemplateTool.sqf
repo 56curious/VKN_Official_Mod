@@ -150,9 +150,9 @@ collect3DENHistory {
 	set3DENMissionAttributes [
 		["Multiplayer", "respawn", 3],
 		["Multiplayer", "respawnDelay", 180],
-    	["Multiplayer", "respawnTemplates", ["Counter", "Spectator", "MenuPosition"]],
-    	["Multiplayer", "MaxPlayers", 60],
-    	["Multiplayer", "IntelOverviewText", "Viking PMC Operation"],
+  	["Multiplayer", "respawnTemplates", ["Counter", "Spectator", "MenuPosition"]],
+  	["Multiplayer", "MaxPlayers", 60],
+  	["Multiplayer", "IntelOverviewText", "Viking PMC Operation"],
 		["Multiplayer", "GameType", "VKN_OP"],
 		["Multiplayer", "DisabledAI", true],
 		["Multiplayer", "JoinUnassigned", false],
@@ -252,6 +252,26 @@ collect3DENHistory {
 			sleep 0.01;
 		};
 	};
+
+
+  //Headless Clients
+  _HC1 = create3DENEntity ["Logic", "HeadlessClient_F", _position];
+  _HC1 set3DENAttribute ["name", "HC1"];
+  _HC2 = create3DENEntity ["Logic", "HeadlessClient_F", _position];
+  _HC2 set3DENAttribute ["name", "HC2"];
+
+  { _x set3DENAttribute ["ControlMP", true]; } forEach [_HC1, _HC2];
+
+
+  //Werthles' Headless Module setup if present
+  if (isclass (configfile >> "CfgPatches" >> "Werthles_WHK")) then {
+    _HCModuleSettings = create3DENEntity ["Logic", "Werthles_moduleWHM", _position];
+    _HCModuleIgnore = create3DENEntity ["Logic", "Werthles_moduleWHIgnore", _position];
+
+    _HCModuleSettings set3DENAttribute ["Werthles_moduleWHM_Repeating"];
+    _HCModuleSettings set3DENAttribute ["Werthles_moduleWHM_Delay"];
+  };
+
 };
 
 //Notification

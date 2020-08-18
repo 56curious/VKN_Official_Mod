@@ -27,7 +27,12 @@ class CfgFunctions {
 		};
 	};
 
-
+  class VKN_EH {
+    class functions {
+      file = "\VKN_functions\Event Handles";
+      class eh_onMissionLoad{postInit = 1;};
+    };
+  };
 
 	class VKN {
 		class functions {
