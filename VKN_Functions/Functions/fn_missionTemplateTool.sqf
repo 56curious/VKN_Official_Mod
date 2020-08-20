@@ -268,8 +268,27 @@ collect3DENHistory {
     _HCModuleSettings = create3DENEntity ["Logic", "Werthles_moduleWHM", _position];
     _HCModuleIgnore = create3DENEntity ["Logic", "Werthles_moduleWHIgnore", _position];
 
-    _HCModuleSettings set3DENAttribute ["Werthles_moduleWHM_Repeating"];
-    _HCModuleSettings set3DENAttribute ["Werthles_moduleWHM_Delay"];
+    // In order as module presents them
+    _HCModuleSettings set3DENAttribute ["Werthles_moduleWHM_Units", -666]; //Default -666
+    _HCModuleSettings set3DENAttribute ["Werthles_moduleWHM_Repeating", True]; //Default True
+    _HCModuleSettings set3DENAttribute ["Werthles_moduleWHM_Wait", 10]; //Default 30
+    _HCModuleSettings set3DENAttribute ["Werthles_moduleWHM_Debug", False]; //Default False
+    _HCModuleSettings set3DENAttribute ["Werthles_moduleWHM_Advanced", True]; //Default True
+    _HCModuleSettings set3DENAttribute ["Werthles_moduleWHM_Delay", 10]; //Default 30
+    _HCModuleSettings set3DENAttribute ["Werthles_moduleWHM_Pause", 3]; //Default 3
+    _HCModuleSettings set3DENAttribute ["Werthles_moduleWHM_Report", True]; //Default True
+    _HCModuleSettings set3DENAttribute ["Werthles_moduleWHM_Ignores", ""]; //Default ""
+    _HCModuleSettings set3DENAttribute ["Werthles_moduleWHM_NoDebug", True]; //Default True
+    _HCModuleSettings set3DENAttribute ["Werthles_moduleWHM_DebugOnly", False]; //Default False
+    _HCModuleSettings set3DENAttribute ["Werthles_moduleWHM_UseServer", False]; //Default False
+
+
+
+
+
+
+
+
   };
 
 };
