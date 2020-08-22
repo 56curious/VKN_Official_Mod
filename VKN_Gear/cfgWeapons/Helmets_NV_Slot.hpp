@@ -13,7 +13,7 @@ Description:    Move helmets into NV slots for use in diving OPs.
 class VKN_Protech_SF_NVG: NVGoggles
 {
 	scope = 2;
-	author = "Red Hammer Studios"
+	author = "Red Hammer Studios";
 	displayName = "[VKN] Pro-tech SF (Diver's NVG Slot)";
 	model = "\rhsusf\addons\rhsusf_infantry2\gear\head\protech\pt_helmet";
 	picture = "\rhsusf\addons\rhsusf_inventoryicons\data\headgear\rhsusf_protech_helmet_ca.paa";
@@ -22,7 +22,7 @@ class VKN_Protech_SF_NVG: NVGoggles
 	modelOptics = "-";
 	class ItemInfo
 	{
-		uniformModel = "\rhsusf\addons\rhsusf_infantry2\gear\head\protech\pt_helmet"
+		uniformModel = "\rhsusf\addons\rhsusf_infantry2\gear\head\protech\pt_helmet";
 		modelOff = "\rhsusf\addons\rhsusf_infantry2\gear\head\protech\pt_helmet";
 		type = 616;
 		hmdType = 0;
@@ -42,7 +42,7 @@ class VKN_Protech_SF_NVG: NVGoggles
 class VKN_Protech_SF_ESS_NVG: NVGoggles
 {
 	scope = 2;
-	author = "Red Hammer Studios"
+	author = "Red Hammer Studios";
 	displayName = "[VKN] Pro-tech SF ESS (Diver's NVG Slot)";
 	model = "\rhsusf\addons\rhsusf_infantry2\gear\head\protech\pt_helmet_ESS";
 	picture = "\rhsusf\addons\rhsusf_inventoryicons\data\headgear\rhsusf_protech_helmet_ess_ca.paa";
@@ -51,7 +51,7 @@ class VKN_Protech_SF_ESS_NVG: NVGoggles
 	modelOptics = "-";
 	class ItemInfo
 	{
-		uniformModel = "\rhsusf\addons\rhsusf_infantry2\gear\head\protech\pt_helmet_ESS"
+		uniformModel = "\rhsusf\addons\rhsusf_infantry2\gear\head\protech\pt_helmet_ESS";
 		modelOff = "\rhsusf\addons\rhsusf_infantry2\gear\head\protech\pt_helmet_ESS";
 		type = 616;
 		hmdType = 0;
@@ -71,7 +71,7 @@ class VKN_Protech_SF_ESS_NVG: NVGoggles
 class VKN_Protech_SF_RHINO_NVG: NVGoggles
 {
 	scope = 2;
-	author = "Red Hammer Studios"
+	author = "Red Hammer Studios";
 	displayName = "[VKN] Pro-tech SF Rhino (Diver's NVG Slot)";
 	model = "\rhsusf\addons\rhsusf_infantry2\gear\head\protech\pt_helmet_rhino";
 	picture = "\rhsusf\addons\rhsusf_inventoryicons\data\headgear\rhsusf_protech_helmet_rhino_ca.paa";
@@ -80,7 +80,7 @@ class VKN_Protech_SF_RHINO_NVG: NVGoggles
 	modelOptics = "-";
 	class ItemInfo
 	{
-		uniformModel = "\rhsusf\addons\rhsusf_infantry2\gear\head\protech\pt_helmet_rhino"
+		uniformModel = "\rhsusf\addons\rhsusf_infantry2\gear\head\protech\pt_helmet_rhino";
 		modelOff = "\rhsusf\addons\rhsusf_infantry2\gear\head\protech\pt_helmet_rhino";
 		type = 616;
 		hmdType = 0;
@@ -100,7 +100,7 @@ class VKN_Protech_SF_RHINO_NVG: NVGoggles
 class VKN_Protech_SF_RHINO_ESS_NVG: NVGoggles
 {
 	scope = 2;
-	author = "Red Hammer Studios"
+	author = "Red Hammer Studios";
 	displayName = "[VKN] Pro-tech SF Rhino/ESS (Diver's NVG Slot)";
 	model = "\rhsusf\addons\rhsusf_infantry2\gear\head\protech\pt_helmet_rhino_ESS";
 	picture = "\rhsusf\addons\rhsusf_inventoryicons\data\headgear\rhsusf_protech_helmet_rhino_ca.paa";
@@ -109,7 +109,7 @@ class VKN_Protech_SF_RHINO_ESS_NVG: NVGoggles
 	modelOptics = "-";
 	class ItemInfo
 	{
-		uniformModel = "\rhsusf\addons\rhsusf_infantry2\gear\head\protech\pt_helmet_rhino_ESS"
+		uniformModel = "\rhsusf\addons\rhsusf_infantry2\gear\head\protech\pt_helmet_rhino_ESS";
 		modelOff = "\rhsusf\addons\rhsusf_infantry2\gear\head\protech\pt_helmet_rhino_ESS";
 		type = 616;
 		hmdType = 0;
@@ -129,7 +129,7 @@ class VKN_Protech_SF_RHINO_ESS_NVG: NVGoggles
 class VKN_opscore_rg_cover_NVG: NVGoggles
 {
 	scope = 2;
-	author = "Red Hammer Studios"
+	author = "Red Hammer Studios";
 	displayName = "FAST Ballistic Ranger Green Cover (Diver's NVG Slot)";
 	model = "\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\opscore_cover";
 	picture = "\rhsusf\addons\rhsusf_inventoryicons\data\headgear\rhsusf_opscore_rg_cover_ca.paa";
@@ -138,7 +138,7 @@ class VKN_opscore_rg_cover_NVG: NVGoggles
 	modelOptics = "-";
 	class ItemInfo
 	{
-		uniformModel = "\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\opscore_cover"
+		uniformModel = "\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\opscore_cover";
 		modelOff = "\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\opscore_cover";
 		type = 616;
 		hmdType = 0;
@@ -158,7 +158,7 @@ class VKN_opscore_rg_cover_NVG: NVGoggles
 class VKN_opscore_rg_cover_pelt_NVG: NVGoggles
 {
 	scope = 2;
-	author = "Red Hammer Studios"
+	author = "Red Hammer Studios";
 	displayName = "FAST Ballistic Ranger Green Cover/Headset/NSW (Diver's NVG Slot)";
 	model = "\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\opscore_cover";
 	picture = "\rhsusf\addons\rhsusf_inventoryicons\data\headgear\rhsusf_opscore_rg_cover_pelt_ca.paa";
@@ -167,7 +167,7 @@ class VKN_opscore_rg_cover_pelt_NVG: NVGoggles
 	modelOptics = "-";
 	class ItemInfo
 	{
-		uniformModel = "\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\opscore_cover"
+		uniformModel = "\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\opscore_cover";
 		modelOff = "\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\opscore_cover";
 		type = 616;
 		hmdType = 0;
@@ -187,7 +187,7 @@ class VKN_opscore_rg_cover_pelt_NVG: NVGoggles
 class VKN_opscore_ut_NVG: NVGoggles
 {
 	scope = 2;
-	author = "Red Hammer Studios"
+	author = "Red Hammer Studios";
 	displayName = "FAST Ballistic Urban Tan (Diver's NVG Slot)";
 	model = "\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\opscore";
 	picture = "\rhsusf\addons\rhsusf_inventoryicons\data\headgear\rhsusf_opscore_ut_ca.paa";
@@ -196,7 +196,7 @@ class VKN_opscore_ut_NVG: NVGoggles
 	modelOptics = "-";
 	class ItemInfo
 	{
-		uniformModel = "\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\opscore"
+		uniformModel = "\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\opscore";
 		modelOff = "\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\opscore";
 		type = 616;
 		hmdType = 0;
@@ -216,7 +216,7 @@ class VKN_opscore_ut_NVG: NVGoggles
 class VKN_opscore_ut_pelt_NVG: NVGoggles
 {
 	scope = 2;
-	author = "Red Hammer Studios"
+	author = "Red Hammer Studios";
 	displayName = "FAST Ballistic Urban Tan/Headset (Diver's NVG Slot)";
 	model = "\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\opscore";
 	picture = "\rhsusf\addons\rhsusf_inventoryicons\data\headgear\rhsusf_opscore_ut_pelt_ca.paa";
@@ -225,7 +225,7 @@ class VKN_opscore_ut_pelt_NVG: NVGoggles
 	modelOptics = "-";
 	class ItemInfo
 	{
-		uniformModel = "\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\opscore"
+		uniformModel = "\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\opscore";
 		modelOff = "\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\opscore";
 		type = 616;
 		hmdType = 0;
@@ -245,7 +245,7 @@ class VKN_opscore_ut_pelt_NVG: NVGoggles
 class VKN_opscore_ut_pelt_cam_NVG: NVGoggles
 {
 	scope = 2;
-	author = "Red Hammer Studios"
+	author = "Red Hammer Studios";
 	displayName = "FAST Ballistic Urban Tan/Headset/Cam (Diver's NVG Slot)";
 	model = "\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\opscore";
 	picture = "\rhsusf\addons\rhsusf_inventoryicons\data\headgear\rhsusf_opscore_ut_pelt_cam_ca.paa";
@@ -254,7 +254,7 @@ class VKN_opscore_ut_pelt_cam_NVG: NVGoggles
 	modelOptics = "-";
 	class ItemInfo
 	{
-		uniformModel = "\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\opscore"
+		uniformModel = "\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\opscore";
 		modelOff = "\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\opscore";
 		type = 616;
 		hmdType = 0;
@@ -274,7 +274,7 @@ class VKN_opscore_ut_pelt_cam_NVG: NVGoggles
 class VKN_opscore_ut_pelt_nsw_NVG: NVGoggles
 {
 	scope = 2;
-	author = "Red Hammer Studios"
+	author = "Red Hammer Studios";
 	displayName = "FAST Ballistic Urban Tan/Headset/NSW (Diver's NVG Slot)";
 	model = "\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\opscore";
 	picture = "\rhsusf\addons\rhsusf_inventoryicons\data\headgear\rhsusf_opscore_ut_pelt_nsw_ca.paa";
@@ -283,7 +283,7 @@ class VKN_opscore_ut_pelt_nsw_NVG: NVGoggles
 	modelOptics = "-";
 	class ItemInfo
 	{
-		uniformModel = "\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\opscore"
+		uniformModel = "\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\opscore";
 		modelOff = "\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\opscore";
 		type = 616;
 		hmdType = 0;
@@ -303,7 +303,7 @@ class VKN_opscore_ut_pelt_nsw_NVG: NVGoggles
 class VKN_opscore_ut_pelt_nsw_cam_NVG: NVGoggles
 {
 	scope = 2;
-	author = "Red Hammer Studios"
+	author = "Red Hammer Studios";
 	displayName = "FAST Ballistic Urban Tan/Headset/NSW/Cam (Diver's NVG Slot)";
 	model = "\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\opscore";
 	picture = "\rhsusf\addons\rhsusf_inventoryicons\data\headgear\rhsusf_opscore_ut_pelt_nsw_cam_ca.paa";
@@ -312,7 +312,7 @@ class VKN_opscore_ut_pelt_nsw_cam_NVG: NVGoggles
 	modelOptics = "-";
 	class ItemInfo
 	{
-		uniformModel = "\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\opscore"
+		uniformModel = "\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\opscore";
 		modelOff = "\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\opscore";
 		type = 616;
 		hmdType = 0;
@@ -332,7 +332,7 @@ class VKN_opscore_ut_pelt_nsw_cam_NVG: NVGoggles
 class VKN_opscore_mar_fg_NVG: NVGoggles
 {
 	scope = 2;
-	author = "Red Hammer Studios"
+	author = "Red Hammer Studios";
 	displayName = "FAST Maritime Foliage Green (Diver's NVG Slot)";
 	model = "\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\maritime";
 	picture = "\rhsusf\addons\rhsusf_inventoryicons\data\headgear\rhsusf_opscore_mar_fg_ca.paa";
@@ -341,7 +341,7 @@ class VKN_opscore_mar_fg_NVG: NVGoggles
 	modelOptics = "-";
 	class ItemInfo
 	{
-		uniformModel = "\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\maritime"
+		uniformModel = "\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\maritime";
 		modelOff = "\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\maritime";
 		type = 616;
 		hmdType = 0;
@@ -361,7 +361,7 @@ class VKN_opscore_mar_fg_NVG: NVGoggles
 class VKN_opscore_mar_fg_pelt_NVG: NVGoggles
 {
 	scope = 2;
-	author = "Red Hammer Studios"
+	author = "Red Hammer Studios";
 	displayName = "FAST Maritime Foliage Green/Headset (Diver's NVG Slot)";
 	model = "\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\maritime";
 	picture = "\rhsusf\addons\rhsusf_inventoryicons\data\headgear\rhsusf_opscore_mar_fg_pelt_ca.paa";
@@ -370,7 +370,7 @@ class VKN_opscore_mar_fg_pelt_NVG: NVGoggles
 	modelOptics = "-";
 	class ItemInfo
 	{
-		uniformModel = "\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\maritime"
+		uniformModel = "\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\maritime";
 		modelOff = "\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\maritime";
 		type = 616;
 		hmdType = 0;
@@ -390,7 +390,7 @@ class VKN_opscore_mar_fg_pelt_NVG: NVGoggles
 class VKN_opscore_mar_ut_NVG: NVGoggles
 {
 	scope = 2;
-	author = "Red Hammer Studios"
+	author = "Red Hammer Studios";
 	displayName = "FAST Maritime Urban Tan (Diver's NVG Slot)";
 	model = "\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\maritime";
 	picture = "\rhsusf\addons\rhsusf_inventoryicons\data\headgear\rhsusf_opscore_mar_ut_ca.paa";
@@ -399,7 +399,7 @@ class VKN_opscore_mar_ut_NVG: NVGoggles
 	modelOptics = "-";
 	class ItemInfo
 	{
-		uniformModel = "\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\maritime"
+		uniformModel = "\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\maritime";
 		modelOff = "\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\maritime";
 		type = 616;
 		hmdType = 0;
@@ -419,7 +419,7 @@ class VKN_opscore_mar_ut_NVG: NVGoggles
 class VKN_opscore_mar_ut_pelt_NVG: NVGoggles
 {
 	scope = 2;
-	author = "Red Hammer Studios"
+	author = "Red Hammer Studios";
 	displayName = "FAST Maritime Urban Tan/Headset (Diver's NVG Slot)";
 	model = "\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\maritime";
 	picture = "\rhsusf\addons\rhsusf_inventoryicons\data\headgear\rhsusf_opscore_mar_ut_pelt_ca.paa";
@@ -428,7 +428,7 @@ class VKN_opscore_mar_ut_pelt_NVG: NVGoggles
 	modelOptics = "-";
 	class ItemInfo
 	{
-		uniformModel = "\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\maritime"
+		uniformModel = "\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\maritime";
 		modelOff = "\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\maritime";
 		type = 616;
 		hmdType = 0;
@@ -448,7 +448,7 @@ class VKN_opscore_mar_ut_pelt_NVG: NVGoggles
 class VKN_opscore_bk_NVG: NVGoggles
 {
 	scope = 2;
-	author = "Red Hammer Studios"
+	author = "Red Hammer Studios";
 	displayName = "FAST Ballistic Black (Diver's NVG Slot)";
 	model = "\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\opscore";
 	picture = "\rhsusf\addons\rhsusf_inventoryicons\data\headgear\rhsusf_opscore_bk_ca.paa";
@@ -457,7 +457,7 @@ class VKN_opscore_bk_NVG: NVGoggles
 	modelOptics = "-";
 	class ItemInfo
 	{
-		uniformModel = "\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\opscore"
+		uniformModel = "\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\opscore";
 		modelOff = "\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\opscore";
 		type = 616;
 		hmdType = 0;
@@ -477,7 +477,7 @@ class VKN_opscore_bk_NVG: NVGoggles
 class VKN_opscore_bk_pelt_NVG: NVGoggles
 {
 	scope = 2;
-	author = "Red Hammer Studios"
+	author = "Red Hammer Studios";
 	displayName = "FAST Ballistic Black/Headset (Diver's NVG Slot)";
 	model = "\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\opscore";
 	picture = "\rhsusf\addons\rhsusf_inventoryicons\data\headgear\rhsusf_opscore_bk_pelt_ca.paa";
@@ -486,7 +486,7 @@ class VKN_opscore_bk_pelt_NVG: NVGoggles
 	modelOptics = "-";
 	class ItemInfo
 	{
-		uniformModel = "\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\opscore"
+		uniformModel = "\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\opscore";
 		modelOff = "\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\opscore";
 		type = 616;
 		hmdType = 0;
@@ -506,7 +506,7 @@ class VKN_opscore_bk_pelt_NVG: NVGoggles
 class VKN_Bowman_NVG: NVGoggles
 {
 	scope = 2;
-	author = "Red Hammer Studios"
+	author = "Red Hammer Studios";
 	displayName = "Bowman Elite II (Diver's NVG Slot)";
 	model = "\rhsusf\addons\rhsusf_infantry\gear\head\rhsusf_bowman";
 	picture = "\rhsusf\addons\rhsusf_inventoryicons\data\headgear\rhsusf_Bowman_ca.paa";
@@ -515,7 +515,7 @@ class VKN_Bowman_NVG: NVGoggles
 	modelOptics = "-";
 	class ItemInfo
 	{
-		uniformModel = "\rhsusf\addons\rhsusf_infantry\gear\head\rhsusf_bowman"
+		uniformModel = "\rhsusf\addons\rhsusf_infantry\gear\head\rhsusf_bowman";
 		modelOff = "\rhsusf\addons\rhsusf_infantry\gear\head\rhsusf_bowman";
 		type = 616;
 		hmdType = 0;
@@ -535,7 +535,7 @@ class VKN_Bowman_NVG: NVGoggles
 class VKN_Watchcap_blk_NVG: NVGoggles
 {
 	scope = 2;
-	author = "Jonmo"
+	author = "Jonmo";
 	displayName = "Beanie (Diver's NVG Slot)";
 	model = "\A3\Characters_F\Civil\headgear_beaniehat01";
 	picture = "\A3\characters_f\Data\UI\icon_H_Cap_beanie_CA.paa";
@@ -544,7 +544,7 @@ class VKN_Watchcap_blk_NVG: NVGoggles
 	modelOptics = "-";
 	class ItemInfo
 	{
-		uniformModel = "\A3\Characters_F\Civil\headgear_beaniehat01"
+		uniformModel = "\A3\Characters_F\Civil\headgear_beaniehat01";
 		modelOff = "\A3\Characters_F\Civil\headgear_beaniehat01";
 		type = 616;
 		hmdType = 0;
@@ -564,7 +564,7 @@ class VKN_Watchcap_blk_NVG: NVGoggles
 class VKN_Watchcap_camo_NVG: NVGoggles
 {
 	scope = 2;
-	author = "Jonmo"
+	author = "Jonmo";
 	displayName = "Beanie Green (Diver's NVG Slot)";
 	model = "\A3\Characters_F\Civil\headgear_beaniehat01";
 	picture = "\A3\Characters_F_Bootcamp\Data\UI\icon_H_Watchcap_camo_ca.paa";
@@ -573,7 +573,7 @@ class VKN_Watchcap_camo_NVG: NVGoggles
 	modelOptics = "-";
 	class ItemInfo
 	{
-		uniformModel = "\A3\Characters_F\Civil\headgear_beaniehat01"
+		uniformModel = "\A3\Characters_F\Civil\headgear_beaniehat01";
 		modelOff = "\A3\Characters_F\Civil\headgear_beaniehat01";
 		type = 616;
 		hmdType = 0;
@@ -593,7 +593,7 @@ class VKN_Watchcap_camo_NVG: NVGoggles
 class VKN_Watchcap_khk_NVG: NVGoggles
 {
 	scope = 2;
-	author = "Jonmo"
+	author = "Jonmo";
 	displayName = "Beanie Khaki (Diver's NVG Slot)";
 	model = "\A3\Characters_F\Civil\headgear_beaniehat01";
 	picture = "\A3\Characters_F_Bootcamp\Data\UI\icon_H_Watchcap_camo_ca.paa";
@@ -602,7 +602,7 @@ class VKN_Watchcap_khk_NVG: NVGoggles
 	modelOptics = "-";
 	class ItemInfo
 	{
-		uniformModel = "\A3\Characters_F\Civil\headgear_beaniehat01"
+		uniformModel = "\A3\Characters_F\Civil\headgear_beaniehat01";
 		modelOff = "\A3\Characters_F\Civil\headgear_beaniehat01";
 		type = 616;
 		hmdType = 0;
