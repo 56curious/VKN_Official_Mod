@@ -117,6 +117,12 @@ class CfgVehicles
 						value = "VKN_Murky";
 						default = 0;
 					};
+					class VKN_Murky_2
+					{
+						name = "Murky";
+						value = "VKN_Murky";
+						default = 0;
+					};
 					class VKN_Nightowl
 					{
 						name = "Nightowl";
@@ -192,7 +198,12 @@ class CfgPostProcessTemplates
 	class VKN_Murky
 	{
 		displayName = "Murky";
-		colorCorrections[] = {1,1,0,	{-0.73,-0.05,-0.81,0.16},	{-0.57,-0.77,-1.3,1.1},	{0,0,0,0}};
+		colorCorrections[] = {0.89,1.27,-0.14,	{-0.66,1.11,0,0.06},	{1,1.26,1,0.96},	{0.33,0.33,0.33,0}};
+	};
+	class VKN_Murky_2
+	{
+		displayName = "Murky 2";
+		colorCorrections[] = {0.89,1.27,-0.14,	{-0.66,2,0,0.06},	{1,1.26,1,0.96},	{0.33,0.33,0.33,0}};
 	};
 	class VKN_Nightowl
 	{

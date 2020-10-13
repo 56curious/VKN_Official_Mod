@@ -687,7 +687,7 @@ class VKN_Dummy_C_Shirt_Black_Jeans_1: C_Story_Mechanic_01_F {
 	displayName = "[VKN] PMC Black shirt & Jeans";
 	model = "a3\Characters_F_Orange\Uniforms\C_Mechanic_01_F.p3d";
 	hiddenSelections[] = {"camo1","camo2"};
-	hiddenSelectionsTextures[] = {"\vkn_gear\data\uniforms\vkn_whiteshirt_jeans_co.paa","\vkn_gear\data\uniforms\vkn_jeans_blue_co.paa"};
+	hiddenSelectionsTextures[] = {"\vkn_gear\data\uniforms\vkn_blackshirt_jeans_co.paa","\vkn_gear\data\uniforms\vkn_jeans_blue_co.paa"};
 };
 
 class VKN_Dummy_C_Shirt_Black_Pants_Khaki: C_Story_Mechanic_01_F {

@@ -1320,7 +1320,7 @@ class VKN_Shirt_Green_Jeans: Uniform_Base {
 	class ItemInfo: UniformItem
 	{
 		uniformModel = "-";
-		uniformClass = "VKN_Dummy_C_Shirt_Green_Jeans_Khaki";
+		uniformClass = "VKN_Dummy_C_Shirt_Green_Jeans";
 		containerClass = "Supply30";
 		mass = 30;
 	};
