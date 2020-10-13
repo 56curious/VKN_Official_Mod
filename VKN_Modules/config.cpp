@@ -107,7 +107,7 @@ class CfgVehicles {
 	};
   */
   class VKN_Function_Guide: VKN_Modules_Base {
-    displayName ="Function Guide"
+    displayName ="Function Guide";
 		function = "VKN_fnc_functionGuide";
   };
 };
