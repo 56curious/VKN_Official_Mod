@@ -19,6 +19,10 @@ class CfgPatches {
 	};
 };
 
+#define private 0       // Hidden to all
+#define protected 1     // Can use but still hidden
+#define public 2        // Visible to all
+
 class CfgFunctions {
 	class full_mission_load {
 		class functions {
@@ -27,7 +31,12 @@ class CfgFunctions {
 		};
 	};
 
-
+  class VKN_EH {
+    class functions {
+      file = "\VKN_functions\Event Handles";
+      class eh_onMissionLoad{postInit = 1;};
+    };
+  };
 
 	class VKN {
 		class functions {
@@ -35,6 +44,8 @@ class CfgFunctions {
 			class icons{postInit = 1;};
 
       class selectRandomIndex{};
+
+      class formatChange{};
 
       class missionTemplateTool{};
 

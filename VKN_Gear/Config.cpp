@@ -24,7 +24,9 @@ class CfgPatches {
 	};
 };
 
-
+#define private 0       // Hidden to all
+#define protected 1     // Can use but still hidden
+#define public 2        // Visible to all
 
 class UniformSlotInfo
 {
@@ -39,7 +41,7 @@ class cfgVehicles {
 	class B_Kitbag_rgr;
 	class B_Soldier_F;
 	class B_GEN_Soldier_F;
-  	class B_Soldier_base_F;
+  class B_Soldier_base_F;
 	class B_Carryall_Base;
 	class B_AssaultPack_Base;
 	class B_Soldier_lite_F;
@@ -48,8 +50,8 @@ class cfgVehicles {
  	class O_V_Soldier_Viper_F;
 	class O_Soldier_F;
 	class C_Story_Mechanic_01_F;
-    class O_R_Gorka_base_F;
-  	class B_G_Soldier_F;
+  class O_R_Gorka_base_F;
+  class B_G_Soldier_F;
 	class ReammoBox_F;
 	class ReammoBox;
 	class NATO_Box_Base;
@@ -89,6 +91,8 @@ class cfgWeapons {
   class H_HelmetB;
   class H_Cap_red;
   class H_Beret_02;
+  class H_Booniehat_mcamo;
+  class H_Booniehat_khk;
   class H_helmetO_ViperSP_hex_F;
   class U_B_CTRG_Soldier_F;
   class U_O_R_Gorka_01_F;

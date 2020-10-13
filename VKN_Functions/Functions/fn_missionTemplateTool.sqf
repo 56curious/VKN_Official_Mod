@@ -3,16 +3,16 @@ Script name:    fn_missionTemplateTool.sqf
 Created on:     11 ‎December ‎2018
 Author:         Curious
 
-License:		This file is under "Arma Public License No Derivatives (APL-ND)"
-				More information can be found at:
-				https://www.bohemia.net/community/licenses/arma-public-license-nd
+License:		    This file is under "Arma Public License No Derivatives (APL-ND)"
+				        More information can be found at:
+				        https://www.bohemia.net/community/licenses/arma-public-license-nd
 
 Description:    setup mission with predefined settings.
 
 Framework:      Mission Template
 
 Parameters:
-				N/A
+				        N/A
 */
 //Setup settings and define variables
 createDialog "VKN_Template_Tool_Basic_Settings";
@@ -20,13 +20,17 @@ createDialog "VKN_Template_Tool_Basic_Settings";
 _squad = 0;
 _3denCam = get3DENCamera;
 
-//Get a reasonible position for template to be created (avoids it spawning in a weird position)
+//Get a reasonable position for template to be created (avoids it spawning in a weird position)
+[_3denCam, 5] call bis_fnc_setHeight;
+
 _y = 0; _p = -45; _r = 0;
 _3denCam setVectorDirAndUp [  [ sin _y * cos _p,cos _y * cos _p,sin _p], [  [ sin _r,-sin _p,cos _r * cos _p], -_y] call BIS_fnc_rotateVector2D];
+sleep 0.1;
 
 _position = screenToWorld [0.5, 0.5];
 VKN_Template_Tool_Basic_Settings_open = true;
 VKN_Template_Tool_Basic_Settings_Complete = false;
+VKN_Template_Tool_selectionChange = true;
 
 
 //Set cam to look in the air
@@ -41,59 +45,55 @@ _3denCam setVectorDirAndUp [
 _sides = [West, East, Independent];
 //Add sides to listbox
 { lbAdd [2100, str _x];} forEach _sides;
-lbSetCurSel [2100, 0];
 
+waitUntil { lbText [2100, lbCurSel 2100] != "" };
 
 //fnc to check side and then filter faction
-_fnc_sideChanged = {
-  _factionList = ["empty list"];
+VKN_fnc_sideChanged = {
+  waitUntil {VKN_Template_Tool_selectionChange};
+
+  _factionList = [];
   _index = lbCurSel 2100;
   _side = toUpper (lbText [2100, _index]);
-  systemChat "side grabbed";
   //get all factions in a side.
   switch (_side) do {
       case ("WEST"): {
         _side = "West";
         _factionList = 1 call VKN_fnc_sideGetFaction;
-        systemChat "w";
       };
       case ("EAST"): {
         _side = "East";
         _factionList = 0 call VKN_fnc_sideGetFaction;
-        systemChat "e";
       };
       case ("GUER"): {
         _side = "Indep";
         _factionList = 2 call VKN_fnc_sideGetFaction;
-        systemChat "i";
       };
-      default {
-          systemChat "error with case, defaulting to west.";
-          _factionList = 1 call VKN_fnc_sideGetFaction;
-          systemChat "d";
-      };
+      default {};
   };
 
   //get the selected faction
   { lbadd [2101, _x]; } forEach _factionList;
 
-  lbSetCurSel [2101, 0];
-
-  waitUntil {(lbText [2101, lbCurSel 2101]) in _factionList};
+  waitUntil { lbText [2101, lbCurSel 2101] != "" };
 
   _curSelFac = lbText [2101, lbCurSel 2101];
   //apply group
-  ("true" configClasses (configfile >> "CfgGroups" >> _side >> _curSelFac >> "Infantry")) apply {
-     lbadd [2102, getText( _x >> "name")];
-  };
+  _squadArray = "true" configClasses (configfile >> "CfgGroups" >> _side >> _curSelFac >> "Infantry");
+  {
+    lbadd [2102, getText( _x >> "name")];
+    lbSetData [2102, _forEachIndex, str _x];
+  } forEach _squadArray;
+
+  VKN_Template_Tool_selectionChange = false;
+
 };
-call _fnc_sideChanged;
+
+[] spawn VKN_fnc_sideChanged;
 
 //apply EH to button to reset on faction change
-((findDisplay 348567) displayCtrl 2100) ctrlSetEventHandler ["LBSelChanged","call _fnc_sideChanged; "];
-((findDisplay 348567) displayCtrl 2101) ctrlSetEventHandler ["LBSelChanged","call _fnc_sideChanged; "];
-((findDisplay 348567) displayCtrl 2102) ctrlSetEventHandler ["LBSelChanged","call _fnc_sideChanged; "];
-
+((findDisplay 348567) displayCtrl 2100) ctrlSetEventHandler ["LBSelChanged","VKN_Template_Tool_selectionChange = true; lbClear 2101; lbClear 2102; [] spawn VKN_fnc_sideChanged;"]; //Side LB
+((findDisplay 348567) displayCtrl 2101) ctrlSetEventHandler ["LBSelChanged","VKN_Template_Tool_selectionChange = true; lbClear 2102; [] spawn VKN_fnc_sideChanged;"]; //Faction LB
 
 //Apply spectator settings
 _Specoptions = ["All Enabled", "All Disabled", "Freecam Disabled", "3pp Disabled", "Freecam only", "1pp Disabled"];
@@ -104,9 +104,28 @@ lbSetCurSel [2103, 2];
 buttonSetAction [1600, "VKN_Template_Tool_Basic_Settings_Complete = true;"];
 waitUntil {VKN_Template_Tool_Basic_Settings_Complete isEqualTo true};
 
-_factions_option = lbCurSel 2101;
-_squads_option = lbCurSel 2102;
-_spectate_option = 2103;
+//If a listbox is missed, default to first of each type.
+if (lbText [2100, lbCurSel 2100] == "") then {
+  lbSetCurSel [2100, 0];
+  systemChat "Side option was missed, taking default instead.";
+};
+
+//If faction is missed, get first squad from config.
+if (lbText [2101, lbCurSel 2101] == "") then {
+  lbSetCurSel [2101, 0];
+  systemChat "Faction option was missed, taking default instead.";
+  lbSetCurSel [2102, 0];
+};
+
+if (lbText [2102, lbCurSel 2102] == "") then {
+  lbSetCurSel [2102, 0];
+  systemChat "Squad option was missed, taking default instead.";
+};
+
+_side_Option = lbText [2100, lbCurSel 2100];
+_factions_option = lbText [2101, lbCurSel 2101];
+_squads_option = ([lbData [2102, lbCurSel 2102]] call BIS_fnc_configPath) select 5; //Only option extracted not as a string
+_spectate_option = lbText [2103, lbCurSel 2103];
 _saveLoadouts = cbChecked ((findDisplay 348567) displayCtrl 2800);
 _dynamicGroups = cbChecked ((findDisplay 348567) displayCtrl 2801);
 
@@ -117,42 +136,23 @@ startLoadingScreen ["Loading mission template tool... Please wait."];
 
 collect3DENHistory {
 
-	if (_faction_option == "no override") then {
-		if (isClass (configFile >> "CfgPatches" >> "VKN_PMC_Characters")) then {
-			_squad = configfile >> "CfgGroups" >> "West" >> "B_VKN_ODIN_PMC" >> "Infantry" >> "B_VKN_ODIN_infantry_squad_pmc"; //Units inherit off one origin, possibly causing the problem
-		} else {
-			_squad = configfile >> "CfgGroups" >> "West" >> "BLU_F" >> "Infantry" >> "BUS_InfSquad";
-		};
-	else {
-		_squad = configfile >> "CfgGroups" >> str _side >> _faction_option >> "Infantry", _squads_option;
-
-  		{ [_x, "", true] call BIS_fnc_configPath) } forEach ("true" configClasses (configfile >> "CfgGroups" >> _side) //returns path for config search
-  	};
-
-  if (isClass (configFile >> "CfgPatches" >> "VKN_PMC_Characters")) then {
-		_squad = configfile >> "CfgGroups" >> "West" >> "B_VKN_ODIN_PMC" >> "Infantry" >> "B_VKN_ODIN_infantry_squad_pmc"; //Units inherit off one origin, possibly causing the problem
-	} else {
-		_squad = configfile >> "CfgGroups" >> "West" >> "BLU_F" >> "Infantry" >> "BUS_InfSquad";
-	};
-
-
-
+  _squad = configfile >> "CfgGroups" >> _side_Option >> _factions_option >> "Infantry" >> _squads_option;
 
 	//Check for 3DEN Enhanced, then setup those features
 	if (isclass (configfile >> "CfgPatches" >> "3denEnhanced")) then {
     set3DENMissionAttributes[["Multiplayer", "Enh_SaveLoadout", _saveLoadouts]];
 		set3DENMissionAttributes[["Multiplayer", "Enh_DynamicGroups", _dynamicGroups]];
 	} else {
-		systemChat "3DEN Enhanced not found but is recommended to be used at all times, missing these attributes however...";
+		systemChat "3DEN Enhanced not found but is recommended to be used at all times, missing dynamic groups and loadout saving attributes, restart with mod and restart tool to fix.";
 	};
 
 	//Set all of the mission settings to their defaults
 	set3DENMissionAttributes [
 		["Multiplayer", "respawn", 3],
 		["Multiplayer", "respawnDelay", 180],
-    ["Multiplayer", "respawnTemplates", ["Counter", "Spectator", "MenuPosition"]],
-    ["Multiplayer", "MaxPlayers", 60],
-    ["Multiplayer", "IntelOverviewText", "Viking PMC Operation"],
+  	["Multiplayer", "respawnTemplates", ["Counter", "Spectator", "MenuPosition"]],
+  	["Multiplayer", "MaxPlayers", 60],
+  	["Multiplayer", "IntelOverviewText", "Viking PMC Operation"],
 		["Multiplayer", "GameType", "VKN_OP"],
 		["Multiplayer", "DisabledAI", true],
 		["Multiplayer", "JoinUnassigned", false],
@@ -172,10 +172,23 @@ collect3DENHistory {
 	//Setup the respawn positions/settings
 	_RespawnPos = create3DENEntity ["Logic", "ModuleRespawnPosition_F", _position];
   _RespawnPos set3DENAttribute ["name", "defaultRespawnPosition"];
-  _RespawnPos set3DENAttribute ["ModuleRespawnPosition_F_Side", 1];
-	_RespawnPos set3DENAttribute ["ModuleRespawnPosition_F_ShowNotification", 0];
-	_RespawnPos set3DENAttribute ["ModuleRespawnPosition_F_Name", "Respawn Point"];
-	_RespawnPos set3DENAttribute ["ModuleRespawnPosition_F_Marker", 2];
+  _RespawnPos set3DENAttribute ["ModuleRespawnPosition_F_ShowNotification", 0];
+  _RespawnPos set3DENAttribute ["ModuleRespawnPosition_F_Name", "Respawn Point"];
+  _RespawnPos set3DENAttribute ["ModuleRespawnPosition_F_Marker", 2];
+  switch (toUpper _side_Option) do {
+    case ("EAST"): {
+        _RespawnPos set3DENAttribute ["ModuleRespawnPosition_F_Side", 0];
+    };
+    case ("WEST"): {
+        _RespawnPos set3DENAttribute ["ModuleRespawnPosition_F_Side", 1];
+    };
+    case ("GUER"): {
+        _RespawnPos set3DENAttribute ["ModuleRespawnPosition_F_Side", 2];
+    };
+    case ("CIV"): {
+        _RespawnPos set3DENAttribute ["ModuleRespawnPosition_F_Side", 3];
+    };
+  };
 
 	//create the Zeus sub-settings
 	_ZeusAttributeCuratorAddEditableObjects = create3DENEntity ["Logic", "ModuleCuratorAddEditableObjects", _position];
@@ -214,7 +227,7 @@ collect3DENHistory {
 	for "_i" from 0 to 2 step 1 do {
 		_Module = _ZeusModules select _i;
 		_Entity = _ZeusEntitiesNames select _i;
-		_Module set3DENAttribute [ "name", format["Zeus_Module%1", _i]];
+		_Module set3DENAttribute [ "name", format ["Zeus_Module%1", _i]];
 		_Module set3DENAttribute [ "ModuleCurator_F_Owner", _Entity ];
 		_Module set3DENAttribute [ "ModuleCurator_F_Name", "Zeus" ];
 		_Module set3DENAttribute [ "ModuleCurator_F_Addons", 3 ];
@@ -239,6 +252,45 @@ collect3DENHistory {
 			sleep 0.01;
 		};
 	};
+
+
+  //Headless Clients
+  _HC1 = create3DENEntity ["Logic", "HeadlessClient_F", _position];
+  _HC1 set3DENAttribute ["name", "HC1"];
+  _HC2 = create3DENEntity ["Logic", "HeadlessClient_F", _position];
+  _HC2 set3DENAttribute ["name", "HC2"];
+
+  { _x set3DENAttribute ["ControlMP", true]; } forEach [_HC1, _HC2];
+
+
+  //Werthles' Headless Module setup if present
+  if (isclass (configfile >> "CfgPatches" >> "Werthles_WHK")) then {
+    _HCModuleSettings = create3DENEntity ["Logic", "Werthles_moduleWHM", _position];
+    _HCModuleIgnore = create3DENEntity ["Logic", "Werthles_moduleWHIgnore", _position];
+
+    // In order as module presents them
+    _HCModuleSettings set3DENAttribute ["Werthles_moduleWHM_Units", -666]; //Default -666
+    _HCModuleSettings set3DENAttribute ["Werthles_moduleWHM_Repeating", True]; //Default True
+    _HCModuleSettings set3DENAttribute ["Werthles_moduleWHM_Wait", 10]; //Default 30
+    _HCModuleSettings set3DENAttribute ["Werthles_moduleWHM_Debug", False]; //Default False
+    _HCModuleSettings set3DENAttribute ["Werthles_moduleWHM_Advanced", True]; //Default True
+    _HCModuleSettings set3DENAttribute ["Werthles_moduleWHM_Delay", 10]; //Default 30
+    _HCModuleSettings set3DENAttribute ["Werthles_moduleWHM_Pause", 3]; //Default 3
+    _HCModuleSettings set3DENAttribute ["Werthles_moduleWHM_Report", True]; //Default True
+    _HCModuleSettings set3DENAttribute ["Werthles_moduleWHM_Ignores", ""]; //Default ""
+    _HCModuleSettings set3DENAttribute ["Werthles_moduleWHM_NoDebug", True]; //Default True
+    _HCModuleSettings set3DENAttribute ["Werthles_moduleWHM_DebugOnly", False]; //Default False
+    _HCModuleSettings set3DENAttribute ["Werthles_moduleWHM_UseServer", False]; //Default False
+
+
+
+
+
+
+
+
+  };
+
 };
 
 //Notification

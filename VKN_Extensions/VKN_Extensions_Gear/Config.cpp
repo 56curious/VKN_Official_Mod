@@ -89,6 +89,13 @@ class cfgVehicles {
         picture="\VKN_Misc\VKN_Logo_Inverted.paa";
         hiddenSelectionsTextures[] = {"VKN_Gear\data\Backpacks\clf_nicecomm2_blackops_co.paa"};
     };
+  class VKN_v_loki_nicecomm2: tf_rt1523g_big {
+        author = "Shagger";
+        scope = 2;
+        displayName = "[VKN] VIS Loki AN/PRC 117-117g Full";
+        picture="\VKN_Misc\VKN_Logo_Inverted.paa";
+        hiddenSelectionsTextures[] = {"VKN_Gear\data\Backpacks\clf_nicecomm2_loki_co.paa"};
+    };
 
     class VKN_Dummy_B_Police_Coveralls: rhs_msv_rifleman_m88_patchless {
         author = "Jonmo";
@@ -248,13 +255,6 @@ class cfgWeapons {
     displayName = "[VKN] Booniehat (Alpine)";
     hiddenSelectionsTextures[] = {"VKN_Gear\data\Headgear\vkn_boonie_alpine_co.paa"};
   };
-   class vkn_booniehat2_Loki: VKN_BoonieHat_Base {
-    author = "shagger";
-    scope = 2;
-    displayName = "[VKN] Booniehat (Loki)";
-    hiddenSelectionsTextures[] = {"VKN_Gear\data\Headgear\vkn_boonie_Loki.paa"};
-  };
-
 	class VKN_B_OPS_Black : VKN_OPS_Helmet_2_Base {
 		scope = 2;
 		author="Apple";

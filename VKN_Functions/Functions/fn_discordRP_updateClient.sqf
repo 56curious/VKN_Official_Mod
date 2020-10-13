@@ -24,6 +24,7 @@ https://docs.google.com/spreadsheets/d/1mfvetmBp2iC44rOzQwNnvlSzQyXAYbkOEw2vhFLL
 */
 
 while {true} do {
+  _state = false;
   //Check for Connors DRP mod.
   if (isClass(configFile >> "CfgPatches" >> "CAU_DiscordRichPresence")) then {
 
@@ -31,9 +32,7 @@ while {true} do {
       _finalState = "Default State";
       if (isClass(configFile >> "CfgPatches" >> "ace_main")) then {
         _state = player getVariable ["ACE_isUnconscious", false];
-        if ((_state == True) OR (_state == false)) then {
-          if (_state == True) then { _finalState = "Unconscious"; } else { _finalState = "Alive"; };
-        };
+        if (_state isEqualTo true) then { _finalState = "Unconscious"; } else { _finalState = "Alive"; };
 
       } else {
         _state = getDammage player;
@@ -51,7 +50,7 @@ while {true} do {
         };
         if (_state == 1) then {
           _finalState = "Unconscious/Dead";
-        };
+        };2
       };
       hint str _finalState;
       _finalState
@@ -119,6 +118,10 @@ while {true} do {
         case ("Display #602"): {
           _newDetails = "In their inventory.";
           _newState = format ["Status: %1 | Playing at: %2 on %3", call _fnc_CheckState, if (serverName == "") then {"Server Unknown"} else {serverName}, worldName];
+        };
+        default {
+          _newDetails = "";
+          _newState = "";
         };
       };
 

@@ -32,6 +32,11 @@ class CfgPatches {
     };
 };
 
+#define private 0       // Hidden to all
+#define protected 1     // Can use but still hidden
+#define public 2        // Visible to all
+
+
 enableDebugConsole[] = {"76561197996326460", "76561198116251840", "76561198138461195", "76561198044162606", "76561198036865266", "76561197960287930"};
 
 class CfgMPGameTypes {
@@ -81,6 +86,16 @@ class CfgMovesMaleSdr: CfgMovesBasic {
 class CfgAnimation {
 	ladderSpeed="0.5*2";
 };
+
+
+
+//ASDG Joint Rails - cba merge configs
+
+
+
+
+
+
 
 // Default Discord Rich Presence for Connors's workshop mod.
 class cfgDiscordRichPresence {
@@ -253,13 +268,22 @@ class RscDisplayLoadCustom: RscDisplayLoadMission
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
+//3den Editor edits
+class cfg3DEN {
+  class EventHandlers {
+    class VKN {
+      OnTerrainNew = "call VKN_EH_fnc_eh_onMissionLoad";
+    };
+  };
+};
+
 class ctrlMenuStrip;
 class display3DEN {
     class Controls {
         class MenuStrip: ctrlMenuStrip {
             class Items {
                 class Tools {
-                    items[] += {"Separator", "Mission_Template_Tool", "Separator"};
+                    items[] += {"Mission_Template_Tool", "Separator"};
                 };
                 class Mission_Template_Tool {
                     text = "Mission Template Tool";
@@ -328,6 +352,7 @@ class RscDisplayStart: RscStandardDisplay {
 
 #include "\VKN_Misc\configs\VKN_Template_Tool_Info.hpp"
 #include "\VKN_Misc\configs\VKN_Template_Tool_Basic_Settings.hpp"
+#include "\VKN_Misc\configs\VKN_Template_Tool_Notification.hpp"
 
 
 

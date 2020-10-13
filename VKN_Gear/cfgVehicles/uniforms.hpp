@@ -23,13 +23,13 @@
 	};
 
 // Suits //
-	
+/*
 	class VKN_Dummy_Functionary_Base: B_Soldier_base_F {
 	scope = 0;
 	model = "\VKN_Gear\data\Models\functionary.p3d";
-	hiddenSelectionsMaterials[] = {"\VKN_Gear\data\Uniforms\functionary.rvmat"}; 
+	hiddenSelectionsMaterials[] = {"\VKN_Gear\data\Uniforms\functionary.rvmat"};
 	hiddenSelections[] = {"camo"};
-	
+
 	class Wounds {
 		tex[] = {"\VKN_Gear\data\Uniforms\w1_functionary_mc.paa","\VKN_Gear\data\Uniforms\w2_functionary_mc.paa"};
 	};
@@ -50,6 +50,8 @@
 		hiddenSelectionsTextures[] = {"\VKN_Gear\data\Uniforms\functionary3_co.paa"};
 		uniformClass = "VKN_Functionary_3";
 	};
+*/
+
 
 //// Blufor Combat Uniforms ////
 
@@ -358,7 +360,7 @@
 		hiddenSelections[]= {"camo","camo2","insignia"};
 		hiddenSelectionsTextures[]={"\VKN_Gear\data\Uniforms\vkn_fleece_Tan_co.paa","\a3\characters_f\Common\Data\basicbody_black_co.paa"};
     };
-    
+
 //
 //Viper
 

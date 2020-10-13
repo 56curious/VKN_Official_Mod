@@ -20,6 +20,10 @@ class CfgPatches {
 	};
 };
 
+#define private 0       // Hidden to all
+#define protected 1     // Can use but still hidden
+#define public 2        // Visible to all
+
 class CfgFactionClasses {
 	class NO_CATEGORY;
 	class VKN_Base: NO_CATEGORY {
@@ -103,7 +107,7 @@ class CfgVehicles {
 	};
   */
   class VKN_Function_Guide: VKN_Modules_Base {
-    displayName ="Function Guide"
+    displayName ="Function Guide";
 		function = "VKN_fnc_functionGuide";
   };
 };

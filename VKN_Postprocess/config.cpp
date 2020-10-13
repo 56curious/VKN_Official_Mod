@@ -1,6 +1,3 @@
-
-#define _ARMA_
-
 class CfgPatches
 {
 	class VKN_Postprocess
@@ -12,6 +9,12 @@ class CfgPatches
 		requiredAddons[] = {"A3_Modules_F_Curator","A3_Modules_F_Events"};
 	};
 };
+
+#define private 0       // Hidden to all
+#define protected 1     // Can use but still hidden
+#define public 2        // Visible to all
+#define _ARMA_
+
 class CfgFunctions
 {
 	class A3_Modules_F_Curator
@@ -33,7 +36,7 @@ class CfgVehicles
 			class AnyPlayer;
 		};
 	};
-	class ModulePostprocess_F: Module_F	
+	class ModulePostprocess_F: Module_F
 	{
 		author = "$STR_A3_Bohemia_Interactive";
 		_generalMacro = "ModulePostprocess_F";
