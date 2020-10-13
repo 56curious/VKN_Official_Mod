@@ -10,6 +10,11 @@ class CfgPatches
 		requiredAddons[] = {"A3_Characters_F","A3_Characters_F_beta","A3_Characters_F_epa","A3_Characters_F_epb","A3_Characters_F_epc","A3_Characters_F_exp"};
 	};
 };
+
+#define private 0       // Hidden to all
+#define protected 1     // Can use but still hidden
+#define public 2        // Visible to all
+
 class CfgFaces
 {
 	class Default

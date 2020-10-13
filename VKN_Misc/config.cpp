@@ -32,6 +32,11 @@ class CfgPatches {
     };
 };
 
+#define private 0       // Hidden to all
+#define protected 1     // Can use but still hidden
+#define public 2        // Visible to all
+
+
 enableDebugConsole[] = {"76561197996326460", "76561198116251840", "76561198138461195", "76561198044162606", "76561198036865266", "76561197960287930"};
 
 class CfgMPGameTypes {
@@ -81,6 +86,16 @@ class CfgMovesMaleSdr: CfgMovesBasic {
 class CfgAnimation {
 	ladderSpeed="0.5*2";
 };
+
+
+
+//ASDG Joint Rails - cba merge configs
+
+
+
+
+
+
 
 // Default Discord Rich Presence for Connors's workshop mod.
 class cfgDiscordRichPresence {
