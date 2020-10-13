@@ -169,5 +169,21 @@ class CfgFaces
 			textureHL2 = "\A3\Characters_F\Heads\Data\hl_White_hairy_1_co.paa";
 			materialHL2 = "\A3\Characters_F\Heads\Data\hl_White_hairy_muscular.rvmat";
 		};
+		class vkn_id_Ronin_A3: WhiteHead_01
+		{
+			displayname = "Ronin";
+			texture = "\vkn_identities\data\id_Ronin_co.paa";
+			head = "NATOHead_A3";
+			identityTypes[] = {"Head_Euro","Head_NATO"};
+			author = "Jonmo";
+			material = "vkn_identities\data\id_Ronin.rvmat";
+			disabled = 0;
+			materialWounded1 = "A3\Characters_F_epb\Heads\Data\m_White_20_injury.rvmat";
+			materialWounded2 = "A3\Characters_F_epb\Heads\Data\m_White_20_injury.rvmat";
+			textureHL = "\vkn_identities\Data\hl_Ronin_Tattoo_co.paa";
+			materialHL = "\A3\Characters_F\Heads\Data\hl_White_hairy_muscular.rvmat";
+			textureHL2 = "\A3\Characters_F\Heads\Data\hl_White_hairy_1_co.paa";
+			materialHL2 = "\A3\Characters_F\Heads\Data\hl_White_hairy_muscular.rvmat";
+		};
 	};
 };
