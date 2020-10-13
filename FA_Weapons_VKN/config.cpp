@@ -142,7 +142,6 @@ class CfgWeapons
 		class AnimationSources;
 	};
 
-/*
 //AKM - Source: https://www.cgtrader.com/3d-models/military/gun/akm-model-and-textures-d57f1daa31fedfe78f111ace718dd32b
 	class VKN_AKM: FA_Base_Rifle_VKN
 	{
@@ -290,7 +289,6 @@ class CfgWeapons
 			};
 		};
 	};
-*/
 
 //MP5 - Source: https://sketchfab.com/3d-models/mp5-submachinegun-2a9ce66fe96643fc8f20927401e5054c
 	class VKN_MP5 : FA_Base_Rifle_VKN {
@@ -422,7 +420,6 @@ class CfgWeapons
 		};
 	};
 
-/*
 //SVD - Source: https://sketchfab.com/3d-models/svd-dragunov-updated-d4a9412275aa4974b146ad8ce9dc5fc2
 	class VKN_SVD: FA_Base_Rifle_VKN
 	{
@@ -493,7 +490,6 @@ class CfgWeapons
 			};
 		};
     };
-*/
 //VSS - Source: https://sketchfab.com/3d-models/vss-vintorez-18e1f60286d346728f650984f4ae70aa
 	class VKN_VSS : FA_Base_Rifle_VKN {
 		scope = 2;
@@ -649,7 +645,6 @@ class CfgWeapons
 			class PointerSlot : SlotInfo {
 				linkProxy = "\A3\data_f\proxies\weapon_slots\SIDE";
 				displayName = "$STR_A3_PointerSlot0";
-				compatibleItems[] = {"acc_flashlight","acc_pointer_IR"};
 				iconScale = 0.1;
 			};
 
@@ -722,7 +717,6 @@ class CfgWeapons
 
 			class CowsSlot : SlotInfo {
 				linkProxy = "\A3\data_f\proxies\weapon_slots\TOP";
-				compatibleItems[] = {"optic_Yorris","optic_Holosight_arid_F","optic_Holosight_lush_F","optic_Holosight","optic_Holosight_smg","optic_Holosight_khk_F","optic_Holosight_smg_khk_F","optic_Holosight_smg_blk_F","optic_Holosight_blk_F"};
 				iconScale = 0.1;
 			};
 		};
@@ -797,19 +791,16 @@ class CfgWeapons
 			class MuzzleSlot : SlotInfo
 			{
 				linkProxy = "\A3\data_f\proxies\weapon_slots\MUZZLE";
-				compatibleItems[] = {"muzzle_snds_L"};
 				iconScale = 0.1;
 			};
 			class CowsSlot : SlotInfo
 			{
 				linkProxy = "\A3\data_f\proxies\weapon_slots\TOP";
-				compatibleItems[] = {"optic_MRD","optic_MRD_black"};
 				iconScale = 0.1;
 			};
 			class PointerSlot : SlotInfo
 			{
 			    linkProxy = "\A3\data_f\proxies\weapon_slots\SIDE";
-				compatibleItems[] = {"acc_flashlight_pistol"};
 				iconScale = 0.1;
 			};
 		};
@@ -870,19 +861,16 @@ class CfgWeapons
 			class MuzzleSlot : SlotInfo
 			{
 				linkProxy = "\A3\data_f\proxies\weapon_slots\MUZZLE";
-				compatibleItems[] = {"muzzle_snds_L"};
 				iconScale = 0.1;
 			};
 			class CowsSlot : SlotInfo
 			{
 				linkProxy = "\A3\data_f\proxies\weapon_slots\TOP";
-				compatibleItems[] = {"optic_MRD","optic_MRD_black"};
 				iconScale = 0.1;
 			};
 			class PointerSlot : SlotInfo
 			{
 			    linkProxy = "\A3\data_f\proxies\weapon_slots\SIDE";
-				compatibleItems[] = {"acc_flashlight_pistol"};
 				iconScale = 0.1;
 			};
 		};
@@ -943,13 +931,11 @@ class CfgWeapons
 			class CowsSlot : SlotInfo
 			{
 				linkProxy = "\A3\data_f\proxies\weapon_slots\TOP";
-				compatibleItems[] = {"optic_MRD","optic_MRD_black"};
 				iconScale = 0.1;
 			};
 			class PointerSlot : SlotInfo
 			{
 			    linkProxy = "\A3\data_f\proxies\weapon_slots\SIDE";
-				compatibleItems[] = {"acc_flashlight_pistol"};
 				iconScale = 0.1;
 			};
 		};
@@ -1032,13 +1018,11 @@ class CfgWeapons
 			class CowsSlot : SlotInfo
 			{
 				linkProxy = "\A3\data_f\proxies\weapon_slots\TOP";
-				compatibleItems[] = {"optic_Aco","optic_Aco_smg","optic_ACO_grn_smg","optic_ACO_grn","optic_Holosight_arid_F","optic_Holosight_lush_F","optic_Holosight","optic_Holosight_smg","optic_Holosight_khk_F","optic_Holosight_smg_khk_F","optic_Holosight_smg_blk_F","optic_Holosight_blk_F","optic_MRCO","optic_Hamr","optic_Hamr_khk_F","optic_Arco","optic_Arco_blk_F","optic_Arco_lush_F","optic_Arco_arid_F","optic_Arco_ghex_F","optic_Arco_AK_blk_F","optic_Arco_AK_arid_F","optic_Arco_AK_lush_F","optic_ERCO_blk_F","optic_ERCO_snd_F","optic_ERCO_khk_F","optic_DMS","optic_DMS_ghex_F","optic_DMS_weathered_F","optic_DMS_weathered_Kir_F","optic_AMS","optic_AMS_snd","optic_AMS_khk","optic_KHS_blk","optic_KHS_hex","optic_KHS_tan","optic_KHS_old","optic_SOS","optic_SOS_khk_F","optic_LRPS","optic_LRPS_tna_F","optic_LRPS_ghex_F","optic_Nightstalker","optic_NVS","optic_tws","optic_tws_mg"};
 				iconScale = 0.1;
 			};
 			class PointerSlot : PointerSlot
 			{
 				linkProxy = "\A3\data_f\proxies\weapon_slots\SIDE";
-				compatibleItems[] = {"acc_flashlight","acc_pointer_IR"};
 				iconScale = 0.1;
 			};
 		};

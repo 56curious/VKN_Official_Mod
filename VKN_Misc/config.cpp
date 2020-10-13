@@ -78,9 +78,35 @@ class CfgMovesBasic;
 class CfgMovesMaleSdr: CfgMovesBasic {
 	class States {
 		class LadderCivilStatic;
+    class AswmPercMstpSnonWnonDnon;
+		class AsswPercMstpSnonWnonDnon;
+		class AbswPercMstpSnonWnonDnon;
+		class AdvePercMstpSnonWrflDnon;
+		class AsdvPercMstpSnonWrflDnon;
+		class AbdvPercMstpSnonWrflDnon;
 		class LadderCivilUpLoop: LadderCivilStatic {
 			speed="1.05/(2/3)";
 		};
+
+    class AswmPercMrunSnonWnonDf: AswmPercMstpSnonWnonDnon {
+			speed=0.38;
+		};
+		class AsswPercMrunSnonWnonDf: AsswPercMstpSnonWnonDnon {
+			speed=0.38;
+		};
+		class AbswPercMrunSnonWnonDf: AbswPercMstpSnonWnonDnon {
+			speed=0.34;
+		};
+		class AdvePercMrunSnonWrflDf: AdvePercMstpSnonWrflDnon {
+			speed=0.2;
+		};
+		class AsdvPercMrunSnonWrflDf: AsdvPercMstpSnonWrflDnon {
+			speed=0.2;
+		};
+		class AbdvPercMrunSnonWrflDf: AbdvPercMstpSnonWrflDnon {
+			speed=0.2;
+		};
+
 	};
 };
 class CfgAnimation {
@@ -88,10 +114,264 @@ class CfgAnimation {
 };
 
 
-
 //ASDG Joint Rails - cba merge configs
 
+#include "ASDGJR\jr_config.hpp"
 
+//Sort out our custom weapons - same as compat mod
+//Normal
+class SlotInfo;
+class PointerSlot;
+class CowsSlot;
+class MuzzleSlot;
+class WeaponSlotsInfo;
+
+class CfgWeapons {
+
+  class FA_Base_Rifle_VKN;
+  class VKN_MP5: FA_Base_Rifle_VKN {
+    class WeaponSlotsInfo : WeaponSlotsInfo {
+        mass = 115;
+        allowedSlots[] = {901};
+        class MuzzleSlot : asdg_MuzzleSlot_9MM_SMG {
+            //linkProxy = "\A3\data_f\proxies\weapon_slots\MUZZLE";
+            //compatibleItems[] = {};
+            iconScale = 0.1;
+        };
+        class CowsSlot : asdg_OpticRail1913_short {
+            //linkProxy = "\A3\data_f\proxies\weapon_slots\TOP";
+            //compatibleItems[] = {};
+            iconScale = 0.1;
+        };
+        class PointerSlot : asdg_FrontSideRail {
+            //linkProxy = "\A3\data_f\proxies\weapon_slots\SIDE";
+            //compatibleItems[] = {};
+            iconScale = 0.1;
+        };
+    };
+  };
+
+  class VKN_VSS: FA_Base_Rifle_VKN {
+    class WeaponSlotsInfo : WeaponSlotsInfo {
+        mass = 115;
+        allowedSlots[] = {901};
+        class CowsSlot : asdg_OpticRail1913_long {
+            //linkProxy = "\A3\data_f\proxies\weapon_slots\TOP";
+            //compatibleItems[] = {};
+            iconScale = 0.1;
+        };
+        class PointerSlot : asdg_FrontSideRail {
+            //linkProxy = "\A3\data_f\proxies\weapon_slots\SIDE";
+            //compatibleItems[] = {};
+            iconScale = 0.1;
+        };
+    };
+  };
+  class VKN_AKM: FA_Base_Rifle_VKN {
+    class WeaponSlotsInfo : WeaponSlotsInfo {
+        mass = 115;
+        allowedSlots[] = {901};
+        class MuzzleSlot : asdg_MuzzleSlot_762R {
+            //linkProxy = "\A3\data_f\proxies\weapon_slots\MUZZLE";
+            //compatibleItems[] = {};
+            iconScale = 0.1;
+        };
+        class CowsSlot : asdg_OpticRail1913 {
+            //linkProxy = "\A3\data_f\proxies\weapon_slots\TOP";
+            //compatibleItems[] = {};
+            iconScale = 0.1;
+        };
+        class PointerSlot : asdg_FrontSideRail {
+            //linkProxy = "\A3\data_f\proxies\weapon_slots\SIDE";
+            //compatibleItems[] = {};
+            iconScale = 0.1;
+        };
+        class UnderBarrelSlot : SlotInfo {
+            linkProxy = "\A3\data_f_mark\proxies\weapon_slots\UNDERBARREL";
+            compatibleItems[] = {};
+            iconScale = 0.1;
+        };
+    };
+  };
+  class VKN_AK74M: FA_Base_Rifle_VKN {
+    class WeaponSlotsInfo : WeaponSlotsInfo {
+        mass = 115;
+        allowedSlots[] = {901};
+        class MuzzleSlot : asdg_MuzzleSlot_545R {
+            //linkProxy = "\A3\data_f\proxies\weapon_slots\MUZZLE";
+            //compatibleItems[] = {};
+            iconScale = 0.1;
+        };
+        class CowsSlot : asdg_OpticRail1913 {
+            //linkProxy = "\A3\data_f\proxies\weapon_slots\TOP";
+            //compatibleItems[] = {};
+            iconScale = 0.1;
+        };
+        class PointerSlot : asdg_FrontSideRail {
+            //linkProxy = "\A3\data_f\proxies\weapon_slots\SIDE";
+            //compatibleItems[] = {};
+            iconScale = 0.1;
+        };
+        class UnderBarrelSlot : SlotInfo {
+            linkProxy = "\A3\data_f_mark\proxies\weapon_slots\UNDERBARREL";
+            compatibleItems[] = {};
+            iconScale = 0.1;
+        };
+    };
+  };
+  class VKN_SVD: FA_Base_Rifle_VKN {
+    class WeaponSlotsInfo : WeaponSlotsInfo {
+        mass = 115;
+        allowedSlots[] = {901};
+        class MuzzleSlot : asdg_MuzzleSlot_762R_SVD {
+            //linkProxy = "\A3\data_f\proxies\weapon_slots\MUZZLE";
+            //compatibleItems[] = {};
+            iconScale = 0.1;
+        };
+        class CowsSlot : asdg_OpticRail1913 {
+            //linkProxy = "\A3\data_f\proxies\weapon_slots\TOP";
+            //compatibleItems[] = {};
+            iconScale = 0.1;
+        };
+        class PointerSlot : asdg_FrontSideRail {
+            //linkProxy = "\A3\data_f\proxies\weapon_slots\SIDE";
+            //compatibleItems[] = {};
+            iconScale = 0.1;
+        };
+        class UnderBarrelSlot : SlotInfo {
+            linkProxy = "\A3\data_f_mark\proxies\weapon_slots\UNDERBARREL";
+            compatibleItems[] = {};
+            iconScale = 0.1;
+        };
+    };
+  };
+  class VKN_AK5C: FA_Base_Rifle_VKN {
+    class WeaponSlotsInfo : WeaponSlotsInfo {
+        mass = 115;
+        allowedSlots[] = {901};
+        class MuzzleSlot : asdg_MuzzleSlot_556 {
+            //linkProxy = "\A3\data_f\proxies\weapon_slots\MUZZLE";
+            //compatibleItems[] = {};
+            iconScale = 0.1;
+        };
+        class CowsSlot : asdg_OpticRail1913 {
+            //linkProxy = "\A3\data_f\proxies\weapon_slots\TOP";
+            //compatibleItems[] = {};
+            iconScale = 0.1;
+        };
+        class PointerSlot : asdg_FrontSideRail {
+            //linkProxy = "\A3\data_f\proxies\weapon_slots\SIDE";
+            //compatibleItems[] = {};
+            iconScale = 0.1;
+        };
+        class UnderBarrelSlot : SlotInfo {
+            linkProxy = "\A3\data_f_mark\proxies\weapon_slots\UNDERBARREL";
+            compatibleItems[] = {};
+            iconScale = 0.1;
+        };
+    };
+  };
+  class VKN_ASVAL: FA_Base_Rifle_VKN {
+    class WeaponSlotsInfo : WeaponSlotsInfo {
+        mass = 115;
+        allowedSlots[] = {901};
+        class MuzzleSlot : asdg_MuzzleSlot_556 {
+            //linkProxy = "\A3\data_f\proxies\weapon_slots\MUZZLE";
+            //compatibleItems[] = {};
+            iconScale = 0.1;
+        };
+        class CowsSlot : asdg_OpticRail1913 {
+            //linkProxy = "\A3\data_f\proxies\weapon_slots\TOP";
+            //compatibleItems[] = {};
+            iconScale = 0.1;
+        };
+        class PointerSlot : asdg_FrontSideRail {
+            //linkProxy = "\A3\data_f\proxies\weapon_slots\SIDE";
+            //compatibleItems[] = {};
+            iconScale = 0.1;
+        };
+        class UnderBarrelSlot : SlotInfo {
+            linkProxy = "\A3\data_f_mark\proxies\weapon_slots\UNDERBARREL";
+            compatibleItems[] = {};
+            iconScale = 0.1;
+        };
+    };
+  };
+  class VKN_Remington870: FA_Base_Rifle_VKN {
+    class WeaponSlotsInfo : WeaponSlotsInfo {
+        mass = 115;
+        allowedSlots[] = {901};
+        class MuzzleSlot : asdg_MuzzleSlot_556 {
+            //linkProxy = "\A3\data_f\proxies\weapon_slots\MUZZLE";
+            //compatibleItems[] = {};
+            iconScale = 0.1;
+        };
+        class CowsSlot : asdg_OpticRail1913 {
+            //linkProxy = "\A3\data_f\proxies\weapon_slots\TOP";
+            //compatibleItems[] = {};
+            iconScale = 0.1;
+        };
+        class PointerSlot : asdg_FrontSideRail {
+            //linkProxy = "\A3\data_f\proxies\weapon_slots\SIDE";
+            //compatibleItems[] = {};
+            iconScale = 0.1;
+        };
+        class UnderBarrelSlot : SlotInfo {
+            linkProxy = "\A3\data_f_mark\proxies\weapon_slots\UNDERBARREL";
+            compatibleItems[] = {};
+            iconScale = 0.1;
+        };
+    };
+  };
+  class VKN_DesertEagle: FA_Base_Rifle_VKN {
+    class WeaponSlotsInfo : WeaponSlotsInfo {
+        mass = 115;
+        allowedSlots[] = {701,801,901};
+        class CowsSlot : asdg_PistolOpticRail1913 {
+            //linkProxy = "\A3\data_f\proxies\weapon_slots\TOP";
+            //compatibleItems[] = {};
+            iconScale = 0.1;
+        };
+        class PointerSlot : asdg_PistolUnderRail {
+            //linkProxy = "\A3\data_f\proxies\weapon_slots\SIDE";
+            //compatibleItems[] = {};
+            iconScale = 0.1;
+        };
+    };
+  };
+  class VKN_SigP250: FA_Base_Rifle_VKN {
+    class WeaponSlotsInfo : WeaponSlotsInfo {
+        mass = 115;
+        allowedSlots[] = {701,801,901};
+        class CowsSlot : asdg_PistolOpticRail1913 {
+            //linkProxy = "\A3\data_f\proxies\weapon_slots\TOP";
+            //compatibleItems[] = {};
+            iconScale = 0.1;
+        };
+        class PointerSlot : asdg_PistolUnderRail {
+            //linkProxy = "\A3\data_f\proxies\weapon_slots\SIDE";
+            //compatibleItems[] = {};
+            iconScale = 0.1;
+        };
+    };
+  };
+  class VKN_SigP226: FA_Base_Rifle_VKN {
+    class WeaponSlotsInfo : WeaponSlotsInfo {
+        mass = 115;
+        allowedSlots[] = {701,801,901};
+        class CowsSlot : asdg_PistolOpticRail1913 {
+            //linkProxy = "\A3\data_f\proxies\weapon_slots\TOP";
+            //compatibleItems[] = {};
+            iconScale = 0.1;
+        };
+        class PointerSlot : asdg_PistolUnderRail {
+            //linkProxy = "\A3\data_f\proxies\weapon_slots\SIDE";
+            //compatibleItems[] = {};
+            iconScale = 0.1;
+        };
+    };
+  };
+};
 
 
 
