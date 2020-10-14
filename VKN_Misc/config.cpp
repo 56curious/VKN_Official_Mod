@@ -326,14 +326,13 @@ class CfgWeapons {
   class VKN_DesertEagle: FA_Base_Rifle_VKN {
     class WeaponSlotsInfo : WeaponSlotsInfo {
         mass = 115;
-        allowedSlots[] = {701,801,901};
         class CowsSlot : asdg_PistolOpticRail1913 {
-            //linkProxy = "\A3\data_f\proxies\weapon_slots\TOP";
+            linkProxy = "\A3\data_f\proxies\weapon_slots\TOP";
             //compatibleItems[] = {};
             iconScale = 0.1;
         };
         class PointerSlot : asdg_PistolUnderRail {
-            //linkProxy = "\A3\data_f\proxies\weapon_slots\SIDE";
+            linkProxy = "\A3\data_f\proxies\weapon_slots\SIDE";
             //compatibleItems[] = {};
             iconScale = 0.1;
         };
@@ -342,14 +341,13 @@ class CfgWeapons {
   class VKN_SigP250: FA_Base_Rifle_VKN {
     class WeaponSlotsInfo : WeaponSlotsInfo {
         mass = 115;
-        allowedSlots[] = {701,801,901};
         class CowsSlot : asdg_PistolOpticRail1913 {
-            //linkProxy = "\A3\data_f\proxies\weapon_slots\TOP";
+            linkProxy = "\A3\data_f\proxies\weapon_slots\TOP";
             //compatibleItems[] = {};
             iconScale = 0.1;
         };
         class PointerSlot : asdg_PistolUnderRail {
-            //linkProxy = "\A3\data_f\proxies\weapon_slots\SIDE";
+            linkProxy = "\A3\data_f\proxies\weapon_slots\SIDE";
             //compatibleItems[] = {};
             iconScale = 0.1;
         };
@@ -358,14 +356,13 @@ class CfgWeapons {
   class VKN_SigP226: FA_Base_Rifle_VKN {
     class WeaponSlotsInfo : WeaponSlotsInfo {
         mass = 115;
-        allowedSlots[] = {701,801,901};
         class CowsSlot : asdg_PistolOpticRail1913 {
-            //linkProxy = "\A3\data_f\proxies\weapon_slots\TOP";
+            linkProxy = "\A3\data_f\proxies\weapon_slots\TOP";
             //compatibleItems[] = {};
             iconScale = 0.1;
         };
         class PointerSlot : asdg_PistolUnderRail {
-            //linkProxy = "\A3\data_f\proxies\weapon_slots\SIDE";
+            linkProxy = "\A3\data_f\proxies\weapon_slots\SIDE";
             //compatibleItems[] = {};
             iconScale = 0.1;
         };
