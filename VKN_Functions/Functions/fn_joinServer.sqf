@@ -12,6 +12,20 @@ License:      This file is under "Arma Public License No Derivatives (APL-ND)"
 Example:      N/A
 */
 
+
+/*
+
+IMPORTANT
+TO-DO:
+UPDATE THIS FUNCTION TO USE THE NEW connectToServer COMMAND
+
+
+*/
+
+
+
+
+
 #include "\A3\Ui_f\hpp\defineResincl.inc"
 
 params
