@@ -52,42 +52,28 @@ class CfgPatches
 	};
 };
 
-
-class cfgSoundShaders {
-
-	class mx_Closure_SoundShader;
-	class mx_closeShot_SoundShader;
-	class mx_midShot_SoundShader;
-	class mx_distShot_SoundShader;
-
-	class AK5C_Closure_SoundShader: mx_Closure_SoundShader {
-		samples[] = {
-			{"\FA_Weapons_VKN\data\ak5c\sounds\AK5C_fire",1},
-			{"\FA_Weapons_VKN\data\ak5c\sounds\AK5C_fire",1},
-			{"\FA_Weapons_VKN\data\ak5c\sounds\AK5C_fire",1}
-		};
-	};
-	class AK5C_closeShot_SoundShader: mx_closeShot_SoundShader {
-		samples[] = {
-			{"\FA_Weapons_VKN\data\ak5c\sounds\AK5C_fire",1},
-			{"\FA_Weapons_VKN\data\ak5c\sounds\AK5C_fire",1},
-			{"\FA_Weapons_VKN\data\ak5c\sounds\AK5C_fire",1}
-		};
-	};
-	class AK5C_midShot_SoundShader: mx_midShot_SoundShader {
-		samples[] = {
-			{"\FA_Weapons_VKN\data\ak5c\sounds\AK5C_fire",1},
-			{"\FA_Weapons_VKN\data\ak5c\sounds\AK5C_fire",1},
-			{"\FA_Weapons_VKN\data\ak5c\sounds\AK5C_fire",1}
-		};
-	};
-	class AK5C_distShot_SoundShader: mx_distShot_SoundShader {
-		samples[] = {
-			{"\FA_Weapons_VKN\data\ak5c\sounds\AK5C_fire",1},
-			{"\FA_Weapons_VKN\data\ak5c\sounds\AK5C_fire",1},
-			{"\FA_Weapons_VKN\data\ak5c\sounds\AK5C_fire",1}
-		};
-	};
+class cfgSoundShaders
+{
+  class mx_Closure_SoundShader;
+  class mx_closeShot_SoundShader;
+  class mx_midShot_SoundShader;
+  class mx_distShot_SoundShader;
+  class AK5C_Closure_SoundShader : mx_Closure_SoundShader
+  {
+    samples[] = {{"\FA_Weapons_VKN\data\ak5c\sounds\AK5C_st_1.ogg", 1}, {"\FA_Weapons_VKN\data\ak5c\sounds\AK5C_st_2.ogg", 1}, {"\FA_Weapons_VKN\data\ak5c\sounds\AK5C_st_3.ogg", 1}};
+  };
+  class AK5C_closeShot_SoundShader : mx_closeShot_SoundShader
+  {
+    samples[] = {{"\FA_Weapons_VKN\data\ak5c\sounds\AK5C_st_1.ogg", 1}, {"\FA_Weapons_VKN\data\ak5c\sounds\AK5C_st_2.ogg", 1}, {"\FA_Weapons_VKN\data\ak5c\sounds\AK5C_st_3.ogg", 1}};
+  };
+  class AK5C_midShot_SoundShader : mx_midShot_SoundShader
+  {
+    samples[] = {{"\FA_Weapons_VKN\data\ak5c\sounds\AK5C_st_1.ogg", 1}, {"\FA_Weapons_VKN\data\ak5c\sounds\AK5C_st_2.ogg", 1}, {"\FA_Weapons_VKN\data\ak5c\sounds\AK5C_st_3.ogg", 1}};
+  };
+  class AK5C_distShot_SoundShader : mx_distShot_SoundShader
+  {
+    samples[] = {{"\FA_Weapons_VKN\data\ak5c\sounds\AK5C_st_1.ogg", 1}, {"\FA_Weapons_VKN\data\ak5c\sounds\AK5C_st_2.ogg", 1}, {"\FA_Weapons_VKN\data\ak5c\sounds\AK5C_st_3.ogg", 1}};
+  };
 };
 
 class cfgSoundSets {
@@ -95,22 +81,6 @@ class cfgSoundSets {
 		soundShaders[] = {AK5C_Closure_SoundShader, AK5C_closeShot_SoundShader, AK5C_midShot_SoundShader, AK5C_distShot_SoundShader};
 	};
 };
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 class Mode_SemiAuto;
 class Mode_FullAuto;
 class Mode_Burst;
@@ -578,91 +548,132 @@ class CfgWeapons
 
 
 //AK5C - Source: https://www.cgtrader.com/3d-models/military/gun/ak5c-rifle
-	class VKN_AK5C : FA_Base_Rifle_VKN {
-		scope = 2;
-		author = "Luca, Author: A-Editor";
-		maxZeroing = 600;
-		displayName = "AK5C";
-		descriptionshort = "AK5C - Assault Rifle <br/>Caliber: 5.56x45mm";
-		model = "\FA_Weapons_VKN\data\ak5c\ak5c.p3d";
-		magazines[] = {"30Rnd_556x45_Stanag","30Rnd_556x45_Stanag_green","30Rnd_556x45_Stanag_red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Green","30Rnd_556x45_Stanag_Tracer_Yellow"};
-		reloadAction = "GestureReloadSPAR_01";
-		handAnim[] = {"OFP2_ManSkeleton", "\A3\Weapons_F_Exp\Rifles\SPAR_01\Data\Anim\SPAR_01.rtm"};
-		drySound[]={"A3\Sounds_F_Exp\arsenal\weapons\Rifles\SPAR01\SPAR01_dry",0.5,1,10};
-		reloadMagazineSound[]={"A3\Sounds_F_Exp\arsenal\weapons\Rifles\SPAR01\SPAR01_reload",1,1,10};
-		changeFiremodeSound[]={"A3\Sounds_F_Exp\arsenal\weapons\Rifles\SPAR01\SPAR01_firemode",0.6,1,5};
-		picture = "\FA_Weapons_VKN\data\icons\icon_ak5c_ca.paa";
-		inertia = 0.45;
-		recoil = "recoil_aks"
-		modes[]= {"FullAuto", "Single"};
-		hiddenSelections[] = {"camo1"};
-		hiddenSelectionsTextures[] = {"FA_Weapons_VKN\data\ak5c\textures\ak5c_co.paa"};
-
-		class Single: Mode_SemiAuto
-		{
-			class BaseSoundModeType;
-			class StandardSound: BaseSoundModeType
-			{
-				soundSetShot[]={"Mk20_Shot_SoundSet", "Mk20_Tail_SoundSet"};
-			};
-			class SilencedSound: BaseSoundModeType
-			{
-				SoundSetShot[]={"Mk20_silencerShot_SoundSet", "Mk20_silencerTail_SoundSet"};
-			};
-			dispersion=0.00132;
-			reloadTime=0.0735;
-		};
-		class FullAuto: Mode_FullAuto
-		{
-			class BaseSoundModeType;
-			class StandardSound: BaseSoundModeType
-			{
-				soundSetShot[]={"Mk20_Shot_SoundSet", "Mk20_Tail_SoundSet"};
-			};
-			class SilencedSound: BaseSoundModeType
-			{
-				SoundSetShot[]={"Mk20_silencerShot_SoundSet", "Mk20_silencerTail_SoundSet"};
-			};
-			dispersion=0.00132;
-			reloadTime=0.0735;
-		};
-
-		class WeaponSlotsInfo : WeaponSlotsInfo
-		{
-			mass = 100;
-			allowedSlots[] = {901};
-
-			class MuzzleSlot : SlotInfo {
-				linkProxy = "\A3\data_f\proxies\weapon_slots\MUZZLE";
-				iconScale = 0.1;
-			};
-
-			class CowsSlot : SlotInfo {
-				linkProxy = "\A3\data_f\proxies\weapon_slots\TOP";
-				iconScale = 0.1;
-			};
-
-			class PointerSlot : SlotInfo {
-				linkProxy = "\A3\data_f\proxies\weapon_slots\SIDE";
-				displayName = "$STR_A3_PointerSlot0";
-				iconScale = 0.1;
-			};
-
-			class UnderBarrelSlot : SlotInfo {
-				linkProxy = "\A3\data_f_mark\proxies\weapon_slots\UNDERBARREL";
-				iconScale = 0.1;
-			};
-		};
-	};
-
-	class VKN_AK5C_Collapsed : VKN_AK5C {
-		scope = 2;
-		author = "Luca, Author: A-Editor";
-		displayName = "AK5C (Collapsed)";
-		model = "\FA_Weapons_VKN\data\ak5c\ak5c_collapsed.p3d";
-		inertia = 0.35;
-	};
-
+class VKN_AK5C : FA_Base_Rifle_VKN
+  {
+    scope = 2;
+    author = "Luca, Author: A-Editor";
+    maxZeroing = 600;
+    displayName = "AK5C Green";
+    descriptionshort = "AK5C - Assault Rifle <br/>Caliber: 5.56x45mm";
+    model = "\FA_Weapons_VKN\data\ak5c\ak5c.p3d";
+    magazines[] = {"30Rnd_556x45_Stanag", "30Rnd_556x45_Stanag_green", "30Rnd_556x45_Stanag_red", "30Rnd_556x45_Stanag_Tracer_Red", "30Rnd_556x45_Stanag_Tracer_Green", "30Rnd_556x45_Stanag_Tracer_Yellow"};
+    reloadAction = "GestureReloadSPAR_01";
+    handAnim[] = {"OFP2_ManSkeleton", "\A3\Weapons_F_Exp\Rifles\SPAR_01\Data\Anim\SPAR_01.rtm"};
+    drySound[] = {"A3\Sounds_F_Exp\arsenal\weapons\Rifles\SPAR01\SPAR01_dry", 0.5, 1, 10};
+    reloadMagazineSound[] = {"A3\Sounds_F_Exp\arsenal\weapons\Rifles\SPAR01\SPAR01_reload", 1, 1, 10};
+    changeFiremodeSound[] = {"A3\Sounds_F_Exp\arsenal\weapons\Rifles\SPAR01\SPAR01_firemode", 0.6, 1, 5};
+    picture = "\FA_Weapons_VKN\data\icons\icon_ak5c_ca.paa";
+    inertia = 0.45;
+    recoil = "recoil_aks";
+    modes[] = {"FullAuto", "Single"};
+    hiddenSelections[] = {"camo1"};
+    hiddenSelectionsTextures[] = {"FA_Weapons_VKN\data\ak5c\textures\ak5c_od_co.paa"};
+    class Single : Mode_SemiAuto
+    {
+      class BaseSoundModeType;
+      class StandardSound : BaseSoundModeType
+      {
+        soundSetShot[]={"AK74_Shot_SoundSet","AK74_Tail_SoundSet","AK74_InteriorTail_SoundSet"};
+      };
+      class SilencedSound : BaseSoundModeType
+      {
+        SoundSetShot[] = {"Mk20_silencerShot_SoundSet", "Mk20_silencerTail_SoundSet"};
+      };
+      dispersion = 0.00132;
+      reloadTime = 0.0735;
+    };
+    class FullAuto : Mode_FullAuto
+    {
+      class BaseSoundModeType;
+      class StandardSound : BaseSoundModeType
+      {
+        soundSetShot[]={"AK74_Shot_SoundSet","AK74_Tail_SoundSet","AK74_InteriorTail_SoundSet"};
+      };
+      class SilencedSound : BaseSoundModeType
+      {
+        SoundSetShot[] = {"Mk20_silencerShot_SoundSet", "Mk20_silencerTail_SoundSet"};
+      };
+      dispersion = 0.00132;
+      reloadTime = 0.0735;
+    };
+    class WeaponSlotsInfo : WeaponSlotsInfo
+    {
+      mass = 100;
+      allowedSlots[] = {901};
+      class MuzzleSlot : SlotInfo
+      {
+        linkProxy = "\A3\data_f\proxies\weapon_slots\MUZZLE";
+        iconScale = 0.1;
+      };
+      class CowsSlot : SlotInfo
+      {
+        linkProxy = "\A3\data_f\proxies\weapon_slots\TOP";
+        iconScale = 0.1;
+      };
+      class PointerSlot : SlotInfo
+      {
+        linkProxy = "\A3\data_f\proxies\weapon_slots\SIDE";
+        displayName = "$STR_A3_PointerSlot0";
+        compatibleItems[] = {"acc_flashlight", "acc_pointer_IR"};
+        iconScale = 0.1;
+      };
+      class UnderBarrelSlot : SlotInfo
+      {
+        linkProxy = "\A3\data_f_mark\proxies\weapon_slots\UNDERBARREL";
+        iconScale = 0.1;
+      };
+    };
+  };
+  class VKN_AK5C_Collapsed : VKN_AK5C
+  {
+    scope = 2;
+    author = "Luca, Author: A-Editor";
+    displayName = "AK5C Green (Collapsed)";
+    model = "\FA_Weapons_VKN\data\ak5c\ak5c_collapsed.p3d";
+    inertia = 0.35;
+  };
+  class VKN_AK5C_bl : VKN_AK5C
+  {
+    scope = 2;
+    author = "Luca, Author: A-Editor";
+    displayName = "AK5C Black";
+    hiddenSelectionsTextures[] = {"FA_Weapons_VKN\data\ak5c\textures\ak5c_bl_co.paa"};
+  };
+  class VKN_AK5C_bl_Collapsed : VKN_AK5C_Collapsed
+  {
+    scope = 2;
+    author = "Luca, Author: A-Editor";
+    displayName = "AK5C Black (Collapsed)";
+    hiddenSelectionsTextures[] = {"FA_Weapons_VKN\data\ak5c\textures\ak5c_bl_co.paa"};
+  };
+  class VKN_AK5C_wht : VKN_AK5C
+  {
+    scope = 2;
+    author = "Luca, Author: A-Editor";
+    displayName = "AK5C White";
+    hiddenSelectionsTextures[] = {"FA_Weapons_VKN\data\ak5c\textures\ak5c_wht_co.paa"};
+  };
+  class VKN_AK5C_wht_Collapsed : VKN_AK5C_Collapsed
+  {
+    scope = 2;
+    author = "Luca, Author: A-Editor";
+    displayName = "AK5C White (Collapsed)";
+    hiddenSelectionsTextures[] = {"FA_Weapons_VKN\data\ak5c\textures\ak5c_wht_co.paa"};
+  };
+  class VKN_AK5C_snd : VKN_AK5C
+  {
+    scope = 2;
+    author = "Luca, Author: A-Editor";
+    displayName = "AK5C Sand";
+    hiddenSelectionsTextures[] = {"FA_Weapons_VKN\data\ak5c\textures\ak5c_snd_co.paa"};
+  };
+  class VKN_AK5C_snd_Collapsed : VKN_AK5C_Collapsed
+  {
+    scope = 2;
+    author = "Luca, Author: A-Editor";
+    displayName = "AK5C Sand (Collapsed)";
+    hiddenSelectionsTextures[] = {"FA_Weapons_VKN\data\ak5c\textures\ak5c_snd_co.paa"};
+  };
 //Remington 870 - Source: https://www.cgtrader.com/3d-models/military/gun/rm-870-shotgun
 	class VKN_Remington870: FA_Base_Rifle_VKN
 	{
