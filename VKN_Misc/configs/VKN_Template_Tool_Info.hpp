@@ -1,7 +1,3 @@
-class IGUIBack;
-class RscStructuredText;
-class RscButton;
-
 class VKN_Template_Tool_Info {
   idd = -1;
 
