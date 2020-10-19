@@ -36,6 +36,20 @@ class CfgPatches {
 #define protected 1     // Can use but still hidden
 #define public 2        // Visible to all
 
+//UI Inheritence
+class rscText;
+class rscButton;
+class rscPicture;
+class rscActiveText;
+class rscListBox;
+class rscCombo;
+class rscProgress;
+class iGUIBack;
+class rscStructuredText;
+class rscCheckbox;
+
+
+
 
 enableDebugConsole[] = {"76561197996326460", "76561198116251840", "76561198138461195", "76561198044162606", "76561198036865266", "76561197960287930"};
 
@@ -372,6 +386,36 @@ class CfgWeapons {
 
 
 
+//////
+//////    RSC DISPLAY INVENTORY ADJUSTMENTS - attempt to overwrite existing data while keeping rest of system intact
+//////
+
+// Need to switch mags UI pos on primary weapon as its the wrong way round
+//Adjust opacity on logo
+//Make repack mag button same style as exit
+//switch ground and crate pos
+//fix missing text on items
+
+
+class RscDisplayInventory {
+  class controls {
+    #include "displays\VKN_rscDisplayInventory.hpp"
+  };
+};
+
+class RscDisplayInventory_DLCTemplate {
+  class controls {
+    #include "displays\VKN_rscDisplayInventory.hpp"
+  };
+}
+
+class VKN_Inventory {
+  class controls {
+    #include "displays\VKN_rscDisplayInventory.hpp"
+  };
+};
+
+
 
 
 // Default Discord Rich Presence for Connors's workshop mod.
@@ -393,7 +437,6 @@ class cfgDiscordRichPresence {
 
 class RscStandardDisplay;
 class RscControlsGroup;
-class RscPicture;
 class RscPictureKeepAspect;
 class RscVignette;
 class rscFrame;
@@ -573,7 +616,6 @@ class display3DEN {
 };
 
 
-class RscText;
 #define COLOR_TRANSPARENT { 0, 0, 0, 0 }
 #define COLOR_WHITE { 1, 1, 1, 1 }
 #define BACKGROUND_IMAGE ["\VKN_Misc\Main Menu\Static Background Images\Background1.paa","\VKN_Misc\Main Menu\Static Background Images\Background2.paa","\VKN_Misc\Main Menu\Static Background Images\Background3.paa","\VKN_Misc\Main Menu\Static Background Images\Background4.paa","\VKN_Misc\Main Menu\Static Background Images\Background5.paa","\VKN_Misc\Main Menu\Static Background Images\Background6.paa","\VKN_Misc\Main Menu\Static Background Images\Background7.paa","\VKN_Misc\Main Menu\Static Background Images\Background8.paa"]
