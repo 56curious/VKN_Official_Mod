@@ -41,6 +41,22 @@ class CfgEditorSubcategories {
 	delete SUV;
 };
 
+class CfgFactionClasses
+{
+	class HEMTT_Black {
+  displayName = "HEMTT (Black)";
+  side = 1;
+  priority = 10;
+  icon = "\VKN_Trucks\vehicles\cfgFactionClasses_ca.paa";
+ };
+ class Hunter_Black {
+	displayName = "Hunter (Black)";
+	side = 1;
+	priority = 10;
+	icon = "\VKN_Objects\vehicles\cfgFactionClasses_ca.paa";
+ };
+};
+
 class cfgWeapons {
   class SportCarHorn;
   class VKN_ss2000_wail: SportCarHorn {
@@ -131,6 +147,22 @@ class CfgVehicles {
   class Car_F;
   class AS_365_base;
   class tahoe_08_base;
+
+  class B_Truck_01_transport_F;
+  class B_Truck_01_mover_F;
+  class B_Truck_01_box_F;
+  class B_Truck_01_Repair_F;
+  class B_Truck_01_ammo_F;
+  class B_Truck_01_fuel_F;
+  class B_Truck_01_medical_F;
+  class B_MRAP_01_F;
+  class B_MRAP_01_gmg_F;
+  class B_MRAP_01_hmg_F;
+
+  // Hunter //
+
+  // HEMTT configs //
+  #include "\VKN_Objects\vehicles\hemtt.hpp"
 
   //#include "\VKN_Objects\Vehicles\Red\redConfig.hpp"
   #include "\VKN_Objects\Vehicles\removeClasses.hpp"
