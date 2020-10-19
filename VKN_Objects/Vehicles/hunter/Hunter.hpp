@@ -1,6 +1,6 @@
 class B_MRAP_Black_F: B_MRAP_01_F
 {
-  scope = 2;
+  scope = public;
   faction = "Hunter_Black";
   displayName = "Hunter Unarmed (Black)";
   hiddenSelections[] = {"Camo1","Camo2"};
@@ -10,7 +10,7 @@ class B_MRAP_Black_F: B_MRAP_01_F
 };
  class B_MRAP_Black_gmg_F: B_MRAP_01_gmg_F
 {
-  scope = 2;
+  scope = public;
   faction = "Hunter_Black";
   displayName = "Hunter GMG (Black)";
   hiddenSelections[] = {"Camo1","Camo2","Camo3"};
@@ -20,7 +20,7 @@ class B_MRAP_Black_F: B_MRAP_01_F
 };
   class B_MRAP_Black_hmg_F: B_MRAP_01_hmg_F
 {
-  scope = 2;
+  scope = public;
   faction = "Hunter_Black";
   displayName = "Hunter HMG (Black)";
   hiddenSelections[] = {"Camo1","Camo2","Camo3"};

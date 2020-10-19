@@ -1,7 +1,7 @@
 class B_VKN_VALKYRIE_DECKCREW_PMC_01 : rhsusf_airforce_jetpilot_OCimport_02 {
     editorPreview = \x\\addons\bvknpmcvalkyrie\data\preview\B_VKN_VALKYRIE_DECKCREW_PMC_01.JPG;
     author = "Lion";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Deck Crew";
     side = 1;
@@ -40,7 +40,7 @@ class B_VKN_VALKYRIE_DECKCREW_PMC_01 : rhsusf_airforce_jetpilot_OCimport_02 {
 class B_VKN_VALKYRIE_JETPILOT_PMC_01 : B_VKN_VALKYRIE_DECKCREW_PMC_01 {
     editorPreview = \x\\addons\bvknpmcvalkyrie\data\preview\B_VKN_VALKYRIE_JETPILOT_PMC_01.JPG;
     author = "Lion";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Jet Pilot";
     side = 1;
@@ -79,7 +79,7 @@ class B_VKN_VALKYRIE_JETPILOT_PMC_01 : B_VKN_VALKYRIE_DECKCREW_PMC_01 {
 class B_VKN_VALKYRIE_PILOT_PMC_01 : B_VKN_VALKYRIE_JETPILOT_PMC_01 {
     editorPreview = \x\\addons\bvknpmcvalkyrie\data\preview\B_VKN_VALKYRIE_PILOT_PMC_01.JPG;
     author = "Lion";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Rotar Pilot";
     side = 1;
@@ -118,7 +118,7 @@ class B_VKN_VALKYRIE_PILOT_PMC_01 : B_VKN_VALKYRIE_JETPILOT_PMC_01 {
 class B_VKN_VALKYRIE_CREW_PMC_01 : B_VKN_VALKYRIE_DECKCREW_PMC_01 {
     editorPreview = \x\\addons\bvknpmcvalkyrie\data\preview\B_VKN_VALKYRIE_CREW_PMC_01.JPG;
     author = "Lion";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Crew";
     side = 1;
@@ -157,7 +157,7 @@ class B_VKN_VALKYRIE_CREW_PMC_01 : B_VKN_VALKYRIE_DECKCREW_PMC_01 {
 class B_VKN_VALKYRIE_A10_PMC_01 : RHS_A10_OCimport_02 {
     editorPreview = \x\\addons\bvknpmcvalkyrie\data\preview\B_VKN_VALKYRIE_A10_PMC_01.JPG;
     author = "Lion";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "A-10A";
     side = 1;
@@ -182,7 +182,7 @@ class B_VKN_VALKYRIE_A10_PMC_01 : RHS_A10_OCimport_02 {
 class B_VKN_VALKYRIE_F22_PMC_01 : rhsusf_f22_OCimport_02 {
     editorPreview = \x\\addons\bvknpmcvalkyrie\data\preview\B_VKN_VALKYRIE_F22_PMC_01.JPG;
     author = "Lion";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "F-22A";
     side = 1;
@@ -208,7 +208,7 @@ class B_VKN_VALKYRIE_F22_PMC_01 : rhsusf_f22_OCimport_02 {
 class B_VKN_VALKYRIE_F16_PMC_01 : FIR_F16C_WP_OCimport_02 {
     editorPreview = \x\\addons\bvknpmcvalkyrie\data\preview\B_VKN_VALKYRIE_F16_PMC_01.JPG;
     author = "Lion";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "F-16";
     side = 1;
@@ -234,7 +234,7 @@ class B_VKN_VALKYRIE_F16_PMC_01 : FIR_F16C_WP_OCimport_02 {
 class B_VKN_VALKYRIE_BLACKFISH_PMC_01 : B_T_VTOL_01_armed_F_OCimport_02 {
     editorPreview = \x\\addons\bvknpmcvalkyrie\data\preview\B_VKN_VALKYRIE_BLACKFISH_PMC_01.JPG;
     author = "Lion";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Blackfish";
     side = 1;
@@ -267,7 +267,7 @@ class B_VKN_VALKYRIE_BLACKFISH_PMC_01 : B_T_VTOL_01_armed_F_OCimport_02 {
 class B_VKN_VALKYRIE_BLACKFISHI_PMC_01 : B_T_VTOL_01_infantry_F_OCimport_02 {
     editorPreview = \x\\addons\bvknpmcvalkyrie\data\preview\B_VKN_VALKYRIE_BLACKFISHI_PMC_01.JPG;
     author = "Lion";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Blackfish (Infantry)";
     side = 1;
@@ -302,7 +302,7 @@ class B_VKN_VALKYRIE_BLACKFISHI_PMC_01 : B_T_VTOL_01_infantry_F_OCimport_02 {
 class B_VKN_VALKYRIE_BLACKFISHV_PMC_01 : B_T_VTOL_01_vehicle_F_OCimport_02 {
     editorPreview = \x\\addons\bvknpmcvalkyrie\data\preview\B_VKN_VALKYRIE_BLACKFISHV_PMC_01.JPG;
     author = "Lion";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Blackfish (Vehicle)";
     side = 1;
@@ -334,7 +334,7 @@ class B_VKN_VALKYRIE_BLACKFISHV_PMC_01 : B_T_VTOL_01_vehicle_F_OCimport_02 {
 class B_VKN_VALKYRIE_AH64D_PMC_01 : RHS_AH64D_wd_OCimport_02 {
     editorPreview = \x\\addons\bvknpmcvalkyrie\data\preview\B_VKN_VALKYRIE_AH64D_PMC_01.JPG;
     author = "Lion";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "AH-64D";
     side = 1;
@@ -365,7 +365,7 @@ class B_VKN_VALKYRIE_AH64D_PMC_01 : RHS_AH64D_wd_OCimport_02 {
 class B_VKN_VALKYRIE_CH47F_PMC_01 : RHS_CH_47F_OCimport_02 {
     editorPreview = \x\\addons\bvknpmcvalkyrie\data\preview\B_VKN_VALKYRIE_CH47F_PMC_01.JPG;
     author = "Lion";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "CH-47F";
     side = 1;
@@ -400,7 +400,7 @@ class B_VKN_VALKYRIE_CH47F_PMC_01 : RHS_CH_47F_OCimport_02 {
 class B_VKN_VALKYRIE_CH47FD_PMC_01 : B_VKN_VALKYRIE_CH47F_PMC_01 {
     editorPreview = \x\\addons\bvknpmcvalkyrie\data\preview\B_VKN_VALKYRIE_CH47FD_PMC_01.JPG;
     author = "Lion";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "CH-47F (Desert)";
     side = 1;
@@ -435,7 +435,7 @@ class B_VKN_VALKYRIE_CH47FD_PMC_01 : B_VKN_VALKYRIE_CH47F_PMC_01 {
 class B_VKN_VALKYRIE_UH60M_PMC_01 : RHS_UH60M_OCimport_02 {
     editorPreview = \x\\addons\bvknpmcvalkyrie\data\preview\B_VKN_VALKYRIE_UH60M_PMC_01.JPG;
     author = "Lion";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "UH-60M";
     side = 1;
@@ -472,7 +472,7 @@ class B_VKN_VALKYRIE_UH60M_PMC_01 : RHS_UH60M_OCimport_02 {
 class B_VKN_VALKYRIE_UH60MMED_PMC_01 : RHS_UH60M_MEV_OCimport_02 {
     editorPreview = \x\\addons\bvknpmcvalkyrie\data\preview\B_VKN_VALKYRIE_UH60MMED_PMC_01.JPG;
     author = "Lion";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "UH-60M MED";
     side = 1;
@@ -503,7 +503,7 @@ class B_VKN_VALKYRIE_UH60MMED_PMC_01 : RHS_UH60M_MEV_OCimport_02 {
 class B_VKN_VALKYRIE_UH_1Y_PMC_01 : RHS_UH1Y_OCimport_02 {
     editorPreview = \x\\addons\bvknpmcvalkyrie\data\preview\B_VKN_VALKYRIE_UH_1Y_PMC_01.JPG;
     author = "Lion";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "UH-1Y";
     side = 1;
@@ -542,7 +542,7 @@ class B_VKN_VALKYRIE_UH_1Y_PMC_01 : RHS_UH1Y_OCimport_02 {
 class B_VKN_VALKYRIE_CH53E_PMC_01 : rhsusf_CH53E_USMC_OCimport_02 {
     editorPreview = \x\\addons\bvknpmcvalkyrie\data\preview\B_VKN_VALKYRIE_CH53E_PMC_01.JPG;
     author = "Lion";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "CH-53E";
     side = 1;
@@ -572,7 +572,7 @@ class B_VKN_VALKYRIE_CH53E_PMC_01 : rhsusf_CH53E_USMC_OCimport_02 {
 class B_VKN_VALKYRIE_UCAV_PMC_01 : B_UAV_05_F_OCimport_02 {
     editorPreview = \x\\addons\bvknpmcvalkyrie\data\preview\B_VKN_VALKYRIE_UCAV_PMC_01.JPG;
     author = "Lion";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "UCAV Sentinel";
     side = 1;
@@ -603,7 +603,7 @@ class B_VKN_VALKYRIE_UCAV_PMC_01 : B_UAV_05_F_OCimport_02 {
 class B_VKN_VALKYRIE_UH80_PMC_01 : B_Heli_Transport_01_F_OCimport_02 {
     editorPreview = \x\\addons\bvknpmcvalkyrie\data\preview\B_VKN_VALKYRIE_UH80_PMC_01.JPG;
     author = "Lion";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "UH-80 Stealth";
     side = 1;
@@ -636,7 +636,7 @@ class B_VKN_VALKYRIE_UH80_PMC_01 : B_Heli_Transport_01_F_OCimport_02 {
 class B_VKN_VALKYRIE_AH6M_PMC_01 : RHS_MELB_AH6M_OCimport_02 {
     editorPreview = \x\\addons\bvknpmcvalkyrie\data\preview\B_VKN_VALKYRIE_AH6M_PMC_01.JPG;
     author = "Lion";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "AH-6M Littlebird";
     side = 1;
@@ -666,7 +666,7 @@ class B_VKN_VALKYRIE_AH6M_PMC_01 : RHS_MELB_AH6M_OCimport_02 {
 class B_VKN_VALKYRIE_OH6M_PMC_01 : RHS_MELB_MH6M_OCimport_02 {
     editorPreview = \x\\addons\bvknpmcvalkyrie\data\preview\B_VKN_VALKYRIE_OH6M_PMC_01.JPG;
     author = "Lion";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "OH-6M Littlebird";
     side = 1;

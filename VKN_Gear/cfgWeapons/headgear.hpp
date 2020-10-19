@@ -8,7 +8,7 @@ class VKN_HeadgearItem: InventoryItem_Base_F {
 class VKN_Shrek_Head_Base: ItemCore {
 	author = "DeanosBeano";
 	picture = "\VKN_Misc\VKN_Logo_Inverted.paa";
-	scope = 0;
+	scope = private;
 	weaponPoolAvailable = 1;
 	model="\VKN_Gear\data\Headgear\shrak_head.p3d";
 	hiddenSelections[] = {"camo"};
@@ -23,14 +23,14 @@ class VKN_Shrek_Head_Base: ItemCore {
 };
 class VKN_Shrek_Head_Pink: VKN_Shrek_Head_Base
 {
-	scope = 1;
+	scope = protected;
 	displayName="[VKN] Shrek Head Pink Test";
 	hiddenSelectionsTextures[] = {"#(argb,8,8,3)color(1,0,0.501961,1.0,co)"};
 };
 // Cap Front Base
   class VKN_cap_front_base: ItemCore {
     author = "Shagger";
-    scope = 1;
+    scope = protected;
     weaponPoolAvailable = 1;
     model = "\VKN_Gear\data\Models\cap_patch.p3d";
     class ItemInfo: HeadgearItem
@@ -48,7 +48,7 @@ class VKN_Shrek_Head_Pink: VKN_Shrek_Head_Base
   class VKN_cap_back_base: ItemCore {
     author = "Shagger";
     picture="\VKN_Misc\VKN_Logo_Inverted.paa";
-    scope = 1;
+    scope = protected;
     weaponPoolAvailable = 1;
     model = "\VKN_Gear\data\Models\capback_patch.p3d";
     class ItemInfo: HeadgearItem {
@@ -63,44 +63,44 @@ class VKN_Shrek_Head_Pink: VKN_Shrek_Head_Base
   };
 // Beret Base //
 class VKN_Beret_Base: H_Beret_02 {
-	scope = 0;
+	scope = private;
 	picture = "\VKN_Misc\VKN_Logo_Inverted.paa";
 };
 // Booniehat Base (NON RHS VARIANT) //
 class VKN_Boonie_Base: H_Booniehat_khk {
-	scope = 0;
+	scope = private;
 	picture = "\VKN_Misc\VKN_Logo_Inverted.paa";
 };
 
 class VKN_Boonie_Loki: VKN_Boonie_Base {
 	author = "Shagger";
-	scope = 2;
+	scope = public;
 	displayName = "[VKN] Booniehat (Loki)";
 	hiddenSelectionsTextures[] = {"\VKN_Gear\data\Headgear\vkn_boonie_loki_co.paa"};
 }
 
 class VKN_Beret_SouthAfrica: VKN_Beret_Base	{
 	author = "Shagger";
-	scope = 2;
+	scope = public;
 	displayName = "[VKN] Beret (South Africa)";
 	hiddenSelectionsTextures[] = {"\VKN_Gear\data\Headgear\VKN_beret_sa_co.paa"};
 };
 class VKN_Beret_Viking: VKN_Beret_Base	{
 	author = "Shagger";
-	scope = 2;
+	scope = public;
 	displayName = "[VKN] Beret (Viking)";
 	hiddenSelectionsTextures[] = {"\VKN_Gear\data\Headgear\VKN_beret_viking_co.paa"};
 };
 class VKN_Helmet_M90 : H_HelmetIA {
 	author="Jonmo";
 	picture="\VKN_Misc\VKN_Logo_Inverted.paa";
-	scope = 2;
+	scope = public;
 	displayName="[VKN] Combat Helmet M90";
 	hiddenSelectionsTextures[] = {"\VKN_Gear\data\Headgear\VKN_Helmet_M90_ca.paa"};
 };
 class VKN_Helmet_M90D : H_HelmetIA {
 	author="Jonmo";
-	scope = 2;
+	scope = public;
 	displayName="[VKN] Combat Helmet M90 Desert";
 	picture="\VKN_Misc\VKN_Logo_Inverted.paa";
 	hiddenSelectionsTextures[] = {"\VKN_Gear\data\Headgear\VKN_Helmet_M90D_ca.paa"};
@@ -109,7 +109,7 @@ class VKN_Helmet_M90D : H_HelmetIA {
 class VKN_ECH_MED: H_HelmetB {
 	displayName="[VKN] FBA ECH Lite (MEDICAL)";
 	author="Apple";
-	scope = 2;
+	scope = public;
 	picture="\VKN_Misc\VKN_Logo_Inverted.paa";
 	model="A3\Characters_F\BLUFOR\headgear_b_helmet_light";
 	hiddenSelectionsTextures[]={"\VKN_Gear\data\Headgear\VKN_ECH_BLK_MED.paa"};
@@ -121,7 +121,7 @@ class VKN_ECH_MED: H_HelmetB {
 class VKN_ECH_SNOW_MED: H_HelmetB {
 	displayName="[VKN] FWA ECH Lite SNOW (MEDICAL)";
 	author="Apple";
-	scope = 2;
+	scope = public;
 	picture="\VKN_Misc\VKN_Logo_Inverted.paa";
 	model="A3\Characters_F\BLUFOR\headgear_b_helmet_light";
 	hiddenSelectionsTextures[]={"\VKN_Gear\data\Headgear\VKN_ECH_SNOW_MED.paa"};
@@ -132,7 +132,7 @@ class VKN_ECH_SNOW_MED: H_HelmetB {
 
 class VKN_VIS_headgear: H_helmetO_ViperSP_hex_F {
 	author = "Jonmo";
-	scope = 2;
+	scope = public;
 	weaponPoolAvailable = 1;
 	picture="\VKN_Misc\VKN_Logo_Inverted.paa";
 	displayName = "[VKN] VIS Special Purpose Headgear";
@@ -144,7 +144,7 @@ class VKN_VIS_headgear: H_helmetO_ViperSP_hex_F {
 
 class VKN_h_HelmetB_cazador: ItemCore	{
 	author = "Jonmo";
-	scope = 2;
+	scope = public;
 	weaponPoolAvailable = 1;
 	displayName = "[VKN] Combat Helmet (Cazador)";
 	picture="\VKN_Misc\VKN_Logo_Inverted.paa";
@@ -167,7 +167,7 @@ class VKN_h_HelmetB_cazador: ItemCore	{
 };
 class VKN_h_HelmetB_Light_cazador: ItemCore	{
 	author = "Jonmo";
-	scope = 2;
+	scope = public;
 	weaponPoolAvailable = 1;
 	displayName = "[VKN] Light Combat Helmet (Cazador)";
 	picture="\VKN_Misc\VKN_Logo_Inverted.paa";
@@ -190,7 +190,7 @@ class VKN_h_HelmetB_Light_cazador: ItemCore	{
 };
 class VKN_h_HelmetB_Enhanced_cazador: ItemCore {
 	author = "Jonmo";
-	scope = 2;
+	scope = public;
 	weaponPoolAvailable = 1;
 	displayName = "[VKN] Enhanced Combat Helmet (Cazador)";
 	picture="\VKN_Misc\VKN_Logo_Inverted.paa";
@@ -213,7 +213,7 @@ class VKN_h_HelmetB_Enhanced_cazador: ItemCore {
 };
 class VKN_h_HelmetB_Camo_cazador: ItemCore {
 	author = "Jonmo";
-	scope = 2;
+	scope = public;
 	weaponPoolAvailable = 1;
 	displayName = "[VKN] Combat Helmet Camo (Cazador)";
 	picture="\VKN_Misc\VKN_Logo_Inverted.paa";
@@ -237,14 +237,14 @@ class VKN_h_HelmetB_Camo_cazador: ItemCore {
 // Caps in black (vkn Logo)
   class VKN_cap_front_black_1: VKN_cap_front_base{
     author="Shagger";
-    scope = 2;
+    scope = public;
     displayName = "[VKN] Front Facing Cap Black (VKN Logo)";
     hiddenSelections[] = {"camo1","camo2"};
     hiddenSelectionsTextures[] = {"\VKN_Gear\data\Headgear\capb_black_co.paa","\VKN_Gear\data\Headgear\VKN_cap_blk_vkn.paa"};
   };
   class VKN_cap_back_black_1: VKN_cap_back_base {
     author="Shagger";
-    scope = 2;
+    scope = public;
     displayName = "[VKN] Backward Facing Cap Black (VKN Logo)";
     hiddenSelections[] = {"camo1","camo2"};
     hiddenSelectionsTextures[] = {"\VKN_Gear\data\Headgear\capb_black_co.paa","\VKN_Gear\data\Headgear\VKN_cap_blk_vkn.paa"};
@@ -252,14 +252,14 @@ class VKN_h_HelmetB_Camo_cazador: ItemCore {
  // Caps in black (slov Logo)
   class VKN_cap_front_black_2: VKN_cap_front_base{
     author="Shagger";
-    scope = 2;
+    scope = public;
     displayName = "[VKN] Front Facing Cap Black (Slov Logo)";
     hiddenSelections[] = {"camo1","camo2"};
     hiddenSelectionsTextures[] = {"\VKN_Gear\data\Headgear\capb_black_co.paa","\VKN_Gear\data\Headgear\VKN_cap_sand_slav.paa"};
   };
   class VKN_cap_back_black_2: VKN_cap_back_base {
     author="Shagger";
-    scope = 2;
+    scope = public;
     displayName = "[VKN] Backward Facing Cap Black (Slov Logo)";
     hiddenSelections[] = {"camo1","camo2"};
     hiddenSelectionsTextures[] = {"\VKN_Gear\data\Headgear\capb_black_co.paa","\VKN_Gear\data\Headgear\VKN_cap_sand_slav.paa"};
@@ -267,14 +267,14 @@ class VKN_h_HelmetB_Camo_cazador: ItemCore {
   // Caps in black (Scand Logo)
   class VKN_cap_front_black_3: VKN_cap_front_base{
     author="Shagger";
-    scope = 2;
+    scope = public;
     displayName = "[VKN] Front Facing Cap Black (Scand Logo)";
     hiddenSelections[] = {"camo1","camo2"};
     hiddenSelectionsTextures[] = {"\VKN_Gear\data\Headgear\capb_black_co.paa","\VKN_Gear\data\Headgear\VKN_cap_sand_scand.paa"};
   };
   class VKN_cap_back_black_3: VKN_cap_back_base {
     author="Shagger";
-    scope = 2;
+    scope = public;
     displayName = "[VKN] Backward Facing Cap Black (Scand Logo)";
     hiddenSelections[] = {"camo1","camo2"};
     hiddenSelectionsTextures[] = {"\VKN_Gear\data\Headgear\capb_black_co.paa","\VKN_Gear\data\Headgear\VKN_cap_sand_scand.paa"};
@@ -282,14 +282,14 @@ class VKN_h_HelmetB_Camo_cazador: ItemCore {
    // Caps in black (Russian Logo)
   class VKN_cap_front_black_4: VKN_cap_front_base{
     author="Shagger";
-    scope = 2;
+    scope = public;
     displayName = "[VKN] Front Facing Cap Black (Russia Logo)";
     hiddenSelections[] = {"camo1","camo2"};
     hiddenSelectionsTextures[] = {"\VKN_Gear\data\Headgear\capb_black_co.paa","\VKN_Gear\data\Headgear\VKN_cap_blk_rus.paa"};
   };
   class VKN_cap_back_black_4: VKN_cap_back_base {
     author="Shagger";
-    scope = 2;
+    scope = public;
     displayName = "[VKN] Backward Facing Cap Black (Russia Logo)";
     hiddenSelections[] = {"camo1","camo2"};
     hiddenSelectionsTextures[] = {"\VKN_Gear\data\Headgear\capb_black_co.paa","\VKN_Gear\data\Headgear\VKN_cap_blk_rus.paa"};
@@ -297,14 +297,14 @@ class VKN_h_HelmetB_Camo_cazador: ItemCore {
   // Caps in black (Russian Logo)
     class VKN_cap_front_black_5: VKN_cap_front_base{
     author="Shagger";
-    scope = 2;
+    scope = public;
     displayName = "[VKN] Front Facing Cap Black (USA Logo)";
     hiddenSelections[] = {"camo1","camo2"};
     hiddenSelectionsTextures[] = {"\VKN_Gear\data\Headgear\capb_black_co.paa","\VKN_Gear\data\Headgear\VKN_cap_blk_usa.paa"};
   };
   class VKN_cap_back_black_5: VKN_cap_back_base {
     author="Shagger";
-    scope = 2;
+    scope = public;
     displayName = "[VKN] Backward Facing Cap Black (USA Logo)";
     hiddenSelections[] = {"camo1","camo2"};
     hiddenSelectionsTextures[] = {"\VKN_Gear\data\Headgear\capb_black_co.paa","\VKN_Gear\data\Headgear\VKN_cap_blk_usa.paa"};
@@ -312,14 +312,14 @@ class VKN_h_HelmetB_Camo_cazador: ItemCore {
 // caps in OD (vkn Logo)
   class VKN_cap_front_od: VKN_cap_front_base{
     author="Shagger";
-    scope = 2;
+    scope = public;
     displayName = "[VKN] Front Facing Cap OD (VKN Logo)";
     hiddenSelections[] = {"camo1","camo2"};
     hiddenSelectionsTextures[] = {"\VKN_Gear\data\Headgear\capb_od_co.paa","\VKN_Gear\data\Headgear\VKN_cap_od_vkn.paa"};
   };
   class VKN_cap_back_od: VKN_cap_back_base {
     author="Shagger";
-    scope = 2;
+    scope = public;
     displayName = "[VKN] Backward Facing Cap OD (VKN Logo)";
     hiddenSelections[] = {"camo1","camo2"};
     hiddenSelectionsTextures[] = {"\VKN_Gear\data\Headgear\capb_od_co.paa","\VKN_Gear\data\Headgear\VKN_cap_od_vkn.paa"};
@@ -327,14 +327,14 @@ class VKN_h_HelmetB_Camo_cazador: ItemCore {
 // caps in Sand (vkn Logo)
   class VKN_cap_front_sand_1: VKN_cap_front_base{
     author="Shagger";
-    scope = 2;
+    scope = public;
     displayName = "[VKN] Front Facing Cap Sand (VKN Logo)";
     hiddenSelections[] = {"camo1","camo2"};
     hiddenSelectionsTextures[] = {"\VKN_Gear\data\Headgear\capb_sand_co.paa","\VKN_Gear\data\Headgear\VKN_cap_sand_vkn.paa"};
   };
   class VKN_cap_back_sand_1: VKN_cap_back_base {
     author="Shagger";
-    scope = 2;
+    scope = public;
     displayName = "[VKN] Backward Facing Cap Sand (VKN Logo)";
     hiddenSelections[] = {"camo1","camo2"};
     hiddenSelectionsTextures[] = {"\VKN_Gear\data\Headgear\capb_sand_co.paa","\VKN_Gear\data\Headgear\VKN_cap_sand_vkn.paa"};
@@ -342,14 +342,14 @@ class VKN_h_HelmetB_Camo_cazador: ItemCore {
 // caps in Sand (Slov Logo)
   class VKN_cap_front_sand_2: VKN_cap_front_base{
     author="Shagger";
-    scope = 2;
+    scope = public;
     displayName = "[VKN] Front Facing Cap Sand (Slov Logo)";
     hiddenSelections[] = {"camo1","camo2"};
     hiddenSelectionsTextures[] = {"\VKN_Gear\data\Headgear\capb_sand_co.paa","\VKN_Gear\data\Headgear\VKN_cap_sand_slav.paa"};
   };
   class VKN_cap_back_sand_2: VKN_cap_back_base {
     author="Shagger";
-    scope = 2;
+    scope = public;
     displayName = "[VKN] Backward Facing Cap Sand (Slov Logo)";
     hiddenSelections[] = {"camo1","camo2"};
     hiddenSelectionsTextures[] = {"\VKN_Gear\data\Headgear\capb_sand_co.paa","\VKN_Gear\data\Headgear\VKN_cap_sand_slav.paa"};
@@ -357,14 +357,14 @@ class VKN_h_HelmetB_Camo_cazador: ItemCore {
   // caps in Sand (Scand Logo)
   class VKN_cap_front_sand_3: VKN_cap_front_base{
     author="Shagger";
-    scope = 2;
+    scope = public;
     displayName = "[VKN] Front Facing Cap Sand (Scand Logo)";
     hiddenSelections[] = {"camo1","camo2"};
     hiddenSelectionsTextures[] = {"\VKN_Gear\data\Headgear\capb_sand_co.paa","\VKN_Gear\data\Headgear\VKN_cap_sand_scand.paa"};
   };
   class VKN_cap_back_sand_3: VKN_cap_back_base {
     author="Shagger";
-    scope = 2;
+    scope = public;
     displayName = "[VKN] Backward Facing Cap Sand (Scand Logo)";
     hiddenSelections[] = {"camo1","camo2"};
     hiddenSelectionsTextures[] = {"\VKN_Gear\data\Headgear\capb_sand_co.paa","\VKN_Gear\data\Headgear\VKN_cap_sand_scand.paa"};
@@ -372,14 +372,14 @@ class VKN_h_HelmetB_Camo_cazador: ItemCore {
     // caps in Sand (USA Logo)
   class VKN_cap_front_sand_4: VKN_cap_front_base{
     author="Shagger";
-    scope = 2;
+    scope = public;
     displayName = "[VKN] Front Facing Cap Sand (USA Logo)";
     hiddenSelections[] = {"camo1","camo2","camo3"};
     hiddenSelectionsTextures[] = {"\VKN_Gear\data\Headgear\capb_sand_co.paa","\VKN_Gear\data\Headgear\VKN_cap_blk_usa.paa","VKN_Gear\data\Headgear\VKN_cap_blk_rus.paa"};
   };
   class VKN_cap_back_sand_4: VKN_cap_back_base {
     author="Shagger";
-    scope = 2;
+    scope = public;
     displayName = "[VKN] Backward Facing Cap Sand (USA Logo)";
     hiddenSelections[] = {"camo1","camo2","camo3"};
     hiddenSelectionsTextures[] = {"\VKN_Gear\data\Headgear\capb_sand_co.paa","\VKN_Gear\data\Headgear\VKN_cap_blk_usa.paa","VKN_Gear\data\Headgear\VKN_cap_blk_rus.paa"};

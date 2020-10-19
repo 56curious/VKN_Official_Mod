@@ -1,7 +1,7 @@
 class B_VKN_LOKI_RIFLEMAN_PMC_01 : rhsusf_socom_marsoc_cso_OCimport_02 {
     editorPreview = \x\\addons\bvknpmcloki\data\preview\B_VKN_LOKI_RIFLEMAN_PMC_01.JPG;
     author = "Lion";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Rifleman";
     side = 1;
@@ -42,7 +42,7 @@ class B_VKN_LOKI_RIFLEMAN_PMC_01 : rhsusf_socom_marsoc_cso_OCimport_02 {
 class B_VKN_LOKI_OPERATOR_PMC_01 : B_VKN_LOKI_RIFLEMAN_PMC_01 {
     editorPreview = \x\\addons\bvknpmcloki\data\preview\B_VKN_LOKI_OPERATOR_PMC_01.JPG;
     author = "Lion";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Operator";
     side = 1;
@@ -83,7 +83,7 @@ class B_VKN_LOKI_OPERATOR_PMC_01 : B_VKN_LOKI_RIFLEMAN_PMC_01 {
 class B_VKN_LOKI_BREACHER_PMC_01 : B_VKN_LOKI_RIFLEMAN_PMC_01 {
     editorPreview = \x\\addons\bvknpmcloki\data\preview\B_VKN_LOKI_BREACHER_PMC_01.JPG;
     author = "Lion";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Breacher";
     side = 1;
@@ -124,7 +124,7 @@ class B_VKN_LOKI_BREACHER_PMC_01 : B_VKN_LOKI_RIFLEMAN_PMC_01 {
 class B_VKN_LOKI_LEADER_PMC_01 : B_VKN_LOKI_RIFLEMAN_PMC_01 {
     editorPreview = \x\\addons\bvknpmcloki\data\preview\B_VKN_LOKI_LEADER_PMC_01.JPG;
     author = "Lion";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Squad Leader";
     side = 1;
@@ -165,7 +165,7 @@ class B_VKN_LOKI_LEADER_PMC_01 : B_VKN_LOKI_RIFLEMAN_PMC_01 {
 class B_VKN_LOKI_RADIOMAN_PMC_01 : B_VKN_LOKI_LEADER_PMC_01 {
     editorPreview = \x\\addons\bvknpmcloki\data\preview\B_VKN_LOKI_RADIOMAN_PMC_01.JPG;
     author = "Lion";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Radioman";
     side = 1;
@@ -206,7 +206,7 @@ class B_VKN_LOKI_RADIOMAN_PMC_01 : B_VKN_LOKI_LEADER_PMC_01 {
 class B_VKN_LOKI_SNIPER_PMC_01 : B_VKN_LOKI_RIFLEMAN_PMC_01 {
     editorPreview = \x\\addons\bvknpmcloki\data\preview\B_VKN_LOKI_SNIPER_PMC_01.JPG;
     author = "Lion";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Sniper";
     side = 1;
@@ -247,7 +247,7 @@ class B_VKN_LOKI_SNIPER_PMC_01 : B_VKN_LOKI_RIFLEMAN_PMC_01 {
 class B_VKN_LOKI_SMG_PMC_01 : B_VKN_LOKI_RIFLEMAN_PMC_01 {
     editorPreview = \x\\addons\bvknpmcloki\data\preview\B_VKN_LOKI_SMG_PMC_01.JPG;
     author = "Lion";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "SMG";
     side = 1;
@@ -288,7 +288,7 @@ class B_VKN_LOKI_SMG_PMC_01 : B_VKN_LOKI_RIFLEMAN_PMC_01 {
 class B_VKN_LOKI_GRENADIER_PMC_01 : B_VKN_LOKI_RIFLEMAN_PMC_01 {
     editorPreview = \x\\addons\bvknpmcloki\data\preview\B_VKN_LOKI_GRENADIER_PMC_01.JPG;
     author = "Lion";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Grenadier";
     side = 1;
@@ -329,7 +329,7 @@ class B_VKN_LOKI_GRENADIER_PMC_01 : B_VKN_LOKI_RIFLEMAN_PMC_01 {
 class B_VKN_LOKI_MEDIC_PMC_01 : B_VKN_LOKI_RIFLEMAN_PMC_01 {
     editorPreview = \x\\addons\bvknpmcloki\data\preview\B_VKN_LOKI_MEDIC_PMC_01.JPG;
     author = "Lion";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Medic";
     side = 1;
@@ -370,7 +370,7 @@ class B_VKN_LOKI_MEDIC_PMC_01 : B_VKN_LOKI_RIFLEMAN_PMC_01 {
 class B_VKN_LOKI_MARSKMAN_PMC_01 : B_VKN_LOKI_RIFLEMAN_PMC_01 {
     editorPreview = \x\\addons\bvknpmcloki\data\preview\B_VKN_LOKI_MARSKMAN_PMC_01.JPG;
     author = "Lion";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Marksman";
     side = 1;
@@ -411,7 +411,7 @@ class B_VKN_LOKI_MARSKMAN_PMC_01 : B_VKN_LOKI_RIFLEMAN_PMC_01 {
 class B_VKN_LOKI_Dingy_PMC_01 : B_T_Boat_Transport_01_F_OCimport_02 {
     editorPreview = \x\\addons\bvknpmcloki\data\preview\B_VKN_LOKI_Dingy_PMC_01.JPG;
     author = "Lion";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Dingy";
     side = 1;
@@ -445,7 +445,7 @@ class B_VKN_LOKI_Dingy_PMC_01 : B_T_Boat_Transport_01_F_OCimport_02 {
 class B_VKN_LOKI_LITTLEBIRD_PMC_01 : RHS_MELB_AH6M_OCimport_02 {
     editorPreview = \x\\addons\bvknpmcloki\data\preview\B_VKN_LOKI_LITTLEBIRD_PMC_01.JPG;
     author = "Lion";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Littlebird";
     side = 1;
@@ -475,7 +475,7 @@ class B_VKN_LOKI_LITTLEBIRD_PMC_01 : RHS_MELB_AH6M_OCimport_02 {
 class B_VKN_LOKI_BLACKHAWK_PMC_01 : RHS_UH60M_OCimport_02 {
     editorPreview = \x\\addons\bvknpmcloki\data\preview\B_VKN_LOKI_BLACKHAWK_PMC_01.JPG;
     author = "Lion";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Blackhawk";
     side = 1;
@@ -512,7 +512,7 @@ class B_VKN_LOKI_BLACKHAWK_PMC_01 : RHS_UH60M_OCimport_02 {
 class B_VKN_LOKI_HUMVEE_PMC_01 : B_VKN_ODIN_Humvee_M2_PMC_01 {
     editorPreview = \x\\addons\bvknpmcloki\data\preview\B_VKN_LOKI_HUMVEE_PMC_01.JPG;
     author = "Lion";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Humvee";
     side = 1;
@@ -546,7 +546,7 @@ class B_VKN_LOKI_HUMVEE_PMC_01 : B_VKN_ODIN_Humvee_M2_PMC_01 {
 class B_VKN_LOKI_JEEP_PMC_01 : C_Offroad_02_unarmed_F_OCimport_02 {
     editorPreview = \x\\addons\bvknpmcloki\data\preview\B_VKN_LOKI_JEEP_PMC_01.JPG;
     author = "Lion";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Jeep";
     side = 1;
@@ -579,7 +579,7 @@ class B_VKN_LOKI_JEEP_PMC_01 : C_Offroad_02_unarmed_F_OCimport_02 {
 class B_VKN_LOKI_OFFROAD_PMC_01 : C_Offroad_01_F_OCimport_02 {
     editorPreview = \x\\addons\bvknpmcloki\data\preview\B_VKN_LOKI_OFFROAD_PMC_01.JPG;
     author = "Lion";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Offroad";
     side = 1;

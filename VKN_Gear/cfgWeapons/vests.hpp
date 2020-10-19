@@ -107,21 +107,21 @@ class Carrier_Spec_Rig_ItemInfo_Base: VestItem {
 
 // Base Classes
 class VKN_Carrier_Lite_Base: Vest_Camo_Base {
-	scope = 0;
+	scope = private;
 	picture = "\VKN_Misc\VKN_Logo_Inverted.paa";
 	model="\A3\Characters_F\BLUFOR\equip_b_vest02.p3d";
 	hiddenSelections[]={"camo"};
 	class ItemInfo: Carrier_Lite_ItemInfo_Base { uniformModel="\A3\Characters_F\BLUFOR\equip_b_vest02.p3d"; };
 };
 class VKN_Carrier_Rig_Base: Vest_Camo_Base {
-	scope = 0;
+	scope = private;
 	picture = "\VKN_Misc\VKN_Logo_Inverted.paa";
 	model="\A3\Characters_F\BLUFOR\equip_b_vest01.p3d";
 	hiddenSelections[]={"camo"};
 	class ItemInfo: Carrier_ItemInfo_Base { uniformModel="\A3\Characters_F\BLUFOR\equip_b_vest01.p3d"; };
 };
 class VKN_Carrier_Spec_Rig_Base : Vest_Camo_Base {
-	scope = 0;
+	scope = private;
 	weaponPoolAvailable = 1;
 	allowedSlots[] = { 901 };
 	picture = "\VKN_Misc\VKN_Logo_Inverted.paa";
@@ -173,7 +173,7 @@ class VKN_Black_Carrier_Loki_Black_RIG: VKN_Carrier_Rig_Base {
 };
 
 class VKN_Carrier_Spec_Police_Riot : VKN_Carrier_Spec_Rig_Base	{
-	scope = 2;
+	scope = public;
 	displayName = "[VKN] Police Riot Vest";
 	hiddenSelections[] = { "camo" };
 	hiddenSelectionsTextures[] = { "\VKN_Gear\data\vests\Faction\vkn_carrier_gl_rig_police_co.paa" };
@@ -181,7 +181,7 @@ class VKN_Carrier_Spec_Police_Riot : VKN_Carrier_Spec_Rig_Base	{
 
 class VKN_Vest_V_HarnessO_drk_F: Vest_NoCamo_Base {
 	author = "Jonmo";
-	scope = 2;
+	scope = public;
 	displayName = "[VKN] VIS LVB Harness (Dark)";
 	picture="\VKN_Misc\VKN_Logo_Inverted.paa";
 	model = "\A3\Characters_F\OPFOR\equip_o_vest01";

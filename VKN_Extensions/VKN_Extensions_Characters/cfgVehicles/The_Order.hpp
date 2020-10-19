@@ -1,7 +1,7 @@
 class O_the_order_Rifleman_01 : O_Soldier_F_OCimport_02 {
     editorPreview = VKN_Extensions_Characters\Editor Preview Images\O_the_order_Rifleman_01.paa;
     author = "Lion";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Rifleman";
     side = 0;
@@ -42,7 +42,7 @@ class O_the_order_Rifleman_01 : O_Soldier_F_OCimport_02 {
 class O_the_order_Marksman_01 : O_the_order_Rifleman_01 {
     editorPreview = VKN_Extensions_Characters\Editor Preview Images\O_the_order_Marksman_01.paa;
     author = "Lion";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Marksman";
     side = 0;
@@ -83,7 +83,7 @@ class O_the_order_Marksman_01 : O_the_order_Rifleman_01 {
 class O_the_order_AR_01 : O_the_order_Rifleman_01 {
     editorPreview = VKN_Extensions_Characters\Editor Preview Images\O_the_order_AR_01.paa;
     author = "Lion";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "AR";
     side = 0;
@@ -124,7 +124,7 @@ class O_the_order_AR_01 : O_the_order_Rifleman_01 {
 class O_the_order_Sniper_01 : O_the_order_Rifleman_01 {
     editorPreview = VKN_Extensions_Characters\Editor Preview Images\O_the_order_Sniper_01.paa;
     author = "Lion";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Sniper";
     side = 0;
@@ -165,7 +165,7 @@ class O_the_order_Sniper_01 : O_the_order_Rifleman_01 {
 class O_the_order_AA_01 : O_the_order_Rifleman_01 {
     editorPreview = VKN_Extensions_Characters\Editor Preview Images\O_the_order_AA_01.paa;
     author = "Lion";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "AA";
     side = 0;
@@ -206,7 +206,7 @@ class O_the_order_AA_01 : O_the_order_Rifleman_01 {
 class O_the_order_AT_01 : O_the_order_AA_01 {
     editorPreview = VKN_Extensions_Characters\Editor Preview Images\O_the_order_AT_01.paa;
     author = "Lion";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "AT";
     side = 0;
@@ -247,7 +247,7 @@ class O_the_order_AT_01 : O_the_order_AA_01 {
 class O_the_order_Personal_Guard_01 : O_the_order_Rifleman_01 {
     editorPreview = VKN_Extensions_Characters\Editor Preview Images\O_the_order_Personal_Guard_01.paa;
     author = "Lion";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Personal Guard";
     side = 0;
@@ -288,7 +288,7 @@ class O_the_order_Personal_Guard_01 : O_the_order_Rifleman_01 {
 class O_the_order_SMG_01 : O_the_order_Rifleman_01 {
     editorPreview = VKN_Extensions_Characters\Editor Preview Images\O_the_order_SMG_01.paa;
     author = "Lion";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "SMG";
     side = 0;
@@ -329,7 +329,7 @@ class O_the_order_SMG_01 : O_the_order_Rifleman_01 {
 class O_the_order_Grenadier_01 : O_the_order_Rifleman_01 {
     editorPreview = VKN_Extensions_Characters\Editor Preview Images\O_the_order_Grenadier_01.paa;
     author = "Lion";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Grenadier";
     side = 0;
@@ -370,7 +370,7 @@ class O_the_order_Grenadier_01 : O_the_order_Rifleman_01 {
 class O_the_order_AK_01 : O_the_order_Rifleman_01 {
     editorPreview = VKN_Extensions_Characters\Editor Preview Images\O_the_order_AK_01.paa;
     author = "Lion";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "AK";
     side = 0;
@@ -411,7 +411,7 @@ class O_the_order_AK_01 : O_the_order_Rifleman_01 {
 class O_the_order_Officer_01 : O_the_order_Rifleman_01 {
     editorPreview = VKN_Extensions_Characters\Editor Preview Images\O_the_order_Officer_01.paa;
     author = "Lion";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Officer";
     side = 0;
@@ -452,7 +452,7 @@ class O_the_order_Officer_01 : O_the_order_Rifleman_01 {
 class O_the_order_Radioman_01 : O_the_order_Rifleman_01 {
     editorPreview = VKN_Extensions_Characters\Editor Preview Images\O_the_order_Radioman_01.paa;
     author = "Lion";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Radioman";
     side = 0;
@@ -493,7 +493,7 @@ class O_the_order_Radioman_01 : O_the_order_Rifleman_01 {
 class O_the_order_Pilot_01 : O_the_order_SMG_01 {
     editorPreview = VKN_Extensions_Characters\Editor Preview Images\O_the_order_Pilot_01.paa;
     author = "Lion";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Pilot";
     side = 0;
@@ -534,7 +534,7 @@ class O_the_order_Pilot_01 : O_the_order_SMG_01 {
 class O_the_order_Crewman_01 : O_the_order_Pilot_01 {
     editorPreview = VKN_Extensions_Characters\Editor Preview Images\O_the_order_Crewman_01.paa;
     author = "Lion";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Crewman";
     side = 0;
@@ -575,7 +575,7 @@ class O_the_order_Crewman_01 : O_the_order_Pilot_01 {
 class O_the_order_Leader_01 : O_the_order_Officer_01 {
     editorPreview = VKN_Extensions_Characters\Editor Preview Images\O_the_order_Leader_01.paa;
     author = "Lion";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Leader";
     side = 0;
@@ -614,7 +614,7 @@ class O_the_order_Leader_01 : O_the_order_Officer_01 {
 class O_the_order_Humvee_01 : rhsusf_m1043_w_m2_OCimport_02 {
     editorPreview = VKN_Extensions_Characters\Editor Preview Images\O_the_order_Humvee_01.paa;
     author = "Lion";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Humvee";
     side = 0;
@@ -648,7 +648,7 @@ class O_the_order_Humvee_01 : rhsusf_m1043_w_m2_OCimport_02 {
 class O_the_order_M2A3_01 : RHS_M2A3_BUSKIII_wd_OCimport_02 {
     editorPreview = VKN_Extensions_Characters\Editor Preview Images\O_the_order_M2A3_01.paa;
     author = "Lion";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "M2A3";
     side = 0;
@@ -679,7 +679,7 @@ class O_the_order_M2A3_01 : RHS_M2A3_BUSKIII_wd_OCimport_02 {
 class O_the_order_M1A1_01 : rhsusf_m1a1fep_d_OCimport_02 {
     editorPreview = VKN_Extensions_Characters\Editor Preview Images\O_the_order_M1A1_01.paa;
     author = "Lion";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "M1A1";
     side = 0;
@@ -710,7 +710,7 @@ class O_the_order_M1A1_01 : rhsusf_m1a1fep_d_OCimport_02 {
 class O_the_order_Navy_01 : O_the_order_SMG_01 {
     editorPreview = VKN_Extensions_Characters\Editor Preview Images\O_the_order_Navy_01.paa;
     author = "Lion";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Navy";
     side = 0;
@@ -751,7 +751,7 @@ class O_the_order_Navy_01 : O_the_order_SMG_01 {
 class O_the_order_assualt_boat_01 : B_Boat_Transport_01_F_OCimport_02 {
     editorPreview = VKN_Extensions_Characters\Editor Preview Images\O_the_order_assualt_boat_01.paa;
     author = "Lion";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "assualt_boat";
     side = 0;
@@ -785,7 +785,7 @@ class O_the_order_assualt_boat_01 : B_Boat_Transport_01_F_OCimport_02 {
 class O_the_order_MRAP_01 : rhsusf_M1220_M2_usarmy_wd_OCimport_02 {
     editorPreview = VKN_Extensions_Characters\Editor Preview Images\O_the_order_MRAP_01.paa;
     author = "Lion";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "MRAP";
     side = 0;
@@ -816,7 +816,7 @@ class O_the_order_MRAP_01 : rhsusf_M1220_M2_usarmy_wd_OCimport_02 {
 class O_the_order_F22_01 : rhsusf_f22_OCimport_02 {
     editorPreview = VKN_Extensions_Characters\Editor Preview Images\O_the_order_F22_01.paa;
     author = "Lion";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "F-22";
     side = 0;
@@ -842,7 +842,7 @@ class O_the_order_F22_01 : rhsusf_f22_OCimport_02 {
 class O_the_order_A10A_01 : RHS_A10_OCimport_02 {
     editorPreview = VKN_Extensions_Characters\Editor Preview Images\O_the_order_A10A_01.paa;
     author = "Lion";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "A-10A";
     side = 0;
@@ -867,7 +867,7 @@ class O_the_order_A10A_01 : RHS_A10_OCimport_02 {
 class O_the_order_Bardelas_01 : B_APC_Tracked_01_AA_F_OCimport_02 {
     editorPreview = VKN_Extensions_Characters\Editor Preview Images\O_the_order_Bardelas_01.paa;
     author = "Lion";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Bardelas";
     side = 0;
@@ -898,7 +898,7 @@ class O_the_order_Bardelas_01 : B_APC_Tracked_01_AA_F_OCimport_02 {
 class O_the_order_CH_47F_01 : RHS_CH_47F_light_OCimport_02 {
     editorPreview = VKN_Extensions_Characters\Editor Preview Images\O_the_order_CH_47F_01.paa;
     author = "Lion";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "CH-47F";
     side = 0;
@@ -933,7 +933,7 @@ class O_the_order_CH_47F_01 : RHS_CH_47F_light_OCimport_02 {
 class O_the_order_UH_60M_01 : RHS_UH60M_OCimport_02 {
     editorPreview = VKN_Extensions_Characters\Editor Preview Images\O_the_order_UH_60M_01.paa;
     author = "Lion";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "UH-60M";
     side = 0;
@@ -970,7 +970,7 @@ class O_the_order_UH_60M_01 : RHS_UH60M_OCimport_02 {
 class O_the_order_AH_1Z_01 : RHS_AH1Z_wd_OCimport_02 {
     editorPreview = VKN_Extensions_Characters\Editor Preview Images\O_the_order_AH_1Z_01.paa;
     author = "Lion";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "AH-1Z";
     side = 0;
@@ -1000,7 +1000,7 @@ class O_the_order_AH_1Z_01 : RHS_AH1Z_wd_OCimport_02 {
 class O_the_order_Sholef_01 : B_MBT_01_arty_F_OCimport_02 {
     editorPreview = VKN_Extensions_Characters\Editor Preview Images\O_the_order_Sholef_01.paa;
     author = "Lion";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Sholef";
     side = 0;
@@ -1031,7 +1031,7 @@ class O_the_order_Sholef_01 : B_MBT_01_arty_F_OCimport_02 {
 class O_the_order_HEMMT_01 : rhsusf_M977A4_BKIT_M2_usarmy_wd_OCimport_02 {
     editorPreview = VKN_Extensions_Characters\Editor Preview Images\O_the_order_HEMMT_01.paa;
     author = "Lion";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "HEMMT";
     side = 0;
@@ -1062,7 +1062,7 @@ class O_the_order_HEMMT_01 : rhsusf_M977A4_BKIT_M2_usarmy_wd_OCimport_02 {
 class O_the_order_AMMO_01 : rhsusf_M977A4_AMMO_usarmy_wd_OCimport_02 {
     editorPreview = VKN_Extensions_Characters\Editor Preview Images\O_the_order_AMMO_01.paa;
     author = "Lion";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "AMMO";
     side = 0;
@@ -1087,7 +1087,7 @@ class O_the_order_AMMO_01 : rhsusf_M977A4_AMMO_usarmy_wd_OCimport_02 {
 class O_the_order_Repair_01 : rhsusf_M977A4_REPAIR_usarmy_wd_OCimport_02 {
     editorPreview = VKN_Extensions_Characters\Editor Preview Images\O_the_order_Repair_01.paa;
     author = "Lion";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Repair";
     side = 0;
@@ -1112,7 +1112,7 @@ class O_the_order_Repair_01 : rhsusf_M977A4_REPAIR_usarmy_wd_OCimport_02 {
 class O_the_order_SOC_01 : rhsusf_mkvsoc_OCimport_02 {
     editorPreview = VKN_Extensions_Characters\Editor Preview Images\O_the_order_SOC_01.paa;
     author = "Lion";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "SOC";
     side = 0;
@@ -1147,7 +1147,7 @@ class O_the_order_SOC_01 : rhsusf_mkvsoc_OCimport_02 {
 class O_the_order_C130J_01 : RHS_C130J_OCimport_02 {
     editorPreview = VKN_Extensions_Characters\Editor Preview Images\O_the_order_C130J_01.paa;
     author = "Lion";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "C-130J";
     side = 0;
@@ -1178,7 +1178,7 @@ class O_the_order_C130J_01 : RHS_C130J_OCimport_02 {
 class O_the_order_Humvee_Unarmed_01 : rhsusf_m1025_w_OCimport_02 {
     editorPreview = VKN_Extensions_Characters\Editor Preview Images\O_the_order_Humvee_Unarmed_01.paa;
     author = "Lion";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Humvee Unarmed";
     side = 0;
@@ -1211,7 +1211,7 @@ class O_the_order_Humvee_Unarmed_01 : rhsusf_m1025_w_OCimport_02 {
 class O_the_order_Second_01 : O_the_order_Leader_01 {
     editorPreview = VKN_Extensions_Characters\Editor Preview Images\O_the_order_Second_01.paa;
     author = "Lion";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Second";
     side = 0;

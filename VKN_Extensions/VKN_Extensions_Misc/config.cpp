@@ -32,6 +32,10 @@ class CfgPatches {
     };
 };
 
+#define private 0       // Hidden to all
+#define protected 1     // Can use but still hidden
+#define public 2        // Visible to all
+
 class Extended_PreInit_EventHandlers {
     class VKN_Settings_preInit {
         init = "call compile preprocessFileLineNumbers '\VKN_Functions\XEH_Preinit.sqf'";

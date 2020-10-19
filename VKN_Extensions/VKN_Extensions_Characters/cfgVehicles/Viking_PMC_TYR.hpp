@@ -1,7 +1,7 @@
 class B_VKN_TYR_AR_PMC_01 : B_VKN_THOR_MARKSMAN_PMC_01 {
     editorPreview = \x\\addons\bvknpmctyr\data\preview\B_VKN_TYR_AR_PMC_01.JPG;
     author = "Lion";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "AR";
     side = 1;
@@ -42,7 +42,7 @@ class B_VKN_TYR_AR_PMC_01 : B_VKN_THOR_MARKSMAN_PMC_01 {
 class B_VKN_TYR_GRENADIER_PMC_01 : B_VKN_TYR_AR_PMC_01 {
     editorPreview = \x\\addons\bvknpmctyr\data\preview\B_VKN_TYR_GRENADIER_PMC_01.JPG;
     author = "Lion";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Grenadier";
     side = 1;
@@ -83,7 +83,7 @@ class B_VKN_TYR_GRENADIER_PMC_01 : B_VKN_TYR_AR_PMC_01 {
 class B_VKN_TYR_HGREN_PMC_01 : B_VKN_TYR_GRENADIER_PMC_01 {
     editorPreview = \x\\addons\bvknpmctyr\data\preview\B_VKN_TYR_HGREN_PMC_01.JPG;
     author = "Lion";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Heavy Grenadier";
     side = 1;
@@ -124,7 +124,7 @@ class B_VKN_TYR_HGREN_PMC_01 : B_VKN_TYR_GRENADIER_PMC_01 {
 class B_VKN_TYR_MEDIC_PMC_01 : B_VKN_TYR_GRENADIER_PMC_01 {
     editorPreview = \x\\addons\bvknpmctyr\data\preview\B_VKN_TYR_MEDIC_PMC_01.JPG;
     author = "Lion";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Medic";
     side = 1;
@@ -165,7 +165,7 @@ class B_VKN_TYR_MEDIC_PMC_01 : B_VKN_TYR_GRENADIER_PMC_01 {
 class B_VKN_TYR_RIFLEMAN_PMC_01 : B_VKN_TYR_MEDIC_PMC_01 {
     editorPreview = \x\\addons\bvknpmctyr\data\preview\B_VKN_TYR_RIFLEMAN_PMC_01.JPG;
     author = "Lion";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Rifleman";
     side = 1;
@@ -206,7 +206,7 @@ class B_VKN_TYR_RIFLEMAN_PMC_01 : B_VKN_TYR_MEDIC_PMC_01 {
 class B_VKN_TYR_SQL_PMC_01 : B_VKN_TYR_RIFLEMAN_PMC_01 {
     editorPreview = \x\\addons\bvknpmctyr\data\preview\B_VKN_TYR_SQL_PMC_01.JPG;
     author = "Lion";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Squad Leader";
     side = 1;
@@ -245,7 +245,7 @@ class B_VKN_TYR_SQL_PMC_01 : B_VKN_TYR_RIFLEMAN_PMC_01 {
 class B_VKN_TYR_HUMVEE_PMC_01 : B_VKN_ODIN_Humvee_M2_PMC_01 {
     editorPreview = \x\\addons\bvknpmctyr\data\preview\B_VKN_TYR_HUMVEE_PMC_01.JPG;
     author = "Lion";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Humvee";
     side = 1;
@@ -279,7 +279,7 @@ class B_VKN_TYR_HUMVEE_PMC_01 : B_VKN_ODIN_Humvee_M2_PMC_01 {
 class B_VKN_TYR_DHUMVEE_PMC_01 : B_VKN_TYR_HUMVEE_PMC_01 {
     editorPreview = \x\\addons\bvknpmctyr\data\preview\B_VKN_TYR_DHUMVEE_PMC_01.JPG;
     author = "Lion";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Humvee (Desert)";
     side = 1;
@@ -313,7 +313,7 @@ class B_VKN_TYR_DHUMVEE_PMC_01 : B_VKN_TYR_HUMVEE_PMC_01 {
 class B_VKN_TYR_M11A3_PMC_01 : B_VKN_ODIN_M113A3_M2_PMC_01 {
     editorPreview = \x\\addons\bvknpmctyr\data\preview\B_VKN_TYR_M11A3_PMC_01.JPG;
     author = "Lion";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "M11A3";
     side = 1;
@@ -345,7 +345,7 @@ class B_VKN_TYR_M11A3_PMC_01 : B_VKN_ODIN_M113A3_M2_PMC_01 {
 class B_VKN_TYR_DM11A3_PMC_01 : B_VKN_TYR_M11A3_PMC_01 {
     editorPreview = \x\\addons\bvknpmctyr\data\preview\B_VKN_TYR_DM11A3_PMC_01.JPG;
     author = "Lion";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "M11A3 (Desert)";
     side = 1;
@@ -378,7 +378,7 @@ class B_VKN_TYR_DM11A3_PMC_01 : B_VKN_TYR_M11A3_PMC_01 {
 class B_VKN_TYR_TRANSPORT_PMC_01 : B_T_Truck_01_covered_F_OCimport_02 {
     editorPreview = \x\\addons\bvknpmctyr\data\preview\B_VKN_TYR_TRANSPORT_PMC_01.JPG;
     author = "Lion";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Transport";
     side = 1;

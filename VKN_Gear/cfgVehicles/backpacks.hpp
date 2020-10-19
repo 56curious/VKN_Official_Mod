@@ -1,39 +1,39 @@
 class VKN_Kitbag_Base: B_Kitbag_rgr {
 	picture = "\VKN_Misc\VKN_Logo_Inverted.paa";
-	scope = 0;
+	scope = private;
 	model="A3\weapons_f\ammoboxes\bags\Backpack_fast.p3d";
 };
 
 class VKN_Kitbag_Black: VKN_Kitbag_Base {
 	author = "Curious";
-	scope = 2;
+	scope = public;
 	displayName="[VKN] Backpack - Black";
 	hiddenSelectionsTextures[]={"\a3\weapons_f\ammoboxes\bags\data\backpack_fast_blk_co.paa"};
 };
 
 class VKN_Kitbag_Black_Medical: VKN_Kitbag_Base {
 	author = "Curious";
-	scope = 2;
+	scope = public;
 	displayName="[VKN] Backpack - Black + Medical";
 	hiddenSelectionsTextures[]={"\VKN_Gear\data\Backpacks\VKN_backpack_blk_medical_co.paa"};
 };
 
 class VKN_Kitbag_OD_Medical: VKN_Kitbag_Base {
 	author = "Apple";
-	scope = 2;
+	scope = public;
 	displayName="[VKN] Backpack - OD + Medical";
 	hiddenSelectionsTextures[]={"\VKN_Gear\data\Backpacks\VKN_backpack_od_medical_co.paa"};
 };
 class VKN_Kitbag_OCP_Medical: VKN_Kitbag_Base {
 	author = "Apple";
-	scope = 2;
+	scope = public;
 	displayName="[VKN] Backpack - OCP + Medical";
 	hiddenSelectionsTextures[]={"\VKN_Gear\data\Backpacks\VKN_backpack_ocp_medical_co.paa"};
 };
 class VKN_Black_Kitbag: VKN_Kitbag_Base {
 	displayName="[VKN] FBA Kitbag - Black";
 	author="Apple";
-	scope = 2;
+	scope = public;
 	model="A3\weapons_f\ammoboxes\bags\Backpack_fast.p3d";
 	hiddenSelectionsTextures[]={"\VKN_Gear\data\Backpacks\VKN_Bag_Kitbag.paa"};
 };
@@ -69,7 +69,7 @@ class VKN_M90_Assault: B_AssaultPack_Base {
 };
 
 class TRYK_B_Medbag_OD: Bag_Base {
-	scope = 2;
+	scope = public;
 	author = "Teriyaki";
 	picture = "\TRYK_Unit\Data\tryk.paa";
 	model = "\VKN_Gear\data\Models\backpack_MED.p3d";

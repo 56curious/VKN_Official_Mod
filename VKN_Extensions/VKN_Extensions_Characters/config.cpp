@@ -495,6 +495,10 @@ class CfgPatches {
     };
 };
 
+#define private 0       // Hidden to all
+#define protected 1     // Can use but still hidden
+#define public 2        // Visible to all
+
 class CfgEditorSubcategories {
 
     #include "cfgEditorCategory\Mexican_Guard.hpp"
@@ -588,7 +592,7 @@ class cfgGroups {
         #include "cfgGroups\Modern_China.hpp"
         #include "cfgGroups\NorthVietnamArmy.hpp"
     };
-    
+
 
     class West {
         #include "cfgGroups\Viking_PMC_ODIN.hpp"

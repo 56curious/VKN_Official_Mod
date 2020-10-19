@@ -12,7 +12,7 @@ Description:    Move helmets into NV slots for use in diving OPs.
 */
 class VKN_Protech_SF_NVG: NVGoggles
 {
-	scope = 2;
+	scope = public;
 	author = "Red Hammer Studios";
 	displayName = "[VKN] Pro-tech SF (Diver's NVG Slot)";
 	model = "\rhsusf\addons\rhsusf_infantry2\gear\head\protech\pt_helmet";
@@ -41,7 +41,7 @@ class VKN_Protech_SF_NVG: NVGoggles
 };
 class VKN_Protech_SF_ESS_NVG: NVGoggles
 {
-	scope = 2;
+	scope = public;
 	author = "Red Hammer Studios";
 	displayName = "[VKN] Pro-tech SF ESS (Diver's NVG Slot)";
 	model = "\rhsusf\addons\rhsusf_infantry2\gear\head\protech\pt_helmet_ESS";
@@ -70,7 +70,7 @@ class VKN_Protech_SF_ESS_NVG: NVGoggles
 };
 class VKN_Protech_SF_RHINO_NVG: NVGoggles
 {
-	scope = 2;
+	scope = public;
 	author = "Red Hammer Studios";
 	displayName = "[VKN] Pro-tech SF Rhino (Diver's NVG Slot)";
 	model = "\rhsusf\addons\rhsusf_infantry2\gear\head\protech\pt_helmet_rhino";
@@ -99,7 +99,7 @@ class VKN_Protech_SF_RHINO_NVG: NVGoggles
 };
 class VKN_Protech_SF_RHINO_ESS_NVG: NVGoggles
 {
-	scope = 2;
+	scope = public;
 	author = "Red Hammer Studios";
 	displayName = "[VKN] Pro-tech SF Rhino/ESS (Diver's NVG Slot)";
 	model = "\rhsusf\addons\rhsusf_infantry2\gear\head\protech\pt_helmet_rhino_ESS";
@@ -128,7 +128,7 @@ class VKN_Protech_SF_RHINO_ESS_NVG: NVGoggles
 };
 class VKN_opscore_rg_cover_NVG: NVGoggles
 {
-	scope = 2;
+	scope = public;
 	author = "Red Hammer Studios";
 	displayName = "FAST Ballistic Ranger Green Cover (Diver's NVG Slot)";
 	model = "\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\opscore_cover";
@@ -157,7 +157,7 @@ class VKN_opscore_rg_cover_NVG: NVGoggles
 };
 class VKN_opscore_rg_cover_pelt_NVG: NVGoggles
 {
-	scope = 2;
+	scope = public;
 	author = "Red Hammer Studios";
 	displayName = "FAST Ballistic Ranger Green Cover/Headset/NSW (Diver's NVG Slot)";
 	model = "\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\opscore_cover";
@@ -186,7 +186,7 @@ class VKN_opscore_rg_cover_pelt_NVG: NVGoggles
 };
 class VKN_opscore_ut_NVG: NVGoggles
 {
-	scope = 2;
+	scope = public;
 	author = "Red Hammer Studios";
 	displayName = "FAST Ballistic Urban Tan (Diver's NVG Slot)";
 	model = "\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\opscore";
@@ -215,7 +215,7 @@ class VKN_opscore_ut_NVG: NVGoggles
 };
 class VKN_opscore_ut_pelt_NVG: NVGoggles
 {
-	scope = 2;
+	scope = public;
 	author = "Red Hammer Studios";
 	displayName = "FAST Ballistic Urban Tan/Headset (Diver's NVG Slot)";
 	model = "\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\opscore";
@@ -244,7 +244,7 @@ class VKN_opscore_ut_pelt_NVG: NVGoggles
 };
 class VKN_opscore_ut_pelt_cam_NVG: NVGoggles
 {
-	scope = 2;
+	scope = public;
 	author = "Red Hammer Studios";
 	displayName = "FAST Ballistic Urban Tan/Headset/Cam (Diver's NVG Slot)";
 	model = "\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\opscore";
@@ -273,7 +273,7 @@ class VKN_opscore_ut_pelt_cam_NVG: NVGoggles
 };
 class VKN_opscore_ut_pelt_nsw_NVG: NVGoggles
 {
-	scope = 2;
+	scope = public;
 	author = "Red Hammer Studios";
 	displayName = "FAST Ballistic Urban Tan/Headset/NSW (Diver's NVG Slot)";
 	model = "\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\opscore";
@@ -302,7 +302,7 @@ class VKN_opscore_ut_pelt_nsw_NVG: NVGoggles
 };
 class VKN_opscore_ut_pelt_nsw_cam_NVG: NVGoggles
 {
-	scope = 2;
+	scope = public;
 	author = "Red Hammer Studios";
 	displayName = "FAST Ballistic Urban Tan/Headset/NSW/Cam (Diver's NVG Slot)";
 	model = "\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\opscore";
@@ -331,7 +331,7 @@ class VKN_opscore_ut_pelt_nsw_cam_NVG: NVGoggles
 };
 class VKN_opscore_mar_fg_NVG: NVGoggles
 {
-	scope = 2;
+	scope = public;
 	author = "Red Hammer Studios";
 	displayName = "FAST Maritime Foliage Green (Diver's NVG Slot)";
 	model = "\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\maritime";
@@ -360,7 +360,7 @@ class VKN_opscore_mar_fg_NVG: NVGoggles
 };
 class VKN_opscore_mar_fg_pelt_NVG: NVGoggles
 {
-	scope = 2;
+	scope = public;
 	author = "Red Hammer Studios";
 	displayName = "FAST Maritime Foliage Green/Headset (Diver's NVG Slot)";
 	model = "\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\maritime";
@@ -389,7 +389,7 @@ class VKN_opscore_mar_fg_pelt_NVG: NVGoggles
 };
 class VKN_opscore_mar_ut_NVG: NVGoggles
 {
-	scope = 2;
+	scope = public;
 	author = "Red Hammer Studios";
 	displayName = "FAST Maritime Urban Tan (Diver's NVG Slot)";
 	model = "\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\maritime";
@@ -418,7 +418,7 @@ class VKN_opscore_mar_ut_NVG: NVGoggles
 };
 class VKN_opscore_mar_ut_pelt_NVG: NVGoggles
 {
-	scope = 2;
+	scope = public;
 	author = "Red Hammer Studios";
 	displayName = "FAST Maritime Urban Tan/Headset (Diver's NVG Slot)";
 	model = "\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\maritime";
@@ -447,7 +447,7 @@ class VKN_opscore_mar_ut_pelt_NVG: NVGoggles
 };
 class VKN_opscore_bk_NVG: NVGoggles
 {
-	scope = 2;
+	scope = public;
 	author = "Red Hammer Studios";
 	displayName = "FAST Ballistic Black (Diver's NVG Slot)";
 	model = "\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\opscore";
@@ -476,7 +476,7 @@ class VKN_opscore_bk_NVG: NVGoggles
 };
 class VKN_opscore_bk_pelt_NVG: NVGoggles
 {
-	scope = 2;
+	scope = public;
 	author = "Red Hammer Studios";
 	displayName = "FAST Ballistic Black/Headset (Diver's NVG Slot)";
 	model = "\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\opscore";
@@ -505,7 +505,7 @@ class VKN_opscore_bk_pelt_NVG: NVGoggles
 };
 class VKN_Bowman_NVG: NVGoggles
 {
-	scope = 2;
+	scope = public;
 	author = "Red Hammer Studios";
 	displayName = "Bowman Elite II (Diver's NVG Slot)";
 	model = "\rhsusf\addons\rhsusf_infantry\gear\head\rhsusf_bowman";
@@ -534,7 +534,7 @@ class VKN_Bowman_NVG: NVGoggles
 };
 class VKN_Watchcap_blk_NVG: NVGoggles
 {
-	scope = 2;
+	scope = public;
 	author = "Jonmo";
 	displayName = "Beanie (Diver's NVG Slot)";
 	model = "\A3\Characters_F\Civil\headgear_beaniehat01";
@@ -563,7 +563,7 @@ class VKN_Watchcap_blk_NVG: NVGoggles
 };
 class VKN_Watchcap_camo_NVG: NVGoggles
 {
-	scope = 2;
+	scope = public;
 	author = "Jonmo";
 	displayName = "Beanie Green (Diver's NVG Slot)";
 	model = "\A3\Characters_F\Civil\headgear_beaniehat01";
@@ -592,7 +592,7 @@ class VKN_Watchcap_camo_NVG: NVGoggles
 };
 class VKN_Watchcap_khk_NVG: NVGoggles
 {
-	scope = 2;
+	scope = public;
 	author = "Jonmo";
 	displayName = "Beanie Khaki (Diver's NVG Slot)";
 	model = "\A3\Characters_F\Civil\headgear_beaniehat01";

@@ -1,7 +1,7 @@
 
 class O_CartelCartel_Rifleman_Tropical_01 : I_C_Soldier_Para_1_F_OCimport_02 {
     author = "Curious";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Rifleman";
     side = 0;
@@ -39,7 +39,7 @@ class O_CartelCartel_Rifleman_Tropical_01 : I_C_Soldier_Para_1_F_OCimport_02 {
 
 class O_CartelCartel_Sharpshooter_Tropical_01 : O_CartelCartel_Rifleman_Tropical_01 {
     author = "Curious";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Sharpshooter";
     side = 0;
@@ -77,7 +77,7 @@ class O_CartelCartel_Sharpshooter_Tropical_01 : O_CartelCartel_Rifleman_Tropical
 
 class O_CartelCartel_Close_Combatant_Tropical_01 : O_CartelCartel_Rifleman_Tropical_01 {
     author = "Curious";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Close Combatant";
     side = 0;
@@ -115,7 +115,7 @@ class O_CartelCartel_Close_Combatant_Tropical_01 : O_CartelCartel_Rifleman_Tropi
 
 class O_CartelCartel_Machine_Gunner_Tropical_01 : O_CartelCartel_Rifleman_Tropical_01 {
     author = "Curious";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Machine Gunner";
     side = 0;
@@ -155,7 +155,7 @@ class O_CartelCartel_Machine_Gunner_Tropical_01 : O_CartelCartel_Rifleman_Tropic
 
 class O_CartelCartel_Rifleman_AT_Tropical_01 : O_CartelCartel_Rifleman_Tropical_01 {
     author = "Curious";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Rifleman (AT)";
     side = 0;
@@ -193,7 +193,7 @@ class O_CartelCartel_Rifleman_AT_Tropical_01 : O_CartelCartel_Rifleman_Tropical_
 
 class O_CartelCartel_Group_Leader_Tropical_01 : O_CartelCartel_Rifleman_Tropical_01 {
     author = "Curious";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Group Leader";
     side = 0;
@@ -233,7 +233,7 @@ class O_CartelCartel_Group_Leader_Tropical_01 : O_CartelCartel_Rifleman_Tropical
 
 class O_CartelCartel_Medic_Tropical_01 : O_CartelCartel_Rifleman_Tropical_01 {
     author = "Curious";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "'Medic'";
     side = 0;
@@ -273,7 +273,7 @@ class O_CartelCartel_Medic_Tropical_01 : O_CartelCartel_Rifleman_Tropical_01 {
 
 class O_CartelCartel_Anti_Air_Tropical_01 : O_CartelCartel_Rifleman_AT_Tropical_01 {
     author = "Curious";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Anti-Air";
     side = 0;
@@ -313,7 +313,7 @@ class O_CartelCartel_Anti_Air_Tropical_01 : O_CartelCartel_Rifleman_AT_Tropical_
 
 class O_CartelCartel_Anti_Tank_Tropical_01 : O_CartelCartel_Anti_Air_Tropical_01 {
     author = "Curious";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Anti-Tank";
     side = 0;
@@ -353,7 +353,7 @@ class O_CartelCartel_Anti_Tank_Tropical_01 : O_CartelCartel_Anti_Air_Tropical_01
 
 class O_CartelCartel_Rifleman_Light_Tropical_01 : O_CartelCartel_Rifleman_Tropical_01 {
     author = "Curious";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Rifleman (Light)";
     side = 0;
@@ -391,7 +391,7 @@ class O_CartelCartel_Rifleman_Light_Tropical_01 : O_CartelCartel_Rifleman_Tropic
 
 class O_CartelCartel_Autorifleman_Tropical_01 : O_CartelCartel_Machine_Gunner_Tropical_01 {
     author = "Curious";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Autorifleman";
     side = 0;
@@ -431,7 +431,7 @@ class O_CartelCartel_Autorifleman_Tropical_01 : O_CartelCartel_Machine_Gunner_Tr
 
 class O_CartelCartel_Team_Leader_Tropical_01 : O_CartelCartel_Group_Leader_Tropical_01 {
     author = "Curious";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Team Leader";
     side = 0;
@@ -471,7 +471,7 @@ class O_CartelCartel_Team_Leader_Tropical_01 : O_CartelCartel_Group_Leader_Tropi
 
 class O_OCartelCartelTropical_Offroad_Technical_01 : I_G_Offroad_01_armed_F_OCimport_02 {
     author = "Curious";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Offroad Technical";
     side = 0;
@@ -501,7 +501,7 @@ class O_OCartelCartelTropical_Offroad_Technical_01 : I_G_Offroad_01_armed_F_OCim
 
 class O_OCartelCartelTropical_Offroad_Anti_Tank_01 : I_G_Offroad_01_AT_F_OCimport_02 {
     author = "Curious";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Offroad Anti-Tank";
     side = 0;
@@ -530,7 +530,7 @@ class O_OCartelCartelTropical_Offroad_Anti_Tank_01 : I_G_Offroad_01_AT_F_OCimpor
 
 class O_OCartelCartelTropical_Mounted_Turret_DShKM_01 : rhsgref_ins_DSHKM_OCimport_02 {
     author = "Curious";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Mounted Turret (DShKM)";
     side = 0;
@@ -558,7 +558,7 @@ class O_OCartelCartelTropical_Mounted_Turret_DShKM_01 : rhsgref_ins_DSHKM_OCimpo
 };
 
 class O_rhsfactionvdv_Ural_Fuel_01 : RHS_Ural_Fuel_VDV_01_OCimport_02 {
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Ural (Fuel)";
     side = 0;
@@ -583,7 +583,7 @@ class O_rhsfactionvdv_Ural_Fuel_01 : RHS_Ural_Fuel_VDV_01_OCimport_02 {
 
 class O_OCartelCartelTropical_Offroad_Transport_01 : O_G_Offroad_01_F_OCimport_02 {
     author = "Curious";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Offroad Transport";
     side = 0;
@@ -613,7 +613,7 @@ class O_OCartelCartelTropical_Offroad_Transport_01 : O_G_Offroad_01_F_OCimport_0
 
 class O_OCartelCartelTropical_Offroad_Transport_02 : O_G_Offroad_01_F_OCimport_02 {
     author = "Curious";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Offroad Transport (FULL)";
     side = 0;
@@ -643,7 +643,7 @@ class O_OCartelCartelTropical_Offroad_Transport_02 : O_G_Offroad_01_F_OCimport_0
 
 class O_OCartelCartelTropical_Mortar_01 : O_G_Mortar_01_F_OCimport_02 {
     author = "Curious";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Mortar";
     side = 0;
@@ -672,7 +672,7 @@ class O_OCartelCartelTropical_Mortar_01 : O_G_Mortar_01_F_OCimport_02 {
 
 class O_OCartelCartelTropical_Ural_Transport_01 : RHS_Ural_Open_Civ_01_OCimport_02 {
     author = "Curious";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Ural (Transport)";
     side = 0;
@@ -703,7 +703,7 @@ class O_OCartelCartelTropical_Ural_Transport_01 : RHS_Ural_Open_Civ_01_OCimport_
 
 class O_OCartelCartelTropical_Transport_Helicopter_MI_01 : RHS_Mi8amt_civilian_OCimport_02 {
     author = "Curious";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Transport Helicopter (MI-8)";
     side = 0;
@@ -735,7 +735,7 @@ class O_OCartelCartelTropical_Transport_Helicopter_MI_01 : RHS_Mi8amt_civilian_O
 
 class O_OCartelCartelTropical_Cessna_TTX_01 : C_Plane_Civil_01_F_OCimport_02 {
     author = "Curious";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Cessna TTX";
     side = 0;
@@ -766,27 +766,27 @@ class O_OCartelCartelTropical_Cessna_TTX_01 : C_Plane_Civil_01_F_OCimport_02 {
 
 
 class O_recon_M_F;
-class O_OPFVF__01_OCimport_01 : O_recon_M_F { scope = 0; class EventHandlers; };
+class O_OPFVF__01_OCimport_01 : O_recon_M_F { scope = private; class EventHandlers; };
 class O_OPFVF__01_OCimport_02 : O_OPFVF__01_OCimport_01 { class EventHandlers; };
 
-class O_OPFF_Deathguard_AT_01_OCimport_01 : O_recon_M_F { scope = 0; class EventHandlers; };
+class O_OPFF_Deathguard_AT_01_OCimport_01 : O_recon_M_F { scope = private; class EventHandlers; };
 class O_OPFF_Deathguard_AT_01_OCimport_02 : O_OPFF_Deathguard_AT_01_OCimport_01 { class EventHandlers; };
 
-class O_OPFF_DeathGuard_Marksman_01_OCimport_01 : O_recon_M_F { scope = 0; class EventHandlers; };
+class O_OPFF_DeathGuard_Marksman_01_OCimport_01 : O_recon_M_F { scope = private; class EventHandlers; };
 class O_OPFF_DeathGuard_Marksman_01_OCimport_02 : O_OPFF_DeathGuard_Marksman_01_OCimport_01 { class EventHandlers; };
 
-class O_OPFF_DeathGuard_Light_01_OCimport_01 : O_recon_M_F { scope = 0; class EventHandlers; };
+class O_OPFF_DeathGuard_Light_01_OCimport_01 : O_recon_M_F { scope = private; class EventHandlers; };
 class O_OPFF_DeathGuard_Light_01_OCimport_02 : O_OPFF_DeathGuard_Light_01_OCimport_01 { class EventHandlers; };
 
-class O_OPFF_DeathGuard_Medic_01_OCimport_01 : O_recon_M_F { scope = 0; class EventHandlers; };
+class O_OPFF_DeathGuard_Medic_01_OCimport_01 : O_recon_M_F { scope = private; class EventHandlers; };
 class O_OPFF_DeathGuard_Medic_01_OCimport_02 : O_OPFF_DeathGuard_Medic_01_OCimport_01 { class EventHandlers; };
 
-class O_OPFF_DeathGuard_AR_01_OCimport_01 : O_recon_M_F { scope = 0; class EventHandlers; };
+class O_OPFF_DeathGuard_AR_01_OCimport_01 : O_recon_M_F { scope = private; class EventHandlers; };
 class O_OPFF_DeathGuard_AR_01_OCimport_02 : O_OPFF_DeathGuard_AR_01_OCimport_01 { class EventHandlers; };
 
 class O_Deathguard_DeathGuard_01 : O_OPFVF__01_OCimport_02 {
     author = "Curious";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Deathguard";
     side = 0;
@@ -827,7 +827,7 @@ class O_Deathguard_DeathGuard_01 : O_OPFVF__01_OCimport_02 {
 
 class O_AT_DeathGuard_01 : O_OPFF_Deathguard_AT_01_OCimport_02 {
     author = "Curious";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Deathguard_AT";
     side = 0;
@@ -868,7 +868,7 @@ class O_AT_DeathGuard_01 : O_OPFF_Deathguard_AT_01_OCimport_02 {
 
 class O_Marks_DeathGuard_01 : O_OPFF_DeathGuard_Marksman_01_OCimport_02 {
     author = "Curious";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Deathguard_Marks";
     side = 0;
@@ -907,7 +907,7 @@ class O_Marks_DeathGuard_01 : O_OPFF_DeathGuard_Marksman_01_OCimport_02 {
 
 class O_Light_DeathGuard_01 : O_OPFF_DeathGuard_Light_01_OCimport_02 {
     author = "Curious";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "DeathGuard_Light";
     side = 0;
@@ -948,7 +948,7 @@ class O_Light_DeathGuard_01 : O_OPFF_DeathGuard_Light_01_OCimport_02 {
 
 class O_Medi_DeathGuard_01 : O_OPFF_DeathGuard_Medic_01_OCimport_02 {
     author = "Curious";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Deathguard_Medi";
     side = 0;
@@ -989,7 +989,7 @@ class O_Medi_DeathGuard_01 : O_OPFF_DeathGuard_Medic_01_OCimport_02 {
 
 class O_DeathGuardAR_01 : O_OPFF_DeathGuard_AR_01_OCimport_02 {
     author = "Curious";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "DeathAR";
     side = 0;

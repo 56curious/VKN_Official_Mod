@@ -1,6 +1,6 @@
 class I_SC_Sicario_01 : rhsgref_nat_commander_OCimport_02 {
     author = "jonmo";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Sicario";
     side = 2;
@@ -38,7 +38,7 @@ class I_SC_Sicario_01 : rhsgref_nat_commander_OCimport_02 {
 
 class I_SC_Sicario_02 : I_SC_Sicario_01 {
     author = "jonmo";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Sicario";
     side = 2;
@@ -76,7 +76,7 @@ class I_SC_Sicario_02 : I_SC_Sicario_01 {
 
 class I_SC_Sicario_03 : I_SC_Sicario_02 {
     author = "jonmo";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Sicario";
     side = 2;
@@ -115,7 +115,7 @@ class I_SC_Sicario_03 : I_SC_Sicario_02 {
 
 class I_SC_Sicario_04 : I_SC_Sicario_03 {
     author = "jonmo";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Sicario";
     side = 2;
@@ -153,7 +153,7 @@ class I_SC_Sicario_04 : I_SC_Sicario_03 {
 
 class I_SC_Sicario_AT_01 : I_SC_Sicario_04 {
     author = "jonmo";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Sicario [AT]";
     side = 2;
@@ -193,7 +193,7 @@ class I_SC_Sicario_AT_01 : I_SC_Sicario_04 {
 
 class I_SC_Sicario_AR_01 : I_SC_Sicario_04 {
     author = "jonmo";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Sicario [AR]";
     side = 2;
@@ -233,7 +233,7 @@ class I_SC_Sicario_AR_01 : I_SC_Sicario_04 {
 
 class I_SC_Sicario_Grenadier_01 : I_SC_Sicario_04 {
     author = "jonmo";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Sicario [Grenadier]";
     side = 2;
@@ -271,7 +271,7 @@ class I_SC_Sicario_Grenadier_01 : I_SC_Sicario_04 {
 
 class I_SC_Soldado_01 : rhsgref_nat_pmil_saboteur_OCimport_02 {
     author = "jonmo";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Soldado";
     side = 2;
@@ -311,7 +311,7 @@ class I_SC_Soldado_01 : rhsgref_nat_pmil_saboteur_OCimport_02 {
 
 class I_SC_Grenadisto_01 : I_SC_Soldado_01 {
     author = "jonmo";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Grenadisto";
     side = 2;
@@ -351,7 +351,7 @@ class I_SC_Grenadisto_01 : I_SC_Soldado_01 {
 
 class I_SC_Lider_01 : I_SC_Soldado_01 {
     author = "jonmo";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Lider";
     side = 2;
@@ -389,7 +389,7 @@ class I_SC_Lider_01 : I_SC_Soldado_01 {
 
 class I_SC_Medico_01 : I_SC_Soldado_01 {
     author = "jonmo";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Medico";
     side = 2;
@@ -429,7 +429,7 @@ class I_SC_Medico_01 : I_SC_Soldado_01 {
 
 class I_SC_Death_Guard_01 : LOP_IRAN_Infantry_SF_Rifleman_OCimport_02 {
     author = "jonmo";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Death Guard";
     side = 2;
@@ -467,7 +467,7 @@ class I_SC_Death_Guard_01 : LOP_IRAN_Infantry_SF_Rifleman_OCimport_02 {
 
 class I_SC_Death_Guard_Grenadier_01 : I_SC_Death_Guard_01 {
     author = "jonmo";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Death Guard (Grenadier)";
     side = 2;
@@ -505,7 +505,7 @@ class I_SC_Death_Guard_Grenadier_01 : I_SC_Death_Guard_01 {
 
 class I_SC_Death_Guard_Leader_01 : I_SC_Death_Guard_01 {
     author = "jonmo";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Death Guard (Leader)";
     side = 2;
@@ -543,7 +543,7 @@ class I_SC_Death_Guard_Leader_01 : I_SC_Death_Guard_01 {
 
 class I_SC_Soldado_RPG_01 : I_SC_Soldado_01 {
     author = "jonmo";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Soldado (RPG-7)";
     side = 2;
@@ -583,7 +583,7 @@ class I_SC_Soldado_RPG_01 : I_SC_Soldado_01 {
 
 class I_SC_Soldado_AR_01 : I_SC_Soldado_01 {
     author = "jonmo";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Soldado (AR)";
     side = 2;
@@ -623,7 +623,7 @@ class I_SC_Soldado_AR_01 : I_SC_Soldado_01 {
 
 class I_SC_Death_Guard_AT_01 : I_SC_Death_Guard_01 {
     author = "jonmo";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Death Guard (AT)";
     side = 2;

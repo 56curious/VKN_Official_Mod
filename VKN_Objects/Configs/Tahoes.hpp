@@ -8,7 +8,7 @@
   editorCategory = "VKN_Units";
   editorSubCategory = "EdSubcat_Cars";
   displayName = "[VKN] Chevrolet Tahoe";
-  scope = 2;
+  scope = public;
 
   class textureSources {
     class Gloss_Black {
@@ -46,7 +46,7 @@ class B_VKN_tahoe_ltz_08_PMC_01: tahoe_ltz_08	{
   editorCategory = "VKN_Units";
   editorSubCategory = "EdSubcat_Cars";
   displayName = "[VKN] Chevrolet Tahoe VIP";
-  scope = 2;
+  scope = public;
 
   class textureSources {
     class Gloss_Black {
@@ -97,7 +97,7 @@ class B_VKN_suburban_PMC_01: suburban {
   editorCategory = "VKN_Units";
   editorSubCategory = "EdSubcat_Cars";
   displayName = "[VKN] Chevrolet Suburban";
-  scope = 2;
+  scope = public;
 
   class textureSources {
     class Gloss_Black {
@@ -136,7 +136,7 @@ class B_VKN_tahoe_UNM_PMC_01: tahoe_UNM {
   editorSubCategory = "EdSubcat_Cars";
   displayName = "[VKN] Chevrolet Tahoe Security";
   emergencyLightbarType = 1;
-  scope = 2;
+  scope = public;
 
   class textureSources {
     class Gloss_Black {
@@ -204,7 +204,7 @@ class B_VKN_tahoe_LUMI_PMC_01: tahoe_LUMI {
   editorCategory = "VKN_Units";
   editorSubCategory = "EdSubcat_Cars";
   displayName = "[VKN] Chevrolet Tahoe'08 Lumi Edition";
-  scope = 2;
+  scope = public;
 
   class textureSources {
     class Gloss_Black {
@@ -252,7 +252,7 @@ class B_VKN_tahoe_08_PMC_01: tahoe_08 {
   editorCategory = "VKN_Units";
   editorSubCategory = "EdSubcat_Cars";
   displayName = "[VKN] Chevrolet Tahoe";
-  scope = 2;
+  scope = public;
 };
 class B_VKN_tahoe_ltz_08_PMC_01: tahoe_ltz_08	{
   crew = "B_CTRG_soldier_engineer_exp_F";
@@ -264,7 +264,7 @@ class B_VKN_tahoe_ltz_08_PMC_01: tahoe_ltz_08	{
   editorCategory = "VKN_Units";
   editorSubCategory = "EdSubcat_Cars";
   displayName = "[VKN] Chevrolet Tahoe VIP";
-  scope = 2;
+  scope = public;
 };
 class B_VKN_suburban_PMC_01: suburban {
   crew = "B_CTRG_soldier_engineer_exp_F";
@@ -276,7 +276,7 @@ class B_VKN_suburban_PMC_01: suburban {
   editorCategory = "VKN_Units";
   editorSubCategory = "EdSubcat_Cars";
   displayName = "[VKN] Chevrolet Suburban";
-  scope = 2;
+  scope = public;
 };
 class B_VKN_tahoe_UNM_PMC_01: tahoe_UNM {
   crew = "B_CTRG_soldier_engineer_exp_F";
@@ -289,7 +289,7 @@ class B_VKN_tahoe_UNM_PMC_01: tahoe_UNM {
   editorSubCategory = "EdSubcat_Cars";
   displayName = "[VKN] Chevrolet Tahoe Security";
   emergencyLightbarType = 1;
-  scope = 2;
+  scope = public;
   class UserActions {
     class stopSiren {
       displayName = "<t color='#0000ff'>Code 1</t>";
@@ -330,5 +330,5 @@ class B_VKN_tahoe_LUMI_PMC_01: tahoe_LUMI {
   editorCategory = "VKN_Units";
   editorSubCategory = "EdSubcat_Cars";
   displayName = "[VKN] Chevrolet Tahoe'08 Lumi Edition";
-  scope = 2;
+  scope = public;
 };

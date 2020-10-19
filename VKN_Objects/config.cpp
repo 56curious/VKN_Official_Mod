@@ -61,25 +61,25 @@ class cfgWeapons {
   class SportCarHorn;
   class VKN_ss2000_wail: SportCarHorn {
     displayname = "SS2000 Wail";
-    scope = 2;
+    scope = public;
     reloadTime = 4;
     drySound[] = {"\VKN_Objects\Vehicles\tahoe_08\data\sounds\wail_short.wss",1,1};
   };
   class VKN_ss2000_airhorn: SportCarHorn {
     displayname = "SS2000 Airhorn";
-    scope = 2;
+    scope = public;
     reloadTime = 4;
     drySound[] = {"\VKN_Objects\Vehicles\tahoe_08\data\sounds\airhorn_short.wss",1,1};
   };
   class VKN_pa300_wail: SportCarHorn  {
     displayname = "PA300 Wail";
-    scope = 2;
+    scope = public;
     reloadTime = 4;
     drySound[] = {"\VKN_Objects\Vehicles\tahoe_08\data\sounds\wail_short.wss",1,1};
   };
   class VKN_pa300_airhorn: SportCarHorn {
     displayname = "PA300 Airhorn";
-    scope = 2;
+    scope = public;
     reloadTime = 4;
     drySound[] = {"\VKN_Objects\Vehicles\tahoe_08\data\sounds\airhorn_short.wss",1,1};
   };
@@ -95,25 +95,25 @@ class CfgSounds {
     name = "VKN_ss2000_wail";
     sound[] = {"\VKN_Objects\Vehicles\tahoe_08\data\sounds\wail.wss",1,1};
     titles[] = {};
-    scope = 2;
+    scope = public;
   };
   class VKN_ss2000_yelp {
     name = "VKN_ss2000_yelp";
     sound[] = {"\VKN_Objects\Vehicles\tahoe_08\data\sounds\yelp.wss",1,1};
     titles[] = {};
-    scope = 2;
+    scope = public;
   };
   class VKN_pa300_wail {
     name = "VKN_pa300_wail";
     sound[] = {"\VKN_Objects\Vehicles\tahoe_08\data\sounds\wail.wss",1,1};
     titles[] = {};
-    scope = 2;
+    scope = public;
   };
   class VKN_pa300_hilo {
     name = "VKN_pa300_hilo";
     sound[] = {"\VKN_Objects\Vehicles\tahoe_08\data\sounds\hilo.wss",1,1};
     titles[] = {};
-    scope = 2;
+    scope = public;
   };
 };
 
@@ -172,11 +172,11 @@ class CfgVehicles {
 
 
   //SUV Configs
-  class tahoe_08: tahoe_08_base { scope = 0; };
-  class tahoe_ltz_08: tahoe_08_base { scope = 0; };
-  class suburban: tahoe_08_base { scope = 0; };
-  class tahoe_LUMI: tahoe_08_base { scope = 0; };
-  class tahoe_UNM: tahoe_08_base { scope = 0; };
+  class tahoe_08: tahoe_08_base { scope = private; };
+  class tahoe_ltz_08: tahoe_08_base { scope = private; };
+  class suburban: tahoe_08_base { scope = private; };
+  class tahoe_LUMI: tahoe_08_base { scope = private; };
+  class tahoe_UNM: tahoe_08_base { scope = private; };
 
   #include "\VKN_Objects\Configs\Tahoes.hpp"
 };
@@ -188,7 +188,7 @@ class CfgMagazines {
 	class 30Rnd_9x21_Mag;
 
 	class VKN_30Rnd_9x39mm_Mag : 30Rnd_9x21_Mag {
-		scope = 2;
+		scope = public;
 		author = "--";
     model = "\VKN_Objects\Weapons\VSS Mag\VSS Mag.p3d";
 

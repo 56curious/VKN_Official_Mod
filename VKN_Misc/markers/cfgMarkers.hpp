@@ -12,7 +12,7 @@ class CfgMarkers
 		icon = "\VKN_Misc\Markers\data\agier.paa";
 		size = 32;
 		shadow = true;
-		scope = 2;
+		scope = public;
 		showEditorMarkerColor = 1;
 		texture = "\VKN_Misc\Markers\data\agier.paa";
 		markerClass = "VikingPMC";
@@ -23,7 +23,7 @@ class CfgMarkers
 		icon = "\VKN_Misc\Markers\data\balder.paa";
 		size = 32;
 		shadow = true;
-		scope = 2;
+		scope = public;
 		showEditorMarkerColor = 1;
 		texture = "\VKN_Misc\Markers\data\balder.paa";
 		markerClass = "VikingPMC";
@@ -34,7 +34,7 @@ class CfgMarkers
 		icon = "\VKN_Misc\Markers\data\fenrir.paa";
 		size = 32;
 		shadow = true;
-		scope = 2;
+		scope = public;
 		showEditorMarkerColor = 1;
 		texture = "\VKN_Misc\Markers\data\fenrir.paa";
 		markerClass = "VikingPMC";
@@ -45,7 +45,7 @@ class CfgMarkers
 		icon = "\VKN_Misc\Markers\data\loki.paa";
 		size = 32;
 		shadow = true;
-		scope = 2;
+		scope = public;
 		showEditorMarkerColor = 1;
 		texture = "\VKN_Misc\Markers\data\loki.paa";
 		markerClass = "VikingPMC";
@@ -56,7 +56,7 @@ class CfgMarkers
 		icon = "\VKN_Misc\Markers\data\odin.paa";
 		size = 32;
 		shadow = true;
-		scope = 2;
+		scope = public;
 		showEditorMarkerColor = 1;
 		texture = "\VKN_Misc\Markers\data\odin.paa";
 		markerClass = "VikingPMC";
@@ -67,7 +67,7 @@ class CfgMarkers
 		icon = "\VKN_Misc\Markers\data\thor.paa";
 		size = 32;
 		shadow = true;
-		scope = 2;
+		scope = public;
 		showEditorMarkerColor = 1;
 		texture = "\VKN_Misc\Markers\data\thor.paa";
 		markerClass = "VikingPMC";
@@ -78,7 +78,7 @@ class CfgMarkers
 		icon = "\VKN_Misc\Markers\data\valkyrie.paa";
 		size = 32;
 		shadow = true;
-		scope = 2;
+		scope = public;
 		showEditorMarkerColor = 1;
 		texture = "\VKN_Misc\Markers\data\valkyrie.paa";
 		markerClass = "VikingPMC";
@@ -89,7 +89,7 @@ class CfgMarkers
 		icon = "\VKN_Misc\Markers\data\vis.paa";
 		size = 32;
 		shadow = true;
-		scope = 2;
+		scope = public;
 		showEditorMarkerColor = 1;
 		texture = "\VKN_Misc\Markers\data\agier.paa";
 		markerClass = "VikingPMC";
@@ -100,7 +100,7 @@ class CfgMarkers
 		icon = "\VKN_Misc\VikingLogo512.paa";
 		size = 32;
 		shadow = true;
-		scope = 2;
+		scope = public;
 		showEditorMarkerColor = 1;
 		texture = "\VKN_Misc\VikingLogo512.paa";
 		markerClass = "VikingPMC";
@@ -111,7 +111,7 @@ class CfgMarkers
 		icon = "\VKN_Misc\vikinglogomedium.paa";
 		size = 32;
 		shadow = true;
-		scope = 2;
+		scope = public;
 		showEditorMarkerColor = 1;
 		texture = "\VKN_Misc\vikinglogomedium.paa";
 		markerClass = "VikingPMC";

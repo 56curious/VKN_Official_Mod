@@ -1,7 +1,7 @@
 class B_VKN_HEIMDAL_RIFLEMAN_PMC_01 : B_T_Soldier_A_F_OCimport_02 {
     editorPreview = \x\\addons\bvknpmcheimdal\data\preview\B_VKN_HEIMDAL_RIFLEMAN_PMC_01.JPG;
     author = "Lion";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Rifleman";
     side = 1;
@@ -42,7 +42,7 @@ class B_VKN_HEIMDAL_RIFLEMAN_PMC_01 : B_T_Soldier_A_F_OCimport_02 {
 class B_VKN_HEIMDAL_POINTMAN_PMC_01 : B_VKN_HEIMDAL_RIFLEMAN_PMC_01 {
     editorPreview = \x\\addons\bvknpmcheimdal\data\preview\B_VKN_HEIMDAL_POINTMAN_PMC_01.JPG;
     author = "Lion";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Pointman";
     side = 1;
@@ -83,7 +83,7 @@ class B_VKN_HEIMDAL_POINTMAN_PMC_01 : B_VKN_HEIMDAL_RIFLEMAN_PMC_01 {
 class B_VKN_HEIMDAL_EOD_PMC_01 : B_VKN_HEIMDAL_RIFLEMAN_PMC_01 {
     editorPreview = \x\\addons\bvknpmcheimdal\data\preview\B_VKN_HEIMDAL_EOD_PMC_01.JPG;
     author = "Lion";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "EOD";
     side = 1;
@@ -122,7 +122,7 @@ class B_VKN_HEIMDAL_EOD_PMC_01 : B_VKN_HEIMDAL_RIFLEMAN_PMC_01 {
 class B_VKN_HEIMDAL_MEDIC_PMC_01 : B_VKN_HEIMDAL_RIFLEMAN_PMC_01 {
     editorPreview = \x\\addons\bvknpmcheimdal\data\preview\B_VKN_HEIMDAL_MEDIC_PMC_01.JPG;
     author = "Lion";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Medic";
     side = 1;
@@ -163,7 +163,7 @@ class B_VKN_HEIMDAL_MEDIC_PMC_01 : B_VKN_HEIMDAL_RIFLEMAN_PMC_01 {
 class B_VKN_HEIMDAL_SQUADLEADER_PMC_01 : B_VKN_HEIMDAL_RIFLEMAN_PMC_01 {
     editorPreview = \x\\addons\bvknpmcheimdal\data\preview\B_VKN_HEIMDAL_SQUADLEADER_PMC_01.JPG;
     author = "Lion";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "SquadLeader";
     side = 1;
@@ -202,7 +202,7 @@ class B_VKN_HEIMDAL_SQUADLEADER_PMC_01 : B_VKN_HEIMDAL_RIFLEMAN_PMC_01 {
 class B_VKN_HEIMDAL_GRENADIER_PMC_01 : B_VKN_HEIMDAL_SQUADLEADER_PMC_01 {
     editorPreview = \x\\addons\bvknpmcheimdal\data\preview\B_VKN_HEIMDAL_GRENADIER_PMC_01.JPG;
     author = "Lion";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Grenadier";
     side = 1;
@@ -243,7 +243,7 @@ class B_VKN_HEIMDAL_GRENADIER_PMC_01 : B_VKN_HEIMDAL_SQUADLEADER_PMC_01 {
 class B_VKN_HEIMDAL_TRANSPORT_PMC_01 : B_T_Truck_01_transport_F_OCimport_02 {
     editorPreview = \x\\addons\bvknpmcheimdal\data\preview\B_VKN_HEIMDAL_TRANSPORT_PMC_01.JPG;
     author = "Lion";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Transport";
     side = 1;
@@ -274,7 +274,7 @@ class B_VKN_HEIMDAL_TRANSPORT_PMC_01 : B_T_Truck_01_transport_F_OCimport_02 {
 class B_VKN_HEIMDAL_COVERED_PMC_01 : B_T_Truck_01_covered_F_OCimport_02 {
     editorPreview = \x\\addons\bvknpmcheimdal\data\preview\B_VKN_HEIMDAL_COVERED_PMC_01.JPG;
     author = "Lion";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Transport (Covered)";
     side = 1;
@@ -305,7 +305,7 @@ class B_VKN_HEIMDAL_COVERED_PMC_01 : B_T_Truck_01_covered_F_OCimport_02 {
 class B_VKN_HEIMDAL_REPAIR_PMC_01 : B_T_Truck_01_Repair_F_OCimport_02 {
     editorPreview = \x\\addons\bvknpmcheimdal\data\preview\B_VKN_HEIMDAL_REPAIR_PMC_01.JPG;
     author = "Lion";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Repair";
     side = 1;
@@ -330,7 +330,7 @@ class B_VKN_HEIMDAL_REPAIR_PMC_01 : B_T_Truck_01_Repair_F_OCimport_02 {
 class B_VKN_HEIMDAL_MEDICAL_PMC_01 : B_T_Truck_01_medical_F_OCimport_02 {
     editorPreview = \x\\addons\bvknpmcheimdal\data\preview\B_VKN_HEIMDAL_MEDICAL_PMC_01.JPG;
     author = "Lion";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Medical";
     side = 1;
@@ -355,7 +355,7 @@ class B_VKN_HEIMDAL_MEDICAL_PMC_01 : B_T_Truck_01_medical_F_OCimport_02 {
 class B_VKN_HEIMDAL_FUEL_PMC_01 : B_T_Truck_01_fuel_F_OCimport_02 {
     editorPreview = \x\\addons\bvknpmcheimdal\data\preview\B_VKN_HEIMDAL_FUEL_PMC_01.JPG;
     author = "Lion";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Fuel";
     side = 1;
@@ -380,7 +380,7 @@ class B_VKN_HEIMDAL_FUEL_PMC_01 : B_T_Truck_01_fuel_F_OCimport_02 {
 class B_VKN_HEIMDAL_M2R_PMC_01 : rhsusf_M977A4_REPAIR_BKIT_M2_usarmy_wd_OCimport_02 {
     editorPreview = \x\\addons\bvknpmcheimdal\data\preview\B_VKN_HEIMDAL_M2R_PMC_01.JPG;
     author = "Lion";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "M2 - Repair";
     side = 1;
@@ -411,7 +411,7 @@ class B_VKN_HEIMDAL_M2R_PMC_01 : rhsusf_M977A4_REPAIR_BKIT_M2_usarmy_wd_OCimport
 class B_VKN_HEIMDAL_M2A_PMC_01 : rhsusf_M977A4_AMMO_BKIT_M2_usarmy_wd_OCimport_02 {
     editorPreview = \x\\addons\bvknpmcheimdal\data\preview\B_VKN_HEIMDAL_M2A_PMC_01.JPG;
     author = "Lion";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "M2 Ammo";
     side = 1;
@@ -441,7 +441,7 @@ class B_VKN_HEIMDAL_M2A_PMC_01 : rhsusf_M977A4_AMMO_BKIT_M2_usarmy_wd_OCimport_0
 class B_VKN_HEIMDAL_HUMVEE_PMC_01 : B_VKN_ODIN_Humvee_M2_PMC_01 {
     editorPreview = \x\\addons\bvknpmcheimdal\data\preview\B_VKN_HEIMDAL_HUMVEE_PMC_01.JPG;
     author = "Lion";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Humvee";
     side = 1;
@@ -475,7 +475,7 @@ class B_VKN_HEIMDAL_HUMVEE_PMC_01 : B_VKN_ODIN_Humvee_M2_PMC_01 {
 class B_VKN_HEIMDAL_M113A3_PMC_01 : B_VKN_ODIN_M113A3_M2_Ammo_PMC_01 {
     editorPreview = \x\\addons\bvknpmcheimdal\data\preview\B_VKN_HEIMDAL_M113A3_PMC_01.JPG;
     author = "Lion";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "M113A3 Ammo";
     side = 1;
@@ -508,7 +508,7 @@ class B_VKN_HEIMDAL_M113A3_PMC_01 : B_VKN_ODIN_M113A3_M2_Ammo_PMC_01 {
 class B_VKN_HEIMDAL_TRANSPORTO_PMC_01 : B_VKN_ODIN_M977A4_Transport_PMC_01 {
     editorPreview = \x\\addons\bvknpmcheimdal\data\preview\B_VKN_HEIMDAL_TRANSPORTO_PMC_01.JPG;
     author = "Lion";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Transport Open";
     side = 1;

@@ -1,6 +1,6 @@
 class B_BArmy_Squad_leader_01 : rhsgref_hidf_squadleader_OCimport_02 {
     author = "Kissing";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Squad leader";
     side = 1;
@@ -40,7 +40,7 @@ class B_BArmy_Squad_leader_01 : rhsgref_hidf_squadleader_OCimport_02 {
 
 class B_BArmy_Rifleman_01 : rhsgref_hidf_rifleman_OCimport_02 {
     author = "Kissing";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Rifleman";
     side = 1;
@@ -78,7 +78,7 @@ class B_BArmy_Rifleman_01 : rhsgref_hidf_rifleman_OCimport_02 {
 
 class B_BArmy_Auto_Rifleman_01 : rhsgref_hidf_autorifleman_OCimport_02 {
     author = "Kissing";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Auto Rifleman";
     side = 1;
@@ -118,7 +118,7 @@ class B_BArmy_Auto_Rifleman_01 : rhsgref_hidf_autorifleman_OCimport_02 {
 
 class B_BArmy_AT_Specialist_01 : rhsgref_cdf_b_reg_grenadier_rpg_OCimport_02 {
     author = "Kissing";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "AT Specialist";
     side = 1;
@@ -158,7 +158,7 @@ class B_BArmy_AT_Specialist_01 : rhsgref_cdf_b_reg_grenadier_rpg_OCimport_02 {
 
 class B_BArmy_Combat_Life_Saver_01 : rhsgref_hidf_medic_OCimport_02 {
     author = "Kissing";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Combat Life Saver";
     side = 1;
@@ -198,7 +198,7 @@ class B_BArmy_Combat_Life_Saver_01 : rhsgref_hidf_medic_OCimport_02 {
 
 class B_BArmy_Marksman_01 : rhsgref_hidf_marksman_OCimport_02 {
     author = "Kissing";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Marksman";
     side = 1;
@@ -236,7 +236,7 @@ class B_BArmy_Marksman_01 : rhsgref_hidf_marksman_OCimport_02 {
 
 class B_BArmy_Heavy_Gunner_01 : rhsgref_hidf_machinegunner_OCimport_02 {
     author = "Kissing";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Heavy Gunner";
     side = 1;
@@ -276,7 +276,7 @@ class B_BArmy_Heavy_Gunner_01 : rhsgref_hidf_machinegunner_OCimport_02 {
 
 class B_BArmy_Crewman_01 : rhsgref_hidf_crewman_OCimport_02 {
     author = "Kissing";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Crewman";
     side = 1;

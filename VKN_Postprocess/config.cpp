@@ -40,7 +40,7 @@ class CfgVehicles
 	{
 		author = "$STR_A3_Bohemia_Interactive";
 		_generalMacro = "ModulePostprocess_F";
-		scope = 2;
+		scope = public;
 		scopeCurator = 2;
 		isTriggerActivated = 1;
 		category = "Environment";

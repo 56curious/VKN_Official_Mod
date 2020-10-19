@@ -1,5 +1,5 @@
 class B_Truck_Black_transport_F: B_Truck_01_transport_F {
-  scope = 2;
+  scope = public;
   faction = "HEMTT_Black";
   displayName = "Transport truck (Black)";
   hiddenSelections[] = {"Camo1","Camo2","Camo3"};
@@ -9,7 +9,7 @@ class B_Truck_Black_transport_F: B_Truck_01_transport_F {
 };
 
 class B_Truck_Black_covered_F: B_Truck_01_transport_F {
-  scope = 2;
+  scope = public;
   faction = "HEMTT_Black";
   displayName = "Transport truck topcover (Black)";
   hiddenSelections[] = {"Camo1","Camo2","Camo3"};
@@ -19,7 +19,7 @@ class B_Truck_Black_covered_F: B_Truck_01_transport_F {
 };
 
 class B_Truck_Black_mover_F: B_Truck_01_mover_F {
-  scope = 2;
+  scope = public;
   faction = "HEMTT_Black";
   displayName = "Mover truck (Black)";
   hiddenSelections[] = {"Camo1","Camo2","Camo3"};
@@ -29,7 +29,7 @@ class B_Truck_Black_mover_F: B_Truck_01_mover_F {
 };
 
 class B_Truck_Black_box_F: B_Truck_01_box_F {
-  scope = 2;
+  scope = public;
   faction = "HEMTT_Black";
   displayName = "Container truck (black)";
   hiddenSelections[] = {"Camo1","Camo2","Camo3"};
@@ -39,7 +39,7 @@ class B_Truck_Black_box_F: B_Truck_01_box_F {
 };
 
 class B_Truck_Black_Repair_F: B_Truck_01_Repair_F {
-  scope = 2;
+  scope = public;
   faction = "HEMTT_Black";
   displayName = "Repair truck (black)";
   hiddenSelections[] = {"Camo1","Camo2","Camo3"};
@@ -49,7 +49,7 @@ class B_Truck_Black_Repair_F: B_Truck_01_Repair_F {
 };
 
 class B_Truck_Black_ammo_F: B_Truck_01_ammo_F {
-  scope = 2;
+  scope = public;
   faction = "HEMTT_Black";
   displayName = "Ammo truck (black)";
   hiddenSelections[] = {"Camo1","Camo2","Camo3"};
@@ -59,7 +59,7 @@ class B_Truck_Black_ammo_F: B_Truck_01_ammo_F {
 };
 
 class B_Truck_Black_fuel_F: B_Truck_01_fuel_F {
-  scope = 2;
+  scope = public;
   faction = "HEMTT_Black";
   displayName = "Fuel truck (black)";
   hiddenSelections[] = {"Camo1","Camo2","Camo3"};
@@ -69,7 +69,7 @@ class B_Truck_Black_fuel_F: B_Truck_01_fuel_F {
 };
 
 class B_Truck_Black_medical_F: B_Truck_01_medical_F {
-  scope = 2;
+  scope = public;
   faction = "HEMTT_Black";
   displayName = "Medical truck (black)";
   hiddenSelections[] = {"Camo1","Camo2","Camo3"};

@@ -1,6 +1,6 @@
 class B_VKN_FENRIR_COMMANDER_PMC_01 : B_VKN_VCG_SUNRAY_PMC_01 {
     author = "Lion";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Commander";
     side = 1;
@@ -38,7 +38,7 @@ class B_VKN_FENRIR_COMMANDER_PMC_01 : B_VKN_VCG_SUNRAY_PMC_01 {
 
 class B_VKN_FENRIR_CREW_PMC_01 : B_VKN_FENRIR_COMMANDER_PMC_01 {
     author = "Lion";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Crew";
     side = 1;
@@ -76,7 +76,7 @@ class B_VKN_FENRIR_CREW_PMC_01 : B_VKN_FENRIR_COMMANDER_PMC_01 {
 
 class B_VKN_FENRIR_MORTARB_PMC_01 : B_VKN_FENRIR_CREW_PMC_01 {
     author = "Lion";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Mortar (Bipod)";
     side = 1;
@@ -116,7 +116,7 @@ class B_VKN_FENRIR_MORTARB_PMC_01 : B_VKN_FENRIR_CREW_PMC_01 {
 
 class B_VKN_FENRIR_MORTART_PMC_01 : B_VKN_FENRIR_MORTARB_PMC_01 {
     author = "Lion";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Mortar (Tube)";
     side = 1;
@@ -156,7 +156,7 @@ class B_VKN_FENRIR_MORTART_PMC_01 : B_VKN_FENRIR_MORTARB_PMC_01 {
 
 class B_VKN_FENRIR_SHOLEF_PMC_01 : B_T_MBT_01_arty_F_OCimport_02 {
     author = "Lion";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Sholef";
     side = 1;
@@ -186,7 +186,7 @@ class B_VKN_FENRIR_SHOLEF_PMC_01 : B_T_MBT_01_arty_F_OCimport_02 {
 
 class B_VKN_FENRIR_BARDELAS_PMC_01 : B_T_APC_Tracked_01_AA_F_OCimport_02 {
     author = "Lion";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Bardelas";
     side = 1;
@@ -216,7 +216,7 @@ class B_VKN_FENRIR_BARDELAS_PMC_01 : B_T_APC_Tracked_01_AA_F_OCimport_02 {
 
 class B_VKN_FENRIR_M252_PMC_01 : RHS_M252_USMC_D_OCimport_02 {
     author = "Lion";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "M252";
     side = 1;
@@ -245,7 +245,7 @@ class B_VKN_FENRIR_M252_PMC_01 : RHS_M252_USMC_D_OCimport_02 {
 
 class B_VKN_FENRIR_CANNON_PMC_01 : rhs_D30_at_vmf_OCimport_02 {
     author = "Lion";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Cannon";
     side = 1;

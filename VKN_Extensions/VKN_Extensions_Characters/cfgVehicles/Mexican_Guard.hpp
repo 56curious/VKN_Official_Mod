@@ -1,7 +1,7 @@
 class O_MexicoGuard_Rifleman_01 : rhsusf_army_ucp_rifleman_m16_OCimport_02 {
     editorPreview = \Editor Preview Images\O_MexicoGuard_Rifleman_01.paa;
     author = "Curious";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Rifleman";
     side = 0;
@@ -42,7 +42,7 @@ class O_MexicoGuard_Rifleman_01 : rhsusf_army_ucp_rifleman_m16_OCimport_02 {
 class O_MexicoGuard_Grenadier_01 : rhsusf_army_ucp_grenadier_OCimport_02 {
     editorPreview = \Editor Preview Images\O_MexicoGuard_Grenadier_01.paa;
     author = "Curious";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Grenadier";
     side = 0;
@@ -83,7 +83,7 @@ class O_MexicoGuard_Grenadier_01 : rhsusf_army_ucp_grenadier_OCimport_02 {
 class O_MexicoGuard_Squad_Leader_01 : rhsusf_army_ucp_squadleader_OCimport_02 {
     editorPreview = \Editor Preview Images\O_MexicoGuard_Squad_Leader_01.paa;
     author = "Curious";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Squad Leader";
     side = 0;
@@ -122,7 +122,7 @@ class O_MexicoGuard_Squad_Leader_01 : rhsusf_army_ucp_squadleader_OCimport_02 {
 class O_MexicoGuard_Team_Leader_01 : rhsusf_army_ucp_teamleader_OCimport_02 {
     editorPreview = \Editor Preview Images\O_MexicoGuard_Team_Leader_01.paa;
     author = "Curious";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Team Leader";
     side = 0;
@@ -161,7 +161,7 @@ class O_MexicoGuard_Team_Leader_01 : rhsusf_army_ucp_teamleader_OCimport_02 {
 class O_MexicoGuard_Auto_Rifleman_01 : rhsusf_army_ucp_autorifleman_OCimport_02 {
     editorPreview = \Editor Preview Images\O_MexicoGuard_Auto_Rifleman_01.paa;
     author = "Curious";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Auto-Rifleman";
     side = 0;
@@ -202,7 +202,7 @@ class O_MexicoGuard_Auto_Rifleman_01 : rhsusf_army_ucp_autorifleman_OCimport_02 
 class O_MexicoGuard_Marksman_01 : rhsusf_army_ucp_marksman_OCimport_02 {
     editorPreview = \Editor Preview Images\O_MexicoGuard_Marksman_01.paa;
     author = "Curious";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Marksman";
     side = 0;
@@ -241,7 +241,7 @@ class O_MexicoGuard_Marksman_01 : rhsusf_army_ucp_marksman_OCimport_02 {
 class O_MexicoGuard_M11A3_01 : rhsusf_m113_usarmy_medical_OCimport_02 {
     editorPreview = \Editor Preview Images\O_MexicoGuard_M11A3_01.paa;
     author = "Curious";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "M11A3";
     side = 0;
@@ -274,7 +274,7 @@ class O_MexicoGuard_M11A3_01 : rhsusf_m113_usarmy_medical_OCimport_02 {
 class O_MexicoGuard_M1220_01 : rhsusf_M1220_MK19_usarmy_wd_OCimport_02 {
     editorPreview = \Editor Preview Images\O_MexicoGuard_M1220_01.paa;
     author = "Curious";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "M1220";
     side = 0;
@@ -305,7 +305,7 @@ class O_MexicoGuard_M1220_01 : rhsusf_M1220_MK19_usarmy_wd_OCimport_02 {
 class O_MexicoGuard_M2A3_01 : RHS_M2A3_BUSKIII_wd_OCimport_02 {
     editorPreview = \Editor Preview Images\O_MexicoGuard_M2A3_01.paa;
     author = "Curious";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "M2A3";
     side = 0;
@@ -336,7 +336,7 @@ class O_MexicoGuard_M2A3_01 : RHS_M2A3_BUSKIII_wd_OCimport_02 {
 class O_MexicoGuard_UH_60M_01 : RHS_UH60M_OCimport_02 {
     editorPreview = \Editor Preview Images\O_MexicoGuard_UH_60M_01.paa;
     author = "Curious";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "UH-60M";
     side = 0;
@@ -373,7 +373,7 @@ class O_MexicoGuard_UH_60M_01 : RHS_UH60M_OCimport_02 {
 class O_MexicoGuard_Helicopter_Pilot_01 : rhsusf_army_ucp_helipilot_OCimport_02 {
     editorPreview = \Editor Preview Images\O_MexicoGuard_Helicopter_Pilot_01.paa;
     author = "Curious";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Helicopter Pilot";
     side = 0;
@@ -412,7 +412,7 @@ class O_MexicoGuard_Helicopter_Pilot_01 : rhsusf_army_ucp_helipilot_OCimport_02 
 class O_MexicoGuard_Helicopter_Crew_01 : rhsusf_army_ucp_helicrew_OCimport_02 {
     editorPreview = \Editor Preview Images\O_MexicoGuard_Helicopter_Crew_01.paa;
     author = "Curious";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Helicopter Crew";
     side = 0;

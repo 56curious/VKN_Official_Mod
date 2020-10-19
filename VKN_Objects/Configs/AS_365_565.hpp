@@ -1,5 +1,5 @@
 class AS_365: AS_365_base {
-  scope = 0;
+  scope = private;
   soundEngineOnInt[]={"\VKN_Objects\Vehicles\as_365\data\Startup_Int",0.31622776,1};
   soundEngineOnExt[]={"\VKN_Objects\Vehicles\as_365\data\Startup_Ext",2.2387211,1,600};
   soundEngineOffInt[]={"A3\Sounds_F\vehicles\air\Heli_Transport_02\Heli_Transport_02_int_stop_v2",	0.31622776,1};
@@ -68,14 +68,14 @@ class AS_365: AS_365_base {
   };
 };
 
-class AS_565: AS_365 {scope = 0;}; //Cannot move due to useage below within code block
+class AS_565: AS_365 {scope = private;}; //Cannot move due to useage below within code block
 
 class B_VKN_AS_365_PMC_01 : AS_365 {
   hiddenSelectionsTextures[] = {"AS_365\data\skins\AS365_BlackAlt.paa", "AS_365\data\glass.paa"};
   displayName = "Eurocopter AS 365 Dauphin (Black)";
   picture = "\VKN_Misc\VKN_Logo_inverted.paa";
   editorPreview = "\VKN_Misc\VKN_Logo_inverted.paa";
-  scope = 2;
+  scope = public;
   faction = "BLU_F";
   editorCategory = "VKN_Units";
   editorSubCategory = "EdSubcat_Helicopters";
@@ -86,7 +86,7 @@ class B_VKN_AS_365_PMC_02 : AS_365 {
   displayName = "Eurocopter AS 365 Dauphin (Black + Logo)";
   picture = "\VKN_Misc\VKN_Logo_inverted.paa";
   editorPreview = "\VKN_Misc\VKN_Logo_inverted.paa";
-  scope = 2;
+  scope = public;
   faction = "BLU_F";
   editorCategory = "VKN_Units";
   editorSubCategory = "EdSubcat_Helicopters";
@@ -97,7 +97,7 @@ class B_VKN_AS_565_PMC_01 : AS_565 {
   displayName = "Eurocopter AS 365 Panther (Black)";
   picture = "\VKN_Misc\VKN_Logo_inverted.paa";
   editorPreview = "\VKN_Misc\VKN_Logo_inverted.paa";
-  scope = 2;
+  scope = public;
   faction = "BLU_F";
   editorCategory = "VKN_Units";
   editorSubCategory = "EdSubcat_Helicopters";
@@ -108,7 +108,7 @@ class B_VKN_AS_565_PMC_02 : AS_565 {
   displayName = "Eurocopter AS 365 Panther (Black + Logo)";
   picture = "\VKN_Misc\VKN_Logo_inverted.paa";
   editorPreview = "\VKN_Misc\VKN_Logo_inverted.paa";
-  scope = 2;
+  scope = public;
   faction = "BLU_F";
   editorCategory = "VKN_Units";
   editorSubCategory = "EdSubcat_Helicopters";
