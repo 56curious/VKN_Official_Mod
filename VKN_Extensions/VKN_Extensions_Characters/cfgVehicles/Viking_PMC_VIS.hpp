@@ -1,6 +1,6 @@
 class B_VKN_VIS_AGENT1_PMC_01 : B_VKN_ODIN_Operator_PMC_01 {
     author = "Lion";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Agent 1";
     side = 1;
@@ -41,7 +41,7 @@ class B_VKN_VIS_AGENT1_PMC_01 : B_VKN_ODIN_Operator_PMC_01 {
 
 class B_VKN_VIS_AGENT2_PMC_01 : B_VKN_VIS_AGENT1_PMC_01 {
     author = "Lion";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Agent 2";
     side = 1;
@@ -82,7 +82,7 @@ class B_VKN_VIS_AGENT2_PMC_01 : B_VKN_VIS_AGENT1_PMC_01 {
 
 class B_VKN_VIS_AGENT3_PMC_01 : B_VKN_VIS_AGENT2_PMC_01 {
     author = "Lion";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Agent 3";
     side = 1;
@@ -123,7 +123,7 @@ class B_VKN_VIS_AGENT3_PMC_01 : B_VKN_VIS_AGENT2_PMC_01 {
 
 class B_VKN_VIS_AGENT4_PMC_01 : B_VKN_VIS_AGENT3_PMC_01 {
     author = "Lion";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Agent 4";
     side = 1;
@@ -164,7 +164,7 @@ class B_VKN_VIS_AGENT4_PMC_01 : B_VKN_VIS_AGENT3_PMC_01 {
 
 class B_VKN_VIS_AGENT5_PMC_01 : B_VKN_VIS_AGENT4_PMC_01 {
     author = "Lion";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Agent 5";
     side = 1;
@@ -205,7 +205,7 @@ class B_VKN_VIS_AGENT5_PMC_01 : B_VKN_VIS_AGENT4_PMC_01 {
 
 class B_VKN_VIS_AGENT6_PMC_01 : B_VKN_VIS_AGENT5_PMC_01 {
     author = "Lion";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Agent 6";
     side = 1;
@@ -246,7 +246,7 @@ class B_VKN_VIS_AGENT6_PMC_01 : B_VKN_VIS_AGENT5_PMC_01 {
 
 class B_VKN_VIS_AGENT7_PMC_01 : B_VKN_VIS_AGENT6_PMC_01 {
     author = "Lion";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Agent 7";
     side = 1;
@@ -287,7 +287,7 @@ class B_VKN_VIS_AGENT7_PMC_01 : B_VKN_VIS_AGENT6_PMC_01 {
 
 class B_VKN_VIS_ECHO_PMC_01 : B_VKN_VIS_AGENT7_PMC_01 {
     author = "Lion";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Strike Team Echo";
     side = 1;
@@ -328,7 +328,7 @@ class B_VKN_VIS_ECHO_PMC_01 : B_VKN_VIS_AGENT7_PMC_01 {
 
 class B_VKN_VIS_Motorboat_PMC_01 : C_Boat_Civil_01_F_OCimport_02 {
     author = "Lion";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Motorboat";
     side = 1;
@@ -353,7 +353,7 @@ class B_VKN_VIS_Motorboat_PMC_01 : C_Boat_Civil_01_F_OCimport_02 {
 
 class B_VKN_VIS_OFFROAD_PMC_01 : C_Offroad_01_F_OCimport_02 {
     author = "Lion";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Offroad";
     side = 1;
@@ -386,7 +386,7 @@ class B_VKN_VIS_OFFROAD_PMC_01 : C_Offroad_01_F_OCimport_02 {
 
 class B_VKN_VIS_HATCHBACK_PMC_01 : C_Hatchback_01_F_OCimport_02 {
     author = "Lion";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Hatchback";
     side = 1;
@@ -411,7 +411,7 @@ class B_VKN_VIS_HATCHBACK_PMC_01 : C_Hatchback_01_F_OCimport_02 {
 
 class B_VKN_VIS_MD500_PMC_01 : C_Heli_Light_01_civil_F_OCimport_02 {
     author = "Lion";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "MD 500";
     side = 1;
@@ -441,7 +441,7 @@ class B_VKN_VIS_MD500_PMC_01 : C_Heli_Light_01_civil_F_OCimport_02 {
 
 class B_VKN_VIS_DRONE_PMC_01 : C_UAV_06_F_OCimport_02 {
     author = "Lion";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Utility Drone";
     side = 1;
@@ -466,7 +466,7 @@ class B_VKN_VIS_DRONE_PMC_01 : C_UAV_06_F_OCimport_02 {
 
 class B_VKN_VIS_LANDROVER_PMC_01 : LOP_TAK_Civ_Landrover_OCimport_02 {
     author = "Lion";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "LandRover";
     side = 1;
@@ -491,7 +491,7 @@ class B_VKN_VIS_LANDROVER_PMC_01 : LOP_TAK_Civ_Landrover_OCimport_02 {
 
 class B_VKN_VIS_URAL_PMC_01 : RHS_Ural_Civ_03_OCimport_02 {
     author = "Lion";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Ural-4320";
     side = 1;

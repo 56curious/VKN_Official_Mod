@@ -5,7 +5,7 @@
 ////
 class B_VKN_ODIN_Operator_PMC_01 : SoldierWB_OCimport_02 {
     author = "Curious";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Operator";
     side = 1;
@@ -617,7 +617,7 @@ class B_VKN_ODIN_Vehicle_Crew_PMC_01 : B_VKN_ODIN_Operator_PMC_01 {
 
 class B_VKN_ODIN_MA_FEP_PMC_01 : rhsusf_m1a1fep_od_OCimport_02 {
     author = "Curious";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "M1A1_FEP";
     side = 1;
@@ -648,7 +648,7 @@ class B_VKN_ODIN_MA_FEP_PMC_01 : rhsusf_m1a1fep_od_OCimport_02 {
 
 class B_VKN_ODIN_M1232_M2_PMC_01 : rhsusf_M1232_MC_M2_usmc_wd_OCimport_02 {
     author = "Curious";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "M1232 (M2)";
     side = 1;
@@ -682,7 +682,7 @@ class B_VKN_ODIN_M1232_M2_PMC_01 : rhsusf_M1232_MC_M2_usmc_wd_OCimport_02 {
 
 class B_VKN_ODIN_M1232_MK19_PMC_01 : rhsusf_M1232_MC_MK19_usmc_wd_OCimport_02 {
     author = "Curious";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "M1232 (MK19)";
     side = 1;
@@ -716,7 +716,7 @@ class B_VKN_ODIN_M1232_MK19_PMC_01 : rhsusf_M1232_MC_MK19_usmc_wd_OCimport_02 {
 
 class B_VKN_ODIN_M2A3_PMC_01 : RHS_M2A3_wd_OCimport_02 {
     author = "Curious";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "M2A3";
     side = 1;
@@ -746,7 +746,7 @@ class B_VKN_ODIN_M2A3_PMC_01 : RHS_M2A3_wd_OCimport_02 {
 /*
 class B_VKN_ODIN_M113A3_MEV_PMC_01 : rhsusf_m113_usarmy_medical_OCimport_02 {
     author = "Curious";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "M113A3 (MEV)";
     side = 1;
@@ -777,7 +777,7 @@ class B_VKN_ODIN_M113A3_MEV_PMC_01 : rhsusf_m113_usarmy_medical_OCimport_02 {
 */
 class B_VKN_ODIN_M113A3_M2_PMC_01 : rhsusf_m113_usarmy_OCimport_02 {
     author = "Curious";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "M113A3 (M2)";
     side = 1;
@@ -808,7 +808,7 @@ class B_VKN_ODIN_M113A3_M2_PMC_01 : rhsusf_m113_usarmy_OCimport_02 {
 
 class B_VKN_ODIN_M113A3_M240_PMC_01 : rhsusf_m113_usarmy_M240_OCimport_02 {
     author = "Curious";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "M113A3 (M240)";
     side = 1;
@@ -839,7 +839,7 @@ class B_VKN_ODIN_M113A3_M240_PMC_01 : rhsusf_m113_usarmy_M240_OCimport_02 {
 
 class B_VKN_ODIN_M113A3_M2_Ammo_PMC_01 : rhsusf_m113_usarmy_supply_OCimport_02 {
     author = "Curious";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "M113A3 (M2 + Ammo)";
     side = 1;
@@ -870,7 +870,7 @@ class B_VKN_ODIN_M113A3_M2_Ammo_PMC_01 : rhsusf_m113_usarmy_supply_OCimport_02 {
 
 class B_VKN_ODIN_M977A4_Transport_PMC_01 : rhsusf_M977A4_BKIT_usarmy_wd_OCimport_02 {
     author = "Curious";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "M977A4-B (Transport - Open)";
     side = 1;
@@ -895,7 +895,7 @@ class B_VKN_ODIN_M977A4_Transport_PMC_01 : rhsusf_M977A4_BKIT_usarmy_wd_OCimport
 
 class B_VKN_ODIN_M977A4_Repair_PMC_01 : rhsusf_M977A4_REPAIR_BKIT_usarmy_wd_OCimport_02 {
     author = "Curious";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "M977A4-B (Repair)";
     side = 1;
@@ -920,7 +920,7 @@ class B_VKN_ODIN_M977A4_Repair_PMC_01 : rhsusf_M977A4_REPAIR_BKIT_usarmy_wd_OCim
 
 class B_VKN_ODIN_M978A4_Fuel_PMC_01 : rhsusf_M978A4_BKIT_usarmy_wd_OCimport_02 {
     author = "Curious";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "M978A4-B (Fuel)";
     side = 1;
@@ -945,7 +945,7 @@ class B_VKN_ODIN_M978A4_Fuel_PMC_01 : rhsusf_M978A4_BKIT_usarmy_wd_OCimport_02 {
 
 class B_VKN_ODIN_M978A4_Ammo_PMC_02 : rhsusf_M977A4_AMMO_BKIT_usarmy_wd_OCimport_02 {
     author = "Curious";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "M977A4-B (Ammo)";
     side = 1;
@@ -970,7 +970,7 @@ class B_VKN_ODIN_M978A4_Ammo_PMC_02 : rhsusf_M977A4_AMMO_BKIT_usarmy_wd_OCimport
 
 class B_VKN_ODIN_Humvee_4D_Half_PMC_01 : rhsusf_m998_w_4dr_halftop_OCimport_02 {
     author = "Curious";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Humvee (4D - Half)";
     side = 1;
@@ -1001,7 +1001,7 @@ class B_VKN_ODIN_Humvee_4D_Half_PMC_01 : rhsusf_m998_w_4dr_halftop_OCimport_02 {
 
 class B_VKN_ODIN_Humvee_Unarmed_PMC_01 : rhsusf_m1025_w_OCimport_02 {
     author = "Curious";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Humvee (Unarmed)";
     side = 1;
@@ -1033,7 +1033,7 @@ class B_VKN_ODIN_Humvee_Unarmed_PMC_01 : rhsusf_m1025_w_OCimport_02 {
 
 class B_VKN_ODIN_Humvee_M2_PMC_01 : rhsusf_m1025_w_m2_OCimport_02 {
     author = "Curious";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Humvee (M2)";
     side = 1;
@@ -1067,7 +1067,7 @@ class B_VKN_ODIN_Humvee_M2_PMC_01 : rhsusf_m1025_w_m2_OCimport_02 {
 
 class B_VKN_ODIN_Humvee_MK19_PMC_01 : rhsusf_m1025_w_mk19_OCimport_02 {
     author = "Curious";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Humvee (MK-19)";
     side = 1;
@@ -1101,7 +1101,7 @@ class B_VKN_ODIN_Humvee_MK19_PMC_01 : rhsusf_m1025_w_mk19_OCimport_02 {
 
 class B_VKN_ODIN_Humvee_AT_PMC_01 : rhsusf_m966_w_OCimport_02 {
     author = "Curious";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Humvee (AT)";
     side = 1;

@@ -76,7 +76,7 @@ class cfgVehicles {
 	};
 	class VKN_v_blackops_rt_1523g: tf_rt1523g {
         author = "Jonmo";
-        scope = 2;
+        scope = public;
         displayName = "[VKN] VIS Black AN/PRC 117-117g Compact";
         picture="\VKN_Misc\VKN_Logo_Inverted.paa";
         hiddenSelectionsTextures[] = {"VKN_Gear\data\Backpacks\clf_prc117g_blackops_co.paa"};
@@ -84,14 +84,14 @@ class cfgVehicles {
     };
 	class VKN_v_blackops_nicecomm2: tf_rt1523g_big {
         author = "Jonmo";
-        scope = 2;
+        scope = public;
         displayName = "[VKN] VIS Black AN/PRC 117-117g Full";
         picture="\VKN_Misc\VKN_Logo_Inverted.paa";
         hiddenSelectionsTextures[] = {"VKN_Gear\data\Backpacks\clf_nicecomm2_blackops_co.paa"};
     };
   class VKN_v_loki_nicecomm2: tf_rt1523g_big {
         author = "Shagger";
-        scope = 2;
+        scope = public;
         displayName = "[VKN] VIS Loki AN/PRC 117-117g Full";
         picture="\VKN_Misc\VKN_Logo_Inverted.paa";
         hiddenSelectionsTextures[] = {"VKN_Gear\data\Backpacks\clf_nicecomm2_loki_co.paa"};
@@ -99,7 +99,7 @@ class cfgVehicles {
 
     class VKN_Dummy_B_Police_Coveralls: rhs_msv_rifleman_m88_patchless {
         author = "Jonmo";
-        scope = 1;
+        scope = protected;
         displayName = "[VKN] Greek Police Coveralls";
         picture="\VKN_Misc\VKN_Logo_Inverted.paa";
         //hiddenSelections[] = {"camo1","camo2","camob","insignia"};
@@ -144,7 +144,7 @@ class cfgWeapons {
   class VKN_BoonieHat_Base: rhs_booniehat2_marpatd {
     author = "Jonmo";
 		picture = "\VKN_Misc\VKN_Logo_Inverted.paa";
-		scope = 0;
+		scope = private;
 		weaponPoolAvailable = 1;
 		model = "\rhsusf\addons\rhsusf_infantry2\gear\head\hats\boonie";
 		hiddenSelections[] = {"camo"};
@@ -159,71 +159,71 @@ class cfgWeapons {
   };
 
 	class VKN_OPS_Helmet_2_Base: VSM_Black_OPS_2 {
-		scope = 1;
+		scope = protected;
 		picture="\VKN_Misc\VKN_Logo_Inverted.paa";
 		hiddenSelections[]= {"_helmBase","_helmGear","_nvgWeight","_Peltor"};
 	};
 
 	class VKN_RAV_Operator_Base: VSM_RAV_operator_OCP {
-		scope = 1;
+		scope = protected;
 		picture="\VKN_Misc\VKN_Logo_Inverted.paa";
 		hiddenSelections[]={"_1961aPouches","_battleBelt","_DropHolster","_Serpa","_SOTGGear","_SOTGRadio","_vestBase","_VSMPouches"};
 	};
   class VKN_RAV_Gunner_Base : VSM_RAV_MG_OCP {
-    scope = 1;
+    scope = protected;
 		picture="\VKN_Misc\VKN_Logo_Inverted.paa";
     hiddenSelections[]={"_battleBelt","_boxMag","_DropHolster","_Serpa","_SOTGGear","_SOTGRadio","_vestBase","_VSMButtPouch"};
   };
   class VKN_RAV_Breacher_Base : VSM_RAV_Breacher_OCP {
-    scope = 1;
+    scope = protected;
     picture="\VKN_Misc\VKN_Logo_Inverted.paa";
     hiddenSelections[]={"_battleBelt","_boxMag","_DropHolster","_Serpa","_SOTGGear","_SOTGRadio","_vestBase","_VSMButtPouch"};
   };
 
 	class VKN_CarrierRig_Operator_Base: VSM_CarrierRig_MG_OCP {
-		scope = 1;
+		scope = protected;
 		picture="\VKN_Misc\VKN_Logo_Inverted.paa";
 		hiddenSelections[]={"_battleBelt","_DropHolster","_Serpa","_SOTGGear","_SOTGRadio","_vestBase","_VSMPouches"};
 	};
   class VKN_CarrierRig_Gunner_Base: VSM_CarrierRig_Gunner_OCP {
-		scope = 1;
+		scope = protected;
 		picture="\VKN_Misc\VKN_Logo_Inverted.paa";
 		hiddenSelections[]={"_battleBelt","_DropHolster","_Serpa","_SOTGGear","_SOTGRadio","_vestBase","_VSMPouches"};
 	};
   class VKN_CarrierRig_Breacher_Base: VSM_CarrierRig_Breacher_OCP {
-		scope = 1;
+		scope = protected;
 		picture="\VKN_Misc\VKN_Logo_Inverted.paa";
 		hiddenSelections[]={"_battleBelt","_DropHolster","_Serpa","_SOTGGear","_SOTGRadio","_vestBase","_VSMPouches"};
 	};
 
   class VKN_LBT6094_Operator_Base: VSM_LBT6094_Operator_OCP {
-    scope = 1;
+    scope = protected;
     picture="\VKN_Misc\VKN_Logo_Inverted.paa";
     hiddenSelections[]={"_battleBelt","_DropHolster","_Serpa","_SOTGGear","_SOTGRadio","_vestBase","_VSMPouches"};
   };
   class VKN_LBT6094_Gunner_Base: VSM_LBT6094_MG_OCP {
-		scope = 1;
+		scope = protected;
 		picture="\VKN_Misc\VKN_Logo_Inverted.paa";
 		hiddenSelections[]={"_battleBelt","_DropHolster","_Serpa","_SOTGGear","_SOTGRadio","_vestBase","_VSMPouches"};
 	};
   class VKN_LBT6094_Breacher_Base: VSM_LBT6094_Breacher_OCP {
-		scope = 1;
+		scope = protected;
 		picture="\VKN_Misc\VKN_Logo_Inverted.paa";
 		hiddenSelections[]={"_battleBelt","_DropHolster","_Serpa","_SOTGGear","_SOTGRadio","_vestBase","_VSMPouches"};
 	};
 
 	class VKN_FAPC_Operator_Base: VSM_FAPC_Operator_OCP {
-		scope = 1;
+		scope = protected;
 		picture="\VKN_Misc\VKN_Logo_Inverted.paa";
     hiddenSelections[]={"_battleBelt","_boxMag","_DropHolster","_Serpa","_SOTGGear","_SOTGRadio","_vestBase","_VSMButtPouch"};
 	};
   class VKN_FAPC_Gunner_Base: VSM_FAPC_MG_OCP {
-		scope = 1;
+		scope = protected;
 		picture="\VKN_Misc\VKN_Logo_Inverted.paa";
     hiddenSelections[]={"_battleBelt","_boxMag","_DropHolster","_Serpa","_SOTGGear","_SOTGRadio","_vestBase","_VSMButtPouch"};
 	};
   class VKN_FAPC_Breacher_Base: VSM_FAPC_Breacher_OCP {
-		scope = 1;
+		scope = protected;
 		picture="\VKN_Misc\VKN_Logo_Inverted.paa";
     hiddenSelections[]={"_battleBelt","_boxMag","_DropHolster","_Serpa","_SOTGGear","_SOTGRadio","_vestBase","_VSMButtPouch"};
 	};
@@ -232,31 +232,31 @@ class cfgWeapons {
 
   class vkn_booniehat2_OGA: VKN_BoonieHat_Base {
     displayName = "[VKN] Booniehat (OGA)";
-    scope = 2;
+    scope = public;
     hiddenSelectionsTextures[] = {"VKN_Gear\data\Headgear\vkn_boonie_oga_co.paa"};
   };
   class vkn_booniehat2_OGA_OD: VKN_BoonieHat_Base {
-    scope = 2;
+    scope = public;
     displayName = "[VKN] Booniehat (OGA OD)";
     hiddenSelectionsTextures[] = {"VKN_Gear\data\Headgear\vkn_boonie_oga_od_co.paa"};
   };
   class vkn_booniehat2_multicam: VKN_BoonieHat_Base {
-    scope = 2;
+    scope = public;
     displayName = "[VKN] Booniehat (Multicam)";
     hiddenSelectionsTextures[] = {"VKN_Gear\data\Headgear\vkn_boonie_multicam_co.paa"};
   };
   class vkn_booniehat2_multicamtropic: VKN_BoonieHat_Base {
-    scope = 2;
+    scope = public;
     displayName = "[VKN] Booniehat (Multicam Tropic)";
     hiddenSelectionsTextures[] = {"VKN_Gear\data\Headgear\vkn_boonie_multicamtropic_co.paa"};
   };
   class vkn_booniehat2_alpine: VKN_BoonieHat_Base {
-    scope = 2;
+    scope = public;
     displayName = "[VKN] Booniehat (Alpine)";
     hiddenSelectionsTextures[] = {"VKN_Gear\data\Headgear\vkn_boonie_alpine_co.paa"};
   };
 	class VKN_B_OPS_Black : VKN_OPS_Helmet_2_Base {
-		scope = 2;
+		scope = public;
 		author="Apple";
 		displayName="[VKN] FBA OpsCore + Peltor(Black)";
 		picture="\VKN_Misc\VKN_Logo_Inverted.paa";
@@ -264,7 +264,7 @@ class cfgWeapons {
 		hiddenSelectionsTextures[]={"VKN_Gear\data\Headgear\VKN_ops_black.paa","VKN_Gear\data\Headgear\VKN_helmet_pouch.paa","VKN_Gear\data\Headgear\VKN_secco2.paa","VKN_Gear\data\Headgear\VKN_headset_co.paa"};
 	};
     class VKN_B_OPS_Black_alt : VKN_OPS_Helmet_2_Base {
-    scope = 2;
+    scope = public;
     author="Apple";
     displayName="[VKN] FBA OpsCore (Black)";
     picture="\VKN_Misc\VKN_Logo_Inverted.paa";
@@ -272,7 +272,7 @@ class cfgWeapons {
     hiddenSelectionsTextures[]={"VKN_Gear\data\Headgear\VKN_ops_black.paa","VKN_Gear\data\Headgear\VKN_helmet_pouch.paa","VKN_Gear\data\Headgear\VKN_secco2.paa"};
   };
   class VKN_B_OPS_Loki : VKN_OPS_Helmet_2_Base {
-    scope = 2;
+    scope = public;
     author="Shagger";
     displayName="[VKN] FBA OpsCore + Peltor(Loki)";
     picture="\VKN_Misc\VKN_Logo_Inverted.paa";
@@ -280,7 +280,7 @@ class cfgWeapons {
     hiddenSelectionsTextures[]={"VKN_Gear\data\Headgear\VKN_ops_Loki.paa","VKN_Gear\data\Headgear\VKN_helmet_pouch.paa","VKN_Gear\data\Headgear\VKN_secco2.paa","VKN_Gear\data\Headgear\VKN_headset_co.paa"};
   };
   class VKN_B_OPS_Loki_alt : VKN_OPS_Helmet_2_Base {
-    scope = 2;
+    scope = public;
     author="Shagger";
     displayName="[VKN] FBA OpsCore (Loki)";
     picture="\VKN_Misc\VKN_Logo_Inverted.paa";
@@ -288,7 +288,7 @@ class cfgWeapons {
     hiddenSelectionsTextures[]={"VKN_Gear\data\Headgear\VKN_ops_Loki.paa","VKN_Gear\data\Headgear\VKN_helmet_pouch.paa","VKN_Gear\data\Headgear\VKN_secco2.paa"};
   };
   class VKN_B_OPS_Diag : VKN_OPS_Helmet_2_Base {
-    scope = 2;
+    scope = public;
     author="Shagger";
     displayName="[VKN] FBA OpsCore + Peltor(Diagonal)";
     picture="\VKN_Misc\VKN_Logo_Inverted.paa";
@@ -296,7 +296,7 @@ class cfgWeapons {
     hiddenSelectionsTextures[]={"VKN_Gear\data\Headgear\VKN_ops_diag.paa","VKN_Gear\data\Headgear\VKN_helmet_pouch.paa","VKN_Gear\data\Headgear\VKN_secco2.paa","VKN_Gear\data\Headgear\VKN_headset_co.paa"};
   };
   class VKN_B_OPS_Diag_alt : VKN_OPS_Helmet_2_Base {
-    scope = 2;
+    scope = public;
     author="Shagger";
     displayName="[VKN] FBA OpsCore (Diagonal)";
     picture="\VKN_Misc\VKN_Logo_Inverted.paa";
@@ -358,7 +358,7 @@ class cfgWeapons {
 // VSM CAZADOR VESTS
 
   class VKN_RAV_Operator_Cazador: VKN_RAV_Operator_Base {
-    scope = 2;
+    scope = public;
     author = "Jonmo";
     displayName = "[VKN] Cazador Paraclete RAV (Operator)";
     weaponPoolAvailable=1;
@@ -366,7 +366,7 @@ class cfgWeapons {
 		hiddenSelectionsTextures[] = {"VKN_Gear\data\vests\Cazador\VKN_Cazador_Chestrig.paa","VKN_Gear\data\vests\Cazador\VKN_BattleBelt_Cazador.paa","VKN_Gear\data\Vests\Cazador\VKN_dropholster.paa","VKN_Gear\data\Vests\Cazador\VKN_serpa.paa","VKN_Gear\data\Vests\Cazador\VKN_Cazador_gear_co.paa","VKN_Gear\data\Vests\Cazador\VKN_radio_pouch_Green.paa","VKN_Gear\data\Vests\Cazador\VKN_rav_Cazador.paa","VKN_Gear\data\Vests\Cazador\VKN_pouches_Cazador.paa"};
 	};
 	class VKN_RAV_Gunner_Cazador: VKN_RAV_Gunner_Base {
-    scope = 2;
+    scope = public;
     author = "Jonmo";
     displayName = "[VKN] Cazador Paraclete RAV (Gunner)";
     weaponPoolAvailable=1;
@@ -374,7 +374,7 @@ class cfgWeapons {
 		hiddenSelectionsTextures[] = {"VKN_Gear\data\Vests\Cazador\VKN_Cazador_Chestrig.paa","VKN_Gear\data\Vests\Cazador\VKN_BattleBelt_Cazador.paa","VKN_Gear\data\Vests\Cazador\VKN_boxmag_Cazador.paa","VKN_Gear\data\Vests\Cazador\VKN_dropholster.paa","VKN_Gear\data\Vests\Cazador\VKN_serpa.paa","VKN_Gear\data\Vests\Cazador\VKN_Cazador_gear_co.paa","VKN_Gear\data\Vests\Cazador\VKN_radio_pouch_Green.paa","VKN_Gear\data\Vests\Cazador\VKN_rav_Cazador.paa","VKN_Gear\data\Vests\Cazador\VKN_pouches_Cazador.paa"};
 	};
 	class VKN_RAV_Breacher_Cazador: VKN_RAV_Breacher_Base {
-    scope = 2;
+    scope = public;
     author = "Jonmo";
     displayName = "[VKN] Cazador Paraclete RAV (Breacher)";
     weaponPoolAvailable=1;
@@ -382,7 +382,7 @@ class cfgWeapons {
 		hiddenSelectionsTextures[]= {"VKN_Gear\data\Vests\Cazador\VKN_Cazador_Chestrig.paa","VKN_Gear\data\Vests\Cazador\VKN_BattleBelt_Cazador.paa","VKN_Gear\data\Vests\Cazador\VKN_dropholster.paa","VKN_Gear\data\Vests\Cazador\VKN_serpa.paa","VKN_Gear\data\Vests\Cazador\VKN_Cazador_gear_co.paa","VKN_Gear\data\Vests\Cazador\VKN_radio_pouch_Green.paa","VKN_Gear\data\Vests\Cazador\VKN_rav_Cazador.paa","VKN_Gear\data\Vests\Cazador\VKN_pouches_Cazador.paa","VKN_Gear\data\Vests\Cazador\VKN_buttpouch_Cazador.paa"};
 	};
 	class VKN_CarrierRig_Operator_Cazador: VKN_CarrierRig_Operator_Base {
-    scope = 2;
+    scope = public;
     author = "Jonmo";
     displayName = "[VKN] Cazador LBT Armatus (Operator)";
     weaponPoolAvailable=1;
@@ -390,7 +390,7 @@ class cfgWeapons {
 		hiddenSelectionsTextures[] = {"VKN_Gear\data\Vests\Cazador\VKN_Cazador_Chestrig.paa","VKN_Gear\data\Vests\Cazador\VKN_BattleBelt_Cazador.paa","VKN_Gear\data\Vests\Cazador\VKN_serpa.paa","VKN_Gear\data\Vests\Cazador\VKN_Cazador_gear_co.paa","VKN_Gear\data\Vests\Cazador\VKN_radio_pouch_Green.paa","VKN_Gear\data\Vests\Cazador\VKN_Cazador_plate.paa","VKN_Gear\data\Vests\Cazador\VKN_buttpouch_Cazador.paa"};
 	};
 	class VKN_CarrierRig_Breacher_Cazador: VKN_CarrierRig_Breacher_Base {
-    scope = 2;
+    scope = public;
     author = "Jonmo";
     displayName = "[VKN] Cazador LBT Armatus (Breacher)";
     weaponPoolAvailable=1;
@@ -398,7 +398,7 @@ class cfgWeapons {
 		hiddenSelectionsTextures[] = {"VKN_Gear\data\Vests\Cazador\VKN_BattleBelt_Cazador.paa","VKN_Gear\data\Vests\Cazador\VKN_dropholster.paa","VKN_Gear\data\Vests\Cazador\VKN_serpa.paa","VKN_Gear\data\Vests\Cazador\VKN_Cazador_gear_co.paa","VKN_Gear\data\Vests\Cazador\VKN_radio_pouch_Green.paa","VKN_Gear\data\Vests\Cazador\VKN_Cazador_plate.paa","VKN_Gear\data\Vests\Cazador\VKN_pouches_Cazador.paa"};
 	};
 	class VKN_CarrierRig_Gunner_Cazador: VKN_CarrierRig_Gunner_Base {
-    scope = 2;
+    scope = public;
     author = "Jonmo";
     displayName = "[VKN] Cazador LBT Armatus (Gunner)";
     weaponPoolAvailable=1;
@@ -406,7 +406,7 @@ class cfgWeapons {
 		hiddenSelectionsTextures[] = {"VKN_Gear\data\Vests\Cazador\VKN_Cazador_Chestrig.paa","VKN_Gear\data\Vests\Cazador\VKN_BattleBelt_Cazador.paa","VKN_Gear\data\Vests\Cazador\VKN_boxmag_Cazador.paa","VKN_Gear\data\Vests\Cazador\VKN_serpa.paa","VKN_Gear\data\Vests\Cazador\VKN_Cazador_gear_co.paa","VKN_Gear\data\Vests\Cazador\VKN_radio_pouch_Green.paa","VKN_Gear\data\Vests\Cazador\VKN_Cazador_plate.paa"};
 	};
 	class VKN_LBT6094_Operator_Cazador: VKN_LBT6094_Operator_Base {
-    scope = 2;
+    scope = public;
     author = "Jonmo";
     displayName = "[VKN] Cazador LBT6094 (Operator)";
     weaponPoolAvailable=1;
@@ -414,7 +414,7 @@ class cfgWeapons {
 		hiddenSelectionsTextures[] = {"VKN_Gear\data\Vests\Cazador\VKN_Cazador_Chestrig.paa","VKN_Gear\data\Vests\Cazador\VKN_BattleBelt_Cazador.paa","VKN_Gear\data\Vests\Cazador\VKN_dropholster.paa","VKN_Gear\data\Vests\Cazador\VKN_serpa.paa","VKN_Gear\data\Vests\Cazador\VKN_Cazador_gear_co.paa","VKN_Gear\data\Vests\Cazador\VKN_radio_pouch_Green.paa","VKN_Gear\data\Vests\Cazador\VKN_lbt6094_Cazador.paa","VKN_Gear\data\Vests\Cazador\VKN_pouches_Cazador.paa","VKN_Gear\data\Vests\Cazador\VKN_buttpouch_Cazador.paa"};
 	};
 	class VKN_LBT6094_Gunner_Cazador: VKN_LBT6094_Gunner_Base {
-		scope = 2;
+		scope = public;
 		author = "Jonmo";
 		displayName = "[VKN] Cazador LBT6094 (Gunner)";
     weaponPoolAvailable=1;
@@ -425,7 +425,7 @@ class cfgWeapons {
   // VSM LOKI VESTS
 
     class VKN_RAV_Operator_Loki: VKN_RAV_Operator_Base {
-    scope = 2;
+    scope = public;
     author = "Shagger";
     displayName = "[VKN] Loki Paraclete RAV (Operator)";
     weaponPoolAvailable=1;
@@ -433,7 +433,7 @@ class cfgWeapons {
     hiddenSelectionsTextures[] = {"VKN_Gear\data\vests\Loki\VKN_Loki_Chestrig.paa","VKN_Gear\data\vests\Loki\VKN_BattleBelt_Loki.paa","VKN_Gear\data\Vests\Loki\VKN_DropHolster_Loki.paa","VKN_Gear\data\Vests\Loki\VKN_serpa.paa","VKN_Gear\data\Vests\Loki\VKN_Loki_gear_co.paa","VKN_Gear\data\Vests\Loki\VKN_radio_pouch_Loki.paa","VKN_Gear\data\Vests\Loki\VKN_rav_Loki.paa","VKN_Gear\data\Vests\Loki\VKN_pouches_Loki.paa"};
   };
   class VKN_RAV_Gunner_Loki: VKN_RAV_Gunner_Base {
-    scope = 2;
+    scope = public;
     author = "Shagger";
     displayName = "[VKN] Loki Paraclete RAV (Gunner)";
     weaponPoolAvailable=1;
@@ -441,7 +441,7 @@ class cfgWeapons {
     hiddenSelectionsTextures[] = {"VKN_Gear\data\Vests\Loki\VKN_Loki_Chestrig.paa","VKN_Gear\data\Vests\Loki\VKN_BattleBelt_Loki.paa","VKN_Gear\data\Vests\Loki\VKN_boxmag_Loki.paa","VKN_Gear\data\Vests\Loki\VKN_DropHolster_Loki.paa","VKN_Gear\data\Vests\Loki\VKN_serpa.paa","VKN_Gear\data\Vests\Loki\VKN_Loki_gear_co.paa","VKN_Gear\data\Vests\Loki\VKN_radio_pouch_Loki.paa","VKN_Gear\data\Vests\Loki\VKN_rav_Loki.paa","VKN_Gear\data\Vests\Loki\VKN_pouches_Loki.paa"};
   };
   class VKN_RAV_Breacher_Loki: VKN_RAV_Breacher_Base {
-    scope = 2;
+    scope = public;
     author = "Shagger";
     displayName = "[VKN] Loki Paraclete RAV (Breacher)";
     weaponPoolAvailable=1;
@@ -449,7 +449,7 @@ class cfgWeapons {
     hiddenSelectionsTextures[]= {"VKN_Gear\data\Vests\Loki\VKN_Loki_Chestrig.paa","VKN_Gear\data\Vests\Loki\VKN_BattleBelt_Loki.paa","VKN_Gear\data\Vests\Loki\VKN_DropHolster_Loki.paa","VKN_Gear\data\Vests\Loki\VKN_serpa.paa","VKN_Gear\data\Vests\Loki\VKN_Loki_gear_co.paa","VKN_Gear\data\Vests\Loki\VKN_radio_pouch_Loki.paa","VKN_Gear\data\Vests\Loki\VKN_rav_Loki.paa","VKN_Gear\data\Vests\Loki\VKN_pouches_Loki.paa","VKN_Gear\data\Vests\Loki\VKN_buttpouch_Loki.paa"};
   };
   class VKN_CarrierRig_Operator_Loki: VKN_CarrierRig_Operator_Base {
-    scope = 2;
+    scope = public;
     author = "Shagger";
     displayName = "[VKN] Loki LBT Armatus (Operator)";
     weaponPoolAvailable=1;
@@ -457,7 +457,7 @@ class cfgWeapons {
     hiddenSelectionsTextures[] = {"VKN_Gear\data\Vests\Loki\VKN_Loki_Chestrig.paa","VKN_Gear\data\Vests\Loki\VKN_BattleBelt_Loki.paa","VKN_Gear\data\Vests\Loki\VKN_serpa.paa","VKN_Gear\data\Vests\Loki\VKN_Loki_gear_co.paa","VKN_Gear\data\Vests\Loki\VKN_radio_pouch_Loki.paa","VKN_Gear\data\Vests\Loki\VKN_Loki_plate.paa","VKN_Gear\data\Vests\Loki\VKN_buttpouch_Loki.paa"};
   };
   class VKN_CarrierRig_Breacher_Loki: VKN_CarrierRig_Breacher_Base {
-    scope = 2;
+    scope = public;
     author = "Shagger";
     displayName = "[VKN] Loki LBT Armatus (Breacher)";
     weaponPoolAvailable=1;
@@ -465,7 +465,7 @@ class cfgWeapons {
     hiddenSelectionsTextures[] = {"VKN_Gear\data\Vests\Loki\VKN_BattleBelt_Loki.paa","VKN_Gear\data\Vests\Loki\VKN_dropholster_Loki.paa","VKN_Gear\data\Vests\Loki\VKN_serpa.paa","VKN_Gear\data\Vests\Loki\VKN_Loki_gear_co.paa","VKN_Gear\data\Vests\Loki\VKN_radio_pouch_Loki.paa","VKN_Gear\data\Vests\Loki\VKN_Loki_plate.paa","VKN_Gear\data\Vests\Loki\VKN_pouches_Loki.paa"};
   };
   class VKN_CarrierRig_Gunner_Loki: VKN_CarrierRig_Gunner_Base {
-    scope = 2;
+    scope = public;
     author = "Shagger";
     displayName = "[VKN] Loki LBT Armatus (Gunner)";
     weaponPoolAvailable=1;
@@ -473,7 +473,7 @@ class cfgWeapons {
     hiddenSelectionsTextures[] = {"VKN_Gear\data\Vests\Loki\VKN_Loki_Chestrig.paa","VKN_Gear\data\Vests\Loki\VKN_BattleBelt_Loki.paa","VKN_Gear\data\Vests\Loki\VKN_boxmag_Loki.paa","VKN_Gear\data\Vests\Loki\VKN_serpa.paa","VKN_Gear\data\Vests\Loki\VKN_Loki_gear_co.paa","VKN_Gear\data\Vests\Loki\VKN_radio_pouch_Loki.paa","VKN_Gear\data\Vests\Loki\VKN_Loki_plate.paa"};
   };
   class VKN_LBT6094_Operator_Loki: VKN_LBT6094_Operator_Base {
-    scope = 2;
+    scope = public;
     author = "Shagger";
     displayName = "[VKN] Loki LBT6094 (Operator)";
     weaponPoolAvailable=1;
@@ -481,7 +481,7 @@ class cfgWeapons {
     hiddenSelectionsTextures[] = {"VKN_Gear\data\Vests\Loki\VKN_Loki_Chestrig.paa","VKN_Gear\data\Vests\Loki\VKN_BattleBelt_Loki.paa","VKN_Gear\data\Vests\Loki\VKN_DropHolster_Loki.paa","VKN_Gear\data\Vests\Loki\VKN_serpa.paa","VKN_Gear\data\Vests\Loki\VKN_Loki_gear_co.paa","VKN_Gear\data\Vests\Loki\VKN_radio_pouch_Loki.paa","VKN_Gear\data\Vests\Loki\VKN_lbt6094_Loki.paa","VKN_Gear\data\Vests\Loki\VKN_pouches_Loki.paa","VKN_Gear\data\Vests\Loki\VKN_buttpouch_Loki.paa"};
   };
   class VKN_LBT6094_Gunner_Loki: VKN_LBT6094_Gunner_Base {
-    scope = 2;
+    scope = public;
     author = "Shagger";
     displayName = "[VKN] Loki LBT6094 (Gunner)";
     weaponPoolAvailable=1;
@@ -495,7 +495,7 @@ class cfgWeapons {
 	class VKN_Police_Coveralls: rhs_uniform_m88_patchless {
 		model = "\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
     author = "Jonmo";
-    scope = 2;
+    scope = public;
     displayName = "[VKN] Greek Police Coveralls";
     picture="\VKN_Misc\VKN_Logo_Inverted.paa";
     class ItemInfo: UniformItem {
@@ -508,7 +508,7 @@ class cfgWeapons {
 
 	class VKN_Riot_Helmet_Visor_Up_Balaklava : rhs_altyn_bala {
 		author = "Jonmo";
-		scope = 2;
+		scope = public;
 		weaponPoolAvailable = 1;
 		displayName = "[VKN] Police Riot Helmet (Visor up/Balaklava)";
 		picture = "\VKN_Misc\VKN_Logo_Inverted.paa";
@@ -531,7 +531,7 @@ class cfgWeapons {
 	};
 		class VKN_Riot_Helmet_Visor_Up : rhs_altyn {
 		author = "Jonmo";
-		scope = 2;
+		scope = public;
 		weaponPoolAvailable = 1;
 		displayName = "[VKN] Police Riot Helmet (Visor up)";
 		picture = "\VKN_Misc\VKN_Logo_Inverted.paa";
@@ -554,7 +554,7 @@ class cfgWeapons {
 	};
 	class VKN_Riot_Helmet_Visor_Down : rhs_altyn_visordown	{
 		author = "Jonmo";
-		scope = 2;
+		scope = public;
 		weaponPoolAvailable = 1;
 		displayName = "[VKN] Police Riot Helmet (Visor down)";
 		picture = "\VKN_Misc\VKN_Logo_Inverted.paa";
@@ -578,62 +578,62 @@ class cfgWeapons {
 	
 	class VKN_Helmet_M98: rhsusf_opscore_cover
     {
-        scope = 2;
+        scope = public;
         displayName = "[VKN] FAST Ballistic M98";
         hiddenSelectionsTextures[] = {"\VKN_Gear\data\headgear\maritime_m98.paa","","","","\VKN_Gear\data\headgear\m98_cover.paa",""};
     };
     class VKN_Helmet_M98_HS: rhsusf_opscore_cover
     {
-        scope = 2;
+        scope = public;
         displayName = "[VKN] FAST Ballistic M98 (Headset)";
         hiddenSelectionsTextures[] = {"\VKN_Gear\data\headgear\maritime_m98.paa","\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\data\comtac_fg_co.paa","","","\VKN_Gear\data\headgear\m98_cover.paa",""};
     };
 class VKN_Helmet_ranger: rhsusf_opscore_cover
     {
-        scope = 2;
+        scope = public;
         displayName = "[VKN] FAST Ballistic Ranger";
         hiddenSelectionsTextures[] = {"\VKN_Gear\data\headgear\maritime_ranger.paa","","","","\VKN_Gear\data\headgear\ranger_cover.paa",""};
     };
     class VKN_Helmet_ranger_HS: rhsusf_opscore_cover
     {
-        scope = 2;
+        scope = public;
         displayName = "[VKN] FAST Ballistic Ranger (Headset)";
         hiddenSelectionsTextures[] = {"\VKN_Gear\data\headgear\maritime_ranger.paa","\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\data\comtac_fg_co.paa","","","\VKN_Gear\data\headgear\ranger_cover.paa",""};
     };
     
 class VKN_Helmet_od: rhsusf_opscore_cover
     {
-        scope = 2;
+        scope = public;
         displayName = "[VKN] FAST Ballistic OD";
         hiddenSelectionsTextures[] = {"\VKN_Gear\data\headgear\maritime_OD.paa","","","","\VKN_Gear\data\headgear\OD_cover.paa",""};
     };
     class VKN_Helmet_od_HS: rhsusf_opscore_cover
     {
-        scope = 2;
+        scope = public;
         displayName = "[VKN] FAST Ballistic OD (Headset)";
         hiddenSelectionsTextures[] = {"\VKN_Gear\data\headgear\maritime_OD.paa","\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\data\comtac_fg_co.paa","","","\VKN_Gear\data\headgear\OD_cover.paa",""};
     };
 class VKN_Helmet_oga: rhsusf_opscore_cover
     {
-        scope = 2;
+        scope = public;
         displayName = "[VKN] FAST Ballistic OGA";
         hiddenSelectionsTextures[] = {"\VKN_Gear\data\headgear\maritime_OGA.paa","","","","\VKN_Gear\data\headgear\OGA_cover.paa",""};
     };
     class VKN_Helmet_oga_HS: rhsusf_opscore_cover
     {
-        scope = 2;
+        scope = public;
         displayName = "[VKN] FAST Ballistic OGA (Headset)";
         hiddenSelectionsTextures[] = {"\VKN_Gear\data\headgear\maritime_OGA.paa","\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\data\comtac_co.paa","","","\VKN_Gear\data\headgear\OGA_cover.paa",""};
     };
 class VKN_Helmet_multicam: rhsusf_opscore_cover
     {
-        scope = 2;
+        scope = public;
         displayName = "[VKN] FAST Ballistic Multicam";
         hiddenSelectionsTextures[] = {"\VKN_Gear\data\headgear\maritime_OGA.paa","","","","\VKN_Gear\data\headgear\Multicam_cover.paa",""};
     };
     class VKN_Helmet_multicam_HS: rhsusf_opscore_cover
     {
-        scope = 2;
+        scope = public;
         displayName = "[VKN] FAST Ballistic Multicam (Headset)";
         hiddenSelectionsTextures[] = {"\VKN_Gear\data\headgear\maritime_OGA.paa","\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\data\comtac_co.paa","","","\VKN_Gear\data\headgear\Multicam_cover.paa",""};
     };

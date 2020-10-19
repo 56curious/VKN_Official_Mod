@@ -1,6 +1,6 @@
 class O_INTArmy_Adrian_Kowalski_WDL_01 : LOP_ChDKZ_Infantry_Commander_OCimport_02 {
     author = "Theodore";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Adrian Kowalski";
     side = 0;
@@ -40,7 +40,7 @@ class O_INTArmy_Adrian_Kowalski_WDL_01 : LOP_ChDKZ_Infantry_Commander_OCimport_0
 
 class O_INTArmy_Stepan_Andrijovych_Klymenko_WDL_01 : O_INTArmy_Adrian_Kowalski_WDL_01 {
     author = "Theodore";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Stepan Andrijovych Klymenko";
     side = 0;
@@ -80,7 +80,7 @@ class O_INTArmy_Stepan_Andrijovych_Klymenko_WDL_01 : O_INTArmy_Adrian_Kowalski_W
 
 class O_INTArmy_Harun_Al_Bashir_WDL_01 : O_INTArmy_Adrian_Kowalski_WDL_01 {
     author = "Theodore";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Harun Al-Bashir";
     side = 0;

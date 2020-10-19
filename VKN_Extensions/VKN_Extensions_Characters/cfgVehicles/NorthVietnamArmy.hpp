@@ -1,6 +1,6 @@
 class O_North_VietnamArmy_Rifleman_01 : O_T_Soldier_F_OCimport_02 {
     author = "Franky";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Rifleman";
     side = 0;
@@ -38,7 +38,7 @@ class O_North_VietnamArmy_Rifleman_01 : O_T_Soldier_F_OCimport_02 {
 
 class O_North_VietnamArmy_Automatic_Rifleman_01 : O_T_Soldier_AR_F_OCimport_02 {
     author = "Franky";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Automatic Rifleman";
     side = 0;
@@ -78,7 +78,7 @@ class O_North_VietnamArmy_Automatic_Rifleman_01 : O_T_Soldier_AR_F_OCimport_02 {
 
 class O_North_VietnamArmy_AT_Specialist_01 : O_T_Soldier_AT_F_OCimport_02 {
     author = "Franky";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "AT Specialist";
     side = 0;
@@ -118,7 +118,7 @@ class O_North_VietnamArmy_AT_Specialist_01 : O_T_Soldier_AT_F_OCimport_02 {
 
 class O_North_VietnamArmy_Officer_01 : O_T_Officer_F_OCimport_02 {
     author = "Franky";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Officer";
     side = 0;
@@ -156,7 +156,7 @@ class O_North_VietnamArmy_Officer_01 : O_T_Officer_F_OCimport_02 {
 
 class O_North_VietnamArmy_Marksman_01 : O_T_Soldier_M_F_OCimport_02 {
     author = "Franky";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Marksman";
     side = 0;
@@ -194,7 +194,7 @@ class O_North_VietnamArmy_Marksman_01 : O_T_Soldier_M_F_OCimport_02 {
 
 class O_North_VietnamArmy_Crewman_01 : O_T_Crew_F_OCimport_02 {
     author = "Franky";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Crewman";
     side = 0;

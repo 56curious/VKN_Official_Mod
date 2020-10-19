@@ -115,7 +115,7 @@ class CfgWeapons
 //AKM - Source: https://www.cgtrader.com/3d-models/military/gun/akm-model-and-textures-d57f1daa31fedfe78f111ace718dd32b
 	class VKN_AKM: FA_Base_Rifle_VKN
 	{
-	    scope = 2;
+	    scope = public;
 		author = "Luca, Author: chamferzone";
 		maxZeroing = 800;
 		picture = "\FA_Weapons_VKN\data\icons\icon_akm_ca.paa";
@@ -188,7 +188,7 @@ class CfgWeapons
 
 //AK74M - Source: https://www.cgtrader.com/3d-models/military/gun/ak-74-093b2b06-e36c-4130-ac62-9162c96d2c4c
 	class VKN_AK74M : FA_Base_Rifle_VKN {
-		scope = 2;
+		scope = public;
 		author = "Luca, Author: saintsellotape";
 		maxZeroing = 600;
 		displayName = "AK-74M";
@@ -262,7 +262,7 @@ class CfgWeapons
 
 //MP5 - Source: https://sketchfab.com/3d-models/mp5-submachinegun-2a9ce66fe96643fc8f20927401e5054c
 	class VKN_MP5 : FA_Base_Rifle_VKN {
-		scope = 2;
+		scope = public;
 		author = "Luca, Author: michaelkarel29";
 		maxZeroing = 200;
 		displayName = "MP5";
@@ -393,7 +393,7 @@ class CfgWeapons
 //SVD - Source: https://sketchfab.com/3d-models/svd-dragunov-updated-d4a9412275aa4974b146ad8ce9dc5fc2
 	class VKN_SVD: FA_Base_Rifle_VKN
 	{
-	    scope = 2;
+	    scope = public;
 		author = "Luca, Author: WillyG99";
 		maxZeroing = 1000;
 		picture = "\FA_Weapons_VKN\data\icons\icon_svd_ca.paa";
@@ -462,7 +462,7 @@ class CfgWeapons
     };
 //VSS - Source: https://sketchfab.com/3d-models/vss-vintorez-18e1f60286d346728f650984f4ae70aa
 	class VKN_VSS : FA_Base_Rifle_VKN {
-		scope = 2;
+		scope = public;
 		author = "Luca, Author: Artem Goyko";
 		maxZeroing = 500;
 		displayName = "VSS Vintorez";
@@ -550,7 +550,7 @@ class CfgWeapons
 //AK5C - Source: https://www.cgtrader.com/3d-models/military/gun/ak5c-rifle
 class VKN_AK5C : FA_Base_Rifle_VKN
   {
-    scope = 2;
+    scope = public;
     author = "Luca, Author: A-Editor";
     maxZeroing = 600;
     displayName = "AK5C Green";
@@ -626,7 +626,7 @@ class VKN_AK5C : FA_Base_Rifle_VKN
   };
   class VKN_AK5C_Collapsed : VKN_AK5C
   {
-    scope = 2;
+    scope = public;
     author = "Luca, Author: A-Editor";
     displayName = "AK5C Green (Collapsed)";
     model = "\FA_Weapons_VKN\data\ak5c\ak5c_collapsed.p3d";
@@ -634,42 +634,42 @@ class VKN_AK5C : FA_Base_Rifle_VKN
   };
   class VKN_AK5C_bl : VKN_AK5C
   {
-    scope = 2;
+    scope = public;
     author = "Luca, Author: A-Editor";
     displayName = "AK5C Black";
     hiddenSelectionsTextures[] = {"FA_Weapons_VKN\data\ak5c\textures\ak5c_bl_co.paa"};
   };
   class VKN_AK5C_bl_Collapsed : VKN_AK5C_Collapsed
   {
-    scope = 2;
+    scope = public;
     author = "Luca, Author: A-Editor";
     displayName = "AK5C Black (Collapsed)";
     hiddenSelectionsTextures[] = {"FA_Weapons_VKN\data\ak5c\textures\ak5c_bl_co.paa"};
   };
   class VKN_AK5C_wht : VKN_AK5C
   {
-    scope = 2;
+    scope = public;
     author = "Luca, Author: A-Editor";
     displayName = "AK5C White";
     hiddenSelectionsTextures[] = {"FA_Weapons_VKN\data\ak5c\textures\ak5c_wht_co.paa"};
   };
   class VKN_AK5C_wht_Collapsed : VKN_AK5C_Collapsed
   {
-    scope = 2;
+    scope = public;
     author = "Luca, Author: A-Editor";
     displayName = "AK5C White (Collapsed)";
     hiddenSelectionsTextures[] = {"FA_Weapons_VKN\data\ak5c\textures\ak5c_wht_co.paa"};
   };
   class VKN_AK5C_snd : VKN_AK5C
   {
-    scope = 2;
+    scope = public;
     author = "Luca, Author: A-Editor";
     displayName = "AK5C Sand";
     hiddenSelectionsTextures[] = {"FA_Weapons_VKN\data\ak5c\textures\ak5c_snd_co.paa"};
   };
   class VKN_AK5C_snd_Collapsed : VKN_AK5C_Collapsed
   {
-    scope = 2;
+    scope = public;
     author = "Luca, Author: A-Editor";
     displayName = "AK5C Sand (Collapsed)";
     hiddenSelectionsTextures[] = {"FA_Weapons_VKN\data\ak5c\textures\ak5c_snd_co.paa"};
@@ -677,7 +677,7 @@ class VKN_AK5C : FA_Base_Rifle_VKN
 //Remington 870 - Source: https://www.cgtrader.com/3d-models/military/gun/rm-870-shotgun
 	class VKN_Remington870: FA_Base_Rifle_VKN
 	{
-	    scope = 2;
+	    scope = public;
 		author = "Luca, Author: michaelkarel29";
 		maxZeroing = 100;
 		picture = "\FA_Weapons_VKN\data\icons\icon_rm870_ca.paa";
@@ -750,7 +750,7 @@ class VKN_AK5C : FA_Base_Rifle_VKN
 //SIG P250 - Source: https://www.cgtrader.com/3d-models/military/gun/sig-sauer-p250
 	class VKN_SigP250: FA_Base_Pistol_VKN
 	{
-	    scope = 2;
+	    scope = public;
 		author = "Luca, Author: hanyrick";
 		picture = "\FA_Weapons_VKN\data\icons\icon_sigp250_ca.paa";
 		displayName = "Sig Sauer P250";
@@ -820,7 +820,7 @@ class VKN_AK5C : FA_Base_Rifle_VKN
 //SIG P226 - Source: https://sketchfab.com/3d-models/sig-sauer-p226-53072553551e403a921448ee5581990e
 	class VKN_SigP226: FA_Base_Pistol_VKN
 	{
-	    scope = 2;
+	    scope = public;
 		author = "Luca, Author: Yksnawel";
 		picture = "\FA_Weapons_VKN\data\icons\icon_sigp226_ca.paa";
 		displayName = "Sig Sauer P226";
@@ -890,7 +890,7 @@ class VKN_AK5C : FA_Base_Rifle_VKN
 //Desert Eagle - Source: https://www.cgtrader.com/3d-models/military/gun/desert-eagle-pbr
 	class VKN_DesertEagle: FA_Base_Pistol_VKN
 	{
-	    scope = 2;
+	    scope = public;
 		author = "Luca";
 		picture = "\FA_Weapons_VKN\data\icons\icon_deagle_ca.paa";
 		displayName = "Desert Eagle";
@@ -954,7 +954,7 @@ class VKN_AK5C : FA_Base_Rifle_VKN
 
 //AS Val - Source: https://www.cgtrader.com/3d-models/military/gun/as-val-game-ready
 	class VKN_ASVAL : FA_Base_Rifle_VKN {
-		scope = 2;
+		scope = public;
 		author = "Luca, Author: simon1-mercuzot";
 		maxZeroing = 300;
 		displayName = "AS Val";
@@ -1082,7 +1082,7 @@ class CfgMagazines {
 	class 9Rnd_45ACP_Mag;
 
 	class VKN_10Rnd_762x54mm_Mag : 20Rnd_762x51_Mag {
-		scope = 2;
+		scope = public;
 		author = "Luca";
 		displayName = "10Rnd 7.62x54mm";
 		picture = "\FA_Weapons_VKN\data\icons\icon_svd_mag_ca.paa";
@@ -1093,7 +1093,7 @@ class CfgMagazines {
 	};
 
 	class VKN_20Rnd_9x39mm_Mag : 30Rnd_9x21_Mag {
-		scope = 2;
+		scope = public;
 		author = "Luca";
 		displayName = "20Rnd 9x39mm";
 		picture = "\FA_Weapons_VKN\data\icons\icon_vss_mag_ca.paa";
@@ -1108,7 +1108,7 @@ class CfgMagazines {
 	};
 
 	class VKN_8Rnd_12Gauge_Slugs : 2Rnd_12Gauge_Slug {
-		scope = 2;
+		scope = public;
 		author = "Luca";
 		displayName = "8Rnd 12 Gauge Slugs";
 		picture = "\FA_Weapons_VKN\data\icons\mag_slugs_ca.paa";
@@ -1120,7 +1120,7 @@ class CfgMagazines {
 	};
 
 	class VKN_8Rnd_12Gauge_Pellets : 2Rnd_12Gauge_Pellets {
-		scope = 2;
+		scope = public;
 		author = "Luca";
 		picture = "\FA_Weapons_VKN\data\icons\mag_pellets_ca.paa";
 		displayName = "8Rnd 12 Gauge Pellets";
@@ -1132,7 +1132,7 @@ class CfgMagazines {
 	};
 
 	class VKN_7Rnd_50AE_Mag : 9Rnd_45ACP_Mag {
-		scope = 2;
+		scope = public;
 		author = "Luca";
 		displayName = "7Rnd .50AE";
 		picture = "\FA_Weapons_VKN\data\icons\icon_deagle_mag_ca.paa";
@@ -1143,7 +1143,7 @@ class CfgMagazines {
 	};
 
 	class VKN_30Rnd_9x39mm_Mag : VKN_20Rnd_9x39mm_Mag {
-		scope = 2;
+		scope = public;
 		author = "Luca";
 		displayName = "30Rnd 9x39mm";
 		picture = "\FA_Weapons_VKN\data\icons\icon_asval_mag_ca.paa";

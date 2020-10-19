@@ -42,7 +42,7 @@ class Y32E_Cihuai_Vehicle: O_T_VTOL_02_vehicle_dynamicLoadout_F {
 class vkn_ifv_warrior_woodland : I_APC_tracked_03_cannon_F
 {
 	author = "Jonmo";
-	scope = 2;
+	scope = public;
 	displayName = "FV 510 Warrior (Woodland)";
 	side = 1;
 	crew = "B_crew_F";
@@ -66,7 +66,7 @@ class vkn_ifv_warrior_woodland : I_APC_tracked_03_cannon_F
 class vkn_ifv_warrior_desert : I_APC_tracked_03_cannon_F
 {
 	author = "Jonmo";
-	scope = 2;
+	scope = public;
 	displayName = "FV 510 Warrior (Desert)";
 	side = 1;
 	crew = "B_crew_F";
@@ -90,7 +90,7 @@ class vkn_ifv_warrior_desert : I_APC_tracked_03_cannon_F
 class vkn_mbt_03_w: I_MBT_03_cannon_F
 {
 	author = "Jonmo";
-	scope = 2;
+	scope = public;
 	_generalMacro = "I_MBT_03_cannon_F";
 	displayName = "Leopard 2A4 (Woodland)";
 	side = 1;
@@ -116,7 +116,7 @@ class vkn_mbt_03_w: I_MBT_03_cannon_F
 class vkn_mbt_03_d: I_MBT_03_cannon_F
 {
 	author = "Jonmo";
-	scope = 2;
+	scope = public;
 	_generalMacro = "I_MBT_03_cannon_F";
 	displayName = "Leopard 2A4 (Desert)";
 	side = 1;
@@ -142,7 +142,7 @@ class vkn_mbt_03_d: I_MBT_03_cannon_F
 	class vkn_mbt_03_wi: I_MBT_03_cannon_F
 {
 	author = "Jonmo";
-	scope = 2;
+	scope = public;
 	_generalMacro = "I_MBT_03_cannon_F";
 	displayName = "Leopard 2A4 (Winter)";
 	side = 1;

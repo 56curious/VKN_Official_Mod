@@ -54,7 +54,7 @@ class CfgVehicles
 // Hunter //
   class B_MRAP_Black_F: B_MRAP_01_F
  {
-  scope = 2;
+  scope = public;
   faction = "Hunter_Black";
   displayName = "Hunter Unarmed (Black)";
   hiddenSelections[] = {"Camo1","Camo2"};
@@ -64,7 +64,7 @@ class CfgVehicles
  };
    class B_MRAP_Black_gmg_F: B_MRAP_01_gmg_F
  {
-  scope = 2;
+  scope = public;
   faction = "Hunter_Black";
   displayName = "Hunter GMG (Black)";
   hiddenSelections[] = {"Camo1","Camo2","Camo3"};
@@ -74,7 +74,7 @@ class CfgVehicles
  };
     class B_MRAP_Black_hmg_F: B_MRAP_01_hmg_F
  {
-  scope = 2;
+  scope = public;
   faction = "Hunter_Black";
   displayName = "Hunter HMG (Black)";
   hiddenSelections[] = {"Camo1","Camo2","Camo3"};
@@ -85,7 +85,7 @@ class CfgVehicles
 // HEMTT //
   class B_Truck_Black_transport_F: B_Truck_01_transport_F
  {
-  scope = 2;
+  scope = public;
   faction = "HEMTT_Black";
   displayName = "Transport truck (Black)";
   hiddenSelections[] = {"Camo1","Camo2","Camo3"};
@@ -96,7 +96,7 @@ class CfgVehicles
  
   class B_Truck_Black_covered_F: B_Truck_01_transport_F
  {
-  scope = 2;
+  scope = public;
   faction = "HEMTT_Black";
   displayName = "Transport truck topcover (Black)";
   hiddenSelections[] = {"Camo1","Camo2","Camo3"};
@@ -107,7 +107,7 @@ class CfgVehicles
  
   class B_Truck_Black_mover_F: B_Truck_01_mover_F
  {
-  scope = 2;
+  scope = public;
   faction = "HEMTT_Black";
   displayName = "Mover truck (Black)";
   hiddenSelections[] = {"Camo1","Camo2","Camo3"};
@@ -118,7 +118,7 @@ class CfgVehicles
  
   class B_Truck_Black_box_F: B_Truck_01_box_F
  {
-  scope = 2;
+  scope = public;
   faction = "HEMTT_Black";
   displayName = "Container truck (black)";
   hiddenSelections[] = {"Camo1","Camo2","Camo3"};
@@ -129,7 +129,7 @@ class CfgVehicles
  
   class B_Truck_Black_Repair_F: B_Truck_01_Repair_F
  {
-  scope = 2;
+  scope = public;
   faction = "HEMTT_Black";
   displayName = "Repair truck (black)";
   hiddenSelections[] = {"Camo1","Camo2","Camo3"};
@@ -140,7 +140,7 @@ class CfgVehicles
  
   class B_Truck_Black_ammo_F: B_Truck_01_ammo_F
  {
-  scope = 2;
+  scope = public;
   faction = "HEMTT_Black";
   displayName = "Ammo truck (black)";
   hiddenSelections[] = {"Camo1","Camo2","Camo3"};
@@ -151,7 +151,7 @@ class CfgVehicles
  
   class B_Truck_Black_fuel_F: B_Truck_01_fuel_F
  {
-  scope = 2;
+  scope = public;
   faction = "HEMTT_Black";
   displayName = "Fuel truck (black)";
   hiddenSelections[] = {"Camo1","Camo2","Camo3"};
@@ -162,7 +162,7 @@ class CfgVehicles
  
   class B_Truck_Black_medical_F: B_Truck_01_medical_F
  {
-  scope = 2;
+  scope = public;
   faction = "HEMTT_Black";
   displayName = "Medical truck (black)";
   hiddenSelections[] = {"Camo1","Camo2","Camo3"};

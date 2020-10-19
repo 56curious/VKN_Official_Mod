@@ -1,6 +1,6 @@
 class O_Abu_Gunner_Bakr_01 : LOP_ISTS_OPF_Infantry_Rifleman_OCimport_02 {
     author = "Curious";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Gunner";
     side = 0;
@@ -38,7 +38,7 @@ class O_Abu_Gunner_Bakr_01 : LOP_ISTS_OPF_Infantry_Rifleman_OCimport_02 {
 
 class O_Abu_Gunner_Light_Bakr_01 : O_Abu_Gunner_Bakr_01 {
     author = "Curious";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Gunner (Light)";
     side = 0;
@@ -76,7 +76,7 @@ class O_Abu_Gunner_Light_Bakr_01 : O_Abu_Gunner_Bakr_01 {
 
 class O_Abu_Bomber_Bakr_01 : LOP_AM_OPF_Infantry_Engineer_OCimport_02 {
     author = "Curious";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Explosive Engineer";
     side = 0;
@@ -116,7 +116,7 @@ class O_Abu_Bomber_Bakr_01 : LOP_AM_OPF_Infantry_Engineer_OCimport_02 {
 
 class O_Abu_Machine_Gunner_Light_Bakr_01 : LOP_AM_OPF_Infantry_AR_OCimport_02 {
     author = "Curious";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Machine Gunner (Light)";
     side = 0;
@@ -156,7 +156,7 @@ class O_Abu_Machine_Gunner_Light_Bakr_01 : LOP_AM_OPF_Infantry_AR_OCimport_02 {
 
 class O_Abu_Marksman_Bakr_01 : LOP_AM_OPF_Infantry_Marksman_OCimport_02 {
     author = "Curious";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Marksman";
     side = 0;
@@ -194,7 +194,7 @@ class O_Abu_Marksman_Bakr_01 : LOP_AM_OPF_Infantry_Marksman_OCimport_02 {
 
 class O_Abu_Bonesetter_Bakr_01 : LOP_AM_OPF_Infantry_Corpsman_OCimport_02 {
     author = "Curious";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Bonesetter";
     side = 0;
@@ -234,7 +234,7 @@ class O_Abu_Bonesetter_Bakr_01 : LOP_AM_OPF_Infantry_Corpsman_OCimport_02 {
 
 class O_Abu_Undercover_Bakr_01 : O_Abu_Gunner_Light_Bakr_01 {
     author = "Curious";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Undercover";
     side = 0;
@@ -272,7 +272,7 @@ class O_Abu_Undercover_Bakr_01 : O_Abu_Gunner_Light_Bakr_01 {
 
 class O_Abu_Undercover_Bakr_02 : O_Abu_Undercover_Bakr_01 {
     author = "Curious";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Undercover";
     side = 0;
@@ -310,7 +310,7 @@ class O_Abu_Undercover_Bakr_02 : O_Abu_Undercover_Bakr_01 {
 
 class O_Abu_Undercover_Bakr_03 : O_Abu_Undercover_Bakr_01 {
     author = "Curious";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Undercover";
     side = 0;
@@ -348,7 +348,7 @@ class O_Abu_Undercover_Bakr_03 : O_Abu_Undercover_Bakr_01 {
 
 class O_Abu_Undercover_Bakr_04 : O_Abu_Undercover_Bakr_01 {
     author = "Curious";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Undercover";
     side = 0;
@@ -386,7 +386,7 @@ class O_Abu_Undercover_Bakr_04 : O_Abu_Undercover_Bakr_01 {
 
 class O_Abu_Offroader_Armed_Bakr_01 : I_C_Offroad_02_LMG_F_OCimport_02 {
     author = "Curious";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Offroader (Armed)";
     side = 0;
@@ -417,7 +417,7 @@ class O_Abu_Offroader_Armed_Bakr_01 : I_C_Offroad_02_LMG_F_OCimport_02 {
 
 class O_Abu_Van_Bakr_01 : I_G_Van_02_vehicle_F_OCimport_02 {
     author = "Curious";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Van";
     side = 0;
@@ -450,7 +450,7 @@ class O_Abu_Van_Bakr_01 : I_G_Van_02_vehicle_F_OCimport_02 {
 
 class O_Abu_Machine_Gunner_Bakr_01 : O_Abu_Machine_Gunner_Light_Bakr_01 {
     author = "Curious";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Machine Gunner";
     side = 0;
@@ -490,7 +490,7 @@ class O_Abu_Machine_Gunner_Bakr_01 : O_Abu_Machine_Gunner_Light_Bakr_01 {
 
 class O_Abu_Gunner_Bakr_02 : O_Abu_Gunner_Bakr_01 {
     author = "Curious";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Gunner";
     side = 0;
@@ -528,7 +528,7 @@ class O_Abu_Gunner_Bakr_02 : O_Abu_Gunner_Bakr_01 {
 
 class O_Abu_Gunner_Bakr_03 : O_Abu_Gunner_Bakr_01 {
     author = "Curious";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Gunner";
     side = 0;

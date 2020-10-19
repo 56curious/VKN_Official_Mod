@@ -1,6 +1,6 @@
 class O_CHArmy_Commander_WDL_01 : LOP_ChDKZ_Infantry_Commander_OCimport_02 {
     author = "Theodore";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Commander";
     side = 0;
@@ -38,7 +38,7 @@ class O_CHArmy_Commander_WDL_01 : LOP_ChDKZ_Infantry_Commander_OCimport_02 {
 
 class O_CHArmy_Rifleman_WDL_01 : O_CHArmy_Commander_WDL_01 {
     author = "Theodore";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Rifleman";
     side = 0;
@@ -78,7 +78,7 @@ class O_CHArmy_Rifleman_WDL_01 : O_CHArmy_Commander_WDL_01 {
 
 class O_CHArmy_Advanced_Rifleman_WDL_01 : O_CHArmy_Rifleman_WDL_01 {
     author = "Theodore";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Advanced Rifleman";
     side = 0;
@@ -118,7 +118,7 @@ class O_CHArmy_Advanced_Rifleman_WDL_01 : O_CHArmy_Rifleman_WDL_01 {
 
 class O_CHArmy_Autorifleman_WDL_01 : O_CHArmy_Advanced_Rifleman_WDL_01 {
     author = "Theodore";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Autorifleman";
     side = 0;
@@ -158,7 +158,7 @@ class O_CHArmy_Autorifleman_WDL_01 : O_CHArmy_Advanced_Rifleman_WDL_01 {
 
 class O_CHArmy_Marksman_WDL_01 : O_CHArmy_Autorifleman_WDL_01 {
     author = "Theodore";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Marksman";
     side = 0;
@@ -196,7 +196,7 @@ class O_CHArmy_Marksman_WDL_01 : O_CHArmy_Autorifleman_WDL_01 {
 
 class O_CHArmy_Rifleman_Light_AT_WDL_01 : O_CHArmy_Rifleman_WDL_01 {
     author = "Theodore";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Rifleman (Light AT)";
     side = 0;
@@ -236,7 +236,7 @@ class O_CHArmy_Rifleman_Light_AT_WDL_01 : O_CHArmy_Rifleman_WDL_01 {
 
 class O_CHArmy_Rifleman_Heavy_AT_WDL_01 : O_CHArmy_Rifleman_Light_AT_WDL_01 {
     author = "Theodore";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Rifleman (Heavy AT)";
     side = 0;
@@ -276,7 +276,7 @@ class O_CHArmy_Rifleman_Heavy_AT_WDL_01 : O_CHArmy_Rifleman_Light_AT_WDL_01 {
 
 class O_CHArmy_Medic_WDL_01 : O_CHArmy_Rifleman_WDL_01 {
     author = "Theodore";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Medic";
     side = 0;
