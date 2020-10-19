@@ -18,6 +18,10 @@ class CfgPatches {
     };
 };
 
+#define private 0       // Hidden to all
+#define protected 1     // Can use but still hidden
+#define public 2        // Visible to all
+
 class UniformSlotInfo
 {
 	slotType=0;
@@ -575,7 +579,7 @@ class cfgWeapons {
 			};
 		};
 	};
-	
+
 	class VKN_Helmet_M98: rhsusf_opscore_cover
     {
         scope = public;
@@ -600,7 +604,7 @@ class VKN_Helmet_ranger: rhsusf_opscore_cover
         displayName = "[VKN] FAST Ballistic Ranger (Headset)";
         hiddenSelectionsTextures[] = {"\VKN_Gear\data\headgear\maritime_ranger.paa","\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\data\comtac_fg_co.paa","","","\VKN_Gear\data\headgear\ranger_cover.paa",""};
     };
-    
+
 class VKN_Helmet_od: rhsusf_opscore_cover
     {
         scope = public;
@@ -677,4 +681,3 @@ class CfgGlasses {
 		hiddenSelectionsTextures[]={"\VKN_Gear\data\Facewear\VKN_shemagh_blk.paa","rhsusf\addons\rhsusf_infantry2\gear\head\goggles\data\dark_ca.paa","rhsusf\addons\rhsusf_infantry2\gear\head\goggles\data\oakleysblk_co.paa"};
 	};
 };
-
