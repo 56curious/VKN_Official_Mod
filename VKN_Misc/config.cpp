@@ -47,6 +47,7 @@ class rscProgress;
 class iGUIBack;
 class rscStructuredText;
 class rscCheckbox;
+class rscFrame;
 
 
 
@@ -393,7 +394,6 @@ class CfgWeapons {
 // Need to switch mags UI pos on primary weapon as its the wrong way round
 //Adjust opacity on logo
 //Make repack mag button same style as exit
-//switch ground and crate pos
 //fix missing text on items
 
 
@@ -439,7 +439,6 @@ class RscStandardDisplay;
 class RscControlsGroup;
 class RscPictureKeepAspect;
 class RscVignette;
-class rscFrame;
 
 //Full screen loading
 //display change
