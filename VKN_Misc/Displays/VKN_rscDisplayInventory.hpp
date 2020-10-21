@@ -959,12 +959,12 @@ class RepackMags: RscButton
 {
 	idc = 1600;
 
-	text = ""; //--- ToDo: Localize;
+	text = "Repack Magazines"; //--- ToDo: Localize;
 	x = 0.778507 * safezoneW + safezoneX;
 	y = 0.225 * safezoneH + safezoneY;
 	w = 0.0773631 * safezoneW;
 	h = 0.033 * safezoneH;
-
+	onLoad = "ctrlSetText [1600, 'Repack Magazines'];";
 	action = "player call VKN_fnc_ammoRepack;";
 };
 class SoldierOutline: RscPicture
