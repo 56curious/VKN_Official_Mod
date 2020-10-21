@@ -45,7 +45,9 @@ class CfgFunctions {
 
       class selectRandomIndex{};
 
-      class formatChange{};
+      //class formatChange{};
+
+      class ammoRepack{};
 
       class missionTemplateTool{};
 
