@@ -31,13 +31,10 @@ _playerInv = itemsWithMagazines _unit;
       // remove all
       _unit removeMagazines _item;
 
-      systemChat str _magazineSize;
-
       // Add full magazines back to player
       for "_i" from 1 to floor (_magazineSize / _magazineSizeMax) do
       {
           _unit addMagazine [_item, _magazineSizeMax];
-          systemChat "Added Mag";
       };
       // Add last non full magazine
       if ((_magazineSize % _magazineSizeMax) > 0) then {
@@ -45,5 +42,4 @@ _playerInv = itemsWithMagazines _unit;
       };
       systemChat "Ammo Repacked";
   };
-sleep 1;
 } forEach _AllMags;
