@@ -1,5 +1,5 @@
 ////////////////////////////////////////////////////////
-// GUI EDITOR OUTPUT START (by Curious, v1.063, #Vaciky)
+// GUI EDITOR OUTPUT START (by Curious, v1.063, #Xiwode)
 ////////////////////////////////////////////////////////
 
 class CA_ContainerBackground: RscText
@@ -30,13 +30,12 @@ class TitleBackground: RscText
 	y = 0.06 * safezoneH + safezoneY;
 	w = 0.221774 * safezoneW;
 	h = 0.022 * safezoneH;
-	colorBackground[] = {0.03,0.51,1,0.9};
+	colorBackground[] = {0.0739806,0.406373,1,0.9};
 };
 class PlayersName: RscText
 {
 	idc = 111;
 
-	text = "Player name:"; //--- ToDo: Localize;
 	x = 0.0100336 * safezoneW + safezoneX;
 	y = 0.06 * safezoneH + safezoneY;
 	w = 0.221774 * safezoneW;
@@ -417,7 +416,7 @@ class GroundContainer: RscListBox
 	w = 0.242404 * safezoneW;
 	h = 0.737 * safezoneH;
 	colorBackground[] = {0,0,0,0};
-	sizeEx = 0.8 * 			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * GUI_GRID_H * GUI_GRID_H * GUI_GRID_H * GUI_GRID_H * GUI_GRID_H;
+
 };
 class SoldierContainer: GroundContainer
 {
@@ -428,14 +427,14 @@ class SoldierContainer: GroundContainer
 	w = 0.242404 * safezoneW;
 	h = 0.737 * safezoneH;
 	colorBackground[] = {0,0,0,0};
-	sizeEx = 0.8 * 			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * GUI_GRID_H * GUI_GRID_H * GUI_GRID_H * GUI_GRID_H * GUI_GRID_H;
+
 };
 class GroundFilter: RscCombo
 {
 	idc = 6554;
 
-	x = 0.0203486 * safezoneW + safezoneX;
-	y = 0.115 * safezoneH + safezoneY;
+	x = 0.0151911 * safezoneW + safezoneX;
+	y = 0.126 * safezoneH + safezoneY;
 	w = 0.0876782 * safezoneW;
 	h = 0.022 * safezoneH;
 };
@@ -771,7 +770,7 @@ class UniformTab: GroundTab
 	idc = 6332;
 
 	x = 0.711459 * safezoneW + safezoneX;
-	y = 0.643 * safezoneH + safezoneY;
+	y = 0.302 * safezoneH + safezoneY;
 	w = 0.0515754 * safezoneW;
 	h = 0.088 * safezoneH;
 	colorBackground[] = {1,1,1,0.5};
@@ -801,11 +800,11 @@ class UniformContainer: GroundContainer
 	idc = 633;
 
 	x = 0.778507 * safezoneW + safezoneX;
-	y = 0.39 * safezoneH + safezoneY;
+	y = 0.291 * safezoneH + safezoneY;
 	w = 0.195987 * safezoneW;
-	h = 0.341 * safezoneH;
+	h = 0.44 * safezoneH;
 	colorBackground[] = {0,0,0,0};
-	sizeEx = 0.8 * 			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * GUI_GRID_H * GUI_GRID_H * GUI_GRID_H * GUI_GRID_H * GUI_GRID_H;
+
 };
 class VestTab: UniformTab
 {
@@ -846,14 +845,14 @@ class VestContainer: UniformContainer
 	w = 0.195987 * safezoneW;
 	h = 0.44 * safezoneH;
 	colorBackground[] = {0,0,0,0};
-	sizeEx = 0.8 * 			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * GUI_GRID_H * GUI_GRID_H * GUI_GRID_H * GUI_GRID_H * GUI_GRID_H;
+
 };
 class BackpackTab: UniformTab
 {
 	idc = 6192;
 
 	x = 0.711459 * safezoneW + safezoneX;
-	y = 0.302 * safezoneH + safezoneY;
+	y = 0.643 * safezoneH + safezoneY;
 	w = 0.0515754 * safezoneW;
 	h = 0.088 * safezoneH;
 	colorBackground[] = {1,1,1,0.5};
@@ -887,7 +886,7 @@ class BackpackContainer: UniformContainer
 	w = 0.195987 * safezoneW;
 	h = 0.44 * safezoneH;
 	colorBackground[] = {0,0,0,0};
-	sizeEx = 0.8 * 			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * GUI_GRID_H * GUI_GRID_H * GUI_GRID_H * GUI_GRID_H * GUI_GRID_H;
+
 };
 class TotalLoad: GroundLoad
 {
@@ -928,7 +927,25 @@ class SoldierMarker: ContainerMarker
 	h = 0.022 * safezoneH;
 	colorBackground[] = {0,0,0,1};
 };
-class RscPicture_1231: RscPicture
+class GroundFrame: RscFrame
+{
+	idc = 1801;
+
+	x = 0.0100339 * safezoneW + safezoneX;
+	y = 0.181 * safezoneH + safezoneY;
+	w = 0.242404 * safezoneW;
+	h = 0.737 * safezoneH;
+};
+class ContainerFrame: GroundFrame
+{
+	idc = 1800;
+
+	x = 0.778507 * safezoneW + safezoneX;
+	y = 0.291 * safezoneH + safezoneY;
+	w = 0.195987 * safezoneW;
+	h = 0.44 * safezoneH;
+};
+class VikingLogo: RscPicture
 {
 	idc = 1231;
 
@@ -938,17 +955,19 @@ class RscPicture_1231: RscPicture
 	w = 0.0309452 * safezoneW;
 	h = 0.055 * safezoneH;
 };
-class RscButton_1600: RscButton
+class RepackMags: RscButton
 {
 	idc = 1600;
 
-	text = "Repack Magazines"; //--- ToDo: Localize;
+	text = ""; //--- ToDo: Localize;
 	x = 0.778507 * safezoneW + safezoneX;
 	y = 0.225 * safezoneH + safezoneY;
 	w = 0.0773631 * safezoneW;
 	h = 0.033 * safezoneH;
+
+	action = "player call VKN_fnc_ammoRepack;";
 };
-class RscPicture_1232: RscPicture
+class SoldierOutline: RscPicture
 {
 	idc = 1232;
 
@@ -958,60 +977,6 @@ class RscPicture_1232: RscPicture
 	w = 0.149569 * safezoneW;
 	h = 0.473 * safezoneH;
 	colorText[] = {0.037,0.037,0.037,1};
-};
-class RscText_1055: RscText
-{
-	idc = 6308;
-
-	x = 0.778507 * safezoneW + safezoneX;
-	y = 0.797 * safezoneH + safezoneY;
-	w = 0.195987 * safezoneW;
-	h = 0.022 * safezoneH;
-};
-class RscText_1056: RscText
-{
-	idc = 6304;
-
-	x = 0.711459 * safezoneW + safezoneX;
-	y = 0.412 * safezoneH + safezoneY;
-	w = 0.0515754 * safezoneW;
-	h = 0.011 * safezoneH;
-};
-class RscText_1057: RscText
-{
-	idc = 6304;
-
-	x = 0.711459 * safezoneW + safezoneX;
-	y = 0.577 * safezoneH + safezoneY;
-	w = 0.0515754 * safezoneW;
-	h = 0.011 * safezoneH;
-};
-class RscFrame_1800: RscFrame
-{
-	idc = 1800;
-
-	x = 0.778507 * safezoneW + safezoneX;
-	y = 0.291 * safezoneH + safezoneY;
-	w = 0.195987 * safezoneW;
-	h = 0.44 * safezoneH;
-};
-class RscFrame_1801: RscFrame
-{
-	idc = 1801;
-
-	x = 0.0100339 * safezoneW + safezoneX;
-	y = 0.181 * safezoneH + safezoneY;
-	w = 0.242404 * safezoneW;
-	h = 0.737 * safezoneH;
-};
-class RscText_1058: RscText
-{
-	idc = 6304;
-
-	x = 0.608308 * safezoneW + safezoneX;
-	y = 0.269 * safezoneH + safezoneY;
-	w = 0.0361028 * safezoneW;
-	h = 0.011 * safezoneH;
 };
 ////////////////////////////////////////////////////////
 // GUI EDITOR OUTPUT END
