@@ -144,10 +144,10 @@ class WeaponSlotsInfo;
 class CfgWeapons {
 
   class FA_Base_Rifle_VKN;
+  class FA_Base_Pistol_VKN;
+
   class VKN_MP5: FA_Base_Rifle_VKN {
     class WeaponSlotsInfo : WeaponSlotsInfo {
-        mass = 115;
-        allowedSlots[] = {901};
         class MuzzleSlot : asdg_MuzzleSlot_9MM_SMG {
             //linkProxy = "\A3\data_f\proxies\weapon_slots\MUZZLE";
             //compatibleItems[] = {};
@@ -168,8 +168,6 @@ class CfgWeapons {
 
   class VKN_VSS: FA_Base_Rifle_VKN {
     class WeaponSlotsInfo : WeaponSlotsInfo {
-        mass = 115;
-        allowedSlots[] = {901};
         class CowsSlot : asdg_OpticRail1913_long {
             //linkProxy = "\A3\data_f\proxies\weapon_slots\TOP";
             //compatibleItems[] = {};
@@ -184,8 +182,6 @@ class CfgWeapons {
   };
   class VKN_AKM: FA_Base_Rifle_VKN {
     class WeaponSlotsInfo : WeaponSlotsInfo {
-        mass = 115;
-        allowedSlots[] = {901};
         class MuzzleSlot : asdg_MuzzleSlot_762R {
             //linkProxy = "\A3\data_f\proxies\weapon_slots\MUZZLE";
             //compatibleItems[] = {};
@@ -210,8 +206,6 @@ class CfgWeapons {
   };
   class VKN_AK74M: FA_Base_Rifle_VKN {
     class WeaponSlotsInfo : WeaponSlotsInfo {
-        mass = 115;
-        allowedSlots[] = {901};
         class MuzzleSlot : asdg_MuzzleSlot_545R {
             //linkProxy = "\A3\data_f\proxies\weapon_slots\MUZZLE";
             //compatibleItems[] = {};
@@ -236,8 +230,6 @@ class CfgWeapons {
   };
   class VKN_SVD: FA_Base_Rifle_VKN {
     class WeaponSlotsInfo : WeaponSlotsInfo {
-        mass = 115;
-        allowedSlots[] = {901};
         class MuzzleSlot : asdg_MuzzleSlot_762R_SVD {
             //linkProxy = "\A3\data_f\proxies\weapon_slots\MUZZLE";
             //compatibleItems[] = {};
@@ -262,8 +254,6 @@ class CfgWeapons {
   };
   class VKN_AK5C: FA_Base_Rifle_VKN {
     class WeaponSlotsInfo : WeaponSlotsInfo {
-        mass = 115;
-        allowedSlots[] = {901};
         class MuzzleSlot : asdg_MuzzleSlot_556 {
             //linkProxy = "\A3\data_f\proxies\weapon_slots\MUZZLE";
             //compatibleItems[] = {};
@@ -288,8 +278,6 @@ class CfgWeapons {
   };
   class VKN_ASVAL: FA_Base_Rifle_VKN {
     class WeaponSlotsInfo : WeaponSlotsInfo {
-        mass = 115;
-        allowedSlots[] = {901};
         class MuzzleSlot : asdg_MuzzleSlot_556 {
             //linkProxy = "\A3\data_f\proxies\weapon_slots\MUZZLE";
             //compatibleItems[] = {};
@@ -314,8 +302,6 @@ class CfgWeapons {
   };
   class VKN_Remington870: FA_Base_Rifle_VKN {
     class WeaponSlotsInfo : WeaponSlotsInfo {
-        mass = 115;
-        allowedSlots[] = {901};
         class MuzzleSlot : asdg_MuzzleSlot_556 {
             //linkProxy = "\A3\data_f\proxies\weapon_slots\MUZZLE";
             //compatibleItems[] = {};
@@ -338,9 +324,8 @@ class CfgWeapons {
         };
     };
   };
-  class VKN_DesertEagle: FA_Base_Rifle_VKN {
-    class WeaponSlotsInfo : WeaponSlotsInfo {
-        mass = 115;
+  class VKN_DesertEagle: FA_Base_Pistol_VKN {
+    class WeaponSlotsInfo : WeaponSlotsInfo	{
         class CowsSlot : asdg_PistolOpticRail1913 {
             linkProxy = "\A3\data_f\proxies\weapon_slots\TOP";
             //compatibleItems[] = {};
@@ -353,9 +338,8 @@ class CfgWeapons {
         };
     };
   };
-  class VKN_SigP250: FA_Base_Rifle_VKN {
+  class VKN_SigP250: FA_Base_Pistol_VKN {
     class WeaponSlotsInfo : WeaponSlotsInfo {
-        mass = 115;
         class CowsSlot : asdg_PistolOpticRail1913 {
             linkProxy = "\A3\data_f\proxies\weapon_slots\TOP";
             //compatibleItems[] = {};
@@ -368,9 +352,8 @@ class CfgWeapons {
         };
     };
   };
-  class VKN_SigP226: FA_Base_Rifle_VKN {
+  class VKN_SigP226: FA_Base_Pistol_VKN {
     class WeaponSlotsInfo : WeaponSlotsInfo {
-        mass = 115;
         class CowsSlot : asdg_PistolOpticRail1913 {
             linkProxy = "\A3\data_f\proxies\weapon_slots\TOP";
             //compatibleItems[] = {};
