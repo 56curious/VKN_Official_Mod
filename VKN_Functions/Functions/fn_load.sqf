@@ -75,7 +75,7 @@ with uiNamespace do
 				round _num;
 				_pictureMap = format ["\VKN_Misc\Loading Screen\LoadingScreen%1.paa", floor _num];
 				*/
-				
+
 				_randomNumber = selectRandom [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20];
 				_pictureMap = format ["\VKN_Misc\Loading Screen\LoadingScreen%1.paa", floor _randomNumber];
 			};
@@ -468,7 +468,7 @@ with uiNamespace do
 													  _versionNr,
 													  "<img image='A3\Ui_f\data\GUI\RscCommon\RscTrafficLight\TrafficLight_ca.paa'/>"];
 
-				_ctrlDisclaimerDescription ctrlsetstructuredtext parsetext localize "STR_A3_RSCDISPLAY_LOADING_MODDEDINFO";
+				_ctrlDisclaimerDescription ctrlsetstructuredtext parsetext localize selectRandom LOADINGSCREEN_MSGS;
 				_ctrlDisclaimerDescription ctrlsettextcolor [1,1,1,1];
 				[_ctrlDisclaimerDescription,0.01] call bis_fnc_ctrlFitToTextHeight;
 				_ctrlDisclaimer ctrlshow true;
