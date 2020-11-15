@@ -159,9 +159,9 @@ class CfgVehicles {
   class B_MRAP_01_gmg_F;
   class B_MRAP_01_hmg_F;
 
-  // Hunter //
+  // Hunter
   #include "\VKN_Objects\vehicles\hunter\hunter.hpp"
-  // HEMTT configs //
+  // HEMTT configs
   #include "\VKN_Objects\vehicles\hemtt\hemtt.hpp"
 
   //#include "\VKN_Objects\Vehicles\Red\redConfig.hpp"
