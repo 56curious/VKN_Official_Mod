@@ -23,8 +23,6 @@ class CfgPatches {
 #define protected 1     // Can use but still hidden
 #define public 2        // Visible to all
 
-#include "VKN_Misc\Loading Screen\LoadingMsgs.hpp"
-
 class CfgFunctions {
 	class full_mission_load {
 		class functions {
