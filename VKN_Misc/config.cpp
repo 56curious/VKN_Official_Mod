@@ -378,8 +378,9 @@ class CfgWeapons {
 //Adjust opacity on logo
 //Make repack mag button same style as exit
 //fix missing text on items
+//See Suggestions on discord
 
-
+/*
 class RscDisplayInventory {
   class controls {
     #include "displays\VKN_rscDisplayInventory.hpp"
@@ -397,7 +398,7 @@ class VKN_Inventory {
     #include "displays\VKN_rscDisplayInventory.hpp"
   };
 };
-
+*/
 
 
 
