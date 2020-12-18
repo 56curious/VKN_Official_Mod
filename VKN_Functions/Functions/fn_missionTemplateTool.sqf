@@ -124,8 +124,8 @@ if (lbText [2102, lbCurSel 2102] == "") then {
 
 //Fixed missing indep factions not spawning.
 _side_Option_Temp = toUpper (lbText [2100, lbCurSel 2100]);
-systemChat format ["Before Switch", _side_Option_Temp];
 //get all factions in a side.
+_side_Option = "West";
 switch (_side_Option_Temp) do {
     case ("WEST"): {
       _side_Option = "West";
@@ -135,12 +135,9 @@ switch (_side_Option_Temp) do {
     };
     case ("GUER"): {
       _side_Option = "Indep";
-      systemChat _side_Option; //this is Indep
-      systemchat "Indep chosen."; // this is correct
     };
     default {};
 };
-systemChat format ["After Switch %1", _side_Option]; //this becomes any.
 
 _factions_option = lbText [2101, lbCurSel 2101];
 _squads_option = ([lbData [2102, lbCurSel 2102]] call BIS_fnc_configPath) select 5; //Only option extracted not as a string
@@ -156,7 +153,6 @@ startLoadingScreen ["Loading mission template tool... Please wait."];
 collect3DENHistory {
 
   _squad = configfile >> "CfgGroups" >> _side_Option >> _factions_option >> "Infantry" >> _squads_option;
-  systemChat format ["%1 is the squad chosen", _squad]; //this becomes a number?
 	//Check for 3DEN Enhanced, then setup those features
 	if (isclass (configfile >> "CfgPatches" >> "3denEnhanced")) then {
     set3DENMissionAttributes[["Multiplayer", "Enh_SaveLoadout", _saveLoadouts]];
