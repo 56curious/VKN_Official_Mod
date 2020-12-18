@@ -273,31 +273,29 @@ collect3DENHistory {
     _Finalgroup = createGroup _groupSide;
 
     while { _totalUnits < _total } do {
-          _nextTotal = _totalUnits + _unitCount;
-          systemChat format ["current/next/target: %1/%2/%3", _totalUnits, _nextTotal, _total];
+      _nextTotal = _totalUnits + _unitCount;
+      systemChat format ["current/next/target: %1/%2/%3", _totalUnits, _nextTotal, _total];
 
-          //Create a group with given data
-          _group = create3DENComposition [_squad, _position];
-          {
-            add3DENConnection ["sync", _x, _ZeusAttributeCuratorAddEditableObjects];
-            set3DENAttributes [[_x, "ControlMP", true]];
-            sleep 0.01;
-          } forEach _group;
-          _totalUnits = _totalUnits + _unitCount;
-      };
+      //Create a group with given data
+      _group = create3DENComposition [_squad, _position];
+      {
+        set3DENAttributes [[_x, "ControlMP", true]];
+        sleep 0.01;
+      } forEach _group;
+      _totalUnits = _totalUnits + _unitCount;
+    };
 
-      _unitSQLtype = getText (_squad >> "Unit0" >> "Vehicle");
-      _UnitSQL = _Finalgroup create3DENEntity  ["object", _unitSQLtype, _position];
-      _intDiff = _NextTotal - _total;
-      for "_i" from 1 to _intDiff do {
-        _unitID = format ["Unit%1", _i];
-        _unitType = getText (_squad >> _unitID >> "Vehicle");
-        _Unit = (group _unitSQL) create3DENEntity  ["object", _unitType, _position];
-      };
-      { set3DENAttributes [[_x, "ControlMP", true]]; } forEach _Finalgroup;
-      //to avoid loading screen lock (found during testing)
-      sleep 2;
-      };
+    _unitSQLtype = getText (_squad >> "Unit0" >> "Vehicle");
+    _UnitSQL = _Finalgroup create3DENEntity  ["object", _unitSQLtype, _position];
+    _UnitSQL set3DENAttribute ["ControlMP", true];
+    _intDiff = _NextTotal - _total;
+    for "_i" from 1 to _intDiff do {
+      _unitID = format ["Unit%1", _i];
+      _unitType = getText (_squad >> _unitID >> "Vehicle");
+      _Unit = (group _unitSQL) create3DENEntity  ["object", _unitType, _position];
+      _Unit set3DENAttribute ["ControlMP", true];
+    };
+  };
 
 
   //Headless Clients
