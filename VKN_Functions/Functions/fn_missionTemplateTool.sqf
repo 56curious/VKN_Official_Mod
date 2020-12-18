@@ -274,7 +274,7 @@ collect3DENHistory {
 
     while { _totalUnits < _total } do {
       _nextTotal = _totalUnits + _unitCount;
-      systemChat format ["current/next/target: %1/%2/%3", _totalUnits, _nextTotal, _total];
+      //systemChat format ["current/next/target: %1/%2/%3", _totalUnits, _nextTotal, _total];
 
       //Create a group with given data
       _group = create3DENComposition [_squad, _position];
