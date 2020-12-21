@@ -1,5 +1,5 @@
 class VKN_Template_Tool_Info {
-  idd = -1;
+  idd = 348569;
 
   class controls {
 

@@ -1,5 +1,5 @@
 class VKN_Template_Tool_Alert {
-  idd = -1;
+  idd = 348570;
 
   class controls {
 
