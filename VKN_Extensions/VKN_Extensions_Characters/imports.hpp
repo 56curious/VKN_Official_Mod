@@ -1765,3 +1765,347 @@ class rhsusf_m1a1aimwd_usarmy_OCimport_02 : rhsusf_m1a1aimwd_usarmy_OCimport_01 
         class MainTurret;
     };
 };
+
+//////////
+////////// VWF-ION
+//////////
+class rhssaf_army_o_m10_para_rifleman_m21;
+    class rhssaf_army_o_m10_para_rifleman_m21_OCimport_01 : rhssaf_army_o_m10_para_rifleman_m21 { scope = private; class EventHandlers; };
+    class rhssaf_army_o_m10_para_rifleman_m21_OCimport_02 : rhssaf_army_o_m10_para_rifleman_m21_OCimport_01 { class EventHandlers; };
+
+    class rhssaf_army_o_m10_para_rifleman_g36;
+    class rhssaf_army_o_m10_para_rifleman_g36_OCimport_01 : rhssaf_army_o_m10_para_rifleman_g36 { scope = private; class EventHandlers; };
+    class rhssaf_army_o_m10_para_rifleman_g36_OCimport_02 : rhssaf_army_o_m10_para_rifleman_g36_OCimport_01 { class EventHandlers; };
+
+    class rhssaf_army_o_m10_para_rifleman_hk416;
+    class rhssaf_army_o_m10_para_rifleman_hk416_OCimport_01 : rhssaf_army_o_m10_para_rifleman_hk416 { scope = private; class EventHandlers; };
+    class rhssaf_army_o_m10_para_rifleman_hk416_OCimport_02 : rhssaf_army_o_m10_para_rifleman_hk416_OCimport_01 { class EventHandlers; };
+
+    class rhssaf_army_o_m10_para_rifleman_ammo;
+    class rhssaf_army_o_m10_para_rifleman_ammo_OCimport_01 : rhssaf_army_o_m10_para_rifleman_ammo { scope = private; class EventHandlers; };
+    class rhssaf_army_o_m10_para_rifleman_ammo_OCimport_02 : rhssaf_army_o_m10_para_rifleman_ammo_OCimport_01 { class EventHandlers; };
+
+    class rhssaf_army_o_m10_para_gl_ag36;
+    class rhssaf_army_o_m10_para_gl_ag36_OCimport_01 : rhssaf_army_o_m10_para_gl_ag36 { scope = private; class EventHandlers; };
+    class rhssaf_army_o_m10_para_gl_ag36_OCimport_02 : rhssaf_army_o_m10_para_gl_ag36_OCimport_01 { class EventHandlers; };
+
+    class rhssaf_army_o_m10_para_mgun_minimi;
+    class rhssaf_army_o_m10_para_mgun_minimi_OCimport_01 : rhssaf_army_o_m10_para_mgun_minimi { scope = private; class EventHandlers; };
+    class rhssaf_army_o_m10_para_mgun_minimi_OCimport_02 : rhssaf_army_o_m10_para_mgun_minimi_OCimport_01 { class EventHandlers; };
+
+    class rhssaf_army_o_m10_para_asst_mgun_minimi;
+    class rhssaf_army_o_m10_para_asst_mgun_minimi_OCimport_01 : rhssaf_army_o_m10_para_asst_mgun_minimi { scope = private; class EventHandlers; };
+    class rhssaf_army_o_m10_para_asst_mgun_minimi_OCimport_02 : rhssaf_army_o_m10_para_asst_mgun_minimi_OCimport_01 { class EventHandlers; };
+
+    class rhssaf_army_o_m10_para_sq_lead;
+    class rhssaf_army_o_m10_para_sq_lead_OCimport_01 : rhssaf_army_o_m10_para_sq_lead { scope = private; class EventHandlers; };
+    class rhssaf_army_o_m10_para_sq_lead_OCimport_02 : rhssaf_army_o_m10_para_sq_lead_OCimport_01 { class EventHandlers; };
+
+    class rhssaf_army_o_m10_para_ft_lead;
+    class rhssaf_army_o_m10_para_ft_lead_OCimport_01 : rhssaf_army_o_m10_para_ft_lead { scope = private; class EventHandlers; };
+    class rhssaf_army_o_m10_para_ft_lead_OCimport_02 : rhssaf_army_o_m10_para_ft_lead_OCimport_01 { class EventHandlers; };
+
+    class rhssaf_army_o_m10_para_sniper_scarH;
+    class rhssaf_army_o_m10_para_sniper_scarH_OCimport_01 : rhssaf_army_o_m10_para_sniper_scarH { scope = private; class EventHandlers; };
+    class rhssaf_army_o_m10_para_sniper_scarH_OCimport_02 : rhssaf_army_o_m10_para_sniper_scarH_OCimport_01 { class EventHandlers; };
+
+    class rhssaf_army_o_m10_para_rifleman_at;
+    class rhssaf_army_o_m10_para_rifleman_at_OCimport_01 : rhssaf_army_o_m10_para_rifleman_at { scope = private; class EventHandlers; };
+    class rhssaf_army_o_m10_para_rifleman_at_OCimport_02 : rhssaf_army_o_m10_para_rifleman_at_OCimport_01 { class EventHandlers; };
+
+    class rhssaf_army_o_m10_para_spec_at;
+    class rhssaf_army_o_m10_para_spec_at_OCimport_01 : rhssaf_army_o_m10_para_spec_at { scope = private; class EventHandlers; };
+    class rhssaf_army_o_m10_para_spec_at_OCimport_02 : rhssaf_army_o_m10_para_spec_at_OCimport_01 { class EventHandlers; };
+
+    class rhssaf_army_o_m10_para_spec_aa;
+    class rhssaf_army_o_m10_para_spec_aa_OCimport_01 : rhssaf_army_o_m10_para_spec_aa { scope = private; class EventHandlers; };
+    class rhssaf_army_o_m10_para_spec_aa_OCimport_02 : rhssaf_army_o_m10_para_spec_aa_OCimport_01 { class EventHandlers; };
+
+    class rhssaf_army_o_m10_para_medic;
+    class rhssaf_army_o_m10_para_medic_OCimport_01 : rhssaf_army_o_m10_para_medic { scope = private; class EventHandlers; };
+    class rhssaf_army_o_m10_para_medic_OCimport_02 : rhssaf_army_o_m10_para_medic_OCimport_01 { class EventHandlers; };
+
+    class rhssaf_army_o_m10_para_engineer;
+    class rhssaf_army_o_m10_para_engineer_OCimport_01 : rhssaf_army_o_m10_para_engineer { scope = private; class EventHandlers; };
+    class rhssaf_army_o_m10_para_engineer_OCimport_02 : rhssaf_army_o_m10_para_engineer_OCimport_01 { class EventHandlers; };
+
+    class rhssaf_army_o_m10_para_crew;
+    class rhssaf_army_o_m10_para_crew_OCimport_01 : rhssaf_army_o_m10_para_crew { scope = private; class EventHandlers; };
+    class rhssaf_army_o_m10_para_crew_OCimport_02 : rhssaf_army_o_m10_para_crew_OCimport_01 { class EventHandlers; };
+
+    class rhssaf_army_o_m10_para_officer;
+    class rhssaf_army_o_m10_para_officer_OCimport_01 : rhssaf_army_o_m10_para_officer { scope = private; class EventHandlers; };
+    class rhssaf_army_o_m10_para_officer_OCimport_02 : rhssaf_army_o_m10_para_officer_OCimport_01 { class EventHandlers; };
+
+    class LOP_IRAN_ZSU234;
+    class LOP_IRAN_ZSU234_OCimport_01 : LOP_IRAN_ZSU234 { scope = private; class EventHandlers; class Turrets; };
+    class LOP_IRAN_ZSU234_OCimport_02 : LOP_IRAN_ZSU234_OCimport_01 {
+        class EventHandlers;
+        class Turrets : Turrets {
+            class MainTurret;
+        };
+    };
+
+    class LOP_IRAN_BTR60;
+    class LOP_IRAN_BTR60_OCimport_01 : LOP_IRAN_BTR60 { scope = private; class EventHandlers; class Turrets; };
+    class LOP_IRAN_BTR60_OCimport_02 : LOP_IRAN_BTR60_OCimport_01 {
+        class EventHandlers;
+        class Turrets : Turrets {
+            class MainTurret;
+            class CommanderOptics;
+            class CargoTurret_01;
+            class CargoTurret_02;
+            class CargoTurret_03;
+            class CargoTurret_04;
+            class CargoTurret_05;
+            class CargoTurret_06;
+            class CargoTurret_07;
+            class CargoTurret_08;
+            class Commander_Out;
+        };
+    };
+
+    class LOP_IRAN_BTR70;
+    class LOP_IRAN_BTR70_OCimport_01 : LOP_IRAN_BTR70 { scope = private; class EventHandlers; class Turrets; };
+    class LOP_IRAN_BTR70_OCimport_02 : LOP_IRAN_BTR70_OCimport_01 {
+        class EventHandlers;
+        class Turrets : Turrets {
+            class MainTurret;
+            class CommanderOptics;
+            class CargoTurret_01;
+            class CargoTurret_02;
+            class CargoTurret_03;
+            class CargoTurret_04;
+            class CargoTurret_05;
+            class CargoTurret_06;
+            class CargoTurret_07;
+            class CargoTurret_08;
+            class Commander_Out;
+        };
+    };
+
+    class LOP_IRAN_BTR80;
+    class LOP_IRAN_BTR80_OCimport_01 : LOP_IRAN_BTR80 { scope = private; class EventHandlers; class Turrets; };
+    class LOP_IRAN_BTR80_OCimport_02 : LOP_IRAN_BTR80_OCimport_01 {
+        class EventHandlers;
+        class Turrets : Turrets {
+            class MainTurret;
+            class CommanderOptics;
+            class CargoTurret_01;
+            class CargoTurret_02;
+            class CargoTurret_03;
+            class CargoTurret_04;
+            class CargoTurret_05;
+            class CargoTurret_06;
+            class CargoTurret_07;
+            class CargoTurret_08;
+            class CargoTurret_09;
+            class Commander_Out;
+        };
+    };
+
+    class LOP_IRAN_Mi8MT_Cargo;
+    class LOP_IRAN_Mi8MT_Cargo_OCimport_01 : LOP_IRAN_Mi8MT_Cargo { scope = private; class EventHandlers; class Turrets; };
+    class LOP_IRAN_Mi8MT_Cargo_OCimport_02 : LOP_IRAN_Mi8MT_Cargo_OCimport_01 {
+        class EventHandlers;
+        class Turrets : Turrets {
+            class CopilotTurret;
+            class CargoTurret_01;
+            class CargoTurret_02;
+            class CargoTurret_03;
+        };
+    };
+
+    class rhssaf_airforce_o_pilot_transport_heli;
+    class rhssaf_airforce_o_pilot_transport_heli_OCimport_01 : rhssaf_airforce_o_pilot_transport_heli { scope = private; class EventHandlers; };
+    class rhssaf_airforce_o_pilot_transport_heli_OCimport_02 : rhssaf_airforce_o_pilot_transport_heli_OCimport_01 { class EventHandlers; };
+
+    class LOP_IRAN_Mi8MTV3_FAB;
+    class LOP_IRAN_Mi8MTV3_FAB_OCimport_01 : LOP_IRAN_Mi8MTV3_FAB { scope = private; class EventHandlers; class Turrets; };
+    class LOP_IRAN_Mi8MTV3_FAB_OCimport_02 : LOP_IRAN_Mi8MTV3_FAB_OCimport_01 {
+        class EventHandlers;
+        class Turrets : Turrets {
+            class CopilotTurret;
+            class SideTurret;
+            class BackTurret;
+            class FrontTurret;
+        };
+    };
+
+    class LOP_IRAN_Mi8MTV3_UPK23;
+    class LOP_IRAN_Mi8MTV3_UPK23_OCimport_01 : LOP_IRAN_Mi8MTV3_UPK23 { scope = private; class EventHandlers; class Turrets; };
+    class LOP_IRAN_Mi8MTV3_UPK23_OCimport_02 : LOP_IRAN_Mi8MTV3_UPK23_OCimport_01 {
+        class EventHandlers;
+        class Turrets : Turrets {
+            class CopilotTurret;
+            class SideTurret;
+            class BackTurret;
+            class FrontTurret;
+        };
+    };
+
+    class rhssaf_army_o_m998_olive_2dr_halftop;
+    class rhssaf_army_o_m998_olive_2dr_halftop_OCimport_01 : rhssaf_army_o_m998_olive_2dr_halftop { scope = private; class EventHandlers; class Turrets; };
+    class rhssaf_army_o_m998_olive_2dr_halftop_OCimport_02 : rhssaf_army_o_m998_olive_2dr_halftop_OCimport_01 {
+        class EventHandlers;
+        class Turrets : Turrets {
+            class CargoTurret_01;
+            class CargoTurret_02;
+            class CargoTurret_03;
+        };
+    };
+
+    class rhssaf_army_o_m998_olive_2dr_fulltop;
+    class rhssaf_army_o_m998_olive_2dr_fulltop_OCimport_01 : rhssaf_army_o_m998_olive_2dr_fulltop { scope = private; class EventHandlers; class Turrets; };
+    class rhssaf_army_o_m998_olive_2dr_fulltop_OCimport_02 : rhssaf_army_o_m998_olive_2dr_fulltop_OCimport_01 {
+        class EventHandlers;
+        class Turrets : Turrets {
+            class CargoTurret_01;
+            class CargoTurret_02;
+        };
+    };
+
+    class rhssaf_army_o_m1025_olive;
+    class rhssaf_army_o_m1025_olive_OCimport_01 : rhssaf_army_o_m1025_olive { scope = private; class EventHandlers; class Turrets; };
+    class rhssaf_army_o_m1025_olive_OCimport_02 : rhssaf_army_o_m1025_olive_OCimport_01 {
+        class EventHandlers;
+        class Turrets : Turrets {
+            class CargoTurret_01;
+            class CargoTurret_02;
+            class CargoTurret_03;
+        };
+    };
+
+    class rhssaf_army_o_m1025_olive_m2;
+    class rhssaf_army_o_m1025_olive_m2_OCimport_01 : rhssaf_army_o_m1025_olive_m2 { scope = private; class EventHandlers; class Turrets; };
+    class rhssaf_army_o_m1025_olive_m2_OCimport_02 : rhssaf_army_o_m1025_olive_m2_OCimport_01 {
+        class EventHandlers;
+        class Turrets : Turrets {
+            class M2_Turret;
+            class CargoTurret_01;
+            class CargoTurret_02;
+            class CargoTurret_03;
+        };
+    };
+
+    class rhssaf_army_o_m1151_olive;
+    class rhssaf_army_o_m1151_olive_OCimport_01 : rhssaf_army_o_m1151_olive { scope = private; class EventHandlers; class Turrets; };
+    class rhssaf_army_o_m1151_olive_OCimport_02 : rhssaf_army_o_m1151_olive_OCimport_01 {
+        class EventHandlers;
+        class Turrets : Turrets {
+            class CoDriverTurret;
+        };
+    };
+
+    class rhssaf_army_o_m1151_olive_pkm;
+    class rhssaf_army_o_m1151_olive_pkm_OCimport_01 : rhssaf_army_o_m1151_olive_pkm { scope = private; class EventHandlers; class Turrets; };
+    class rhssaf_army_o_m1151_olive_pkm_OCimport_02 : rhssaf_army_o_m1151_olive_pkm_OCimport_01 {
+        class EventHandlers;
+        class Turrets : Turrets {
+            class GPK_Turret;
+            class CoDriverTurret;
+        };
+    };
+
+    class rhssaf_army_o_m1152_olive;
+    class rhssaf_army_o_m1152_olive_OCimport_01 : rhssaf_army_o_m1152_olive { scope = private; class EventHandlers; class Turrets; };
+    class rhssaf_army_o_m1152_olive_OCimport_02 : rhssaf_army_o_m1152_olive_OCimport_01 {
+        class EventHandlers;
+        class Turrets : Turrets {
+            class CoDriverTurret;
+        };
+    };
+
+    class rhssaf_army_o_m1152_rsv_olive;
+    class rhssaf_army_o_m1152_rsv_olive_OCimport_01 : rhssaf_army_o_m1152_rsv_olive { scope = private; class EventHandlers; class Turrets; };
+    class rhssaf_army_o_m1152_rsv_olive_OCimport_02 : rhssaf_army_o_m1152_rsv_olive_OCimport_01 {
+        class EventHandlers;
+        class Turrets : Turrets {
+            class CoDriverTurret;
+        };
+    };
+
+    class rhssaf_army_o_m1152_tcv_olive;
+    class rhssaf_army_o_m1152_tcv_olive_OCimport_01 : rhssaf_army_o_m1152_tcv_olive { scope = private; class EventHandlers; class Turrets; };
+    class rhssaf_army_o_m1152_tcv_olive_OCimport_02 : rhssaf_army_o_m1152_tcv_olive_OCimport_01 {
+        class EventHandlers;
+        class Turrets : Turrets {
+            class CoDriverTurret;
+            class CargoTurret_01;
+            class CargoTurret_02;
+        };
+    };
+
+    class rhssaf_army_o_t72s;
+    class rhssaf_army_o_t72s_OCimport_01 : rhssaf_army_o_t72s { scope = private; class EventHandlers; class Turrets; };
+    class rhssaf_army_o_t72s_OCimport_02 : rhssaf_army_o_t72s_OCimport_01 {
+        class EventHandlers;
+        class Turrets : Turrets {
+            class MainTurret;
+        };
+    };
+
+    class rhssaf_army_o_ural;
+    class rhssaf_army_o_ural_OCimport_01 : rhssaf_army_o_ural { scope = private; class EventHandlers; class Turrets; };
+    class rhssaf_army_o_ural_OCimport_02 : rhssaf_army_o_ural_OCimport_01 {
+        class EventHandlers;
+        class Turrets : Turrets {
+            class CargoTurret_01;
+            class CargoTurret_02;
+        };
+    };
+
+    class rhssaf_army_o_ural_open;
+    class rhssaf_army_o_ural_open_OCimport_01 : rhssaf_army_o_ural_open { scope = private; class EventHandlers; class Turrets; };
+    class rhssaf_army_o_ural_open_OCimport_02 : rhssaf_army_o_ural_open_OCimport_01 {
+        class EventHandlers;
+        class Turrets : Turrets {
+            class CargoTurret_01;
+            class CargoTurret_02;
+            class CargoTurret_03;
+            class CargoTurret_04;
+        };
+    };
+
+    class rhssaf_army_o_ural_fuel;
+    class rhssaf_army_o_ural_fuel_OCimport_01 : rhssaf_army_o_ural_fuel { scope = private; class EventHandlers; };
+    class rhssaf_army_o_ural_fuel_OCimport_02 : rhssaf_army_o_ural_fuel_OCimport_01 { scope = private; class EventHandlers; };
+
+    class rhssaf_army_o_ags30_tripod;
+    class rhssaf_army_o_ags30_tripod_OCimport_01 : rhssaf_army_o_ags30_tripod { scope = private; class EventHandlers; class Turrets; };
+    class rhssaf_army_o_ags30_tripod_OCimport_02 : rhssaf_army_o_ags30_tripod_OCimport_01 {
+        class EventHandlers;
+        class Turrets : Turrets {
+            class MainTurret;
+        };
+    };
+
+    class rhssaf_army_o_metis_9k115;
+    class rhssaf_army_o_metis_9k115_OCimport_01 : rhssaf_army_o_metis_9k115 { scope = private; class EventHandlers; class Turrets; };
+    class rhssaf_army_o_metis_9k115_OCimport_02 : rhssaf_army_o_metis_9k115_OCimport_01 {
+        class EventHandlers;
+        class Turrets : Turrets {
+            class MainTurret;
+        };
+    };
+
+    class rhssaf_army_o_m2staticmg_minitripod;
+    class rhssaf_army_o_m2staticmg_minitripod_OCimport_01 : rhssaf_army_o_m2staticmg_minitripod { scope = private; class EventHandlers; class Turrets; };
+    class rhssaf_army_o_m2staticmg_minitripod_OCimport_02 : rhssaf_army_o_m2staticmg_minitripod_OCimport_01 {
+        class EventHandlers;
+        class Turrets : Turrets {
+            class MainTurret;
+        };
+    };
+
+    class rhssaf_airforce_o_l_18_101;
+    class rhssaf_airforce_o_l_18_101_OCimport_01 : rhssaf_airforce_o_l_18_101 { scope = private; class EventHandlers; };
+    class rhssaf_airforce_o_l_18_101_OCimport_02 : rhssaf_airforce_o_l_18_101_OCimport_01 { scope = private; class EventHandlers; };
+
+    class rhssaf_airforce_o_l_18;
+    class rhssaf_airforce_o_l_18_OCimport_01 : rhssaf_airforce_o_l_18 { scope = private; class EventHandlers; };
+    class rhssaf_airforce_o_l_18_OCimport_02 : rhssaf_airforce_o_l_18_OCimport_01 { scope = private; class EventHandlers; };
+
+    class rhssaf_airforce_o_pilot_mig29;
+    class rhssaf_airforce_o_pilot_mig29_OCimport_01 : rhssaf_airforce_o_pilot_mig29 { scope = private; class EventHandlers; };
+    class rhssaf_airforce_o_pilot_mig29_OCimport_02 : rhssaf_airforce_o_pilot_mig29_OCimport_01 { class EventHandlers; };
