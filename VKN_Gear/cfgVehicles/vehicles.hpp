@@ -90,7 +90,7 @@ class vkn_ifv_warrior_desert : I_APC_tracked_03_cannon_F
 class vkn_ifv_warrior_winter : I_APC_tracked_03_cannon_F
 {
 	author = "Jonmo";
-	scope = 2;
+	scope = public;
 	displayName = "FV 510 Warrior (Winter)";
 	side = 1;
 	crew = "B_crew_F";
