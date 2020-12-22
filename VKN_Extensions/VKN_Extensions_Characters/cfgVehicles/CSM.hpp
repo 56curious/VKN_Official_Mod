@@ -1,6 +1,6 @@
 class O_CHArmy_Rifleman_01 : LOP_ChDKZ_Infantry_Commander_OCimport_02 {
     author = "Theodore";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Rifleman";
     side = 0;
@@ -38,7 +38,7 @@ class O_CHArmy_Rifleman_01 : LOP_ChDKZ_Infantry_Commander_OCimport_02 {
 
 class O_CHArmy_Rifleman_Ex_DDR_01 : LOP_ChDKZ_Infantry_Commander_OCimport_02 {
     author = "Theodore";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Rifleman - Ex DDR";
     side = 0;
@@ -76,7 +76,7 @@ class O_CHArmy_Rifleman_Ex_DDR_01 : LOP_ChDKZ_Infantry_Commander_OCimport_02 {
 
 class O_CHArmy_Rifleman_Female_01 : LOP_ChDKZ_Infantry_Commander_OCimport_02 {
     author = "Theodore";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Rifleman - Female";
     side = 0;
@@ -114,7 +114,7 @@ class O_CHArmy_Rifleman_Female_01 : LOP_ChDKZ_Infantry_Commander_OCimport_02 {
 
 class O_CHArmy_SubMachinegunner_01 : LOP_ChDKZ_Infantry_Commander_OCimport_02 {
     author = "Theodore";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "SubMachinegunner";
     side = 0;
@@ -154,7 +154,7 @@ class O_CHArmy_SubMachinegunner_01 : LOP_ChDKZ_Infantry_Commander_OCimport_02 {
 
 class O_CHArmy_Marksman_Hooded_01 : LOP_ChDKZ_Infantry_Commander_OCimport_02 {
     author = "Theodore";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Marksman (Hooded)";
     side = 0;
@@ -192,7 +192,7 @@ class O_CHArmy_Marksman_Hooded_01 : LOP_ChDKZ_Infantry_Commander_OCimport_02 {
 
 class O_CHArmy_Marksman_01 : LOP_ChDKZ_Infantry_Commander_OCimport_02 {
     author = "Theodore";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Marksman ";
     side = 0;

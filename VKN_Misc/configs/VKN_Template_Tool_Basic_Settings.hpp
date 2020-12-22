@@ -1,6 +1,3 @@
-class RscCombo;
-class RscCheckbox;
-
 class VKN_Template_Tool_Basic_Settings {
   idd = 348567;
 

@@ -1,4 +1,3 @@
-#include "BIS_AddonInfo.hpp"
 class CfgPatches {
     class VKN_PMC_Characters {
         units[] = {
@@ -479,7 +478,6 @@ class CfgPatches {
             "A3_Characters_F_Exp",
             "asr_ai3_skills",
             "asr_ai3_danger",
-            "hlcweapons_AUG",
             "ace_gforces",
             "ace_goggles",
             "ace_movement",
@@ -487,13 +485,16 @@ class CfgPatches {
             "A3_Data_F",
             "A3_Data_F_Curator",
             "A3_Air_F_Heli",
-            "CUP_Worlds_DustEffects",
             "ace_thermals"
         };
         author = "Curious";
         authors[] = {"Curious"};
     };
 };
+
+#define private 0       // Hidden to all
+#define protected 1     // Can use but still hidden
+#define public 2        // Visible to all
 
 class CfgEditorSubcategories {
 
@@ -588,7 +589,7 @@ class cfgGroups {
         #include "cfgGroups\Modern_China.hpp"
         #include "cfgGroups\NorthVietnamArmy.hpp"
     };
-    
+
 
     class West {
         #include "cfgGroups\Viking_PMC_ODIN.hpp"

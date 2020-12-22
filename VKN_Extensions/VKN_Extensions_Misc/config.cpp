@@ -27,10 +27,15 @@ class CfgPatches {
             "A3_Map_Malden_Scenes_F",
             "cba_settings",
             "FIR_AirWeaponSystem_US",
-            "FIR_Baseplate"
+            "FIR_Baseplate",
+            "ace_ui"
         };
     };
 };
+
+#define private 0       // Hidden to all
+#define protected 1     // Can use but still hidden
+#define public 2        // Visible to all
 
 class Extended_PreInit_EventHandlers {
     class VKN_Settings_preInit {
@@ -41,7 +46,6 @@ class Extended_PreInit_EventHandlers {
 class RscStandardDisplay;
 class RscControlsGroup;
 class RscPictureKeepAspect;
-class RscText;
 
 /*
 //Custom ACE interactions
@@ -191,3 +195,36 @@ class RscDisplayMain: RscStandardDisplay {
         };
     };
 */
+
+
+
+
+//UI Inheritence
+class rscText;
+class rscButton;
+class rscPicture;
+class rscActiveText;
+class rscListBox;
+class rscCombo;
+class rscProgress;
+class iGUIBack;
+class rscStructuredText;
+class rscCheckbox;
+class rscFrame;
+class RscDisplayInventory {
+  class controls {
+    #include "\VKN_Misc\displays\VKN_rscDisplayInventory.hpp"
+  };
+};
+
+class RscDisplayInventory_DLCTemplate {
+  class controls {
+    #include "\VKN_Misc\displays\VKN_rscDisplayInventory.hpp"
+  };
+}
+
+class VKN_Inventory {
+  class controls {
+    #include "\VKN_Misc\displays\VKN_rscDisplayInventory.hpp"
+  };
+};

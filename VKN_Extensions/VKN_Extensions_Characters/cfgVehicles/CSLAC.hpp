@@ -1,6 +1,6 @@
 class O_CHRArmy_Officer_WDL_01 : LOP_ChDKZ_Infantry_Commander_OCimport_02 {
     author = "Theodore";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Officer";
     side = 0;
@@ -40,7 +40,7 @@ class O_CHRArmy_Officer_WDL_01 : LOP_ChDKZ_Infantry_Commander_OCimport_02 {
 
 class O_CHRArmy_Rifleman_WDL_01 : O_CHRArmy_Officer_WDL_01 {
     author = "Theodore";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Rifleman";
     side = 0;
@@ -80,7 +80,7 @@ class O_CHRArmy_Rifleman_WDL_01 : O_CHRArmy_Officer_WDL_01 {
 
 class O_CHRArmy_Autorifleman_WDL_01 : O_CHRArmy_Rifleman_WDL_01 {
     author = "Theodore";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Autorifleman";
     side = 0;
@@ -120,7 +120,7 @@ class O_CHRArmy_Autorifleman_WDL_01 : O_CHRArmy_Rifleman_WDL_01 {
 
 class O_CHRArmy_Marksman_WDL_01 : O_CHRArmy_Rifleman_WDL_01 {
     author = "Theodore";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Marksman";
     side = 0;

@@ -1,6 +1,6 @@
 class B_VKN_BALDER_RIFLEMAN_PMC_01 : B_VKN_LOKI_RIFLEMAN_PMC_01 {
     author = "Lion";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Rifleman";
     side = 1;
@@ -38,7 +38,7 @@ class B_VKN_BALDER_RIFLEMAN_PMC_01 : B_VKN_LOKI_RIFLEMAN_PMC_01 {
 
 class B_VKN_BALDER_SQUADLEADER_PMC_01 : B_VKN_BALDER_RIFLEMAN_PMC_01 {
     author = "Lion";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Squadleader";
     side = 1;
@@ -76,7 +76,7 @@ class B_VKN_BALDER_SQUADLEADER_PMC_01 : B_VKN_BALDER_RIFLEMAN_PMC_01 {
 
 class B_VKN_BALDER_RADIOMAN_PMC_01 : B_VKN_BALDER_RIFLEMAN_PMC_01 {
     author = "Lion";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Radioman";
     side = 1;
@@ -116,7 +116,7 @@ class B_VKN_BALDER_RADIOMAN_PMC_01 : B_VKN_BALDER_RIFLEMAN_PMC_01 {
 
 class B_VKN_BALDER_MEDIC_PMC_01 : B_VKN_BALDER_RIFLEMAN_PMC_01 {
     author = "Lion";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Medic";
     side = 1;
@@ -156,7 +156,7 @@ class B_VKN_BALDER_MEDIC_PMC_01 : B_VKN_BALDER_RIFLEMAN_PMC_01 {
 
 class B_VKN_BALDER_AA_PMC_01 : B_VKN_BALDER_RIFLEMAN_PMC_01 {
     author = "Lion";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "AA";
     side = 1;
@@ -196,7 +196,7 @@ class B_VKN_BALDER_AA_PMC_01 : B_VKN_BALDER_RIFLEMAN_PMC_01 {
 
 class B_VKN_BALDER_AT_PMC_01 : B_VKN_BALDER_AA_PMC_01 {
     author = "Lion";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "AT";
     side = 1;
@@ -234,7 +234,7 @@ class B_VKN_BALDER_AT_PMC_01 : B_VKN_BALDER_AA_PMC_01 {
 
 class B_VKN_BALDER_GRENADIER_PMC_01 : B_VKN_BALDER_RIFLEMAN_PMC_01 {
     author = "Lion";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Grenadier";
     side = 1;
@@ -272,7 +272,7 @@ class B_VKN_BALDER_GRENADIER_PMC_01 : B_VKN_BALDER_RIFLEMAN_PMC_01 {
 
 class B_VKN_BALDER_MARKSMAN_PMC_01 : B_VKN_BALDER_RIFLEMAN_PMC_01 {
     author = "Lion";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Marksman";
     side = 1;
@@ -312,7 +312,7 @@ class B_VKN_BALDER_MARKSMAN_PMC_01 : B_VKN_BALDER_RIFLEMAN_PMC_01 {
 
 class B_VKN_BALDER_HUMVEE_PMC_01 : B_VKN_ODIN_Humvee_M2_PMC_01 {
     author = "Lion";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Humvee";
     side = 1;
@@ -345,7 +345,7 @@ class B_VKN_BALDER_HUMVEE_PMC_01 : B_VKN_ODIN_Humvee_M2_PMC_01 {
 
 class B_VKN_BALDER_M1232_PMC_01 : B_VKN_ODIN_M1232_M2_PMC_01 {
     author = "Lion";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "M1232";
     side = 1;
@@ -379,7 +379,7 @@ class B_VKN_BALDER_M1232_PMC_01 : B_VKN_ODIN_M1232_M2_PMC_01 {
 
 class B_VKN_BALDER_CHINOOK_PMC_01 : RHS_CH_47F_10_OCimport_02 {
     author = "Lion";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Chinook";
     side = 1;
@@ -413,7 +413,7 @@ class B_VKN_BALDER_CHINOOK_PMC_01 : RHS_CH_47F_10_OCimport_02 {
 
 class B_VKN_BALDER_LANDING_PMC_01 : B_VKN_AEGIR_ASSUALTBOAT_PMC_01 {
     author = "Lion";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Landing Craft";
     side = 1;
@@ -447,7 +447,7 @@ class B_VKN_BALDER_LANDING_PMC_01 : B_VKN_AEGIR_ASSUALTBOAT_PMC_01 {
 
 class B_VKN_BALDER_UHUMVEE_PMC_01 : B_VKN_ODIN_Humvee_Unarmed_PMC_01 {
     author = "Lion";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Unarmed Humvee";
     side = 1;

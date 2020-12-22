@@ -1,7 +1,7 @@
 class B_VKN_THOR_AT_PMC_01 : B_VKN_ODIN_Operator_PMC_01 {
     editorPreview = \x\\addons\bvknpmcthor1\data\preview\B_VKN_THOR_AT_PMC_01.JPG;
     author = "Lion";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "AT";
     side = 1;
@@ -42,7 +42,7 @@ class B_VKN_THOR_AT_PMC_01 : B_VKN_ODIN_Operator_PMC_01 {
 class B_VKN_THOR_BREACHER_PMC_01 : B_VKN_THOR_AT_PMC_01 {
     editorPreview = \x\\addons\bvknpmcthor1\data\preview\B_VKN_THOR_BREACHER_PMC_01.JPG;
     author = "Lion";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Breacher";
     side = 1;
@@ -83,7 +83,7 @@ class B_VKN_THOR_BREACHER_PMC_01 : B_VKN_THOR_AT_PMC_01 {
 class B_VKN_THOR_DEMO_PMC_01 : B_VKN_THOR_BREACHER_PMC_01 {
     editorPreview = \x\\addons\bvknpmcthor1\data\preview\B_VKN_THOR_DEMO_PMC_01.JPG;
     author = "Lion";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Demolitions";
     side = 1;
@@ -124,7 +124,7 @@ class B_VKN_THOR_DEMO_PMC_01 : B_VKN_THOR_BREACHER_PMC_01 {
 class B_VKN_THOR_GRENADIER_PMC_01 : B_VKN_THOR_DEMO_PMC_01 {
     editorPreview = \x\\addons\bvknpmcthor1\data\preview\B_VKN_THOR_GRENADIER_PMC_01.JPG;
     author = "Lion";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Grenadier";
     side = 1;
@@ -165,7 +165,7 @@ class B_VKN_THOR_GRENADIER_PMC_01 : B_VKN_THOR_DEMO_PMC_01 {
 class B_VKN_THOR_MARKSMAN_PMC_01 : B_VKN_THOR_GRENADIER_PMC_01 {
     editorPreview = \x\\addons\bvknpmcthor1\data\preview\B_VKN_THOR_MARKSMAN_PMC_01.JPG;
     author = "Lion";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Marksman";
     side = 1;
@@ -206,7 +206,7 @@ class B_VKN_THOR_MARKSMAN_PMC_01 : B_VKN_THOR_GRENADIER_PMC_01 {
 class B_VKN_THOR_MEDIC_PMC_01 : B_VKN_THOR_MARKSMAN_PMC_01 {
     editorPreview = \x\\addons\bvknpmcthor1\data\preview\B_VKN_THOR_MEDIC_PMC_01.JPG;
     author = "Lion";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Medic";
     side = 1;
@@ -247,7 +247,7 @@ class B_VKN_THOR_MEDIC_PMC_01 : B_VKN_THOR_MARKSMAN_PMC_01 {
 class B_VKN_THOR_RIFLEMAN_PMC_01 : B_VKN_THOR_MARKSMAN_PMC_01 {
     editorPreview = \x\\addons\bvknpmcthor1\data\preview\B_VKN_THOR_RIFLEMAN_PMC_01.JPG;
     author = "Lion";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Rifleman";
     side = 1;
@@ -288,7 +288,7 @@ class B_VKN_THOR_RIFLEMAN_PMC_01 : B_VKN_THOR_MARKSMAN_PMC_01 {
 class B_VKN_THOR_SMG_PMC_01 : B_VKN_THOR_RIFLEMAN_PMC_01 {
     editorPreview = \x\\addons\bvknpmcthor1\data\preview\B_VKN_THOR_SMG_PMC_01.JPG;
     author = "Lion";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "SMG";
     side = 1;
@@ -329,7 +329,7 @@ class B_VKN_THOR_SMG_PMC_01 : B_VKN_THOR_RIFLEMAN_PMC_01 {
 class B_VKN_THOR_LEAD_PMC_01 : B_VKN_THOR_SMG_PMC_01 {
     editorPreview = \x\\addons\bvknpmcthor1\data\preview\B_VKN_THOR_LEAD_PMC_01.JPG;
     author = "Lion";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Squadleader";
     side = 1;
@@ -370,7 +370,7 @@ class B_VKN_THOR_LEAD_PMC_01 : B_VKN_THOR_SMG_PMC_01 {
 class B_VKN_THOR_C130J_PMC_01 : RHS_C130J_OCimport_02 {
     editorPreview = \x\\addons\bvknpmcthor1\data\preview\B_VKN_THOR_C130J_PMC_01.JPG;
     author = "Lion";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "C-130J";
     side = 1;

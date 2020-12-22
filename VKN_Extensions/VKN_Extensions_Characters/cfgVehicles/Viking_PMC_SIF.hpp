@@ -1,6 +1,6 @@
 class B_VKN_SIF_RIFLEMAN_PMC_01 : B_VKN_ODIN_Operator_PMC_01 {
     author = "Lion";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Rifleman";
     side = 1;
@@ -40,7 +40,7 @@ class B_VKN_SIF_RIFLEMAN_PMC_01 : B_VKN_ODIN_Operator_PMC_01 {
 
 class B_VKN_SIF_AA_PMC_01 : B_VKN_SIF_RIFLEMAN_PMC_01 {
     author = "Lion";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "AA";
     side = 1;
@@ -80,7 +80,7 @@ class B_VKN_SIF_AA_PMC_01 : B_VKN_SIF_RIFLEMAN_PMC_01 {
 
 class B_VKN_SIF_AT_PMC_01 : B_VKN_SIF_RIFLEMAN_PMC_01 {
     author = "Lion";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "AT";
     side = 1;
@@ -120,7 +120,7 @@ class B_VKN_SIF_AT_PMC_01 : B_VKN_SIF_RIFLEMAN_PMC_01 {
 
 class B_VKN_SIF_AR_PMC_01 : B_VKN_SIF_RIFLEMAN_PMC_01 {
     author = "Lion";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "AR";
     side = 1;
@@ -160,7 +160,7 @@ class B_VKN_SIF_AR_PMC_01 : B_VKN_SIF_RIFLEMAN_PMC_01 {
 
 class B_VKN_SIF_DEMO_PMC_01 : B_VKN_SIF_RIFLEMAN_PMC_01 {
     author = "Lion";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Demolitions";
     side = 1;
@@ -200,7 +200,7 @@ class B_VKN_SIF_DEMO_PMC_01 : B_VKN_SIF_RIFLEMAN_PMC_01 {
 
 class B_VKN_SIF_MEDIC_PMC_01 : B_VKN_SIF_DEMO_PMC_01 {
     author = "Lion";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Medic";
     side = 1;
@@ -240,7 +240,7 @@ class B_VKN_SIF_MEDIC_PMC_01 : B_VKN_SIF_DEMO_PMC_01 {
 
 class B_VKN_SIF_SQL_PMC_01 : B_VKN_SIF_RIFLEMAN_PMC_01 {
     author = "Lion";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "SquadLeader";
     side = 1;
@@ -278,7 +278,7 @@ class B_VKN_SIF_SQL_PMC_01 : B_VKN_SIF_RIFLEMAN_PMC_01 {
 
 class B_VKN_SIF_HUMVEE_PMC_01 : B_VKN_ODIN_Humvee_M2_PMC_01 {
     author = "Lion";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Humvee";
     side = 1;
@@ -311,7 +311,7 @@ class B_VKN_SIF_HUMVEE_PMC_01 : B_VKN_ODIN_Humvee_M2_PMC_01 {
 
 class B_VKN_SIF_IFV_PMC_01 : B_VKN_ODIN_M2A3_PMC_01 {
     author = "Lion";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "M2A3";
     side = 1;
@@ -341,7 +341,7 @@ class B_VKN_SIF_IFV_PMC_01 : B_VKN_ODIN_M2A3_PMC_01 {
 
 class B_VKN_SIF_SOC_PMC_01 : rhsusf_mkvsoc_OCimport_02 {
     author = "Lion";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Mk.V SOC";
     side = 1;
@@ -375,7 +375,7 @@ class B_VKN_SIF_SOC_PMC_01 : rhsusf_mkvsoc_OCimport_02 {
 
 class B_VKN_SIF_BADGER_PMC_01 : B_T_APC_Wheeled_01_cannon_F_OCimport_02 {
     author = "Lion";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Badger";
     side = 1;
@@ -405,7 +405,7 @@ class B_VKN_SIF_BADGER_PMC_01 : B_T_APC_Wheeled_01_cannon_F_OCimport_02 {
 
 class B_VKN_SIF_RADIOMAN_PMC_01 : B_VKN_SIF_RIFLEMAN_PMC_01 {
     author = "Lion";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Radioman";
     side = 1;

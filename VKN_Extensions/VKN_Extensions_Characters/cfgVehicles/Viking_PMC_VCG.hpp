@@ -1,9 +1,9 @@
 //Import due class being defined before base import
-class B_VKN_THOR_Operator_PMC_01: B_VKN_ODIN_Operator_PMC_01 { scope = 0; };
+class B_VKN_THOR_Operator_PMC_01: B_VKN_ODIN_Operator_PMC_01 { scope = private; };
 
 class B_VKN_VCG_SUNRAY_PMC_01 : B_VKN_THOR_Operator_PMC_01 {
     author = "Lion";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Sunray";
     side = 1;
@@ -43,7 +43,7 @@ class B_VKN_VCG_SUNRAY_PMC_01 : B_VKN_THOR_Operator_PMC_01 {
 
 class B_VKN_VCG_BASEPLATE_PMC_01 : B_VKN_VCG_SUNRAY_PMC_01 {
     author = "Lion";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Baseplate";
     side = 1;
@@ -83,7 +83,7 @@ class B_VKN_VCG_BASEPLATE_PMC_01 : B_VKN_VCG_SUNRAY_PMC_01 {
 
 class B_VKN_VCG_WOLFSDEN_PMC_01 : B_VKN_VCG_SUNRAY_PMC_01 {
     author = "Lion";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Wolfs Den";
     side = 1;
@@ -123,7 +123,7 @@ class B_VKN_VCG_WOLFSDEN_PMC_01 : B_VKN_VCG_SUNRAY_PMC_01 {
 
 class B_VKN_VCG_FIREFLY_PMC_01 : B_VKN_VCG_WOLFSDEN_PMC_01 {
     author = "Lion";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Firefly";
     side = 1;

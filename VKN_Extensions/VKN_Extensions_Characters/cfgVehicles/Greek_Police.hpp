@@ -1,6 +1,6 @@
 class B_Greek_Officer_Basic_Police_01 : B_GEN_Soldier_F_OCimport_02 {
     author = "Curious";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Officer (Basic)";
     side = 1;
@@ -38,7 +38,7 @@ class B_Greek_Officer_Basic_Police_01 : B_GEN_Soldier_F_OCimport_02 {
 
 class B_Greek_Officer_Armed_Police_01 : B_Greek_Officer_Basic_Police_01 {
     author = "Curious";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Officer (Armed)";
     side = 1;
@@ -76,7 +76,7 @@ class B_Greek_Officer_Armed_Police_01 : B_Greek_Officer_Basic_Police_01 {
 
 class B_Greek_Officer_Commander_Police_01 : B_Greek_Officer_Basic_Police_01 {
     author = "Curious";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Officer (Commander)";
     side = 1;
@@ -114,7 +114,7 @@ class B_Greek_Officer_Commander_Police_01 : B_Greek_Officer_Basic_Police_01 {
 
 class B_Greek_Riot_Officer_Police_01 : B_Greek_Officer_Basic_Police_01 {
     author = "Curious";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Riot Officer";
     side = 1;
@@ -152,7 +152,7 @@ class B_Greek_Riot_Officer_Police_01 : B_Greek_Officer_Basic_Police_01 {
 
 class B_Greek_Riot_Officer_Heavy_Police_01 : B_GEN_Soldier_F_OCimport_02 {
     author = "Curious";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Riot Officer (Heavy)";
     side = 1;
@@ -190,7 +190,7 @@ class B_Greek_Riot_Officer_Heavy_Police_01 : B_GEN_Soldier_F_OCimport_02 {
 
 class B_Greek_Riot_Officer_Light_Police_01 : B_Greek_Officer_Basic_Police_01 {
     author = "Curious";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Riot Officer (Light)";
     side = 1;
@@ -228,7 +228,7 @@ class B_Greek_Riot_Officer_Light_Police_01 : B_Greek_Officer_Basic_Police_01 {
 
 class B_Greek_Offroader_Police_01 : B_GEN_Offroad_01_gen_F_OCimport_02 {
     author = "Curious";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Offroader";
     side = 1;
@@ -284,7 +284,7 @@ class B_Greek_Offroader_Police_01 : B_GEN_Offroad_01_gen_F_OCimport_02 {
 
 class B_Greek_Tahoe_SUV_Police_01 : B_VKN_tahoe_UNM_PMC_01_OCimport_02 {
     author = "Curious";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Tahoe SUV";
     side = 1;
@@ -313,7 +313,7 @@ class B_Greek_Tahoe_SUV_Police_01 : B_VKN_tahoe_UNM_PMC_01_OCimport_02 {
 
 class B_Greek_Van_Police_01 : B_GEN_Van_02_transport_F_OCimport_02 {
     author = "Curious";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Van";
     side = 1;

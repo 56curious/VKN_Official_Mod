@@ -1,7 +1,7 @@
 class O_Ryukyu_Dragons_Army_Tropical_Rifleman_01 : O_T_Soldier_F_OCimport_02 {
     editorPreview = VKN_Extensions_Characters\Editor Preview Images\O_Ryukyu_Dragons_Army_Tropical_Rifleman_01.paa;
     author = "Curious";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Rifleman";
     side = 0;
@@ -43,7 +43,7 @@ class O_Ryukyu_Dragons_Army_Tropical_Rifleman_01 : O_T_Soldier_F_OCimport_02 {
 class O_Ryukyu_Dragons_Army_Tropical_Rifleman_AT_01 : O_T_Soldier_LAT_F_OCimport_02 {
     editorPreview = VKN_Extensions_Characters\Editor Preview Images\O_Ryukyu_Dragons_Army_Tropical_Rifleman_AT_01.paa;
     author = "Curious";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Rifleman (AT)";
     side = 0;
@@ -83,7 +83,7 @@ class O_Ryukyu_Dragons_Army_Tropical_Rifleman_AT_01 : O_T_Soldier_LAT_F_OCimport
 class O_Ryukyu_Dragons_Army_Tropical_Auto_Rifleman_01 : O_T_Soldier_AR_F_OCimport_02 {
     editorPreview = VKN_Extensions_Characters\Editor Preview Images\O_Ryukyu_Dragons_Army_Tropical_Auto_Rifleman_01.paa;
     author = "Curious";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Auto Rifleman";
     side = 0;
@@ -125,7 +125,7 @@ class O_Ryukyu_Dragons_Army_Tropical_Auto_Rifleman_01 : O_T_Soldier_AR_F_OCimpor
 class O_Ryukyu_Dragons_Army_Tropical_Asst_Autorifleman_01 : O_Ryukyu_Dragons_Army_Tropical_Auto_Rifleman_01 {
     editorPreview = VKN_Extensions_Characters\Editor Preview Images\O_Ryukyu_Dragons_Army_Tropical_Asst_Autorifleman_01.paa;
     author = "Curious";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Asst. Autorifleman";
     side = 0;
@@ -167,7 +167,7 @@ class O_Ryukyu_Dragons_Army_Tropical_Asst_Autorifleman_01 : O_Ryukyu_Dragons_Arm
 class O_Ryukyu_Dragons_Army_Tropical_Anti_Tank_01 : O_Ryukyu_Dragons_Army_Tropical_Rifleman_AT_01 {
     editorPreview = VKN_Extensions_Characters\Editor Preview Images\O_Ryukyu_Dragons_Army_Tropical_Anti_Tank_01.paa;
     author = "Curious";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Anti-Tank";
     side = 0;
@@ -209,7 +209,7 @@ class O_Ryukyu_Dragons_Army_Tropical_Anti_Tank_01 : O_Ryukyu_Dragons_Army_Tropic
 class O_Ryukyu_Dragons_Army_Tropical_Anti_Air_01 : O_Ryukyu_Dragons_Army_Tropical_Anti_Tank_01 {
     editorPreview = VKN_Extensions_Characters\Editor Preview Images\O_Ryukyu_Dragons_Army_Tropical_Anti_Air_01.paa;
     author = "Curious";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Anti-Air";
     side = 0;
@@ -251,7 +251,7 @@ class O_Ryukyu_Dragons_Army_Tropical_Anti_Air_01 : O_Ryukyu_Dragons_Army_Tropica
 class O_Ryukyu_Dragons_Army_Tropical_Fire_Team_Leader_01 : O_Ryukyu_Dragons_Army_Tropical_Rifleman_01 {
     editorPreview = VKN_Extensions_Characters\Editor Preview Images\O_Ryukyu_Dragons_Army_Tropical_Fire_Team_Leader_01.paa;
     author = "Curious";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Fire Team Leader";
     side = 0;
@@ -293,7 +293,7 @@ class O_Ryukyu_Dragons_Army_Tropical_Fire_Team_Leader_01 : O_Ryukyu_Dragons_Army
 class O_Ryukyu_Dragons_Army_Tropical_Squad_Leader_01 : O_Ryukyu_Dragons_Army_Tropical_Fire_Team_Leader_01 {
     editorPreview = VKN_Extensions_Characters\Editor Preview Images\O_Ryukyu_Dragons_Army_Tropical_Squad_Leader_01.paa;
     author = "Curious";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Squad Leader";
     side = 0;
@@ -335,7 +335,7 @@ class O_Ryukyu_Dragons_Army_Tropical_Squad_Leader_01 : O_Ryukyu_Dragons_Army_Tro
 class O_Ryukyu_Dragons_Army_Tropical_Marksman_01 : O_Ryukyu_Dragons_Army_Tropical_Rifleman_01 {
     editorPreview = VKN_Extensions_Characters\Editor Preview Images\O_Ryukyu_Dragons_Army_Tropical_Marksman_01.paa;
     author = "Curious";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Marksman";
     side = 0;
@@ -377,7 +377,7 @@ class O_Ryukyu_Dragons_Army_Tropical_Marksman_01 : O_Ryukyu_Dragons_Army_Tropica
 class O_Ryukyu_Dragons_Army_Tropical_Sniper_01 : O_Ryukyu_Dragons_Army_Tropical_Marksman_01 {
     editorPreview = VKN_Extensions_Characters\Editor Preview Images\O_Ryukyu_Dragons_Army_Tropical_Sniper_01.paa;
     author = "Curious";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Sniper";
     side = 0;
@@ -417,7 +417,7 @@ class O_Ryukyu_Dragons_Army_Tropical_Sniper_01 : O_Ryukyu_Dragons_Army_Tropical_
 class O_Ryukyu_Dragons_Army_Tropical_Spotter_01 : O_Ryukyu_Dragons_Army_Tropical_Sniper_01 {
     editorPreview = VKN_Extensions_Characters\Editor Preview Images\O_Ryukyu_Dragons_Army_Tropical_Spotter_01.paa;
     author = "Curious";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Spotter";
     side = 0;
@@ -457,7 +457,7 @@ class O_Ryukyu_Dragons_Army_Tropical_Spotter_01 : O_Ryukyu_Dragons_Army_Tropical
 class O_Ryukyu_Dragons_Army_Tropical_Platoon_Commander_01 : O_Ryukyu_Dragons_Army_Tropical_Squad_Leader_01 {
     editorPreview = VKN_Extensions_Characters\Editor Preview Images\O_Ryukyu_Dragons_Army_Tropical_Platoon_Commander_01.paa;
     author = "Curious";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Platoon Commander";
     side = 0;
@@ -499,7 +499,7 @@ class O_Ryukyu_Dragons_Army_Tropical_Platoon_Commander_01 : O_Ryukyu_Dragons_Arm
 class O_Ryukyu_Dragons_Army_Tropical_King_Hirohito_01 : O_Ryukyu_Dragons_Army_Tropical_Platoon_Commander_01 {
     editorPreview = VKN_Extensions_Characters\Editor Preview Images\O_Ryukyu_Dragons_Army_Tropical_King_Hirohito_01.paa;
     author = "Curious";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "King Hirohito";
     side = 0;
@@ -539,7 +539,7 @@ class O_Ryukyu_Dragons_Army_Tropical_King_Hirohito_01 : O_Ryukyu_Dragons_Army_Tr
 class O_Ryukyu_Dragons_Army_Tropical_Crewman_01 : O_Ryukyu_Dragons_Army_Tropical_Rifleman_01 {
     editorPreview = VKN_Extensions_Characters\Editor Preview Images\O_Ryukyu_Dragons_Army_Tropical_Crewman_01.paa;
     author = "Curious";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Crewman";
     side = 0;
@@ -579,7 +579,7 @@ class O_Ryukyu_Dragons_Army_Tropical_Crewman_01 : O_Ryukyu_Dragons_Army_Tropical
 class O_Ryukyu_Dragons_Army_Tropical_Grenadier_01 : O_Ryukyu_Dragons_Army_Tropical_Rifleman_01 {
     editorPreview = VKN_Extensions_Characters\Editor Preview Images\O_Ryukyu_Dragons_Army_Tropical_Grenadier_01.paa;
     author = "Curious";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Grenadier";
     side = 0;
@@ -621,7 +621,7 @@ class O_Ryukyu_Dragons_Army_Tropical_Grenadier_01 : O_Ryukyu_Dragons_Army_Tropic
 class O_Ryukyu_Dragons_Army_Tropical_Pilot_01 : O_T_Helipilot_F_OCimport_02 {
     editorPreview = VKN_Extensions_Characters\Editor Preview Images\O_Ryukyu_Dragons_Army_Tropical_Pilot_01.paa;
     author = "Curious";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Helicopter Pilot";
     side = 0;
@@ -661,7 +661,7 @@ class O_Ryukyu_Dragons_Army_Tropical_Pilot_01 : O_T_Helipilot_F_OCimport_02 {
 class O_Ryukyu_Dragons_Army_Tropical_Helicopter_Crew_01 : O_Ryukyu_Dragons_Army_Tropical_Pilot_01 {
     editorPreview = VKN_Extensions_Characters\Editor Preview Images\O_Ryukyu_Dragons_Army_Tropical_Helicopter_Crew_01.paa;
     author = "Curious";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Helicopter Crew";
     side = 0;
@@ -701,7 +701,7 @@ class O_Ryukyu_Dragons_Army_Tropical_Helicopter_Crew_01 : O_Ryukyu_Dragons_Army_
 class O_Ryukyu_Dragons_Army_Tropical_Combat_Life_Saver_01 : O_Ryukyu_Dragons_Army_Tropical_Rifleman_01 {
     editorPreview = VKN_Extensions_Characters\Editor Preview Images\O_Ryukyu_Dragons_Army_Tropical_Combat_Life_Saver_01.paa;
     author = "Curious";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Combat Life Saver";
     side = 0;
@@ -743,7 +743,7 @@ class O_Ryukyu_Dragons_Army_Tropical_Combat_Life_Saver_01 : O_Ryukyu_Dragons_Arm
 class O_Ryukyu_Dragons_Army_Tropical_Engineer_01 : O_Ryukyu_Dragons_Army_Tropical_Rifleman_01 {
     editorPreview = VKN_Extensions_Characters\Editor Preview Images\O_Ryukyu_Dragons_Army_Tropical_Engineer_01.paa;
     author = "Curious";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Engineer";
     side = 0;
@@ -785,7 +785,7 @@ class O_Ryukyu_Dragons_Army_Tropical_Engineer_01 : O_Ryukyu_Dragons_Army_Tropica
 class O_Ryukyu_Dragons_Army_Tropical_T6A3_01 : B_MBT_01_cannon_F_OCimport_02 {
     editorPreview = VKN_Extensions_Characters\Editor Preview Images\O_Ryukyu_Dragons_Army_Tropical_T6A3_01.paa;
     author = "Curious";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "T6A3 MBT";
     side = 0;
@@ -816,7 +816,7 @@ class O_Ryukyu_Dragons_Army_Tropical_T6A3_01 : B_MBT_01_cannon_F_OCimport_02 {
 class O_Ryukyu_Dragons_Army_Tropical_R3_Scout_01 : B_T_LSV_01_unarmed_F_OCimport_02 {
     editorPreview = VKN_Extensions_Characters\Editor Preview Images\O_Ryukyu_Dragons_Army_Tropical_R3_Scout_01.paa;
     author = "Curious";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "R3 Scout";
     side = 0;
@@ -852,7 +852,7 @@ class O_Ryukyu_Dragons_Army_Tropical_R3_Scout_01 : B_T_LSV_01_unarmed_F_OCimport
 class O_Ryukyu_Dragons_Army_Tropical_Wildcat_CAS_01 : UK3CB_BAF_Wildcat_AH1_CAS_8A_OCimport_02 {
     editorPreview = VKN_Extensions_Characters\Editor Preview Images\O_Ryukyu_Dragons_Army_Tropical_Wildcat_CAS_01.paa;
     author = "Curious";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Wildcat CAS";
     side = 0;
@@ -885,7 +885,7 @@ class O_Ryukyu_Dragons_Army_Tropical_Wildcat_CAS_01 : UK3CB_BAF_Wildcat_AH1_CAS_
 class O_Ryukyu_Dragons_Army_Tropical_Pilot_02 : B_Pilot_F_OCimport_02 {
     editorPreview = VKN_Extensions_Characters\Editor Preview Images\O_Ryukyu_Dragons_Army_Tropical_Pilot_02.paa;
     author = "Curious";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Pilot";
     side = 0;
@@ -926,7 +926,7 @@ class O_Ryukyu_Dragons_Army_Tropical_Pilot_02 : B_Pilot_F_OCimport_02 {
 class O_Ryukyu_Dragons_Army_Tropical_F16_Fighting_Dragon_01 : FIR_F16C_AV_OCimport_02 {
     editorPreview = VKN_Extensions_Characters\Editor Preview Images\O_Ryukyu_Dragons_Army_Tropical_F16_Fighting_Dragon_01.paa;
     author = "Curious";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "F-16 Fighting Dragon";
     side = 0;
@@ -952,7 +952,7 @@ class O_Ryukyu_Dragons_Army_Tropical_F16_Fighting_Dragon_01 : FIR_F16C_AV_OCimpo
 class O_Ryukyu_Dragons_Army_Tropical_Apache_01 : RHS_AH64D_OCimport_02 {
     editorPreview = VKN_Extensions_Characters\Editor Preview Images\O_Ryukyu_Dragons_Army_Tropical_Apache_01.paa;
     author = "Curious";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Apache";
     side = 0;
@@ -983,7 +983,7 @@ class O_Ryukyu_Dragons_Army_Tropical_Apache_01 : RHS_AH64D_OCimport_02 {
 class O_Ryukyu_Dragons_Army_Tropical_M2A3_01 : RHS_M2A3_wd_OCimport_02 {
     editorPreview = VKN_Extensions_Characters\Editor Preview Images\O_Ryukyu_Dragons_Army_Tropical_M2A3_01.paa;
     author = "Curious";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "M2A3 Bradley";
     side = 0;
@@ -1013,7 +1013,7 @@ class O_Ryukyu_Dragons_Army_Tropical_M2A3_01 : RHS_M2A3_wd_OCimport_02 {
 class O_Ryukyu_Dragons_Army_Tropical_M113A3_M2 : rhsusf_m113_usarmy_OCimport_02 {
     editorPreview = VKN_Extensions_Characters\Editor Preview Images\O_Ryukyu_Dragons_Army_Tropical_M113A3_M2.paa;
     author = "Curious";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "M113A3 (M2)";
     side = 0;
@@ -1045,7 +1045,7 @@ class O_Ryukyu_Dragons_Army_Tropical_M113A3_M2 : rhsusf_m113_usarmy_OCimport_02 
 class O_Ryukyu_Dragons_Army_Tropical_M113A3_M240 : rhsusf_m113_usarmy_M240_OCimport_02 {
     editorPreview = VKN_Extensions_Characters\Editor Preview Images\O_Ryukyu_Dragons_Army_Tropical_M113A3_M240.paa;
     author = "Curious";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "M11A3 (M240)";
     side = 0;
@@ -1077,7 +1077,7 @@ class O_Ryukyu_Dragons_Army_Tropical_M113A3_M240 : rhsusf_m113_usarmy_M240_OCimp
 class O_Ryukyu_Dragons_Army_Tropical_Humvee_Unarmed : rhsusf_m1043_w_OCimport_02 {
     editorPreview = VKN_Extensions_Characters\Editor Preview Images\O_Ryukyu_Dragons_Army_Tropical_Humvee_Unarmed.paa;
     author = "Curious";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Humvee (Unarmed)";
     side = 0;
@@ -1109,7 +1109,7 @@ class O_Ryukyu_Dragons_Army_Tropical_Humvee_Unarmed : rhsusf_m1043_w_OCimport_02
 class O_Ryukyu_Dragons_Army_Tropical_Humvee_M2 : rhsusf_m1043_w_m2_OCimport_02 {
     editorPreview = VKN_Extensions_Characters\Editor Preview Images\O_Ryukyu_Dragons_Army_Tropical_Humvee_M2.paa;
     author = "Curious";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Humvee (M2)";
     side = 0;
@@ -1142,7 +1142,7 @@ class O_Ryukyu_Dragons_Army_Tropical_Humvee_M2 : rhsusf_m1043_w_m2_OCimport_02 {
 class O_Ryukyu_Dragons_Army_Tropical_Humvee_TOW : rhsusf_m1045_w_OCimport_02 {
     editorPreview = VKN_Extensions_Characters\Editor Preview Images\O_Ryukyu_Dragons_Army_Tropical_Humvee_TOW.paa;
     author = "Curious";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Humvee (TOW)";
     side = 0;
@@ -1175,7 +1175,7 @@ class O_Ryukyu_Dragons_Army_Tropical_Humvee_TOW : rhsusf_m1045_w_OCimport_02 {
 class O_Ryukyu_Dragons_Army_Tropical_Truck_Cargo : rhsusf_M977A4_usarmy_wd_OCimport_02 {
     editorPreview = VKN_Extensions_Characters\Editor Preview Images\O_Ryukyu_Dragons_Army_Tropical_Truck_Cargo.paa;
     author = "Curious";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "M977A4 (Cargo)";
     side = 0;
@@ -1200,7 +1200,7 @@ class O_Ryukyu_Dragons_Army_Tropical_Truck_Cargo : rhsusf_M977A4_usarmy_wd_OCimp
 class O_Ryukyu_Dragons_Army_Tropical_M977A4_Ammo : rhsusf_M977A4_AMMO_usarmy_wd_OCimport_02 {
     editorPreview = VKN_Extensions_Characters\Editor Preview Images\O_Ryukyu_Dragons_Army_Tropical_M977A4_Ammo.paa;
     author = "Curious";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "M977A4 (Ammo)";
     side = 0;
@@ -1225,7 +1225,7 @@ class O_Ryukyu_Dragons_Army_Tropical_M977A4_Ammo : rhsusf_M977A4_AMMO_usarmy_wd_
 class O_Ryukyu_Dragons_Army_Tropical_M977A4_Repair : rhsusf_M977A4_REPAIR_usarmy_wd_OCimport_02 {
     editorPreview = VKN_Extensions_Characters\Editor Preview Images\O_Ryukyu_Dragons_Army_Tropical_M977A4_Repair.paa;
     author = "Curious";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "M977A4 (Repair)";
     side = 0;
@@ -1250,7 +1250,7 @@ class O_Ryukyu_Dragons_Army_Tropical_M977A4_Repair : rhsusf_M977A4_REPAIR_usarmy
 class O_Ryukyu_Dragons_Army_Tropical_M977A4_Fuel : rhsusf_M978A4_usarmy_wd_OCimport_02 {
     editorPreview = VKN_Extensions_Characters\Editor Preview Images\O_Ryukyu_Dragons_Army_Tropical_M977A4_Fuel.paa;
     author = "Curious";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "M977A4 (Fuel)";
     side = 0;

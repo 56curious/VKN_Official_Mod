@@ -1,6 +1,6 @@
 class I_Chi_Squad_Leader_01 : O_T_Soldier_SL_F_OCimport_02 {
     author = "Kissing";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Squad Leader";
     side = 0;
@@ -40,7 +40,7 @@ class I_Chi_Squad_Leader_01 : O_T_Soldier_SL_F_OCimport_02 {
 
 class I_Chi_Rifleman_01 : O_T_Soldier_F_OCimport_02 {
     author = "Kissing";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Rifleman";
     side = 0;
@@ -80,7 +80,7 @@ class I_Chi_Rifleman_01 : O_T_Soldier_F_OCimport_02 {
 
 class I_Chi_Rifleman_AT_01 : O_T_Soldier_LAT_F_OCimport_02 {
     author = "Kissing";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Rifleman (AT)";
     side = 0;
@@ -120,7 +120,7 @@ class I_Chi_Rifleman_AT_01 : O_T_Soldier_LAT_F_OCimport_02 {
 
 class I_Chi_Marksman_01 : O_T_Soldier_M_F_OCimport_02 {
     author = "Kissing";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Marksman";
     side = 0;
@@ -158,7 +158,7 @@ class I_Chi_Marksman_01 : O_T_Soldier_M_F_OCimport_02 {
 
 class I_Chi_Combat_Life_Saver_01 : O_T_Medic_F_OCimport_02 {
     author = "Kissing";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Combat Life Saver";
     side = 0;
@@ -198,7 +198,7 @@ class I_Chi_Combat_Life_Saver_01 : O_T_Medic_F_OCimport_02 {
 
 class I_Chi_Autorifleman_01 : O_T_Soldier_AR_F_OCimport_02 {
     author = "Kissing";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Autorifleman";
     side = 0;
@@ -236,7 +236,7 @@ class I_Chi_Autorifleman_01 : O_T_Soldier_AR_F_OCimport_02 {
 
 class I_Chi_Heavy_Gunner_01 : O_T_Soldier_AR_F_OCimport_02 {
     author = "Kissing";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Heavy Gunner";
     side = 0;
@@ -276,7 +276,7 @@ class I_Chi_Heavy_Gunner_01 : O_T_Soldier_AR_F_OCimport_02 {
 
 class I_Chi_Crewman_01 : O_T_Crew_F_OCimport_02 {
     author = "Kissing";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Crewman";
     side = 0;
@@ -316,7 +316,7 @@ class I_Chi_Crewman_01 : O_T_Crew_F_OCimport_02 {
 
 class I_Chi_Helicopter_Pilot_01 : O_T_Helipilot_F_OCimport_02 {
     author = "Kissing";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Helicopter Pilot";
     side = 0;
@@ -354,7 +354,7 @@ class I_Chi_Helicopter_Pilot_01 : O_T_Helipilot_F_OCimport_02 {
 
 class I_Chi_Blackfoot_01 : B_Heli_Attack_01_dynamicLoadout_F_OCimport_02 {
     author = "Kissing";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Blackfoot";
     side = 0;
@@ -383,7 +383,7 @@ class I_Chi_Blackfoot_01 : B_Heli_Attack_01_dynamicLoadout_F_OCimport_02 {
 
 class I_Chi_LSV_Mk_II_M134_01 : O_T_LSV_02_armed_F_OCimport_02 {
     author = "Kissing";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "LSV Mk. II (M134)";
     side = 0;
@@ -418,7 +418,7 @@ class I_Chi_LSV_Mk_II_M134_01 : O_T_LSV_02_armed_F_OCimport_02 {
 
 class I_Chi_LSV_Mk_II_01 : O_T_LSV_02_unarmed_F_OCimport_02 {
     author = "Kissing";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "LSV Mk.II";
     side = 0;
@@ -453,7 +453,7 @@ class I_Chi_LSV_Mk_II_01 : O_T_LSV_02_unarmed_F_OCimport_02 {
 
 class I_Chi_Rooikat_120_01 : B_AFV_Wheeled_01_cannon_F_OCimport_02 {
     author = "Kissing";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Rooikat 120";
     side = 0;
@@ -483,7 +483,7 @@ class I_Chi_Rooikat_120_01 : B_AFV_Wheeled_01_cannon_F_OCimport_02 {
 
 class I_Chi_Pandur_II_01 : I_APC_Wheeled_03_cannon_F_OCimport_02 {
     author = "Kissing";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Pandur II";
     side = 0;
@@ -513,7 +513,7 @@ class I_Chi_Pandur_II_01 : I_APC_Wheeled_03_cannon_F_OCimport_02 {
 
 class I_Chi_AW159_Wildcat_Unarmed_01 : I_Heli_light_03_unarmed_F_OCimport_02 {
     author = "Kissing";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "AW159 Wildcat (Unarmed)";
     side = 0;
@@ -543,7 +543,7 @@ class I_Chi_AW159_Wildcat_Unarmed_01 : I_Heli_light_03_unarmed_F_OCimport_02 {
 
 class I_Chi_M02_Coyote_01 : rhssaf_army_o_nsv_tripod_OCimport_02 {
     author = "Kissing";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "M02 Coyote";
     side = 0;
@@ -572,7 +572,7 @@ class I_Chi_M02_Coyote_01 : rhssaf_army_o_nsv_tripod_OCimport_02 {
 
 class I_Chi_KORD_6U16_01 : LOP_ISTS_Kord_High_OCimport_02 {
     author = "Kissing";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "KORD (6U16)";
     side = 0;
@@ -601,7 +601,7 @@ class I_Chi_KORD_6U16_01 : LOP_ISTS_Kord_High_OCimport_02 {
 
 class I_Chi_Fennek_HMG_01 : I_MRAP_03_hmg_F_OCimport_02 {
     author = "Kissing";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Fennek (HMG)";
     side = 0;

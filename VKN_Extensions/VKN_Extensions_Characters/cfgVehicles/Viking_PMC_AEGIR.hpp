@@ -1,6 +1,6 @@
 class B_VKN_AEGIR_RIFLEMAN_PMC_01 : B_VKN_LOKI_RIFLEMAN_PMC_01 {
     author = "Lion";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Rifleman";
     side = 1;
@@ -38,7 +38,7 @@ class B_VKN_AEGIR_RIFLEMAN_PMC_01 : B_VKN_LOKI_RIFLEMAN_PMC_01 {
 
 class B_VKN_AEGIR_LEADER_PMC_01 : B_VKN_AEGIR_RIFLEMAN_PMC_01 {
     author = "Lion";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Leader";
     side = 1;
@@ -78,7 +78,7 @@ class B_VKN_AEGIR_LEADER_PMC_01 : B_VKN_AEGIR_RIFLEMAN_PMC_01 {
 
 class B_VKN_AEGIR_RADIOMAN_PMC_01 : B_VKN_AEGIR_RIFLEMAN_PMC_01 {
     author = "Lion";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Radioman";
     side = 1;
@@ -118,7 +118,7 @@ class B_VKN_AEGIR_RADIOMAN_PMC_01 : B_VKN_AEGIR_RIFLEMAN_PMC_01 {
 
 class B_VKN_AEGIR_CAPTAIN_PMC_01 : B_VKN_AEGIR_RIFLEMAN_PMC_01 {
     author = "Lion";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Captain";
     side = 1;
@@ -156,7 +156,7 @@ class B_VKN_AEGIR_CAPTAIN_PMC_01 : B_VKN_AEGIR_RIFLEMAN_PMC_01 {
 
 class B_VKN_AEGIR_ADMIRAL_PMC_01 : B_VKN_AEGIR_CAPTAIN_PMC_01 {
     author = "Lion";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Admiral";
     side = 1;
@@ -194,7 +194,7 @@ class B_VKN_AEGIR_ADMIRAL_PMC_01 : B_VKN_AEGIR_CAPTAIN_PMC_01 {
 
 class B_VKN_AEGIR_BREACHER_PMC_01 : B_VKN_AEGIR_RIFLEMAN_PMC_01 {
     author = "Lion";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Breacher";
     side = 1;
@@ -234,7 +234,7 @@ class B_VKN_AEGIR_BREACHER_PMC_01 : B_VKN_AEGIR_RIFLEMAN_PMC_01 {
 
 class B_VKN_AEGIR_CREW_PMC_01 : B_VKN_AEGIR_RIFLEMAN_PMC_01 {
     author = "Lion";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Crew";
     side = 1;
@@ -272,7 +272,7 @@ class B_VKN_AEGIR_CREW_PMC_01 : B_VKN_AEGIR_RIFLEMAN_PMC_01 {
 
 class B_VKN_AEGIR_DEMOLITIONS_PMC_01 : B_VKN_AEGIR_RIFLEMAN_PMC_01 {
     author = "Lion";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Demolitions";
     side = 1;
@@ -312,7 +312,7 @@ class B_VKN_AEGIR_DEMOLITIONS_PMC_01 : B_VKN_AEGIR_RIFLEMAN_PMC_01 {
 
 class B_VKN_AEGIR_MEDIC_PMC_01 : B_VKN_AEGIR_RIFLEMAN_PMC_01 {
     author = "Lion";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Medic";
     side = 1;
@@ -352,7 +352,7 @@ class B_VKN_AEGIR_MEDIC_PMC_01 : B_VKN_AEGIR_RIFLEMAN_PMC_01 {
 
 class B_VKN_AEGIR_SCUBA_PMC_01 : B_VKN_AEGIR_MEDIC_PMC_01 {
     author = "Lion";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Scuba";
     side = 1;
@@ -392,7 +392,7 @@ class B_VKN_AEGIR_SCUBA_PMC_01 : B_VKN_AEGIR_MEDIC_PMC_01 {
 
 class B_VKN_AEGIR_ASSUALTBOAT_PMC_01 : rhsusf_mkvsoc_OCimport_02 {
     author = "Lion";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Assualt boat";
     side = 1;
@@ -426,7 +426,7 @@ class B_VKN_AEGIR_ASSUALTBOAT_PMC_01 : rhsusf_mkvsoc_OCimport_02 {
 
 class B_VKN_AEGIR_BOARDING_PMC_01 : B_T_Boat_Transport_01_F_OCimport_02 {
     author = "Lion";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Boarding team";
     side = 1;

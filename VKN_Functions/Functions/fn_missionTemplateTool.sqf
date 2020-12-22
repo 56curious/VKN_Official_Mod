@@ -122,7 +122,23 @@ if (lbText [2102, lbCurSel 2102] == "") then {
   systemChat "Squad option was missed, taking default instead.";
 };
 
-_side_Option = lbText [2100, lbCurSel 2100];
+//Fixed missing indep factions not spawning.
+_side_Option_Temp = toUpper (lbText [2100, lbCurSel 2100]);
+//get all factions in a side.
+_side_Option = "West";
+switch (_side_Option_Temp) do {
+    case ("WEST"): {
+      _side_Option = "West";
+    };
+    case ("EAST"): {
+      _side_Option = "East";
+    };
+    case ("GUER"): {
+      _side_Option = "Indep";
+    };
+    default {};
+};
+
 _factions_option = lbText [2101, lbCurSel 2101];
 _squads_option = ([lbData [2102, lbCurSel 2102]] call BIS_fnc_configPath) select 5; //Only option extracted not as a string
 _spectate_option = lbText [2103, lbCurSel 2103];
@@ -137,7 +153,6 @@ startLoadingScreen ["Loading mission template tool... Please wait."];
 collect3DENHistory {
 
   _squad = configfile >> "CfgGroups" >> _side_Option >> _factions_option >> "Infantry" >> _squads_option;
-
 	//Check for 3DEN Enhanced, then setup those features
 	if (isclass (configfile >> "CfgPatches" >> "3denEnhanced")) then {
     set3DENMissionAttributes[["Multiplayer", "Enh_SaveLoadout", _saveLoadouts]];
@@ -182,11 +197,8 @@ collect3DENHistory {
     case ("WEST"): {
         _RespawnPos set3DENAttribute ["ModuleRespawnPosition_F_Side", 1];
     };
-    case ("GUER"): {
+    case ("INDEP"): {
         _RespawnPos set3DENAttribute ["ModuleRespawnPosition_F_Side", 2];
-    };
-    case ("CIV"): {
-        _RespawnPos set3DENAttribute ["ModuleRespawnPosition_F_Side", 3];
     };
   };
 
@@ -239,19 +251,51 @@ collect3DENHistory {
 	_ZeusModuleAdmin set3DENAttribute [ "ModuleCurator_F_Name", "Zeus_Admin" ];
 	_ZeusModuleAdmin set3DENAttribute [ "ModuleCurator_F_Addons", 3 ];
 
+  //setup squads and sync them to Zeus
+	[_squad, _position, _ZeusAttributeCuratorAddEditableObjects, _side_Option] spawn {
+    params ["_squad", "_position", "_ZeusAttributeCuratorAddEditableObjects", "_side_Option"];
+    _total = 60;
+    _totalUnits = 0;
+    _nextTotal = 0;
+    _unitCount = count ("true" configClasses _squad);
+    _groupSide = west;
+    switch (toUpper _side_Option) do {
+      case ("EAST"): {
+          _groupSide = east;
+      };
+      case ("WEST"): {
+          _groupSide = west;
+      };
+      case ("INDEP"): {
+          _groupSide = independent;
+      };
+    };
+    _Finalgroup = createGroup _groupSide;
 
-	//setup squads and sync them to Zeus
-	[_squad, _position, _ZeusAttributeCuratorAddEditableObjects] spawn {
-		for "_i" from 1 to 6 step 1 do {
-			_group = create3DENComposition [_this select 0, _this select 1];
-		   	{ add3DENConnection ["sync", _x, _this select 2]; } forEach _group;
-			{
-				set3DENAttributes [[_x, "ControlMP", true]]; //set3DENAttributes [[_x, "ControlMP", true], [_x, "side", _side]];
-				sleep 0.01;
-			} forEach _group;
-			sleep 0.01;
-		};
-	};
+    while { _totalUnits < _total } do {
+      _nextTotal = _totalUnits + _unitCount;
+      //systemChat format ["current/next/target: %1/%2/%3", _totalUnits, _nextTotal, _total];
+
+      //Create a group with given data
+      _group = create3DENComposition [_squad, _position];
+      {
+        set3DENAttributes [[_x, "ControlMP", true]];
+        sleep 0.01;
+      } forEach _group;
+      _totalUnits = _totalUnits + _unitCount;
+    };
+
+    _unitSQLtype = getText (_squad >> "Unit0" >> "Vehicle");
+    _UnitSQL = _Finalgroup create3DENEntity  ["object", _unitSQLtype, _position];
+    _UnitSQL set3DENAttribute ["ControlMP", true];
+    _intDiff = _NextTotal - _total;
+    for "_i" from 1 to _intDiff do {
+      _unitID = format ["Unit%1", _i];
+      _unitType = getText (_squad >> _unitID >> "Vehicle");
+      _Unit = (group _unitSQL) create3DENEntity  ["object", _unitType, _position];
+      _Unit set3DENAttribute ["ControlMP", true];
+    };
+  };
 
 
   //Headless Clients
@@ -281,13 +325,6 @@ collect3DENHistory {
     _HCModuleSettings set3DENAttribute ["Werthles_moduleWHM_NoDebug", True]; //Default True
     _HCModuleSettings set3DENAttribute ["Werthles_moduleWHM_DebugOnly", False]; //Default False
     _HCModuleSettings set3DENAttribute ["Werthles_moduleWHM_UseServer", False]; //Default False
-
-
-
-
-
-
-
 
   };
 

@@ -36,6 +36,21 @@ class CfgPatches {
 #define protected 1     // Can use but still hidden
 #define public 2        // Visible to all
 
+//UI Inheritence
+class rscText;
+class rscButton;
+class rscPicture;
+class rscActiveText;
+class rscListBox;
+class rscCombo;
+class rscProgress;
+class iGUIBack;
+class rscStructuredText;
+class rscCheckbox;
+class rscFrame;
+
+
+
 
 enableDebugConsole[] = {"76561197996326460", "76561198116251840", "76561198138461195", "76561198044162606", "76561198036865266", "76561197960287930"};
 
@@ -129,10 +144,10 @@ class WeaponSlotsInfo;
 class CfgWeapons {
 
   class FA_Base_Rifle_VKN;
+  class FA_Base_Pistol_VKN;
+
   class VKN_MP5: FA_Base_Rifle_VKN {
     class WeaponSlotsInfo : WeaponSlotsInfo {
-        mass = 115;
-        allowedSlots[] = {901};
         class MuzzleSlot : asdg_MuzzleSlot_9MM_SMG {
             //linkProxy = "\A3\data_f\proxies\weapon_slots\MUZZLE";
             //compatibleItems[] = {};
@@ -153,8 +168,6 @@ class CfgWeapons {
 
   class VKN_VSS: FA_Base_Rifle_VKN {
     class WeaponSlotsInfo : WeaponSlotsInfo {
-        mass = 115;
-        allowedSlots[] = {901};
         class CowsSlot : asdg_OpticRail1913_long {
             //linkProxy = "\A3\data_f\proxies\weapon_slots\TOP";
             //compatibleItems[] = {};
@@ -169,8 +182,6 @@ class CfgWeapons {
   };
   class VKN_AKM: FA_Base_Rifle_VKN {
     class WeaponSlotsInfo : WeaponSlotsInfo {
-        mass = 115;
-        allowedSlots[] = {901};
         class MuzzleSlot : asdg_MuzzleSlot_762R {
             //linkProxy = "\A3\data_f\proxies\weapon_slots\MUZZLE";
             //compatibleItems[] = {};
@@ -195,8 +206,6 @@ class CfgWeapons {
   };
   class VKN_AK74M: FA_Base_Rifle_VKN {
     class WeaponSlotsInfo : WeaponSlotsInfo {
-        mass = 115;
-        allowedSlots[] = {901};
         class MuzzleSlot : asdg_MuzzleSlot_545R {
             //linkProxy = "\A3\data_f\proxies\weapon_slots\MUZZLE";
             //compatibleItems[] = {};
@@ -221,8 +230,6 @@ class CfgWeapons {
   };
   class VKN_SVD: FA_Base_Rifle_VKN {
     class WeaponSlotsInfo : WeaponSlotsInfo {
-        mass = 115;
-        allowedSlots[] = {901};
         class MuzzleSlot : asdg_MuzzleSlot_762R_SVD {
             //linkProxy = "\A3\data_f\proxies\weapon_slots\MUZZLE";
             //compatibleItems[] = {};
@@ -247,8 +254,6 @@ class CfgWeapons {
   };
   class VKN_AK5C: FA_Base_Rifle_VKN {
     class WeaponSlotsInfo : WeaponSlotsInfo {
-        mass = 115;
-        allowedSlots[] = {901};
         class MuzzleSlot : asdg_MuzzleSlot_556 {
             //linkProxy = "\A3\data_f\proxies\weapon_slots\MUZZLE";
             //compatibleItems[] = {};
@@ -273,8 +278,6 @@ class CfgWeapons {
   };
   class VKN_ASVAL: FA_Base_Rifle_VKN {
     class WeaponSlotsInfo : WeaponSlotsInfo {
-        mass = 115;
-        allowedSlots[] = {901};
         class MuzzleSlot : asdg_MuzzleSlot_556 {
             //linkProxy = "\A3\data_f\proxies\weapon_slots\MUZZLE";
             //compatibleItems[] = {};
@@ -299,8 +302,6 @@ class CfgWeapons {
   };
   class VKN_Remington870: FA_Base_Rifle_VKN {
     class WeaponSlotsInfo : WeaponSlotsInfo {
-        mass = 115;
-        allowedSlots[] = {901};
         class MuzzleSlot : asdg_MuzzleSlot_556 {
             //linkProxy = "\A3\data_f\proxies\weapon_slots\MUZZLE";
             //compatibleItems[] = {};
@@ -323,9 +324,8 @@ class CfgWeapons {
         };
     };
   };
-  class VKN_DesertEagle: FA_Base_Rifle_VKN {
-    class WeaponSlotsInfo : WeaponSlotsInfo {
-        mass = 115;
+  class VKN_DesertEagle: FA_Base_Pistol_VKN {
+    class WeaponSlotsInfo : WeaponSlotsInfo	{
         class CowsSlot : asdg_PistolOpticRail1913 {
             linkProxy = "\A3\data_f\proxies\weapon_slots\TOP";
             //compatibleItems[] = {};
@@ -338,9 +338,8 @@ class CfgWeapons {
         };
     };
   };
-  class VKN_SigP250: FA_Base_Rifle_VKN {
+  class VKN_SigP250: FA_Base_Pistol_VKN {
     class WeaponSlotsInfo : WeaponSlotsInfo {
-        mass = 115;
         class CowsSlot : asdg_PistolOpticRail1913 {
             linkProxy = "\A3\data_f\proxies\weapon_slots\TOP";
             //compatibleItems[] = {};
@@ -353,9 +352,8 @@ class CfgWeapons {
         };
     };
   };
-  class VKN_SigP226: FA_Base_Rifle_VKN {
+  class VKN_SigP226: FA_Base_Pistol_VKN {
     class WeaponSlotsInfo : WeaponSlotsInfo {
-        mass = 115;
         class CowsSlot : asdg_PistolOpticRail1913 {
             linkProxy = "\A3\data_f\proxies\weapon_slots\TOP";
             //compatibleItems[] = {};
@@ -371,6 +369,36 @@ class CfgWeapons {
 };
 
 
+
+//////
+//////    RSC DISPLAY INVENTORY ADJUSTMENTS - attempt to overwrite existing data while keeping rest of system intact
+//////
+
+// Need to switch mags UI pos on primary weapon as its the wrong way round
+//Adjust opacity on logo
+//Make repack mag button same style as exit
+//fix missing text on items
+//See Suggestions on discord
+
+/*
+class RscDisplayInventory {
+  class controls {
+    #include "displays\VKN_rscDisplayInventory.hpp"
+  };
+};
+
+class RscDisplayInventory_DLCTemplate {
+  class controls {
+    #include "displays\VKN_rscDisplayInventory.hpp"
+  };
+}
+
+class VKN_Inventory {
+  class controls {
+    #include "displays\VKN_rscDisplayInventory.hpp"
+  };
+};
+*/
 
 
 
@@ -393,10 +421,8 @@ class cfgDiscordRichPresence {
 
 class RscStandardDisplay;
 class RscControlsGroup;
-class RscPicture;
 class RscPictureKeepAspect;
 class RscVignette;
-class rscFrame;
 
 //Full screen loading
 //display change
@@ -573,7 +599,6 @@ class display3DEN {
 };
 
 
-class RscText;
 #define COLOR_TRANSPARENT { 0, 0, 0, 0 }
 #define COLOR_WHITE { 1, 1, 1, 1 }
 #define BACKGROUND_IMAGE ["\VKN_Misc\Main Menu\Static Background Images\Background1.paa","\VKN_Misc\Main Menu\Static Background Images\Background2.paa","\VKN_Misc\Main Menu\Static Background Images\Background3.paa","\VKN_Misc\Main Menu\Static Background Images\Background4.paa","\VKN_Misc\Main Menu\Static Background Images\Background5.paa","\VKN_Misc\Main Menu\Static Background Images\Background6.paa","\VKN_Misc\Main Menu\Static Background Images\Background7.paa","\VKN_Misc\Main Menu\Static Background Images\Background8.paa"]

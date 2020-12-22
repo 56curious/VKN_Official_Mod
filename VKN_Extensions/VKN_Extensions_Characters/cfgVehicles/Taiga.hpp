@@ -1,6 +1,6 @@
 class B_Gen_Squad_Leader_02 : B_Soldier_SL_F_OCimport_02 {
     author = "Kissing";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Squad Leader";
     side = 1;
@@ -40,7 +40,7 @@ class B_Gen_Squad_Leader_02 : B_Soldier_SL_F_OCimport_02 {
 
 class B_Gen_Rifleman_01 : B_Soldier_F_OCimport_02 {
     author = "Kissing";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Rifleman";
     side = 1;
@@ -78,7 +78,7 @@ class B_Gen_Rifleman_01 : B_Soldier_F_OCimport_02 {
 
 class B_Gen_Marksman_01 : B_soldier_M_F_OCimport_02 {
     author = "Kissing";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Marksman";
     side = 1;
@@ -116,7 +116,7 @@ class B_Gen_Marksman_01 : B_soldier_M_F_OCimport_02 {
 
 class B_Gen_Autorifleman_01 : B_soldier_AR_F_OCimport_02 {
     author = "Kissing";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Autorifleman";
     side = 1;
@@ -156,7 +156,7 @@ class B_Gen_Autorifleman_01 : B_soldier_AR_F_OCimport_02 {
 
 class B_Gen_Heavy_Gunner_01 : B_HeavyGunner_F_OCimport_02 {
     author = "Kissing";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Heavy Gunner";
     side = 1;
@@ -196,7 +196,7 @@ class B_Gen_Heavy_Gunner_01 : B_HeavyGunner_F_OCimport_02 {
 
 class B_Gen_Combat_Life_Saver_01 : B_medic_F_OCimport_02 {
     author = "Kissing";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Combat Life Saver";
     side = 1;
@@ -236,7 +236,7 @@ class B_Gen_Combat_Life_Saver_01 : B_medic_F_OCimport_02 {
 
 class B_Gen_Rifleman_AT_01 : B_soldier_LAT_F_OCimport_02 {
     author = "Kissing";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Rifleman (AT)";
     side = 1;
@@ -276,7 +276,7 @@ class B_Gen_Rifleman_AT_01 : B_soldier_LAT_F_OCimport_02 {
 
 class B_Gen_Crewman_01 : B_crew_F_OCimport_02 {
     author = "Kissing";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Crewman";
     side = 1;
@@ -314,7 +314,7 @@ class B_Gen_Crewman_01 : B_crew_F_OCimport_02 {
 
 class B_Gen_Otokar_01 : O_APC_Wheeled_02_rcws_v2_F_OCimport_02 {
     author = "Kissing";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Otokar";
     side = 1;
@@ -344,7 +344,7 @@ class B_Gen_Otokar_01 : O_APC_Wheeled_02_rcws_v2_F_OCimport_02 {
 
 class B_Gen_BM_2T_01 : O_APC_Tracked_02_cannon_F_OCimport_02 {
     author = "Kissing";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "BM-2T";
     side = 1;
@@ -374,7 +374,7 @@ class B_Gen_BM_2T_01 : O_APC_Tracked_02_cannon_F_OCimport_02 {
 
 class B_Gen_Land_Rover_M2_01 : LOP_NAPA_Landrover_M2_OCimport_02 {
     author = "Kissing";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Land Rover (M2)";
     side = 1;
@@ -404,7 +404,7 @@ class B_Gen_Land_Rover_M2_01 : LOP_NAPA_Landrover_M2_OCimport_02 {
 
 class B_Gen_M2_HMG_50_01 : I_E_HMG_02_F_OCimport_02 {
     author = "Kissing";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "M2 HMG .50";
     side = 1;
@@ -433,7 +433,7 @@ class B_Gen_M2_HMG_50_01 : I_E_HMG_02_F_OCimport_02 {
 
 class B_Gen_DShKM_01 : rhsgref_cdf_DSHKM_OCimport_02 {
     author = "Kissing";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "DShKM";
     side = 1;
@@ -462,7 +462,7 @@ class B_Gen_DShKM_01 : rhsgref_cdf_DSHKM_OCimport_02 {
 
 class B_Gen_Merkava_01 : B_MBT_01_cannon_F_OCimport_02 {
     author = "Kissing";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Merkava";
     side = 1;
@@ -492,7 +492,7 @@ class B_Gen_Merkava_01 : B_MBT_01_cannon_F_OCimport_02 {
 
 class B_Gen_Land_Rover_01 : LOP_RACS_Landrover_OCimport_02 {
     author = "Kissing";
-    scope = 2;
+    scope = public;
     scopeCurator = 2;
     displayName = "Land Rover";
     side = 1;
