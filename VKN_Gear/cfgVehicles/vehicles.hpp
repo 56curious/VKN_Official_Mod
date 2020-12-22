@@ -87,6 +87,30 @@ class vkn_ifv_warrior_desert : I_APC_tracked_03_cannon_F
 	};
 };
 
+class vkn_ifv_warrior_winter : I_APC_tracked_03_cannon_F
+{
+	author = "Jonmo";
+	scope = 2;
+	displayName = "FV 510 Warrior (Winter)";
+	side = 1;
+	crew = "B_crew_F";
+	faction = "BLU_F";
+	editorCategory = "VKN_Units";
+	hiddenSelections[] = {"Camo1","Camo2","CamoNet","CamoSlat"};
+	hiddenSelectionsTextures[] = {"\VKN_Gear\data\Vehicles\APC_Tracked_03_Ext_VKN_Winter_co.paa","\VKN_Gear\data\Vehicles\APC_Tracked_03_Ext2_VKN_Winter_co.paa","VKN_Gear\data\Vehicles\camonet_Winter_CO.paa","VKN_Gear\data\Vehicles\cage_Winter_CO.paa"};
+	textureList[] = {"vkn_ifv_tex_wi",1};
+	class TextureSources
+	{
+		class vkn_ifv_tex_wi
+		{
+			author = "Jonmo";
+			displayname = "Nato (Winter)";
+			textures[] = {"\VKN_Gear\data\Vehicles\APC_Tracked_03_Ext_VKN_Winter_co.paa","\VKN_Gear\data\Vehicles\APC_Tracked_03_Ext2_VKN_Winter_co.paa","VKN_Gear\data\Vehicles\camonet_Winter_CO.paa","VKN_Gear\data\Vehicles\cage_Winter_CO.paa"};
+			factions[] = {};
+		};
+	};
+};
+
 class vkn_mbt_03_w: I_MBT_03_cannon_F
 {
 	author = "Jonmo";
@@ -151,7 +175,7 @@ class vkn_mbt_03_d: I_MBT_03_cannon_F
 	editorCategory = "VKN_Units";
 	vehicleClass = "Armored";
 	hiddenSelections[] = {"Camo1", "Camo2", "Camo3", "CamoNet"};
-	hiddenSelectionsTextures[] = {"VKN_Gear\data\Vehicles\vkn_MBT_03_w_ext01_co.paa", "VKN_Gear\data\Vehicles\vkn_MBT_03_w_ext02_co.paa", "VKN_Gear\data\Vehicles\vkn_MBT_03_w_RCWS_co.paa", "VKN_Gear\data\Vehicles\camonet_Winter_CO.paa"};       
+	hiddenSelectionsTextures[] = {"VKN_Gear\data\Vehicles\vkn_MBT_04_ext01_co.paa", "VKN_Gear\data\Vehicles\vkn_MBT_04_ext02_co.paa", "VKN_Gear\data\Vehicles\vkn_MBT_03_RCWS_co.paa", "VKN_Gear\data\Vehicles\camonet_Winter_CO.paa"};       
 	textureList[] = {"vkn_mbt_03_tex_wi",1};
 	class TextureSources
 	{
@@ -159,7 +183,7 @@ class vkn_mbt_03_d: I_MBT_03_cannon_F
 		{
 			author = "Jonmo";
 			displayname = "Nato (Winter)";
-			textures[] = {"VKN_Gear\data\Vehicles\vkn_MBT_03_w_ext01_co.paa", "VKN_Gear\data\Vehicles\vkn_MBT_03_w_ext02_co.paa", "VKN_Gear\data\Vehicles\vkn_MBT_03_w_RCWS_co.paa", "VKN_Gear\data\Vehicles\camonet_Winter_CO.paa"};
+			textures[] = {"VKN_Gear\data\Vehicles\vkn_MBT_04_ext01_co.paa", "VKN_Gear\data\Vehicles\vkn_MBT_04_ext02_co.paa", "VKN_Gear\data\Vehicles\vkn_MBT_03_RCWS_co.paa", "VKN_Gear\data\Vehicles\camonet_Winter_CO.paa"};
 			factions[] = {};
 		};
     };
