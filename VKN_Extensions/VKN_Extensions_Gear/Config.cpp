@@ -13,7 +13,9 @@ class CfgPatches {
       	"A3_Characters_F",
       	"VSM_HELMETS",
       	"task_force_radio_items",
-      	"VKN_Gear"
+      	"VKN_Gear",
+      	"BettIR_Core",
+      	"JAS_GPNVG18"
       };
     };
 };
@@ -21,6 +23,37 @@ class CfgPatches {
 #define private 0       // Hidden to all
 #define protected 1     // Can use but still hidden
 #define public 2        // Visible to all
+
+class BettIR_Config
+{
+    class CompatibleNightvisionGoggles
+    {
+         class JAS_GPNVG18_Tan
+         {
+              offset[] = {0.05, 0,0.3};
+         };
+         class JAS_GPNVG18_blk
+         {
+              offset[] = {0.1, 0.15,0.3};
+         };
+         class JAS_GPNVG18_Tan_TI
+         {
+              offset[] = {0.1, 0.15,0.3};
+         };
+         class JAS_GPNVG18_blk_TI
+         {
+              offset[] = {0.1, 0.15,0.3};
+         };
+         class JAS_GPNVG18_Full_Tan_TI
+         {
+              offset[] = {0.1, 0.15,0.3};
+         };
+         class JAS_GPNVG18_Full_blk_TI
+         {
+              offset[] = {0.1, 0.15,0.3};
+         };
+    };
+};
 
 class UniformSlotInfo
 {
