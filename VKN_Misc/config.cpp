@@ -48,6 +48,7 @@ class iGUIBack;
 class rscStructuredText;
 class rscCheckbox;
 class rscFrame;
+class rscEdit;
 
 
 
@@ -581,6 +582,7 @@ class cfg3DEN {
 };
 
 class ctrlMenuStrip;
+class ctrlShortcutButton;
 class display3DEN {
     class Controls {
         class MenuStrip: ctrlMenuStrip {
@@ -593,6 +595,18 @@ class display3DEN {
                     Picture = "\VKN_Misc\VikingLogo128.paa";
                     action = "[] spawn VKN_fnc_missionTemplateTool;";
                 };
+
+                //disable enter key
+                class MissionPreviewSP {
+        					shortcuts[]={156};
+        				};
+                class ButtonPlay: ctrlShortcutButton {
+
+            			shortcuts[]= {
+            				"0x00050000 + 0",
+            				57
+            			};
+            		};
             };
         };
     };
@@ -655,6 +669,7 @@ class RscDisplayStart: RscStandardDisplay {
 #include "\VKN_Misc\configs\VKN_Template_Tool_Info.hpp"
 #include "\VKN_Misc\configs\VKN_Template_Tool_Basic_Settings.hpp"
 #include "\VKN_Misc\configs\VKN_Template_Tool_Notification.hpp"
+#include "\VKN_Misc\configs\VKN_Template_Tool_File_Setup.hpp"
 
 
 

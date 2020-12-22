@@ -1,5 +1,7 @@
 class VKN_Template_Tool_Info {
   idd = 348569;
+  enableDisplay = 1;
+  enableSimulation = 1;
 
   class controls {
 
