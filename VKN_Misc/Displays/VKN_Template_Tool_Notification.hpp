@@ -47,7 +47,7 @@ class VKN_Template_Tool_Alert {
     class Explain: RscStructuredText
     {
     	idc = 1100;
-    	text = "There has been an update to the template tool. Please ensure you have the most recent version."; //--- ToDo: Localize;
+    	text = "There has been an update to the template tool. Please ensure you have the most recent version in your mission."; //--- ToDo: Localize;
     	x = 0.417479 * safezoneW + safezoneX;
     	y = 0.445 * safezoneH + safezoneY;
     	w = 0.165041 * safezoneW;
