@@ -1,9 +1,11 @@
 class VKN_Template_Tool_File_Setup {
-  idd = 348568;
+  idd = 3482;
   enableDisplay = 1;
   enableSimulation = 1;
 
-  controlsBackground[] = { ctrlStaticBackgroundDisableTiles };
+  class ControlsBackground {
+    DISABLE_BACKGROUND
+  };
 
   class controls {
     ////////////////////////////////////////////////////////
@@ -174,16 +176,17 @@ class VKN_Template_Tool_File_Setup {
     	h = 0.044 * safezoneH;
     	tooltip = "Please ensure all data is correct before clicking."; //--- ToDo: Localize;
     };
-    class VKN_TT_LinkButton_1: RscButton
+    class VKN_TT_LinkButton_1: ctrlButton
     {
       style = 13;
     	idc = 1601;
     	text = "Wiki Help"; //--- ToDo: Localize;
+      url = "https://community.bistudio.com/wiki/Description.ext";
     	x = 0.309171 * safezoneW + safezoneX;
     	y = 0.841 * safezoneH + safezoneY;
     	w = 0.0825207 * safezoneW;
     	h = 0.044 * safezoneH;
-    	tooltip = "<a href=""https://community.bistudio.com/wiki/Description.ext"">Description.ext Community Wiki Help</a>"; //--- ToDo: Localize;
+    	tooltip = "Description.ext Community Wiki Help"; //--- ToDo: Localize;
 
       action = "systemChat 'Description.ext wiki page will be opened in your web browser.';";
     };
@@ -191,11 +194,12 @@ class VKN_Template_Tool_File_Setup {
     {
     	idc = 1602;
     	text = "Wiki Help"; //--- ToDo: Localize;
+      url = "https://community.bistudio.com/wiki/Event_Scripts";
     	x = 0.608308 * safezoneW + safezoneX;
     	y = 0.841 * safezoneH + safezoneY;
     	w = 0.0825207 * safezoneW;
     	h = 0.044 * safezoneH;
-    	tooltip = "<a href=""https://community.bistudio.com/wiki/Event_Scripts"">Event Scripting Community Wiki Help</a>"; //--- ToDo: Localize;
+    	tooltip = "Event Scripting Community Wiki Help"; //--- ToDo: Localize;
 
       action = "systemChat 'Event Scripts wiki page will be opened in your web browser.';";
     };

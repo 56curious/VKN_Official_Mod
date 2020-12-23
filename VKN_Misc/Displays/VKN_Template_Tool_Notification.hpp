@@ -1,7 +1,11 @@
 class VKN_Template_Tool_Alert {
-  idd = 348570;
+  idd = 3484;
   enableDisplay = 1;
   enableSimulation = 1;
+
+  class ControlsBackground {
+    DISABLE_BACKGROUND
+  };
 
   class controls {
 
@@ -57,7 +61,7 @@ class VKN_Template_Tool_Alert {
     	y = 0.533 * safezoneH + safezoneY;
     	w = 0.0618905 * safezoneW;
     	h = 0.033 * safezoneH;
-      action = "closeDialog 0; profilenamespace setVariable ['VKN_MTT_Notification_V117', true]; saveprofilenamespace;";
+      action = "findDisplay 348570 closedisplay 0; profilenamespace setVariable ['VKN_MTT_Notification_V117', true]; saveprofilenamespace;";
     };
 
   };

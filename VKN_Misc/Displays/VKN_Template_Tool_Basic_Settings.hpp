@@ -1,7 +1,11 @@
 class VKN_Template_Tool_Basic_Settings {
-  idd = 348567;
+  idd = 3481;
   enableDisplay = 1;
   enableSimulation = 1;
+
+  class ControlsBackground {
+    DISABLE_BACKGROUND
+  };
 
   class controls {
     ////////////////////////////////////////////////////////

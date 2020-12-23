@@ -23,6 +23,14 @@ class CfgPatches {
 #define protected 1     // Can use but still hidden
 #define public 2        // Visible to all
 
+
+//Displays IDD define
+#define VTT_Basic_Settings 348567
+#define VTT_File_Setup 348568
+#define VTT_Info 348569
+#define VTT_Notification 348570
+
+
 class CfgFunctions {
 	class full_mission_load {
 		class functions {

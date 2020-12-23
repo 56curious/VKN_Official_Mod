@@ -51,6 +51,68 @@ class rscFrame;
 class rscEdit;
 
 
+//Eden ctrls
+class ctrlEdit;
+class ctrlEditMulti;
+class ctrlButton;
+class ctrlButtonPicture;
+class ctrlButtonClose;
+class ctrlButtonCancel;
+class ctrlButtonOK;
+class ctrlButtonSearch;
+class ctrlButtonCollapseAll;
+class ctrlButtonExpandAll;
+class ctrlButtonPictureKeepAspect;
+class ctrlStructuredText;
+class ctrlCombo;
+class ctrlCheckbox;
+class ctrlXSliderH;
+class ctrlControlsGroup;
+class ctrlControlsGroupNoScrollbars;
+class ctrlMenuStrip;
+class ctrlMenu;
+class ctrlStaticBackground;
+class ctrlStatic;
+class ctrlStaticFooter;
+class ctrlStaticBackgroundDisable;
+class ctrlStaticBackgroundDisableTiles;
+class ctrlStaticPictureKeepAspect;
+class ctrlStaticPicture;
+class ctrlStaticMulti;
+class ctrlStaticTitle;
+class ctrlStaticLine;
+class ctrlTree;
+class ctrlListbox;
+class ctrlListNBox;
+class ctrlToolbox;
+class ctrlToolboxPictureKeepAspect;
+class ctrlProgress;
+class ctrlStaticFrame;
+class scrollbar;
+class ctrlShortcutButton;
+
+
+///////
+//3DEN Enhanced Disable Background - Credits to R3vo https://github.com/R3voA3/3den-Enhanced/
+//GUI and script related macros
+#include "\a3\3DEN\UI\macros.inc"
+//DIK Key Codes
+#include "\a3\ui_f\hpp\definedikcodes.inc"
+//Common GRIDs
+#include "\a3\ui_f\hpp\definecommongrids.inc"
+//Eden Editor IDDs and IDCs as well as controls types and styles and macros
+#include "\a3\3den\ui\resincl.inc"
+
+//Defines
+#define CENTERED_X(w) (CENTER_X - (w / 2 * GRID_W))
+#define DIALOG_TOP (safezoneY + 17 * GRID_H)
+#define CTRL_DEFAULT_H (5 * GRID_H)
+
+//Disabled background
+#define DISABLE_BACKGROUND class BackgroundDisable: ctrlStaticBackgroundDisable {};\
+                           class BackgroundDisableTiles: ctrlStaticBackgroundDisableTiles {};
+//////////////////////
+//////////////////////
 
 
 enableDebugConsole[] = {"76561197996326460", "76561198116251840", "76561198138461195", "76561198044162606", "76561198036865266", "76561197960287930"};
@@ -581,8 +643,6 @@ class cfg3DEN {
   };
 };
 
-class ctrlMenuStrip;
-class ctrlShortcutButton;
 class display3DEN {
     class Controls {
         class MenuStrip: ctrlMenuStrip {
@@ -666,10 +726,17 @@ class RscDisplayStart: RscStandardDisplay {
     };
 };
 
-#include "\VKN_Misc\configs\VKN_Template_Tool_Info.hpp"
-#include "\VKN_Misc\configs\VKN_Template_Tool_Basic_Settings.hpp"
-#include "\VKN_Misc\configs\VKN_Template_Tool_Notification.hpp"
-#include "\VKN_Misc\configs\VKN_Template_Tool_File_Setup.hpp"
+#define VTT_Basic_Settings 3481
+#include "\VKN_Misc\displays\VKN_Template_Tool_Basic_Settings.hpp"
+
+#define VTT_File_Setup 3482
+#include "\VKN_Misc\displays\VKN_Template_Tool_File_Setup.hpp"
+
+#define VTT_Info 3483
+#include "\VKN_Misc\displays\VKN_Template_Tool_Info.hpp"
+
+#define VTT_Notification 3484
+#include "\VKN_Misc\displays\VKN_Template_Tool_Notification.hpp"
 
 
 
