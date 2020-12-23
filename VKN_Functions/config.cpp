@@ -25,10 +25,7 @@ class CfgPatches {
 
 
 //Displays IDD define
-#define VTT_Basic_Settings 348567
-#define VTT_File_Setup 348568
-#define VTT_Info 348569
-#define VTT_Notification 348570
+#include "\vkn_misc\displays\displayDefines.hpp"
 
 
 class CfgFunctions {

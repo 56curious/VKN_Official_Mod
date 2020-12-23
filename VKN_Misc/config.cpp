@@ -726,16 +726,10 @@ class RscDisplayStart: RscStandardDisplay {
     };
 };
 
-#define VTT_Basic_Settings 3481
+#include "\vkn_misc\displays\displayDefines.hpp"
 #include "\VKN_Misc\displays\VKN_Template_Tool_Basic_Settings.hpp"
-
-#define VTT_File_Setup 3482
 #include "\VKN_Misc\displays\VKN_Template_Tool_File_Setup.hpp"
-
-#define VTT_Info 3483
 #include "\VKN_Misc\displays\VKN_Template_Tool_Info.hpp"
-
-#define VTT_Notification 3484
 #include "\VKN_Misc\displays\VKN_Template_Tool_Notification.hpp"
 
 
