@@ -13,9 +13,7 @@ class CfgPatches {
       	"A3_Characters_F",
       	"VSM_HELMETS",
       	"task_force_radio_items",
-      	"VKN_Gear",
-      	"BettIR_Core",
-      	"JAS_GPNVG18"
+      	"VKN_Gear"
       };
     };
 };
