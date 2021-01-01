@@ -21,9 +21,9 @@ class VKN_Template_Tool_File_Setup {
     	h = 0.814 * safezoneH;
     	colorBackground[] = {0.137,0.137,0.137,0.75};
     };
-    class VKN_TT_Edit: RscEdit
+    class VKN_TT_Edit: ctrlEditMulti
     {
-      style = 15;
+      autocomplete = "scripting";
     	idc = 1400;
     	x = 0.309171 * safezoneW + safezoneX;
     	y = 0.324 * safezoneH + safezoneY;
@@ -166,7 +166,7 @@ class VKN_Template_Tool_File_Setup {
     	h = 0.187 * safezoneH;
     	tooltip = "Please ensure all data is correct before continuing."; //--- ToDo: Localize;
     };
-    class RscButton_1600: RscButton
+    class RscButton_1600: ctrlButtonClose
     {
     	idc = 1600;
     	text = "Complete"; //--- ToDo: Localize;
@@ -175,10 +175,10 @@ class VKN_Template_Tool_File_Setup {
     	w = 0.0825207 * safezoneW;
     	h = 0.044 * safezoneH;
     	tooltip = "Please ensure all data is correct before clicking."; //--- ToDo: Localize;
+      sizeEx = "5 * (1 / (getResolution select 3)) * pixelGrid * 0.5";
     };
     class VKN_TT_LinkButton_1: ctrlButton
     {
-      style = 13;
     	idc = 1601;
     	text = "Wiki Help"; //--- ToDo: Localize;
       url = "https://community.bistudio.com/wiki/Description.ext";
@@ -187,6 +187,7 @@ class VKN_Template_Tool_File_Setup {
     	w = 0.0825207 * safezoneW;
     	h = 0.044 * safezoneH;
     	tooltip = "Description.ext Community Wiki Help"; //--- ToDo: Localize;
+      sizeEx = "5 * (1 / (getResolution select 3)) * pixelGrid * 0.5";
 
       action = "systemChat 'Description.ext wiki page will be opened in your web browser.';";
     };
@@ -202,6 +203,63 @@ class VKN_Template_Tool_File_Setup {
     	tooltip = "Event Scripting Community Wiki Help"; //--- ToDo: Localize;
 
       action = "systemChat 'Event Scripts wiki page will be opened in your web browser.';";
+    };
+    class VKN_TT_resetButton: ctrlButton
+    {
+    	idc = 1603;
+    	text = "Reset"; //--- ToDo: Localize;
+    	x = 0.448946 * safezoneW + safezoneX;
+    	y = 0.148 * safezoneH + safezoneY;
+    	w = 0.0412603 * safezoneW;
+    	h = 0.022 * safezoneH;
+    };
+    class VKN_TT_resetButton_1: VKN_TT_resetButton
+    {
+    	idc = 1604;
+    	x = 0.65009 * safezoneW + safezoneX;
+    	y = 0.148 * safezoneH + safezoneY;
+    	w = 0.0412603 * safezoneW;
+    	h = 0.022 * safezoneH;
+    };
+    class VKN_TT_resetButton_2: VKN_TT_resetButton
+    {
+    	idc = 1605;
+    	x = 0.448946 * safezoneW + safezoneX;
+    	y = 0.302 * safezoneH + safezoneY;
+    	w = 0.0412603 * safezoneW;
+    	h = 0.022 * safezoneH;
+    };
+    class VKN_TT_resetButton_3: VKN_TT_resetButton
+    {
+    	idc = 1606;
+    	x = 0.65009 * safezoneW + safezoneX;
+    	y = 0.302 * safezoneH + safezoneY;
+    	w = 0.0412603 * safezoneW;
+    	h = 0.022 * safezoneH;
+    };
+    class VKN_TT_resetButton_4: VKN_TT_resetButton
+    {
+    	idc = 1607;
+    	x = 0.448946 * safezoneW + safezoneX;
+    	y = 0.456 * safezoneH + safezoneY;
+    	w = 0.0412603 * safezoneW;
+    	h = 0.022 * safezoneH;
+    };
+    class VKN_TT_resetButton_5: VKN_TT_resetButton
+    {
+    	idc = 1608;
+    	x = 0.65009 * safezoneW + safezoneX;
+    	y = 0.456 * safezoneH + safezoneY;
+    	w = 0.0412603 * safezoneW;
+    	h = 0.022 * safezoneH;
+    };
+    class VKN_TT_resetButton_6: VKN_TT_resetButton
+    {
+    	idc = 1609;
+    	x = 0.65009 * safezoneW + safezoneX;
+    	y = 0.61 * safezoneH + safezoneY;
+    	w = 0.0412603 * safezoneW;
+    	h = 0.022 * safezoneH;
     };
     ////////////////////////////////////////////////////////
     // GUI EDITOR OUTPUT END

@@ -15,10 +15,14 @@ Parameters:
 				        N/A
 */
 //Setup settings and define variables
-createDialog "VKN_Template_Tool_Basic_Settings";
+_VTT_Basic_Settings_Display = findDisplay 313 createDisplay "VKN_Template_Tool_Basic_Settings";
+if (isNull _VTT_Basic_Settings_Display) exitWith {systemChat "can't find display."};
 
 _squad = 0;
 _3denCam = get3DENCamera;
+
+//get UI Defines
+#include "\vkn_misc\displays\displayDefines.hpp"
 
 //Get a reasonable position for template to be created (avoids it spawning in a weird position)
 [_3denCam, 5] call bis_fnc_setHeight;
@@ -43,18 +47,39 @@ _3denCam setVectorDirAndUp [
 
 //Init tool and menus
 _sides = [West, East, Independent];
-//Add sides to listbox
-{ lbAdd [2100, str _x];} forEach _sides;
 
-waitUntil { lbText [2100, lbCurSel 2100] != "" };
+_ctrl_Players_Side_Combo = _VTT_Basic_Settings_Display displayCtrl 2100;
+_ctrl_Faction_Combo = _VTT_Basic_Settings_Display displayCtrl 2101;
+_ctrl_Squad_Combo = _VTT_Basic_Settings_Display displayCtrl 2102;
+_ctrl_Spectator_Combo = _VTT_Basic_Settings_Display displayCtrl 2103;
+
+_ctrl_complete_button = _VTT_Basic_Settings_Display displayCtrl 1600;
+
+_ctrl_groups_check_Box = _VTT_Basic_Settings_Display displayCtrl 2800;
+_ctrl_loadout_check_Box = _VTT_Basic_Settings_Display displayCtrl 2801;
+
+//Add sides to listbox
+{ _ctrl_Players_Side_Combo lbAdd str _x } forEach _sides;
+
+//get the selected side
+private "_side_lbText";
+waitUntil {
+  private _cursorIndex = lbCurSel _ctrl_Players_Side_Combo;
+  _side_lbText = _ctrl_Players_Side_Combo lbText _cursorIndex;
+  _side_lbText != ""
+};
+
+private _ctrl_Players_Side_CombolbText = toUpper _side_lbText;
+
 
 //fnc to check side and then filter faction
 VKN_fnc_sideChanged = {
+  private _side = _this select 0;
+  private _ctrl_Faction_Combo = _this select 1;
+  private _ctrl_Squad_Combo = _this select 2;
   waitUntil {VKN_Template_Tool_selectionChange};
-
   _factionList = [];
-  _index = lbCurSel 2100;
-  _side = toUpper (lbText [2100, _index]);
+
   //get all factions in a side.
   switch (_side) do {
       case ("WEST"): {
@@ -73,57 +98,83 @@ VKN_fnc_sideChanged = {
   };
 
   //get the selected faction
-  { lbadd [2101, _x]; } forEach _factionList;
+  { _ctrl_Faction_Combo lbadd _x; } forEach _factionList;
 
-  waitUntil { lbText [2101, lbCurSel 2101] != "" };
+  private "_faction_lbText";
+  waitUntil {
+    private _cursorIndex = lbCurSel _ctrl_Faction_Combo;
+    _faction_lbText = _ctrl_Faction_Combo lbText _cursorIndex;
+    _faction_lbText != ""
+  };
 
-  _curSelFac = lbText [2101, lbCurSel 2101];
+  private _curSelFac = toUpper _faction_lbText;
   //apply group
   _squadArray = "true" configClasses (configfile >> "CfgGroups" >> _side >> _curSelFac >> "Infantry");
   {
-    lbadd [2102, getText( _x >> "name")];
-    lbSetData [2102, _forEachIndex, str _x];
+    _ctrl_Squad_Combo lbadd (getText( _x >> "name"));
+    _ctrl_Squad_Combo lbSetData [_forEachIndex, str _x];
   } forEach _squadArray;
 
   VKN_Template_Tool_selectionChange = false;
 
 };
 
-[] spawn VKN_fnc_sideChanged;
+[_ctrl_Players_Side_CombolbText, _ctrl_Faction_Combo, _ctrl_Squad_Combo] spawn VKN_fnc_sideChanged;
 
 //apply EH to button to reset on faction change
-((findDisplay 348567) displayCtrl 2100) ctrlSetEventHandler ["LBSelChanged","VKN_Template_Tool_selectionChange = true; lbClear 2101; lbClear 2102; [] spawn VKN_fnc_sideChanged;"]; //Side LB
-((findDisplay 348567) displayCtrl 2101) ctrlSetEventHandler ["LBSelChanged","VKN_Template_Tool_selectionChange = true; lbClear 2102; [] spawn VKN_fnc_sideChanged;"]; //Faction LB
+_VTT_Basic_Settings_Display displayAddEventHandler [
+  "LBSelChanged",
+  "
+    _VTT_Basic_Settings_Display = findDisplay VTT_Basic_Settings;
+    _ctrl_Faction_Combo = _VTT_Basic_Settings_Display displayCtrl 2101;
+    _ctrl_Squad_Combo = _VTT_Basic_Settings_Display displayCtrl 2102;
+    VKN_Template_Tool_selectionChange = true;
+    lbClear _ctrl_Faction_Combo;
+    lbClear _ctrl_Squad_Combo;
+    [] spawn VKN_fnc_sideChanged;
+  "
+]; //Side LB
+
+_VTT_Basic_Settings_Display displayAddEventHandler [
+  "LBSelChanged",
+  "
+    _VTT_Basic_Settings_Display = findDisplay VTT_Basic_Settings;
+    _ctrl_Squad_Combo = _VTT_Basic_Settings_Display displayCtrl 2102;
+    VKN_Template_Tool_selectionChange = true;
+    lbClear _ctrl_Squad_Combo;
+    [] spawn VKN_fnc_sideChanged;
+  "
+]; //Faction LB
 
 //Apply spectator settings
 _Specoptions = ["All Enabled", "All Disabled", "Freecam Disabled", "3pp Disabled", "Freecam only", "1pp Disabled"];
-{ lbAdd [2103, _x] } forEach _Specoptions;
-lbSetCurSel [2103, 2];
+{ _ctrl_Spectator_Combo lbAdd _x } forEach _Specoptions;
+_ctrl_Spectator_Combo lbSetCurSel  2;
 
 
-buttonSetAction [1600, "VKN_Template_Tool_Basic_Settings_Complete = true;"];
+_ctrl_complete_button buttonSetAction "VKN_Template_Tool_Basic_Settings_Complete = true;";
 waitUntil {VKN_Template_Tool_Basic_Settings_Complete isEqualTo true};
 
 //If a listbox is missed, default to first of each type.
-if (lbText [2100, lbCurSel 2100] == "") then {
-  lbSetCurSel [2100, 0];
+if (_ctrl_Players_Side_Combo lbText lbCurSel _ctrl_Players_Side_Combo == "") then {
+  _ctrl_Players_Side_Combo lbSetCurSel 0;
   systemChat "Side option was missed, taking default instead.";
 };
 
 //If faction is missed, get first squad from config.
-if (lbText [2101, lbCurSel 2101] == "") then {
-  lbSetCurSel [2101, 0];
+if (_ctrl_Faction_Combo lbText lbCurSel _ctrl_Faction_Combo == "") then {
+  _ctrl_Faction_Combo lbSetCurSel 0;
   systemChat "Faction option was missed, taking default instead.";
-  lbSetCurSel [2102, 0];
+  _ctrl_Squad_Combo lbSetCurSel 0;
 };
 
-if (lbText [2102, lbCurSel 2102] == "") then {
-  lbSetCurSel [2102, 0];
+if (_ctrl_Squad_Combo lbText lbCurSel _ctrl_Squad_Combo == "") then {
+  _ctrl_Squad_Combo lbSetCurSel 0;
   systemChat "Squad option was missed, taking default instead.";
 };
 
 //Fixed missing indep factions not spawning.
-_side_Option_Temp = toUpper (lbText [2100, lbCurSel 2100]);
+_side_Option_Temp = toUpper _ctrl_Players_Side_CombolbText;
 //get all factions in a side.
 _side_Option = "West";
 switch (_side_Option_Temp) do {
@@ -139,16 +190,148 @@ switch (_side_Option_Temp) do {
     default {};
 };
 
-_factions_option = lbText [2101, lbCurSel 2101];
-_squads_option = ([lbData [2102, lbCurSel 2102]] call BIS_fnc_configPath) select 5; //Only option extracted not as a string
-_spectate_option = lbText [2103, lbCurSel 2103];
-_saveLoadouts = cbChecked ((findDisplay 348567) displayCtrl 2800);
-_dynamicGroups = cbChecked ((findDisplay 348567) displayCtrl 2801);
 
-closeDialog 0;
+_factions_option = _ctrl_Faction_Combo lbText lbCurSel _ctrl_Faction_Combo;
+_squads_option = ([_ctrl_Squad_Combo lbData lbCurSel _ctrl_Squad_Combo] call BIS_fnc_configPath) select 5; //Only option extracted not as a string
+_spectate_option = _ctrl_Spectator_Combo lbText lbCurSel _ctrl_Spectator_Combo;
+_saveLoadouts = cbChecked _ctrl_loadout_check_Box;
+_dynamicGroups = cbChecked _ctrl_groups_check_Box;
+
+_VTT_Basic_Settings_Display closedisplay 0;
+
+//file creation setup display
+_VTT_File_Setup_Display = findDisplay 313 createDisplay "VKN_Template_Tool_File_Setup";
+
+//not in ID order, in UI order from left down, up to top right then desc.ext
+_ctrl_init_edit = _VTT_File_Setup_Display displayCtrl 1402;
+_ctrl_initPlayerLocal_edit = _VTT_File_Setup_Display displayCtrl 1400;
+_ctrl_initPlayerServer_edit = _VTT_File_Setup_Display displayCtrl 1403;
+_ctrl_initServer_edit = _VTT_File_Setup_Display displayCtrl 1401;
+_ctrl_onPlayerKilled_edit = _VTT_File_Setup_Display displayCtrl 1404;
+_ctrl_onPlayerRespawn_edit = _VTT_File_Setup_Display displayCtrl 1406;
+_ctrl_description_edit = _VTT_File_Setup_Display displayCtrl 1405;
+
+_ctrl_complete_button = _VTT_File_Setup_Display displayCtrl 1600;
+
+_ctrl_init_reset_button = _VTT_File_Setup_Display displayCtrl 1603;
+_ctrl_initPlayerLocal_reset_button = _VTT_File_Setup_Display displayCtrl 1605;
+_ctrl_initPlayerServer_reset_button = _VTT_File_Setup_Display displayCtrl 1607;
+_ctrl_initServer_reset_button = _VTT_File_Setup_Display displayCtrl 1604;
+_ctrl_onPlayerKilled_reset_button = _VTT_File_Setup_Display displayCtrl 1606;
+_ctrl_onPlayerRespawn_reset_button = _VTT_File_Setup_Display displayCtrl 1608;
+_ctrl_description_reset_button = _VTT_File_Setup_Display displayCtrl 1609;
+
+
+//disabled until the automatic file .dll is complete
+_ctrl_init_edit ctrlEnable false;
+_ctrl_initServer_edit ctrlEnable false;
+_ctrl_init_reset_button ctrlEnable false;
+_ctrl_initServer_reset_button ctrlEnable false;
+
+
+//set Defaults:
+_ctrl_init_edit_text = "";
+_ctrl_initPlayerLocal_edit_text = format ["['Initialize', [true]] remoteExec ['BIS_fnc_dynamicGroups', 2];%1['InitializePlayer', [player, true]] remoteExec ['BIS_fnc_dynamicGroups', 0, true];", endl];
+_ctrl_initPlayerServer_edit_text = format ["{%1 if (!isnull (getassignedcuratorunit _x)) then {%1		_unit = getassignedcuratorunit _x;%1		if (isnull (getassignedcuratorlogic _unit)) then {%1			unassignCurator _x;%1			sleep 1;%1			_unit assignCurator _x;%1			if (isClass (configFile >> 'CfgPatches' >> 'task_force_radio')) then {%1				_unit call TFAR_fnc_isForcedCurator;%1			};%1		};%1	};%1} foreach allcurators;", endl];
+_ctrl_initServer_edit_text = "";
+_ctrl_onPlayerKilled_edit_text = format ["[player, [missionNamespace, 'inventory_var']] call BIS_fnc_saveInventory;%1['Initialize', [ player, [], false, false, true]] call BIS_fnc_EGSpectator;", endl];
+_ctrl_onPlayerRespawn_edit_text = format ["[player, [missionNamespace, 'inventory_var']] call BIS_fnc_loadInventory;%1['Terminate', [ player]] call BIS_fnc_EGSpectator;", endl];
+_ctrl_description_edit_text = format ["respawnOnStart = 0;%1respawnTemplatesVirtual[] = {};", endl];
+
+_ctrl_init_edit ctrlSetText _ctrl_init_edit_text;
+_ctrl_initPlayerLocal_edit ctrlSetText _ctrl_initPlayerLocal_edit_text;
+_ctrl_initPlayerServer_edit ctrlSetText _ctrl_initPlayerServer_edit_text;
+_ctrl_initServer_edit ctrlSetText _ctrl_initServer_edit_text;
+_ctrl_onPlayerKilled_edit ctrlSetText _ctrl_onPlayerKilled_edit_text;
+_ctrl_onPlayerRespawn_edit ctrlSetText _ctrl_onPlayerRespawn_edit_text;
+_ctrl_description_edit ctrlSetText _ctrl_description_edit_text;
+
+//Button Actions
+_ctrl_init_reset_button ctrlAddEventHandler ["ButtonClick", "
+  _VTT_File_Setup_Display = findDisplay 3482;
+  _editbox = _VTT_File_Setup_Display displayCtrl 1402;
+  _text = """";
+  _editbox ctrlSetText _text;
+"];
+
+_ctrl_initServer_reset_button ctrlAddEventHandler ["ButtonClick", "
+  _VTT_File_Setup_Display = findDisplay 3482;
+  _editbox = _VTT_File_Setup_Display displayCtrl 1401;
+  _text = """";
+  _editbox ctrlSetText _text;
+"];
+
+_ctrl_initPlayerLocal_reset_button ctrlAddEventHandler ["ButtonClick", "
+  _VTT_File_Setup_Display = findDisplay 3482;
+  _editbox = _VTT_File_Setup_Display displayCtrl 1400;
+  _text = format [""['Initialize', [true]] remoteExec ['BIS_fnc_dynamicGroups', 2];%1['InitializePlayer', [player, true]] remoteExec ['BIS_fnc_dynamicGroups', 0, true];"", endl];
+  _editbox ctrlSetText _text;
+"];
+
+_ctrl_onPlayerKilled_reset_button ctrlAddEventHandler ["ButtonClick", "
+  _VTT_File_Setup_Display = findDisplay 3482;
+  _editbox = _VTT_File_Setup_Display displayCtrl 1404;
+  _text = format [""[player, [missionNamespace, 'inventory_var']] call BIS_fnc_saveInventory;%1['Initialize', [ player, [], false, false, true]] call BIS_fnc_EGSpectator;"", endl];
+  _editbox ctrlSetText _text;
+"];
+
+_ctrl_initPlayerServer_reset_button ctrlAddEventHandler ["ButtonClick", "
+  _VTT_File_Setup_Display = findDisplay 3482;
+  _editbox = _VTT_File_Setup_Display displayCtrl 1403;
+  _text = format [""{%1 if (!isnull (getassignedcuratorunit _x)) then {%1		_unit = getassignedcuratorunit _x;%1		if (isnull (getassignedcuratorlogic _unit)) then {%1			unassignCurator _x;%1			sleep 1;%1			_unit assignCurator _x;%1			if (isClass (configFile >> 'CfgPatches' >> 'task_force_radio')) then {%1				_unit call TFAR_fnc_isForcedCurator;%1			};%1		};%1	};%1} foreach allcurators;"", endl];
+  _editbox ctrlSetText _text;
+"];
+
+_ctrl_onPlayerRespawn_reset_button ctrlAddEventHandler ["ButtonClick", "
+  _VTT_File_Setup_Display = findDisplay 3482;
+  _editbox = _VTT_File_Setup_Display displayCtrl 1406;
+  _text = format [""[player, [missionNamespace, 'inventory_var']] call BIS_fnc_loadInventory;%1['Terminate', [ player]] call BIS_fnc_EGSpectator;"", endl];
+  _editbox ctrlSetText _text;
+"];
+
+_ctrl_description_reset_button ctrlAddEventHandler ["ButtonClick", "
+  _VTT_File_Setup_Display = findDisplay 3482;
+  _editbox = _VTT_File_Setup_Display displayCtrl 1405;
+  _text = format [""respawnOnStart = 0;%1respawnTemplatesVirtual[] = {};"", endl];
+  _editbox ctrlSetText _text;
+"];
+
+_ctrl_complete_button setVariable ["_ctrl_complete_button_variable", false];
+_ctrl_complete_button ctrlAddEventHandler ["ButtonClick", {params ["_control"];	_control setVariable ["_ctrl_complete_button_variable", true]; }];
+waitUntil {_ctrl_complete_button getVariable ["_ctrl_complete_button_variable", false]};
+
+//get info from display then close
+_ctrl_init_edit_text = ctrlText _ctrl_init_edit;
+_ctrl_initPlayerLocal_edit_text = ctrlText _ctrl_initPlayerLocal_edit;
+_ctrl_initPlayerServer_edit_text = ctrlText _ctrl_initPlayerServer_edit;
+_ctrl_initServer_edit_text = ctrlText _ctrl_initServer_edit;
+_ctrl_onPlayerKilled_edit_text = ctrlText _ctrl_onPlayerKilled_edit;
+_ctrl_onPlayerRespawn_edit_text = ctrlText _ctrl_onPlayerRespawn_edit;
+_ctrl_description_edit_text = ctrlText _ctrl_description_edit;
+
+_VTT_File_Setup_Display closeDisplay 0;
+
+
 
 //Start tool
 startLoadingScreen ["Loading mission template tool... Please wait."];
+
+//deal with extension
+/*
+_initData = ["init.sqf", _ctrl_init_edit_text];
+_initPlayerLocalData = ["init.sqf", _ctrl_initPlayerLocal_edit_text];
+_initPlayerServerData = ["init.sqf", _ctrl_initPlayerServer_edit_text];
+_initServerData = ["init.sqf", _ctrl_initServer_edit_text];
+_onPlayerKilledData = ["init.sqf", _ctrl_onPlayerKilled_edit_text];
+_onPlayerRespawnData = ["init.sqf", _ctrl_onPlayerRespawn_edit_text];
+_descriptionData = ["init.sqf", _ctrl_description_edit_text];
+_extensionData = [];
+{ _extensionData pushBack _x } forEach [_initData, _initPlayerLocalData, _initPlayerServerData, _initServerData, _onPlayerKilledData ,_onPlayerRespawnData ,_descriptionData];
+
+if !(isnil "_extensionData") then {
+  "" callExtension ["fncNameInExt", arguments];
+};
+*/
 
 collect3DENHistory {
 
@@ -305,7 +488,6 @@ collect3DENHistory {
   _HC2 set3DENAttribute ["name", "HC2"];
 
   { _x set3DENAttribute ["ControlMP", true]; } forEach [_HC1, _HC2];
-
 
   //Werthles' Headless Module setup if present
   if (isclass (configfile >> "CfgPatches" >> "Werthles_WHK")) then {
