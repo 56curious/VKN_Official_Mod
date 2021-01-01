@@ -510,6 +510,10 @@ collect3DENHistory {
 
   };
 
+  _arsenalBox = create3DENEntity ["object", "Box_FIA_Support_F", _position];
+  _arsenalBox set3DENAttribute ["name", "Arsenal_Box"];
+  _arsenalBox set3DENAttribute ["init", format ["clearItemCargo this; %1[""AmmoboxInit"", [this, true]] spawn BIS_fnc_arsenal; %1[this, true] call ace_arsenal_fnc_initBox;", endl]];
+
 };
 
 //Notification
