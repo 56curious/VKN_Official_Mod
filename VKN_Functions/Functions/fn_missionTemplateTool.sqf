@@ -14,6 +14,9 @@ Framework:      Mission Template
 Parameters:
 				        N/A
 */
+//Don't run if not in 3den
+if !(is3DEN) exitWith {systemChat "You're not in the editor! Please go into the editor to run this function!"};
+
 //Setup settings and define variables
 _VTT_Basic_Settings_Display = findDisplay 313 createDisplay "VKN_Template_Tool_Basic_Settings";
 if (isNull _VTT_Basic_Settings_Display) exitWith {systemChat "can't find display."};
@@ -23,6 +26,9 @@ _3denCam = get3DENCamera;
 
 //get UI Defines
 #include "\vkn_misc\displays\displayDefines.hpp"
+
+//get data to return camera too:
+_vectorDirBefore = vectorDir _3denCam;
 
 //Get a reasonable position for template to be created (avoids it spawning in a weird position)
 [_3denCam, 5] call bis_fnc_setHeight;
@@ -61,24 +67,47 @@ _ctrl_loadout_check_Box = _VTT_Basic_Settings_Display displayCtrl 2801;
 //Add sides to listbox
 { _ctrl_Players_Side_Combo lbAdd str _x } forEach _sides;
 
-//get the selected side
-private "_side_lbText";
-waitUntil {
-  private _cursorIndex = lbCurSel _ctrl_Players_Side_Combo;
-  _side_lbText = _ctrl_Players_Side_Combo lbText _cursorIndex;
-  _side_lbText != ""
-};
+//apply events to list boxes
+_ctrl_Players_Side_Combo ctrlAddEventHandler [
+  "LBSelChanged",
+  "
+    _VTT_Basic_Settings_Display = findDisplay 3481;
+    _ctrl_Players_Side_Combo = _VTT_Basic_Settings_Display displayCtrl 2100;
+    _ctrl_Faction_Combo = _VTT_Basic_Settings_Display displayCtrl 2101;
+    _ctrl_Squad_Combo = _VTT_Basic_Settings_Display displayCtrl 2102;
+    VKN_Template_Tool_selectionChange = true;
+    lbClear _ctrl_Faction_Combo;
+    lbClear _ctrl_Squad_Combo;
+    [_ctrl_Players_Side_Combo, _ctrl_Faction_Combo, _ctrl_Squad_Combo] spawn VKN_fnc_sideChanged;
+  "
+]; //Side LB
 
-private _ctrl_Players_Side_CombolbText = toUpper _side_lbText;
-
+_ctrl_Faction_Combo ctrlAddEventHandler [
+  "LBSelChanged",
+  "
+    _VTT_Basic_Settings_Display = findDisplay 3481;
+    _ctrl_Players_Side_Combo = _VTT_Basic_Settings_Display displayCtrl 2100;
+    _ctrl_Faction_Combo = _VTT_Basic_Settings_Display displayCtrl 2101;
+    _ctrl_Squad_Combo = _VTT_Basic_Settings_Display displayCtrl 2102;
+    VKN_Template_Tool_selectionChange = true;
+    lbClear _ctrl_Squad_Combo;
+    [_ctrl_Players_Side_Combo, _ctrl_Faction_Combo, _ctrl_Squad_Combo] spawn VKN_fnc_sideChanged;
+  "
+]; //Faction LB
 
 //fnc to check side and then filter faction
 VKN_fnc_sideChanged = {
-  private _side = _this select 0;
-  private _ctrl_Faction_Combo = _this select 1;
-  private _ctrl_Squad_Combo = _this select 2;
+  _ctrl_Players_Side_Combo = _this select 0;
+  _ctrl_Faction_Combo = _this select 1;
+  _ctrl_Squad_Combo = _this select 2;
   waitUntil {VKN_Template_Tool_selectionChange};
   _factionList = [];
+
+  //get the selected side
+  _side_lbText = "";
+  _cursorIndex = lbCurSel _ctrl_Players_Side_Combo;
+  _side_lbText = _ctrl_Players_Side_Combo lbText _cursorIndex;
+  _side = toUpper _side_lbText;
 
   //get all factions in a side.
   switch (_side) do {
@@ -100,14 +129,11 @@ VKN_fnc_sideChanged = {
   //get the selected faction
   { _ctrl_Faction_Combo lbadd _x; } forEach _factionList;
 
-  private "_faction_lbText";
-  waitUntil {
-    private _cursorIndex = lbCurSel _ctrl_Faction_Combo;
-    _faction_lbText = _ctrl_Faction_Combo lbText _cursorIndex;
-    _faction_lbText != ""
-  };
+  _faction_lbText = "";
+  private _cursorIndex = lbCurSel _ctrl_Faction_Combo;
+  _faction_lbText = _ctrl_Faction_Combo lbText _cursorIndex;
+  _curSelFac = toUpper _faction_lbText;
 
-  private _curSelFac = toUpper _faction_lbText;
   //apply group
   _squadArray = "true" configClasses (configfile >> "CfgGroups" >> _side >> _curSelFac >> "Infantry");
   {
@@ -116,35 +142,8 @@ VKN_fnc_sideChanged = {
   } forEach _squadArray;
 
   VKN_Template_Tool_selectionChange = false;
-
 };
 
-[_ctrl_Players_Side_CombolbText, _ctrl_Faction_Combo, _ctrl_Squad_Combo] spawn VKN_fnc_sideChanged;
-
-//apply EH to button to reset on faction change
-_VTT_Basic_Settings_Display displayAddEventHandler [
-  "LBSelChanged",
-  "
-    _VTT_Basic_Settings_Display = findDisplay VTT_Basic_Settings;
-    _ctrl_Faction_Combo = _VTT_Basic_Settings_Display displayCtrl 2101;
-    _ctrl_Squad_Combo = _VTT_Basic_Settings_Display displayCtrl 2102;
-    VKN_Template_Tool_selectionChange = true;
-    lbClear _ctrl_Faction_Combo;
-    lbClear _ctrl_Squad_Combo;
-    [] spawn VKN_fnc_sideChanged;
-  "
-]; //Side LB
-
-_VTT_Basic_Settings_Display displayAddEventHandler [
-  "LBSelChanged",
-  "
-    _VTT_Basic_Settings_Display = findDisplay VTT_Basic_Settings;
-    _ctrl_Squad_Combo = _VTT_Basic_Settings_Display displayCtrl 2102;
-    VKN_Template_Tool_selectionChange = true;
-    lbClear _ctrl_Squad_Combo;
-    [] spawn VKN_fnc_sideChanged;
-  "
-]; //Faction LB
 
 //Apply spectator settings
 _Specoptions = ["All Enabled", "All Disabled", "Freecam Disabled", "3pp Disabled", "Freecam only", "1pp Disabled"];
@@ -153,6 +152,7 @@ _ctrl_Spectator_Combo lbSetCurSel  2;
 
 
 _ctrl_complete_button buttonSetAction "VKN_Template_Tool_Basic_Settings_Complete = true;";
+[_ctrl_Players_Side_Combo, _ctrl_Faction_Combo, _ctrl_Squad_Combo] spawn VKN_fnc_sideChanged;
 waitUntil {VKN_Template_Tool_Basic_Settings_Complete isEqualTo true};
 
 //If a listbox is missed, default to first of each type.
@@ -174,7 +174,11 @@ if (_ctrl_Squad_Combo lbText lbCurSel _ctrl_Squad_Combo == "") then {
 };
 
 //Fixed missing indep factions not spawning.
-_side_Option_Temp = toUpper _ctrl_Players_Side_CombolbText;
+//get the selected side
+_side_lbText = "";
+_cursorIndex = lbCurSel _ctrl_Players_Side_Combo;
+_side_lbText = _ctrl_Players_Side_Combo lbText _cursorIndex;
+_side_Option_Temp = toUpper _side_lbText;
 //get all factions in a side.
 _side_Option = "West";
 switch (_side_Option_Temp) do {
@@ -189,6 +193,7 @@ switch (_side_Option_Temp) do {
     };
     default {};
 };
+
 
 
 _factions_option = _ctrl_Faction_Combo lbText lbCurSel _ctrl_Faction_Combo;
@@ -220,13 +225,6 @@ _ctrl_initServer_reset_button = _VTT_File_Setup_Display displayCtrl 1604;
 _ctrl_onPlayerKilled_reset_button = _VTT_File_Setup_Display displayCtrl 1606;
 _ctrl_onPlayerRespawn_reset_button = _VTT_File_Setup_Display displayCtrl 1608;
 _ctrl_description_reset_button = _VTT_File_Setup_Display displayCtrl 1609;
-
-
-//disabled until the automatic file .dll is complete
-_ctrl_init_edit ctrlEnable false;
-_ctrl_initServer_edit ctrlEnable false;
-_ctrl_init_reset_button ctrlEnable false;
-_ctrl_initServer_reset_button ctrlEnable false;
 
 
 //set Defaults:
@@ -316,22 +314,43 @@ _VTT_File_Setup_Display closeDisplay 0;
 //Start tool
 startLoadingScreen ["Loading mission template tool... Please wait."];
 
-//deal with extension
-/*
 _initData = ["init.sqf", _ctrl_init_edit_text];
-_initPlayerLocalData = ["init.sqf", _ctrl_initPlayerLocal_edit_text];
-_initPlayerServerData = ["init.sqf", _ctrl_initPlayerServer_edit_text];
-_initServerData = ["init.sqf", _ctrl_initServer_edit_text];
-_onPlayerKilledData = ["init.sqf", _ctrl_onPlayerKilled_edit_text];
-_onPlayerRespawnData = ["init.sqf", _ctrl_onPlayerRespawn_edit_text];
-_descriptionData = ["init.sqf", _ctrl_description_edit_text];
+_initPlayerLocalData = ["initPlayerLocal.sqf", _ctrl_initPlayerLocal_edit_text];
+_initPlayerServerData = ["initPlayerServer.sqf", _ctrl_initPlayerServer_edit_text];
+_initServerData = ["initServer.sqf", _ctrl_initServer_edit_text];
+_onPlayerKilledData = ["onPlayerKilled.sqf", _ctrl_onPlayerKilled_edit_text];
+_onPlayerRespawnData = ["onPlayerRespawn.sqf", _ctrl_onPlayerRespawn_edit_text];
+_descriptionData = ["description.ext", _ctrl_description_edit_text];
 _extensionData = [];
 { _extensionData pushBack _x } forEach [_initData, _initPlayerLocalData, _initPlayerServerData, _initServerData, _onPlayerKilledData ,_onPlayerRespawnData ,_descriptionData];
 
-if !(isnil "_extensionData") then {
-  "" callExtension ["fncNameInExt", arguments];
+
+//create file via python
+//https://colinstewart.pw/article/string-replacement-function-arma-sqf-20 - string replacer not by me, please check out!
+PX_fnc_stringReplace = {
+ params["_str", "_find", "_replace"];
+
+ private _return = "";
+ private _len = count _find;
+ private _pos = _str find _find;
+
+ while {(_pos != -1) && (count _str > 0)} do {
+  _return = _return + (_str select [0, _pos]) + _replace;
+
+  _str = (_str select [_pos+_len]);
+  _pos = _str find _find;
+ };
+ _return + _str;
 };
-*/
+_path = [getMissionPath "", "\", "\\"] call PX_fnc_stringReplace;
+
+
+//runs in 3den
+_createFiles = ["viking.VKN_createFiles", [_path, _extensionData]] call (uiNamespace getVariable "py3_fnc_callExtension");
+//need to see return of _createFiles and then fix if to match // returns "true" so needs a look, not required to have though.
+//if (_createFiles isEqualTo "true") then {systemChat "Mission Files created successfully!"} else {systemChat "There was an error creating the files, please ensure you have saved the mission!"};
+
+
 
 collect3DENHistory {
 
@@ -518,5 +537,5 @@ collect3DENHistory {
 
 //Notification
 endLoadingScreen;
-createDialog "VKN_Template_Tool_Info";
+//createDialog "VKN_Template_Tool_Info";
 ["Viking PMC Mission Template Created."] call BIS_fnc_3DENNotification;
