@@ -12,7 +12,7 @@ class VKN_Template_Tool_Basic_Settings {
     // GUI EDITOR OUTPUT START (by Curious, v1.063, #Xucaro)
     ////////////////////////////////////////////////////////
 
-    class IGUIBack_2200: IGUIBack
+    class Background: IGUIBack
     {
     	idc = 2200;
 
@@ -22,7 +22,7 @@ class VKN_Template_Tool_Basic_Settings {
     	h = 0.532 * safezoneH;
     	colorBackground[] = {0.137,0.137,0.137,0.75};
     };
-    class IGUIBack_2201: IGUIBack
+    class titleBackground: IGUIBack
     {
     	idc = 2201;
 
@@ -32,7 +32,7 @@ class VKN_Template_Tool_Basic_Settings {
     	h = 0.042 * safezoneH;
     	colorBackground[] = {0.03,0.51,1,0.75};
     };
-    class RscText_1000: RscText
+    class titleText: rscText
     {
     	idc = 1000;
 
@@ -42,34 +42,34 @@ class VKN_Template_Tool_Basic_Settings {
     	w = 0.255937 * safezoneW;
     	h = 0.042 * safezoneH;
     };
-    class RscText_1001: RscText
+    class sideText: rscText
     {
-    	idc = 1001;
+      idc = 1001;
 
-    	text = "Players Side:"; //--- ToDo: Localize;
-    	x = 0.436041 * safezoneW + safezoneX;
-    	y = 0.33037 * safezoneH + safezoneY;
-    	w = 0.07875 * safezoneW;
-    	h = 0.028 * safezoneH;
-    	tooltip = "Set the side the playable units will spawn as."; //--- ToDo: Localize;
+      text = "Players Side:"; //--- ToDo: Localize;
+      x = 0.432952 * safezoneW + safezoneX;
+      y = 0.335 * safezoneH + safezoneY;
+      w = 0.07875 * safezoneW;
+      h = 0.022 * safezoneH;
+      tooltip = "Set the side the playable units will spawn as."; //--- ToDo: Localize;
     };
     class Players_Side_Combo: RscCombo
     {
     	idc = 2100;
 
     	text = "Test"; //--- ToDo: Localize;
-    	x = 0.519688 * safezoneW + safezoneX;
-    	y = 0.332 * safezoneH + safezoneY;
+    	x = 0.52063 * safezoneW + safezoneX;
+    	y = 0.335 * safezoneH + safezoneY;
     	w = 0.0984375 * safezoneW;
-    	h = 0.028 * safezoneH;
+    	h = 0.022 * safezoneH;
     };
-    class RscText_1002: RscText
+    class factionText: rscText
     {
     	idc = 1002;
 
     	text = "Faction Override:"; //--- ToDo: Localize;
-    	x = 0.4175 * safezoneW + safezoneX;
-    	y = 0.388222 * safezoneH + safezoneY;
+    	x = 0.412322 * safezoneW + safezoneX;
+    	y = 0.39 * safezoneH + safezoneY;
     	w = 0.0984375 * safezoneW;
     	h = 0.028 * safezoneH;
     	tooltip = """B_VKN_ODIN_infantry_squad_pmc"", if not present ""BUS_InfSquad"" is used - default playable factions. Overrides the faction to spawn. Taken from cfgFactionClasses."; //--- ToDo: Localize;
@@ -79,92 +79,92 @@ class VKN_Template_Tool_Basic_Settings {
     	idc = 2101;
 
     	text = "Test"; //--- ToDo: Localize;
-    	x = 0.519688 * safezoneW + safezoneX;
-    	y = 0.388 * safezoneH + safezoneY;
+    	x = 0.52063 * safezoneW + safezoneX;
+    	y = 0.39 * safezoneH + safezoneY;
     	w = 0.0984375 * safezoneW;
-    	h = 0.028 * safezoneH;
+    	h = 0.022 * safezoneH;
     };
-    class RscText_1008: RscText
+    class squadText: rscText
     {
     	idc = 1002;
 
     	text = "Squad Select:"; //--- ToDo: Localize;
-    	x = 0.432395 * safezoneW + safezoneX;
-    	y = 0.444 * safezoneH + safezoneY;
+    	x = 0.438109 * safezoneW + safezoneX;
+    	y = 0.445 * safezoneH + safezoneY;
     	w = 0.0721875 * safezoneW;
-    	h = 0.028 * safezoneH;
+    	h = 0.022 * safezoneH;
     	tooltip = "Select the squad to have the playerable units spawn as."; //--- ToDo: Localize;
     };
     class Squad_Select_Combo: RscCombo
     {
     	idc = 2102;
 
-    	x = 0.519688 * safezoneW + safezoneX;
-    	y = 0.444 * safezoneH + safezoneY;
+    	x = 0.52063 * safezoneW + safezoneX;
+    	y = 0.445 * safezoneH + safezoneY;
     	w = 0.0984375 * safezoneW;
-    	h = 0.028 * safezoneH;
+    	h = 0.022 * safezoneH;
     };
-    class RscText_1003: RscText
+    class spectatorText: rscText
     {
     	idc = 1003;
 
     	text = "Spectator Restriction:"; //--- ToDo: Localize;
-    	x = 0.395 * safezoneW + safezoneX;
-    	y = 0.498148 * safezoneH + safezoneY;
-    	w = 0.124687 * safezoneW;
-    	h = 0.028 * safezoneH;
+    	x = 0.396849 * safezoneW + safezoneX;
+    	y = 0.5 * safezoneH + safezoneY;
+    	w = 0.113466 * safezoneW;
+    	h = 0.022 * safezoneH;
     };
     class Spectator_Restriction_Combo: RscCombo
     {
     	idc = 2103;
 
     	text = "Test"; //--- ToDo: Localize;
-    	x = 0.519688 * safezoneW + safezoneX;
+    	x = 0.52063 * safezoneW + safezoneX;
     	y = 0.5 * safezoneH + safezoneY;
     	w = 0.0984375 * safezoneW;
-    	h = 0.028 * safezoneH;
+    	h = 0.022 * safezoneH;
     };
-    class RscText_1004: RscText
+    class groupsText: rscText
     {
     	idc = 1004;
 
     	text = "Dynamic Groups:"; //--- ToDo: Localize;
-    	x = 0.416771 * safezoneW + safezoneX;
-    	y = 0.555074 * safezoneH + safezoneY;
-    	w = 0.0984375 * safezoneW;
-    	h = 0.028 * safezoneH;
+    	x = 0.417479 * safezoneW + safezoneX;
+    	y = 0.555 * safezoneH + safezoneY;
+    	w = 0.0928357 * safezoneW;
+    	h = 0.022 * safezoneH;
     	tooltip = "Check to enable dynamic groups. (Requires 3DEN Enhanced.)"; //--- ToDo: Localize;
     };
     class Dynamic_Groups_Check: RscCheckBox
     {
     	idc = 2800;
 
-    	x = 0.522813 * safezoneW + safezoneX;
-    	y = 0.553926 * safezoneH + safezoneY;
-    	w = 0.0209375 * safezoneW;
-    	h = 0.0338889 * safezoneH;
+    	x = 0.52063 * safezoneW + safezoneX;
+    	y = 0.555 * safezoneH + safezoneY;
+    	w = 0.0129183 * safezoneW;
+    	h = 0.0229259 * safezoneH;
     };
-    class RscText_1005: RscText
+    class loadoutsText: rscText
     {
     	idc = 1005;
 
     	text = "Save Loadouts:"; //--- ToDo: Localize;
-    	x = 0.424375 * safezoneW + safezoneX;
-    	y = 0.609222 * safezoneH + safezoneY;
-    	w = 0.0984375 * safezoneW;
-    	h = 0.028 * safezoneH;
+    	x = 0.422637 * safezoneW + safezoneX;
+    	y = 0.599 * safezoneH + safezoneY;
+    	w = 0.0876782 * safezoneW;
+    	h = 0.022 * safezoneH;
     	tooltip = "Check to enable loadout saving. (Requires 3DEN Enhanced.)"; //--- ToDo: Localize;
     };
     class Save_Loadouts_Check: RscCheckBox
     {
     	idc = 2801;
 
-    	x = 0.521772 * safezoneW + safezoneX;
-    	y = 0.609222 * safezoneH + safezoneY;
-    	w = 0.0204167 * safezoneW;
-    	h = 0.0338889 * safezoneH;
+    	x = 0.52063 * safezoneW + safezoneX;
+    	y = 0.599 * safezoneH + safezoneY;
+    	w = 0.0129183 * safezoneW;
+    	h = 0.0229259 * safezoneH;
     };
-    class RscStructuredText_1100: RscStructuredText
+    class informationStrucText: RscStructuredText
     {
     	idc = 1100;
 
@@ -174,7 +174,7 @@ class VKN_Template_Tool_Basic_Settings {
     	w = 0.249375 * safezoneW;
     	h = 0.056 * safezoneH;
     };
-    class RscButton_1600: RscButton
+    class confirmButton: RscButton
     {
     	idc = 1600;
     	text = "Confirm Settings"; //--- ToDo: Localize;
@@ -182,6 +182,19 @@ class VKN_Template_Tool_Basic_Settings {
     	y = 0.654 * safezoneH + safezoneY;
     	w = 0.091875 * safezoneW;
     	h = 0.042 * safezoneH;
+    };
+    class homeButton: ctrlButtonPicture
+    {
+      onMouseButtonClick = "findDisplay 313 closeDisplay 0; findDisplay 313 createDisplay 'VKN_Template_Tool_Home';";
+
+    	idc = 1200;
+    	text = "\a3\3den\data\controlsgroups\tutorial\exit_ca.paa";
+    	x = 0.618623 * safezoneW + safezoneX;
+    	y = 0.264 * safezoneH + safezoneY; //was 258
+    	w = 0.0206302 * safezoneW;
+    	h = 0.033 * safezoneH;
+
+      colorBackground[] = {0.03,0.51,1,0.75};
     };
     ////////////////////////////////////////////////////////
     // GUI EDITOR OUTPUT END

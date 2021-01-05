@@ -90,6 +90,12 @@ class ctrlProgress;
 class ctrlStaticFrame;
 class scrollbar;
 class ctrlShortcutButton;
+class ctrlActivePicture;
+
+class VKN_ctrlActivePicture: ctrlActivePicture {
+  colorActive[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.77])","(profilenamespace getvariable ['GUI_BCG_RGB_G',0.51])","(profilenamespace getvariable ['GUI_BCG_RGB_B',0.08])",1};
+  colorBackgroundActive[] = {-1,-1,-1,-1};
+};
 
 
 ///////
@@ -727,6 +733,7 @@ class RscDisplayStart: RscStandardDisplay {
 };
 
 #include "\vkn_misc\displays\displayDefines.hpp"
+#include "\VKN_Misc\displays\VKN_Template_Tool_Home.hpp"
 #include "\VKN_Misc\displays\VKN_Template_Tool_Basic_Settings.hpp"
 #include "\VKN_Misc\displays\VKN_Template_Tool_File_Setup.hpp"
 #include "\VKN_Misc\displays\VKN_Template_Tool_Info.hpp"

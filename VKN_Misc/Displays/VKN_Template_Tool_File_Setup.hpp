@@ -261,8 +261,18 @@ class VKN_Template_Tool_File_Setup {
     	w = 0.0412603 * safezoneW;
     	h = 0.022 * safezoneH;
     };
-    ////////////////////////////////////////////////////////
-    // GUI EDITOR OUTPUT END
-    ////////////////////////////////////////////////////////
+    class homeIcon: ctrlButtonPicture
+    {
+      onMouseButtonClick = "findDisplay 313 closeDisplay 0; findDisplay 313 createDisplay 'VKN_Template_Tool_Home';";
+
+    	idc = 1200;
+    	text = "\a3\3den\data\controlsgroups\tutorial\exit_ca.paa";
+    	x = 0.685671 * safezoneW + safezoneX;
+    	y = 0.093 * safezoneH + safezoneY;
+    	w = 0.0206302 * safezoneW;
+    	h = 0.033 * safezoneH;
+
+      colorBackground[] = {0.03,0.51,1,0.75};
+    };
   };
 };
