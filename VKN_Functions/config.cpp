@@ -36,6 +36,14 @@ class CfgFunctions {
 		};
 	};
 
+  class PX {
+    class functions {
+			file = "\VKN_Functions\Functions";
+			   class stringReplace{};
+    };
+  };
+
+
   class VKN_EH {
     class functions {
       file = "\VKN_functions\Event Handles";
@@ -52,6 +60,7 @@ class CfgFunctions {
       class VTT_home{};
       class VTT_basicSettingsDisplay{};
       class VTT_fileSetupDisplay{};
+      class VTT_deleteFiles{};
     };
   };
 
