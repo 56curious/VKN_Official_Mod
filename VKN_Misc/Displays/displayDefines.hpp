@@ -3,3 +3,4 @@
 #define VTT_File_Setup 3482
 #define VTT_Info 3483
 #define VTT_Notification 3484
+#define VTT_Delete_Check 3485

@@ -659,7 +659,7 @@ class display3DEN {
                 class Mission_Template_Tool {
                     text = "Mission Template Tool";
                     Picture = "\VKN_Misc\VikingLogo128.paa";
-                    action = "[] spawn VKN_fnc_missionTemplateTool;";
+                    action = "[] spawn VKN_VTT_fnc_VTT_home;";
                 };
 
                 //disable enter key
@@ -738,6 +738,7 @@ class RscDisplayStart: RscStandardDisplay {
 #include "\VKN_Misc\displays\VKN_Template_Tool_File_Setup.hpp"
 #include "\VKN_Misc\displays\VKN_Template_Tool_Info.hpp"
 #include "\VKN_Misc\displays\VKN_Template_Tool_Notification.hpp"
+#include "\VKN_Misc\displays\VKN_Template_Tool_Delete_Check.hpp"
 
 
 
