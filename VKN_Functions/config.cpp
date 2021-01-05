@@ -45,6 +45,16 @@ class CfgFunctions {
     };
   };
 
+  class VKN_VTT {
+    class functions {
+      file = "\VKN_functions\functions";
+      class VTT_create{};
+      class VTT_home{};
+      class VTT_basicSettingsDisplay{};
+      class VTT_fileSetupDisplay{};
+    };
+  };
+
 	class VKN {
 		class functions {
 			file = "\VKN_functions\functions";
@@ -55,8 +65,6 @@ class CfgFunctions {
       //class formatChange{};
 
       class ammoRepack{};
-
-      class missionTemplateTool{};
 
       class sideGetFaction{};
 
