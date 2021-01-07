@@ -53,7 +53,7 @@ _deleteButton = _VTT_Home_Display displayCtrl 1602;
 
 _missionSaved = ["tempmission", _path, false] call BIS_fnc_inString;
 
-_createCode = "";
+_createCode = "systemChat ""an error occoured while setting button actions""";;
 
 if (_missionSaved) then {
   _createCode = " _display = findDisplay 3480; _display closeDisplay 0; [] spawn VKN_VTT_fnc_VTT_create ";
