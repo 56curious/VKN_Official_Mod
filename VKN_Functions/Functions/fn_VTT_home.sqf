@@ -51,14 +51,20 @@ _editButton = _VTT_Home_Display displayCtrl 1600;
 _createButton = _VTT_Home_Display displayCtrl 1601;
 _deleteButton = _VTT_Home_Display displayCtrl 1602;
 
-_missionSaved = ["tempmission", _path, false] call BIS_fnc_inString;
+
+_missionNotSaved = true;
+if (_path == "") then {
+  _missionNotSaved = true;
+} else {
+  _missionNotSaved = false;
+};
 
 _createCode = "systemChat ""an error occoured while setting button actions""";;
 
-if (_missionSaved) then {
-  _createCode = " _display = findDisplay 3480; _display closeDisplay 0; [] spawn VKN_VTT_fnc_VTT_create ";
-} else {
+if (_missionNotSaved) then {
   _createCode = " systemChat ""The mission is not saved. Please save and try again.""; ";
+} else {
+  _createCode = " _display = findDisplay 3480; _display closeDisplay 0; [] spawn VKN_VTT_fnc_VTT_create ";
 };
 
 _editCode = "systemChat ""an error occoured while setting button actions""";
