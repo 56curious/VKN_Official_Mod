@@ -150,7 +150,7 @@ _path = [getMissionPath "", "\", "\\"] call PX_fnc_stringReplace;
 
 
 //runs in 3den
-//_createFiles = ["viking.VKN_createFiles", [_path, _extensionData]] call (uiNamespace getVariable "py3_fnc_callExtension");
+_createFiles = ["viking.VKN_createFiles", [_path, _extensionData]] call (uiNamespace getVariable "py3_fnc_callExtension");
 //if (_createFiles == "true") then {
   //systemChat "Mission Files created successfully!"
 //} else {
