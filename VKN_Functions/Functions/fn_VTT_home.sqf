@@ -51,7 +51,15 @@ _editButton = _VTT_Home_Display displayCtrl 1600;
 _createButton = _VTT_Home_Display displayCtrl 1601;
 _deleteButton = _VTT_Home_Display displayCtrl 1602;
 
-_createButton ctrlAddEventHandler ["ButtonClick", " _display = findDisplay 3480; _display closeDisplay 0; [] spawn VKN_VTT_fnc_VTT_create "];
+_missionSaved = ["tempmission", _path, false] call BIS_fnc_inString;
+
+_createCode = "";
+
+if (_missionSaved) then {
+  _createCode = " _display = findDisplay 3480; _display closeDisplay 0; [] spawn VKN_VTT_fnc_VTT_create ";
+} else {
+  _createCode = " systemChat ""The mission is not saved. Please save and try again.""; ";
+};
 
 _editCode = "systemChat ""an error occoured while setting button actions""";
 _deleteCode = "systemChat ""an error occoured while setting button actions""";
@@ -63,5 +71,7 @@ if (_filesExist) then {
   _editCode = " systemChat ""The files do not exist, ensure you create a template first""; ";
   _deleteCode = " systemChat ""The files do not exist, ensure you create a template first""; ";
 };
+
+_createButton ctrlAddEventHandler ["ButtonClick", _createCode];
 _editButton ctrlAddEventHandler ["ButtonClick", _editCode];
 _deleteButton ctrlAddEventHandler ["ButtonClick", _deleteCode];
