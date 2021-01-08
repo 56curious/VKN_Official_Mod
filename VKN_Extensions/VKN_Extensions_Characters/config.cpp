@@ -379,6 +379,52 @@ class CfgPatches {
             "O_Abu_Machine_Gunner_Bakr_01",
             "O_Abu_Gunner_Bakr_02",
             "O_Abu_Gunner_Bakr_03",
+            
+            "O_ION_Rifleman_Winter_01",
+            "O_ION_Rifleman_Winter_02",
+            "O_ION_Rifleman_Winter_03",
+            "O_ION_Rifleman_Ammo_Bearer_Winter_01",
+            "O_ION_Grenadier_Winter_01",
+            "O_ION_Machinegunner_Winter_01",
+            "O_ION_Asst_Machinegunner_Winter_01",
+            "O_ION_Squad_Leader_Winter_01",
+            "O_ION_Fireteam_Leader_Winter_01",
+            "O_ION_Marksman_Winter_01",
+            "O_ION_Rifleman_AT_Winter_01",
+            "O_ION_Missile_Specialist_AT_Winter_01",
+            "O_ION_Missile_Specialist_AA_Winter_01",
+            "O_ION_Field_Medic_Winter_01",
+            "O_ION_Engineer_Winter_01",
+            "O_ION_Crewman_Light_Winter_01",
+            "O_ION_Officer_Winter_01",
+            "O_ION_ZSU_23_4V_Winter_01",
+            "O_ION_BTR_60PB_Winter_01",
+            "O_ION_BTR_70_Winter_01",
+            "O_ION_BTR_80_Winter_01",
+            "O_ION_Mi_8MT_Cargo_Winter_01",
+            "O_ION_Helicopter_Pilot_Winter_01",
+            "O_ION_Mi_8MTV_3FAB_Winter_01",
+            "O_ION_Mi_8MTV_3UPK_Winter_01",
+            "O_ION_M1097A2_2D_Open_Winter_01",
+            "O_ION_M1097A2_2D_Open_Winter_02",
+            "O_ION_M1025A2_Unarmed_Winter_01",
+            "O_ION_M1025A2_M2_Winter_01",
+            "O_ION_M1151A1_Winter_01",
+            "O_ION_M1151A1_PKM_Winter_01",
+            "O_ION_M1152A1_Cargo_Winter_01",
+            "O_ION_M1152A1_RSV_Winter_01",
+            "O_ION_M1152A1_Transport_Winter_01",
+            "O_ION_T72MS_Winter_01",
+            "O_ION_Ural_3750_Winter_01",
+            "O_ION_Ural_3750_Open_Winter_01",
+            "O_ION_Ural_3750_Fuel_Winter_01",
+            "O_ION_ABG_M93_Winter_01",
+            "O_ION_M02_Coyote_Winter_01",
+            "O_ION_9K115_2Metis_M_Winter_01",
+            "O_ION_M2_Browning_Winter_01",
+            "O_ION_L18_101_CAP_Winter_01",
+            "O_ION_L18_Winter_01",
+            "O_ION_Fighter_Pilot_Winter_01",
 
             "I_SC_Sicario_01",
             "I_SC_Sicario_02",
@@ -523,6 +569,7 @@ class cfgFactionClasses {
     #include "cfgFactionClasses\Legion.hpp"
     #include "cfgFactionClasses\Taiga.hpp"
     #include "cfgFactionClasses\Modern_China.hpp"
+    #include "cfgFactionClasses\VWF_ION.hpp"
 
 };
 
@@ -550,6 +597,7 @@ class cfgVehicles {
     #include "cfgVehicles\CSM.hpp"
     #include "cfgVehicles\Abu_Bakr.hpp"
     #include "cfgVehicles\NorthVietnamArmy.hpp"
+    #include "cfgVehicles\VWF_ION.hpp"
 
     //West
     #include "cfgVehicles\Viking_PMC_ODIN.hpp"
@@ -588,6 +636,7 @@ class cfgGroups {
         #include "cfgGroups\Abu_Bakr.hpp"
         #include "cfgGroups\Modern_China.hpp"
         #include "cfgGroups\NorthVietnamArmy.hpp"
+        #include "cfgGroups\VWF_ION.hpp"
     };
 
 
