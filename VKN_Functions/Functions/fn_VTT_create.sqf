@@ -123,10 +123,6 @@ collect3DENHistory {
 	_ZeusModuleAdmin = create3DENEntity ["Logic", "ModuleCurator_F", _position];
 	_ZeusModules = [_ZeusModule1, _ZeusModule2, _ZeusModule3];
 
-	//sync - merge later
-	add3DENConnection ["sync", _ZeusModules, _ZeusAttributeCuratorAddEditableObjects];
-  add3DENConnection ["sync", [_ZeusModuleAdmin], _ZeusAttributeCuratorAddEditableObjects];
-
 	//Setup the Zeus entities
 	_ZeusEntity1 = create3DENEntity ["Logic", "VirtualCurator_F", _position];
 	_ZeusEntity1 set3DENAttribute ["name", "ZeusEntity1"];
@@ -142,6 +138,9 @@ collect3DENHistory {
 
 	_ZeusEntities = [_ZeusEntity1, _ZeusEntity2, _ZeusEntity3];
 	_ZeusEntitiesNames = ["ZeusEntity1", "ZeusEntity2", "ZeusEntity3"];
+
+  //sync
+  add3DENConnection ["sync", _ZeusEntities, _ZeusModules];
 
 	progressLoadingScreen 0.5;
 

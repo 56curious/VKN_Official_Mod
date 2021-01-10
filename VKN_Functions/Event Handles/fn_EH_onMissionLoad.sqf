@@ -7,6 +7,6 @@ add3DENEventHandler ["OnTerrainNew", {
   if (_var isEqualTo false) then {
     _display = findDisplay 313 createDisplay 'VKN_Template_Tool_Alert';
     _button = _display displayCtrl 1600;
-    _button buttonSetAction "findDisplay VTT_File_Setup; closedisplay 0; profilenamespace setVariable ['VKN_MTT_Notification_V119', true]; saveprofilenamespace;";
+    _button buttonSetAction "(findDisplay 3484) closedisplay 0; profilenamespace setVariable ['VKN_MTT_Notification_V119', true]; saveprofilenamespace;";
   };
 }];
