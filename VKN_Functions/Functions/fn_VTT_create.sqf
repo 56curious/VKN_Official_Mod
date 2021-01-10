@@ -114,7 +114,7 @@ collect3DENHistory {
   };
 
 	//create the Zeus sub-settings
-	_ZeusAttributeCuratorAddEditableObjects = create3DENEntity ["Logic", "ModuleCuratorAddEditableObjects", _position];
+	//_ZeusAttributeCuratorAddEditableObjects = create3DENEntity ["Logic", "ModuleCuratorAddEditableObjects", _position];
 
 	//setup Zeus modules
 	_ZeusModule1 = create3DENEntity ["Logic", "ModuleCurator_F", _position];
