@@ -140,7 +140,9 @@ collect3DENHistory {
 	_ZeusEntitiesNames = ["ZeusEntity1", "ZeusEntity2", "ZeusEntity3"];
 
   //sync
-  add3DENConnection ["sync", _ZeusEntities, _ZeusModules];
+  add3DENConnection ["sync", [_ZeusEntity1], _ZeusModule1];
+  add3DENConnection ["sync", [_ZeusEntity2], _ZeusModule2];
+  add3DENConnection ["sync", [_ZeusEntity3], _ZeusModule3];
 
 	progressLoadingScreen 0.5;
 
