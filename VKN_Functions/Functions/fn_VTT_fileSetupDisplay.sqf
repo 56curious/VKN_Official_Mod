@@ -52,7 +52,7 @@ _ctrl_onplayerRespawn_reset_button = _VTT_File_setup_Display displayCtrl 1608;
 _ctrl_description_reset_button = _VTT_File_setup_Display displayCtrl 1609;
 
 // set defaults:
-_defaultsArray = call VKN_fnc_VTT_defaultFiletext;
+_defaultsArray = call VKN_VTT_fnc_VTT_defaultFiletext;
 _ctrl_init_edit_text = _defaultsArray select 0;
 _ctrl_initplayerlocal_edit_text = _defaultsArray select 1;
 _ctrl_initplayerServer_edit_text = _defaultsArray select 2;
@@ -73,49 +73,49 @@ _ctrl_description_edit ctrlsettext _ctrl_description_edit_text;
 _ctrl_init_reset_button ctrlAddEventHandler ["ButtonClick", "
     _VTT_File_setup_Display = findDisplay 3482;
     _editbox = _VTT_File_setup_Display displayCtrl 1402;
-    _text = (call VKN_fnc_VTT_defaultFiletext) select 0;
+    _text = (call VKN_VTT_fnc_VTT_defaultFileText) select 0;
     _editbox ctrlsettext _text;
 "];
 
 _ctrl_initServer_reset_button ctrlAddEventHandler ["ButtonClick", "
     _VTT_File_setup_Display = findDisplay 3482;
     _editbox = _VTT_File_setup_Display displayCtrl 1401;
-    _text = (call VKN_fnc_VTT_defaultFiletext) select 3;
+    _text = (call VKN_VTT_fnc_VTT_defaultFileText) select 3;
     _editbox ctrlsettext _text;
 "];
 
 _ctrl_initplayerlocal_reset_button ctrlAddEventHandler ["ButtonClick", "
     _VTT_File_setup_Display = findDisplay 3482;
     _editbox = _VTT_File_setup_Display displayCtrl 1400;
-    _text = (call VKN_fnc_VTT_defaultFiletext) select 1;
+    _text = (call VKN_VTT_fnc_VTT_defaultFileText) select 1;
     _editbox ctrlsettext _text;
 "];
 
 _ctrl_onplayerKilled_reset_button ctrlAddEventHandler ["ButtonClick", "
     _VTT_File_setup_Display = findDisplay 3482;
     _editbox = _VTT_File_setup_Display displayCtrl 1404;
-    text = (call VKN_fnc_VTT_defaultFiletext) select 4;
+    text = (call VKN_VTT_fnc_VTT_defaultFileText) select 4;
     _editbox ctrlsettext _text;
 "];
 
 _ctrl_initplayerServer_reset_button ctrlAddEventHandler ["ButtonClick", "
     _VTT_File_setup_Display = findDisplay 3482;
     _editbox = _VTT_File_setup_Display displayCtrl 1403;
-    _text = (call VKN_fnc_VTT_defaultFiletext) select 2;
+    _text = (call VKN_VTT_fnc_VTT_defaultFileText) select 2;
     _editbox ctrlsettext _text;
 "];
 
 _ctrl_onplayerRespawn_reset_button ctrlAddEventHandler ["ButtonClick", "
     _VTT_File_setup_Display = findDisplay 3482;
     _editbox = _VTT_File_setup_Display displayCtrl 1406;
-    _text = (call VKN_fnc_VTT_defaultFiletext) select 5;
+    _text = (call VKN_VTT_fnc_VTT_defaultFileText) select 5;
     _editbox ctrlsettext _text;
 "];
 
 _ctrl_description_reset_button ctrlAddEventHandler ["ButtonClick", "
     _VTT_File_setup_Display = findDisplay 3482;
     _editbox = _VTT_File_setup_Display displayCtrl 1405;
-    _text = (call VKN_fnc_VTT_defaultFiletext) select 6;
+    _text = (call VKN_VTT_fnc_VTT_defaultFileText) select 6;
     _editbox ctrlsettext _text;
 "];
 

@@ -43,57 +43,26 @@ _ctrl_initplayerlocal_edit_text = format ["
 ", endl];
 */
 
-_ctrl_initplayerlocal_edit_text = format ["
-    ['initialize', [true]] remoteExec ['BIS_fnc_dynamicgroups', 2];
-    %1['initializeplayer', [player, true]] remoteExec ['BIS_fnc_dynamicgroups', 0, true];
-    [player] spawn VKN_fnc_setupMission;
-", endl];
+_ctrl_initplayerlocal_edit_text = format ["['initialize', [true]] remoteExec ['BIS_fnc_dynamicgroups', 2];%1['initializeplayer', [player, true]] remoteExec ['BIS_fnc_dynamicgroups', 0, true];%1[player] spawn VKN_fnc_setupMission;", endl];
 
-_ctrl_initplayerServer_edit_text = format ["
-    {
-        %1 if (!isNull (getAssignedCuratorUnit _x)) then {
-            %1		_unit = getAssignedCuratorUnit _x;
-            %1		if (isNull (getAssignedCuratorlogic _unit)) then {
-                %1			unassignCurator _x;
-                %1			sleep 1;
-                %1			_unit assignCurator _x;
-                %1			if (isClass (configFile >> 'CfgPatches' >> 'task_force_radio')) then {
-                    %1				_unit call TFAR_fnc_isforcedCurator;
-                    %1
-                };
-                %1
-            };
-            %1
-        };
-        %1
-    } forEach allCurators;
-", endl];
+_ctrl_initplayerServer_edit_text = format ["{        %1 if (!isNull (getAssignedCuratorUnit _x)) then {            %1		_unit = getAssignedCuratorUnit _x;            %1		if (isNull (getAssignedCuratorlogic _unit)) then {                %1			unassignCurator _x;                %1			sleep 1;                %1			_unit assignCurator _x;                %1			if (isClass (configFile >> 'CfgPatches' >> 'task_force_radio')) then {                    %1				_unit call TFAR_fnc_isforcedCurator;                    %1                };                %1            };            %1        };        %1    } forEach allCurators;", endl];
 
 _ctrl_initServer_edit_text = "";
 
-_ctrl_onplayerKilled_edit_text = format ["
-    [player, [missionnamespace, 'inventory_var']] call BIS_fnc_saveinventory;
-    %1['initialize', [ player, [], false, false, true]] call BIS_fnc_EGSpectator;
-", endl];
+_ctrl_onplayerKilled_edit_text = format ["[player, [missionnamespace, 'inventory_var']] call BIS_fnc_saveinventory;%1['initialize', [ player, [], false, false, true]] call BIS_fnc_EGSpectator;", endl];
 
-_ctrl_onplayerRespawn_edit_text = format ["
-    [player, [missionnamespace, 'inventory_var']] call BIS_fnc_loadinventory;
-    %1['terminate', [ player]] call BIS_fnc_EGSpectator;
-", endl];
+_ctrl_onplayerRespawn_edit_text = format ["[player, [missionnamespace, 'inventory_var']] call BIS_fnc_loadinventory;%1['terminate', [ player]] call BIS_fnc_EGSpectator;", endl];
 
-_ctrl_description_edit_text = format ["
-    respawnOnStart = 0;
-    %1respawnTemplatesVirtual[] = {};
-", endl];
+_ctrl_description_edit_text = format ["respawnOnStart = 0;%1respawnTemplatesVirtual[] = {};", endl];
 
 _returnArray = [
-    _ctrl_init_edit_text, // 0
-    _ctrl_initplayerlocal_edit_text, // 1
-    _ctrl_initplayerServer_edit_text, // 2
-    _ctrl_initServer_edit_text, // 3
-    _ctrl_onplayerKilled_edit_text, // 4
-    _ctrl_onplayerRespawn_edit_text, // 5
-    _ctrl_description_edit_text // 6
+    _ctrl_init_edit_text,
+    _ctrl_initplayerlocal_edit_text,
+    _ctrl_initplayerServer_edit_text,
+    _ctrl_initServer_edit_text,
+    _ctrl_onplayerKilled_edit_text,
+    _ctrl_onplayerRespawn_edit_text,
+    _ctrl_description_edit_text
 ];
 
 _returnArray
