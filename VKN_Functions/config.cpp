@@ -61,6 +61,7 @@ class CfgFunctions {
       class VTT_basicSettingsDisplay{};
       class VTT_fileSetupDisplay{};
       class VTT_deleteFiles{};
+			class VTT_defaultFileText{};
     };
   };
 
@@ -77,7 +78,7 @@ class CfgFunctions {
 
       class sideGetFaction{};
 
-      class respawnPositionSafeZone{};
+      class setupMission{};
 
       //class displayPlayerInfoAbove{};
 
