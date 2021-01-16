@@ -27,7 +27,7 @@ class VKN_Template_Tool_Info {
     	y = 0.192 * safezoneH + safezoneY;
     	w = 0.464179 * safezoneW;
     	h = 0.044 * safezoneH;
-    	colorBackground[] = {0.03,0.51,1,0.75};
+    	colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.77])","(profilenamespace getvariable ['GUI_BCG_RGB_G',0.51])","(profilenamespace getvariable ['GUI_BCG_RGB_B',0.08])",0.75};
     };
     class Title: RscText
     {

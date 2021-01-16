@@ -2,6 +2,8 @@ class VKN_Template_Tool_Home {
   idd = 3480;
   enableDisplay = 1;
   enableSimulation = 1;
+  onLoad = "uinamespace setVariable ['VKN_VTT_defaultFileText', call VKN_VTT_fnc_VTT_defaultFileText;";
+
 
   class ControlsBackground {
     DISABLE_BACKGROUND
@@ -26,7 +28,7 @@ class VKN_Template_Tool_Home {
     	y = 0.313 * safezoneH + safezoneY;
     	w = 0.268192 * safezoneW;
     	h = 0.033 * safezoneH;
-    	colorBackground[] = {0.03,0.51,1,0.75};
+    	colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.77])","(profilenamespace getvariable ['GUI_BCG_RGB_G',0.51])","(profilenamespace getvariable ['GUI_BCG_RGB_B',0.08])",0.75};
     };
     class RscText_1000: RscText
     {
