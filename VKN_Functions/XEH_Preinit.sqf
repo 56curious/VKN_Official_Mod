@@ -1,94 +1,93 @@
-diag_log "VKN - XEH Exec";
+diag_log "VKN - XEH exec";
 
-_StrategicMapVal = profileNamespace getVariable ["VKN_StrategicMapValue_var", true];
+_strategicMapVal = profileNamespace getVariable ["VKN_strategicMapValue_var", true];
 [
-    "VKN_StrategicMapSetting",
+    "VKN_strategicMapsetting",
     "CHECKBOX",
-    ["Strategic Map", "Toggle if you want the Strategic Map (ALT + M keybind) on your client. Shows map in a simulated environment."],
-    "VKN Strategic Map",
-    _StrategicMapVal,
+    ["strategic Map", "toggle if you want the strategic Map (ALT + M keybind) on your client. Shows map in a simulated environment."],
+    "VKN strategic Map",
+    _strategicMapVal,
     nil,
     {
         params ["_value"];
-        profileNamespace setVariable ["VKN_StrategicMapValue_var", _value];
+        profileNamespace setVariable ["VKN_strategicMapValue_var", _value];
         saveProfileNamespace;
     }
-] call CBA_Settings_fnc_init;
+] call CBA_settings_fnc_init;
 
-
-_MapIconVal = profileNamespace getVariable ["VKN_MapIconValue_var", true];
-_ShowMapIcons_Val = profileNamespace getVariable ["VKN_ShowMapIcons_Var", true];
-_ShowGPSIcons_Val = profileNamespace getVariable ["VKN_ShowGPSIcons_Var", true];
-_ShowGroupIcons_Val = profileNamespace getVariable ["VKN_ShowGroupIcons_Var", true];
+_MapiconVal = profileNamespace getVariable ["VKN_MapiconValue_var", true];
+_showMapicons_Val = profileNamespace getVariable ["VKN_showMapicons_Var", true];
+_showGPSIcons_Val = profileNamespace getVariable ["VKN_showGPSIcons_Var", true];
+_Showgroupicons_Val = profileNamespace getVariable ["VKN_Showgroupicons_Var", true];
 _ShowMedicalWounded_Val = profileNamespace getVariable ["VKN_ShowMedicalWounded_Var", true];
-_ShowFactionOnly_Val = profileNamespace getVariable ["VKN_ShowFactionOnly_Var", true];
-_ShowIconMapText_Val = profileNamespace getVariable ["VKN_ShowIconMapText_Var", true];
+_ShowfactionOnly_Val = profileNamespace getVariable ["VKN_ShowfactionOnly_Var", true];
+_ShowIconMaptext_Val = profileNamespace getVariable ["VKN_ShowIconMaptext_Var", true];
 _ShowMOS_Val = profileNamespace getVariable ["VKN_ShowMOS_Var", true];
-_ShowGPSNames_Val = profileNamespace getVariable ["VKN_ShowGPSNames_Var", false];
-_ShowGPSGroupOnly_Val = profileNamespace getVariable ["VKN_ShowGPSGroupOnly_Var", false];
-_ShowGroupMapIcons_Val = profileNamespace getVariable ["VKN_ShowGroupMapIcons_Var", true];
-_Show3DGroupIcons_Val = profileNamespace getVariable ["VKN_Show3DGroupIcons_Var", false];
+_showGPSnames_Val = profileNamespace getVariable ["VKN_showGPSnames_Var", false];
+_showGPSgroupOnly_Val = profileNamespace getVariable ["VKN_showGPSgroupOnly_Var", false];
+_ShowgroupMapicons_Val = profileNamespace getVariable ["VKN_ShowgroupMapicons_Var", true];
+_Show3Dgroupicons_Val = profileNamespace getVariable ["VKN_Show3Dgroupicons_Var", false];
 [
-    "VKN Soldier Tracker Settings",
+    "VKN Soldier Tracker settings",
     "CHECKBOX",
-    ["Soldier Tracking", "Toggle if you want Soldier Tracking on your client. Show 2D/3D markers for side."],
-    "VKN Soldier Tracker Settings",
-    _MapIconVal,
+    ["Soldier Tracking", "toggle if you want Soldier Tracking on your client. Show 2D/3D markers for side."],
+    "VKN Soldier Tracker settings",
+    _MapiconVal,
     nil,
     {
         params ["_value"];
-        profileNamespace setVariable ["VKN_MapIconValue_var", _value];
+        profileNamespace setVariable ["VKN_MapiconValue_var", _value];
         saveProfileNamespace;
         [] call VKN_fnc_Icons;
     }
-] call CBA_Settings_fnc_init;
+] call CBA_settings_fnc_init;
 [
-    "VKN_ShowMapIcons",
+    "VKN_showMapicons",
     "CHECKBOX",
-    ["Show Map Icons (2D)", "Toggle map unit + vehicle icon tracking."],
-    "VKN Soldier Tracker Settings",
-    _ShowMapIcons_Val,
+    ["Show Map Icons (2D)", "toggle map unit + vehicle icon tracking."],
+    "VKN Soldier Tracker settings",
+    _showMapicons_Val,
     nil,
     {
         params ["_value"];
-        profileNamespace setVariable ["VKN_ShowMapIcons_Var", _value];
+        profileNamespace setVariable ["VKN_showMapicons_Var", _value];
         saveProfileNamespace;
         [] call VKN_fnc_Icons;
     }
-] call CBA_Settings_fnc_init;
+] call CBA_settings_fnc_init;
 [
     "VKN_showGPSIcons",
     "CHECKBOX",
-    ["Show GPS Icons (2D)", "Toggle GPS unit + vehicle icon tracking."],
-    "VKN Soldier Tracker Settings",
-    _ShowGPSIcons_Val,
+    ["Show GPS Icons (2D)", "toggle GPS unit + vehicle icon tracking."],
+    "VKN Soldier Tracker settings",
+    _showGPSIcons_Val,
     nil,
     {
         params ["_value"];
-        profileNamespace setVariable ["VKN_ShowGPSIcons_Var", _value];
+        profileNamespace setVariable ["VKN_showGPSIcons_Var", _value];
         saveProfileNamespace;
         [] call VKN_fnc_Icons;
     }
-] call CBA_Settings_fnc_init;
+] call CBA_settings_fnc_init;
 [
-    "VKN_ShowGroupIcons",
+    "VKN_Showgroupicons",
     "CHECKBOX",
-    ["Show Group Icons (2D + 3D)", "Toggle Map + GPS + HUD group icon tracking."],
-    "VKN Soldier Tracker Settings",
-    _ShowGroupIcons_Val,
+    ["Show group Icons (2D + 3D)", "toggle Map + GPS + HUD group icon tracking."],
+    "VKN Soldier Tracker settings",
+    _Showgroupicons_Val,
     nil,
     {
         params ["_value"];
-        profileNamespace setVariable ["VKN_ShowGroupIcons_Var", _value];
+        profileNamespace setVariable ["VKN_Showgroupicons_Var", _value];
         saveProfileNamespace;
         [] call VKN_fnc_Icons;
     }
-] call CBA_Settings_fnc_init;
+] call CBA_settings_fnc_init;
 [
     "VKN_showMedicalWounded",
     "CHECKBOX",
-    ["Show Wounded (2D)", "Toggle to show wounded units on map + GPS."],
-    "VKN Soldier Tracker Settings",
+    ["Show Wounded (2D)", "toggle to show wounded units on map + GPS."],
+    "VKN Soldier Tracker settings",
     _ShowMedicalWounded_Val,
     nil,
     {
@@ -97,40 +96,40 @@ _Show3DGroupIcons_Val = profileNamespace getVariable ["VKN_Show3DGroupIcons_Var"
         saveProfileNamespace;
         [] call VKN_fnc_Icons;
     }
-] call CBA_Settings_fnc_init;
+] call CBA_settings_fnc_init;
 [
-    "VKN_showFactionOnly",
+    "VKN_showfactionOnly",
     "CHECKBOX",
-    ["Show Faction Only (2D + 3D)", "Toggle to display only your faction, or all friendly factions."],
-    "VKN Soldier Tracker Settings",
-    _ShowFactionOnly_Val,
+    ["Show faction Only (2D + 3D)", "toggle to display only your faction, or all friendly factions."],
+    "VKN Soldier Tracker settings",
+    _ShowfactionOnly_Val,
     nil,
     {
         params ["_value"];
-        profileNamespace setVariable ["VKN_ShowFactionOnly_Var", _value];
+        profileNamespace setVariable ["VKN_ShowfactionOnly_Var", _value];
         saveProfileNamespace;
         [] call VKN_fnc_Icons;
     }
-] call CBA_Settings_fnc_init;
+] call CBA_settings_fnc_init;
 [
-    "VKN_showIconMapText",
+    "VKN_showIconMaptext",
     "CHECKBOX",
-    ["Show Map Text (2D)", "Toggle to display unit + vehicle names/text on the map."],
-    "VKN Soldier Tracker Settings",
-    _ShowIconMapText_Val,
+    ["Show Map text (2D)", "toggle to display unit + vehicle names/text on the map."],
+    "VKN Soldier Tracker settings",
+    _ShowIconMaptext_Val,
     nil,
     {
         params ["_value"];
-        profileNamespace setVariable ["VKN_ShowIconMapText_Var", _value];
+        profileNamespace setVariable ["VKN_ShowIconMaptext_Var", _value];
         saveProfileNamespace;
         [] call VKN_fnc_Icons;
     }
-] call CBA_Settings_fnc_init;
+] call CBA_settings_fnc_init;
 [
     "VKN_showMOS",
     "CHECKBOX",
-    ["Show Map MOS Information (2D)", "Toggle to display Military Occupational Specialty text (unit/vehicle class/role display name) via the map."],
-    "VKN Soldier Tracker Settings",
+    ["Show Map MOS information (2D)", "toggle to display Military Occupational Specialty text (unit/vehicle class/role display name) via the map."],
+    "VKN Soldier Tracker settings",
     _ShowMOS_Val,
     nil,
     {
@@ -139,102 +138,100 @@ _Show3DGroupIcons_Val = profileNamespace getVariable ["VKN_Show3DGroupIcons_Var"
         saveProfileNamespace;
         [] call VKN_fnc_Icons;
     }
-] call CBA_Settings_fnc_init;
+] call CBA_settings_fnc_init;
 [
-    "VKN_showGPSNames",
+    "VKN_showGPSnames",
     "CHECKBOX",
-    ["Show GPS Names (2D)", "Toggle to display name tags on units + vehicles"],
-    "VKN Soldier Tracker Settings",
-    _ShowGPSNames_Val,
+    ["Show GPS names (2D)", "toggle to display name tags on units + vehicles"],
+    "VKN Soldier Tracker settings",
+    _showGPSnames_Val,
     nil,
     {
         params ["_value"];
-        profileNamespace setVariable ["VKN_ShowGPSNames_Var", _value];
+        profileNamespace setVariable ["VKN_showGPSnames_Var", _value];
         saveProfileNamespace;
         [] call VKN_fnc_Icons;
     }
-] call CBA_Settings_fnc_init;
+] call CBA_settings_fnc_init;
 [
-    "VKN_ShowGPSGroupOnly",
+    "VKN_showGPSgroupOnly",
     "CHECKBOX",
-    ["Show GPS Group Only (2D)", "Toggle to only show group icons on the GPS."],
-    "VKN Soldier Tracker Settings",
-    _ShowGPSGroupOnly_Val,
+    ["Show GPS group Only (2D)", "toggle to only show group icons on the GPS."],
+    "VKN Soldier Tracker settings",
+    _showGPSgroupOnly_Val,
     nil,
     {
         params ["_value"];
-        profileNamespace setVariable ["VKN_ShowGPSGroupOnly_Var", _value];
+        profileNamespace setVariable ["VKN_showGPSgroupOnly_Var", _value];
         saveProfileNamespace;
         [] call VKN_fnc_Icons;
     }
-] call CBA_Settings_fnc_init;
+] call CBA_settings_fnc_init;
 [
-    "VKN_GroupMapIcons",
+    "VKN_groupMapicons",
     "CHECKBOX",
-    ["Show Group Map Icons Only (2D)", "Toggle to only show group icons on the map."],
-    "VKN Soldier Tracker Settings",
-    _showGroupMapIcons_Val,
+    ["Show group Map Icons Only (2D)", "toggle to only show group icons on the map."],
+    "VKN Soldier Tracker settings",
+    _showgroupMapicons_Val,
     nil,
     {
         params ["_value"];
-        profileNamespace setVariable ["VKN_GroupMapIcons_Var", _value];
+        profileNamespace setVariable ["VKN_groupMapicons_Var", _value];
         saveProfileNamespace;
         [] call VKN_fnc_Icons;
     }
-] call CBA_Settings_fnc_init;
+] call CBA_settings_fnc_init;
 [
-    "VKN_Show3DGroupIcons",
+    "VKN_Show3Dgroupicons",
     "CHECKBOX",
-    ["Show 3D Group Icons", "Toggle to display 3D icons above units. NOTE: Follows ruleset from above."],
-    "VKN Soldier Tracker Settings",
-    _Show3DGroupIcons_Val,
+    ["Show 3D group Icons", "toggle to display 3D icons above units. notE: Follows ruleset from above."],
+    "VKN Soldier Tracker settings",
+    _Show3Dgroupicons_Val,
     nil,
     {
         params ["_value"];
-        profileNamespace setVariable ["VKN_Show3DGroupIcons_Var", _value];
+        profileNamespace setVariable ["VKN_Show3Dgroupicons_Var", _value];
         saveProfileNamespace;
         [] call VKN_fnc_Icons;
     }
-] call CBA_Settings_fnc_init;
-
-
+] call CBA_settings_fnc_init;
 
 _MainMenuServerIPVal = profileNamespace getVariable ["VKN_MainMenuServerIPVal_var", "127.0.0.1"];
 _MainMenuServerPortVal = profileNamespace getVariable ["VKN_MainMenuServerPortVal_var", "2302"];
 _MainMenuServerPasswordVal = profileNamespace getVariable ["VKN_MainMenuServerPasswordVal_var", ""];
 [
-  "VKN_joinserver_ip",
-  "EDITBOX",
-  ["Main Main Server IP", "Set the IP for the server you'd like to instantly join to."],
-  "VKN Main Menu Server",
-  _MainMenuServerIPVal,
-  true,
-  {
-    params ["_value"];
-    _MainMenuServerIPVal = profileNamespace setVariable ["VKN_MainMenuServerIPVal_var", _value];
-  }
-] call CBA_Settings_fnc_init;
+    "VKN_joinserver_ip",
+    "EDITBOX",
+    ["Main Main Server IP", "set the IP for the server you'd like to instantly join to."],
+    "VKN Main Menu Server",
+    _MainMenuServerIPVal,
+    true,
+    {
+        params ["_value"];
+        _MainMenuServerIPVal = profileNamespace setVariable ["VKN_MainMenuServerIPVal_var", _value];
+    }
+] call CBA_settings_fnc_init;
 [
-  "VKN_joinserver_port",
-  "EDITBOX",
-  ["Main Main Server Port", "Set the port for the server you'd like to instantly join to."],
-  "VKN Main Menu Server",
-  _MainMenuServerPortVal,
-  true,
-  {
-    params ["_value"];
-    _MainMenuServerPortVal = profileNamespace setVariable ["VKN_MainMenuServerPortVal_var", _value];
-  }
-] call CBA_Settings_fnc_init;
+    "VKN_joinserver_port",
+    "EDITBOX",
+    ["Main Main Server Port", "set the port for the server you'd like to instantly join to."],
+    "VKN Main Menu Server",
+    _MainMenuServerPortVal,
+    true,
+    {
+        params ["_value"];
+        _MainMenuServerPortVal = profileNamespace setVariable ["VKN_MainMenuServerPortVal_var", _value];
+    }
+] call CBA_settings_fnc_init;
 [
-  "VKN_joinserver_password",
-  "EDITBOX",
-  ["Main Main Server Password", "Set the password for the server you'd like to instantly join to."],
-  "VKN Main Menu Server",
-  _MainMenuServerPasswordVal,
-  true,
-  {
-    params ["_value"];
-    _MainMenuServerPasswordVal = profileNamespace setVariable ["VKN_MainMenuServerPasswordVal_var", _value];
-  }
-] call CBA_Settings_fnc_init;
+    "VKN_joinserver_password",
+    "EDITBOX",
+    ["Main Main Server Password", "set the password for the server you'd like to instantly join to."],
+    "VKN Main Menu Server",
+    _MainMenuServerPasswordVal,
+    true,
+    {
+        params ["_value"];
+        _MainMenuServerPasswordVal = profileNamespace setVariable ["VKN_MainMenuServerPasswordVal_var", _value];
+    }
+] call CBA_settings_fnc_init;
