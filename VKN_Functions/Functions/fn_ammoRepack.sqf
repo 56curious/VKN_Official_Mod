@@ -40,6 +40,6 @@ _playerInv = itemsWithMagazines _unit;
       if ((_magazineSize % _magazineSizeMax) > 0) then {
           _unit addMagazine [_item, floor (_magazineSize % _magazineSizeMax)];
       };
-      systemChat "Ammo Repacked";
+      systemChat "Magazine Repacked";
   };
 } forEach _AllMags;
