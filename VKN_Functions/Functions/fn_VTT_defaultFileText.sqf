@@ -1,5 +1,5 @@
 /*
-Script 			 name: fn_VTT_deleteFiles.sqf
+Script 			 name: fn_VTT_defaultFileText.sqf
 Created on: 	 16 January ‎2021
 Author: 		 Curious
 
