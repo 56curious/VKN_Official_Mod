@@ -12,45 +12,31 @@ https:// www.bohemia.net/community/licenses/arma-public-license-nd
 Example: N/A
 */
 
-// Sync server at start
-[] spawn {
-    player allowdamage false;
-    disableUserinput true;
-    hint 'Server Sync... please wait.';
-    sleep 60;
-    player allowdamage true;
-    disableUserinput false;
-    hint "Sync Complete.";
-};
+params ["_unit"];
 
-_distance = player distance getPos defaultRespawnposition;
-respawnposition = _respawnPos;
-player addAction ["", {
-    params ["_target", "_caller", "_actionId", "_arguments"];
-    hint "Safezone is active!"; if ((player distance getPos _arguments) >= 100) then {
-        player removeAction _actionId;
-    };
-}, _respawnPos, 0, false, true, "defaultaction", "isnil 'allowfire'"];
-player addEventHandler ["fired", {
-    if ((player distance getPos respawnposition) <= 50) then {
-        params ["_shooter", "_weapon", "_muzzle", "_mode", "_ammo", "_magazine", "_projectile", "_gunner"];
-        deletevehicle _projectile;
-        
-        if ((toUpper _weapon isEqualto "PUT" or toUpper _weapon isEqualto "throw")) then {
-            _dispname = gettext (configFile >> "Cfgmagazines" >> _magazine >> "displayname");
-            deletevehicle _projectile;
-            _shooter addMagazine _magazine;
-            hint format ["WARNinG! This is a safe zone. You cannot use %1 here!", str _dispname];
-            [] spawn {
-                player playMove "AmovPercMstpSnonWnonDnon_exercisePushup";
-                _redArrow = "Sign_Arrow_F" createvehicle [0, 0, 0];
-                _redArrow attachto [player, [0, 0, 2.4]];
-                sleep 18.5;
-                deletevehicle _redArrow;
-                player switchMove "";
-            };
+// get just player on server
+if is3DENPreview exitwith {};
+if isServer exitwith {};
+if !(isServer or hasinterface) exitwith {};
+
+// Sync server at start
+if hasinterface then {
+    _unit allowdamage false;
+    _unit enableSimulation false;
+    systemChat "Syncing client to server. Please wait.";
+    for "_i" from 30 to 1 step -1 do {
+        _text = format ["Server Sync in Progress... Please wait %1 more seconds", _i];
+    if ((getAssignedCuratorlogic player) in allCurators) then {
+            ["System:", _text + " to place objects.", 1337] call BIS_fnc_curatorhint;
+        } else {
+            hintSilent _text;
         };
+        sleep 1;
     };
-}];
+    hintSilent "";
+    _unit allowdamage true;
+    _unit enableSimulation true;
+    systemChat "Sync Complete.";
+};
 
 true
