@@ -47,27 +47,27 @@ class CfgFunctions {
   class VKN_EH {
     class functions {
       file = "\VKN_functions\Event Handles";
-      class eh_onMissionLoad{postInit = 1;};
+      class onMissionLoad{postInit = 1;};
 
-      class eh_inventoryOpened{postInit = 1;};
+      class inventoryOpened{postInit = 1;};
     };
   };
 
   class VKN_VTT {
     class functions {
-      file = "\VKN_functions\functions";
-      class VTT_create{};
-      class VTT_home{};
-      class VTT_basicSettingsDisplay{};
-      class VTT_fileSetupDisplay{};
-      class VTT_deleteFiles{};
-			class VTT_defaultFileText{};
+      file = "\VKN_functions\VTT Functions";
+      class create{};
+      class home{};
+      class basicSettingsDisplay{};
+      class fileSetupDisplay{};
+      class deleteFiles{};
+			class defaultFileText{};
     };
   };
 
 	class VKN {
 		class functions {
-			file = "\VKN_functions\functions";
+			file = "\VKN_functions\Misc Functions";
 			class icons{postInit = 1;};
 
       class selectRandomIndex{};

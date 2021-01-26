@@ -71,7 +71,7 @@ if (_missionnotSaved) then {
     ";
 } else {
     _createCode = " _display = findDisplay 3480;
-    _display closeDisplay 0; [] spawn VKN_VTT_fnc_VTT_create ";
+    _display closeDisplay 0; [] spawn VKN_VTT_fnc_create ";
 };
 
 _editCode = "systemChat ""an error occoured while setting button actions""";
@@ -79,9 +79,9 @@ _deleteCode = "systemChat ""an error occoured while setting button actions""";
 
 if (_filesExist) then {
     _editCode = " _display = findDisplay 3480;
-    _display closeDisplay 0; [] spawn VKN_VTT_fnc_VTT_filesetupDisplay; ";
+    _display closeDisplay 0; [] spawn VKN_VTT_fnc_filesetupDisplay; ";
     _deleteCode = " _display = findDisplay 3480;
-    _display closeDisplay 0; [] spawn VKN_VTT_fnc_VTT_deleteFiles; ";
+    _display closeDisplay 0; [] spawn VKN_VTT_fnc_deleteFiles; ";
 } else {
     _editCode = " systemChat ""The files do not exist, ensure you create a template first"";
     ";

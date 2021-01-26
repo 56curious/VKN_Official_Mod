@@ -37,11 +37,11 @@ _ctrl_confirm_button ctrlAddEventHandler ["ButtonClick", "
     _deleteReturn = [""viking.VKN_deleteFile"", [_path, _filenames]] call (uiNamespace getVariable ""py3_fnc_callExtension"");
     systemChat str _deleteReturn;
     _deleteCheckerDisplay closeDisplay 0;
-    [] spawn VKN_VTT_fnc_VTT_home;
+    [] spawn VKN_VTT_fnc_home;
 "];
 
 _ctrl_cancel_button ctrlAddEventHandler ["ButtonClick", "
     _deleteCheckerDisplay = findDisplay 3485;
     _deleteCheckerDisplay closeDisplay 0;
-    [] spawn VKN_VTT_fnc_VTT_home;
+    [] spawn VKN_VTT_fnc_home;
 "];

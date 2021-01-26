@@ -46,12 +46,12 @@ _3denCam setvectorDirAndUp [
     [ [ sin _r, -sin _p, cos _r * cos _p], -_y] call BIS_fnc_rotateVector2D
 ];
 
-_basicsettings = [] spawn VKN_VTT_fnc_VTT_basicsettingsDisplay;
+_basicsettings = [] spawn VKN_VTT_fnc_basicsettingsDisplay;
 waitUntil {
     scriptDone _basicsettings
 };
 
-_filesetup = [] spawn VKN_VTT_fnc_VTT_filesetupDisplay;
+_filesetup = [] spawn VKN_VTT_fnc_filesetupDisplay;
 waitUntil {
     scriptDone _filesetup
 };
