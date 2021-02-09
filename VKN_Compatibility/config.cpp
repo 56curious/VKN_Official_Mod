@@ -11,7 +11,8 @@ class CfgPatches {
 		requiredAddons[] =
     {
 		  "A3_Weapons_F",
-      "A3_Data_F"
+      "A3_Data_F",
+      "FA_Weapons_VKN"
     };
     weapons[] = {"VKN_AK5C", "VKN_MP5", "VKN_VSS"};
 	};
@@ -31,6 +32,10 @@ class asdg_OpticRail1913_short;
 class asdg_OpticRail1913_long;
 class asdg_MuzzleSlot_556;
 class asdg_MuzzleSlot_9MM_SMG;
+
+//RHS JR
+class rhs_western_rifle_laser_slot;
+class rhs_western_rifle_laser_slot_top;
 
 
 //Normal
