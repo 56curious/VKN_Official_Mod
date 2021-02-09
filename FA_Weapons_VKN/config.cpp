@@ -614,7 +614,6 @@ class VKN_AK5C : FA_Base_Rifle_VKN
       {
         linkProxy = "\A3\data_f\proxies\weapon_slots\SIDE";
         displayName = "$STR_A3_PointerSlot0";
-        compatibleItems[] = {"acc_flashlight", "acc_pointer_IR"};
         iconScale = 0.1;
       };
       class UnderBarrelSlot : SlotInfo

@@ -27,6 +27,7 @@ class CfgPatches {
             "A3_Map_Altis_Scenes",
             "A3_Map_VR_Scenes",
             "A3_Map_Malden_Scenes_F",
+            "FA_Weapons_VKN",
             "VKN_Functions"
         };
     };
