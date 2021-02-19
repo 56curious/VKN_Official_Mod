@@ -1,3 +1,4 @@
+#include "BIS_AddonInfo.hpp"
 class CfgPatches {
     class VKN_functions {
         name = VKN_Functions;
@@ -47,15 +48,15 @@ class CfgFunctions {
   class VKN_EH {
     class functions {
       file = "\VKN_functions\Event Handles";
-      class onMissionLoad{postInit = 1;};
+      class eh_onMissionLoad{postInit = 1;};
 
-      class inventoryOpened{postInit = 1;};
+      class eh_inventoryOpened{postInit = 1;};
     };
   };
 
   class VKN_VTT {
     class functions {
-      file = "\VKN_functions\VTT Functions";
+      file = "\VKN_functions\functions\VTT";
       class create{};
       class home{};
       class basicSettingsDisplay{};
@@ -67,7 +68,7 @@ class CfgFunctions {
 
 	class VKN {
 		class functions {
-			file = "\VKN_functions\Misc Functions";
+			file = "\VKN_functions\functions";
 			class icons{postInit = 1;};
 
       class selectRandomIndex{};

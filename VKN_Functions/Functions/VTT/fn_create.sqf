@@ -51,6 +51,8 @@ waitUntil {
     scriptDone _basicsettings
 };
 
+///wait until(s) are to ensure variables are set so the next function can continue.
+
 _filesetup = [] spawn VKN_VTT_fnc_filesetupDisplay;
 waitUntil {
     scriptDone _filesetup
@@ -69,7 +71,7 @@ _dynamicgroups = _basicsettingsReturn select 5;
 
 // Start tool
 collect3DENHistory {
-    _squad = configFile >> "Cfggroups" >> _side_Option >> _factions_option >> "infantry" >> _squads_option;
+    _squad = configFile >> "CfgGroups" >> _side_Option >> _factions_option >> "Infantry" >> _squads_option;
     // Check for 3DEN Enhanced, then setup those features
     if (isClass (configFile >> "CfgPatches" >> "3denEnhanced")) then {
         set3DENMissionAttributes[["Multiplayer", "Enh_Saveloadout", _saveloadouts]];
@@ -82,7 +84,7 @@ collect3DENHistory {
     set3DENMissionAttributes [
         ["Multiplayer", "respawn", 3],
         ["Multiplayer", "respawnDelay", 180],
-        ["Multiplayer", "respawnTemplates", ["counter", "Spectator", "Menuposition"]],
+        ["Multiplayer", "respawnTemplates", ["Counter", "Spectator", "MenuPosition"]],
         ["Multiplayer", "maxplayers", 60],
         ["Multiplayer", "intelOverviewtext", "Viking PMC Operation"],
         ["Multiplayer", "Gametype", "VKN_OP"],
@@ -91,12 +93,13 @@ collect3DENHistory {
         ["Multiplayer", "Respawndialog", true],
         ["Multiplayer", "enableteamSwitch", false],
         ["Multiplayer", "AIKills", true],
-        ["General", "loadScreen", "\VKN_Misc\VikinglogoLarge_ca.paa"],
-        ["General", "Overviewpicture", "\VKN_Misc\VikinglogoLarge_ca.paa"],
-        ["General", "SaveBinarized", false],
-        ["General", "intelbriefingname", "Viking PMC Zeus OP"]
+        ["Scenario", "loadscreen", "\VKN_Misc\VikinglogoLarge_ca.paa"],
+        ["Scenario", "overviewPicture", "\VKN_Misc\VikinglogoLarge_ca.paa"],
+        ["Scenario", "SaveBinarized", false],
+        ["Scenario", "intelbriefingname", "Viking PMC Zeus OP"],
+        ["Scenario", "author", profileName + ", VKN OPS Dpt."]
     ];
-    
+
     // Create Billboard
     _billboard = create3DENEntity ["Object", "land_Billboard_F", _position];
     _billboard set3DENAttribute ["ObjecttextureCustom0", "VKN_Extensions_Misc\vkn_poster.paa"];
@@ -108,13 +111,13 @@ collect3DENHistory {
     _RespawnPos set3DENAttribute ["moduleRespawnposition_F_name", "Respawn Point"];
     _RespawnPos set3DENAttribute ["moduleRespawnposition_F_Marker", 2];
     switch (toUpper _side_Option) do {
-        case ("east"): {
+        case ("EAST"): {
             _RespawnPos set3DENAttribute ["moduleRespawnposition_F_side", 0];
         };
-        case ("west"): {
+        case ("WEST"): {
             _RespawnPos set3DENAttribute ["moduleRespawnposition_F_side", 1];
         };
-        case ("inDEP"): {
+        case ("INDEP"): {
             _RespawnPos set3DENAttribute ["moduleRespawnposition_F_side", 2];
         };
     };
@@ -180,13 +183,13 @@ collect3DENHistory {
         _unitcount = count ("true" configClasses _squad);
         _groupside = west;
         switch (toUpper _side_Option) do {
-            case ("east"): {
+            case ("EAST"): {
                 _groupside = east;
             };
-            case ("west"): {
+            case ("WEST"): {
                 _groupside = west;
             };
-            case ("inDEP"): {
+            case ("INDEP"): {
                 _groupside = independent;
             };
         };
@@ -233,30 +236,18 @@ collect3DENHistory {
         _HCmoduleIgnore = create3DENEntity ["logic", "Werthles_moduleWHIgnore", _position];
         
         // in order as module presents them
-        _HCmodulesettings set3DENAttribute ["Werthles_moduleWHM_units", -666];
-        // default -666
-        _HCmodulesettings set3DENAttribute ["Werthles_moduleWHM_Repeating", true];
-        // default true
-        _HCmodulesettings set3DENAttribute ["Werthles_moduleWHM_Wait", 10];
-        // default 30
-        _HCmodulesettings set3DENAttribute ["Werthles_moduleWHM_Debug", false];
-        // default false
-        _HCmodulesettings set3DENAttribute ["Werthles_moduleWHM_Advanced", true];
-        // default true
-        _HCmodulesettings set3DENAttribute ["Werthles_moduleWHM_Delay", 10];
-        // default 30
-        _HCmodulesettings set3DENAttribute ["Werthles_moduleWHM_Pause", 3];
-        // default 3
-        _HCmodulesettings set3DENAttribute ["Werthles_moduleWHM_Report", true];
-        // default true
-        _HCmodulesettings set3DENAttribute ["Werthles_moduleWHM_Ignores", ""];
-        // default ""
-        _HCmodulesettings set3DENAttribute ["Werthles_moduleWHM_NoDebug", true];
-        // default true
-        _HCmodulesettings set3DENAttribute ["Werthles_moduleWHM_DebugOnly", false];
-        // default false
-        _HCmodulesettings set3DENAttribute ["Werthles_moduleWHM_UseServer", false];
-        // default false
+        _HCmodulesettings set3DENAttribute ["Werthles_moduleWHM_units", -666];        // default -666
+        _HCmodulesettings set3DENAttribute ["Werthles_moduleWHM_Repeating", true];        // default true
+        _HCmodulesettings set3DENAttribute ["Werthles_moduleWHM_Wait", 10];        // default 30
+        _HCmodulesettings set3DENAttribute ["Werthles_moduleWHM_Debug", false];        // default false
+        _HCmodulesettings set3DENAttribute ["Werthles_moduleWHM_Advanced", true];        // default true
+        _HCmodulesettings set3DENAttribute ["Werthles_moduleWHM_Delay", 10];        // default 30
+        _HCmodulesettings set3DENAttribute ["Werthles_moduleWHM_Pause", 3];        // default 3
+        _HCmodulesettings set3DENAttribute ["Werthles_moduleWHM_Report", true];        // default true
+        _HCmodulesettings set3DENAttribute ["Werthles_moduleWHM_Ignores", ""];        // default ""
+        _HCmodulesettings set3DENAttribute ["Werthles_moduleWHM_NoDebug", true];        // default true
+        _HCmodulesettings set3DENAttribute ["Werthles_moduleWHM_DebugOnly", false];        // default false
+        _HCmodulesettings set3DENAttribute ["Werthles_moduleWHM_UseServer", false];        // default false
     };
     
     _arsenalBox = create3DENEntity ["object", "Box_FIA_Support_F", _position];

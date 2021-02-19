@@ -26,7 +26,7 @@ if hasinterface then {
     systemChat "Syncing client to server. Please wait.";
     for "_i" from 30 to 1 step -1 do {
         _text = format ["Server Sync in Progress... Please wait %1 more seconds", _i];
-    if ((getAssignedCuratorlogic player) in allCurators) then {
+        if ((getAssignedCuratorlogic player) in allCurators) then {
             ["System:", _text + " to place objects.", 1337] call BIS_fnc_curatorhint;
         } else {
             hintSilent _text;

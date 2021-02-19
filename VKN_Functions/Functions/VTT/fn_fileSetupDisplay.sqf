@@ -94,7 +94,7 @@ _ctrl_initplayerlocal_reset_button ctrlAddEventHandler ["ButtonClick", "
 _ctrl_onplayerKilled_reset_button ctrlAddEventHandler ["ButtonClick", "
     _VTT_File_setup_Display = findDisplay 3482;
     _editbox = _VTT_File_setup_Display displayCtrl 1404;
-    text = (call VKN_VTT_fnc_defaultFileText) select 4;
+    _text = (call VKN_VTT_fnc_defaultFileText) select 4;
     _editbox ctrlsettext _text;
 "];
 

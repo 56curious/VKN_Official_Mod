@@ -181,6 +181,22 @@ _spectate_option = _ctrl_Spectator_Combo lbText lbCurSel _ctrl_Spectator_Combo;
 _saveLoadouts = cbChecked _ctrl_loadout_check_Box;
 _dynamicGroups = cbChecked _ctrl_groups_check_Box;
 
+
+//default is freecam disabled (auto selected in lbCurSel 2)
+_fncParams = "[player, [], false, false, true]";
+switch (_spectate_option) do {
+  case "All Enabled": {_fncParams = "[player, [], true, true, true, true, true, true, true, true]";};
+  case "All Disabled": {_fncParams = "[player, [], false, false, false, false, false, false, false, false]";};
+  case "Freecam Disabled": {_fncParams = "[player, [], false, false]";}; 
+  case "3pp Disabled": {_fncParams = "[player, [], false, false, false]";};
+  case "Freecam only": {_fncParams = "[player, [], false, true, false]";};
+  case "1pp Disabled": {_fncParams = "[player, [], false, false, true]";};
+  default {_fncParams = "[player, [], false, false, true]";};
+};
+
+missionNamespace setVariable ["VKN_VTT_SpectatorOptions", format ["%1 call BIS_fnc_EGSpectator;", _fncParams] ];
+
+
 _VTT_Basic_Settings_Display closedisplay 0;
 
 
