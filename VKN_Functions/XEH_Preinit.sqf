@@ -1,4 +1,4 @@
-diag_log "VKN - XEH exec";
+diag_log "VKN - XEH Exec";
 
 _strategicMapVal = profileNamespace getVariable ["VKN_strategicMapValue_var", true];
 [
@@ -52,7 +52,6 @@ _Show3Dgroupicons_Val = profileNamespace getVariable ["VKN_Show3Dgroupicons_Var"
         params ["_value"];
         profileNamespace setVariable ["VKN_showMapicons_Var", _value];
         saveProfileNamespace;
-        [] call VKN_fnc_Icons;
     }
 ] call CBA_settings_fnc_init;
 [
@@ -66,7 +65,6 @@ _Show3Dgroupicons_Val = profileNamespace getVariable ["VKN_Show3Dgroupicons_Var"
         params ["_value"];
         profileNamespace setVariable ["VKN_showGPSIcons_Var", _value];
         saveProfileNamespace;
-        [] call VKN_fnc_Icons;
     }
 ] call CBA_settings_fnc_init;
 [
@@ -80,7 +78,6 @@ _Show3Dgroupicons_Val = profileNamespace getVariable ["VKN_Show3Dgroupicons_Var"
         params ["_value"];
         profileNamespace setVariable ["VKN_Showgroupicons_Var", _value];
         saveProfileNamespace;
-        [] call VKN_fnc_Icons;
     }
 ] call CBA_settings_fnc_init;
 [
@@ -94,7 +91,6 @@ _Show3Dgroupicons_Val = profileNamespace getVariable ["VKN_Show3Dgroupicons_Var"
         params ["_value"];
         profileNamespace setVariable ["VKN_ShowMedicalWounded_Var", _value];
         saveProfileNamespace;
-        [] call VKN_fnc_Icons;
     }
 ] call CBA_settings_fnc_init;
 [
@@ -108,7 +104,6 @@ _Show3Dgroupicons_Val = profileNamespace getVariable ["VKN_Show3Dgroupicons_Var"
         params ["_value"];
         profileNamespace setVariable ["VKN_ShowfactionOnly_Var", _value];
         saveProfileNamespace;
-        [] call VKN_fnc_Icons;
     }
 ] call CBA_settings_fnc_init;
 [
@@ -122,7 +117,6 @@ _Show3Dgroupicons_Val = profileNamespace getVariable ["VKN_Show3Dgroupicons_Var"
         params ["_value"];
         profileNamespace setVariable ["VKN_ShowIconMaptext_Var", _value];
         saveProfileNamespace;
-        [] call VKN_fnc_Icons;
     }
 ] call CBA_settings_fnc_init;
 [
@@ -136,7 +130,6 @@ _Show3Dgroupicons_Val = profileNamespace getVariable ["VKN_Show3Dgroupicons_Var"
         params ["_value"];
         profileNamespace setVariable ["VKN_ShowMOS_Var", _value];
         saveProfileNamespace;
-        [] call VKN_fnc_Icons;
     }
 ] call CBA_settings_fnc_init;
 [
@@ -150,7 +143,6 @@ _Show3Dgroupicons_Val = profileNamespace getVariable ["VKN_Show3Dgroupicons_Var"
         params ["_value"];
         profileNamespace setVariable ["VKN_showGPSnames_Var", _value];
         saveProfileNamespace;
-        [] call VKN_fnc_Icons;
     }
 ] call CBA_settings_fnc_init;
 [
@@ -164,7 +156,6 @@ _Show3Dgroupicons_Val = profileNamespace getVariable ["VKN_Show3Dgroupicons_Var"
         params ["_value"];
         profileNamespace setVariable ["VKN_showGPSgroupOnly_Var", _value];
         saveProfileNamespace;
-        [] call VKN_fnc_Icons;
     }
 ] call CBA_settings_fnc_init;
 [
@@ -178,7 +169,6 @@ _Show3Dgroupicons_Val = profileNamespace getVariable ["VKN_Show3Dgroupicons_Var"
         params ["_value"];
         profileNamespace setVariable ["VKN_groupMapicons_Var", _value];
         saveProfileNamespace;
-        [] call VKN_fnc_Icons;
     }
 ] call CBA_settings_fnc_init;
 [
@@ -192,7 +182,6 @@ _Show3Dgroupicons_Val = profileNamespace getVariable ["VKN_Show3Dgroupicons_Var"
         params ["_value"];
         profileNamespace setVariable ["VKN_Show3Dgroupicons_Var", _value];
         saveProfileNamespace;
-        [] call VKN_fnc_Icons;
     }
 ] call CBA_settings_fnc_init;
 
