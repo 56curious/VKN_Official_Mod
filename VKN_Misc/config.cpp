@@ -646,7 +646,7 @@ class RscDisplayLoadCustom: RscDisplayLoadMission
 class cfg3DEN {
   class EventHandlers {
     class VKN {
-      OnTerrainNew = "call VKN_EH_fnc_onMissionLoad";
+        OnTerrainNew = "call VKN_EH_fnc_eh_onMissionLoad";
     };
   };
 };
