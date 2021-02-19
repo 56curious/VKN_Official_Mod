@@ -180,7 +180,7 @@ class VKN_Template_Tool_File_Setup {
     class VKN_TT_LinkButton_1: ctrlButton
     {
     	idc = 1601;
-    	text = "Wiki Help"; //--- ToDo: Localize;
+    	text = "Description.ext"; //--- ToDo: Localize;
       url = "https://community.bistudio.com/wiki/Description.ext";
     	x = 0.309171 * safezoneW + safezoneX;
     	y = 0.841 * safezoneH + safezoneY;
@@ -194,7 +194,7 @@ class VKN_Template_Tool_File_Setup {
     class VKN_TT_LinkButton_2: VKN_TT_LinkButton_1
     {
     	idc = 1602;
-    	text = "Wiki Help"; //--- ToDo: Localize;
+    	text = "Event Scripts"; //--- ToDo: Localize;
       url = "https://community.bistudio.com/wiki/Event_Scripts";
     	x = 0.608308 * safezoneW + safezoneX;
     	y = 0.841 * safezoneH + safezoneY;
