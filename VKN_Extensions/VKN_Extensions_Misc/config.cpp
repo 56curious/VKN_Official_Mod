@@ -28,7 +28,9 @@ class CfgPatches {
             "cba_settings",
             "FIR_AirWeaponSystem_US",
             "FIR_Baseplate",
-            "ace_ui"
+            "ace_ui",
+            "VKN_Misc",
+            "rhs_main"
         };
     };
 };
@@ -42,10 +44,6 @@ class Extended_PreInit_EventHandlers {
         init = "call compile preprocessFileLineNumbers '\VKN_Functions\XEH_Preinit.sqf'";
     };
 };
-
-class RscStandardDisplay;
-class RscControlsGroup;
-class RscPictureKeepAspect;
 
 /*
 //Custom ACE interactions
@@ -118,86 +116,13 @@ class CfgUnitInsignia {
     delete Emblem_6airdiv;
 };
 
-
-/*
-
-class RscDisplayMain: RscStandardDisplay {
-
-    #include "\VKN_Misc\Main Menu\VKN_MainMenuDefines.hpp"
-    idd=0;
-    scriptName="RscDisplayMain";
-    scriptPath="GUI";
-    onLoad="[""onLoad"",_this,""RscDisplayMain"",'GUI'] call    (uinamespace getvariable 'BIS_fnc_initDisplay')";
-    onUnload="[""onUnload"",_this,""RscDisplayMain"",'GUI'] call    (uinamespace getvariable 'BIS_fnc_initDisplay')";
-    class ControlsBackground
-    {
-        class MouseArea: RscText
-        {
-            idc=999;
-            style=16;
-            x="safezoneXAbs";
-            y="safezoneY";
-            w="safezoneWAbs";
-            h="safezoneH";
-        };
-        class BackgroundLeft: RscText
-        {
-            idc = 1001;
-            x = -3.83233 * safezoneW + safezoneX;
-            y = -5.275 * safezoneH + safezoneY;
-            w = 3.83233 * safezoneW;
-            h = 11 * safezoneH;
-            colorBackground[] = {0.1,0.1,0.1,0};
-        };
-        class BackgroundRight: BackgroundLeft
-        {
-            idc = 1002;
-            x = 1 * safezoneW + safezoneX;
-            y = -5.275 * safezoneH + safezoneY;
-            w = 4.12603 * safezoneW;
-            h = 11 * safezoneH;
-            colorBackground[] = {0.1,0.1,0.1,0};
-        };
-        class Picture: RscPicture
-        {
-            idc = 998;
-
-            text = "";
-            x = -0.000281541 * safezoneW + safezoneX;
-            y = 0.000329973 * safezoneH + safezoneY;
-            w = 1.00056 * safezoneW;
-            h = 1.771 * safezoneH;
-        };
-    };
-    class Controls {
-
-        class cba_help_credits_base;
-        class cba_help_CreditsVersion: RscText {};
-        class ALiVEGameLogo: RscPicture {text = ""};
-        class cba_help_credits: cba_help_credits_base {size = ""};
-        class JohariLogo: RscPicture {text = "\";};
-        class ACE_news_apex: InfoNews {};
-        class ProjectOPFORLogo: RscPictureKeepAspect{text = "";};
-
-        class cba_help_CreditsVersion: RscText
-        {
-            onLoad = "_this call (uiNamespace getVariable 'cba_help_fnc_setVersionLine')";
-            idc = 222712;
-            font = "RobotoCondensedLight";
-            shadow = 0;
-            style = 1;
-
-            x = 0.851463 * safezoneW + safezoneX;
-            y = 0.9802 * safezoneH + safezoneY;
-            w = 0.123781 * safezoneW;
-            h = 0.0176 * safezoneH;
-            sizeEx = ((0.8) * ((((safezoneW / safezoneH) min 1.2)/ 1.2)/ 25)) * GUI_GRID_H;
-        };
-    };
-*/
-
-
-
+class RscActivePicture;
+class RscActivePictureKeepAspect;
+class RscButtonMenu;
+class RscButtonMenuMain;
+class RscControlsGroupNoHScrollbars;
+class RscControlsGroupNoScrollbars;
+class RscMainMenuSpotlight;
 
 //UI Inheritence
 class rscText;
@@ -211,20 +136,108 @@ class iGUIBack;
 class rscStructuredText;
 class rscCheckbox;
 class rscFrame;
-class RscDisplayInventory {
-  class controls {
-    #include "\VKN_Misc\displays\VKN_rscDisplayInventory.hpp"
-  };
+class rscEdit;
+
+//Eden ctrls
+class ctrlEdit;
+class ctrlEditMulti;
+class ctrlButton;
+class ctrlButtonPicture;
+class ctrlButtonClose;
+class ctrlButtonCancel;
+class ctrlButtonOK;
+class ctrlButtonSearch;
+class ctrlButtonCollapseAll;
+class ctrlButtonExpandAll;
+class ctrlButtonPictureKeepAspect;
+class ctrlStructuredText;
+class ctrlCombo;
+class ctrlCheckbox;
+class ctrlXSliderH;
+class ctrlControlsGroup;
+class ctrlControlsGroupNoScrollbars;
+class ctrlMenuStrip;
+class ctrlMenu;
+class ctrlStaticBackground;
+class ctrlStatic;
+class ctrlStaticFooter;
+class ctrlStaticBackgroundDisable;
+class ctrlStaticBackgroundDisableTiles;
+class ctrlStaticPictureKeepAspect;
+class ctrlStaticPicture;
+class ctrlStaticMulti;
+class ctrlStaticTitle;
+class ctrlStaticLine;
+class ctrlTree;
+class ctrlListbox;
+class ctrlListNBox;
+class ctrlToolbox;
+class ctrlToolboxPictureKeepAspect;
+class ctrlProgress;
+class ctrlStaticFrame;
+class scrollbar;
+class ctrlShortcutButton;
+class ctrlActivePicture;
+class RscControlsGroup;
+class RscPictureKeepAspect;
+class RscVignette;
+class RscStandardDisplay;
+
+class RscDisplayMain : RscStandardDisplay
+{
+
+    //onLoad = "['onload', _this, 'RscDisplayMain', 'GUI'] call compile preprocessFileLineNumbers 'VKN_Misc\Displays\Scripts\handleMainMenu.sqf ';";
+    //onUnload = "['onunload', _this, 'RscDisplayMain', 'GUI'] call compile preprocessFileLineNumbers 'VKN_Misc\Displays\Scripts\handleMainMenu.sqf ';";
+
+    class Spotlight {
+        class Viking_Welcome {
+            text = "VKN Offical Mod";
+            textIsQuote = 0;
+            picture = "\VKN_Misc\VikingLogo512.paa";
+            video = "\VKN_Misc\VKNLOGO_512x.ogv";
+            action = "disableserialization; _script = [] execVM '\VKN_Functions\Functions\fn_ORBATCreate.sqf'; _code = uiNamespace getvariable 'CUR_bis_fnc_credits'; [_code] spawn _code;";
+            actionText = "Developed By Viking PMC";
+            condition = "true";
+        };
+        class Server_Join {
+            text = "Quick Join Server #1";
+            textIsQuote = 0;
+            picture = "\VKN_Misc\VikingLogo512.paa";
+            video = "";
+            action = "0 = [_this, '', '', ''] execVM '\VKN_Functions\Functions\fn_joinServer.sqf';";
+            actionText = "Direct Connect to Server";
+            condition = "true";
+        };
+    };
+    class Controls
+    {
+
+    //#include "\VKN_Misc\Main Menu\VKN_Menu.hpp"
+        
+    };
 };
 
-class RscDisplayInventory_DLCTemplate {
-  class controls {
-    #include "\VKN_Misc\displays\VKN_rscDisplayInventory.hpp"
-  };
-}
 
-class VKN_Inventory {
-  class controls {
-    #include "\VKN_Misc\displays\VKN_rscDisplayInventory.hpp"
-  };
-};
+class RscDisplayInventory
+    {
+        class controls
+        {
+#include "\VKN_Misc\displays\VKN_rscDisplayInventory.hpp"
+        };
+    };
+
+    class RscDisplayInventory_DLCTemplate
+    {
+        class controls
+        {
+#include "\VKN_Misc\displays\VKN_rscDisplayInventory.hpp"
+        };
+    }
+
+    class VKN_Inventory
+    {
+        class controls
+        {
+#include "\VKN_Misc\displays\VKN_rscDisplayInventory.hpp"
+        };
+    };
