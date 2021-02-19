@@ -9,26 +9,28 @@ class CfgPatches {
         units[] = {};
 
         requiredAddons[] =
-        {
-            "A3_Editor_F",
-            "A3_Data_F",
-            "A3_UI_F",
-            "A3_UI_F_Curator",
-            "A3_Functions_F",
-            "A3_Functions_F_Curator",
-            "A3_Functions_F_Mark",
-            "A3_Modules_F",
-            "A3_Modules_F_Curator",
-            "A3_Map_Altis",
-            "A3_Map_Stratis",
-            "A3_Map_VR",
-            "A3_Map_Malden",
-            "A3_Map_Stratis_Scenes",
-            "A3_Map_Altis_Scenes",
-            "A3_Map_VR_Scenes",
-            "A3_Map_Malden_Scenes_F",
-            "VKN_Functions"
-        };
+            {
+                "A3_Functions_F",
+                "A3_UiFonts_F",
+                "A3_Editor_F",
+                "A3_Data_F",
+                "A3_UI_F",
+                "A3_UI_F_Curator",
+                "A3_Functions_F",
+                "A3_Functions_F_Curator",
+                "A3_Functions_F_Mark",
+                "A3_Modules_F",
+                "A3_Modules_F_Curator",
+                "A3_Map_Altis",
+                "A3_Map_Stratis",
+                "A3_Map_VR",
+                "A3_Map_Malden",
+                "A3_Map_Stratis_Scenes",
+                "A3_Map_Altis_Scenes",
+                "A3_Map_VR_Scenes",
+                "A3_Map_Malden_Scenes_F",
+                "VKN_Functions"
+            };
     };
 };
 
@@ -644,7 +646,7 @@ class RscDisplayLoadCustom: RscDisplayLoadMission
 class cfg3DEN {
   class EventHandlers {
     class VKN {
-      OnTerrainNew = "call VKN_EH_fnc_eh_onMissionLoad";
+      OnTerrainNew = "call VKN_EH_fnc_onMissionLoad";
     };
   };
 };
@@ -659,7 +661,7 @@ class display3DEN {
                 class Mission_Template_Tool {
                     text = "Mission Template Tool";
                     Picture = "\VKN_Misc\VikingLogo128.paa";
-                    action = "[] spawn VKN_VTT_fnc_VTT_home;";
+                    action = "[] spawn VKN_VTT_fnc_home;";
                 };
 
                 //disable enter key
@@ -740,11 +742,18 @@ class RscDisplayStart: RscStandardDisplay {
 #include "\VKN_Misc\displays\VKN_Template_Tool_Notification.hpp"
 #include "\VKN_Misc\displays\VKN_Template_Tool_Delete_Check.hpp"
 
+class RscActivePicture;
+class RscActivePictureKeepAspect;
+class RscButtonMenu;
+class RscButtonMenuMain;
+class RscControlsGroupNoHScrollbars;
+class RscControlsGroupNoScrollbars;
+class RscMainMenuSpotlight;
 
+class RscDisplayMain : RscStandardDisplay {
 
-class RscDisplayMain: RscStandardDisplay {
-
-    //#include "\VKN_Misc\Main Menu\VKN_MainMenuDefines.hpp"
+    //onLoad = "['onload', _this, 'RscDisplayMain', 'GUI'] call VKN_fnc_handleMainMenu;";
+    //onUnload = "['onunload', _this, 'RscDisplayMain', 'GUI'] call VKN_fnc_handleMainMenu;";
 
     class Spotlight {
         class Viking_Welcome {
@@ -752,7 +761,7 @@ class RscDisplayMain: RscStandardDisplay {
             textIsQuote = 0;
             picture = "\VKN_Misc\VikingLogo512.paa";
             video = "\VKN_Misc\VKNLOGO_512x.ogv";
-            action = "disableserialization; _script = [] execVM '\VKN_Functions\Functions\fn_ORBATCreate.sqf'; _code = uiNamespace getvariable 'CUR_bis_fnc_credits'; [_code] spawn _code;";
+            action = "disableserialization; _script = [] execVM '\VKN_Functions\Misc Functions\fn_ORBATCreate.sqf'; _code = uiNamespace getvariable 'CUR_bis_fnc_credits'; [_code] spawn _code;";
             actionText = "Developed By Viking PMC";
             condition = "true";
         };
@@ -761,470 +770,15 @@ class RscDisplayMain: RscStandardDisplay {
             textIsQuote = 0;
             picture = "\VKN_Misc\VikingLogo512.paa";
             video = "";
-            action = "0 = [_this, '', '', ''] execVM '\VKN_Functions\Functions\fn_joinServer.sqf';";
+            action = "0 = [_this, '', '', ''] execVM '\VKN_Functions\Misc Functions\fn_joinServer.sqf';";
             actionText = "Direct Connect to Server";
             condition = "true";
         };
     };
-/*
-    idd=0;
-    scriptName="RscDisplayMain";
-    scriptPath="GUI";
-    onLoad="_script = [""onLoad"",_this,""RscDisplayMain"",'GUI'] call (uinamespace getvariable 'BIS_fnc_initDisplay'); diag_log 'VKN_MainMenu_start'; diag_log str _script; diag_log 'VKN_MainMenu_end';";
-    onUnload="[""onUnload"",_this,""RscDisplayMain"",'GUI'] call (uinamespace getvariable 'BIS_fnc_initDisplay')";
-    class ControlsBackground
-    {
-        class MouseArea: RscText
-        {
-            idc=999;
-            style=16;
-            x="safezoneXAbs";
-            y="safezoneY";
-            w="safezoneWAbs";
-            h="safezoneH";
-        };
-        class BackgroundLeft: RscText
-        {
-            idc = 1001;
-            x = -3.83233 * safezoneW + safezoneX;
-            y = -5.275 * safezoneH + safezoneY;
-            w = 3.83233 * safezoneW;
-            h = 11 * safezoneH;
-            colorBackground[] = {0.1,0.1,0.1,0};
-        };
-        class BackgroundRight: BackgroundLeft
-        {
-            idc = 1002;
-            x = 1 * safezoneW + safezoneX;
-            y = -5.275 * safezoneH + safezoneY;
-            w = 4.12603 * safezoneW;
-            h = 11 * safezoneH;
-            colorBackground[] = {0.1,0.1,0.1,0};
-        };
-        class Picture: RscPicture
-        {
-            idc = 998;
-
-            text = "";
-            x = -0.000281541 * safezoneW + safezoneX;
-            y = 0.000329973 * safezoneH + safezoneY;
-            w = 1.00056 * safezoneW;
-            h = 1.771 * safezoneH;
-        };
-    };
-    class Controls {
-
-        //Remove/overwrite old main menu
-        delete ModIcons;
-        delete B_Quit;
-        delete B_Expansions;
-        delete B_Credits;
-        delete B_Player;
-        delete B_Options;
-        delete B_SinglePlayer;
-        delete B_MissionEditor;
-        delete B_MultiPlayer;
-        delete B_SingleMission;
-        delete B_Campaign;
-        delete Date;
-        delete ModList;
-        delete TrafficLight;
-        delete Version;
-
-        class RscMainMenuSpotlight;
-        class RscActivePicture;
-        class RscButton;
-        class RscActivePictureKeepAspect;
-        class RscButtonMenu;
-        class RscControlsGroupNoScrollbars;
-        class RscControlsGroupNoHScrollbars;
-        class BackgroundSpotlight: RscPicture {colorText[] = {0,0,0,0};};
-        class BackgroundSpotlightLeft: BackgroundSpotlight {colorText[] = {0,0,0,0};};
-        class BackgroundSpotlightRight: BackgroundSpotlightLeft {colorText[] = {0,0,0,0};};
-        class Spotlight1: RscMainMenuSpotlight {x = 1.00028 * safezoneW + safezoneX; y = 0.148 * safezoneH + safezoneY; w = 0.166708 * safezoneW; h = 0.296296 * safezoneH;};
-        class Spotlight3: RscMainMenuSpotlight {x = 1.00028 * safezoneW + safezoneX; y = 0.148 * safezoneH + safezoneY; w = 0.166708 * safezoneW; h = 0.296296 * safezoneH;};
-        class BackgroundBar: RscText {colorBackground[] = {0,0,0,0};};
-        class BackgroundCenter: BackgroundBar {colorBackground[] = {0,0,0,0};};
-        class BackgroundBarLeft: RscPicture {text = "\a3\Ui_f\data\GUI\Rsc\RscDisplayMain\gradientMods_ca.paa";};
-        class BackgroundBarRight: BackgroundBarLeft {text = "";};
-        class Logo: RscActivePicture {text = "\a3\Ui_f\data\Logos\arma3_shadow_ca.paa";};
-        class BackgroundLeft: RscText {colorBackground[] = {0.1,0.1,0.1,0};};
-        class BackgroundRight: BackgroundLeft {colorBackground[] = {0.1,0.1,0.1,0};};
-        class Picture: RscPicture {text = "";};
-
-
-
-        class Button3DEditor: RscButton
-        {
-            idc = 115;
-            shortcuts[] = {"512 + 0x20"};
-            onButtonClick = "!cheatsenabled";
-
-            x = -3.83233 * safezoneW + safezoneX;
-            y = -5.275 * safezoneH + safezoneY;
-            w = 0 * safezoneW;
-            h = 0 * safezoneH;
-            colorBackground[] = {0,0,0,0};
-        };
-        class Spotlight2: RscText
-        {
-            idc = 1020;
-            show = 0;
-
-            x = 0.54126 * safezoneW + safezoneX;
-            y = 0.368 * safezoneH + safezoneY;
-            w = 0.166708 * safezoneW;
-            h = 0.296296 * safezoneH;
-        };
-        class SpotlightPrev: RscActivePictureKeepAspect
-        {
-            idc = 1060;
-            //color[] = {1,1,1,0.25};
-            //fade = 1;
-
-            show = 0;
-
-            text = "\a3\Ui_f\data\GUI\Rsc\RscDisplayMain\spotlightPrev_ca.paa"; //--- ToDo: Localize;
-            x = 0.54126 * safezoneW + safezoneX;
-            y = 0.676 * safezoneH + safezoneY;
-            w = 0.166708 * safezoneW;
-            h = 0.037037 * safezoneH;
-            //colorActive[] = {1,1,1,1};
-        };
-        class SpotlightNext: SpotlightPrev
-        {
-            idc = 1061;
-            angle = 180;
-
-            text = "\a3\Ui_f\data\GUI\Rsc\RscDisplayMain\spotlightNext_ca.paa"; //--- ToDo: Localize;
-            x = 0.54126 * safezoneW + safezoneX;
-            y = 0.324 * safezoneH + safezoneY;
-            w = 0.165041 * safezoneW;
-            h = 0.033 * safezoneH;
-            colorActive[] = {1,1,1,1};
-        };
-        class TitleSingleplayer: RscButtonMenu
-        {
-            idc = 1011;
-
-            text = "Singleplayer"; //--- ToDo: Localize;
-            x = 0.195705 * safezoneW + safezoneX;
-            y = 0.291 * safezoneH + safezoneY;
-            w = 0.0979933 * safezoneW;
-            h = 0.044 * safezoneH;
-            colorText[] = {1,1,1,1};
-            colorBackground[] = {0,0,0,0};
-        };
-        class GroupSingleplayer: RscControlsGroupNoScrollbars
-        {
-            idc = 1001;
-
-            x = 0.293698 * safezoneW + safezoneX;
-            y = 0.291 * safezoneH + safezoneY;
-            w = 0.0833542 * safezoneW;
-            h = 0.111111 * safezoneH;
-            class Controls
-            {
-            };
-        };
-        class TitleMultiplayer: RscButtonMenu
-        {
-            idc = 1012;
-
-            text = "Multiplayer"; //--- ToDo: Localize;
-            x = 0.195705 * safezoneW + safezoneX;
-            y = 0.379 * safezoneH + safezoneY;
-            w = 0.0979933 * safezoneW;
-            h = 0.044 * safezoneH;
-            colorText[] = {1,1,1,1};
-            colorBackground[] = {0,0,0,0};
-        };
-        class GroupMultiplayer: RscControlsGroupNoScrollbars
-        {
-            idc = 1002;
-
-            x = 0.293698 * safezoneW + safezoneX;
-            y = 0.379 * safezoneH + safezoneY;
-            w = 0.0833542 * safezoneW;
-            h = 0.0666667 * safezoneH;
-            class Controls
-            {
-            };
-        };
-        class TitleTutorials: RscButtonMenu
-        {
-            idc = 1013;
-
-            text = "Tutorials"; //--- ToDo: Localize;
-            x = 0.195705 * safezoneW + safezoneX;
-            y = 0.467 * safezoneH + safezoneY;
-            w = 0.0979933 * safezoneW;
-            h = 0.044 * safezoneH;
-            colorText[] = {1,1,1,1};
-            colorBackground[] = {0,0,0,0};
-        };
-        class GroupTutorials: RscControlsGroupNoScrollbars
-        {
-            idc = 1003;
-
-            x = 0.293698 * safezoneW + safezoneX;
-            y = 0.467 * safezoneH + safezoneY;
-            w = 0.112528 * safezoneW;
-            h = 0.133333 * safezoneH;
-            class Controls
-            {
-            };
-        };
-        class TitleOptions: RscButtonMenu
-        {
-            idc = 1014;
-
-            text = "Options"; //--- ToDo: Localize;
-            x = 0.195705 * safezoneW + safezoneX;
-            y = 0.555 * safezoneH + safezoneY;
-            w = 0.0979933 * safezoneW;
-            h = 0.044 * safezoneH;
-            colorText[] = {1,1,1,1};
-            colorBackground[] = {0,0,0,0};
-        };
-        class TitleSession: RscButtonMenu
-        {
-            idc = 1015;
-
-            text = "Profile Settings"; //--- ToDo: Localize;
-            x = 0.195705 * safezoneW + safezoneX;
-            y = 0.643 * safezoneH + safezoneY;
-            w = 0.0979933 * safezoneW;
-            h = 0.044 * safezoneH;
-            colorText[] = {1,1,1,1};
-            colorBackground[] = {0,0,0,0};
-        };
-        class TitleIconSingleplayer: RscButton
-        {
-            idc = 1111;
-            show = 0;
-            style = "0x30 + 0x800";
-            colorBackgroundActive[] = {1,1,1,1};
-            colorFocused[] = {1,1,1,1};
-            onMouseEnter = "(_this select 0) ctrlsettextcolor [0,0,0,1];";
-            onSetFocus = "(_this select 0) ctrlsettextcolor [0,0,0,1];";
-            onMouseExit = "(_this select 0) ctrlsettextcolor [1,1,1,1];";
-            onKillFocus = "(_this select 0) ctrlsettextcolor [1,1,1,1];";
-
-            text = "\a3\Ui_f\data\GUI\Rsc\RscDisplayMain\menu_singleplayer_ca.paa"; //--- ToDo: Localize;
-            x = 0.216335 * safezoneW + safezoneX;
-            y = 0.291 * safezoneH + safezoneY;
-            w = 0.0333416 * safezoneW;
-            h = 0.0296296 * safezoneH;
-            colorBackground[] = {0,0,0,0};
-            tooltip = "Singleplayer"; //--- ToDo: Localize;
-        };
-        class TitleIconMultiplayer: TitleIconSingleplayer
-        {
-            idc = 1112;
-
-            text = "\a3\Ui_f\data\GUI\Rsc\RscDisplayMain\menu_multiplayer_ca.paa"; //--- ToDo: Localize;
-            x = 0.216335 * safezoneW + safezoneX;
-            y = 0.379 * safezoneH + safezoneY;
-            w = 0.0333416 * safezoneW;
-            h = 0.0296296 * safezoneH;
-            colorBackground[] = {0,0,0,0};
-            tooltip = "Multiplayer"; //--- ToDo: Localize;
-        };
-        class TitleIconTutorials: TitleIconSingleplayer
-        {
-            idc = 1113;
-
-            text = "\a3\Ui_f\data\GUI\Rsc\RscDisplayMain\menu_tutorials_ca.paa"; //--- ToDo: Localize;
-            x = 0.20602 * safezoneW + safezoneX;
-            y = 0.467 * safezoneH + safezoneY;
-            w = 0.0333416 * safezoneW;
-            h = 0.0296296 * safezoneH;
-            colorBackground[] = {0,0,0,0};
-            tooltip = "Tutorials"; //--- ToDo: Localize;
-        };
-        class TitleIconOptions: TitleIconSingleplayer
-        {
-            idc = 1114;
-
-            text = "\a3\Ui_f\data\GUI\Rsc\RscDisplayMain\menu_options_ca.paa"; //--- ToDo: Localize;
-            x = 0.200863 * safezoneW + safezoneX;
-            y = 0.555 * safezoneH + safezoneY;
-            w = 0.0333416 * safezoneW;
-            h = 0.0296296 * safezoneH;
-            colorBackground[] = {0,0,0,0};
-            tooltip = "Options"; //--- ToDo: Localize;
-        };
-        class Exit: RscButtonMenu
-        {
-            idc = 106;
-
-            text = "Exit Game"; //--- ToDo: Localize;
-            x = 0.195705 * safezoneW + safezoneX;
-            y = 0.72 * safezoneH + safezoneY;
-            w = 0.0979933 * safezoneW;
-            h = 0.044 * safezoneH;
-            colorText[] = {1,1,1,1};
-            colorBackground[] = {0,0,0,0};
-        };
-        class RscPicture_1201: RscPicture
-        {
-            idc = 1201;
-            text = "\VKN_misc\main menu\VikingPMCText.paa";
-            x = 0.195705 * safezoneW + safezoneX;
-            y = 0.203 * safezoneH + safezoneY;
-            w = 0.510597 * safezoneW;
-            h = 0.066 * safezoneH;
-        };
-        class RscPicture_1202: RscPicture
-        {
-            idc = 1202;
-            text = "#(argb,8,8,3)color(1,1,1,1)";
-            x = 0.75272 * safezoneW + safezoneX;
-            y = 0.203 * safezoneH + safezoneY;
-            w = 0.211459 * safezoneW;
-            h = 0.561 * safezoneH;
-        };
-        class GroupOptions: RscControlsGroupNoScrollbars
-        {
-            idc = 1004;
-
-            x = 0.293698 * safezoneW + safezoneX;
-            y = 0.555 * safezoneH + safezoneY;
-            w = 0.0833542 * safezoneW;
-            h = 0.133333 * safezoneH;
-            class Controls
-            {
-            };
-        };
-        class GroupSession: RscControlsGroupNoScrollbars
-        {
-            idc = 1005;
-
-            x = 0.293698 * safezoneW + safezoneX;
-            y = 0.643 * safezoneH + safezoneY;
-            w = 0.0833542 * safezoneW;
-            h = 0.0888889 * safezoneH;
-            class Controls
-            {
-            };
-        };
-        class InfoMods: RscControlsGroupNoHScrollbars
-        {
-            idc = 1030;
-
-            x = 0.00277848 * safezoneW + safezoneX;
-            y = 0.944778 * safezoneH + safezoneY;
-            w = 1.00056 * safezoneW;
-            h = 0.033 * safezoneH;
-            class Controls
-            {
-            };
-        };
-        class InfoDLCsOwned: InfoMods
-        {
-            idc = 10311;
-
-            x = 0.00487599 * safezoneW + safezoneX;
-            y = 0.907 * safezoneH + safezoneY;
-            w = 0.497222 * safezoneW;
-            h = 0.0296296 * safezoneH;
-            class Controls
-            {
-            };
-        };
-        class InfoNews: InfoMods
-        {
-            idc = 1032;
-
-            x = 0.913867 * safezoneW + safezoneX;
-            y = 0.914815 * safezoneH + safezoneY;
-            w = 0.0833542 * safezoneW;
-            h = 0.0296296 * safezoneH;
-            class Controls
-            {
-            };
-        };
-        class InfoVersion: InfoNews
-        {
-            idc = 1033;
-
-            x = 0.913867 * safezoneW + safezoneX;
-            y = 0.948148 * safezoneH + safezoneY;
-            w = 0.0833542 * safezoneW;
-            h = 0.0296296 * safezoneH;
-            class Controls
-            {
-            };
-        };
-        class Footer: RscText
-        {
-            style = 2;
-            shadow = 0;
-            font = "RobotoCondensedLight";
-
-            idc = 1010;
-            text = "Â© 2013-2018 Bohemia Interactive a.s. All rights reserved. (Main Menu by Curious)"; //--- ToDo: Localize;
-            x = 0 * safezoneW + safezoneX;
-            y = 0.985185 * safezoneH + safezoneY;
-            w = 1 * safezoneW;
-            h = 0.0148148 * safezoneH;
-            colorText[] = {1,1,1,0.5};
-            colorBackground[] = {0,0,0,0.75};
-            sizeEx = 1 *    (pixelH * pixelGrid * 2) * GUI_GRID_H;
-        };
-        class InfoDLCs: InfoDLCsOwned
-        {
-            idc = 10311;
-
-            x = 0.505158 * safezoneW + safezoneX;
-            y = 0.907 * safezoneH + safezoneY;
-            w = 0.497222 * safezoneW;
-            h = 0.0296296 * safezoneH;
-            class Controls
-            {
-            };
-        };
-    };
-*/
-};
-/*
-class RscDisplayMainMenuBackground {
-    #include "\VKN_Misc\Main Menu\VKN_MainMenuDefines.hpp"
-    scriptName="RscDisplayMainMenuBackground";
-    scriptPath="GUI";
-    onLoad="[""onLoad"",_this,""RscDisplayMainMenuBackground"",'GUI'] call  (uinamespace getvariable 'BIS_fnc_initDisplay')";
-    onUnload="[""onUnload"",_this,""RscDisplayMainMenuBackground"",'GUI'] call  (uinamespace getvariable 'BIS_fnc_initDisplay')";
-    idd=-1;
-    fadein=0;
-    fadeout=0;
-    duration=1e+010;
     class Controls
     {
-        class Background {
-            colorBackground[]={0,0,0,0};
-        };
-        class Picture {
-            text="";
-        };
-        class BackgroundLeft: RscText
-        {
-            idc = 1001;
-            x = -3.83233 * safezoneW + safezoneX;
-            y = -5.275 * safezoneH + safezoneY;
-            w = 3.83233 * safezoneW;
-            h = 11 * safezoneH;
-            colorBackground[] = {0.1,0.1,0.1,1};
-        };
-        class BackgroundRight: BackgroundLeft
-        {
-            idc = 1002;
-            x = 1 * safezoneW + safezoneX;
-            y = -5.275 * safezoneH + safezoneY;
-            w = 4.12603 * safezoneW;
-            h = 11 * safezoneH;
-            colorBackground[] = {0.1,0.1,0.1,1};
-        };
+    
+    //#include "\VKN_Misc\Main Menu\VKN_Menu.hpp"
+        
     };
 };
-*/
