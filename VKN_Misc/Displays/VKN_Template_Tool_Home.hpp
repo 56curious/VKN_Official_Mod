@@ -2,7 +2,6 @@ class VKN_Template_Tool_Home {
   idd = 3480;
   enableDisplay = 1;
   enableSimulation = 1;
-  onLoad = "uinamespace setVariable ['VKN_VTT_defaultFileText', call VKN_VTT_fnc_VTT_defaultFileText;";
 
 
   class ControlsBackground {
