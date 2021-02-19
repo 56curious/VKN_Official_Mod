@@ -1,5 +1,5 @@
 ////////////////////////////////////////////////////////
-// GUI EDITOR OUTPUT START (by Curious, v1.063, #Kugeqy)
+// GUI EDITOR OUTPUT START (by Curious, v1.063, #Hyxilu)
 ////////////////////////////////////////////////////////
 
 class CA_ContainerBackground: RscText
@@ -17,7 +17,7 @@ class CA_PlayerBackground: RscText
 	idc = 1002;
 
 	x = 0.278226 * safezoneW + safezoneX;
-	y = 0.225 * safezoneH + safezoneY;
+	y = 0.236 * safezoneH + safezoneY;
 	w = 0.706583 * safezoneW;
 	h = 0.616 * safezoneH;
 	colorBackground[] = {0.137,0.137,0.137,0.9};
@@ -36,6 +36,7 @@ class PlayersName: RscText
 {
 	idc = 111;
 
+	text = "Player name:"; //--- ToDo: Localize;
 	x = 0.278226 * safezoneW + safezoneX;
 	y = 0.225 * safezoneH + safezoneY;
 	w = 0.706583 * safezoneW;
@@ -211,7 +212,7 @@ class BackgroundSlotHandgun: BackgroundSlotPrimary
 	idc = 1252;
 
 	text = "";
-	x = 0.345274 * safezoneW + safezoneX;
+	x = 0.334959 * safezoneW + safezoneX;
 	y = 0.533 * safezoneH + safezoneY;
 	w = 0.0722056 * safezoneW;
 	h = 0.077 * safezoneH;
@@ -221,7 +222,7 @@ class BackgroundSlotHandgunMuzzle: BackgroundSlotPrimary
 	idc = 1253;
 
 	text = "";
-	x = 0.314328 * safezoneW + safezoneX;
+	x = 0.298856 * safezoneW + safezoneX;
 	y = 0.522 * safezoneH + safezoneY;
 	w = 0.0284696 * safezoneW;
 	h = 0.044 * safezoneH;
@@ -231,7 +232,7 @@ class BackgroundSlotHandgunUnderBarrel: BackgroundSlotPrimary
 	idc = 1268;
 
 	text = "";
-	x = 0.314328 * safezoneW + safezoneX;
+	x = 0.298856 * safezoneW + safezoneX;
 	y = 0.577 * safezoneH + safezoneY;
 	w = 0.0284696 * safezoneW;
 	h = 0.044 * safezoneH;
@@ -241,9 +242,9 @@ class BackgroundSlotHandgunFlashlight: BackgroundSlotPrimary
 	idc = 1254;
 
 	text = "";
-	x = 0.345274 * safezoneW + safezoneX;
+	x = 0.334959 * safezoneW + safezoneX;
 	y = 0.478 * safezoneH + safezoneY;
-	w = 0.0284696 * safezoneW;
+	w = 0.0257877 * safezoneW;
 	h = 0.044 * safezoneH;
 };
 class BackgroundSlotHandgunOptics: BackgroundSlotPrimary
@@ -253,7 +254,7 @@ class BackgroundSlotHandgunOptics: BackgroundSlotPrimary
 	text = "";
 	x = 0.381377 * safezoneW + safezoneX;
 	y = 0.478 * safezoneH + safezoneY;
-	w = 0.0284696 * safezoneW;
+	w = 0.0257877 * safezoneW;
 	h = 0.044 * safezoneH;
 };
 class BackgroundSlotHandgunMagazine: BackgroundSlotPrimary
@@ -261,7 +262,7 @@ class BackgroundSlotHandgunMagazine: BackgroundSlotPrimary
 	idc = 1256;
 
 	text = "";
-	x = 0.422637 * safezoneW + safezoneX;
+	x = 0.412322 * safezoneW + safezoneX;
 	y = 0.566 * safezoneH + safezoneY;
 	w = 0.0284696 * safezoneW;
 	h = 0.044 * safezoneH;
@@ -271,9 +272,9 @@ class BackgroundSlotHeadgear: BackgroundSlotPrimary
 	idc = 1257;
 
 	text = "";
-	x = 0.613466 * safezoneW + safezoneX;
+	x = 0.608308 * safezoneW + safezoneX;
 	y = 0.269 * safezoneH + safezoneY;
-	w = 0.0309452 * safezoneW;
+	w = 0.0361028 * safezoneW;
 	h = 0.055 * safezoneH;
 };
 class BackgroundSlotGoggles: BackgroundSlotPrimary
@@ -291,7 +292,7 @@ class BackgroundSlotHMD: BackgroundSlotPrimary
 	idc = 1259;
 
 	text = "";
-	x = 0.56189 * safezoneW + safezoneX;
+	x = 0.556733 * safezoneW + safezoneX;
 	y = 0.269 * safezoneH + safezoneY;
 	w = 0.0309452 * safezoneW;
 	h = 0.055 * safezoneH;
@@ -406,8 +407,6 @@ class GroundContainer: RscListBox
 {
 	itemBackground[] = {1,1,1,0.1};
 	idc = 632;
-	sizeEx2 = "0.8 * 			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
-	rowHeight = "2 * 			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
 	canDrag = 1;
 	itemSpacing = 0.001;
 
@@ -602,7 +601,7 @@ class SlotHandgun: SlotPrimary
 {
 	idc = 612;
 
-	x = 0.345274 * safezoneW + safezoneX;
+	x = 0.334959 * safezoneW + safezoneX;
 	y = 0.533 * safezoneH + safezoneY;
 	w = 0.0722056 * safezoneW;
 	h = 0.077 * safezoneH;
@@ -613,7 +612,7 @@ class SlotHandgunMuzzle: SlotPrimary
 {
 	idc = 628;
 
-	x = 0.314328 * safezoneW + safezoneX;
+	x = 0.298856 * safezoneW + safezoneX;
 	y = 0.522 * safezoneH + safezoneY;
 	w = 0.0284696 * safezoneW;
 	h = 0.044 * safezoneH;
@@ -624,7 +623,7 @@ class SlotHandgunUnderBarrel: SlotPrimary
 {
 	idc = 643;
 
-	x = 0.314328 * safezoneW + safezoneX;
+	x = 0.298856 * safezoneW + safezoneX;
 	y = 0.577 * safezoneH + safezoneY;
 	w = 0.0284696 * safezoneW;
 	h = 0.044 * safezoneH;
@@ -635,9 +634,9 @@ class SlotHandgunFlashlight: SlotPrimary
 {
 	idc = 630;
 
-	x = 0.345274 * safezoneW + safezoneX;
+	x = 0.334959 * safezoneW + safezoneX;
 	y = 0.478 * safezoneH + safezoneY;
-	w = 0.0284696 * safezoneW;
+	w = 0.0257877 * safezoneW;
 	h = 0.044 * safezoneH;
 	colorText[] = {0,0,0,0.5};
 	colorBackground[] = {1,1,1,0.1};
@@ -648,7 +647,7 @@ class SlotHandgunOptics: SlotPrimary
 
 	x = 0.381377 * safezoneW + safezoneX;
 	y = 0.478 * safezoneH + safezoneY;
-	w = 0.0284696 * safezoneW;
+	w = 0.0257877 * safezoneW;
 	h = 0.044 * safezoneH;
 	colorText[] = {0,0,0,0.5};
 	colorBackground[] = {1,1,1,0.1};
@@ -657,7 +656,7 @@ class SlotHandgunMagazine: SlotPrimary
 {
 	idc = 631;
 
-	x = 0.422637 * safezoneW + safezoneX;
+	x = 0.412322 * safezoneW + safezoneX;
 	y = 0.566 * safezoneH + safezoneY;
 	w = 0.0284696 * safezoneW;
 	h = 0.044 * safezoneH;
@@ -668,9 +667,9 @@ class SlotHeadgear: SlotPrimary
 {
 	idc = 6240;
 
-	x = 0.613466 * safezoneW + safezoneX;
+	x = 0.608308 * safezoneW + safezoneX;
 	y = 0.269 * safezoneH + safezoneY;
-	w = 0.0309452 * safezoneW;
+	w = 0.0361028 * safezoneW;
 	h = 0.055 * safezoneH;
 	colorText[] = {0,0,0,0.5};
 	colorBackground[] = {1,1,1,0.1};
@@ -690,7 +689,7 @@ class SlotHMD: SlotPrimary
 {
 	idc = 6217;
 
-	x = 0.56189 * safezoneW + safezoneX;
+	x = 0.556733 * safezoneW + safezoneX;
 	y = 0.269 * safezoneH + safezoneY;
 	w = 0.0309452 * safezoneW;
 	h = 0.055 * safezoneH;
@@ -882,7 +881,7 @@ class BackpackContainer: UniformContainer
 	w = 0.195987 * safezoneW;
 	h = 0.517 * safezoneH;
 	colorBackground[] = {0,0,0,0};
-};
+	};
 class TotalLoad: GroundLoad
 {
 	idc = 6308;
@@ -897,7 +896,7 @@ class ContainerMarker: GroundTab
 	idc = 6325;
 
 	x = 0.319486 * safezoneW + safezoneX;
-	y = 0.852 * safezoneH + safezoneY;
+	y = 0.863 * safezoneH + safezoneY;
 	w = 0.0123781 * safezoneW;
 	h = 0.022 * safezoneH;
 	colorBackground[] = {0,0,0,1};
@@ -907,7 +906,7 @@ class GroundMarker: ContainerMarker
 	idc = 6385;
 
 	x = 0.298856 * safezoneW + safezoneX;
-	y = 0.852 * safezoneH + safezoneY;
+	y = 0.863 * safezoneH + safezoneY;
 	w = 0.0123781 * safezoneW;
 	h = 0.022 * safezoneH;
 	colorBackground[] = {0,0,0,1};
@@ -917,7 +916,7 @@ class SoldierMarker: ContainerMarker
 	idc = 6405;
 
 	x = 0.278226 * safezoneW + safezoneX;
-	y = 0.852 * safezoneH + safezoneY;
+	y = 0.863 * safezoneH + safezoneY;
 	w = 0.0123781 * safezoneW;
 	h = 0.022 * safezoneH;
 	colorBackground[] = {0,0,0,1};
@@ -955,16 +954,16 @@ class RepackMags: RscActiveText
 	color[] = {1,1,1,0.7};
 	idc = 1600;
 	action = "player call VKN_fnc_ammoRepack;";
-	tooltip = "Repack Magazine";
 	style = 48;
-	colorText[] = {1,1,1,0.7};
-	colorActive[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.77])","(profilenamespace getvariable ['GUI_BCG_RGB_G',0.51])","(profilenamespace getvariable ['GUI_BCG_RGB_B',0.08])",1};
 
 	text = "\VKN_Misc\InventoryAmmoRepackIcon.paa"; //--- ToDo: Localize;
-	x = 0.536103 * safezoneW + safezoneX;
-	y = 0.478 * safezoneH + safezoneY;
+	x = 0.536574 * safezoneW + safezoneX;
+	y = 0.490741 * safezoneH + safezoneY;
 	w = 0.0257877 * safezoneW;
-	h = 0.044 * safezoneH;
+	h = 0.0723704 * safezoneH;
+	colorText[] = {1,1,1,0.7};
+	colorActive[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.77])","(profilenamespace getvariable ['GUI_BCG_RGB_G',0.51])","(profilenamespace getvariable ['GUI_BCG_RGB_B',0.08])",1};
+	tooltip = "Repack Magazine"; //--- ToDo: Localize;
 };
 class SoldierOutline: RscPicture
 {
@@ -972,9 +971,10 @@ class SoldierOutline: RscPicture
 
 	text = "\VKN_Misc\InventorySoldierOutline.paa";
 	x = 0.56189 * safezoneW + safezoneX;
-	y = 0.335 * safezoneH + safezoneY;
-	w = 0.134096 * safezoneW;
-	h = 0.429 * safezoneH;
+	y = 0.346 * safezoneH + safezoneY;
+	w = 0.128939 * safezoneW;
+	h = 0.407 * safezoneH;
+	colorText[] = {1,1,1,0.4};
 };
 class RscText_1055: RscText
 {
