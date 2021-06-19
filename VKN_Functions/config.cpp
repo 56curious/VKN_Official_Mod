@@ -48,9 +48,9 @@ class CfgFunctions {
   class VKN_EH {
     class functions {
       file = "\VKN_functions\Event Handles";
-      class eh_onMissionLoad{postInit = 1;};
+      class onMissionLoad{postInit = 1;};
 
-      class eh_inventoryOpened{postInit = 1;};
+      class inventoryOpened{postInit = 1;};
     };
   };
 
