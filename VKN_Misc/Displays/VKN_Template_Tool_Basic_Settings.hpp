@@ -46,6 +46,7 @@ class VKN_Template_Tool_Basic_Settings {
     	idc = 1001;
 
     	text = "Players Side:"; //--- ToDo: Localize;
+		style = 1;
     	x = 0.412322 * safezoneW + safezoneX;
     	y = 0.302 * safezoneH + safezoneY;
     	w = 0.07875 * safezoneW;
@@ -67,6 +68,7 @@ class VKN_Template_Tool_Basic_Settings {
     	idc = 1002;
 
     	text = "Faction Override:"; //--- ToDo: Localize;
+		style = 1;
     	x = 0.391692 * safezoneW + safezoneX;
     	y = 0.357 * safezoneH + safezoneY;
     	w = 0.0979933 * safezoneW;
@@ -88,6 +90,7 @@ class VKN_Template_Tool_Basic_Settings {
     	idc = 1002;
 
     	text = "Squad Select:"; //--- ToDo: Localize;
+		style = 1;
     	x = 0.417479 * safezoneW + safezoneX;
     	y = 0.412 * safezoneH + safezoneY;
     	w = 0.0722056 * safezoneW;
@@ -108,6 +111,7 @@ class VKN_Template_Tool_Basic_Settings {
     	idc = 1003;
 
     	text = "Spectator Restriction:"; //--- ToDo: Localize;
+		style = 1;
     	x = 0.376219 * safezoneW + safezoneX;
     	y = 0.467 * safezoneH + safezoneY;
     	w = 0.113466 * safezoneW;
@@ -128,6 +132,7 @@ class VKN_Template_Tool_Basic_Settings {
     	idc = 1004;
 
     	text = "Dynamic Groups:"; //--- ToDo: Localize;
+		style = 1;
     	x = 0.396849 * safezoneW + safezoneX;
     	y = 0.522 * safezoneH + safezoneY;
     	w = 0.0928357 * safezoneW;
@@ -148,6 +153,7 @@ class VKN_Template_Tool_Basic_Settings {
     	idc = 1005;
 
     	text = "Save Loadouts:"; //--- ToDo: Localize;
+		style = 1;
     	x = 0.402007 * safezoneW + safezoneX;
     	y = 0.577 * safezoneH + safezoneY;
     	w = 0.0876782 * safezoneW;
