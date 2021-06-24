@@ -124,11 +124,21 @@ VKN_fnc_sideChanged = {
 };
 
 
-//Apply spectator settings
+//Spectator settings
 _Specoptions = ["All Enabled", "All Disabled", "Freecam Disabled", "3pp Disabled", "Freecam only", "1pp Disabled"];
 { _ctrl_Spectator_Combo lbAdd _x } forEach _Specoptions;
-_ctrl_Spectator_Combo lbSetCurSel  2;
 
+//set defaults
+_ctrl_Players_Side_Combo lbSetCurSel 0;
+sleep 0.1;
+_ctrl_Faction_Combo lbSetCurSel 0;
+sleep 0.1;
+_ctrl_Squad_Combo lbSetCurSel 0;
+sleep 0.1;
+_ctrl_Spectator_Combo lbSetCurSel  2;
+sleep 0.1;
+_ctrl_groups_check_Box cbSetChecked true;
+_ctrl_loadout_check_Box cbSetChecked true;
 
 _ctrl_complete_button buttonSetAction "VKN_Template_Tool_Basic_Settings_Complete = true;";
 [_ctrl_Players_Side_Combo, _ctrl_Faction_Combo, _ctrl_Squad_Combo] spawn VKN_fnc_sideChanged;
@@ -172,7 +182,6 @@ switch (_side_Option_Temp) do {
     };
     default {};
 };
-
 
 
 _factions_option = _ctrl_Faction_Combo lbText lbCurSel _ctrl_Faction_Combo;
