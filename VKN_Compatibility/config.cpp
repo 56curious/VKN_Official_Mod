@@ -55,7 +55,7 @@ class CfgWeapons
   {
     class WeaponSlotsInfo : WeaponSlotsInfo
     {
-      int mass = 115;
+      mass = 115;
       allowedSlots[] = {901};
 
       class MuzzleSlot : asdg_MuzzleSlot_9MM_SMG
