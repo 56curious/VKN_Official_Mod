@@ -21,7 +21,11 @@ class CfgPatches {
 #define protected 1
 #define public 2
 
-
+class Extended_PreInit_EventHandlers {
+    class VKN_Settings_preInit {
+        init = "call compile preprocessFileLineNumbers '\VKN_Functions\XEH_Preinit.sqf'";
+    };
+};
 
 //CBA JR
 class asdg_FrontSideRail;
