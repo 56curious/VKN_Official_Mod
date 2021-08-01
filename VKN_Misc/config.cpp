@@ -740,7 +740,13 @@ class RscDisplayStart: RscStandardDisplay {
 #include "\VKN_Misc\displays\VKN_Template_Tool_File_Setup.hpp"
 #include "\VKN_Misc\displays\VKN_Template_Tool_Info.hpp"
 #include "\VKN_Misc\displays\VKN_Template_Tool_Notification.hpp"
-#include "\VKN_Misc\displays\VKN_Template_Tool_Delete_Check.hpp"
+
+#include "\VKN_Misc\displays\VKN_Confirm_Menu.hpp"
+
+//for searchbar
+class search;
+class SearchButton;
+#include "\VKN_Misc\displays\VKN_EFM_main.hpp"
 
 class RscActivePicture;
 class RscActivePictureKeepAspect;
