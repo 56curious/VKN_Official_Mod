@@ -692,8 +692,6 @@ class RscDisplayStart: RscStandardDisplay {
               delete Logo;
               delete Noise;
               delete Black;
-              class RscPicture;
-              class RscText;
 
               class Viking_Background: RscPicture
               {
