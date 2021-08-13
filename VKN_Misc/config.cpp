@@ -745,6 +745,7 @@ class RscDisplayStart: RscStandardDisplay {
 class search;
 class SearchButton;
 #include "\VKN_Misc\displays\VKN_EFM_main.hpp"
+#include "\VKN_Misc\displays\VKN_EFM_newMenu.hpp"
 
 class RscActivePicture;
 class RscActivePictureKeepAspect;

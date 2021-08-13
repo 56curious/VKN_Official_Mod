@@ -26,7 +26,7 @@ class VKN_Confirm_Menu {
     	h = 0.033 * safezoneH;
     	colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.77])","(profilenamespace getvariable ['GUI_BCG_RGB_G',0.51])","(profilenamespace getvariable ['GUI_BCG_RGB_B',0.08])",0.75};
     };
-    class titleText: RscEdit
+    class titleText: RscText
     {
     	idc = 1400;
     	text = "Are you sure?"; //--- ToDo: Localize;

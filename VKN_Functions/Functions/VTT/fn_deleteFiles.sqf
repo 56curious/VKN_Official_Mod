@@ -9,10 +9,9 @@ https:// www.bohemia.net/community/licenses/arma-public-license-nd
 
 Description: Delete Files if user clicks ok
 
-Framework: Mission Template
+Framework:  Mission Template
 
 parameters:
-N/A
 */
 // don't run if not in 3den
 if !(is3DEN) exitwith {
@@ -29,6 +28,7 @@ if (isnil "_deleteCheckerDisplay") exitwith {
 _ctrl_confirm_button = _deleteCheckerDisplay displayCtrl 1600;
 _ctrl_cancel_button = _deleteCheckerDisplay displayCtrl 1601;
 _ctrl_background = _deleteCheckerDisplay displayCtrl 2200;
+
 
 _ctrl_background ctrlSetTooltip "This will delete all of the files created by the mission template tool!";
 

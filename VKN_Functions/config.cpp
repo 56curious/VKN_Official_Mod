@@ -66,6 +66,19 @@ class CfgFunctions {
     };
   };
 
+	class VKN_EFM {
+		class functions {
+      file = "\VKN_functions\functions\EFM";
+      class cacheFile{};
+      class deleteButton{};
+      class revertButton{};
+      class saveButton{};
+      class handleCore{};
+      class loadSortMissionRoot{};
+      class newMenu{};
+    };
+	};
+
 	class VKN {
 		class functions {
 			file = "\VKN_functions\functions";
@@ -81,10 +94,14 @@ class CfgFunctions {
 
       class setupMission{};
 
-      //class displayPlayerInfoAbove{};
+      class confirmMenu{};
 
-			class creditsVKN_movie{};
-			class creditsVKN_movieConfig{};
+          //class displayPlayerInfoAbove{};
+
+          class creditsVKN_movie
+      {
+      };
+      class creditsVKN_movieConfig{};
 
       class haltAddAction{};
       class haltRegisterCivillian{};
