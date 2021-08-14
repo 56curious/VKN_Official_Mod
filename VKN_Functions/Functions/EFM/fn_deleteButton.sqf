@@ -36,7 +36,7 @@ _ctrl_background ctrlSetTooltip "This will delete the selected file or folder: "
 _ctrl_confirm_button = _deleteCheckerDisplay displayCtrl 1600;
 _ctrl_cancel_button = _deleteCheckerDisplay displayCtrl 1601;
 
-_buttonCode = "_deleteCheckerDisplay = findDisplay 3485; _deleteCheckerDisplay closeDisplay 0;";
+_buttonCode = "_deleteCheckerDisplay = findDisplay 3485; _deleteCheckerDisplay closeDisplay 0; [] spawn VKN_EFM_fnc_handleCore;";
 
 _path = [_path, "\", "\\"] call PX_fnc_stringReplace;
 

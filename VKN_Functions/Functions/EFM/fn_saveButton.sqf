@@ -34,7 +34,7 @@ _ctrl_background ctrlSetTooltip "This will overwrite the selected file: " + _fil
 _ctrl_confirm_button = _saveCheckerDisplay displayCtrl 1600;
 _ctrl_cancel_button = _saveCheckerDisplay displayCtrl 1601;
 
-_buttonCode = "_saveCheckerDisplay = findDisplay 3485; _saveCheckerDisplay closeDisplay 0;";
+_buttonCode = "_saveCheckerDisplay = findDisplay 3485; _saveCheckerDisplay closeDisplay 0; [] spawn VKN_EFM_fnc_handleCore;";
 
 _path = [_path, "\", "\\"] call PX_fnc_stringReplace; 
 

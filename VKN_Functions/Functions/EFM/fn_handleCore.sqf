@@ -104,9 +104,21 @@ _EFM_fileList ctrlAddEventHandler ["TreeLButtonDown", "
 	{	
 		_fileAllowed = [_x, toLower str _curSelText] call BIS_fnc_inString;
 		if (_fileAllowed) then {
-			_path = [getMissionPath '', '\', '\\'] call PX_fnc_stringReplace;
-			_fileContent = ['viking.VKN_returnfileData', [_path, _curSelText]] call (uiNamespace getVariable 'py3_fnc_callExtension');
+			_curSelParent = _curSel select [0, count _cursel - 1];
+			_parentText = _efmEH_fileList tvText _curSelParent;
+			
+			_pathNewEH = getMissionPath '';
+			_MissionWorldExtension = missionName + '.' + worldName + '\';  
+			_editedPathEH = [_pathNewEH, _MissionWorldExtension, ''] call PX_fnc_stringReplace; 
+			_path = '';
 
+			if ((_parentText != _editedPathEH) || (_parentText == _pathNewEH)) then {
+				_path = _editedPathEH + _parentText + '\';
+			} else {
+				_path = _pathNewEH;
+			};
+			_fileContent = ['viking.VKN_returnfileData', [_path, _curSelText]] call (uiNamespace getVariable 'py3_fnc_callExtension');
+			systemChat _fileContent;
 			_efmEH_filenameTitle ctrlSetText _curSelText;
 			_efmEH_codeBox ctrlSetText _fileContent;
 		};
