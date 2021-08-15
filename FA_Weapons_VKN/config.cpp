@@ -556,8 +556,8 @@ class VKN_AK5C : FA_Base_Rifle_VKN
     displayName = "AK5C Green";
     descriptionshort = "AK5C - Assault Rifle <br/>Caliber: 5.56x45mm";
     model = "\FA_Weapons_VKN\data\ak5c\ak5c.p3d";
-    magazines[] = {"30Rnd_556x45_Stanag", "30Rnd_556x45_Stanag_green", "30Rnd_556x45_Stanag_red", "30Rnd_556x45_Stanag_Tracer_Red", "30Rnd_556x45_Stanag_Tracer_Green", "30Rnd_556x45_Stanag_Tracer_Yellow"};
-    reloadAction = "GestureReloadSPAR_01";
+		magazineWell[] = {STANAG_556x45};
+		reloadAction = "GestureReloadSPAR_01";
     handAnim[] = {"OFP2_ManSkeleton", "\A3\Weapons_F_Exp\Rifles\SPAR_01\Data\Anim\SPAR_01.rtm"};
     drySound[] = {"A3\Sounds_F_Exp\arsenal\weapons\Rifles\SPAR01\SPAR01_dry", 0.5, 1, 10};
     reloadMagazineSound[] = {"A3\Sounds_F_Exp\arsenal\weapons\Rifles\SPAR01\SPAR01_reload", 1, 1, 10};
@@ -614,7 +614,6 @@ class VKN_AK5C : FA_Base_Rifle_VKN
       {
         linkProxy = "\A3\data_f\proxies\weapon_slots\SIDE";
         displayName = "$STR_A3_PointerSlot0";
-        compatibleItems[] = {"acc_flashlight", "acc_pointer_IR"};
         iconScale = 0.1;
       };
       class UnderBarrelSlot : SlotInfo

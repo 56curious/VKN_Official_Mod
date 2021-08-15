@@ -9,10 +9,9 @@ https:// www.bohemia.net/community/licenses/arma-public-license-nd
 
 Description: Delete Files if user clicks ok
 
-Framework: Mission Template
+Framework:  Mission Template
 
 parameters:
-N/A
 */
 // don't run if not in 3den
 if !(is3DEN) exitwith {
