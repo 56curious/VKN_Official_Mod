@@ -8,21 +8,25 @@ class CfgPatches {
 
       units[] = {};
 
-      requiredAddons[] =
-      {
+      requiredAddons[] = {
       	"A3_Characters_F",
       	"VSM_HELMETS",
       	"task_force_radio_items",
-      	"VKN_Gear"
+      	"VKN_Gear",
+        "A3_Weapons_F", 
+        "hlcweapons_core", 
+        "hlcweapons_G36", 
+        "rhsusf_c_weapons"
       };
     };
 };
+
 
 #define private 0       // Hidden to all
 #define protected 1     // Can use but still hidden
 #define public 2        // Visible to all
 
-class BettIR_Config
+    class BettIR_Config
 {
     class CompatibleNightvisionGoggles
     {
@@ -142,7 +146,6 @@ class cfgVehicles {
     };
 };
 
-
 class cfgWeapons {
 
 	class Uniform_Base;
@@ -174,6 +177,12 @@ class cfgWeapons {
 	class rhs_uniform_m88_patchless;
   class rhs_booniehat2_marpatd;
   class rhsusf_opscore_cover;
+
+  //Stanag Mag Fix HLC | RHS
+  class Rifle_Base_F;
+  class hlc_G36_base : Rifle_Base_F {
+    magazines[] += {"30Rnd_556x45_Stanag", "30Rnd_556x45_Stanag_green", "30Rnd_556x45_Stanag_Sand_green", "30Rnd_556x45_Stanag_red", "30Rnd_556x45_Stanag_Sand_red", "30Rnd_556x45_Stanag", "30Rnd_556x45_Stanag_Sand", "30Rnd_556x45_Stanag_Tracer_Green", "30Rnd_556x45_Stanag_Sand_Tracer_Green", "30Rnd_556x45_Stanag_Tracer_Red", "30Rnd_556x45_Stanag_Sand_Tracer_Red", "30Rnd_556x45_Stanag_Tracer_Yellow", "30Rnd_556x45_Stanag_Sand_Tracer_Yellow", "150Rnd_556x45_Drum_Sand_Mag_Tracer_F", "150Rnd_556x45_Drum_Mag_Tracer_F", "150Rnd_556x45_Drum_Green_Mag_Tracer_F", "150Rnd_556x45_Drum_Sand_Mag_F", "150Rnd_556x45_Drum_Mag_F", "150Rnd_556x45_Drum_Green_Mag_F", "rhs_mag_20Rnd_556x45_M193_2MAG_Stanag", "rhs_mag_20Rnd_556x45_M196_2MAG_Stanag_Tracer_Red", "rhs_mag_20Rnd_556x45_M193_Stanag", "rhs_mag_20Rnd_556x45_M196_Stanag_Tracer_Red", "rhs_mag_20Rnd_556x45_M200_Stanag", "rhs_mag_20Rnd_556x45_M855_Stanag", "rhs_mag_20Rnd_556x45_M855A1_Stanag", "rhs_mag_20Rnd_556x45_Mk262_Stanag", "rhs_mag_30Rnd_556x45_M855A1_EPM_Pull", "rhs_mag_30Rnd_556x45_M855A1_EPM_Pull_Tracer_Red", "rhs_mag_30Rnd_556x45_M855A1_EPM_Ranger", "rhs_mag_30Rnd_556x45_M855A1_EPM_Ranger_Tracer_Red", "rhs_mag_30Rnd_556x45_M855A1_EPM", "rhs_mag_30Rnd_556x45_M855A1_EPM_Tracer_Red", "rhs_mag_30Rnd_556x45_M855_PMAG", "rhs_mag_30Rnd_556x45_M855_PMAG_Tan", "rhs_mag_30Rnd_556x45_M855A1_PMAG", "rhs_mag_30Rnd_556x45_M855A1_PMAG_Tan", "rhs_mag_30Rnd_556x45_M855_PMAG_Tan_Tracer_Red", "rhs_mag_30Rnd_556x45_M855_PMAG_Tracer_Red", "rhs_mag_30Rnd_556x45_M855A1_PMAG_Tan_Tracer_Red", "rhs_mag_30Rnd_556x45_M855A1_PMAG_Tracer_Red", "rhs_mag_30Rnd_556x45_Mk262_PMAG_Tan", "rhs_mag_30Rnd_556x45_Mk262_PMAG", "rhs_mag_30Rnd_556x45_Mk318_PMAG", "rhs_mag_30Rnd_556x45_Mk318_PMAG_Tan", "rhs_mag_30Rnd_556x45_Mk318_SCAR_Pull", "rhs_mag_30Rnd_556x45_Mk318_SCAR_Ranger", "rhs_mag_30Rnd_556x45_Mk318_SCAR", "rhs_mag_30Rnd_556x45_M855_Stanag_Pull", "rhs_mag_30Rnd_556x45_M855A1_Stanag_Pull", "rhs_mag_30Rnd_556x45_M855_Stanag_Pull_Tracer_Red", "rhs_mag_30Rnd_556x45_M855A1_Stanag_Pull_Tracer_Red", "rhs_mag_30Rnd_556x45_Mk262_Stanag_Pull", "rhs_mag_30Rnd_556x45_Mk318_Stanag_Pull", "rhs_mag_30Rnd_556x45_M855_Stanag_Ranger", "rhs_mag_30Rnd_556x45_M855A1_Stanag_Ranger", "rhs_mag_30Rnd_556x45_M855_Stanag_Ranger_Tracer_Red", "rhs_mag_30Rnd_556x45_M855A1_Stanag_Ranger_Tracer_Red", "rhs_mag_30Rnd_556x45_Mk262_Stanag_Ranger", "rhs_mag_30Rnd_556x45_Mk318_Stanag_Ranger", "rhs_mag_30Rnd_556x45_M193_Stanag", "rhs_mag_30Rnd_556x45_M196_Stanag_Tracer_Red", "rhs_mag_30Rnd_556x45_M200_Stanag", "rhs_mag_30Rnd_556x45_M855_Stanag", rhs_mag_30Rnd_556x45_M855A1_Stanag "," rhs_mag_30Rnd_556x45_M855_Stanag_Tracer_Red "," rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red "," rhs_mag_30Rnd_556x45_Mk262_Stanag "," rhs_mag_30Rnd_556x45_Mk318_Stanag ",rhs_mag_100Rnd_556x45_M855_cmag", "rhs_mag_100Rnd_556x45_M855_cmag_mixed", "rhs_mag_100Rnd_556x45_M855A1_cmag", "rhs_mag_100Rnd_556x45_M855A1_cmag_mixed", "rhs_mag_100Rnd_556x45_Mk262_cmag", "rhs_mag_100Rnd_556x45_Mk318_cmag"};
+  };
 
   //Base classes
   class VKN_BoonieHat_Base: rhs_booniehat2_marpatd {
