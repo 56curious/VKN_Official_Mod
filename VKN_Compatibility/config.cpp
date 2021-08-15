@@ -22,11 +22,12 @@ class CfgPatches {
 #define private 0
 #define protected 1
 #define public 2
-
-class Extended_PreInit_EventHandlers {
-    class VKN_Settings_preInit {
-        init = "call compile preprocessFileLineNumbers '\VKN_Functions\XEH_Preinit.sqf'";
-    };
+class Extended_PreInit_EventHandlers
+{
+  class VKN_Settings_preInit
+  {
+    init = "call compile preprocessFileLineNumbers '\VKN_Functions\XEH_Preinit.sqf'";
+  };
 };
 
 //CBA JR
@@ -45,8 +46,8 @@ class rhs_rifle_gripod_slot;
 class rhs_western_rifle_gripod_slot;
 
 
-    //Normal
-    class SlotInfo;
+//Normal
+class SlotInfo;
 class PointerSlot;
 class CowsSlot;
 class MuzzleSlot;
