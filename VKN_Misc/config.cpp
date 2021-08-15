@@ -29,7 +29,8 @@ class CfgPatches {
                 "A3_Map_Altis_Scenes",
                 "A3_Map_VR_Scenes",
                 "A3_Map_Malden_Scenes_F",
-                "VKN_Functions"
+                "VKN_Functions",
+                "FA_Weapons_VKN"
             };
     };
 };
@@ -692,8 +693,6 @@ class RscDisplayStart: RscStandardDisplay {
               delete Logo;
               delete Noise;
               delete Black;
-              class RscPicture;
-              class RscText;
 
               class Viking_Background: RscPicture
               {
@@ -747,6 +746,7 @@ class RscDisplayStart: RscStandardDisplay {
 class search;
 class SearchButton;
 #include "\VKN_Misc\displays\VKN_EFM_main.hpp"
+#include "\VKN_Misc\displays\VKN_EFM_newMenu.hpp"
 
 class RscActivePicture;
 class RscActivePictureKeepAspect;

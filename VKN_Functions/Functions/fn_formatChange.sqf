@@ -65,8 +65,8 @@ switch (toLower _curDataType) do {
                   _export = "The data type given cannot be converted to a number.";
               };
             };
-          };
-      };
+        };
+    };
 
       case ("string"): {
         switch (tolower _value) do {
