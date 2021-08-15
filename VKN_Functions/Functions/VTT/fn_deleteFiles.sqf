@@ -29,7 +29,6 @@ _ctrl_confirm_button = _deleteCheckerDisplay displayCtrl 1600;
 _ctrl_cancel_button = _deleteCheckerDisplay displayCtrl 1601;
 _ctrl_background = _deleteCheckerDisplay displayCtrl 2200;
 
-
 _ctrl_background ctrlSetTooltip "This will delete all of the files created by the mission template tool!";
 
 _ctrl_confirm_button ctrlAddEventHandler ["ButtonClick", "
