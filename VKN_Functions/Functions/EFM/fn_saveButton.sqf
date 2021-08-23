@@ -40,8 +40,6 @@ _path = [_path, "\", "\\"] call PX_fnc_stringReplace;
 
 _saveCode = format ["['viking.VKN_editFile', [%1, %2, %3]] call (uiNamespace getVariable 'py3_fnc_callExtension');", str _path, str _filename, str _filedata];
 
-systemchat _Savecode;
-
 _ctrl_confirm_button ctrlAddEventHandler ["ButtonClick", _buttonCode + _saveCode];
 _ctrl_cancel_button ctrlAddEventHandler ["ButtonClick", _buttonCode];
 
