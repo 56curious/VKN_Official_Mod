@@ -1,4 +1,3 @@
-#include "BIS_AddonInfo.hpp"
 class CfgPatches {
     class VKN_functions {
         name = VKN_Functions;
@@ -74,6 +73,7 @@ class CfgFunctions {
       class revertButton{};
       class saveButton{};
       class handleCore{};
+      class handleLineNumbers{};
       class loadSortMissionRoot{};
       class newMenu{};
     };

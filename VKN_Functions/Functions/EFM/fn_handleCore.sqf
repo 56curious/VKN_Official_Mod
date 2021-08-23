@@ -14,15 +14,27 @@ Framework:      External File Manager
 Parameters:
 				N/A
 */
+
+/*
+TO-DO List
+Line numbers - Done
+syntax highlighting - requires external functions
+copy/paste buttons - Done
+text size increase - Aborted functionality due to scaling
+
+
+ugent - scaling on text size in filecount and buttons
+*/
+
 // don't run if not in 3den
 if !(is3DEN) exitwith {
-    systemChat "You're not in the editor! Please go into the editor to run this function!"
+    systemChat "You're not in the editor! Please go into the editor to run this function!";
 };
 
-// setup displays
+// setup display
 _EFM_Main = findDisplay 313 createDisplay "VKN_EFM_Main";
 if (isNull _EFM_Main) exitwith {
-    systemChat "can't find display."
+    systemChat "The File Manager Display is not open, aborting...";
 };
 
 // Disable Escape Key
@@ -43,8 +55,12 @@ _EFM_closeButton = _EFM_Main displayCtrl 1603;
 _EFM_newButton = _EFM_Main displayCtrl 1604;
 _EFM_searchButton = _EFM_Main displayCtrl 1605;
 _EFM_openFolder = _EFM_Main displayCtrl 1606;
+_EFM_copyButton = _EFM_Main displayCtrl 1607;
+_EFM_pasteButton = _EFM_Main displayCtrl 1608;
 
-_EFM_codeBox = _EFM_Main displayCtrl 1400;
+_EFM_codeBoxGroup = _EFM_Main displayCtrl 14010;
+_EFM_codeBoxGroupCode = _EFM_Main displayCtrl 14011;
+_EFM_codeBoxGroupLines = _EFM_Main displayCtrl 14012;
 
 _EFM_fileList = _EFM_Main displayCtrl 1500;
 
@@ -77,8 +93,12 @@ _EFM_fileCount ctrlSetText format ["File Count: %1 | %2", str _allowedFileCount,
 //Deal with tooltop on mouse hover
 _EFM_fileList ctrlAddEventHandler ["TreeMouseMove", "
 	params ['_control', '_selectionPath'];
-
-	_control tvSetTooltip [_selectionPath, (_control tvText _selectionPath)];
+	_text = _control tvText _selectionPath;
+	if (toLower _text == 'mission.sqm') then {
+		_control tvSetTooltip [_selectionPath, _text + ' - Edit at own risk!'];
+	} else {
+		_control tvSetTooltip [_selectionPath, _text];
+	};
 "];
 
 
@@ -95,7 +115,9 @@ _EFM_fileList ctrlAddEventHandler ["TreeLButtonDown", "
 	_efmEH_revertButton = _efmEH_Main displayCtrl 1601;
 	_efmEH_saveButton = _efmEH_Main displayCtrl 1602;
 	_efmEH__closeButton = _efmEH_Main displayCtrl 1603;
-	_efmEH_codeBox = _efmEH_Main displayCtrl 1400;
+	_efmEH_codeBoxGroup = _efmEH_Main displayCtrl 14010;
+	_efmEH_codeBoxGroupCode = _efmEH_Main displayCtrl 14011;
+	_efmEH_codeBoxGroupLines = _efmEH_Main displayCtrl 14012;
 	_efmEH_fileList = _efmEH_Main displayCtrl 1500;
 
 	_curSel = tvCurSel _control;
@@ -118,11 +140,27 @@ _EFM_fileList ctrlAddEventHandler ["TreeLButtonDown", "
 				_path = _pathNewEH;
 			};
 			_fileContent = ['viking.VKN_returnfileData', [_path, _curSelText]] call (uiNamespace getVariable 'py3_fnc_callExtension');
-			systemChat _fileContent;
 			_efmEH_filenameTitle ctrlSetText _curSelText;
-			_efmEH_codeBox ctrlSetText _fileContent;
+			_efmEH_codeBoxGroupCode ctrlSetText _fileContent;
+
+			[_efmEH_codeBoxGroupCode, _efmEH_codeBoxGroupLines] call VKN_EFM_fnc_handleLineNumbers;
+
 		};
 	} forEach ['.ext', '.sqf', '.fsm', '.sqm', '.html'];
+"];
+
+//detect new line added so line numbers can update.
+_EFM_codeBoxGroupCode ctrlAddEventHandler ["KeyDown", "
+	params ['_displayOrControl', '_key', '_shift', '_ctrl', '_alt'];
+
+	_efmEH_Main = findDisplay 3690;
+	_efmEH_codeBoxGroupCode = _efmEH_Main displayCtrl 14011;
+	_efmEH_codeBoxGroupLines = _efmEH_Main displayCtrl 14012;
+
+	if ((_key == 28) && (_shift == true)) then {
+		[_efmEH_codeBoxGroupCode, _efmEH_codeBoxGroupLines] call VKN_EFM_fnc_handleLineNumbers;
+	};
+
 "];
 
 
@@ -176,7 +214,6 @@ _EFM_deleteButton ctrlAddEventHandler ["ButtonClick", "
 			_path = _pathNewEH;
 		};
 		
-		systemChat format ['sending: %1  %2  %3', _type, _path, _curSelText];
 		[_type, _path, _curSelText] spawn VKN_EFM_fnc_deleteButton;
 	};
 "];
@@ -184,9 +221,11 @@ _EFM_deleteButton ctrlAddEventHandler ["ButtonClick", "
 _EFM_saveButton ctrlAddEventHandler ["ButtonClick", "
 	_efmEH_Main = findDisplay 3690;	
 	_efmEH_fileList = _efmEH_Main displayCtrl 1500;
-	_efmEH_codeBox = _efmEH_Main displayCtrl 1400;
+	_efmEH_codeBoxGroup = _efmEH_Main displayCtrl 14010;
+	_efmEH_codeBoxGroupCode = _efmEH_Main displayCtrl 14011;
+	_efmEH_codeBoxGroupLines = _efmEH_Main displayCtrl 14012;
 
-	_fileData = ctrlText _efmEH_codeBox;
+	_fileData = ctrlText _efmEH_codeBoxGroupCode;
 
 	_curSel = tvCurSel _efmEH_fileList;
 	_curSelText = _efmEH_fileList tvText _curSel;
@@ -243,4 +282,25 @@ _EFM_openFolder ctrlAddEventHandler ["ButtonClick", "
 	_finalPath = [_path, '\', '\\'] call PX_fnc_stringReplace;
 
 	_rtn = ['viking.openFolder', [_finalPath]] call (uiNamespace getVariable 'py3_fnc_callExtension');
+"];
+
+_EFM_copyButton ctrlAddEventHandler ["ButtonClick", "
+	_efmEH_Main = findDisplay 3690;	
+	_efmEH_codeBoxGroupCode = _efmEH_Main displayCtrl 14011;
+	_efmEH_codeBoxGroupLines = _efmEH_Main displayCtrl 14012;
+	
+	_selectedText = ctrlTextSelection _efmEH_codeBoxGroupCode;
+	copyToClipboard (_selectedText select 2);
+"];
+
+_EFM_PasteButton ctrlAddEventHandler ["ButtonClick", "
+	_efmEH_Main = findDisplay 3690;	
+	_efmEH_codeBoxGroupCode = _efmEH_Main displayCtrl 14011;
+	
+	_curText = ctrlText _efmEH_codeBoxGroupCode;
+	_TextToPaste = copyFromClipboard;
+
+	_efmEH_codeBoxGroupCode ctrlSetText format ['%1%2%3', _curText, endl, _TextToPaste];
+
+	[_efmEH_codeBoxGroupCode, _efmEH_codeBoxGroupLines] call VKN_EFM_fnc_handleLineNumbers;
 "];
