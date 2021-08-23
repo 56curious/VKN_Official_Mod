@@ -755,11 +755,13 @@ class RscButtonMenuMain;
 class RscControlsGroupNoHScrollbars;
 class RscControlsGroupNoScrollbars;
 class RscMainMenuSpotlight;
+class QuickPlay;
 
 class RscDisplayMain : RscStandardDisplay {
 
-    //onLoad = "['onload', _this, 'RscDisplayMain', 'GUI'] call VKN_fnc_handleMainMenu;";
-    //onUnload = "['onunload', _this, 'RscDisplayMain', 'GUI'] call VKN_fnc_handleMainMenu;";
+    //onLoad = "['onload', [_this], 'RscDisplayMain', 'GUI'] call VKN_fnc_handleMainMenu;";
+    //onUnload = "['onunload', [_this], 'RscDisplayMain', 'GUI'] call VKN_fnc_handleMainMenu;";
+
 
     class Spotlight {
         class Viking_Welcome {
@@ -781,10 +783,7 @@ class RscDisplayMain : RscStandardDisplay {
             condition = "true";
         };
     };
-    class Controls
-    {
-    
-    //#include "\VKN_Misc\Main Menu\VKN_Menu.hpp"
-        
+    class Controls {
+        #include "\VKN_Misc\Main Menu\VKN_Menu.hpp"
     };
 };

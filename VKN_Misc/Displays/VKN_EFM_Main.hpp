@@ -27,9 +27,9 @@ class IGUIBack_2201: IGUIBack
 	idc = 2201;
 
 	x = 0.0667665 * safezoneW + safezoneX;
-	y = 0.104 * safezoneH + safezoneY;
-	w = 0.195987 * safezoneW;
-	h = 0.803 * safezoneH;
+	y = 0.137 * safezoneH + safezoneY;
+	w = 0.195937 * safezoneW;
+	h = 0.77 * safezoneH;
 	colorBackground[] = {0.137,0.137,0.137,0.75};
 };
 class IGUIBack_2202: IGUIBack
@@ -67,17 +67,45 @@ class fileList: ctrlTree
 	colorText[] = {1,1,1,1};
 	colorBackground[] = {0,0,0,0};
 };
-class codeEditor: ctrlEditMulti
+class codeGroup: ctrlControlsGroup
 {
-	autocomplete = "scripting";
-	idc = 1400;
-	text = "select a file to start making edits";
-	x = 0.273068 * safezoneW + safezoneX;
+	idc = 14010;
+
+	x = 0.273125 * safezoneW + safezoneX;
 	y = 0.203 * safezoneH + safezoneY;
 	w = 0.655008 * safezoneW;
 	h = 0.682 * safezoneH;
 	colorText[] = {1,1,1,1};
 	colorBackground[] = {0,0,0,0.5};
+
+	class controls 
+	{
+		class codeEditor: ctrlEditMulti
+		{
+			autocomplete = "scripting";
+			idc = 14011;
+
+			text = "select a file to start making edits"; //--- ToDo: Localize;
+			x = 0.075;
+			y = 0;
+			w = 0.623906 * safezoneW;
+			h = 0.682 * safezoneH;
+			colorText[] = {1,1,1,1};
+			colorBackground[] = {0,0,0,0.5};
+			linespacing = 0;
+		};
+		class codeLines: ctrlStructuredText
+		{
+			idc = 14012;
+
+			x = 0;
+			y = 0;
+			w = 0.0309375 * safezoneW;
+			h = 0.682 * safezoneH;
+			colorText[] = {1,1,1,1};
+			colorBackground[] = {0,0,0,0.5};
+		};
+	};
 };
 class deleteButton: ctrlButton
 {
@@ -124,7 +152,7 @@ class closeButton: ctrlButton
 	action = "findDisplay 3690 closeDisplay 0;";
 
 	text = "Close"; //--- ToDo: Localize;
-	x = 0.89713 * safezoneW + safezoneX;
+	x = 0.897651 * safezoneW + safezoneX;
 	y = 0.104 * safezoneH + safezoneY;
 	w = 0.0412603 * safezoneW;
 	h = 0.033 * safezoneH;
@@ -222,12 +250,29 @@ class openDirectory: ctrlButton {
 	h = 0.033 * safezoneH;
 	tooltip = "open the selected file or folder directory in file explorer";
 };
+class CopyButton: ctrlButton
+{
+	idc = 1607;
+	text = "Copy"; //--- ToDo: Localize;
+	x = 0.835156 * safezoneW + safezoneX;
+	y = 0.159 * safezoneH + safezoneY;
+	w = 0.0360937 * safezoneW;
+	h = 0.033 * safezoneH;
+	tooltip = "Copy the selected text in the code editor.";
+};
+class PasteButton: ctrlButton
+{
+	idc = 1608;
+	text = "Paste"; //--- ToDo: Localize;
+	x = 0.870729 * safezoneW + safezoneX;
+	y = 0.159 * safezoneH + safezoneY;
+	w = 0.0366145 * safezoneW;
+	h = 0.033 * safezoneH;
+	tooltip = "Paste the contents of the clipboard into the cursor position inside code editor.";
+};
 ////////////////////////////////////////////////////////
 // GUI EDITOR OUTPUT END
 ////////////////////////////////////////////////////////
-
-
-
   };
 
 };
