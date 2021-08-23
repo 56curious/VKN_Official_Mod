@@ -182,8 +182,11 @@ class RscControlsGroup;
 class RscPictureKeepAspect;
 class RscVignette;
 class RscStandardDisplay;
+class InfoMods;
+class ACE_news_apex; 
+class ProjectOPFORLogo;
 
-class RscDisplayMain : RscStandardDisplay
+    class RscDisplayMain : RscStandardDisplay
 {
 
     //onLoad = "['onload', _this, 'RscDisplayMain', 'GUI'] call compile preprocessFileLineNumbers 'VKN_Misc\Displays\Scripts\handleMainMenu.sqf ';";
@@ -210,10 +213,36 @@ class RscDisplayMain : RscStandardDisplay
         };
     };
     class Controls
-    {
-
-    //#include "\VKN_Misc\Main Menu\VKN_Menu.hpp"
-        
+    {   
+        ///Make space for ACE and project opfor.
+        class InfoNews : InfoMods
+        {
+            x = 0.917656 * safezoneW + safezoneX;
+            y = 0.962 * safezoneH + safezoneY;
+            w = 0.0979933 * safezoneW;
+            h = 0.033 * safezoneH;
+        };
+        class InfoVersion : InfoNews
+        {
+            x = 0.917656 * safezoneW + safezoneX;
+            y = 0.918 * safezoneH + safezoneY;
+            w = 0.0979933 * safezoneW;
+            h = 0.033 * safezoneH;
+        };
+        class ACE_news_apex : InfoNews
+        {
+            x = 0.917656 * safezoneW + safezoneX;
+            y = 0.874 * safezoneH + safezoneY;
+            w = 0.0979933 * safezoneW;
+            h = 0.033 * safezoneH;
+        };
+        class ProjectOPFORLogo : RscPictureKeepAspect
+        {
+            x = 0.897031 * safezoneW + safezoneX;
+            y = 0.918 * safezoneH + safezoneY;
+            w = 0.01584 * safezoneW;
+            h = 0.02816 * safezoneH;
+        };
     };
 };
 
