@@ -60,8 +60,8 @@ class UniformSlotInfo
 };
 
 class cfgVehicles {
-	class tf_rt1523g;
-	class tf_rt1523g_big;
+	class TFAR_rt1523g;
+	class TFAR_rt1523g_big;
 	class rhs_msv_rifleman_m88_patchless;
   class rhs_medic_bag;
 
@@ -81,35 +81,35 @@ class cfgVehicles {
     hiddenSelectionsTextures[] = {"VKN_Gear\data\Backpacks\VKN_RHS_Bag_Black.paa"};
   };
 
-	class VKN_rt1523g_OD: tf_rt1523g {
+	class VKN_rt1523g_OD: TFAR_rt1523g {
 	    author = "Jonmo";
 	    displayName = "[VKN] RT-1523G (OD)";
 	    picture="\VKN_Misc\VKN_Logo_Inverted.paa";
 	    descriptionShort = "RT-1523G (OD) long range radio 20km";
 	    hiddenSelectionsTextures[] = {"VKN_Gear\data\Backpacks\VKN_PRC117G_OD_ca.paa"};
 	};
-	class VKN_rt1523g_Big_OGA: tf_rt1523g_big {
+	class VKN_rt1523g_Big_OGA: TFAR_rt1523g_big {
 	    author = "Jonmo";
 	    displayName = "[VKN] RT-1523G Big (OGA)";
 	    picture="\VKN_Misc\VKN_Logo_Inverted.paa";
 	    descriptionShort = "RT-1523G BIG (OGA) long range radio 20km";
 	    hiddenSelectionsTextures[] = {"VKN_Gear\data\Backpacks\VKN_nicecomm2_OGA_ca.paa"};
 	};
-	class VKN_rt1523g_Big_M98: tf_rt1523g_big {
+	class VKN_rt1523g_Big_M98: TFAR_rt1523g_big {
 	    author = "Jonmo";
 	    displayName = "[VKN] RT-1523G Big (M98)";
 	    picture="\VKN_Misc\VKN_Logo_Inverted.paa";
 	    descriptionShort = "RT-1523G BIG (M98) long range radio 20km";
 	    hiddenSelectionsTextures[] = {"VKN_Gear\data\Backpacks\VKN_nicecomm2_M98_ca.paa"};
 	};
-	class VKN_rt1523g_M98: tf_rt1523g {
+	class VKN_rt1523g_M98: TFAR_rt1523g {
 	    author = "Jonmo";
 	    displayName = "[VKN] RT-1523G (M98)";
 	    picture="\VKN_Misc\VKN_Logo_Inverted.paa";
 	    descriptionShort = "RT-1523G (M98) long range radio 20km";
 	    hiddenSelectionsTextures[] = {"VKN_Gear\data\Backpacks\VKN_PRC117G_M98_ca.paa"};
 	};
-	class VKN_v_blackops_rt_1523g: tf_rt1523g {
+	class VKN_v_blackops_rt_1523g: TFAR_rt1523g {
         author = "Jonmo";
         scope = public;
         displayName = "[VKN] VIS Black AN/PRC 117-117g Compact";
@@ -117,14 +117,14 @@ class cfgVehicles {
         hiddenSelectionsTextures[] = {"VKN_Gear\data\Backpacks\clf_prc117g_blackops_co.paa"};
 
     };
-	class VKN_v_blackops_nicecomm2: tf_rt1523g_big {
+	class VKN_v_blackops_nicecomm2: TFAR_rt1523g_big {
         author = "Jonmo";
         scope = public;
         displayName = "[VKN] VIS Black AN/PRC 117-117g Full";
         picture="\VKN_Misc\VKN_Logo_Inverted.paa";
         hiddenSelectionsTextures[] = {"VKN_Gear\data\Backpacks\clf_nicecomm2_blackops_co.paa"};
     };
-  class VKN_v_loki_nicecomm2: tf_rt1523g_big {
+  class VKN_v_loki_nicecomm2: TFAR_rt1523g_big {
         author = "Shagger";
         scope = public;
         displayName = "[VKN] VIS Loki AN/PRC 117-117g Full";
