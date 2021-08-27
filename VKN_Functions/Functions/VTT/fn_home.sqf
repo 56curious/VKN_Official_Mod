@@ -79,7 +79,7 @@ _deleteCode = "systemChat ""an error occoured while setting button actions""";
 
 if (_filesExist) then {
     _editCode = " _display = findDisplay 3480;
-    _display closeDisplay 0; [] spawn VKN_VTT_fnc_filesetupDisplay; ";
+    _display closeDisplay 0; [] spawn VKN_EFM_fnc_handleCore; ";
     _deleteCode = " _display = findDisplay 3480;
     _display closeDisplay 0; [] spawn VKN_VTT_fnc_deleteFiles; ";
 } else {

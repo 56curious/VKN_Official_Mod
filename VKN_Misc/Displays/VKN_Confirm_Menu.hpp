@@ -1,4 +1,4 @@
-class VKN_Template_Tool_Delete_Check {
+class VKN_Confirm_Menu {
   idd = 3485;
   enableDisplay = 1;
   enableSimulation = 1;
@@ -16,7 +16,6 @@ class VKN_Template_Tool_Delete_Check {
     	w = 0.144411 * safezoneW;
     	h = 0.132 * safezoneH;
     	colorBackground[] = {0.137,0.137,0.137,0.75};
-      tooltip = "This will delete all of the files created by the mission template tool!";
     };
     class backgroundTitle: IGUIBack
     {
@@ -27,7 +26,7 @@ class VKN_Template_Tool_Delete_Check {
     	h = 0.033 * safezoneH;
     	colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.77])","(profilenamespace getvariable ['GUI_BCG_RGB_G',0.51])","(profilenamespace getvariable ['GUI_BCG_RGB_B',0.08])",0.75};
     };
-    class titleText: RscEdit
+    class titleText: RscText
     {
     	idc = 1400;
     	text = "Are you sure?"; //--- ToDo: Localize;
@@ -44,7 +43,6 @@ class VKN_Template_Tool_Delete_Check {
     	y = 0.5 * safezoneH + safezoneY;
     	w = 0.0515754 * safezoneW;
     	h = 0.033 * safezoneH;
-      tooltip = "Will delete all files in mission folder created via this tool.";
     };
     class cancelButton: confirmButton
     {
@@ -54,7 +52,6 @@ class VKN_Template_Tool_Delete_Check {
     	y = 0.5 * safezoneH + safezoneY;
     	w = 0.0515754 * safezoneW;
     	h = 0.033 * safezoneH;
-      tooltip = "Return to home screen";
     };
   };
 };

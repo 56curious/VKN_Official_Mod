@@ -8,21 +8,25 @@ class CfgPatches {
 
       units[] = {};
 
-      requiredAddons[] =
-      {
+      requiredAddons[] = {
       	"A3_Characters_F",
       	"VSM_HELMETS",
       	"task_force_radio_items",
-      	"VKN_Gear"
+      	"VKN_Gear",
+        "A3_Weapons_F", 
+        "hlcweapons_core", 
+        "hlcweapons_G36", 
+        "rhsusf_c_weapons"
       };
     };
 };
+
 
 #define private 0       // Hidden to all
 #define protected 1     // Can use but still hidden
 #define public 2        // Visible to all
 
-class BettIR_Config
+    class BettIR_Config
 {
     class CompatibleNightvisionGoggles
     {
@@ -142,7 +146,6 @@ class cfgVehicles {
     };
 };
 
-
 class cfgWeapons {
 
 	class Uniform_Base;
@@ -174,6 +177,12 @@ class cfgWeapons {
 	class rhs_uniform_m88_patchless;
   class rhs_booniehat2_marpatd;
   class rhsusf_opscore_cover;
+
+  //Stanag Mag Fix HLC | RHS
+  class Rifle_Base_F;
+  class hlc_G36_base : Rifle_Base_F {
+    magazineWell[] = {STANAG_556x45};
+  };
 
   //Base classes
   class VKN_BoonieHat_Base: rhs_booniehat2_marpatd {

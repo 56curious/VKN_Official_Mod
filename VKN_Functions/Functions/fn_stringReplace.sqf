@@ -4,6 +4,28 @@
 // Usage: ["xxx is awesome, I love xxx!", "xxx" || [], "Arma"] call PX_fnc_stringReplace;
 //
 //https://colinstewart.pw/article/string-replacement-function-arma-sqf-20 - string replacer not by me, please check out!
+/*
+Script name:  fn_stringReplace.sqf
+Created on:   XX-XX-XX
+Author:       Colin J.D. Stewart
+
+Description:  Replaces a given string with a given replacement
+
+License:      This file is under "Arma Public License No Derivatives (APL-ND)"
+              More information can be found at:
+              https://www.bohemia.net/community/licenses/arma-public-license-nd
+
+Framework:    N/A
+
+Parameters:
+              0: string - string to be edited
+			  1: string - string to find
+			  1: string - string to replace with
+
+Example:      ["\a3\vkn_misc\image.png", ".png", ".paa"] call VKN_fnc_sideGetFaction; //returns "\a3\vkn_misc\image.paa"
+*/
+
+
 
 params["_str", "_find", "_replace"];
 private["_return", "_len", "_pos"];

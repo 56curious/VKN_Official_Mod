@@ -29,7 +29,8 @@ class CfgPatches {
                 "A3_Map_Altis_Scenes",
                 "A3_Map_VR_Scenes",
                 "A3_Map_Malden_Scenes_F",
-                "VKN_Functions"
+                "VKN_Functions",
+                "FA_Weapons_VKN"
             };
     };
 };
@@ -692,8 +693,6 @@ class RscDisplayStart: RscStandardDisplay {
               delete Logo;
               delete Noise;
               delete Black;
-              class RscPicture;
-              class RscText;
 
               class Viking_Background: RscPicture
               {
@@ -740,7 +739,14 @@ class RscDisplayStart: RscStandardDisplay {
 #include "\VKN_Misc\displays\VKN_Template_Tool_File_Setup.hpp"
 #include "\VKN_Misc\displays\VKN_Template_Tool_Info.hpp"
 #include "\VKN_Misc\displays\VKN_Template_Tool_Notification.hpp"
-#include "\VKN_Misc\displays\VKN_Template_Tool_Delete_Check.hpp"
+
+#include "\VKN_Misc\displays\VKN_Confirm_Menu.hpp"
+
+//for searchbar
+class search;
+class SearchButton;
+#include "\VKN_Misc\displays\VKN_EFM_main.hpp"
+#include "\VKN_Misc\displays\VKN_EFM_newMenu.hpp"
 
 class RscActivePicture;
 class RscActivePictureKeepAspect;
@@ -749,11 +755,13 @@ class RscButtonMenuMain;
 class RscControlsGroupNoHScrollbars;
 class RscControlsGroupNoScrollbars;
 class RscMainMenuSpotlight;
+class QuickPlay;
 
 class RscDisplayMain : RscStandardDisplay {
 
-    //onLoad = "['onload', _this, 'RscDisplayMain', 'GUI'] call VKN_fnc_handleMainMenu;";
-    //onUnload = "['onunload', _this, 'RscDisplayMain', 'GUI'] call VKN_fnc_handleMainMenu;";
+    //onLoad = "['onload', [_this], 'RscDisplayMain', 'GUI'] call VKN_fnc_handleMainMenu;";
+    //onUnload = "['onunload', [_this], 'RscDisplayMain', 'GUI'] call VKN_fnc_handleMainMenu;";
+
 
     class Spotlight {
         class Viking_Welcome {
@@ -775,10 +783,7 @@ class RscDisplayMain : RscStandardDisplay {
             condition = "true";
         };
     };
-    class Controls
-    {
-    
-    //#include "\VKN_Misc\Main Menu\VKN_Menu.hpp"
-        
+    class Controls {
+        #include "\VKN_Misc\Main Menu\VKN_Menu.hpp"
     };
 };

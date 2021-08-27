@@ -1,3 +1,21 @@
+/*
+Script name:    fn_ammoRepack.sqf
+Created on:     16 ‎January ‎2021
+Author:         Curious
+
+License:		    This file is under "Arma Public License No Derivatives (APL-ND)"
+				        More information can be found at:
+				        https://www.bohemia.net/community/licenses/arma-public-license-nd
+
+Description:    repack all magazines inside the players inventory.
+
+Framework:      N/A
+
+Parameters:
+                0: object - unit to have magazines repacked.
+Example:
+				        player call VKN_fnc_ammoRepack;
+*/
 _AllMags = [];
 _unit = _this;
 
