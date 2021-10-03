@@ -189,7 +189,7 @@ class Logo: RscActivePicture
 	idc = 1008;
 
 	text = "\a3\Ui_f\data\Logos\arma3_shadow_ca.paa"; //--- ToDo: Localize;
-	x = 0.324644 * safezoneW + safezoneX;
+	x = 0.324687 * safezoneW + safezoneX;
 	y = 0.885 * safezoneH + safezoneY;
 	w = 0.0833542 * safezoneW;
 	h = 0.0740741 * safezoneH;
@@ -203,7 +203,7 @@ class LogoApex: Logo
 	idc = 1009;
 
 	text = "\a3\Ui_f\data\Logos\arma3_shadow_ca.paa"; //--- ToDo: Localize;
-	x = 0.324644 * safezoneW + safezoneX;
+	x = 0.324687 * safezoneW + safezoneX;
 	y = 0.885 * safezoneH + safezoneY;
 	w = 0.0833542 * safezoneW;
 	h = 0.0740741 * safezoneH;
@@ -507,7 +507,7 @@ class Footer: RscText
 	y = 0.962 * safezoneH + safezoneY;
 	w = 0.159884 * safezoneW;
 	h = 0.022 * safezoneH;
-	sizeEx = 0.7 * GUI_GRID_H;
+	sizeEx = safeZoneH * 0.015;
 	colorBackground[] = {0,0,0,0};
 };
 class AllMissions: RscButtonMenuMain
@@ -527,7 +527,7 @@ class ProofsOfConcept: AllMissions
 	show = 0;
 	animTextureNormal = "#(argb,8,8,3)color(1,1,1,1)";
 	animTexturePressed = "#(argb,8,8,3)color(1,1,1,1)";
-	onbuttonclick = "				uinamespace setvariable ['RscDisplaySingleMission_title','INTERNAL CONCEPTS'];				(ctrlparent (_this select 0)) createMissionDisplay ['','Concepts'];			";
+	onbuttonclick = "uinamespace setvariable ['RscDisplaySingleMission_title','INTERNAL CONCEPTS']; (ctrlparent (_this select 0)) createMissionDisplay ['','Concepts'];";
 	onLoad = "if (cheatsenabled && {count (configfile >> 'CfgMissions' >> 'Concepts') > 0}) then {(_this select 0) ctrlshow true;};";
 	idc = 2405;
 
@@ -564,7 +564,7 @@ class VKN_Text: RscActiveText
 	colorText[] = {1,1,1,1};
 	colorActive[] = {1,1,1,1};
 	tooltip = "View Viking PMC Lore."; //--- ToDo: Localize;
-	sizeEx = 3.5 * GUI_GRID_H;
+	sizeEx = safeZoneH * 0.09;
 };
 ////////////////////////////////////////////////////////
 // GUI EDITOR OUTPUT END
