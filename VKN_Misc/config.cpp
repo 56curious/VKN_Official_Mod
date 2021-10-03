@@ -747,3 +747,31 @@ class search;
 class SearchButton;
 #include "\VKN_Misc\displays\VKN_EFM_main.hpp"
 #include "\VKN_Misc\displays\VKN_EFM_newMenu.hpp"
+
+class RscDisplayMain : RscStandardDisplay
+{
+
+    class Spotlight
+    {
+        class Viking_Welcome
+        {
+            text = "VKN Offical Mod";
+            textIsQuote = 0;
+            picture = "\VKN_Misc\VikingLogo512.paa";
+            video = "\VKN_Misc\VKNLOGO_512x.ogv";
+            action = "disableserialization; _script = [] execVM '\VKN_Functions\Misc Functions\fn_ORBATCreate.sqf'; _code = uiNamespace getvariable 'CUR_bis_fnc_credits'; [_code] spawn _code;";
+            actionText = "Developed By Viking PMC";
+            condition = "true";
+        };
+        class Server_Join
+        {
+            text = "Quick Join Server #1";
+            textIsQuote = 0;
+            picture = "\VKN_Misc\VikingLogo512.paa";
+            video = "";
+            action = "0 = [_this, '', '', ''] execVM '\VKN_Functions\Misc Functions\fn_joinServer.sqf';";
+            actionText = "Direct Connect to Server";
+            condition = "true";
+        };
+    };
+};
