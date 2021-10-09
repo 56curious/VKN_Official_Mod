@@ -245,28 +245,3 @@ class ProjectOPFORLogo;
         };
     };
 };
-
-
-class RscDisplayInventory
-    {
-        class controls
-        {
-#include "\VKN_Misc\displays\VKN_rscDisplayInventory.hpp"
-        };
-    };
-
-    class RscDisplayInventory_DLCTemplate
-    {
-        class controls
-        {
-#include "\VKN_Misc\displays\VKN_rscDisplayInventory.hpp"
-        };
-    }
-
-    class VKN_Inventory
-    {
-        class controls
-        {
-#include "\VKN_Misc\displays\VKN_rscDisplayInventory.hpp"
-        };
-    };
