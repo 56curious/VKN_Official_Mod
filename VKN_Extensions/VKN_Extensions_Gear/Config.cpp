@@ -129,21 +129,21 @@ class cfgVehicles {
         hiddenSelectionsTextures[] = {"VKN_Gear\data\Backpacks\clf_nicecomm2_blackops_co.paa"};
     };
   class VKN_v_loki_nicecomm2: TFAR_rt1523g_big {
-        author = "Shagger";
-        scope = public;
-        displayName = "[VKN] VIS Loki AN/PRC 117-117g Full";
-        picture="\VKN_Misc\VKN_Logo_Inverted.paa";
-        hiddenSelectionsTextures[] = {"VKN_Gear\data\Backpacks\clf_nicecomm2_loki_co.paa"};
-    };
+      author = "Shagger";
+      scope = public;
+      displayName = "[VKN] VIS Loki AN/PRC 117-117g Full";
+      picture="\VKN_Misc\VKN_Logo_Inverted.paa";
+      hiddenSelectionsTextures[] = {"VKN_Gear\data\Backpacks\clf_nicecomm2_loki_co.paa"};
+  };
 
-    class VKN_Dummy_B_Police_Coveralls: rhs_msv_rifleman_m88_patchless {
-        author = "Jonmo";
-        scope = protected;
-        displayName = "[VKN] Greek Police Coveralls";
-        picture="\VKN_Misc\VKN_Logo_Inverted.paa";
-        //hiddenSelections[] = {"camo1","camo2","camob","insignia"};
-        hiddenSelectionsTextures[] = {"\VKN_Gear\data\Uniforms\VKN_Police_Coveralls.paa"};
-    };
+  class VKN_Dummy_B_Police_Coveralls: rhs_msv_rifleman_m88_patchless {
+      author = "Jonmo";
+      scope = protected;
+      displayName = "[VKN] Greek Police Coveralls";
+      picture="\VKN_Misc\VKN_Logo_Inverted.paa";
+      //hiddenSelections[] = {"camo1","camo2","camob","insignia"};
+      hiddenSelectionsTextures[] = {"\VKN_Gear\data\Uniforms\VKN_Police_Coveralls.paa"};
+  };
 };
 
 class cfgWeapons {
@@ -299,7 +299,8 @@ class cfgWeapons {
     displayName = "[VKN] Booniehat (Alpine)";
     hiddenSelectionsTextures[] = {"VKN_Gear\data\Headgear\vkn_boonie_alpine_co.paa"};
   };
-	class VKN_B_OPS_Black : VKN_OPS_Helmet_2_Base {
+	
+  class VKN_B_OPS_Black : VKN_OPS_Helmet_2_Base {
 		scope = public;
 		author="Apple";
 		displayName="[VKN] FBA OpsCore + Peltor(Black)";
@@ -573,7 +574,7 @@ class cfgWeapons {
 			};
 		};
 	};
-		class VKN_Riot_Helmet_Visor_Up : rhs_altyn {
+  class VKN_Riot_Helmet_Visor_Up : rhs_altyn {
 		author = "Jonmo";
 		scope = public;
 		weaponPoolAvailable = 1;
@@ -626,56 +627,56 @@ class cfgWeapons {
         displayName = "[VKN] FAST Ballistic M98";
         hiddenSelectionsTextures[] = {"\VKN_Gear\data\headgear\maritime_m98.paa","","","","\VKN_Gear\data\headgear\m98_cover.paa",""};
     };
-    class VKN_Helmet_M98_HS: rhsusf_opscore_cover
+  class VKN_Helmet_M98_HS: rhsusf_opscore_cover
     {
         scope = public;
         displayName = "[VKN] FAST Ballistic M98 (Headset)";
         hiddenSelectionsTextures[] = {"\VKN_Gear\data\headgear\maritime_m98.paa","\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\data\comtac_fg_co.paa","","","\VKN_Gear\data\headgear\m98_cover.paa",""};
     };
-class VKN_Helmet_ranger: rhsusf_opscore_cover
+  class VKN_Helmet_ranger: rhsusf_opscore_cover
     {
         scope = public;
         displayName = "[VKN] FAST Ballistic Ranger";
         hiddenSelectionsTextures[] = {"\VKN_Gear\data\headgear\maritime_ranger.paa","","","","\VKN_Gear\data\headgear\ranger_cover.paa",""};
     };
-    class VKN_Helmet_ranger_HS: rhsusf_opscore_cover
-    {
-        scope = public;
-        displayName = "[VKN] FAST Ballistic Ranger (Headset)";
-        hiddenSelectionsTextures[] = {"\VKN_Gear\data\headgear\maritime_ranger.paa","\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\data\comtac_fg_co.paa","","","\VKN_Gear\data\headgear\ranger_cover.paa",""};
-    };
+  class VKN_Helmet_ranger_HS: rhsusf_opscore_cover
+  {
+    scope = public;
+    displayName = "[VKN] FAST Ballistic Ranger (Headset)";
+    hiddenSelectionsTextures[] = {"\VKN_Gear\data\headgear\maritime_ranger.paa", "\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\data\comtac_fg_co.paa", "", "", "\VKN_Gear\data\headgear\ranger_cover.paa", ""};
+  };
 
-class VKN_Helmet_od: rhsusf_opscore_cover
+  class VKN_Helmet_od: rhsusf_opscore_cover
     {
         scope = public;
         displayName = "[VKN] FAST Ballistic OD";
         hiddenSelectionsTextures[] = {"\VKN_Gear\data\headgear\maritime_OD.paa","","","","\VKN_Gear\data\headgear\OD_cover.paa",""};
     };
-    class VKN_Helmet_od_HS: rhsusf_opscore_cover
+  class VKN_Helmet_od_HS: rhsusf_opscore_cover
     {
         scope = public;
         displayName = "[VKN] FAST Ballistic OD (Headset)";
         hiddenSelectionsTextures[] = {"\VKN_Gear\data\headgear\maritime_OD.paa","\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\data\comtac_fg_co.paa","","","\VKN_Gear\data\headgear\OD_cover.paa",""};
     };
-class VKN_Helmet_oga: rhsusf_opscore_cover
+  class VKN_Helmet_oga: rhsusf_opscore_cover
     {
         scope = public;
         displayName = "[VKN] FAST Ballistic OGA";
         hiddenSelectionsTextures[] = {"\VKN_Gear\data\headgear\maritime_OGA.paa","","","","\VKN_Gear\data\headgear\OGA_cover.paa",""};
     };
-    class VKN_Helmet_oga_HS: rhsusf_opscore_cover
+  class VKN_Helmet_oga_HS: rhsusf_opscore_cover
     {
         scope = public;
         displayName = "[VKN] FAST Ballistic OGA (Headset)";
         hiddenSelectionsTextures[] = {"\VKN_Gear\data\headgear\maritime_OGA.paa","\rhsusf\addons\rhsusf_infantry2\gear\head\opscore\data\comtac_co.paa","","","\VKN_Gear\data\headgear\OGA_cover.paa",""};
     };
-class VKN_Helmet_multicam: rhsusf_opscore_cover
+  class VKN_Helmet_multicam: rhsusf_opscore_cover
     {
         scope = public;
         displayName = "[VKN] FAST Ballistic Multicam";
         hiddenSelectionsTextures[] = {"\VKN_Gear\data\headgear\maritime_OGA.paa","","","","\VKN_Gear\data\headgear\Multicam_cover.paa",""};
     };
-    class VKN_Helmet_multicam_HS: rhsusf_opscore_cover
+  class VKN_Helmet_multicam_HS: rhsusf_opscore_cover
     {
         scope = public;
         displayName = "[VKN] FAST Ballistic Multicam (Headset)";
