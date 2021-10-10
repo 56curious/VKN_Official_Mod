@@ -52,6 +52,19 @@ class CfgPatches
 	};
 };
 
+class cfgSounds {
+	class VKN_RM870_Pumping {
+		name = "RM870 Pumping";
+		sound[] = { "\FA_Weapons_VKN\data\sounds\RM870_Pumping.ogg", 0.8, 1, 10 };
+		titles[] = { 0, ""};
+	};
+	class VKN_RM870_Reload {
+		name = "RM870 Reload";
+		sound[] = { "FA_Weapons_VKN\data\sounds\RM870_Reload.wav", 0.8, 1, 20 };
+		titles[] = { 0, ""};
+	};
+};
+
 class cfgSoundShaders
 {
   class mx_Closure_SoundShader;
@@ -683,11 +696,11 @@ class VKN_AK5C : FA_Base_Rifle_VKN
 		displayName = "Remington 870";
 		descriptionShort = "Remington 870 - Shotgun <br/>Caliber: 12 Gauge";
 		magazines[] = {"VKN_8Rnd_12Gauge_Pellets","VKN_8Rnd_12Gauge_Slugs","2Rnd_12Gauge_Pellets", "2Rnd_12Gauge_Slug"};
-		model = "FA_Weapons_VKN\data\remington870\Remington870.p3d";
+		model = "\FA_Weapons_VKN\data\remington870\Remington870.p3d";
 		hiddenSelections[] = {"camo1"};
-		hiddenSelectionsTextures[] = {"FA_Weapons_VKN\data\remington870\textures\RM870_co.paa"};
+		hiddenSelectionsTextures[] = {"\FA_Weapons_VKN\data\remington870\textures\RM870_co.paa"};
 		drySound[] = {"A3\sounds_f\weapons\other\dry1", 0.6, 1, 10};
-		reloadMagazineSound[] = {"FA_Weapons_VKN\data\sounds\RM870_Reload.wav", 0.8, 1, 20};
+		reloadMagazineSound[] = {"FA_Weapons_VKN\data\sounds\RM870_Reload.ogg", 0.8, 1, 20};
 		reloadAction = "GestureReloadM4SSAS";
 		handAnim[] = {"OFP2_ManSkeleton", "\FA_Weapons_VKN\data\anims\RM870.rtm"};
 		inertia = 0.4;
