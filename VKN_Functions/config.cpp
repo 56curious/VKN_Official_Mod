@@ -96,11 +96,8 @@ class CfgFunctions {
 
       class confirmMenu{};
 
-          //class displayPlayerInfoAbove{};
-
-          class creditsVKN_movie
-      {
-      };
+      //class displayPlayerInfoAbove{};
+      class creditsVKN_movie{};
       class creditsVKN_movieConfig{};
 
       class haltAddAction{};
@@ -132,6 +129,8 @@ class CfgFunctions {
 			class cameraSetup{};
 
 			class redirectClientToServer{};
+
+      class quickSupply{};
 		};
 	};
 };

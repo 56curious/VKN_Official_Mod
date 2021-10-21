@@ -76,8 +76,8 @@ class CfgVehicles {
 		scope=private;
 		scopeCurator=public;
 		displayName="VKN Module Base";
-		icon="\VKN_Misc\VikingLogo128.paa";
-		picture="\VKN_Misc\VikingLogo128.paa";
+		icon="\VKN_Misc\VikingLogoMedium.paa";
+		picture="\VKN_Misc\VikingLogoMedium.paa";
 		portrait="";
 		function="";
 		functionPriority=1;
@@ -115,6 +115,7 @@ class CfgVehicles {
 
 	class VKN_Quick_Supply: VKN_Modules_Base {
 		scope = public;
+		scopeCurator = 1;
 		displayName = "Quick Supply";
 		function = "VKN_fnc_quickSupply";
 		is3DEN = 0;
