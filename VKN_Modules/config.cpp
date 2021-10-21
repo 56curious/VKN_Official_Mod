@@ -26,8 +26,8 @@ class CfgPatches {
 
 class CfgFactionClasses {
 	class NO_CATEGORY;
-	class VKN_Base: NO_CATEGORY {
-		displayName = "Viking PMC";
+	class VKN_Modules: NO_CATEGORY {
+		displayName = "Viking Modules";
 	};
 };
 
@@ -71,13 +71,13 @@ class CfgVehicles {
 		mapSize=1;
 		author="Curious";
 		vehicleClass="Modules";
-		category="VKN_Base";
+		category = "VKN_Modules";
 		side=7;
-		scope=1;
-		scopeCurator=2;
+		scope=private;
+		scopeCurator=public;
 		displayName="VKN Module Base";
-		icon="\VKN_Misc\VikingLogo128.paa";
-		picture="\VKN_Misc\VikingLogo128.paa";
+		icon="\VKN_Misc\VikingLogoMedium.paa";
+		picture="\VKN_Misc\VikingLogoMedium.paa";
 		portrait="";
 		function="";
 		functionPriority=1;
@@ -107,7 +107,17 @@ class CfgVehicles {
 	};
   */
   class VKN_Function_Guide: VKN_Modules_Base {
+		scope = private;
     displayName ="Function Guide";
 		function = "VKN_fnc_functionGuide";
-  };
+		is3DEN = 0;
+	};
+
+	class VKN_Quick_Supply: VKN_Modules_Base {
+		scope = public;
+		scopeCurator = 1;
+		displayName = "Quick Supply";
+		function = "VKN_fnc_quickSupply";
+		is3DEN = 0;
+	};
 };
