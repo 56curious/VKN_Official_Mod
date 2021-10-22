@@ -13,8 +13,9 @@ class CfgPatches {
                 "A3_Data_F",
                 "FA_Weapons_VKN",
                 "VKN_Misc",
-                "cba_main"
-            };
+                "cba_main",
+                "ace_ui",
+                "VKN_UI"};
         weapons[] = {"VKN_AK5C", "VKN_MP5", "VKN_VSS"};
     };
 };
@@ -114,3 +115,10 @@ class CfgWeapons {
         };
     };
 };
+
+
+
+#if __has_include("\vkn_ui\rscDisplayInventory.hpp")
+
+    #include "\vkn_compatibility_core\vkn_ui_ace_compat.hpp"
+#endif
