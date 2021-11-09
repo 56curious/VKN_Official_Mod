@@ -1,6 +1,6 @@
 /*
 Script name:  fn_quickSupply.sqf
-Created on:   12 October ‎2021
+Created on:   12 October 2021
 Author:       Curious
 
 Description:  Quick Supply script for ammo crates.
@@ -21,6 +21,9 @@ _parachute = createVehicle ["B_Parachute_02_F", [(_modulePos select 0), (_module
 _crate = createVehicle ["B_supplyCrate_F", position _parachute, [], 0, 'NONE'];
 _crate attachTo [_parachute, [0, 0, -1.3]];
 _crate allowdamage false;
+
+//maybe add task so people know where
+//add ir strobe
 
 _smoke = "SmokeShellBlue" createVehicle position _crate; 
 _smoke attachTo [_crate, [0, 0, 0.45]]; 

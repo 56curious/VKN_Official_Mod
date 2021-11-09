@@ -81,6 +81,7 @@ _MissionWorldExtension = missionName + "." + worldName + "\";
 _editedPath = [_pathNew, _MissionWorldExtension, ""] call PX_fnc_stringReplace; 
 
 //load mission root and sort tree
+//TODO: add check via return and kill display if false
 _fileListAllowed = [_fileList, _editedPath, _efm_fileList, _pathNew, _MissionWorldExtension] call VKN_EFM_fnc_loadSortMissionRoot;
 
 
