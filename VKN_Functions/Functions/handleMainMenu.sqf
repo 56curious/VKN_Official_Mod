@@ -48,7 +48,3 @@ switch _mode do {
 		
 	};
 };
-
-
-
-
