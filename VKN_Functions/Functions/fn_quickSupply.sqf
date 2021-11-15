@@ -22,14 +22,18 @@ _crate = createVehicle ["B_supplyCrate_F", position _parachute, [], 0, 'NONE'];
 _crate attachTo [_parachute, [0, 0, -1.3]];
 _crate allowdamage false;
 
-//maybe add task so people know where
-//add ir strobe
+{
+    _x addCuratorEditableObjects [[_parachute, _crate], false];
+} forEach allCurators;
 
 _smoke = "SmokeShellBlue" createVehicle position _crate; 
 _smoke attachTo [_crate, [0, 0, 0.45]]; 
 _chem1 = "Chemlight_blue" createVehicle position _crate;
 _chem2 = "Chemlight_blue" createVehicle position _crate;  
 _chem1 attachTo [_crate, [0, 0, 0.45]];
-_chem2 attachTo [_crate, [0, 0, 0]]; 
+_chem2 attachTo [_crate, [0, 0, 0]];
+_ir = createvehicle ["O_IRStrobe",[0,0,0],[],0,"NONE"];
+_ir attachTo [_crate, [0, 0, 0]];
+
 
 true
