@@ -263,8 +263,9 @@ class CfgFunctions
       {
       };
 
-      class arsenal
+      class arsenalAnimations
       {
+        postInit = 1;
       };
     };
   };
