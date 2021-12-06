@@ -1,6 +1,71 @@
 waituntil {!isnull (finddisplay 46)}; 
 
 
+//Todo and animate: 
+//----Raised----
+
+//VKN_Moving_Erected_Sprint_RaisedPost_Rifle_Forward_Right ----Sprinting, left and right. Animations Complete
+//VKN_Moving_Erected_Sprint_RaisedPost_Rifle_Forward_Left
+
+//Alternates when carrying heavy weapon (IE above 60 initial bullets in the magazine)
+
+
+//
+//
+// These following todo's can be done using gestures, to save a lot of time!
+// Would love a framework that can determine what gesture to play based on the players current run, walk and stopped state.
+//                   
+//                  
+
+/////VKN_Moving_Erected_Run_RaisedPost_Rifle_Forward_Right
+/////VKN_Moving_Erected_Run_RaisedPost_Rifle_Forward     ----High ready, meaning weapon on the ready, posted up.
+/////VKN_Moving_Erected_Run_RaisedPost_Rifle_Forward_Left
+/////VKN_Moving_Erected_Run_RaisedPost_Rifle_Backward_Right
+/////VKN_Moving_Erected_Run_RaisedPost_Rifle_Backward     
+/////VKN_Moving_Erected_Run_RaisedPost_Rifle_Backward_Left
+
+//VKN_Moving_Erected_Walk_RaisedPost_Rifle_Forward_Right
+//VKN_Moving_Erected_Walk_RaisedPost_Rifle_Forward       ----Walking, posted up, weapon ready
+//VKN_Moving_Erected_Walk_RaisedPost_Rifle_Forward_Left
+//VKN_Moving_Erected_Walk_RaisedPost_Rifle_Backward_Right
+//VKN_Moving_Erected_Walk_RaisedPost_Rifle_Backward      
+//VKN_Moving_Erected_Walk_RaisedPost_Rifle_Backward_Left
+
+//VKN_Moving_Erected_Stopped_RaisedPost_Rifle_Turning_Right
+//VKN_Moving_Erected_Stopped_RaisedPost_Rifle       ------Stopped, weapon ready, with turning animations
+//VKN_Moving_Erected_Stopped_RaisedPost_Rifle_Turning_Left
+//VKN_Moving_Erected_Stopped_RaisedPost_Rifle_Turning_Right
+//VKN_Moving_Erected_Stopped_RaisedPost_Rifle       
+//VKN_Moving_Erected_Stopped_RaisedPost_Rifle_Turning_Left
+
+//----Lowered----
+
+//VKN_Moving_Erected_Sprint_LoweredPost_Rifle_Forward_Right ----Sprinting, left and right.
+//VKN_Moving_Erected_Sprint_LoweredPost_Rifle_Forward
+//VKN_Moving_Erected_Sprint_LoweredPost_Rifle_Forward_Left
+
+/////VKN_Moving_Erected_Run_LoweredPost_Rifle_Forward_Right
+/////VKN_Moving_Erected_Run_LoweredPost_Rifle_Forward     ----High ready, meaning weapon on the ready, posted up.
+/////VKN_Moving_Erected_Run_LoweredPost_Rifle_Forward_Left
+/////VKN_Moving_Erected_Run_LoweredPost_Rifle_Backward_Right
+/////VKN_Moving_Erected_Run_LoweredPost_Rifle_Backward     
+/////VKN_Moving_Erected_Run_LoweredPost_Rifle_Backward_Left
+
+//VKN_Moving_Erected_Walk_LoweredPost_Rifle_Forward_Right
+//VKN_Moving_Erected_Walk_LoweredPost_Rifle_Forward       ----Walking, posted up, weapon ready
+//VKN_Moving_Erected_Walk_LoweredPost_Rifle_Forward_Left
+//VKN_Moving_Erected_Walk_LoweredPost_Rifle_Backward_Right
+//VKN_Moving_Erected_Walk_LoweredPost_Rifle_Backward      
+//VKN_Moving_Erected_Walk_LoweredPost_Rifle_Backward_Left
+
+//VKN_Moving_Erected_Stopped_LoweredPost_Rifle_Turning_Right
+//VKN_Moving_Erected_Stopped_LoweredPost_Rifle       ------Stopped, weapon ready, with turning animations
+//VKN_Moving_Erected_Stopped_LoweredPost_Rifle_Turning_Left
+//VKN_Moving_Erected_Stopped_LoweredPost_Rifle_Turning_Right
+//VKN_Moving_Erected_Stopped_LoweredPost_Rifle       
+//VKN_Moving_Erected_Stopped_LoweredPost_Rifle_Turning_Left
+
+
 //https://community.bistudio.com/wiki/actionKeys
 //https://community.bistudio.com/wiki/Arma_3:_Event_Handlers#UserAction_Event_Handlers
 //https://community.bistudio.com/wiki/addUserActionEventHandler
@@ -30,6 +95,14 @@ private _vknMoveForward_Handle = addUserActionEventHandler ["turbo", "Activate",
 
 //Wishlist for parameters:
 //parameter for player weapon current magazine size, if over 60. play alternate animation, EI Alternate Running Style and animation set
+_mag = primaryWeaponMagazine player;
+//_mag returns array, so must get first element
+_ammoCount = getNumber(configfile >> "CfgMagazines" >> _mag select 0 >> "count");
+
+//here you can set something to deal with the 60 bit change the systemChat, adjust math to fit also.
+if (_ammoCount >= 60) then { systemChat "grtr thn or eql to 60"};
+
+
 //(isSprintAllowed player)
 //!(currentWeapon player == "")
 //(handgunWeapon player != currentWeapon player)
