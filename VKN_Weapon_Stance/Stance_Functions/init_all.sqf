@@ -11,6 +11,16 @@ waituntil {!isnull (finddisplay 46)};
 //Modulo (%) will make the Post state cycle between 0, 1, 2
 // 0 is posted down, 1 is normal, 2 is posted up.
 
+//Checks mag size
+_mag = primaryWeaponMagazine player;
+//_mag returns array, so must get first element
+_ammoCount = getNumber(configfile >> "CfgMagazines" >> _mag select 0 >> "count");
+
+//here you can set something to deal with the 60 bit change the systemChat, adjust math to fit also.
+if (_ammoCount >= 60) then { systemChat "grtr thn or eql to 60"};
+
+
+
 //addUserActionEventHandler [keyName, event, expression]
 
 private _PlayersCurrentPostState == 1;
