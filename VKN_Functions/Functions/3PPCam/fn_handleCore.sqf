@@ -7,9 +7,9 @@ License:		This file is under "Arma Public License No Derivatives (APL-ND)"
 				More information can be found at:
 				https://www.bohemia.net/community/licenses/arma-public-license-nd
 
-Description:    deal with UI elements for EFM tool.
+Description:    deal with UI elements for 3PP tool.
 
-Framework:      External File Manager
+Framework:      3RD Person Camera Editor
 
 Parameters:
 				N/A
@@ -17,8 +17,8 @@ Parameters:
 
 
 // don't run if not in 3den
-if !(is3DEN) exitwith {
-    systemChat "You're not in the editor! Please go into the editor to run this function!";
+if (is3DEN) exitwith {
+    systemChat "You're in the editor! Please leave the editor to run this function!";
 };
 
 // setup display
@@ -105,7 +105,12 @@ _camera camCommit 0;
 { _ctrlCombo lbadd (_x select 0); } forEach _presets;
 
 
-_ctrlClose ctrlAddEventHandler ["ButtonClick", "_display = findDisplay 5600; _display closeDisplay 0; _cam = missionNamespace getVariable ""VKN_3PP_Camera_Object""; camDestroy _cam;"];
+_ctrlClose ctrlAddEventHandler ["ButtonClick", "
+_display = findDisplay 5600; 
+_display closeDisplay 0; 
+_cam = missionNamespace getVariable ""VKN_3PP_Camera_Object""; 
+_cam cameraEffect [""Terminate"", ""BACK""];
+camDestroy _cam;"];
 _ctrlReset ctrlAddEventHandler ["ButtonClick", "
 	_display = findDisplay 5600; 
 
@@ -148,12 +153,14 @@ _ctrlConfirm ctrlAddEventHandler ["ButtonClick", "
 	_ctrlEditYText = ctrlText _ctrlEditY;
 	_ctrlEditZText = ctrlText _ctrlEditZ;
 
-	_path = [""\!Workshop\@Viking PMC Mod - All-In-One\addons"", ""\!Workshop\@Viking PMC Mod - Core\addons""];
-	_filename = 'cameraSettings.hpp';
 	_data = [_ctrlEditXText, _ctrlEditYText, _ctrlEditZText];
 
-	_test = [""viking.VKN_updateCameraSetting"", [_path, _filename, _data]] call (uiNamespace getVariable ""py3_fnc_callExtension"");
-	systemChat _test;
+	_fileUpdater = [""viking.VKN_updateCameraSetting"", [_data]] call (uiNamespace getVariable ""py3_fnc_callExtension"");
+	if (_fileUpdater == ""true"") then { 
+		systemChat ""Camera Settings SUCCESSFULLY updated. Please restart the game to see effects.""; 
+	} else {
+		systemChat ""Camera Settings UNSUCCESSFULLY updated.""; 
+	};
 "];
 
 _ctrlCombo ctrlAddEventHandler ["lbSelChanged", "

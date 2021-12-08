@@ -518,7 +518,8 @@ class CfgWeapons
     };
 };
 
-#include "\VKN_Misc\Misc\cameraSettings.hpp"
+#include "\!Workshop\@Viking PMC Mod - All-In-One\addons\cameraSettings.hpp"
+
 class CfgVehicles
 {
     class Man;
@@ -781,7 +782,7 @@ class display3DEN
         1, 1, 1, 1  \
     }
 
-#define BACKGROUND_IMAGE __EVAL(["\VKN_Misc\Main Menu\Static Background Images\Background1.paa", "\VKN_Misc\Main Menu\Static Background Images\Background2.paa", "\VKN_Misc\Main Menu\Static Background Images\Background3.paa", "\VKN_Misc\Main Menu\Static Background Images\Background4.paa", "\VKN_Misc\Main Menu\Static Background Images\Background5.paa", "\VKN_Misc\Main Menu\Static Background Images\Background6.paa", "\VKN_Misc\Main Menu\Static Background Images\Background7.paa", "\VKN_Misc\Main Menu\Static Background Images\Background8.paa"] (select random 8))
+#define BACKGROUND_IMAGE __EVAL([ "\VKN_Misc\Main Menu\Static Background Images\Background1.paa", "\VKN_Misc\Main Menu\Static Background Images\Background2.paa", "\VKN_Misc\Main Menu\Static Background Images\Background3.paa", "\VKN_Misc\Main Menu\Static Background Images\Background4.paa", "\VKN_Misc\Main Menu\Static Background Images\Background5.paa", "\VKN_Misc\Main Menu\Static Background Images\Background6.paa", "\VKN_Misc\Main Menu\Static Background Images\Background7.paa", "\VKN_Misc\Main Menu\Static Background Images\Background8.paa" ](select random 8))
 
 class RscDisplayStart : RscStandardDisplay
 {
