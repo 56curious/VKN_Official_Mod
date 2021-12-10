@@ -94,9 +94,8 @@ with uiNamespace do
 				//[missionconfigfile,_ctrlMissionAuthor] call bis_fnc_overviewauthor;
 		};
 
-		if (_pictureMap == "") then {_pictureMap = gettext (_cfgWorld >> "pictureMap"); diag_log format ["cur_PICTUREMAP = %1", str _pictureMap];};
-		if (_pictureMap == "") then {_pictureMap = "#(argb,8,8,3)color(1,1,1,0.9)"; diag_log format ["cur_PICTUREMAP = %1", str _pictureMap];};
-		if (_worldName == "") then {_worldName = gettext (_cfgWorld >> "description");};
+		if (_pictureMap == "") then {	_pictureMap = gettext (_cfgWorld >> "pictureMap"); _pictureMap = "#(argb,8,8,3)color(1,1,1,0.9)";	};
+		if (_worldName == "") then { _worldName = gettext (_cfgWorld >> "description");	};
 		if (_loadingText == "") then {
 			_loadingTexts = getarray (_cfgWorld >> "loadingTexts");
 			_loadingText = if (count _loadingTexts > 0) then {
@@ -133,7 +132,6 @@ with uiNamespace do
 
 
 		_ctrlMap ctrlsettext _pictureMap;
-		diag_log format ["cur_pictureMap = %1", str _pictureMap];
 			_ctrlMap ctrlSetPosition [safezoneX, safezoneY, safezoneW, safezoneH];
 			if (_cur_custom isEqualTo true) then {
 				//_ctrlMap ctrlSetPosition [0.5, 1, 0.5];
