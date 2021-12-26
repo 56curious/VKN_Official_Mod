@@ -36,9 +36,14 @@ class VKN_3PP_Cam_Adjustment {
 			w = 0.185625 * safezoneW;
 			h = 0.033 * safezoneH;
 		};
-		class closeButton: RscButton
+		class closeButton: RscActiveText
 		{
 			idc = 1600;
+			color[] = {1,1,1,0.7};
+			style = 48;
+			colorText[] = {1,1,1,0.7};
+			colorActive[] = {1,1,1,1};
+			tooltip = "Close";
 
 			text = "\A3\Ui_f\data\GUI\Rsc\RscDisplayArcadeMap\icon_exit_cross_ca.paa"; //--- ToDo: Localize;
 			x = 0.969219 * safezoneW + safezoneX;
@@ -161,6 +166,7 @@ class VKN_3PP_Cam_Adjustment {
 			y = 0.258 * safezoneH + safezoneY;
 			w = 0.0721875 * safezoneW;
 			h = 0.033 * safezoneH;
+			tooltip = "Reset to current camera settings in config (before edits).";
 		};
 		class confirmButton: RscButton
 		{
