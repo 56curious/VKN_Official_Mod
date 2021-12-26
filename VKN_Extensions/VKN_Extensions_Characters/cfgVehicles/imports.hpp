@@ -29,3 +29,12 @@ class rhsgref_hidf_machinegunner_OCimport_02 : rhsgref_hidf_machinegunner_OCimpo
 class rhsgref_hidf_crewman;
 class rhsgref_hidf_crewman_OCimport_01 : rhsgref_hidf_crewman { scope = private; class EventHandlers; };
 class rhsgref_hidf_crewman_OCimport_02 : rhsgref_hidf_crewman_OCimport_01 { class EventHandlers; };
+
+
+class B_Soldier_F;
+class B_Soldier_F_OCimport_01 : B_Soldier_F { scope = 0; class EventHandlers; };
+class B_Soldier_F_OCimport_02 : B_Soldier_F_OCimport_01 { class EventHandlers; };
+
+class B_Pilot_F;
+class B_Pilot_F_OCimport_01 : B_Pilot_F { scope = 0; class EventHandlers; };
+class B_Pilot_F_OCimport_02 : B_Pilot_F_OCimport_01 { class EventHandlers; };
