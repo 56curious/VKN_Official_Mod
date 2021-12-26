@@ -27,6 +27,7 @@ _showGPSnames_Val = profileNamespace getVariable ["VKN_showGPSnames_Var", false]
 _showGPSgroupOnly_Val = profileNamespace getVariable ["VKN_showGPSgroupOnly_Var", false];
 _ShowgroupMapicons_Val = profileNamespace getVariable ["VKN_ShowgroupMapicons_Var", true];
 _Show3Dgroupicons_Val = profileNamespace getVariable ["VKN_Show3Dgroupicons_Var", false];
+
 [
     "VKN Soldier Tracker settings",
     "CHECKBOX",
@@ -191,36 +192,55 @@ _MainMenuServerPasswordVal = profileNamespace getVariable ["VKN_MainMenuServerPa
 [
     "VKN_joinserver_ip",
     "EDITBOX",
-    ["Main Main Server IP", "set the IP for the server you'd like to instantly join to."],
+    ["Main Menu Server IP", "set the IP for the server you'd like to instantly join to."],
     "VKN Main Menu Server",
     _MainMenuServerIPVal,
     true,
     {
         params ["_value"];
         _MainMenuServerIPVal = profileNamespace setVariable ["VKN_MainMenuServerIPVal_var", _value];
+        saveProfileNamespace;
     }
 ] call CBA_settings_fnc_init;
 [
     "VKN_joinserver_port",
     "EDITBOX",
-    ["Main Main Server Port", "set the port for the server you'd like to instantly join to."],
+    ["Main Menu Server Port", "set the port for the server you'd like to instantly join to."],
     "VKN Main Menu Server",
     _MainMenuServerPortVal,
     true,
     {
         params ["_value"];
         _MainMenuServerPortVal = profileNamespace setVariable ["VKN_MainMenuServerPortVal_var", _value];
+        saveProfileNamespace;
     }
 ] call CBA_settings_fnc_init;
 [
     "VKN_joinserver_password",
     "EDITBOX",
-    ["Main Main Server Password", "set the password for the server you'd like to instantly join to."],
+    ["Main Menu Server Password", "set the password for the server you'd like to instantly join to."],
     "VKN Main Menu Server",
     _MainMenuServerPasswordVal,
     true,
     {
         params ["_value"];
         _MainMenuServerPasswordVal = profileNamespace setVariable ["VKN_MainMenuServerPasswordVal_var", _value];
+        saveProfileNamespace;
+    }
+] call CBA_settings_fnc_init;
+
+
+_VKN_ArsenalAnimation = profileNamespace getVariable ["VKN_VKN_ArsenalAnimation_var", true];
+[
+    "VKN_arsenal_animations",
+    "CHECKBOX",
+    ["Arsenal Animation", "Toggle animations playing in the arsenal."],
+    "VKN Arsenal Animation",
+    _VKN_ArsenalAnimation,
+    true,
+    {
+        params ["_value"];
+        _VKN_ArsenalAnimation = profileNamespace setVariable ["VKN_VKN_ArsenalAnimation_var", _value];
+        saveProfileNamespace;
     }
 ] call CBA_settings_fnc_init;
