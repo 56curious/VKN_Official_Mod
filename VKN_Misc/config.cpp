@@ -887,3 +887,14 @@ class RscDisplayMain : RscStandardDisplay
         };
     };
 };
+
+
+
+class RscDisplayRemoteMissions: rscStandardDisplay 
+{
+    onLoad = "[""onLoad_remoteMissions"",_this,""RscDisplayRemoteMissions"",'GUI'] call VKN_fnc_handleDisplayRemoteMissions";
+};
+class RscDisplayRemoteMissionsVoted: rscStandardDisplay 
+{
+    onLoad = "[""onLoad_remoteMissionsVoted"",_this,""RscDisplayRemoteMissions"",'GUI'] call VKN_fnc_handleDisplayRemoteMissions";
+}

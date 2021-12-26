@@ -51,7 +51,7 @@ class CfgFunctions
     };
   };
 
-  class VKN_3PPCam
+  class VKN_3PPCAM
   {
     class functions
     {
@@ -266,6 +266,10 @@ class CfgFunctions
       class arsenalAnimations
       {
         postInit = 1;
+      };
+      class handleDisplayRemoteMissions 
+      {
+        postStart = 1;
       };
     };
   };
