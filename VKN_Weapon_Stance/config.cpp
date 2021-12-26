@@ -2,7 +2,7 @@
 
 class CfgPatches
 {
-	class VKN_WeaponWeaponStance //https://community.bistudio.com/wiki/Arma_3:_Modded_Keybinding
+	class VKN_WeaponStance //https://community.bistudio.com/wiki/Arma_3:_Modded_Keybinding
 	{
 		units[] = {};
 		weapons[] = {};
@@ -14,37 +14,41 @@ class CfgPatches
 
 class CfgFunctions
 {
-	class VKN_Stance_Functions
+	class VKN_WS
 	{
-		class Stance_Functions
+		class functions
 		{
-			file = "VKN_Weapon_Stance\VKN_Stance_Functions";
-			class preInitClient
-			{
-				preInit = 1;
+			file = "\VKN_Weapon_Stance\Stance_Functions";
+			class init {
+				postInit = 1;
+				file = "\VKN_Weapon_Stance\Stance_Functions\fn_init.sqf";
 			};
+			class PostAction {};
+			class StanceCheck {};
+			class SwitchAnimation {};
 		};
 	};
+};
 };
 
 class CfgUserActions
 {
 	class vkn_PostActionUp // This class name is used for internal representation and also for the inputAction command.
 	{
-		displayName = "Post Up";
-		tooltip = "Post weapon up.";
-		onActivate = "['vkn_PostActionUp', true] call vkn_PostActionUp_Handler";		// _this is always true.
-		onDeactivate = "['vkn_PostActionUp', false] call vkn_PostActionUp_Handler";	// _this is always false.
-		onAnalog = "['vkn_PostActionUp', _this] call vkn_PostActionUp_AnalogHandler";	// _this is the scalar analog value.
+		displayName = "Post Up"; 
+		tooltip = "Bring weapon stance up.";
+		onActivate = "";		// _this is always true.
+		onDeactivate = "";	// _this is always false.
+		onAnalog = "['vkn_PostUp'] call VKN_WS_PostAction";	// _this is the scalar analog value.
 		analogChangeThreshold = 0.01; // Minimum change required to trigger the onAnalog EH (default: 0.01).
 	};
 	class vkn_PostActionDown // This class name is used for internal representation and also for the inputAction command.
 	{
 		displayName = "Post Down";
 		tooltip = "Post weapon Down.";
-		onActivate = "['vkn_PostActionDown', true] call vkn_PostActionDown_Handler";		// _this is always true.
-		onDeactivate = "['vkn_PostActionDown', false] call vkn_PostActionDown_Handler";	// _this is always false.
-		onAnalog = "['vkn_PostActionDown', _this] call vkn_PostActionDown_AnalogHandler";	// _this is the scalar analog value.
+		onActivate = "['vkn_PostDown'] call VKN_WS_PostAction";		// _this is always true.
+		onDeactivate = "";	// _this is always false.
+		onAnalog = "['vkn_PostDown'] call VKN_WS_PostAction";	// _this is the scalar analog value.
 		analogChangeThreshold = 0.01; // Minimum change required to trigger the onAnalog EH (default: 0.01).
 	};
 };
@@ -55,8 +59,8 @@ class CfgDefaultKeysPresets //https://community.bistudio.com/wiki/Arma_3:_Modded
 	{
 		class Mappings
 		{
-			vkn_PostActionUp[] = {201,4.87588e+008}; //LCtrl + MouseWheelUp //Alternately if that doesnt work: prevAction[] = {"(0x00100000 +4)"}; //Mwheel Up //Seriously wth is this black magic.
-			vkn_PostActionDown = {209,4.87588e+008}; //LCtrl + MouseWheelDown //Alternately if that doesnt work: nextAction[] = {"(0x00100000 +5)"}; //Mwheel Down
+			vkn_PostActionUp[] = {2486539264 + (0x00100000 +4)}; //LCtrl + MouseWheelUp //Alternately if that doesnt work: prevAction[] = {"(0x00100000 +4)"}; //Mwheel Up //Seriously wth is this black magic.
+			vkn_PostActionDown[] = {2486539264 + (0x00100000 +5)}; //LCtrl + MouseWheelDown //Alternately if that doesnt work: nextAction[] = {"(0x00100000 +5)"}; //Mwheel Down
 		};
 	};
 };
@@ -70,7 +74,18 @@ class UserActionGroups //https://community.bistudio.com/wiki/Arma_3:_Modded_Keyb
 		group[] = {"vkn_PostActionUp", "vkn_PostActionDown"}; // List of all actions inside this category.
 	};
 };
+
 class CfgMovesBasic
+{
+	class Actions
+	{
+		class Default;
+		class NoActions;
+
+	};
+};
+
+class CfgMovesMaleSdr: CfgMovesBasic
 {
 	class States
 	{
@@ -81,16 +96,21 @@ class CfgMovesBasic
 		class SprintCivilBaseDf;
 		class ManActions
 		{
-		VKN_HighReady[] = {"VKN_HighReady","Gesture"};
-		VKN_HighReady_Moving[] = {"VKN_HighReady_Moving","Gesture"};
+		vkn_Static_Erected_Stopped_RaisedPost_Rifle[] = {"vkn_Static_Erected_Stopped_RaisedPost_Rifle"};
+		vkn_Moving_Erected_Moving_RaisedPost_Rifle[] = {"vkn_Moving_Erected_Moving_RaisedPost_Rifle"};
+		};
+		class Actions 
+		{
+			vkn_raiseWeaponUp = "";
+			
 		};
 		class VKN_Moving_Erected_Sprint_RaisedPost_Rifle_Forward: SprintBaseDf
 		{
+			actions = "RifleStandEvasiveActionsF";
 			file = "\VKN_Weapon_Stance\Animations\vkn_Moving_Erected_Sprint_RaisedPost_Rifle_Forward.rtm";
-			speed = -0.61;
+			speed = 1.9;
 			canReload = 0;
-			stamina = -1.25;
-			actions = "NoActions";
+			stamina = -1.2;
 			headBobStrength = 0;
 			variantsAI[] = {};
 			variantsPlayer[] = {};
@@ -110,7 +130,7 @@ class CfgMovesBasic
 		};
 		class VKN_Moving_Erected_Sprint_RaisedPost_Rifle_Forward_Right: SprintBaseDf
 		{
-			file = "\VKN_Weapon_Stance\Animations\vkn_Moving_Erected_Sprint_RaisedPost_Rifle_Forward_Right.rtm";
+			file = "VKN_Weapon_Stance\Animations\vkn_Moving_Erected_Sprint_RaisedPost_Rifle_Forward_Right.rtm";
 			speed = -0.61;
 			canReload = 0;
 			stamina = -1.25;
@@ -158,6 +178,7 @@ class CfgMovesBasic
 		};
 	};
 };
+
 class CfgGesturesMale
 {
 	skeletonName = "OFP2_ManSkeleton";
@@ -194,3 +215,19 @@ class CfgGesturesMale
 		};
 	};
 };
+
+//Actions
+//It is where the character animation state machine is set up. It's a bit confusing that BI// called the animation state handler "Actions", and the actions are called "States", but this is what it is.
+//
+//What this thing does, is configure all the possible animation states (e.g. standing upright with a rifle, kneeling with a pistol, parachuting), and define for each of them which animations can be played in and from that given state.
+//
+//For instance, from the kneeling with a pistol state (PistolKneelActions), you cannot directly go into crawling forward on your stomach with a rifle (even if you have a rifle). First you would have to holster the pistol and grab your rifle, then lie down, or viceversa. Similarly, if you're prone (whether unarmed, or armed with a pistol or rifle), you cannot salute - first you'd have to stand up.
+//
+//What animation can or cannot be played, in what situation, is set up here in Actions. Player input (key presses, clicks) are then directed to this state machine, which interprets them and decides what action/animation the avatar will perform next, according to these rules. Same rules apply to AI players.
+//
+//States
+//In this section, each animation file (RTM) has a corresponding entry. Animation properties, such as playback speed, interpolation rules, blending times, collision shapes to use during animation, etc.., are configured here.
+//
+//These animations are the ones referenced in the Actions section above. While Actions represents a complex graph, States is more like a list of items, even though some rules are also set up here (see the ConnectTo[] and InterpolateTo[] properties).
+//
+//cfgGestures is similar to States, it holds the bone-masked or layered animations introduced in Arma 2. Welcome to reloading-while-running.
