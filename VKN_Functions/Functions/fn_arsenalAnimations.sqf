@@ -1,3 +1,7 @@
+_VKN_ArsenalAnimation = profileNamespace getVariable "VKN_VKN_ArsenalAnimation_var";
+
+if !(_VKN_ArsenalAnimation) exitWith {};
+
 [missionNamespace, "arsenalOpened", {
 
 	_playerAnim = { 
@@ -76,6 +80,7 @@
 		private _arraySize = count _animArray; 
 
 		_isOpen = profileNamespace setVariable ["VKN_ArsenalOpen", true];
+		_player switchMove "";
 
 		switch (true) do { 
 			case (_arraySize == 1): { 
@@ -83,16 +88,19 @@
 			}; 
 			case (_arraySize > 1): {
 				_isOpen = profileNamespace getVariable "VKN_ArsenalOpen";
-			while {_isOpen} do { 
-				{  
-					_isOpen = profileNamespace getVariable "VKN_ArsenalOpen";
-					_player playMoveNow _x; 
-					waitUntil { ((animationState _player) != _x) }; 
-					sleep random [6, 10, 20]; 
-				} forEach _animArray; 
-			};
+				while {_isOpen} do { 
+					{
+						_isOpen = profileNamespace getVariable "VKN_ArsenalOpen";
+						_player playMoveNow _x; 
+						waitUntil { ((animationState _player) != _x) }; 
+						sleep random [6, 10, 20]; 
+					} forEach _animArray; 
+				};
 			}; 
-			default {}; 
+			default {
+				//default to first array anim with no out anim	
+				_player playMoveNow "Acts_AidlPercMstpSlowWrflDnon_warmup01";
+			}; 
 		}; 
 	};
 
@@ -102,12 +110,12 @@
 
 [missionNamespace, "arsenalClosed", { 
 
-profileNamespace setVariable ["VKN_ArsenalOpen", false];
-_animOut = missionNameSpace getVariable "VKN_ArsenalAnimOut"; 
-  if (_animOut == "") then {  
-   player switchMove _animOut; 
-  } else {  
-   player playMoveNow _animOut;  
-  };
+	profileNamespace setVariable ["VKN_ArsenalOpen", false];
+	_animOut = missionNameSpace getVariable "VKN_ArsenalAnimOut"; 
+	if (_animOut == "") then {  
+	player switchMove _animOut; 
+	} else {  
+	player playMoveNow _animOut;  
+	};
 
 }] call BIS_fnc_addScriptedEventHandler;
