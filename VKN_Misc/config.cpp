@@ -782,8 +782,7 @@ class display3DEN
         1, 1, 1, 1  \
     }
 
-#define BACKGROUND_IMAGE __EVAL( ["\VKN_Misc\Main Menu\Static Background Images\Background1.paa", "\VKN_Misc\Main Menu\Static Background Images\Background2.paa", "\VKN_Misc\Main Menu\Static Background Images\Background3.paa", "\VKN_Misc\Main Menu\Static Background Images\Background4.paa", "\VKN_Misc\Main Menu\Static Background Images\Background5.paa", "\VKN_Misc\Main Menu\Static Background Images\Background6.paa", "\VKN_Misc\Main Menu\Static Background Images\Background7.paa", "\VKN_Misc\Main Menu\Static Background Images\Background8.paa" ] select (floor (((systemTimeUTC select 6) + (systemTimeUTC select 5) * 1000) random 8)) )
-
+#define BACKGROUND_IMAGE __EVAL( ["\VKN_Misc\Main Menu\Static Background Images\Background1.paa", "\VKN_Misc\Main Menu\Static Background Images\Background2.paa", "\VKN_Misc\Main Menu\Static Background Images\Background3.paa", "\VKN_Misc\Main Menu\Static Background Images\Background4.paa", "\VKN_Misc\Main Menu\Static Background Images\Background5.paa", "\VKN_Misc\Main Menu\Static Background Images\Background6.paa", "\VKN_Misc\Main Menu\Static Background Images\Background7.paa", "\VKN_Misc\Main Menu\Static Background Images\Background8.paa", "\VKN_Misc\Main Menu\Static Background Images\Background9.paa", "\VKN_Misc\Main Menu\Static Background Images\Background10.paa", "\VKN_Misc\Main Menu\Static Background Images\Background11.paa", "\VKN_Misc\Main Menu\Static Background Images\Background12.paa", "\VKN_Misc\Main Menu\Static Background Images\Background13.paa", "\VKN_Misc\Main Menu\Static Background Images\Background14.paa" ] select (floor (((systemTimeUTC select 6) + (systemTimeUTC select 5) * 2000 + (systemTimeUTC select 4) * 30000) random 15)) )
 class RscDisplayStart : RscStandardDisplay
 {
     class controls
