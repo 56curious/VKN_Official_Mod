@@ -181,6 +181,8 @@ class CfgVehicles {
     armorLights = 0.4;
     armorWheels = 0.05;
     gearBox[] = {-8,0,10,6.15,4.44,3.33};
+    maxSpeed = 120;
+    
   };
   class tahoe_ltz_08: tahoe_08_base { 
     scope = private;
@@ -190,7 +192,9 @@ class CfgVehicles {
     armorGlass = 0.5;
     armorLights = 0.4;
     armorWheels = 0.05;
-    gearBox[] = {-8,0,10,6.15,4.44,3.33}; 
+    gearBox[] = {-8,0,10,6.15,4.44,3.33};
+    maxSpeed = 120;
+    
   };
   class suburban: tahoe_08_base { 
     scope = private; 
@@ -201,6 +205,8 @@ class CfgVehicles {
     armorLights = 0.4;
     armorWheels = 0.05;
     gearBox[] = {-8,0,10,6.15,4.44,3.33};
+    maxSpeed = 120;
+    
   };
   class tahoe_LUMI: tahoe_08_base { 
     scope = private;
@@ -210,7 +216,7 @@ class CfgVehicles {
     armorGlass = 0.5;
     armorLights = 0.4;
     armorWheels = 0.05;
-    gearBox[] = {-8,0,10,6.15,4.44,3.33}; 
+    gearBox[] = {-8,0,10,6.15,4.44,3.33};
   };
   class tahoe_UNM: tahoe_08_base { 
     scope = private; 
@@ -221,6 +227,8 @@ class CfgVehicles {
     armorLights = 0.4;
     armorWheels = 0.05;
     gearBox[] = {-8,0,10,6.15,4.44,3.33};
+    maxSpeed = 120;
+    
   };
 
   #include "\VKN_Objects\Configs\Tahoes.hpp"
