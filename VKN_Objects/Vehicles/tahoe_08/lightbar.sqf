@@ -53,37 +53,64 @@ switch(_emergencyType) do {
     
 };
 
+  /*
+  camo1 = body
+  camo2 = wheels
+  camo3 = glass
+  camo4 = LED_leftHeadlight_rightFoglight
+  camo5 = LED_rightHeadlight_leftFoglight
+  camo6 = LED_leftWindscreen_SideFirst
+  camo7 = LED_rightWindscreen_SideSecond
+  camo8 = LED_leftWindscreen
+  camo9 = LED_rightWindscreen
+  camo10 = LED_backInner_leftTop
+  camo11 = LED_backOuter_rightTop
+  camo12 = LED_leftWing
+  camo13 = LED_rightWing
+  camo14 = LED_leftWindscreen_plateTop
+  camo15 = LED_rightWindscreen_plateBottom
+  camo16 = LED_rearLightMiddle
+  camo17 = LED_rearLightTopBottom
+  camo18 = UNKNOWN
+  camo19 = UNKNOWN
+  camo20 = UNKNOWN
+  */
 
-_lbb_left_1 = 20;
-_lbb_left_2 = 21;
-_lbb_right_1 = 22;
-_lbb_right_2 = 23;
-_lbf_left_1 = 24;
-_lbf_left_2 = 25;
-_lbf_right_1 = 26;
-_lbf_right_2 = 27;
-_lbg_left_1 = 28;
-_lbg_right_1 = 29;
-_lbt_back_left_1 = 30;
-_lbt_back_left_2 = 31;
-_lbt_back_left_3 = 32;
-_lbt_back_left_4 = 33;
-_lbt_back_left_5 = 34;
-_lbt_back_right_1 = 35;
-_lbt_back_right_2 = 36;
-_lbt_back_right_3 = 37;
-_lbt_back_right_4 = 38;
-_lbt_back_right_5 = 39;
-_lbt_front_left_1 = 40;
-_lbt_front_left_2 = 41;
-_lbt_front_left_3 = 42;
-_lbt_front_left_4 = 43;
-_lbt_front_left_5 = 44;
-_lbt_front_right_1 = 45;
-_lbt_front_right_2 = 46;
-_lbt_front_right_3 = 47;
-_lbt_front_right_4 = 48;
-_lbt_front_right_5 = 49;
+
+_lbb_left_1 = 4;
+_lbb_left_2 = 6;
+_lbb_right_1 = 5;
+_lbb_right_2 = 7;
+
+_lbf_left_1 = 8;
+_lbf_left_2 = 9;
+_lbf_right_1 = 10;
+_lbf_right_2 = 11;
+
+_lbg_left_1 = 4;
+_lbg_right_1 = 5;
+
+_lbt_back_left_1 = 16;
+_lbt_back_left_2 = 16;
+_lbt_back_left_3 = 17;
+_lbt_back_left_4 = 17;
+_lbt_back_left_5 = 16;
+_lbt_back_right_1 = 16;
+_lbt_back_right_2 = 16;
+_lbt_back_right_3 = 17;
+_lbt_back_right_4 = 17;
+_lbt_back_right_5 = 16;
+
+_lbt_front_left_1 = 6;
+_lbt_front_left_2 = 6;
+_lbt_front_left_3 = 8;
+_lbt_front_left_4 = 8;
+_lbt_front_left_5 = 6;
+_lbt_front_right_1 = 7;
+_lbt_front_right_2 = 7;
+_lbt_front_right_3 = 9;
+_lbt_front_right_4 = 9;
+_lbt_front_right_5 = 7;
 
 while {alive _car} do 
 {
