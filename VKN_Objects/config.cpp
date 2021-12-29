@@ -174,7 +174,7 @@ class CfgVehicles {
   //SUV Configs
   class tahoe_08: tahoe_08_base { 
     scope = private;  
-    armor = 20;
+    armor = 40;
     armorStructural= 1;
     armorFuel = 1.4;
     armorGlass = 0.5;
@@ -184,7 +184,7 @@ class CfgVehicles {
   };
   class tahoe_ltz_08: tahoe_08_base { 
     scope = private;
-    armor = 20;
+    armor = 40;
     armorStructural= 1;
     armorFuel = 1.4;
     armorGlass = 0.5;
@@ -194,7 +194,7 @@ class CfgVehicles {
   };
   class suburban: tahoe_08_base { 
     scope = private; 
-    armor = 20;
+    armor = 40;
     armorStructural= 1;
     armorFuel = 1.4;
     armorGlass = 0.5;
@@ -204,7 +204,7 @@ class CfgVehicles {
   };
   class tahoe_LUMI: tahoe_08_base { 
     scope = private;
-    armor = 20;
+    armor = 40;
     armorStructural= 1;
     armorFuel = 1.4;
     armorGlass = 0.5;
@@ -214,7 +214,7 @@ class CfgVehicles {
   };
   class tahoe_UNM: tahoe_08_base { 
     scope = private; 
-    armor = 20;
+    armor = 40;
     armorStructural= 1;
     armorFuel = 1.4;
     armorGlass = 0.5;
@@ -229,7 +229,7 @@ class CfgVehicles {
 
 
 class CfgMagazines {
-	class 20Rnd_762x51_Mag;
+	class 40Rnd_762x51_Mag;
 	class 30Rnd_9x21_Mag;
 
 	class VKN_30Rnd_9x39mm_Mag : 30Rnd_9x21_Mag {

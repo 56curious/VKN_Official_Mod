@@ -264,7 +264,7 @@ class B_VKN_tahoe_ltz_08_PMC_01: tahoe_ltz_08	{
   editorCategory = "VKN_Units";
   editorSubCategory = "EdSubcat_Cars";
   displayName = "[VKN] Chevrolet Tahoe VIP";
-  armor = 30;
+  armor = 50;
   scope = public;
 };
 class B_VKN_suburban_PMC_01: suburban {
@@ -289,7 +289,7 @@ class B_VKN_tahoe_UNM_PMC_01: tahoe_UNM {
   editorCategory = "VKN_Units";
   editorSubCategory = "EdSubcat_Cars";
   displayName = "[VKN] Chevrolet Tahoe Security";
-  armor = 40;
+  armor = 60;
   emergencyLightbarType = 1;
   scope = public;
   class UserActions {
@@ -322,6 +322,7 @@ class B_VKN_tahoe_UNM_PMC_01: tahoe_UNM {
     };
   };
 };
+
 class B_VKN_tahoe_LUMI_PMC_01: tahoe_LUMI {
   crew = "B_CTRG_soldier_engineer_exp_F";
   picture = "\VKN_Misc\VKN_Logo_inverted.paa";
