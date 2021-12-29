@@ -242,7 +242,7 @@ class B_VKN_tahoe_LUMI_PMC_01: tahoe_LUMI {
 
 
 //////Temp Fix
-class B_VKN_tahoe_08_PMC_01: tahoe_08 {
+class VKN_tahoe_08_PMC_01: tahoe_08 {
   crew = "B_CTRG_soldier_engineer_exp_F";
   picture = "\VKN_Misc\VKN_Logo_inverted.paa";
   Icon = "\a3\soft_f_gamma\suv_01\data\ui\map_suv_01_ca.paa";
@@ -252,9 +252,8 @@ class B_VKN_tahoe_08_PMC_01: tahoe_08 {
   editorCategory = "VKN_Units";
   editorSubCategory = "EdSubcat_Cars";
   displayName = "[VKN] Chevrolet Tahoe";
-  scope = public;
 };
-class B_VKN_tahoe_ltz_08_PMC_01: tahoe_ltz_08	{
+class VKN_tahoe_ltz_08_PMC_01: tahoe_ltz_08	{
   crew = "B_CTRG_soldier_engineer_exp_F";
   picture = "\VKN_Misc\VKN_Logo_inverted.paa";
   Icon = "\a3\soft_f_gamma\suv_01\data\ui\map_suv_01_ca.paa";
@@ -264,10 +263,9 @@ class B_VKN_tahoe_ltz_08_PMC_01: tahoe_ltz_08	{
   editorCategory = "VKN_Units";
   editorSubCategory = "EdSubcat_Cars";
   displayName = "[VKN] Chevrolet Tahoe VIP";
-  armor = 50;
-  scope = public;
+  armor = 45;
 };
-class B_VKN_suburban_PMC_01: suburban {
+class VKN_suburban_PMC_01: suburban {
   crew = "B_CTRG_soldier_engineer_exp_F";
   picture = "\VKN_Misc\VKN_Logo_inverted.paa";
   Icon = "\a3\soft_f_gamma\suv_01\data\ui\map_suv_01_ca.paa";
@@ -277,9 +275,8 @@ class B_VKN_suburban_PMC_01: suburban {
   editorCategory = "VKN_Units";
   editorSubCategory = "EdSubcat_Cars";
   displayName = "[VKN] Chevrolet Suburban";
-  scope = public;
 };
-class B_VKN_tahoe_UNM_PMC_01: tahoe_UNM {
+class VKN_tahoe_UNM_PMC_01: tahoe_UNM {
   crew = "B_CTRG_soldier_engineer_exp_F";
   picture = "\VKN_Misc\VKN_Logo_inverted.paa";
   Icon = "\a3\soft_f_gamma\suv_01\data\ui\map_suv_01_ca.paa";
@@ -289,12 +286,12 @@ class B_VKN_tahoe_UNM_PMC_01: tahoe_UNM {
   editorCategory = "VKN_Units";
   editorSubCategory = "EdSubcat_Cars";
   displayName = "[VKN] Chevrolet Tahoe Security";
-  armor = 60;
-  emergencyLightbarType = 1;
-  scope = public;
+  armor = 50;
+  emergencyLightbarType = 2;
+
   class UserActions {
     class stopSiren {
-      displayName = "<t color='#0000ff'>Code 1</t>";
+      displayName = "<t color='#0000ff'>Stop Siren</t>";
       position = "drivewheel";
       radius = 10;
       condition = "driver this == player && (this animationPhase 'ani_siren' != 1)";
@@ -303,7 +300,7 @@ class B_VKN_tahoe_UNM_PMC_01: tahoe_UNM {
       showWindow = 0;
     };
     class LightMode1 {
-      displayName = "<t color='#ff0000'>Code Two</t>";
+      displayName = "<t color='#ff0000'>Flashing</t>";
       position = "drivewheel";
       radius = 10;
       condition = "driver this == player && (this animationPhase 'ani_lightbar' != 1)";
@@ -312,7 +309,7 @@ class B_VKN_tahoe_UNM_PMC_01: tahoe_UNM {
       showWindow = 0;
     };
     class code3 {
-      displayName = "<t color='#ff0000'>Code Three</t>";
+      displayName = "<t color='#ff0000'>Siren + Flashing</t>";
       position = "drivewheel";
       radius = 10;
       condition = "driver this == player && (this animationPhase 'ani_siren' != 1)";
@@ -323,7 +320,7 @@ class B_VKN_tahoe_UNM_PMC_01: tahoe_UNM {
   };
 };
 
-class B_VKN_tahoe_LUMI_PMC_01: tahoe_LUMI {
+class VKN_tahoe_LUMI_PMC_01: tahoe_LUMI {
   crew = "B_CTRG_soldier_engineer_exp_F";
   picture = "\VKN_Misc\VKN_Logo_inverted.paa";
   Icon = "\a3\soft_f_gamma\suv_01\data\ui\map_suv_01_ca.paa";
@@ -333,5 +330,48 @@ class B_VKN_tahoe_LUMI_PMC_01: tahoe_LUMI {
   editorCategory = "VKN_Units";
   editorSubCategory = "EdSubcat_Cars";
   displayName = "[VKN] Chevrolet Tahoe'08 Lumi Edition";
+};
+
+class B_VKN_tahoe_08_PMC_01 : VKN_tahoe_08_PMC_01 {
+  scope = private;
+};
+
+class B_VKN_tahoe_ltz_08_PMC_01 : VKN_tahoe_ltz_08_PMC_01 {
+  scope = private;
+};
+class B_VKN_tahoe_LUMI_PMC_01 : VKN_tahoe_LUMI_PMC_01 {
+  scope = private;
+};
+
+//Only show these, as the others don't really apply to the mod style
+class B_VKN_suburban_PMC_01 : VKN_suburban_PMC_01 {
   scope = public;
 };
+class B_VKN_tahoe_UNM_PMC_01 : VKN_tahoe_UNM_PMC_01 {
+  scope = public;
+  /*
+  camo1 = body
+  camo2 = wheels
+  camo3 = glass
+  camo4 = LED_leftHeadlight_rightFoglight
+  camo5 = LED_rightHeadlight_leftFoglight
+  camo6 = LED_leftWindscreen_SideFirst
+  camo7 = LED_rightWindscreen_SideSecond
+  camo8 = LED_leftWindscreen
+  camo9 = LED_rightWindscreen
+  camo10 = LED_backInner_leftTop
+  camo11 = LED_backOuter_rightTop
+  camo12 = LED_leftWing
+  camo13 = LED_rightWing
+  camo14 = LED_leftWindscreen_plateTop
+  camo15 = LED_rightWindscreen_plateBottom
+  camo16 = LED_rearLightMiddle
+  camo17 = LED_rearLightTopBottom
+  camo18 = UNKNOWN
+  camo19 = UNKNOWN
+  camo20 = UNKNOWN
+  */
+  hiddenSelections[] = {"camo1","camo2","camo3","camo4","camo5","camo6","camo7","camo8","camo9","camo10","camo11","camo12","camo13","camo14","camo15","camo16","camo17","camo18","camo19","camo20","license1","license2","license3","license4","license5","license6","license7"};
+  hiddenSelectionsTextures[] = {"\tahoe_08\data\TAHOE_UNM_co.paa","\tahoe_08\data\GMT_rad_co.paa","\tahoe_08\data\glass_black.paa","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","",""};
+};
+
