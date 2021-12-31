@@ -18,13 +18,13 @@ N/A
 _returnArray = [];
 
 
-_ctrl_init_edit_text = "";
-_ctrl_initplayerlocal_edit_text = format ["['InitializePlayer', [player]] call BIS_fnc_dynamicGroups;%1['InitializePlayer', [player, true]] call BIS_fnc_dynamicGroups;", endl];
-_ctrl_initplayerServer_edit_text = format ["{        %1 if (!isNull (getAssignedCuratorUnit _x)) then {            %1		_unit = getAssignedCuratorUnit _x;            %1		if (isNull (getAssignedCuratorlogic _unit)) then {                %1			unassignCurator _x;                %1			sleep 1;                %1			_unit assignCurator _x;                %1			if (isClass (configFile >> 'CfgPatches' >> 'task_force_radio')) then {                    %1				_unit call TFAR_fnc_isforcedCurator;                    %1                };                %1            };            %1        };        %1    } forEach allCurators;", endl];
-_ctrl_initServer_edit_text = "";
-_ctrl_onplayerKilled_edit_text = format ["[player, [missionnamespace, 'inventory_var']] call BIS_fnc_saveinventory;%1['Initialize', %2", endl, missionNamespace getVariable ["VKN_VTT_SpectatorOptions", "[ player, [], false, false, true]] call BIS_fnc_EGSpectator;"]];
-_ctrl_onplayerRespawn_edit_text = format ["[player, [missionnamespace, 'inventory_var']] call BIS_fnc_loadinventory;%1['Terminate', [ player]] call BIS_fnc_EGSpectator;", endl];
-_ctrl_description_edit_text = format ["respawnOnStart = 0;%1respawnTemplatesVirtual[] = {};", endl];
+_ctrl_init_edit_text = profileNamespace getVariable [ "VKN_VTT_initText_var", ""];
+_ctrl_initplayerlocal_edit_text = profileNamespace getVariable [ "VKN_VTT_initPlayerLocal_var", format ["['InitializePlayer', [player]] call BIS_fnc_dynamicGroups;%1['InitializePlayer', [player, true]] call BIS_fnc_dynamicGroups;", endl]];
+_ctrl_initplayerServer_edit_text = profileNamespace getVariable [ "VKN_VTT_initPlayerServer_var", format ["{        %1 if (!isNull (getAssignedCuratorUnit _x)) then {            %1		_unit = getAssignedCuratorUnit _x;            %1		if (isNull (getAssignedCuratorlogic _unit)) then {                %1			unassignCurator _x;                %1			sleep 1;                %1			_unit assignCurator _x;                %1			if (isClass (configFile >> 'CfgPatches' >> 'task_force_radio')) then {                    %1				_unit call TFAR_fnc_isforcedCurator;                    %1                };                %1            };            %1        };        %1    } forEach allCurators;", endl]];
+_ctrl_initServer_edit_text = profileNamespace getVariable [ "VKN_VTT_initServer_var", ""];
+_ctrl_onplayerKilled_edit_text = profileNamespace getVariable [ "VKN_VTT_onPlayerKilled_var", format ["[player, [missionnamespace, 'inventory_var']] call BIS_fnc_saveinventory;%1['Initialize', %2", endl, missionNamespace getVariable ["VKN_VTT_SpectatorOptions", "[ player, [], false, false, true]] call BIS_fnc_EGSpectator;"]]];
+_ctrl_onplayerRespawn_edit_text = profileNamespace getVariable [ "VKN_VTT_onPlayerRespawn_var", format ["[player, [missionnamespace, 'inventory_var']] call BIS_fnc_loadinventory;%1['Terminate', [ player]] call BIS_fnc_EGSpectator;", endl]];
+_ctrl_description_edit_text = profileNamespace getVariable [ "VKN_VTT_initText_var", format ["respawnOnStart = 0;%1respawnTemplatesVirtual[] = {};", endl]];
 
 
 _returnArray = [_ctrl_init_edit_text, _ctrl_initplayerlocal_edit_text, _ctrl_initplayerServer_edit_text, _ctrl_initServer_edit_text, _ctrl_onplayerKilled_edit_text, _ctrl_onplayerRespawn_edit_text, _ctrl_description_edit_text];
