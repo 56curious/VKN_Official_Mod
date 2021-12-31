@@ -280,17 +280,25 @@ _Show3Dgroupicons_Val = profileNamespace getVariable ["VKN_Show3Dgroupicons_Var"
 ////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////
 
-_VTT_init = profileNamespace getVariable ["VKN_VTT_initText_var", true];
-_VTT_initPlayerLocal = profileNamespace getVariable ["VKN_VTT_initPlayerLocal_var", true];
-_VTT_initPlayerServer = profileNamespace getVariable ["VKN_VTT_initPlayerServer_var", true];
-_VTT_initServer = profileNamespace getVariable ["VKN_VTT_initServer_var", true];
-_VTT_onPlayerKilled = profileNamespace getVariable ["VKN_VTT_onPlayerKilled_var", true];
-_VTT_onPlayerRespawn = profileNamespace getVariable ["VKN_VTT_onPlayerRespawn_var", true];
+
+
+
+
+
+_VTT_init = profileNamespace getVariable [ "VKN_VTT_initText_var", ""];
+_VTT_initPlayerLocal = profileNamespace getVariable [ "VKN_VTT_initPlayerLocal_var", format ["['InitializePlayer', [player]] call BIS_fnc_dynamicGroups;%1['InitializePlayer', [player, true]] call BIS_fnc_dynamicGroups;", endl]];
+_VTT_initPlayerServer = profileNamespace getVariable [ "VKN_VTT_initPlayerServer_var", format ["{        %1 if (!isNull (getAssignedCuratorUnit _x)) then {            %1		_unit = getAssignedCuratorUnit _x;            %1		if (isNull (getAssignedCuratorlogic _unit)) then {                %1			unassignCurator _x;                %1			sleep 1;                %1			_unit assignCurator _x;                %1			if (isClass (configFile >> 'CfgPatches' >> 'task_force_radio')) then {                    %1				_unit call TFAR_fnc_isforcedCurator;                    %1                };                %1            };            %1        };        %1    } forEach allCurators;", endl]];
+_VTT_initServer = profileNamespace getVariable [ "VKN_VTT_initServer_var", ""];
+_VTT_onPlayerKilled = profileNamespace getVariable [ "VKN_VTT_onPlayerKilled_var", format ["[player, [missionnamespace, 'inventory_var']] call BIS_fnc_saveinventory;%1['Initialize', %2", endl, missionNamespace getVariable ["VKN_VTT_SpectatorOptions", "[ player, [], false, false, true]] call BIS_fnc_EGSpectator;"]]];
+_VTT_onPlayerRespawn = profileNamespace getVariable [ "VKN_VTT_onPlayerRespawn_var", format ["[player, [missionnamespace, 'inventory_var']] call BIS_fnc_loadinventory;%1['Terminate', [ player]] call BIS_fnc_EGSpectator;", endl]];
+_VTT_descriptionEXT = profileNamespace getVariable [ "VKN_VTT_descriptionText_var", format ["respawnOnStart = 0;%1respawnTemplatesVirtual[] = {};", endl]];
+
+
 
 [
-    "VKN_VTT_VTT_init",
+    "VKN_VTT_init",
     "EDITBOX",
-    ["init.sqf", "Overwrite this files default value. LEAVE BLANK TO USE DEFAULT. Most cases this is NOT overwritten."],
+    ["init.sqf", "Overwrite this files default value. LEAVE ALONE TO USE DEFAULT. Most cases this is NOT overwritten."],
     ["Viking PMC Settings", "Template Tool - Default Text"],
     _VTT_init,
     nil,
@@ -301,9 +309,9 @@ _VTT_onPlayerRespawn = profileNamespace getVariable ["VKN_VTT_onPlayerRespawn_va
     }
 ] call CBA_settings_fnc_init;
 [
-    "VKN_VTT_VTT_initPlayerLocal",
+    "VKN_VTT_initPlayerLocal",
     "EDITBOX",
-    ["initPlayerLocal.sqf", "Overwrite this files default value. LEAVE BLANK TO USE DEFAULT. Most cases this is NOT overwritten."],
+    ["initPlayerLocal.sqf", "Overwrite this files default value. LEAVE ALONE TO USE DEFAULT. Most cases this is NOT overwritten."],
     ["Viking PMC Settings", "Template Tool - Default Text"],
     _VTT_initPlayerLocal,
     nil,
@@ -314,9 +322,9 @@ _VTT_onPlayerRespawn = profileNamespace getVariable ["VKN_VTT_onPlayerRespawn_va
     }
 ] call CBA_settings_fnc_init;
 [
-    "VKN_VTT_VTT_initPlayerServer",
+    "VKN_VTT_initPlayerServer",
     "EDITBOX",
-    ["initPlayerServer.sqf", "Overwrite this files default value. LEAVE BLANK TO USE DEFAULT. Most cases this is NOT overwritten."],
+    ["initPlayerServer.sqf", "Overwrite this files default value. LEAVE ALONE TO USE DEFAULT. Most cases this is NOT overwritten."],
     ["Viking PMC Settings", "Template Tool - Default Text"],
     _VTT_initPlayerServer,
     nil,
@@ -327,9 +335,9 @@ _VTT_onPlayerRespawn = profileNamespace getVariable ["VKN_VTT_onPlayerRespawn_va
     }
 ] call CBA_settings_fnc_init;
 [
-    "VKN_VTT_VTT_initServer",
+    "VKN_VTT_initServer",
     "EDITBOX",
-    ["initServer.sqf", "Overwrite this files default value. LEAVE BLANK TO USE DEFAULT. Most cases this is NOT overwritten."],
+    ["initServer.sqf", "Overwrite this files default value. LEAVE ALONE TO USE DEFAULT. Most cases this is NOT overwritten."],
     ["Viking PMC Settings", "Template Tool - Default Text"],
     _VTT_initServer,
     nil,
@@ -340,9 +348,9 @@ _VTT_onPlayerRespawn = profileNamespace getVariable ["VKN_VTT_onPlayerRespawn_va
     }
 ] call CBA_settings_fnc_init;
 [
-    "VKN_VTT_VTT_onPlayerKilled",
+    "VKN_VTT_onPlayerKilled",
     "EDITBOX",
-    ["onPlayerKilled.sqf", "Overwrite this files default value. LEAVE BLANK TO USE DEFAULT. Most cases this is NOT overwritten."],
+    ["onPlayerKilled.sqf", "Overwrite this files default value. LEAVE ALONE TO USE DEFAULT. Most cases this is NOT overwritten."],
     ["Viking PMC Settings", "Template Tool - Default Text"],
     _VTT_onPlayerKilled,
     nil,
@@ -353,9 +361,9 @@ _VTT_onPlayerRespawn = profileNamespace getVariable ["VKN_VTT_onPlayerRespawn_va
     }
 ] call CBA_settings_fnc_init;
 [
-    "VKN_VTT_VTT_onPlayerRespawn",
+    "VKN_VTT_onPlayerRespawn",
     "EDITBOX",
-    ["onPlayerRespawn.sqf", "Overwrite this files default value. LEAVE BLANK TO USE DEFAULT. Most cases this is NOT overwritten."],
+    ["onPlayerRespawn.sqf", "Overwrite this files default value. LEAVE ALONE TO USE DEFAULT. Most cases this is NOT overwritten."],
     ["Viking PMC Settings", "Template Tool - Default Text"],
     _VTT_onPlayerRespawn,
     nil,
@@ -365,3 +373,110 @@ _VTT_onPlayerRespawn = profileNamespace getVariable ["VKN_VTT_onPlayerRespawn_va
         saveProfileNamespace;
     }
 ] call CBA_settings_fnc_init;
+[
+    "VKN_VTT_descriptionEXT",
+    "EDITBOX",
+    ["description.ext", "Overwrite this files default value. LEAVE ALONE TO USE DEFAULT. Most cases this is NOT overwritten."],
+    ["Viking PMC Settings", "Template Tool - Default Text"],
+    _VTT_descriptionEXT,
+    nil,
+    {
+        params ["_value"];
+        profileNamespace setVariable ["VKN_VTT_descriptionText_var", _value];
+        saveProfileNamespace;
+    }
+] call CBA_settings_fnc_init;
+
+
+
+/*
+_VTT_defaultSide = profileNamespace getVariable [ "VKN_VTT_defaultSide_var", ["WEST","EAST","GUER"]];
+_side = "west";
+  switch (_VTT_defaultSide) do {
+      case ("WEST"): {
+        _side = "West";
+        _factionList = 1 call VKN_fnc_sideGetFaction;
+      };
+      case ("EAST"): {
+        _side = "East";
+        _factionList = 0 call VKN_fnc_sideGetFaction;
+      };
+      case ("GUER"): {
+        _side = "Indep";
+        _factionList = 2 call VKN_fnc_sideGetFaction;
+      };
+      default {};
+  };
+
+_VTT_defaultFaction = profileNamespace getVariable [ "VKN_VTT_defaultFaction_var", _factionList];
+
+_squadArray = "true" configClasses (configfile >> "CfgGroups" >> _side >> (_factionList select 0) >> "Infantry");
+_VTT_defaultSquad = profileNamespace getVariable [ "VKN_VTT_defaultSquad_var", _squadArray];
+_VTT_defaultGroups = profileNamespace getVariable [ "VKN_VTT_defaultGroups_var", true];
+_VTT_defaultLoadouts = profileNamespace getVariable [ "VKN_VTT_defaultLoadouts_var", true];
+[
+    "VKN_VTT_defaultSide",
+    "LIST",
+    ["Side", "Change the default side used in the tool. Allowed options are: WEST, EAST, GUER. Default is WEST."],
+    ["Viking PMC Settings", "Template Tool - Default Startup"],
+    _VTT_defaultSide,
+    nil,
+    {
+        params ["_value"];
+        profileNamespace setVariable ["VKN_VTT_defaultSide_var", _value];
+        saveProfileNamespace;
+    }
+] call CBA_settings_fnc_init;
+[
+    "VKN_VTT_defaultFaction",
+    "LIST",
+    ["Faction", "Change the default faction used in the tool. MUST be a classname and is assoicated with the selected side. Default is BLU_F."],
+    ["Viking PMC Settings", "Template Tool - Default Startup"],
+    _VTT_defaultFaction,
+    nil,
+    {
+        params ["_value"];
+        profileNamespace setVariable ["VKN_VTT_defaultFaction_var", _value];
+        saveProfileNamespace;
+    }
+] call CBA_settings_fnc_init;
+[
+    "VKN_VTT_defaultSquad",
+    "LIST",
+    ["Squad", "Change the default squad used in the tool. MUST be a displayname and is assoicated with the selected faction. Default is Rifle Squad."],
+    ["Viking PMC Settings", "Template Tool - Default Startup"],
+    _VTT_defaultSquad,
+    nil,
+    {
+        params ["_value"];
+        profileNamespace setVariable ["VKN_VTT_defaultSquad_var", _value];
+        saveProfileNamespace;
+    }
+] call CBA_settings_fnc_init;
+[
+    "VKN_VTT_defaultGroups",
+    "CHECKBOX",
+    ["Groups", "Select if dynamic groups is default on in the tool."],
+    ["Viking PMC Settings", "Template Tool - Default Startup"],
+    _VTT_defaultGroups,
+    nil,
+    {
+        params ["_value"];
+        profileNamespace setVariable ["VKN_VTT_defaultGroups_var", _value];
+        saveProfileNamespace;
+    }
+] call CBA_settings_fnc_init;
+[
+    "VKN_VTT_defaultLoadouts",
+    "CHECKBOX",
+    ["Loadouts", "Select if  loadout saving is default on in the tool."],
+    ["Viking PMC Settings", "Template Tool - Default Startup"],
+    _VTT_defaultLoadouts,
+    nil,
+    {
+        params ["_value"];
+        profileNamespace setVariable ["VKN_VTT_defaultLoadouts_var", _value];
+        saveProfileNamespace;
+    }
+] call CBA_settings_fnc_init;
+*/
