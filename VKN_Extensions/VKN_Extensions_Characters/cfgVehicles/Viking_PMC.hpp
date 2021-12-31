@@ -6,6 +6,7 @@ class B_VKN_Operator_Full_01 : B_Soldier_F_OCimport_02 {
     displayName = "Operator_Full";
     side = 1;
     faction = "B_VKN";
+    editorCategory = "VKN_Units";
 
     identityTypes[] = {"Head_NATO","LanguageENG_F","G_NATO_default"};
 
@@ -47,6 +48,7 @@ class B_VKN_Operator_Light_01 : B_VKN_Operator_Full_01 {
     displayName = "Operator_Light";
     side = 1;
     faction = "B_VKN";
+    editorCategory = "VKN_Units";
 
     identityTypes[] = {"Head_NATO","LanguageENG_F","G_NATO_default"};
 
@@ -86,6 +88,7 @@ class B_VKN_Operator_AT_01 : B_VKN_Operator_Full_01 {
     displayName = "Operator AT";
     side = 1;
     faction = "B_VKN";
+    editorCategory = "VKN_Units";
 
     identityTypes[] = {"Head_NATO","LanguageENG_F","G_NATO_default"};
 
@@ -127,6 +130,7 @@ class B_VKN_Operator_AT_Heavy_01 : B_VKN_Operator_AT_01 {
     displayName = "Operator AT (Heavy)";
     side = 1;
     faction = "B_VKN";
+    editorCategory = "VKN_Units";
 
     identityTypes[] = {"Head_NATO","LanguageENG_F","G_NATO_default"};
 
@@ -168,6 +172,7 @@ class B_VKN_Operator_AA_01 : B_VKN_Operator_AT_01 {
     displayName = "Operator AA";
     side = 1;
     faction = "B_VKN";
+    editorCategory = "VKN_Units";
 
     identityTypes[] = {"Head_NATO","LanguageENG_F","G_NATO_default"};
 
@@ -209,6 +214,7 @@ class B_VKN_Operator_Medic_01 : B_VKN_Operator_Full_01 {
     displayName = "Operator Medic";
     side = 1;
     faction = "B_VKN";
+    editorCategory = "VKN_Units";
 
     identityTypes[] = {"Head_NATO","LanguageENG_F","G_NATO_default"};
 
@@ -250,6 +256,7 @@ class B_VKN_Operator_Grenadier_01 : B_VKN_Operator_Light_01 {
     displayName = "Operator Grenadier";
     side = 1;
     faction = "B_VKN";
+    editorCategory = "VKN_Units";
 
     identityTypes[] = {"Head_NATO","LanguageENG_F","G_NATO_default"};
 
@@ -289,6 +296,7 @@ class B_VKN_Operator_Light_Gunner_01 : B_VKN_Operator_Light_01 {
     displayName = "Operator Light Gunner";
     side = 1;
     faction = "B_VKN";
+    editorCategory = "VKN_Units";
 
     identityTypes[] = {"Head_NATO","LanguageENG_F","G_NATO_default"};
 
@@ -328,6 +336,7 @@ class B_VKN_Operator_Heavy_Gunner_01 : B_VKN_Operator_Light_Gunner_01 {
     displayName = "Operator Heavy Gunner";
     side = 1;
     faction = "B_VKN";
+    editorCategory = "VKN_Units";
 
     identityTypes[] = {"Head_NATO","LanguageENG_F","G_NATO_default"};
 
@@ -369,6 +378,7 @@ class B_VKN_Operator_Medic_Alternative_01 : B_VKN_Operator_Medic_01 {
     displayName = "Operator Medic Alternative";
     side = 1;
     faction = "B_VKN";
+    editorCategory = "VKN_Units";
 
     identityTypes[] = {"Head_NATO","LanguageENG_F","G_NATO_default"};
 
@@ -410,6 +420,7 @@ class B_VKN_Operator_Engineer_Demo_01 : B_VKN_Operator_Full_01 {
     displayName = "Operator Engineer/Demo";
     side = 1;
     faction = "B_VKN";
+    editorCategory = "VKN_Units";
 
     identityTypes[] = {"Head_NATO","LanguageENG_F","G_NATO_default"};
 
@@ -451,6 +462,7 @@ class B_VKN_Pilot_01 : B_Pilot_F_OCimport_02 {
     displayName = "Pilot";
     side = 1;
     faction = "B_VKN";
+    editorCategory = "VKN_Units";
 
     identityTypes[] = {"Head_NATO","LanguageENG_F","G_NATO_default"};
 
@@ -492,6 +504,7 @@ class B_VKN_LOKI_Operator_01 : B_VKN_Operator_Light_01 {
     displayName = "LOKI Operator";
     side = 1;
     faction = "B_VKN";
+    editorCategory = "VKN_Units";
 
     identityTypes[] = {"Head_NATO","LanguageENG_F","G_NATO_default"};
 
@@ -531,6 +544,7 @@ class B_VKN_LOKI_Medic_01 : B_VKN_LOKI_Operator_01 {
     displayName = "LOKI Medic";
     side = 1;
     faction = "B_VKN";
+    editorCategory = "VKN_Units";
 
     identityTypes[] = {"Head_NATO","LanguageENG_F","G_NATO_default"};
 
@@ -572,6 +586,7 @@ class B_VKN_LOKI_UAV_01 : B_VKN_LOKI_Operator_01 {
     displayName = "LOKI UAV";
     side = 1;
     faction = "B_VKN";
+    editorCategory = "VKN_Units";
 
     identityTypes[] = {"Head_NATO","LanguageENG_F","G_NATO_default"};
 
