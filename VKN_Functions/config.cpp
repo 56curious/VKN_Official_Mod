@@ -40,6 +40,26 @@ class CfgFunctions
     };
   };
 
+  class KRON 
+  {
+    class functions
+    {
+      file = "\VKN_functions\Functions\KRON";
+      class arraySort{};
+      class arrayToUpper{};
+      class getArg{};
+      class getArgRev{};
+      class strFindFlag{};
+      class strIndex{};
+      class strInStr{};
+      class strLeft{};
+      class strLen{};
+      class strMid{};
+      class strRight{};
+      class strToArray{};
+    };
+  };
+
   class PX
   {
     class functions
