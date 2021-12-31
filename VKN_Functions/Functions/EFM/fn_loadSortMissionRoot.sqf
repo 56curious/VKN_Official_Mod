@@ -1,6 +1,6 @@
 /*
 Script name:    fn_loadSortMissionRoot.sqf
-Created on:     13 August ‎2021
+Created on:     13 August 2021
 Author:         Curious
 
 License:		This file is under "Arma Public License No Derivatives (APL-ND)"
@@ -55,6 +55,11 @@ _fileListAllowed = [];
 //example: t\ 
 //			t\t\ 
 //			t\t\t 
+//	should be
+//	t\
+//	  t\
+//	  	t\
+
 _efm_fileList tvAdd [[], ([_pathNew, _MissionWorldExtension, ""] call PX_fnc_stringReplace)];
 {
 	_x params ["_folderPath", "_folderFiles"];

@@ -47,7 +47,7 @@ class CfgFactionClasses
   displayName = "HEMTT (Black)";
   side = 1;
   priority = 10;
-  icon = "\VKN_Trucks\vehicles\cfgFactionClasses_ca.paa";
+  icon = "\VKN_Objects\vehicles\cfgFactionClasses_ca.paa";
  };
  class Hunter_Black {
 	displayName = "Hunter (Black)";
@@ -172,11 +172,64 @@ class CfgVehicles {
 
 
   //SUV Configs
-  class tahoe_08: tahoe_08_base { scope = private; };
-  class tahoe_ltz_08: tahoe_08_base { scope = private; };
-  class suburban: tahoe_08_base { scope = private; };
-  class tahoe_LUMI: tahoe_08_base { scope = private; };
-  class tahoe_UNM: tahoe_08_base { scope = private; };
+  class tahoe_08: tahoe_08_base { 
+    scope = private;  
+    armor = 40;
+    armorStructural= 1;
+    armorFuel = 1.4;
+    armorGlass = 0.5;
+    armorLights = 0.4;
+    armorWheels = 0.05;
+    gearBox[] = {-8,0,10,6.15,4.44,3.33};
+    maxSpeed = 120;
+    
+  };
+  class tahoe_ltz_08: tahoe_08_base { 
+    scope = private;
+    armor = 40;
+    armorStructural= 1;
+    armorFuel = 1.4;
+    armorGlass = 0.5;
+    armorLights = 0.4;
+    armorWheels = 0.05;
+    gearBox[] = {-8,0,10,6.15,4.44,3.33};
+    maxSpeed = 120;
+    
+  };
+  class suburban: tahoe_08_base { 
+    scope = private; 
+    armor = 40;
+    armorStructural= 1;
+    armorFuel = 1.4;
+    armorGlass = 0.5;
+    armorLights = 0.4;
+    armorWheels = 0.05;
+    gearBox[] = {-8,0,10,6.15,4.44,3.33};
+    maxSpeed = 120;
+    
+  };
+  class tahoe_LUMI: tahoe_08_base { 
+    scope = private;
+    armor = 40;
+    armorStructural= 1;
+    armorFuel = 1.4;
+    armorGlass = 0.5;
+    armorLights = 0.4;
+    armorWheels = 0.05;
+    gearBox[] = {-8,0,10,6.15,4.44,3.33};
+  };
+  class tahoe_UNM: tahoe_08_base { 
+    scope = private; 
+    armor = 40;
+    armorStructural= 1;
+    armorFuel = 1.4;
+    armorGlass = 0.5;
+    armorLights = 0.4;
+    armorWheels = 0.05;
+    gearBox[] = {-8,0,10,6.15,4.44,3.33};
+    maxSpeed = 120;
+    
+  };
 
   #include "\VKN_Objects\Configs\Tahoes.hpp"
 };
@@ -184,7 +237,7 @@ class CfgVehicles {
 
 
 class CfgMagazines {
-	class 20Rnd_762x51_Mag;
+	class 40Rnd_762x51_Mag;
 	class 30Rnd_9x21_Mag;
 
 	class VKN_30Rnd_9x39mm_Mag : 30Rnd_9x21_Mag {

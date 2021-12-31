@@ -1,188 +1,21 @@
 class CfgPatches {
     class VKN_PMC_Characters {
         units[] = {
-            "B_VKN_ODIN_Operator_PMC_01",
-            "B_VKN_ODIN_Platoon_Commander_PMC_01",
-            "B_VKN_ODIN_Squad_Leader_PMC_01",
-            "B_VKN_ODIN_Group_Leader_PMC_01",
-            "B_VKN_ODIN_Team_Leader_PMC_01",
-            "B_VKN_ODIN_Operator_Light_PMC_01",
-            "B_VKN_ODIN_Anti_Tank_Operator_PMC_01",
-            "B_VKN_ODIN_Paramedic_PMC_01",
-            "B_VKN_ODIN_Field_Doctor_PMC_01",
-            "B_VKN_ODIN_Demo_Expert_PMC_01",
-            "B_VKN_ODIN_Automatic_Rifle_Operator_PMC_01",
-            "B_VKN_ODIN_Heavy_Machine_Gun_Operator_PMC_01",
-            "B_VKN_ODIN_Mechanic_PMC_01",
-            "B_VKN_ODIN_Grenadier_PMC_01",
-            "B_VKN_ODIN_Marksman_PMC_01",
-            "B_VKN_ODIN_Sharpshooter_PMC_01",
-            "B_VKN_ODIN_Vehicle_Crew_PMC_01",
-            "B_VKN_ODIN_MA_FEP_PMC_01",
-            "B_VKN_ODIN_M1232_M2_PMC_01",
-            "B_VKN_ODIN_M1232_MK19_PMC_01",
-            "B_VKN_ODIN_M2A3_PMC_01",
-            "B_VKN_ODIN_M113A3_M2_PMC_01",
-            "B_VKN_ODIN_M113A3_M240_PMC_01",
-            "B_VKN_ODIN_M113A3_M2_Ammo_PMC_01",
-            "B_VKN_ODIN_M977A4_Transport_PMC_01",
-            "B_VKN_ODIN_M977A4_Repair_PMC_01",
-            "B_VKN_ODIN_M978A4_Fuel_PMC_01",
-            "B_VKN_ODIN_M978A4_Ammo_PMC_02",
-            "B_VKN_ODIN_Humvee_4D_Half_PMC_01",
-            "B_VKN_ODIN_Humvee_Unarmed_PMC_01",
-            "B_VKN_ODIN_Humvee_M2_PMC_01",
-            "B_VKN_ODIN_Humvee_MK19_PMC_01",
-            "B_VKN_ODIN_Humvee_AT_PMC_01",
-
-            "B_VKN_VIS_AGENT1_PMC_01",
-            "B_VKN_VIS_AGENT2_PMC_01",
-            "B_VKN_VIS_AGENT3_PMC_01",
-            "B_VKN_VIS_AGENT4_PMC_01",
-            "B_VKN_VIS_AGENT5_PMC_01",
-            "B_VKN_VIS_AGENT6_PMC_01",
-            "B_VKN_VIS_AGENT7_PMC_01",
-            "B_VKN_VIS_ECHO_PMC_01",
-            "B_VKN_VIS_Motorboat_PMC_01",
-            "B_VKN_VIS_OFFROAD_PMC_01",
-            "B_VKN_VIS_HATCHBACK_PMC_01",
-            "B_VKN_VIS_MD500_PMC_01",
-            "B_VKN_VIS_DRONE_PMC_01",
-            "B_VKN_VIS_LANDROVER_PMC_01",
-            "B_VKN_VIS_URAL_PMC_01",
-
-            "B_VKN_VCG_SUNRAY_PMC_01",
-            "B_VKN_VCG_BASEPLATE_PMC_01",
-            "B_VKN_VCG_WOLFSDEN_PMC_01",
-            "B_VKN_VCG_FIREFLY_PMC_01",
-
-            "B_VKN_VALKYRIE_DECKCREW_PMC_01",
-            "B_VKN_VALKYRIE_JETPILOT_PMC_01",
-            "B_VKN_VALKYRIE_PILOT_PMC_01",
-            "B_VKN_VALKYRIE_CREW_PMC_01",
-            "B_VKN_VALKYRIE_A10_PMC_01",
-            "B_VKN_VALKYRIE_F22_PMC_01",
-            "B_VKN_VALKYRIE_F16_PMC_01",
-            "B_VKN_VALKYRIE_BLACKFISH_PMC_01",
-            "B_VKN_VALKYRIE_BLACKFISHI_PMC_01",
-            "B_VKN_VALKYRIE_BLACKFISHV_PMC_01",
-            "B_VKN_VALKYRIE_AH64D_PMC_01",
-            "B_VKN_VALKYRIE_CH47F_PMC_01",
-            "B_VKN_VALKYRIE_CH47FD_PMC_01",
-            "B_VKN_VALKYRIE_UH60M_PMC_01",
-            "B_VKN_VALKYRIE_UH60MMED_PMC_01",
-            "B_VKN_VALKYRIE_UH_1Y_PMC_01",
-            "B_VKN_VALKYRIE_CH53E_PMC_01",
-            "B_VKN_VALKYRIE_UCAV_PMC_01",
-            "B_VKN_VALKYRIE_UH80_PMC_01",
-            "B_VKN_VALKYRIE_AH6M_PMC_01",
-            "B_VKN_VALKYRIE_OH6M_PMC_01",
-
-            "B_VKN_TYR_AR_PMC_01",
-            "B_VKN_TYR_GRENADIER_PMC_01",
-            "B_VKN_TYR_HGREN_PMC_01",
-            "B_VKN_TYR_MEDIC_PMC_01",
-            "B_VKN_TYR_RIFLEMAN_PMC_01",
-            "B_VKN_TYR_SQL_PMC_01",
-            "B_VKN_TYR_HUMVEE_PMC_01",
-            "B_VKN_TYR_DHUMVEE_PMC_01",
-            "B_VKN_TYR_M11A3_PMC_01",
-            "B_VKN_TYR_DM11A3_PMC_01",
-            "B_VKN_TYR_TRANSPORT_PMC_01",
-
-            "B_VKN_THOR_AT_PMC_01",
-            "B_VKN_THOR_BREACHER_PMC_01",
-            "B_VKN_THOR_DEMO_PMC_01",
-            "B_VKN_THOR_GRENADIER_PMC_01",
-            "B_VKN_THOR_MARKSMAN_PMC_01",
-            "B_VKN_THOR_MEDIC_PMC_01",
-            "B_VKN_THOR_RIFLEMAN_PMC_01",
-            "B_VKN_THOR_SMG_PMC_01",
-            "B_VKN_THOR_LEAD_PMC_01",
-            "B_VKN_THOR_C130J_PMC_01",
-
-            "B_VKN_SIF_RIFLEMAN_PMC_01",
-            "B_VKN_SIF_AA_PMC_01",
-            "B_VKN_SIF_AT_PMC_01",
-            "B_VKN_SIF_AR_PMC_01",
-            "B_VKN_SIF_DEMO_PMC_01",
-            "B_VKN_SIF_MEDIC_PMC_01",
-            "B_VKN_SIF_SQL_PMC_01",
-            "B_VKN_SIF_HUMVEE_PMC_01",
-            "B_VKN_SIF_IFV_PMC_01",
-            "B_VKN_SIF_SOC_PMC_01",
-            "B_VKN_SIF_BADGER_PMC_01",
-            "B_VKN_SIF_RADIOMAN_PMC_01",
-
-            "B_VKN_LOKI_RIFLEMAN_PMC_01",
-            "B_VKN_LOKI_OPERATOR_PMC_01",
-            "B_VKN_LOKI_BREACHER_PMC_01",
-            "B_VKN_LOKI_LEADER_PMC_01",
-            "B_VKN_LOKI_RADIOMAN_PMC_01",
-            "B_VKN_LOKI_SNIPER_PMC_01",
-            "B_VKN_LOKI_SMG_PMC_01",
-            "B_VKN_LOKI_GRENADIER_PMC_01",
-            "B_VKN_LOKI_MEDIC_PMC_01",
-            "B_VKN_LOKI_MARSKMAN_PMC_01",
-            "B_VKN_LOKI_Dingy_PMC_01",
-            "B_VKN_LOKI_LITTLEBIRD_PMC_01",
-            "B_VKN_LOKI_BLACKHAWK_PMC_01",
-            "B_VKN_LOKI_HUMVEE_PMC_01",
-            "B_VKN_LOKI_JEEP_PMC_01",
-            "B_VKN_LOKI_OFFROAD_PMC_01",
-
-            "B_VKN_HEIMDAL_RIFLEMAN_PMC_01",
-            "B_VKN_HEIMDAL_POINTMAN_PMC_01",
-            "B_VKN_HEIMDAL_EOD_PMC_01",
-            "B_VKN_HEIMDAL_MEDIC_PMC_01",
-            "B_VKN_HEIMDAL_SQUADLEADER_PMC_01",
-            "B_VKN_HEIMDAL_GRENADIER_PMC_01",
-            "B_VKN_HEIMDAL_TRANSPORT_PMC_01",
-            "B_VKN_HEIMDAL_COVERED_PMC_01",
-            "B_VKN_HEIMDAL_REPAIR_PMC_01",
-            "B_VKN_HEIMDAL_MEDICAL_PMC_01",
-            "B_VKN_HEIMDAL_FUEL_PMC_01",
-            "B_VKN_HEIMDAL_M2R_PMC_01",
-            "B_VKN_HEIMDAL_M2A_PMC_01",
-            "B_VKN_HEIMDAL_HUMVEE_PMC_01",
-            "B_VKN_HEIMDAL_M113A3_PMC_01",
-            "B_VKN_HEIMDAL_TRANSPORTO_PMC_01",
-
-            "B_VKN_FENRIR_COMMANDER_PMC_01",
-            "B_VKN_FENRIR_CREW_PMC_01",
-            "B_VKN_FENRIR_MORTARB_PMC_01",
-            "B_VKN_FENRIR_MORTART_PMC_01",
-            "B_VKN_FENRIR_SHOLEF_PMC_01",
-            "B_VKN_FENRIR_BARDELAS_PMC_01",
-            "B_VKN_FENRIR_M252_PMC_01",
-            "B_VKN_FENRIR_CANNON_PMC_01",
-
-            "B_VKN_BALDER_RIFLEMAN_PMC_01",
-            "B_VKN_BALDER_SQUADLEADER_PMC_01",
-            "B_VKN_BALDER_RADIOMAN_PMC_01",
-            "B_VKN_BALDER_MEDIC_PMC_01",
-            "B_VKN_BALDER_AA_PMC_01",
-            "B_VKN_BALDER_AT_PMC_01",
-            "B_VKN_BALDER_GRENADIER_PMC_01",
-            "B_VKN_BALDER_MARKSMAN_PMC_01",
-            "B_VKN_BALDER_HUMVEE_PMC_01",
-            "B_VKN_BALDER_M1232_PMC_01",
-            "B_VKN_BALDER_CHINOOK_PMC_01",
-            "B_VKN_BALDER_LANDING_PMC_01",
-            "B_VKN_BALDER_UHUMVEE_PMC_01",
-
-            "B_VKN_AEGIR_RIFLEMAN_PMC_01",
-            "B_VKN_AEGIR_LEADER_PMC_01",
-            "B_VKN_AEGIR_RADIOMAN_PMC_01",
-            "B_VKN_AEGIR_CAPTAIN_PMC_01",
-            "B_VKN_AEGIR_ADMIRAL_PMC_01",
-            "B_VKN_AEGIR_BREACHER_PMC_01",
-            "B_VKN_AEGIR_CREW_PMC_01",
-            "B_VKN_AEGIR_DEMOLITIONS_PMC_01",
-            "B_VKN_AEGIR_MEDIC_PMC_01",
-            "B_VKN_AEGIR_SCUBA_PMC_01",
-            "B_VKN_AEGIR_ASSUALTBOAT_PMC_01",
-            "B_VKN_AEGIR_BOARDING_PMC_01",
+            "B_VKN_Operator_Full_01",
+            "B_VKN_Operator_Light_01",
+            "B_VKN_Operator_AT_01",
+            "B_VKN_Operator_AT_Heavy_01",
+            "B_VKN_Operator_AA_01",
+            "B_VKN_Operator_Medic_01",
+            "B_VKN_Operator_Grenadier_01",
+            "B_VKN_Operator_Light_Gunner_01",
+            "B_VKN_Operator_Heavy_Gunner_01",
+            "B_VKN_Operator_Medic_Alternative_01",
+            "B_VKN_Operator_Engineer_Demo_01",
+            "B_VKN_Pilot_01",
+            "B_VKN_LOKI_Operator_01",
+            "B_VKN_LOKI_Medic_01",
+            "B_VKN_LOKI_UAV_01",
 
             "B_Greek_Officer_Basic_Police_01",
             "B_Greek_Officer_Armed_Police_01",
@@ -650,18 +483,7 @@ class cfgVehicles {
     #include "cfgVehicles\VWF_ION.hpp"
 
     //West
-    #include "cfgVehicles\Viking_PMC_ODIN.hpp"
-    #include "cfgVehicles\Viking_PMC_THOR.hpp"
-    #include "cfgVehicles\Viking_PMC_VIS.hpp"
-    #include "cfgVehicles\Viking_PMC_VCG.hpp"
-    #include "cfgVehicles\Viking_PMC_VALKYRIE.hpp"
-    #include "cfgVehicles\Viking_PMC_TYR.hpp"
-    #include "cfgVehicles\Viking_PMC_SIF.hpp"
-    #include "cfgVehicles\Viking_PMC_LOKI.hpp"
-    #include "cfgVehicles\Viking_PMC_HEIMDAL.hpp"
-    #include "cfgVehicles\Viking_PMC_FENRIR.hpp"
-    #include "cfgVehicles\Viking_PMC_AEGIR.hpp"
-    #include "cfgVehicles\Viking_PMC_BALDER.hpp"
+    #include "cfgVehicles\Viking_PMC.hpp"
     #include "cfgVehicles\Greek_Police.hpp"
     #include "cfgVehicles\bbarmy.hpp"
     #include "cfgVehicles\Taiga.hpp"
@@ -691,17 +513,7 @@ class cfgGroups {
 
 
     class West {
-        #include "cfgGroups\Viking_PMC_ODIN.hpp"
-        #include "cfgGroups\Viking_PMC_THOR.hpp"
-        #include "cfgGroups\Viking_PMC_VIS.hpp"
-        #include "cfgGroups\Viking_PMC_VALKYRIE.hpp"
-        #include "cfgGroups\Viking_PMC_TYR.hpp"
-        #include "cfgGroups\Viking_PMC_SIF.hpp"
-        #include "cfgGroups\Viking_PMC_LOKI.hpp"
-        #include "cfgGroups\Viking_PMC_HEIMDAL.hpp"
-        #include "cfgGroups\Viking_PMC_FENRIR.hpp"
-        #include "cfgGroups\Viking_PMC_AEGIR.hpp"
-        #include "cfgGroups\Viking_PMC_BALDER.hpp"
+        #include "cfgGroups\Viking_PMC.hpp"
         #include "cfgGroups\bbarmy.hpp"
         #include "cfgGroups\Taiga.hpp"
         #include "cfgGroups\Legion.hpp"

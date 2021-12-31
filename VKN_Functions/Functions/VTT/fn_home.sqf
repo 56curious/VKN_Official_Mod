@@ -26,26 +26,14 @@ _path = [getMissionPath "", "\", "\\"] call PX_fnc_stringReplace;
 // check files exist for other buttons
 _filesExist = false;
 _createFiles = ["viking.VKN_checkFile", [_path, "initplayerlocal.sqf"]] call (uiNamespace getVariable "py3_fnc_callExtension");
-switch (_createFiles) do {
-    // catch empty array as false
-    case ([]): {
-        _filesExist = false;
-    };
-    case ("true"): {
-        _filesExist = true;
-    };
-    case ("false"): {
-        _filesExist = false;
-    };
-    default {
-        _filesExist = false;
-    };
+if (toLower _createFiles == "true") then {
+    _filesExist = true;
 };
 
 // setup displays
 _VTT_Home_Display = findDisplay 313 createDisplay "VKN_Template_tool_Home";
 if (isNull _VTT_Home_Display) exitwith {
-    systemChat "can't find display."
+    systemChat "Can't find display."
 };
 
 // Disable Escape Key
