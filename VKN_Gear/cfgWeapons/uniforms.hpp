@@ -436,11 +436,11 @@ class VKN_Functionary_3: VKN_Functionary_Base {
 	};
 
 //Mountain Suit
-	class VKN_I_mntsuit_Brown_Khaki: U_O_R_Gorka_01_F {
+	class VKN_I_mntsuit_aor_black: U_O_R_Gorka_01_F {
 		author="Jonmo";
-		displayName="[VKN] Mountain Suit (Brown/Khaki)";
+		displayName="[VKN] Mountain Suit (Aor1/Black)";
 		model = "\a3\Characters_F_Enoch\Uniforms\Gorka_01_F.p3d";
-		hiddenSelectionsTextures[]={"\VKN_Gear\data\Uniforms\vkn_mntsuit_BrownKhaki_co.paa"};
+		hiddenSelectionsTextures[]={"\VKN_Gear\data\Uniforms\vkn_mntsuit_aor_black_co.paa"};
 		class ItemInfo: UniformItem	{
 			uniformClass="VKN_Dummy_mntsuit_Brown_Khaki";
 			containerClass="Supply40";
@@ -448,11 +448,11 @@ class VKN_Functionary_3: VKN_Functionary_Base {
 		};
 	};
 
-	class VKN_I_mntsuit_Brown_Jeans: U_O_R_Gorka_01_F {
+	class VKN_I_mntsuit_aor_green: U_O_R_Gorka_01_F {
 		author="Jonmo";
-		displayName="[VKN] Mountain Suit (Brown/Jeans)";
+		displayName="[VKN] Mountain Suit (Aor1/green)";
 		model = "\a3\Characters_F_Enoch\Uniforms\Gorka_01_F.p3d";
-		hiddenSelectionsTextures[]={"\VKN_Gear\data\Uniforms\vkn_mntsuit_BrownJeans_co.paa"};
+		hiddenSelectionsTextures[]={"\VKN_Gear\data\Uniforms\vkn_mntsuit_aor_green_co.paa"};
 		class ItemInfo: UniformItem	{
 			uniformClass="VKN_Dummy_mntsuit_Brown_Jeans";
 			containerClass="Supply40";
@@ -460,11 +460,11 @@ class VKN_Functionary_3: VKN_Functionary_Base {
 		};
 	};
 
-	class VKN_I_mntsuit_Green_Jeans: U_O_R_Gorka_01_F {
+	class VKN_I_mntsuit_aor_grey: U_O_R_Gorka_01_F {
 		author="Jonmo";
-		displayName="[VKN] Mountain Suit (Green/Jeans)";
+		displayName="[VKN] Mountain Suit (Aor1/Grey)";
 		model = "\a3\Characters_F_Enoch\Uniforms\Gorka_01_F.p3d";
-		hiddenSelectionsTextures[]={"\VKN_Gear\data\Uniforms\vkn_mntsuit_GreenJeans_co.paa"};
+		hiddenSelectionsTextures[]={"\VKN_Gear\data\Uniforms\vkn_mntsuit_aor_grey_co.paa"};
 		class ItemInfo: UniformItem	{
 			uniformClass="VKN_Dummy_mntsuit_Green_Jeans";
 			containerClass="Supply40";
@@ -472,11 +472,11 @@ class VKN_Functionary_3: VKN_Functionary_Base {
 		};
 	};
 
-	class VKN_I_mntsuit_Green_Khaki: U_O_R_Gorka_01_F {
+	class VKN_I_mntsuit_aor2_black: U_O_R_Gorka_01_F {
 		author="Jonmo";
-		displayName="[VKN] Mountain Suit (Green/Khaki)";
+		displayName="[VKN] Mountain Suit (Aor2/Black)";
 		model = "\a3\Characters_F_Enoch\Uniforms\Gorka_01_F.p3d";
-		hiddenSelectionsTextures[]={"\VKN_Gear\data\Uniforms\vkn_mntsuit_GreenKhaki_co.paa"};
+		hiddenSelectionsTextures[]={"\VKN_Gear\data\Uniforms\vkn_mntsuit_aor2_black_co.paa"};
 		class ItemInfo: UniformItem	{
 			uniformClass="VKN_Dummy_mntsuit_Green_Khaki";
 			containerClass="Supply40";
@@ -484,11 +484,11 @@ class VKN_Functionary_3: VKN_Functionary_Base {
 		};
 	};
 
-	class VKN_I_mntsuit_Green_Multicam: U_O_R_Gorka_01_F {
+	class VKN_I_mntsuit_aor2_grey: U_O_R_Gorka_01_F {
 		author="Jonmo";
-		displayName="[VKN] Mountain Suit (Green/Multicam)";
+		displayName="[VKN] Mountain Suit (Aor2/Grey)";
 		model = "\a3\Characters_F_Enoch\Uniforms\Gorka_01_F.p3d";
-		hiddenSelectionsTextures[]={"\VKN_Gear\data\Uniforms\vkn_mntsuit_GreenMulticam_co.paa"};
+		hiddenSelectionsTextures[]={"\VKN_Gear\data\Uniforms\vkn_mntsuit_aor2_grey_co.paa"};
 		class ItemInfo: UniformItem	{
 			uniformClass="VKN_Dummy_mntsuit_Green_Multicam";
 			containerClass="Supply40";
@@ -496,11 +496,11 @@ class VKN_Functionary_3: VKN_Functionary_Base {
 		};
 	};
 
-	class VKN_I_mntsuit_Blue_Jeans: U_O_R_Gorka_01_F {
+	class VKN_I_mntsuit_multicam_black: U_O_R_Gorka_01_F {
 		author="Jonmo";
-		displayName="[VKN] Mountain Suit (Dark/Jeans)";
+		displayName="[VKN] Mountain Suit (Multicam/Black)";
 		model = "\a3\Characters_F_Enoch\Uniforms\Gorka_01_F.p3d";
-		hiddenSelectionsTextures[]={"\VKN_Gear\data\Uniforms\vkn_mntsuit_BlueJeans_co.paa"};
+		hiddenSelectionsTextures[]={"\VKN_Gear\data\Uniforms\vkn_mntsuit_multicam_black_co.paa"};
 		class ItemInfo: UniformItem	{
 			uniformClass="VKN_Dummy_mntsuit_Blue_Jeans";
 			containerClass="Supply40";
@@ -508,11 +508,11 @@ class VKN_Functionary_3: VKN_Functionary_Base {
 		};
 	};
 
-    class VKN_I_mntsuit_Blue_Khaki: U_O_R_Gorka_01_F {
+    class VKN_I_mntsuit_multicam_green: U_O_R_Gorka_01_F {
 		author="Jonmo";
-		displayName="[VKN] Mountain Suit (Dark/Khaki)";
+		displayName="[VKN] Mountain Suit (Multicam/Green)";
 		model = "\a3\Characters_F_Enoch\Uniforms\Gorka_01_F.p3d";
-		hiddenSelectionsTextures[]={"\VKN_Gear\data\Uniforms\vkn_mntsuit_BlueKhaki_co.paa"};
+		hiddenSelectionsTextures[]={"\VKN_Gear\data\Uniforms\vkn_mntsuit_multicam_green_co.paa"};
 		class ItemInfo: UniformItem	{
 			uniformClass="VKN_Dummy_mntsuit_Blue_Khaki";
 			containerClass="Supply40";
@@ -520,17 +520,50 @@ class VKN_Functionary_3: VKN_Functionary_Base {
 		};
 	};
 
-	class VKN_I_mntsuit_Blue_Multicam: U_O_R_Gorka_01_F {
+	class VKN_I_mntsuit_multicam_grey: U_O_R_Gorka_01_F {
 		author="Jonmo";
-		displayName="[VKN] Mountain Suit (Dark/Multicam)";
+		displayName="[VKN] Mountain Suit (Multicam/Grey)";
 		model = "\a3\Characters_F_Enoch\Uniforms\Gorka_01_F.p3d";
-		hiddenSelectionsTextures[]={"\VKN_Gear\data\Uniforms\vkn_mntsuit_BlueMulticam_co.paa"};
+		hiddenSelectionsTextures[]={"\VKN_Gear\data\Uniforms\vkn_mntsuit_multicam_grey_co.paa"};
 		class ItemInfo: UniformItem	{
 			uniformClass="VKN_Dummy_mntsuit_Blue_Multicam";
 			containerClass="Supply40";
 			mass=40;
 		};
 	};
+
+	class VKN_I_mntsuit_winter_full: U_O_R_Gorka_01_F {
+		author="Jonmo";
+		displayName="[VKN] Mountain Suit (Winter/Full)";
+		model = "\a3\Characters_F_Enoch\Uniforms\Gorka_01_F.p3d";
+		hiddenSelectionsTextures[]={"\VKN_Gear\data\Uniforms\vkn_mntsuit_winter_full_co.paa"};
+		class ItemInfo: UniformItem	{
+			uniformClass="VKN_Dummy_mntsuit_Blue_Multicam";
+			containerClass="Supply40";
+			mass=40;
+		};
+	};
+
+	class VKN_I_mntsuit_winter_half: U_O_R_Gorka_01_F {
+		author="Jonmo";
+		displayName="[VKN] Mountain Suit (Winter/Multicam)";
+		model = "\a3\Characters_F_Enoch\Uniforms\Gorka_01_F.p3d";
+		hiddenSelectionsTextures[]={"\VKN_Gear\data\Uniforms\vkn_mntsuit_winter_half_co.paa"};
+		class ItemInfo: UniformItem	{
+			uniformClass="VKN_Dummy_mntsuit_Blue_Multicam";
+			containerClass="Supply40";
+			mass=40;
+		};
+	};
+
+	class VKN_I_mntsuit_Brown_Khaki: VKN_I_mntsuit_multicam_black {scope = 0;};
+	class VKN_I_mntsuit_Brown_Jeans: VKN_I_mntsuit_Brown_Khaki {};
+	class VKN_I_mntsuit_Green_Jeans: VKN_I_mntsuit_Brown_Khaki {};
+	class VKN_I_mntsuit_Green_Khaki: VKN_I_mntsuit_Brown_Khaki {};
+	class VKN_I_mntsuit_Green_Multicam: VKN_I_mntsuit_Brown_Khaki {};
+	class VKN_I_mntsuit_Blue_Jeans: VKN_I_mntsuit_Brown_Khaki {};
+	class VKN_I_mntsuit_Blue_Khaki: VKN_I_mntsuit_Brown_Khaki {};
+	class VKN_I_mntsuit_Blue_Multicam: VKN_I_mntsuit_Brown_Khaki {};
 
 //T shirts
 
