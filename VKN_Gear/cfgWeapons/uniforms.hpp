@@ -442,7 +442,7 @@ class VKN_Functionary_3: VKN_Functionary_Base {
 		model = "\a3\Characters_F_Enoch\Uniforms\Gorka_01_F.p3d";
 		hiddenSelectionsTextures[]={"\VKN_Gear\data\Uniforms\vkn_mntsuit_aor_black_co.paa"};
 		class ItemInfo: UniformItem	{
-			uniformClass="VKN_Dummy_mntsuit_Brown_Khaki";
+			uniformClass="VKN_Dummy_mntsuit_aor_black";
 			containerClass="Supply40";
 			mass=40;
 		};
@@ -454,7 +454,7 @@ class VKN_Functionary_3: VKN_Functionary_Base {
 		model = "\a3\Characters_F_Enoch\Uniforms\Gorka_01_F.p3d";
 		hiddenSelectionsTextures[]={"\VKN_Gear\data\Uniforms\vkn_mntsuit_aor_green_co.paa"};
 		class ItemInfo: UniformItem	{
-			uniformClass="VKN_Dummy_mntsuit_Brown_Jeans";
+			uniformClass="VKN_Dummy_mntsuit_aor_green";
 			containerClass="Supply40";
 			mass=40;
 		};
@@ -466,7 +466,7 @@ class VKN_Functionary_3: VKN_Functionary_Base {
 		model = "\a3\Characters_F_Enoch\Uniforms\Gorka_01_F.p3d";
 		hiddenSelectionsTextures[]={"\VKN_Gear\data\Uniforms\vkn_mntsuit_aor_grey_co.paa"};
 		class ItemInfo: UniformItem	{
-			uniformClass="VKN_Dummy_mntsuit_Green_Jeans";
+			uniformClass="VKN_Dummy_mntsuit_aor_grey";
 			containerClass="Supply40";
 			mass=40;
 		};
@@ -478,7 +478,7 @@ class VKN_Functionary_3: VKN_Functionary_Base {
 		model = "\a3\Characters_F_Enoch\Uniforms\Gorka_01_F.p3d";
 		hiddenSelectionsTextures[]={"\VKN_Gear\data\Uniforms\vkn_mntsuit_aor2_black_co.paa"};
 		class ItemInfo: UniformItem	{
-			uniformClass="VKN_Dummy_mntsuit_Green_Khaki";
+			uniformClass="VKN_Dummy_mntsuit_aor2_black";
 			containerClass="Supply40";
 			mass=40;
 		};
@@ -490,7 +490,7 @@ class VKN_Functionary_3: VKN_Functionary_Base {
 		model = "\a3\Characters_F_Enoch\Uniforms\Gorka_01_F.p3d";
 		hiddenSelectionsTextures[]={"\VKN_Gear\data\Uniforms\vkn_mntsuit_aor2_grey_co.paa"};
 		class ItemInfo: UniformItem	{
-			uniformClass="VKN_Dummy_mntsuit_Green_Multicam";
+			uniformClass="VKN_Dummy_mntsuit_aor2_grey";
 			containerClass="Supply40";
 			mass=40;
 		};
@@ -502,7 +502,7 @@ class VKN_Functionary_3: VKN_Functionary_Base {
 		model = "\a3\Characters_F_Enoch\Uniforms\Gorka_01_F.p3d";
 		hiddenSelectionsTextures[]={"\VKN_Gear\data\Uniforms\vkn_mntsuit_multicam_black_co.paa"};
 		class ItemInfo: UniformItem	{
-			uniformClass="VKN_Dummy_mntsuit_Blue_Jeans";
+			uniformClass="VKN_Dummy_mntsuit_multicam_black";
 			containerClass="Supply40";
 			mass=40;
 		};
@@ -514,7 +514,7 @@ class VKN_Functionary_3: VKN_Functionary_Base {
 		model = "\a3\Characters_F_Enoch\Uniforms\Gorka_01_F.p3d";
 		hiddenSelectionsTextures[]={"\VKN_Gear\data\Uniforms\vkn_mntsuit_multicam_green_co.paa"};
 		class ItemInfo: UniformItem	{
-			uniformClass="VKN_Dummy_mntsuit_Blue_Khaki";
+			uniformClass="VKN_Dummy_mntsuit_multicam_green";
 			containerClass="Supply40";
 			mass=40;
 		};
@@ -526,7 +526,7 @@ class VKN_Functionary_3: VKN_Functionary_Base {
 		model = "\a3\Characters_F_Enoch\Uniforms\Gorka_01_F.p3d";
 		hiddenSelectionsTextures[]={"\VKN_Gear\data\Uniforms\vkn_mntsuit_multicam_grey_co.paa"};
 		class ItemInfo: UniformItem	{
-			uniformClass="VKN_Dummy_mntsuit_Blue_Multicam";
+			uniformClass="VKN_Dummy_mntsuit_multicam_grey";
 			containerClass="Supply40";
 			mass=40;
 		};
@@ -538,7 +538,7 @@ class VKN_Functionary_3: VKN_Functionary_Base {
 		model = "\a3\Characters_F_Enoch\Uniforms\Gorka_01_F.p3d";
 		hiddenSelectionsTextures[]={"\VKN_Gear\data\Uniforms\vkn_mntsuit_winter_full_co.paa"};
 		class ItemInfo: UniformItem	{
-			uniformClass="VKN_Dummy_mntsuit_Blue_Multicam";
+			uniformClass="VKN_Dummy_mntsuit_winter_full";
 			containerClass="Supply40";
 			mass=40;
 		};
@@ -550,7 +550,7 @@ class VKN_Functionary_3: VKN_Functionary_Base {
 		model = "\a3\Characters_F_Enoch\Uniforms\Gorka_01_F.p3d";
 		hiddenSelectionsTextures[]={"\VKN_Gear\data\Uniforms\vkn_mntsuit_winter_half_co.paa"};
 		class ItemInfo: UniformItem	{
-			uniformClass="VKN_Dummy_mntsuit_Blue_Multicam";
+			uniformClass="VKN_Dummy_mntsuit_winter_half";
 			containerClass="Supply40";
 			mass=40;
 		};
