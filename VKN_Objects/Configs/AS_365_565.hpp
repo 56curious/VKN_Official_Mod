@@ -1,5 +1,34 @@
 class AS_365: AS_365_base {
+
+  picture = "\VKN_Misc\VKN_Logo_inverted.paa";
+  editorPreview = "\VKN_Misc\VKN_Logo_inverted.paa";
+  faction = "BLU_F";
+  editorCategory = "VKN_Units";
+  editorSubCategory = "EdSubcat_Helicopters";
+  slingLoadMemoryPoint = "slingLoad0";
   scope = private;
+
+  class RotorLibHelicopterProperties {
+			RTDconfig="A3\Air_F_Beta\Heli_Transport_01\RTD_Heli_Transport_01.xml";
+			autoHoverCorrection[]={3,2.45,0};
+			defaultCollective=0.625;
+			retreatBladeStallWarningSpeed=85.556;
+			maxTorque=1100;
+			stressDamagePerSec=0.0033333332;
+			maxHorizontalStabilizerLeftStress=10000;
+			maxHorizontalStabilizerRightStress=10000;
+			maxVerticalStabilizerStress=10000;
+			horizontalWingsAngleCollMin=0;
+			horizontalWingsAngleCollMax=0;
+			maxMainRotorStress=230000;
+			maxTailRotorStress=25000;
+	};
+  maxSpeed = 300;
+  slingLoadMaxCargoMass=6000;
+  liftForceCoef = 2.5;
+
+
+
   soundEngineOnInt[]={"\VKN_Objects\Vehicles\as_365\data\Startup_Int",0.31622776,1};
   soundEngineOnExt[]={"\VKN_Objects\Vehicles\as_365\data\Startup_Ext",2.2387211,1,600};
   soundEngineOffInt[]={"A3\Sounds_F\vehicles\air\Heli_Transport_02\Heli_Transport_02_int_stop_v2",	0.31622776,1};
@@ -68,48 +97,30 @@ class AS_365: AS_365_base {
   };
 };
 
-class AS_565: AS_365 {scope = private;}; //Cannot move due to useage below within code block
+class AS_565: AS_365 {
+  scope = private;
+  };
 
 class B_VKN_AS_365_PMC_01 : AS_365 {
   hiddenSelectionsTextures[] = {"AS_365\data\skins\AS365_BlackAlt.paa", "AS_365\data\glass.paa"};
   displayName = "Eurocopter AS 365 Dauphin (Black)";
-  picture = "\VKN_Misc\VKN_Logo_inverted.paa";
-  editorPreview = "\VKN_Misc\VKN_Logo_inverted.paa";
   scope = public;
-  faction = "BLU_F";
-  editorCategory = "VKN_Units";
-  editorSubCategory = "EdSubcat_Helicopters";
 };
 
 class B_VKN_AS_365_PMC_02 : AS_365 {
   hiddenSelectionsTextures[] = {"\VKN_Objects\Vehicles\as_365\data\VKN_AS365_Black_Logo.paa", "AS_365\data\glass.paa"};
   displayName = "Eurocopter AS 365 Dauphin (Black + Logo)";
-  picture = "\VKN_Misc\VKN_Logo_inverted.paa";
-  editorPreview = "\VKN_Misc\VKN_Logo_inverted.paa";
   scope = public;
-  faction = "BLU_F";
-  editorCategory = "VKN_Units";
-  editorSubCategory = "EdSubcat_Helicopters";
 };
 
 class B_VKN_AS_565_PMC_01 : AS_565 {
   hiddenSelectionsTextures[] = {"AS_365\data\skins\AS365_BlackAlt.paa", "AS_365\data\glass.paa"};
-  displayName = "Eurocopter AS 365 Panther (Black)";
-  picture = "\VKN_Misc\VKN_Logo_inverted.paa";
-  editorPreview = "\VKN_Misc\VKN_Logo_inverted.paa";
+  displayName = "Eurocopter AS 565 Panther (Black)";
   scope = public;
-  faction = "BLU_F";
-  editorCategory = "VKN_Units";
-  editorSubCategory = "EdSubcat_Helicopters";
 };
 
 class B_VKN_AS_565_PMC_02 : AS_565 {
   hiddenSelectionsTextures[] = {"\VKN_Objects\Vehicles\as_365\data\VKN_AS365_Black_Logo.paa", "AS_365\data\glass.paa"};
-  displayName = "Eurocopter AS 365 Panther (Black + Logo)";
-  picture = "\VKN_Misc\VKN_Logo_inverted.paa";
-  editorPreview = "\VKN_Misc\VKN_Logo_inverted.paa";
+  displayName = "Eurocopter AS 565 Panther (Black + Logo)";
   scope = public;
-  faction = "BLU_F";
-  editorCategory = "VKN_Units";
-  editorSubCategory = "EdSubcat_Helicopters";
 };

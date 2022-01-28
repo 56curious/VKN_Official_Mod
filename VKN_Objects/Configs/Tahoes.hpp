@@ -287,15 +287,25 @@ class VKN_tahoe_UNM_PMC_01: tahoe_UNM {
   editorSubCategory = "EdSubcat_Cars";
   displayName = "[VKN] Chevrolet Tahoe Security";
   armor = 50;
+
   emergencyLightbarType = 2;
 
   class UserActions {
+    class startSiren {
+      displayName = "<t color='#ff0000'>Start Siren</t>";
+      position = "drivewheel";
+      radius = 10;
+      condition = "driver this == player";
+      statement = "this setVariable ['VKN_Siren', true]; this execVM '\VKN_Objects\Vehicles\tahoe_08\sirens.sqf';";
+      onlyForplayer = 0;
+      showWindow = 0;
+    };
     class stopSiren {
       displayName = "<t color='#0000ff'>Stop Siren</t>";
       position = "drivewheel";
       radius = 10;
-      condition = "driver this == player && (this animationPhase 'ani_siren' != 1)";
-      statement = "this setVariable ['VKN_Siren', False];";
+      condition = "driver this == player && (this getVariable 'lights') == true";
+      statement = "this setVariable ['VKN_Siren', False]; this setVariable ['VKN_Siren_playing', false];";
       onlyForplayer = 0;
       showWindow = 0;
     };
@@ -303,17 +313,17 @@ class VKN_tahoe_UNM_PMC_01: tahoe_UNM {
       displayName = "<t color='#ff0000'>Flashing</t>";
       position = "drivewheel";
       radius = 10;
-      condition = "driver this == player && (this animationPhase 'ani_lightbar' != 1)";
-      statement = "this animate ['ani_siren', 0], this execVM '\VKN_Objects\Vehicles\tahoe_08\lightbar.sqf';";
+      condition = "driver this == player";
+      statement = "this execVM '\tahoe_08\scripts\code2.sqf';";
       onlyForplayer = 0;
       showWindow = 0;
     };
-    class code3 {
-      displayName = "<t color='#ff0000'>Siren + Flashing</t>";
+    class LightMode2 {
+      displayName = "<t color='#ff0000'>Flashing + Siren</t>";
       position = "drivewheel";
       radius = 10;
-      condition = "driver this == player && (this animationPhase 'ani_siren' != 1)";
-      statement = "this execVM '\VKN_Objects\Vehicles\tahoe_08\sirens.sqf', this execVM '\VKN_Objects\Vehicles\tahoe_08\lightbar.sqf';;";
+      condition = "driver this == player";
+      statement = "this setVariable ['VKN_Siren', true]; this execVM '\tahoe_08\scripts\code2.sqf'; this execVM '\VKN_Objects\Vehicles\tahoe_08\sirens.sqf';";
       onlyForplayer = 0;
       showWindow = 0;
     };

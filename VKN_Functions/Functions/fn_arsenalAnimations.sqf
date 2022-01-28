@@ -91,10 +91,12 @@ if !(_VKN_ArsenalAnimation) exitWith {};
 				while {_isOpen} do { 
 					{
 						_isOpen = profileNamespace getVariable "VKN_ArsenalOpen";
+						if !(_isOpen) exitWith {};
 						_player playMoveNow _x; 
 						waitUntil { ((animationState _player) != _x) }; 
 						sleep random [6, 10, 20]; 
-					} forEach _animArray; 
+					} forEach _animArray;
+					if !(_isOpen) exitWith {};
 				};
 			}; 
 			default {

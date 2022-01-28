@@ -1,17 +1,21 @@
-_this setVariable ["VKN_Siren", False];
+_isPlaying = _this getVariable ["VKN_Siren_playing", false];
+_toggle = _this getVariable ["VKN_Siren", false];
 
-while {alive _this} do {
-	if (!isNull driver _this && getdammage _this < 0.7 && (_this getVariable "lights")) then {
+if (_isPlaying) exitWith {};
 
-		if ((_this getVariable "lights")) then { _this setVariable ["VKN_Siren", True]; };
+_lights = _this getVariable "lights";
+
+while {alive _this && _toggle} do {
+	if !(_lights) exitWith {};
+	if (!isNull driver _this && getdammage _this < 0.7 && _lights) then {
 
 		_siren = _this getVariable ["VKN_Siren", false];
-		if (_siren isEqualTo False) exitWith {};
-		_this say3D "VKN_pa300_wail";
-		sleep 4.1;
-
-	} else {
-		_this setVariable ["VKN_Siren", False];
-		waitUntil {sleep 2; (!isNull driver _this && getdammage _this < 0.7 && (_this getVariable "lights"))};
+		_this setVariable ["VKN_Siren_playing", true];
+		if !(_siren) exitWith {};
+		
+		[_this, "VKN_pa300_wail"] remoteExec ["say3D", 0, false];
+		//should be 4.1, but as the loop is 1 sec delay, changed to 3.1
+		sleep 3.1;
 	};
+	sleep 1;
 };
