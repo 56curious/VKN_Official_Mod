@@ -24,7 +24,7 @@ _ctrl_initplayerServer_edit_text = profileNamespace getVariable [ "VKN_VTT_initP
 _ctrl_initServer_edit_text = profileNamespace getVariable [ "VKN_VTT_initServer_var", ""];
 _ctrl_onplayerKilled_edit_text = profileNamespace getVariable [ "VKN_VTT_onPlayerKilled_var", format ["[player, [missionnamespace, 'inventory_var']] call BIS_fnc_saveinventory;%1['Initialize', %2", endl, missionNamespace getVariable ["VKN_VTT_SpectatorOptions", "[ player, [], false, false, true]] call BIS_fnc_EGSpectator;"]]];
 _ctrl_onplayerRespawn_edit_text = profileNamespace getVariable [ "VKN_VTT_onPlayerRespawn_var", format ["[player, [missionnamespace, 'inventory_var']] call BIS_fnc_loadinventory;%1['Terminate', [ player]] call BIS_fnc_EGSpectator;", endl]];
-_ctrl_description_edit_text = profileNamespace getVariable [ "VKN_VTT_initText_var", format ["respawnOnStart = 0;%1respawnTemplatesVirtual[] = {};", endl]];
+_ctrl_description_edit_text = profileNamespace getVariable [ "VKN_VTT_descriptionText_var", format ["respawnOnStart = 0;%1respawnTemplatesVirtual[] = {};", endl]];
 
 
 _returnArray = [_ctrl_init_edit_text, _ctrl_initplayerlocal_edit_text, _ctrl_initplayerServer_edit_text, _ctrl_initServer_edit_text, _ctrl_onplayerKilled_edit_text, _ctrl_onplayerRespawn_edit_text, _ctrl_description_edit_text];

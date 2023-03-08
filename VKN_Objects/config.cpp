@@ -146,7 +146,6 @@ class CfgVehicles {
   //Import Privatization
   class Car_F;
   class AS_365_base;
-  class tahoe_08_base;
 
   class B_Truck_01_transport_F;
   class B_Truck_01_mover_F;
@@ -172,6 +171,10 @@ class CfgVehicles {
 
 
   //SUV Configs
+  class tahoe_08_base: Car_F {
+    slingLoadCargoMemoryPoints[] = {"pip0_pos","pip1_pos","pip4_pos","pip4_pos"};
+  };
+
   class tahoe_08: tahoe_08_base { 
     scope = private;  
     armor = 40;

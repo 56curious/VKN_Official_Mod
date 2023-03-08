@@ -43,6 +43,10 @@ _ctrl_complete_button = _VTT_Basic_Settings_Display displayCtrl 1600;
 _ctrl_groups_check_Box = _VTT_Basic_Settings_Display displayCtrl 2800;
 _ctrl_loadout_check_Box = _VTT_Basic_Settings_Display displayCtrl 2801;
 
+_VTT_defaultGroups = profileNamespace getVariable [ "VKN_VTT_defaultGroups_var", true];
+_VTT_defaultLoadouts = profileNamespace getVariable [ "VKN_VTT_defaultLoadouts_var", true];
+
+
 //Add sides to listbox
 { _ctrl_Players_Side_Combo lbAdd str _x } forEach _sides;
 
@@ -86,6 +90,15 @@ VKN_fnc_sideChanged = {
   _side_lbText = "";
   _cursorIndex = lbCurSel _ctrl_Players_Side_Combo;
   _side_lbText = _ctrl_Players_Side_Combo lbText _cursorIndex;
+
+  /*
+  _VTT_defaultSide = profileNamespace getVariable [ "VKN_VTT_defaultSide_var", "WEST"];
+  if (_VTT_defaultSide == "") then {
+    _side = toUpper _side_lbText;
+  } else {
+    _side = _VTT_defaultSide;
+  };
+  */
   _side = toUpper _side_lbText;
 
   //get all factions in a side.
@@ -111,6 +124,15 @@ VKN_fnc_sideChanged = {
   _faction_lbText = "";
   private _cursorIndex = lbCurSel _ctrl_Faction_Combo;
   _faction_lbText = _ctrl_Faction_Combo lbText _cursorIndex;
+
+  /*
+  _VTT_defaultFaction = profileNamespace getVariable [ "VKN_VTT_defaultFaction_var", "BLU_F"];
+  if (_VTT_defaultFaction == "") then {
+    _curSelFac = toUpper _faction_lbText;
+  } else {
+    _curSelFac = _VTT_defaultFaction;
+  };
+  */
   _curSelFac = toUpper _faction_lbText;
 
   //apply group
@@ -133,6 +155,14 @@ _ctrl_Players_Side_Combo lbSetCurSel 0;
 sleep 0.1;
 _ctrl_Faction_Combo lbSetCurSel 0;
 sleep 0.1;
+/*
+_VTT_defaultSquad = profileNamespace getVariable [ "VKN_VTT_defaultSquad_var", "Rifle Squad"];
+if (_VTT_defaultSquad == "") then {
+  _ctrl_Squad_Combo lbSetCurSel 0;
+} else {
+  _ctrl_Squad_Combo = _VTT_defaultSquad;
+};
+*/
 _ctrl_Squad_Combo lbSetCurSel 0;
 sleep 0.1;
 _ctrl_Spectator_Combo lbSetCurSel  2;
