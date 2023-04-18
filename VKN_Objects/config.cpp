@@ -1,7 +1,7 @@
 class CfgPatches {
-    class VKN_Objects {
-        name = VKN_Objects;
-        author = "Curious";
+  class VKN_Objects {
+    name = VKN_Objects;
+    author = "Curious";
 		version = 1.0.0;
 		versionStr = "1.0.0";
 		versionAr[] = {0,1,0};
@@ -41,8 +41,7 @@ class CfgEditorSubcategories {
 	delete SUV;
 };
 
-class CfgFactionClasses
-{
+class CfgFactionClasses {
 	class HEMTT_Black {
   displayName = "HEMTT (Black)";
   side = 1;
@@ -119,8 +118,8 @@ class CfgSounds {
 
 class CfgVehicles {
 
-  //hidden custom items to avoid broken assets being used.
-  /*
+// Hidden custom items to avoid broken assets being used.
+/*
   class Land_WoodenCrate_01_F;
 
   class VKN_wooden_crate : Land_WoodenCrate_01_F {
@@ -140,13 +139,16 @@ class CfgVehicles {
     editorPreview = "\VKN_Misc\VKN_Logo_inverted.paa";
 		hiddenSelectionsTextures[]={"\VKN_Objects\Crates\Kiosk-texture.paa"};
   };
-  */
+*/
 
-
-  //Import Privatization
-  class Car_F;
+  // Import Privatization
+  class Car_F {
+    class Eventhandlers;
+  };
   class AS_365_base;
-  class tahoe_08_base;
+  class tahoe_08_base: Car_F {
+    class Eventhandlers: Eventhandlers {};
+  };
 
   class B_Truck_01_transport_F;
   class B_Truck_01_mover_F;
@@ -164,14 +166,13 @@ class CfgVehicles {
   // HEMTT configs
   #include "\VKN_Objects\vehicles\hemtt\hemtt.hpp"
 
-  //#include "\VKN_Objects\Vehicles\Red\redConfig.hpp"
+  // #include "\VKN_Objects\Vehicles\Red\redConfig.hpp"
   #include "\VKN_Objects\Vehicles\removeClasses.hpp"
 
-	//Helicopter Configs
+	// Helicopter Configs
   #include "\VKN_Objects\Configs\AS_365_565.hpp"
 
-
-  //SUV Configs
+  // SUV Configs
   class tahoe_08: tahoe_08_base { 
     scope = private;  
     armor = 40;
@@ -182,7 +183,6 @@ class CfgVehicles {
     armorWheels = 0.05;
     gearBox[] = {-8,0,10,6.15,4.44,3.33};
     maxSpeed = 120;
-    
   };
   class tahoe_ltz_08: tahoe_08_base { 
     scope = private;
@@ -194,7 +194,6 @@ class CfgVehicles {
     armorWheels = 0.05;
     gearBox[] = {-8,0,10,6.15,4.44,3.33};
     maxSpeed = 120;
-    
   };
   class suburban: tahoe_08_base { 
     scope = private; 
@@ -206,7 +205,6 @@ class CfgVehicles {
     armorWheels = 0.05;
     gearBox[] = {-8,0,10,6.15,4.44,3.33};
     maxSpeed = 120;
-    
   };
   class tahoe_LUMI: tahoe_08_base { 
     scope = private;
@@ -228,7 +226,6 @@ class CfgVehicles {
     armorWheels = 0.05;
     gearBox[] = {-8,0,10,6.15,4.44,3.33};
     maxSpeed = 120;
-    
   };
 
   #include "\VKN_Objects\Configs\Tahoes.hpp"
@@ -244,7 +241,6 @@ class CfgMagazines {
 		scope = public;
 		author = "--";
     model = "\VKN_Objects\Weapons\VSS Mag\VSS Mag.p3d";
-
 		displayName = "30Rnd 9x39mm";
 		picture = "\FA_Weapons_VKN\data\icons\icon_vss_mag_ca.paa";
 		count = 30;

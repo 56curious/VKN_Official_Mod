@@ -75,7 +75,7 @@ class VKN_Template_Tool_Home {
     class startText: RscText
     {
     	style = 2;
-      sizeEx = "5 * (1 / (getResolution select 3)) * pixelGrid * 0.5"
+      sizeEx = "5 * (1 / (getResolution select 3)) * pixelGrid * 0.5";
     	idc = 1001;
 
     	text = "Start Tool"; //--- ToDo: Localize;
