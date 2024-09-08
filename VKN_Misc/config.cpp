@@ -518,7 +518,8 @@ class CfgWeapons
     };
 };
 
-#include "\!Workshop\@Viking PMC Mod - All-In-One\addons\cameraSettings.hpp"
+/*
+#include "x\vkn\cameraSettings.hpp"
 
 class CfgVehicles
 {
@@ -528,7 +529,7 @@ class CfgVehicles
         extCameraPosition[] = {__offsetX, __offsetY, __offsetZ};
     };
 };
-
+*/
 //////
 //////    RSC DISPLAY INVENTORY ADJUSTMENTS - attempt to overwrite existing data while keeping rest of system intact
 //////

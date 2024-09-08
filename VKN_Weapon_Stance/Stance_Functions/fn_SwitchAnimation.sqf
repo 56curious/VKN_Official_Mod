@@ -14,6 +14,17 @@ private _vkntoggleRaiseWeapon = missionNamespace getVariable "vkn_ws_toggleRaise
 private _vknWeaponAction = missionNamespace getVariable "vkn_ws_vknWeaponAction";
 private _vknInterruptEventArray = missionNamespace getVariable "vkn_ws_vknInterruptEventArray";
 
+
+_fn_getConfigAnim = {
+
+	_r = getText(configFile >> "" >> _this);
+
+	_r
+
+};
+
+
+
 switch (_vknInterruptEventArray) do 
 {
 	case [true, false]: //Player is not interrupted by anything, and can animate
@@ -34,7 +45,9 @@ switch (_vknInterruptEventArray) do
 				{
 					if (_ActingActor getVariable animationState in "vkn_Moving_Erected_Sprint_RaisedPost_Rifle_Forward") then 
 					{
-						_ActingActor playMove "AmovPercMevaSlowWrflDf";
+						//exitLowered = "AmovPercMevaSlowWrflDf";
+						_Actinexitlowered gActor playAction "Exitlowered";
+						
 						//_ActingActor switchMove ""; May or may not be needed, probably not... playtesting needed.
 					} else
 					{
@@ -192,3 +205,15 @@ switch (_vknInterruptEventArray) do
 		systemChat "Error in 169 fn_SwitchAnimation, unexpected variable.";
 	};
 };
+
+
+
+
+
+//// Event shift + W
+// sprintRun = "someAnim";
+
+_anim = getText(configFile >> "VKN_WS" >> "sprintRun"); //returns "someAnim"
+
+player playAction _anim;
+

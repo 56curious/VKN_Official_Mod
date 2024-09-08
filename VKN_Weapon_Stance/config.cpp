@@ -81,9 +81,30 @@ class CfgMovesBasic
 	{
 		class Default;
 		class NoActions;
+		class ManActions {
+		vkn_raiseWeaponUp = "" //player playAction "vkn_raiseWeaponUp"
+		
+		Actions { 
+			RifleBaseLowStandActions:NoA {
 
+			};
+		};
 	};
 };
+
+class NoActions;
+CfgMovesBasic {
+	ManActions {
+		Actions { 
+			RifleBaseLowStandActions {
+
+			};	
+		};
+	};
+};
+
+
+
 
 class CfgMovesMaleSdr: CfgMovesBasic
 {
@@ -101,12 +122,14 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class Actions 
 		{
-			vkn_raiseWeaponUp = "";
-			
+			vkn_Enter_raiseWeaponUp = "";
+			vkn_Exit_raiseWeaponUp = "";
 		};
-		class VKN_Moving_Erected_Sprint_RaisedPost_Rifle_Forward: SprintBaseDf
+		class SprintBaseDf
+		vkn_EnterRaiseWeaponUp =
+		class VKN_Moving_Erected_Sprint_RaisedPost_Rifle_Forward: SprintBaseDf //playAction VKN_Moving_Erected_Sprint_RaisedPost_Rifle_Forward
 		{
-			actions = "RifleStandEvasiveActionsF";
+			actions = "RifleStandEvasiveActionsF"; //"lowered rifle action"
 			file = "\VKN_Weapon_Stance\Animations\vkn_Moving_Erected_Sprint_RaisedPost_Rifle_Forward.rtm";
 			speed = 1.9;
 			canReload = 0;
@@ -117,6 +140,9 @@ class CfgMovesMaleSdr: CfgMovesBasic
 			duty = 1;
 			disableWeapons = 1;
 			disableWeaponsLong = 1;
+			weaponUp = "animation"
+			moveforward = "something someting etc"
+			exitpoststate "someting to exit with"
 			leftHandIKBeg = 0;
 			leftHandIKCurve[] = {};
 			leftHandIKEnd = 0;

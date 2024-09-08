@@ -1,19 +1,55 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project name="Viking Translations">
-  <Package name="VKN_Functions">
-    <Container name="DiscordRP">
-      <Key ID="STR_VKN_DRP_Alive">
-        <Original>Alive</Original>
-        <English>Alive</English>
-        <Czech>Naživu</Czech>
-        <French>Vivant</French>
-        <Spanish>Vivo</Spanish>
-        <Italian>Vivo</Italian>
-        <Polish>Żywy</Polish>
-        <Portuguese>Vivo</Portuguese>
-        <Russian>В живых</Russian>
-        <German>Am Leben</German>
-      </Key>
-    </Container>
-  </Package>
+    <Package name="VKN_Functions">
+        <Container name="DiscordRP">
+            <Key ID="STR_VKN_DRP_Alive">
+                <Original>Alive</Original>
+                <English>Alive</English>
+                <Czech>Naživu</Czech>
+                <French>Vivant</French>
+                <German>Am Leben</German>
+                <Italian>Vivo</Italian>
+                <Polish>Żywy</Polish>
+                <Portuguese>Vivo</Portuguese>
+                <Russian>В живых</Russian>
+                <Spanish>Vivo</Spanish>
+            </Key>
+            <Key ID="STR_VKN_displayName_CombatUniform_fullM90">
+                <Original>[VKN] Combat Uniform Rolled (M90)</Original>
+            </Key>
+            <Key ID="STR_VKN_displayName_CombatUniform_rolledM90">
+                <Original>[VKN] Combat Uniform Rolled (M90)</Original>
+            </Key>
+            <Key ID="STR_VKN_displayName_CombatUniform_fullM98">
+                <Original>[VKN] Combat Uniform Rolled (M98)</Original>
+            </Key>
+            <Key ID="STR_VKN_displayName_CombatUniform_rolledM98">
+                <Original>[VKN] Combat Uniform Rolled (M98)</Original>
+            </Key>
+            <Key ID="STR_VKN_displayName_CombatUniform_fullAR01Black">
+                <Original>[VKN] Combat Uniform - Full (AOR-1 + Black)</Original>
+            </Key>
+            <Key ID="STR_VKN_displayName_CombatUniform_rolledAR01Black">
+                <Original>[VKN] Combat Uniform - Rolled (AOR-1 + Black)</Original>
+            </Key>
+            <Key ID="STR_VKN_displayName_CombatUniform_rolledAR01">
+                <Original>[VKN] Combat Uniform - Rolled (AOR-1)</Original>
+            </Key>
+            <Key ID="STR_VKN_displayName_CombatUniform_fullAR01">
+                <Original>[VKN] Combat Uniform - Full (AOR-1)</Original>
+            </Key>
+        </Container>
+    </Package>
+    <Package name="VKN_Gear">
+        <Container name="Uniforms_displayName">
+            <Key ID="STR_VKN_displayName_combatUniform_rolledM90Desert">
+                <Original>[VKN] Combat Uniform Rolled (M90 - Desert)</Original>
+                <English>[VKN] Combat Uniform Rolled (M90)</English>
+            </Key>
+            <Key ID="STR_VKN_displayName_CombatUniform_fullM90Desert">
+                <Original>[VKN] Combat Uniform Rolled (M90 - Desert)</Original>
+                <English>[VKN] Combat Uniform Rolled (M90)</English>
+            </Key>
+        </Container>
+    </Package>
 </Project>

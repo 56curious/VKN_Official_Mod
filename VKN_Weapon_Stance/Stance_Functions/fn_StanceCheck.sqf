@@ -13,6 +13,14 @@ private _vkntoggleRaiseWeapon = missionNamespace getVariable "vkn_ws_toggleRaise
 private _vknWeaponAction = missionNamespace getVariable "vkn_ws_vknWeaponAction";
 private _vknInterruptEventArray = missionNamespace getVariable "vkn_ws_vknInterruptEventArray";
 
+post == 2 then playaction
+
+//logic for enterijng and exciting posted state
+
+//enteraction = ""
+//exitaction = ""
+
+
 if (inputAction "reloadMagazine" > 0) then
 {
 _vknReloadDone = false;

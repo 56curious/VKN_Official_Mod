@@ -619,53 +619,53 @@ class VKN_Dummy_I_Shirt_DDPM_1: VKN_Dummy_Button_Up_Base {
 ///// Gorka
 
 class VKN_Dummy_mntsuit_aor_black: O_R_Gorka_base_F {
-	author = "Jonmo";
-	hiddenSelectionsTextures[] = {"\vkn_gear\data\uniforms\vkn_mtsuit_aor_black_co.paa"};
+    author = "Jonmo";
+    hiddenSelectionsTextures[] = {"\vkn_gear\data\uniforms\vkn_mntsuit_aor_black_co.paa"};
 };
 
 class VKN_Dummy_mntsuit_aor_green: O_R_Gorka_base_F {
-	author = "Jonmo";
-	hiddenSelectionsTextures[] = {"\vkn_gear\data\uniforms\vkn_mntsuit_aor_green_co.paa"};
+    author = "Jonmo";
+    hiddenSelectionsTextures[] = {"\vkn_gear\data\uniforms\vkn_mntsuit_aor_green_co.paa"};
 };
 
 class VKN_Dummy_mntsuit_aor_grey: O_R_Gorka_base_F {
-	author = "Jonmo";
-	hiddenSelectionsTextures[] = {"\vkn_gear\data\uniforms\vkn_mntsuit_aor_grey_co.paa"};
+    author = "Jonmo";
+    hiddenSelectionsTextures[] = {"\vkn_gear\data\uniforms\vkn_mntsuit_aor_grey_co.paa"};
 };
 
 class VKN_Dummy_mntsuit_aor2_black: O_R_Gorka_base_F {
-	author = "Jonmo";
-	hiddenSelectionsTextures[] = {"\vkn_gear\data\uniforms\vkn_mntsuit_aor2_black_co.paa"};
+    author = "Jonmo";
+    hiddenSelectionsTextures[] = {"\vkn_gear\data\uniforms\vkn_mntsuit_aor2_black_co.paa"};
 };
 
 class VKN_Dummy_mntsuit_aor2_grey: O_R_Gorka_base_F {
-	author = "Jonmo";
-	hiddenSelectionsTextures[] = {"\vkn_gear\data\uniforms\vkn_mntsuit_aor2_grey_co.paa"};
+    author = "Jonmo";
+    hiddenSelectionsTextures[] = {"\vkn_gear\data\uniforms\vkn_mntsuit_aor2_grey_co.paa"};
 };
 
 class VKN_Dummy_mntsuit_multicam_black: O_R_Gorka_base_F {
-	author = "Jonmo";
-	hiddenSelectionsTextures[] = {"\vkn_gear\data\uniforms\vkn_mntsuit_multicam_black_co.paa"};
+    author = "Jonmo";
+    hiddenSelectionsTextures[] = {"\vkn_gear\data\uniforms\vkn_mntsuit_multicam_black_co.paa"};
 };
 
 class VKN_Dummy_mntsuit_multicam_green: O_R_Gorka_base_F {
-	author = "Jonmo";
-	hiddenSelectionsTextures[] = {"\vkn_gear\data\uniforms\vkn_mntsuit_multicam_green_co.paa"};
+    author = "Jonmo";
+    hiddenSelectionsTextures[] = {"\vkn_gear\data\uniforms\vkn_mntsuit_multicam_green_co.paa"};
 };
 
 class VKN_Dummy_mntsuit_multicam_grey: O_R_Gorka_base_F {
-	author = "Jonmo";
-	hiddenSelectionsTextures[] = {"\vkn_gear\data\uniforms\vkn_multicam_grey_co.paa"};
+    author = "Jonmo";
+    hiddenSelectionsTextures[] = {"\vkn_gear\data\uniforms\vkn_mntsuit_multicam_grey_co.paa"};
 };
 
 class VKN_Dummy_mntsuit_winter_full: O_R_Gorka_base_F {
-	author = "Jonmo";
-	hiddenSelectionsTextures[] = {"\vkn_gear\data\uniforms\vkn_mntsuit_winter_full_co.paa"};
+    author = "Jonmo";
+    hiddenSelectionsTextures[] = {"\vkn_gear\data\uniforms\vkn_mntsuit_winter_full_co.paa"};
 };
 
 class VKN_Dummy_mntsuit_winter_half: O_R_Gorka_base_F {
-	author = "Jonmo";
-	hiddenSelectionsTextures[] = {"\vkn_gear\data\uniforms\vkn_mntsuit_winter_half_co.paa"};
+    author = "Jonmo";
+    hiddenSelectionsTextures[] = {"\vkn_gear\data\uniforms\vkn_mntsuit_winter_half_co.paa"};
 };
 
 class VKN_Dummy_mntsuit_Brown_Khaki: VKN_Dummy_mntsuit_multicam_black {};

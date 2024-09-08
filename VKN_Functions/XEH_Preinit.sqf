@@ -21,7 +21,7 @@ _strategicMapVal = profileNamespace getVariable ["VKN_strategicMapValue_var", tr
     }
 ] call CBA_settings_fnc_init;
 
-_VKN_ArsenalAnimation = profileNamespace getVariable ["VKN_VKN_ArsenalAnimation_var", true];
+_VKN_ArsenalAnimation = profileNamespace getVariable ["VKN_VKN_ArsenalAnimation_var", false];
 [
     "VKN_arsenal_animations",
     "CHECKBOX",

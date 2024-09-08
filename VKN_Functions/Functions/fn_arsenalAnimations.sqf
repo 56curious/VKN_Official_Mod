@@ -1,4 +1,4 @@
-_VKN_ArsenalAnimation = profileNamespace getVariable "VKN_VKN_ArsenalAnimation_var";
+_VKN_ArsenalAnimation = profileNamespace getVariable ["VKN_VKN_ArsenalAnimation_var", true];
 
 if !(_VKN_ArsenalAnimation) exitWith {};
 

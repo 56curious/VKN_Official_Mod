@@ -1,6 +1,6 @@
 /*
 Script name:    fn_handleCore.sqf
-Created on:     27 July ‎2021
+Created on:     27 July 2021
 Author:         Curious
 
 License:		This file is under "Arma Public License No Derivatives (APL-ND)"
