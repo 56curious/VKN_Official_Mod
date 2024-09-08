@@ -14,8 +14,7 @@ class CfgPatches {
                 "FA_Weapons_VKN",
                 "VKN_Misc",
                 "cba_main",
-                "ace_ui",
-                "VKN_UI"};
+                "ace_ui"};
         weapons[] = {"VKN_AK5C", "VKN_MP5", "VKN_VSS"};
     };
 };
